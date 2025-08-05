@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Joker Card</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/All_Consumables/card_31.png" type="image/x-icon">
+    <style>
+        body { font-family: Arial, sans-serif;
+        background-color: gray; }
+        h2 { margin-top: 2em; }
+        .img-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px; /* Menor separación */
+            align-items: flex-end;   /* Alinea arriba */
+            justify-content: flex-start; /* Alinea a la izquierda */
+        }
+        .img-grid img {
+            image-rendering: pixelated;
+            display: block;
+            margin: 2px;
+            transition: all 0.2s;
+            z-index: 1;
+        }
+        .img-grid img:hover {
+            transform: scale(1.5);
+            z-index: 1000;
+            filter: drop-shadow(0 0 10px #000000);
+        }
+    </style>
+</head>
+<body>
+    <h2>Items</h2>
+    <div id="items" class="img-grid"></div>
+
+    <h2>Trinkets</h2>
+    <div id="trinkets" class="img-grid"></div>
+
+    <h2>Cards</h2>
+    <div id="cards" class="img-grid"></div>
+
+    <script>
+        // Configuración: cantidad máxima de imágenes por carpeta
+        const maxItems = 732;      // Ajusta según la cantidad real
+        const maxTrinkets = 189;   // Ajusta según la cantidad real
+        const maxCards = 110;      // Ajusta según la cantidad real
+
+        const baseUrl = "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/";
+
+        function loadImages(containerId, folder, prefix, max) {
+            const container = document.getElementById(containerId);
+            for (let i = 1; i <= max; i++) {
+                const img = document.createElement('img');
+                img.src = `${baseUrl}${folder}/${prefix}_${i}.png`;
+                img.alt = `${prefix} ${i}`;
+                img.onerror = function() { this.style.display = 'none'; };
+                container.appendChild(img);
+            }
+        }
+
+        // Cargar imágenes por sección
+        loadImages('items', 'All_Items', 'item', maxItems);
+        loadImages('trinkets', 'All_Trinkets', 'trinket', maxTrinkets);
+        loadImages('cards', 'All_Consumables', 'card', maxCards);
+    </script>
+</body>
+</html>
