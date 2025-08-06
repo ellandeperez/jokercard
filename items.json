@@ -12,7 +12,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Tears up"
   },
   {
     "id": "2",
@@ -29,7 +30,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Triple shot"
   },
   {
     "id": "3",
@@ -44,7 +46,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Homing shots"
   },
   {
     "id": "4",
@@ -62,7 +65,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "DMG up"
   },
   {
     "id": "5",
@@ -82,7 +86,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Boomerang tears"
   },
   {
     "id": "6",
@@ -99,7 +104,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Tears up"
   },
   {
     "id": "7",
@@ -116,7 +122,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "DMG up"
   },
   {
     "id": "8",
@@ -134,7 +141,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "Friends 'till the end"
   },
   {
     "id": "9",
@@ -155,7 +163,8 @@
     ],
     "item_pool": [
       "None (Arcade shell game only)"
-    ]
+    ],
+    "pickup": "Fly love"
   },
   {
     "id": "10",
@@ -174,7 +183,8 @@
     "item_pool": [
       "Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Projectile protection"
   },
   {
     "id": "11",
@@ -191,7 +201,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Extra life"
   },
   {
     "id": "12",
@@ -215,7 +226,8 @@
     "item_pool": [
       "Item Room",
       "Mushrooms"
-    ]
+    ],
+    "pickup": "All stats up!"
   },
   {
     "id": "13",
@@ -235,7 +247,8 @@
       "Item Room",
       "Demon Beggar",
       "Lust Miniboss"
-    ]
+    ],
+    "pickup": "Poison touch"
   },
   {
     "id": "14",
@@ -255,7 +268,8 @@
       "Item Room",
       "Boss Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Speed and range up"
   },
   {
     "id": "15",
@@ -289,7 +303,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "17",
@@ -305,7 +320,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "99 keys"
   },
   {
     "id": "18",
@@ -321,7 +337,8 @@
     ],
     "item_pool": [
       "None (Arcade machine only)"
-    ]
+    ],
+    "pickup": "$$$"
   },
   {
     "id": "19",
@@ -336,7 +353,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "10 bombs"
   },
   {
     "id": "20",
@@ -352,7 +370,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "We all float down here..."
   },
   {
     "id": "21",
@@ -371,7 +390,8 @@
     "item_pool": [
       "Shop",
       "Beggar"
-    ]
+    ],
+    "pickup": "The end is near"
   },
   {
     "id": "22",
@@ -389,7 +409,8 @@
       "Boss Room",
       "Challenge Room",
       "Beggar"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "23",
@@ -407,7 +428,8 @@
       "Boss Room",
       "Beggar",
       "Challenge Room"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "24",
@@ -425,7 +447,8 @@
       "Boss Room",
       "Beggar",
       "Challenge Room"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "25",
@@ -443,7 +466,8 @@
       "Boss Room",
       "Challenge Room",
       "Beggar"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "26",
@@ -461,7 +485,8 @@
       "Boss Room",
       "Beggar",
       "Challenge Room"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "27",
@@ -476,7 +501,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "Speed up"
   },
   {
     "id": "28",
@@ -492,7 +518,8 @@
     "item_pool": [
       "Boss Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Speed up"
   },
   {
     "id": "29",
@@ -512,7 +539,8 @@
       "Challenge Room",
       "Gold/Stone Chest",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "Range Up"
   },
   {
     "id": "30",
@@ -531,7 +559,8 @@
       "Boss Room",
       "Challenge Room",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "Range up"
   },
   {
     "id": "31",
@@ -550,7 +579,8 @@
       "Boss Room",
       "Challenge Room",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "Range up"
   },
   {
     "id": "32",
@@ -567,7 +597,8 @@
     "item_pool": [
       "Boss Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Tears up"
   },
   {
     "id": "33",
@@ -578,7 +609,6 @@
       "If used during the Satan fight, The Bible will instantly kill Isaac",
       "Counts as 1 of 3 angel items needed towards the Seraphim transformation",
       "Counts as 1 of 3 book items needed towards the Bookworm transformation"
-      
     ],
     "quality": "1",
     "tags": "* library pool, library room, book room pool, angel room pool, god room pool, angel room, shop room pool, shop item pool, cross, brown",
@@ -592,7 +622,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Temporary flight"
   },
   {
     "id": "34",
@@ -604,7 +635,6 @@
       "Judas starts with this item",
       "Additional uses in the same room or combined with The Devil XV give +1 damage per use",
       "Counts as 1 of 3 book items needed towards the Bookworm transformation"
-      
     ],
     "quality": "2",
     "tags": "* library pool, library room, book room pool, devil pool, devil room pool, devil deal, star grey, gray, pentagram",
@@ -617,7 +647,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Temporary DMG up"
   },
   {
     "id": "35",
@@ -625,7 +656,6 @@
     "description": [
       "Deals 40 damage to everything in the room when used",
       "Counts as 1 of 3 book items needed towards the Bookworm transformation"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by using 4 XIII - Death cards",
@@ -640,7 +670,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Mass room damage"
   },
   {
     "id": "36",
@@ -651,7 +682,6 @@
       "Can be placed next to a pit and exploded to make a bridge",
       "Can be placed over a broken red poop to overwrite it, causing it to no longer regenerate",
       "Counts as 1 of 3 poop items needed towards the Oh Crap transformation"
-      
     ],
     "quality": "0",
     "tags": "* item room, treasure room, item room pool, starting, turd, brown",
@@ -663,7 +693,8 @@
     ],
     "recharge_time": [
       "1 room"
-    ]
+    ],
+    "pickup": "Plop!"
   },
   {
     "id": "37",
@@ -672,7 +703,6 @@
       "Drops a large bomb below the player which does 185 damage",
       "Compatible with bomb modifiers, such as Glitter Bombs, Sticky Bombs etc",
       "Has a chance to drop from the Wrath miniboss fight"
-      
     ],
     "quality": "1",
     "tags": "* mr boom, boss rush pool, boss rush room, item room, treasure room, item room pool, bomb beggar, face, smile, grey",
@@ -686,7 +716,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Reusable bomb buddy"
   },
   {
     "id": "38",
@@ -695,7 +726,6 @@
       "Fires 10 tears in a circle around Isaac",
       "Each tear is equal to your damage stat + 25 flat damage",
       "The tears spawned from Tammy's Head retain tear effects of Isaac's tears, such as poison or homing"
-      
     ],
     "quality": "2",
     "tags": "* golden chest pool, gold chest pool, dead, cat, white, yellow, tammys head, tammy head",
@@ -708,7 +738,8 @@
     ],
     "recharge_time": [
       "1 room"
-    ]
+    ],
+    "pickup": "Reusable tear burst"
   },
   {
     "id": "39",
@@ -716,7 +747,6 @@
     "description": [
       "When used, freezes all enemies in the current room for about 4 seconds",
       "Counts as 1 of 3 mom items needed towards the Mom transformation"
-      
     ],
     "quality": "1",
     "tags": "* dungeon room, blood challenge room, arena pool, item room, treasure room, item room, white, brown, underwear, moms bra, mom bra",
@@ -730,7 +760,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Mass fear"
   },
   {
     "id": "40",
@@ -738,7 +769,6 @@
     "description": [
       "Causes an explosion near Isaac which takes away half a heart and does 40 damage all enemies in close proximity",
       "Does not reduce your devil/angel room chances when used"
-      
     ],
     "quality": "0",
     "tags": "* item room, treasure room, item room pool, the lost item pool, bomb, tnt, clock, red",
@@ -750,7 +780,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Become the bomb!"
   },
   {
     "id": "41",
@@ -759,7 +790,6 @@
       "When used, causes all enemies in the current room to run away from Isaac in fear for 5 seconds",
       "Spawns 1 blue attack fly per use",
       "Counts as 1 of 3 mom items needed towards the Mom transformation"
-      
     ],
     "quality": "0",
     "tags": "* item room, treasure room, item room pool, dungeon room, blood challenge room, arena, white, grey, gray moms pad, mom pad",
@@ -773,7 +803,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Gross..."
   },
   {
     "id": "42",
@@ -784,7 +815,6 @@
       "Synergizes with tear modifying items such as My Reflection or Tiny Planet",
       "Has a chance to drop from the Sloth miniboss fight",
       "Counts as 1 of 3 poison items needed towards the Bob transformation"
-      
     ],
     "quality": "1",
     "tags": "* golden chest pool, gold chest pool, item room, treasure room, item room pool, bob, grey, gray, green, mouth, bobs rotten head, bob rotten head",
@@ -797,7 +827,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Reusable ranged bomb"
   },
   {
     "id": "44",
@@ -805,7 +836,6 @@
     "description": [
       "Teleports Isaac to a random location on the map",
       "Can't be used to teleport to the I AM ERROR room"
-      
     ],
     "quality": "0",
     "tags": "* item room, treasure room, item room pool, blue remote, robot",
@@ -817,7 +847,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Teleport!"
   },
   {
     "id": "45",
@@ -827,7 +858,6 @@
       "Maggy starts with this item",
       "When used as the Keeper, one coin HP is restored",
       "Has a chance to drop from the Super Lust miniboss fight"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room pool, the lost item pool, maggy, start, red, pink, broken",
@@ -840,7 +870,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Reusable regeneration"
   },
   {
     "id": "46",
@@ -859,7 +890,8 @@
     "item_pool": [
       "Item Room",
       "Beggar"
-    ]
+    ],
+    "pickup": "Luck up"
   },
   {
     "id": "47",
@@ -867,7 +899,6 @@
     "description": [
       "A target is placed on the floor which can be controlled. After a few seconds a huge missile hits the target and deals 20x your tear damage to anything nearby",
       "Essentially a one-time use of the Epic Fetus item"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room pool, grey, gray, robot",
@@ -879,7 +910,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Reusable air strike"
   },
   {
     "id": "48",
@@ -894,7 +926,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Piercing shots"
   },
   {
     "id": "49",
@@ -903,7 +936,6 @@
       "When used, fires a high damage laser in a straight line across the room in a similar way to Brimstone",
       "The laser deals damage equal to double your tear damage. The laser hits up to 13 times if an enemy stays inside it for the duration",
       "Has a chance to drop from the Envy and Super Envy miniboss fights"
-      
     ],
     "quality": "2",
     "tags": "* item room, treasure room, item room pool, red, lips, white, eyes",
@@ -917,7 +949,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "BLLLARRRRGGG!"
   },
   {
     "id": "50",
@@ -934,7 +967,8 @@
     ],
     "item_pool": [
       "Steven Boss"
-    ]
+    ],
+    "pickup": "DMG up"
   },
   {
     "id": "51",
@@ -956,7 +990,8 @@
       "Devil Room",
       "Demon Beggar",
       "Crane Game"
-    ]
+    ],
+    "pickup": "DMG up"
   },
   {
     "id": "52",
@@ -977,7 +1012,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "???"
   },
   {
     "id": "53",
@@ -994,7 +1030,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Item snatcher"
   },
   {
     "id": "54",
@@ -1012,7 +1049,8 @@
     "item_pool": [
       "Shop",
       "Beggar"
-    ]
+    ],
+    "pickup": "Full visible map"
   },
   {
     "id": "55",
@@ -1034,14 +1072,14 @@
       "Item Room",
       "Challenge Room",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "Eye in the back of your head"
   },
   {
     "id": "56",
     "name": "Lemon Mishap",
     "description": [
       "When used, drops a pool of 'lemonade' on the floor which damages any enemies that come into contact with it for 8 damage per tick"
-      
     ],
     "quality": "0",
     "tags": "* item room, treasure room, item room pool, yellow, chet lemon",
@@ -1053,7 +1091,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Oops..."
   },
   {
     "id": "57",
@@ -1071,7 +1110,8 @@
     "item_pool": [
       "Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Attack fly"
   },
   {
     "id": "58",
@@ -1080,7 +1120,6 @@
       "Gives the player an invulnerability effect which lasts for a 10 seconds",
       "Can be used to get free hits on the Blood Donation machines and Devil Beggars",
       "Counts as 1 of 3 book items needed towards the Bookworm transformation"
-      
     ],
     "quality": "3",
     "tags": "* library pool, library room, book room pool, item room, treasure room, item room pool, white, pink",
@@ -1093,7 +1132,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Temporary invincibility"
   },
   {
     "id": "60",
@@ -1108,7 +1148,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Building bridges"
   },
   {
     "id": "62",
@@ -1125,7 +1166,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Kills heal"
   },
   {
     "id": "63",
@@ -1142,7 +1184,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Stores energy"
   },
   {
     "id": "64",
@@ -1162,7 +1205,8 @@
       "Shop",
       "Greed Miniboss",
       "Shopkeeper"
-    ]
+    ],
+    "pickup": "50% off"
   },
   {
     "id": "65",
@@ -1172,7 +1216,6 @@
       "Bombs are effected by other passive bomb items",
       "Has a chance to drop from the Pride miniboss fight",
       "Counts as 1 of 3 book items needed towards the Bookworm transformation"
-      
     ],
     "quality": "1",
     "tags": "* Anarchist's Cookbook, Anarchists Cookbook library pool, library room, book room pool, item room, treasure room, item room pool, white, red, pink",
@@ -1186,14 +1229,14 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Summon bombs"
   },
   {
     "id": "66",
     "name": "The Hourglass",
     "description": [
       "When used, slows down all enemies in the current room and their projectiles for about 8 seconds"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room pool, hour glass, hourglass, egg timer, sandbrown, glass",
@@ -1205,7 +1248,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Temporary enemy slowdown"
   },
   {
     "id": "67",
@@ -1225,7 +1269,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "Friends 'till the end"
   },
   {
     "id": "68",
@@ -1243,7 +1288,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Laser tears"
   },
   {
     "id": "69",
@@ -1263,7 +1309,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Charge shots"
   },
   {
     "id": "70",
@@ -1281,7 +1328,8 @@
     "item_pool": [
       "Boss Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "DMG up + speed up"
   },
   {
     "id": "71",
@@ -1300,7 +1348,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Speed + range up"
   },
   {
     "id": "72",
@@ -1319,7 +1368,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Faith up"
   },
   {
     "id": "73",
@@ -1340,7 +1390,8 @@
     ],
     "item_pool": [
       "None (Horsemen boss only)"
-    ]
+    ],
+    "pickup": "Gotta meat em all"
   },
   {
     "id": "74",
@@ -1360,7 +1411,8 @@
       "Devil Room",
       "Gold Chest",
       "Super Greed Miniboss"
-    ]
+    ],
+    "pickup": "+25 coins"
   },
   {
     "id": "75",
@@ -1380,7 +1432,8 @@
     "item_pool": [
       "Item Room",
       "Shop"
-    ]
+    ],
+    "pickup": "Better pills"
   },
   {
     "id": "76",
@@ -1395,7 +1448,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "I've seen everything"
   },
   {
     "id": "77",
@@ -1404,7 +1458,6 @@
       "Gives Isaac invincibility and +0.28 Speed for 6 seconds",
       "While active you cannot fire tears, but running into enemies will deal 40 contact damage per second",
       "Allows free hits on the Blood Donation machines and devil beggars"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room pool, white, horn",
@@ -1416,7 +1469,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Temporary badass"
   },
   {
     "id": "78",
@@ -1426,7 +1480,6 @@
       "Using this item gives you a higher chance of finding a horsemen boss at the end of the floor",
       "+17.5% chance of a Devil Deal opening after the boss fight",
       "Counts as 1 of 3 book items needed towards the Bookworm transformation"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by beating one of the horsemen bosses for the first time",
@@ -1440,7 +1493,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Reusable soul protection"
   },
   {
     "id": "79",
@@ -1460,7 +1514,8 @@
       "Curse Room",
       "Devil Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "DMG up"
   },
   {
     "id": "80",
@@ -1480,7 +1535,8 @@
       "Devil Room",
       "Curse Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "DMG + tears up"
   },
   {
     "id": "81",
@@ -1502,7 +1558,8 @@
       "Curse Room",
       "Red Chest",
       "Super Pride Miniboss"
-    ]
+    ],
+    "pickup": "9 lives"
   },
   {
     "id": "82",
@@ -1520,7 +1577,8 @@
     "item_pool": [
       "Devil Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Demon wings"
   },
   {
     "id": "83",
@@ -1531,7 +1589,6 @@
       "Allows Isaac to deal 40 contact damage to enemies for the current room. Does not prevent Isaac from taking contact damage",
       "All the above effects are only active when the item is used for the current room",
       "Counts as 1 of 3 evil items needed towards the Leviathan transformation"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by beating the Boss Rush with Azazel",
@@ -1545,7 +1602,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Temporary demon form"
   },
   {
     "id": "84",
@@ -1556,7 +1614,6 @@
       "In Sheol, Cathedral, Chest and Dark Room this item either opens a Crawl Space, or does nothing",
       "Cannot spawn a trapdoor directly infront of a secret room entrance",
       "Can destroy rocks if used when Isaac is flying over a rock"
-      
     ],
     "quality": "2",
     "tags": "* secret room pool, devil pool, devil room pool, devil deal, silver, grey, gray, dig, spade, shovel",
@@ -1569,7 +1626,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Reusable level skip"
   },
   {
     "id": "85",
@@ -1577,7 +1635,6 @@
     "description": [
       "Gives Isaac a random tarot card on use",
       "Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums"
-      
     ],
     "quality": "2",
     "tags": "* shop room pool, shop item pool, item room, treasure room, item room pool, brown, pink",
@@ -1590,14 +1647,14 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Reusable card generator"
   },
   {
     "id": "86",
     "name": "Monstro's Tooth",
     "description": [
       "When used, spawns a Monstro which will jump on a random enemy in the room, dealing 120 damage and destroying nearby obstacles"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by beating the Basement II for the first time",
@@ -1610,7 +1667,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Summon monstro"
   },
   {
     "id": "87",
@@ -1630,7 +1688,8 @@
     "item_pool": [
       "Item Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Cross tears"
   },
   {
     "id": "88",
@@ -1647,7 +1706,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Attack buddy"
   },
   {
     "id": "89",
@@ -1663,7 +1723,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Slow effect"
   },
   {
     "id": "90",
@@ -1682,7 +1743,8 @@
     ],
     "item_pool": [
       "None (Tinted rock only)"
-    ]
+    ],
+    "pickup": "DMG up"
   },
   {
     "id": "91",
@@ -1699,7 +1761,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "See-through doors"
   },
   {
     "id": "92",
@@ -1718,7 +1781,8 @@
     "item_pool": [
       "Item Room",
       "Boss Room"
-    ]
+    ],
+    "pickup": "+2 hearts"
   },
   {
     "id": "93",
@@ -1727,7 +1791,6 @@
       "When used Isaac transforms into pacman, which makes him invincible for 6 seconds and does 40 contact damage to enemies per chomp",
       "Everytime you 'eat' 2 enemies, you regain 1/2 heart of red health",
       "You can't shoot tears while the effect is active"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by visiting 10 arcades",
@@ -1740,7 +1803,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Temporary Man-Pac"
   },
   {
     "id": "94",
@@ -1757,7 +1821,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Gives money"
   },
   {
     "id": "95",
@@ -1776,7 +1841,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Friends till the bzzzttt"
   },
   {
     "id": "96",
@@ -1794,7 +1860,8 @@
     "item_pool": [
       "Item Room",
       "C.H.A.D. Boss"
-    ]
+    ],
+    "pickup": "Gives kisses"
   },
   {
     "id": "97",
@@ -1804,7 +1871,6 @@
       "Any pickups are possible from this item, including Bombs, hearts, keys, coins, pills, batteries, tarot cards, runes etc",
       "Doesn't produce microbatteries, only regular sized ones and rarely golden/mega batteries",
       "Counts as 1 of 3 book items needed towards the Bookworm transformation"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by beating each of the Seven Sins once",
@@ -1819,7 +1885,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Reusable item generator"
   },
   {
     "id": "98",
@@ -1837,7 +1904,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Soul generator"
   },
   {
     "id": "99",
@@ -1858,7 +1926,8 @@
     "item_pool": [
       "Item Room",
       "Gish Boss"
-    ]
+    ],
+    "pickup": "Sticky friend"
   },
   {
     "id": "100",
@@ -1879,7 +1948,8 @@
     "item_pool": [
       "Item Room",
       "Steven Boss"
-    ]
+    ],
+    "pickup": "Psychic friend"
   },
   {
     "id": "101",
@@ -1902,7 +1972,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "All stats up"
   },
   {
     "id": "102",
@@ -1910,7 +1981,6 @@
     "description": [
       "When used, gives Isaac a random pill",
       "Counts as 1 of 3 mom items needed towards the Mom transformation"
-      
     ],
     "quality": "1",
     "tags": "* dungeon room, blood challenge room, arena pool, demon beggar pool, demon judgement pool, devil beggar pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool, item room, treasure room, item room pool, yellow, red, blue, medicine, jar, drug, moms bottle of pills",
@@ -1927,7 +1997,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Reusable pill generator"
   },
   {
     "id": "103",
@@ -1943,7 +2014,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Poison damage"
   },
   {
     "id": "104",
@@ -1961,7 +2033,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Split shot"
   },
   {
     "id": "105",
@@ -1969,7 +2042,6 @@
     "description": [
       "When used, replaces all pedestal items in the current room with another random item. Re-rolled items pick from the current room's item pool",
       "Isaac starts with this item after it is unlocked"
-      
     ],
     "quality": "4",
     "unlock": "Unlock this item by defeating the Isaac boss with Blue Baby",
@@ -1982,7 +2054,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Reroll your destiny"
   },
   {
     "id": "106",
@@ -2003,14 +2076,14 @@
       "Item Room",
       "Bomb Beggar",
       "Super Wrath Miniboss"
-    ]
+    ],
+    "pickup": "Blast damage"
   },
   {
     "id": "107",
     "name": "Pinking Shears",
     "description": [
       "Cuts Isaac's head from his body for the current room, allowing him to fly and leaving the decapitated body to run around attacking enemies for 5.5 damage per tick"
-      
     ],
     "quality": "2",
     "tags": "* item room, treasure room, item room pool, scissors, cutters, snip, scissors, silver, grey, gray",
@@ -2022,7 +2095,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Cut and run"
   },
   {
     "id": "108",
@@ -2043,7 +2117,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Damage resistance"
   },
   {
     "id": "109",
@@ -2061,7 +2136,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "$$$ = DMG"
   },
   {
     "id": "110",
@@ -2083,7 +2159,8 @@
       "Item Room",
       "Challenge Room",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "Freeze effect"
   },
   {
     "id": "111",
@@ -2092,7 +2169,6 @@
       "Upon use, this item causes Isaac to fart and poison any enemies in close proximity",
       "The Bean deals 5 damage, then poisons enemies for 6 total ticks of damage",
       "The poison deals your current tear damage per tick"
-      
     ],
     "quality": "0",
     "tags": "* normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, team bean, #teambean, brown, kidney",
@@ -2105,7 +2181,8 @@
     ],
     "recharge_time": [
       "1 room"
-    ]
+    ],
+    "pickup": "Toot on command"
   },
   {
     "id": "112",
@@ -2124,7 +2201,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Extra protection"
   },
   {
     "id": "113",
@@ -2143,7 +2221,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "Auto-turret friend"
   },
   {
     "id": "114",
@@ -2167,7 +2246,8 @@
       "Devil Room",
       "Challenge Room",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "Stab stab stab"
   },
   {
     "id": "115",
@@ -2184,7 +2264,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "Spectral tears"
   },
   {
     "id": "116",
@@ -2201,7 +2282,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Quicker charge"
   },
   {
     "id": "117",
@@ -2218,7 +2300,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Protective buddy"
   },
   {
     "id": "118",
@@ -2237,7 +2320,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "Blood laser barrage"
   },
   {
     "id": "119",
@@ -2256,7 +2340,8 @@
     ],
     "item_pool": [
       "None (Blood Donation machine only)"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "120",
@@ -2276,7 +2361,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "Fire rate up"
   },
   {
     "id": "121",
@@ -2297,7 +2383,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "DMG up"
   },
   {
     "id": "122",
@@ -2316,7 +2403,8 @@
     "item_pool": [
       "Devil Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Curse up"
   },
   {
     "id": "123",
@@ -2324,7 +2412,6 @@
     "description": [
       "When used, gives a random familiar for the entire floor",
       "It can spawn familiars you haven't unlocked yet!"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room pool, devil pool, devil room pool, devil deal, book, brown, blue, monster manuel, manaul",
@@ -2338,7 +2425,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Temporary buddy generator"
   },
   {
     "id": "124",
@@ -2348,7 +2436,6 @@
       "An item that can be found in the Angel room",
       "The name of the effect given is displayed when used.",
       "Cannot give the Kamikaze effect"
-      
     ],
     "quality": "1",
     "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, paper, roll, white",
@@ -2361,7 +2448,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "It's a mystery"
   },
   {
     "id": "125",
@@ -2378,7 +2466,8 @@
     "item_pool": [
       "Item Room",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "Friends till the end"
   },
   {
     "id": "126",
@@ -2387,7 +2476,6 @@
       "When used, deals damage to Isaac in exchange for +1.2 damage up which lasts for the current room",
       "This item takes 1 full heart of damage per use, and will take red hearts first before any other",
       "Eve starts with this item after donating 439 coins to the Greed Donation Machine"
-      
     ],
     "quality": "0",
     "unlock": "Unlock this item by beating Satan with Eve",
@@ -2402,14 +2490,14 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Feel my pain"
   },
   {
     "id": "127",
     "name": "Forget Me Now",
     "description": [
       "Upon use, this item refreshes the current floor with brand new rooms, monsters and items, as if you had entered a new floor"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by beating Satan with Blue Baby",
@@ -2425,7 +2513,8 @@
     ],
     "recharge_time": [
       "Instant (One time use)"
-    ]
+    ],
+    "pickup": "I don't remember..."
   },
   {
     "id": "128",
@@ -2442,7 +2531,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Attack fly"
   },
   {
     "id": "129",
@@ -2460,7 +2550,8 @@
     "item_pool": [
       "Item Room",
       "Super Gluttony Miniboss"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "130",
@@ -2470,7 +2561,6 @@
       "Sets your speed stat to 1.5 if it isn't already that high",
       "When the active attack is used, Isaac will dash across the screen dealing scaling contact damage to anything he hits (damage * 4 + 28)",
       "Drops from the Headless Horseman boss fight"
-      
     ],
     "quality": "2",
     "tags": "* headless horseman, headless horsemen, red, grey, gray",
@@ -2482,7 +2572,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Flight + dash attack"
   },
   {
     "id": "131",
@@ -2499,7 +2590,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Gives bombs"
   },
   {
     "id": "132",
@@ -2516,7 +2608,8 @@
     ],
     "item_pool": [
       "None (Krampus only)"
-    ]
+    ],
+    "pickup": "My Xmas present"
   },
   {
     "id": "133",
@@ -2525,7 +2618,6 @@
       "When used, removes one heart container and gives you 3 soul hearts",
       "Bone hearts cannot be converted",
       "Counts as 1 of 3 cat items needed towards the Guppy transformation"
-      
     ],
     "quality": "3",
     "tags": "* curse room pool, red chest pool, red chest item pool, devil pool, devil room pool, devil deal, the lost item pool, cat, bone, pink, grey, gray, guppys paw, guppy paw",
@@ -2539,7 +2631,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Soul converter"
   },
   {
     "id": "134",
@@ -2558,7 +2651,8 @@
       "Devil Room",
       "Curse Room",
       "Red Chest"
-    ]
+    ],
+    "pickup": "Cursed?"
   },
   {
     "id": "135",
@@ -2569,7 +2663,6 @@
       "In the Womb and beyond this deals 1 full heart of damage",
       "If no red hearts exist, other types of hearts are consumed instead",
       "With the Keeper this is changed to spawning 0-1 coins per use instead"
-      
     ],
     "quality": "1",
     "tags": "* , the lost item pool, red, white",
@@ -2581,7 +2674,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Portable blood bank"
   },
   {
     "id": "136",
@@ -2589,7 +2683,6 @@
     "description": [
       "Places a decoy on the floor which attracts enemies and explodes after a period of time",
       "When it explodes, it deals 185 damage to everything in radius (Same damage as Mr Mega bombs)"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room pool, worst friend, dead, baby, pink, puppet",
@@ -2601,7 +2694,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Friends 'till the end"
   },
   {
     "id": "137",
@@ -2610,7 +2704,6 @@
       "+5 Bombs",
       "Bombs no longer automatically explode and will only do so when you activate the remote detonator",
       "Can be used to detonate Dr. Fetus bombs early"
-      
     ],
     "quality": "1",
     "tags": "* boss rush pool, boss rush room, shop room pool, shop item pool, item room, treasure room, item room pool, red, boom, tnt",
@@ -2624,7 +2717,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Remote bomb detonation"
   },
   {
     "id": "138",
@@ -2641,7 +2735,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "DMG + HP up"
   },
   {
     "id": "139",
@@ -2660,7 +2755,8 @@
     "item_pool": [
       "Shop",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "More trinket room"
   },
   {
     "id": "140",
@@ -2680,7 +2776,8 @@
       "Item Room",
       "Super Sloth Miniboss",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "Poison bombs"
   },
   {
     "id": "141",
@@ -2696,7 +2793,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "Ultimate grand supreme"
   },
   {
     "id": "142",
@@ -2715,7 +2813,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "You have been blessed"
   },
   {
     "id": "143",
@@ -2734,7 +2833,8 @@
       "Item Room",
       "Boss Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Speed + shot speed up"
   },
   {
     "id": "144",
@@ -2754,7 +2854,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "He's Greedy"
   },
   {
     "id": "145",
@@ -2763,7 +2864,6 @@
       "When used, spawns between 2-4 blue flies",
       "Blue Flies do double your tear damage",
       "Counts as 1 of 3 cat items needed towards the Guppy transformation"
-      
     ],
     "quality": "2",
     "tags": "* curse room pool, red chest pool, red chest item pool, golden chest pool, gold chest pool, devil pool, devil room pool, devil deal, dead, cat, grey, gray, guppy head, guppys head",
@@ -2778,7 +2878,8 @@
     ],
     "recharge_time": [
       "1 room"
-    ]
+    ],
+    "pickup": "Reusable fly hive"
   },
   {
     "id": "146",
@@ -2786,7 +2887,6 @@
     "description": [
       "Gives Isaac an eternal heart when used",
       "Taking an eternal heart to the next floor or collecting two on the same floor gives you an extra heart container"
-      
     ],
     "quality": "3",
     "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool, white, yellow, blue",
@@ -2799,7 +2899,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Reusable eternity"
   },
   {
     "id": "147",
@@ -2809,7 +2910,6 @@
       "It has a limited amount of uses per floor, decreasing with every hit that connects with a rock/enemy",
       "Cannot break the stone blocks which appear in the environment",
       "Creates bridges when breaking rocks next to pits"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room pool, minecraft, brown, grey, gray, silver",
@@ -2822,7 +2922,8 @@
     ],
     "recharge_time": [
       "At the start of each new floor"
-    ]
+    ],
+    "pickup": "Rocks didn't stand a chance"
   },
   {
     "id": "148",
@@ -2839,7 +2940,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Fly revenge"
   },
   {
     "id": "149",
@@ -2861,7 +2963,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Explosive shots"
   },
   {
     "id": "150",
@@ -2879,7 +2982,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Tooth shot"
   },
   {
     "id": "151",
@@ -2897,7 +3001,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "They grow inside"
   },
   {
     "id": "152",
@@ -2917,7 +3022,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Laser"
   },
   {
     "id": "153",
@@ -2936,7 +3042,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Quad Shot"
   },
   {
     "id": "154",
@@ -2952,7 +3059,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "DMG up"
   },
   {
     "id": "155",
@@ -2969,7 +3077,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Plop!"
   },
   {
     "id": "156",
@@ -2986,7 +3095,8 @@
     "item_pool": [
       "Shop",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Item martyr"
   },
   {
     "id": "157",
@@ -3006,7 +3116,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "RAGE!"
   },
   {
     "id": "158",
@@ -3017,7 +3128,6 @@
       "Has a chance to drop from playing a fortune machine",
       "Counts as 1 of 3 astrology items needed in the same run to unlock Planetariums",
       "Guarantees a Planetarium if an item room has been skipped, otherwise +15% chance for Planetariums to spawn while held. After entering a Planetarium the chance goes back to 1%. The floor generation can fail and cause the guaranteed Planetarium to not spawn sometimes."
-      
     ],
     "quality": "3",
     "tags": "* item room, treasure room, item room pool, white, purple",
@@ -3029,7 +3139,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "I see my future"
   },
   {
     "id": "159",
@@ -3046,7 +3157,8 @@
     "item_pool": [
       "Devil Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Scary"
   },
   {
     "id": "160",
@@ -3054,7 +3166,6 @@
     "description": [
       "Creates 5 beams of light from the sky that deal damage equal to your tear damage + 20 to any enemies which come into contact with them",
       "The beams have a high chance to spawn on top of enemies where possible"
-      
     ],
     "quality": "2",
     "tags": "* item room, treasure room, item room pool, feather, white, arrow",
@@ -3066,7 +3177,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Holy white death"
   },
   {
     "id": "161",
@@ -3083,7 +3195,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Eternal life?"
   },
   {
     "id": "162",
@@ -3102,7 +3215,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "You feel blessed"
   },
   {
     "id": "163",
@@ -3122,7 +3236,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "Spectral buddy"
   },
   {
     "id": "164",
@@ -3131,7 +3246,6 @@
       "A spacebar item which allows Isaac to fire a blue flame that damages anything in its path for 23 damage per tick",
       "Can cause up to a total of 276 potential damage",
       "The flame destroys enemy shots, making it useful for bullet hell bosses"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by donating 900 coins to the Shop",
@@ -3144,7 +3258,8 @@
     ],
     "recharge_time": [
       "Timed (A few seconds)"
-    ]
+    ],
+    "pickup": "Reusable flame"
   },
   {
     "id": "165",
@@ -3161,7 +3276,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "Shot speed up + DMG up"
   },
   {
     "id": "166",
@@ -3169,7 +3285,6 @@
     "description": [
       "Upon use, re-rolls all pickup consumables in the current room into another random kind of pickup",
       "This includes all types of pickup such as hearts, bombs, keys, coins, pills, tarot cards, chests, trinkets etc"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by beating the Chest with Isaac",
@@ -3182,7 +3297,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Reroll the basics"
   },
   {
     "id": "167",
@@ -3201,7 +3317,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Double shot buddy"
   },
   {
     "id": "168",
@@ -3220,7 +3337,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "On-demand air strike"
   },
   {
     "id": "169",
@@ -3237,7 +3355,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Mega tears"
   },
   {
     "id": "170",
@@ -3254,7 +3373,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Daddy's love"
   },
   {
     "id": "171",
@@ -3263,7 +3383,6 @@
       "Upon use, does 10 damage to all enemies in the room and gives them a slowing effect for 4 seconds",
       "Enemies killed by Spider Butt will spawn friendly blue spiders",
       "Counts as 1 of 3 spider items needed towards the Spider Baby transformation"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room pool, brown, red, web",
@@ -3275,7 +3394,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Mass enemy slowdown + damage"
   },
   {
     "id": "172",
@@ -3295,7 +3415,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "My fate protects me"
   },
   {
     "id": "173",
@@ -3312,7 +3433,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "You feel blessed"
   },
   {
     "id": "174",
@@ -3330,7 +3452,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Random buddy"
   },
   {
     "id": "175",
@@ -3339,7 +3462,6 @@
       "Upon use, opens all closed doors in the current room, including the ones which require a key to enter and secret room doors",
       "Can be used to open the golden door that appears in the Dark Room or the Chest",
       "Cannot be used to escape the Mom's Foot boss, open angel/devil rooms, or open the door to the Blue Womb floor"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by collecting both Key Pieces #1 & #2 for the first time",
@@ -3353,7 +3475,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Opens all doors..."
   },
   {
     "id": "176",
@@ -3371,14 +3494,14 @@
     "item_pool": [
       "Item Room",
       "Boss Room"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "177",
     "name": "Portable Slot",
     "description": [
       "Using the portable slot takes a coin and has a chance to give a pickup - similar to how the normal slot machines work"
-      
     ],
     "quality": "0",
     "tags": "* normal beggar pool, normal judgement pool, coin beggar pool, coin judgement, shop room pool, shop item pool,red, robot, head, cube",
@@ -3391,7 +3514,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Gamble 24/7"
   },
   {
     "id": "178",
@@ -3410,7 +3534,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Splash!"
   },
   {
     "id": "179",
@@ -3427,7 +3552,8 @@
     ],
     "item_pool": [
       "Gold Chest"
-    ]
+    ],
+    "pickup": "Flight eternal"
   },
   {
     "id": "180",
@@ -3444,7 +3570,8 @@
     "item_pool": [
       "Item Room",
       "Beggar"
-    ]
+    ],
+    "pickup": "Toot on touch"
   },
   {
     "id": "181",
@@ -3454,7 +3581,7 @@
       "While held, sets your speed stat to 1.5 if it isn't already that high. If your speed stat is already higher then that value is still used",
       "Upon use, Isaac charges in the direction the pony is facing, becoming invulnerable during the charge and damaging enemies",
       "While charging, Isaac spawns a trail of light beams that deal a lot of damage to enemies (damage * 4 + 10)",
-      "Drops from the Conquest boss fight"      
+      "Drops from the Conquest boss fight"
     ],
     "quality": "2",
     "tags": "*, red, horse, head",
@@ -3466,7 +3593,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Flight + holy death"
   },
   {
     "id": "182",
@@ -3488,7 +3616,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Homing shots + DMG up"
   },
   {
     "id": "183",
@@ -3505,7 +3634,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "Tears + shot speed up"
   },
   {
     "id": "184",
@@ -3523,7 +3653,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Flight + HP up"
   },
   {
     "id": "185",
@@ -3540,7 +3671,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Flight + spectral tears"
   },
   {
     "id": "186",
@@ -3550,7 +3682,6 @@
       "Shields and invincibility effects do not prevent damage when using this item",
       "Using with Isaac's Heart previously prevented you from taking damage, however in Repentance this was fixed",
       "Using this item as The Lost will instantly kill him, even if you have Holy Mantle active"
-      
     ],
     "quality": "0",
     "unlock": "Unlock this item by beating Satan with Samson",
@@ -3564,7 +3695,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Mass enemy damage at a cost"
   },
   {
     "id": "187",
@@ -3584,7 +3716,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "Swing it"
   },
   {
     "id": "188",
@@ -3603,7 +3736,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Mirrored buddy"
   },
   {
     "id": "189",
@@ -3625,7 +3759,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "All stats up"
   },
   {
     "id": "190",
@@ -3642,7 +3777,8 @@
       "Item Room",
       "Secret Room",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "99 bombs"
   },
   {
     "id": "191",
@@ -3660,7 +3796,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Rainbow tears"
   },
   {
     "id": "192",
@@ -3668,7 +3805,6 @@
     "description": [
       "When used, Isaac gains homing shots and +3.0 Range Up for the current room",
       "Counts as 1 of 3 book items needed towards the Bookworm transormation"
-      
     ],
     "quality": "1",
     "tags": "* library pool, library room, book room pool, item room, treasure room, item room pool, yellow book how to",
@@ -3681,7 +3817,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Temporary psychic shot"
   },
   {
     "id": "193",
@@ -3698,7 +3835,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "DMG + HP up"
   },
   {
     "id": "194",
@@ -3717,7 +3855,8 @@
     "item_pool": [
       "Boss Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Shot speed up"
   },
   {
     "id": "195",
@@ -3738,7 +3877,8 @@
       "Beggar",
       "Demon Beggar",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "What's all this...?"
   },
   {
     "id": "196",
@@ -3755,7 +3895,8 @@
     "item_pool": [
       "Boss Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Tears up"
   },
   {
     "id": "197",
@@ -3772,7 +3913,8 @@
     "item_pool": [
       "Boss Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Damage + range up"
   },
   {
     "id": "198",
@@ -3788,7 +3930,8 @@
     "item_pool": [
       "Boss Room",
       "Challenge Room"
-    ]
+    ],
+    "pickup": "Stuff"
   },
   {
     "id": "199",
@@ -3808,7 +3951,8 @@
       "Challenge Room",
       "Key Beggar",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "Better chest loot +2 keys"
   },
   {
     "id": "200",
@@ -3828,7 +3972,8 @@
       "Item Room",
       "Challenge Room",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "Charm tears"
   },
   {
     "id": "201",
@@ -3845,7 +3990,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Concussive tears"
   },
   {
     "id": "202",
@@ -3863,7 +4009,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Golden touch"
   },
   {
     "id": "203",
@@ -3880,7 +4027,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "1+1free 4evar!"
   },
   {
     "id": "204",
@@ -3896,7 +4044,8 @@
     "item_pool": [
       "Shop",
       "Beggar"
-    ]
+    ],
+    "pickup": "Filled with goodies"
   },
   {
     "id": "205",
@@ -3915,7 +4064,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Charge with blood"
   },
   {
     "id": "206",
@@ -3935,7 +4085,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "An out-of-body experience"
   },
   {
     "id": "207",
@@ -3956,7 +4107,8 @@
     ],
     "item_pool": [
       "None (Horsemen boss only)"
-    ]
+    ],
+    "pickup": "Gotta lick em all"
   },
   {
     "id": "208",
@@ -3974,7 +4126,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "DMG + Challenge up"
   },
   {
     "id": "209",
@@ -3993,7 +4146,8 @@
     "item_pool": [
       "Item Room",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "Toxic blast +5 bombs"
   },
   {
     "id": "210",
@@ -4010,7 +4164,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Unbreakable"
   },
   {
     "id": "211",
@@ -4026,7 +4181,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Spider revenge"
   },
   {
     "id": "212",
@@ -4044,7 +4200,8 @@
       "Devil Room",
       "Curse Room",
       "Red Chest"
-    ]
+    ],
+    "pickup": "Eternal life?"
   },
   {
     "id": "213",
@@ -4062,7 +4219,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "Shielded tears"
   },
   {
     "id": "214",
@@ -4079,7 +4237,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Toxic blood"
   },
   {
     "id": "215",
@@ -4096,7 +4255,8 @@
     "item_pool": [
       "Devil Room",
       "Curse Room"
-    ]
+    ],
+    "pickup": "He accepts your offering"
   },
   {
     "id": "216",
@@ -4115,7 +4275,8 @@
       "Devil Room",
       "Curse Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Sin up"
   },
   {
     "id": "217",
@@ -4137,7 +4298,8 @@
       "Item Room",
       "Challenge Room",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "You feel itchy"
   },
   {
     "id": "218",
@@ -4157,7 +4319,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "HP up + regen"
   },
   {
     "id": "219",
@@ -4175,7 +4338,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "220",
@@ -4194,7 +4358,8 @@
     "item_pool": [
       "Item Room",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "Tear blast +5 bombs"
   },
   {
     "id": "221",
@@ -4213,7 +4378,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Bouncing tears"
   },
   {
     "id": "222",
@@ -4232,7 +4398,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Antigravity tears + tears up"
   },
   {
     "id": "223",
@@ -4249,7 +4416,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Hurts so good +5 bombs"
   },
   {
     "id": "224",
@@ -4267,7 +4435,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Splash damage + tears up"
   },
   {
     "id": "225",
@@ -4287,7 +4456,8 @@
       "Devil Room",
       "Curse Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Sweet suffering"
   },
   {
     "id": "226",
@@ -4307,7 +4477,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "HP up x3"
   },
   {
     "id": "227",
@@ -4325,7 +4496,8 @@
     "item_pool": [
       "Item Room",
       "Shop"
-    ]
+    ],
+    "pickup": "My life savings"
   },
   {
     "id": "228",
@@ -4346,7 +4518,8 @@
       "Item Room",
       "Challenge Room",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "Fear shot"
   },
   {
     "id": "229",
@@ -4364,7 +4537,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Charged attack"
   },
   {
     "id": "230",
@@ -4388,7 +4562,8 @@
     "item_pool": [
       "Devil Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Evil up + DMG up + fear shot"
   },
   {
     "id": "231",
@@ -4405,7 +4580,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Sticky feet..."
   },
   {
     "id": "232",
@@ -4423,7 +4599,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Let's slow this down a bit"
   },
   {
     "id": "233",
@@ -4443,7 +4620,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Orbiting tears + range up"
   },
   {
     "id": "234",
@@ -4460,7 +4638,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Infestation shot"
   },
   {
     "id": "236",
@@ -4479,7 +4658,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Turdy Touch"
   },
   {
     "id": "237",
@@ -4500,7 +4680,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "Penetrative shots + DMG up"
   },
   {
     "id": "238",
@@ -4518,7 +4699,8 @@
     ],
     "item_pool": [
       "None (Angel statue only)"
-    ]
+    ],
+    "pickup": "???"
   },
   {
     "id": "239",
@@ -4536,7 +4718,8 @@
     ],
     "item_pool": [
       "None (Angel statue only)"
-    ]
+    ],
+    "pickup": "???"
   },
   {
     "id": "240",
@@ -4556,7 +4739,8 @@
       "Item Room",
       "Boss Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Some stats up, some stats down"
   },
   {
     "id": "241",
@@ -4575,7 +4759,8 @@
       "Devil Room",
       "Curse Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Wealth, but at what cost?"
   },
   {
     "id": "242",
@@ -4591,7 +4776,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "Damage reduction"
   },
   {
     "id": "243",
@@ -4607,7 +4793,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "You feel guarded"
   },
   {
     "id": "244",
@@ -4627,7 +4814,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "It's still being tested"
   },
   {
     "id": "245",
@@ -4645,7 +4833,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Double shot"
   },
   {
     "id": "246",
@@ -4663,7 +4852,8 @@
       "Shop",
       "Beggar",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Secrets"
   },
   {
     "id": "247",
@@ -4681,7 +4871,8 @@
     "item_pool": [
       "Shop",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Your friends rule!"
   },
   {
     "id": "248",
@@ -4700,7 +4891,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Giant spiders and flies"
   },
   {
     "id": "249",
@@ -4719,7 +4911,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "More options"
   },
   {
     "id": "250",
@@ -4735,7 +4928,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "1+1 bombs"
   },
   {
     "id": "251",
@@ -4753,7 +4947,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Extra card room"
   },
   {
     "id": "252",
@@ -4772,7 +4967,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Extra pill room"
   },
   {
     "id": "253",
@@ -4789,7 +4985,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "HP + luck up"
   },
   {
     "id": "254",
@@ -4806,7 +5003,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "DMG + range up"
   },
   {
     "id": "255",
@@ -4823,7 +5021,8 @@
     "item_pool": [
       "Boss Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Tears + shot speed up"
   },
   {
     "id": "256",
@@ -4842,7 +5041,8 @@
     "item_pool": [
       "Item Room",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "Burning blast +5 bombs"
   },
   {
     "id": "257",
@@ -4860,7 +5060,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Flaming tears"
   },
   {
     "id": "258",
@@ -4878,7 +5079,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Syntax error"
   },
   {
     "id": "259",
@@ -4897,7 +5099,8 @@
     "item_pool": [
       "Devil Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Fear shot"
   },
   {
     "id": "260",
@@ -4917,7 +5120,8 @@
     "item_pool": [
       "Shop",
       "Curse Room"
-    ]
+    ],
+    "pickup": "Curse of immunity + evil up"
   },
   {
     "id": "261",
@@ -4935,7 +5139,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Short range mega tears"
   },
   {
     "id": "262",
@@ -4954,7 +5159,8 @@
       "Devil Room",
       "Demon Beggar",
       "Secret Room"
-    ]
+    ],
+    "pickup": "Evil up + your enemies will pay"
   },
   {
     "id": "263",
@@ -4969,7 +5175,6 @@
       "4 rooms: Rune of Ehwaz, Rune of Perthro, Black Rune, Soul of Isaac, Soul of Eve, Soul of Eden, Soul of the Forgotten, Soul of Jacob and Esau",
       "6 rooms: Rune of Dagaz, Soul of Samson, Soul of Azazel, Soul of Apollyon, Soul of Bethany",
       "12 rooms: Rune of Jera, Soul of Lilith, Soul of the Keeper"
-      
     ],
     "quality": "2",
     "tags": "* Secret Room",
@@ -4982,7 +5187,8 @@
     ],
     "recharge_time": [
       "Varies"
-    ]
+    ],
+    "pickup": "Rune mimic"
   },
   {
     "id": "264",
@@ -5001,7 +5207,8 @@
     "item_pool": [
       "Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Revenge fly"
   },
   {
     "id": "265",
@@ -5021,7 +5228,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Immortal friend"
   },
   {
     "id": "266",
@@ -5040,7 +5248,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Sticky babies"
   },
   {
     "id": "267",
@@ -5059,7 +5268,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "We worked out all the kinks"
   },
   {
     "id": "268",
@@ -5079,7 +5289,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "Infested friend"
   },
   {
     "id": "269",
@@ -5097,7 +5308,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "Bloody friend"
   },
   {
     "id": "270",
@@ -5114,7 +5326,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Blood sucker"
   },
   {
     "id": "271",
@@ -5134,7 +5347,8 @@
       "Item Room",
       "Beggar",
       "Secret Room"
-    ]
+    ],
+    "pickup": "?"
   },
   {
     "id": "272",
@@ -5154,7 +5368,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Big beautiful fly"
   },
   {
     "id": "273",
@@ -5175,7 +5390,8 @@
     "item_pool": [
       "Item Room",
       "Rotten Beggar"
-    ]
+    ],
+    "pickup": "Explosive thoughts"
   },
   {
     "id": "274",
@@ -5195,7 +5411,8 @@
     "item_pool": [
       "Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Sworn protector"
   },
   {
     "id": "275",
@@ -5216,7 +5433,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "Evil friend"
   },
   {
     "id": "276",
@@ -5238,7 +5456,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Protect it"
   },
   {
     "id": "277",
@@ -5254,7 +5473,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Fear him"
   },
   {
     "id": "278",
@@ -5275,7 +5495,8 @@
       "Item Room",
       "Devil Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "He wants to take your life"
   },
   {
     "id": "279",
@@ -5294,7 +5515,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Fat protector"
   },
   {
     "id": "280",
@@ -5314,7 +5536,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "She loves you"
   },
   {
     "id": "281",
@@ -5331,7 +5554,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Scape goat"
   },
   {
     "id": "282",
@@ -5341,7 +5565,6 @@
       "Maintains momentum if you are already moving in the same direction",
       "If you already have an item which gives you flying, this item becomes a dash effect instead",
       "Can be used in the Isaac boss fight to jump over the beams of light he spawns"
-      
     ],
     "quality": "1",
     "tags": "* library pool, library room, book room pool, item room, treasure room, item room pool, mario, cartridge, nes, grey, gray, orange",
@@ -5354,7 +5577,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "It's time you learned how"
   },
   {
     "id": "283",
@@ -5362,7 +5586,6 @@
     "description": [
       "When used, the D100 will activate the effects of all other dice items at once, including D1, D4, The D6, D7, D8, D10, D12 and D20. Search 'Dice effect' to see all those items and their relevant effects",
       "Note: Full run reroll effects (such as D4) are able to remove heart containers and transformations if losing the respective items during the reroll"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by beating Boss Rush with The Lost",
@@ -5375,7 +5598,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "REEROLLLLL!"
   },
   {
     "id": "284",
@@ -5385,7 +5609,6 @@
       "If you have an item with no room pool (e.g. Blood Bag) it will be rerolled into a random Item Room item",
       "Full run reroll effects such as D4 are able to remove heart containers and transformations if losing the respective items during the reroll",
       "Cannot remove Azazel's Brimstone laser, or The Lost's Holy Mantle"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by blowing up 30 slot machines",
@@ -5398,7 +5621,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Reroll into something else"
   },
   {
     "id": "285",
@@ -5407,7 +5631,6 @@
       "When used, rerolls all enemies in the room which are currently alive into another random type of enemy",
       "D10 attempts to reroll enemies into enemies of similar health where possible",
       "Cannot reroll mini-bosses or bosses"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room pool, DIO, dice pip, orange, brown, turban, dice effect",
@@ -5419,7 +5642,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Rerolls enemies"
   },
   {
     "id": "286",
@@ -5428,7 +5652,6 @@
       "When used, copies the effect of the card you are currently holding without consuming it",
       "The charge time depends on the quality of the card you're holding, and will update with each activation",
       "Using this with the ? card will teleport you to the I AM ERROR room"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by beating the Isaac boss with Eden",
@@ -5442,7 +5665,8 @@
     ],
     "recharge_time": [
       "Varies"
-    ]
+    ],
+    "pickup": "Card Mimic"
   },
   {
     "id": "287",
@@ -5451,7 +5675,6 @@
       "When used, you have a chance of getting one of the three following effects: Treasure Map (floor layout), Compass (map icons) or Blue Map (secret room locations)",
       "Counts as 1 of 3 book items needed towards the Bookworm transformation",
       "Book of Secrets avoids giving mapping effects that you already have. If the player has all mapping effects, it grants the 'I can see forever!' effect for the floor"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by beating Satan with Eden",
@@ -5466,7 +5689,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "??????"
   },
   {
     "id": "288",
@@ -5475,7 +5699,6 @@
       "When used, spawns 4-8 friendly blue spiders on the floor",
       "Blue Spiders do x2 of Isaac's damage",
       "Counts as 1 of 3 spider items needed towards the Spider Baby transformation"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room poolgrey, gray",
@@ -5487,7 +5710,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "It's a box of spiders"
   },
   {
     "id": "289",
@@ -5496,7 +5720,6 @@
       "When used, the candle is raised above Isaac's head. Upon pressing any fire button, a red flame will slide across the floor in that direction, dealing 23 damage per tick to enemies that come into contact with it",
       "Each flame deals 125 total damage and disappears after 10 seconds",
       "The flame will shrink in size when deals damage to something and eventually disappear"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by donating 400 pennies to the Shop",
@@ -5509,7 +5732,8 @@
     ],
     "recharge_time": [
       "Timed (A few seconds)"
-    ]
+    ],
+    "pickup": "Flame on"
   },
   {
     "id": "290",
@@ -5519,7 +5743,6 @@
       "Up to 4 hearts can be stored in The Jar",
       "Soul hearts and black hearts cannot be stored",
       "If used in a Black heart or Eternal heart super secret room, it will spawn the relevant heart"
-      
     ],
     "quality": "0",
     "tags": "* shop room pool, shop item pool, the lost item pool, glass",
@@ -5531,7 +5754,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Save your life"
   },
   {
     "id": "291",
@@ -5541,7 +5765,6 @@
       "Does not work on mini-bosses and bosses",
       "Kills poop bosses when used - Dingle, Dangle and Brownie",
       "Counts as 1 of 3 poop items needed towards the Oh Crap transformation"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room pool, silver spoon handle, grey, gray, white, toilet",
@@ -5553,7 +5776,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "..."
   },
   {
     "id": "292",
@@ -5563,7 +5787,6 @@
       "Using this book once before the boss dies, causes the boss item on the current floor to become a devil deal instead, where it will cost heart containers to pick up. Taking this item DOES count as a devil deal, preventing future angel rooms.",
       "When depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect",
       "Counts as 1 of 3 book items needed towards the Bookworm transformation"
-      
     ],
     "quality": "4",
     "unlock": "Unlock this item by beating the Isaac boss with Azazel",
@@ -5578,7 +5801,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Reusable evil... but at what cost?"
   },
   {
     "id": "293",
@@ -5588,7 +5812,6 @@
       "Laser damage does not scale with your damage stat - its a fixed 10 damage per tick for 20 ticks (200 total per use)",
       "Has a chance to drop after you beat Krampus",
       "If you get close enough to an enemy that has a large hitbox, you can hit it with 2 of the laser beams, allowing you to deal more damage"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by beating Krampus (Krampus is unlocked by taking 20 devil deal items)",
@@ -5601,7 +5824,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Krampus rage"
   },
   {
     "id": "294",
@@ -5610,7 +5834,6 @@
       "When used, farts on nearby enemies and knocks them backwards forcefully away from Isaac",
       "Allows you to reflect projectiles away from Isaac",
       "If a pushed enemy hits a rock or wall forcefully enough, they take 10 damage"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by destroying 100 poops",
@@ -5624,7 +5847,8 @@
     ],
     "recharge_time": [
       "Timed (A few seconds)"
-    ]
+    ],
+    "pickup": "Reusable knockback"
   },
   {
     "id": "295",
@@ -5632,7 +5856,6 @@
     "description": [
       "Upon use, consumes a coin and deals damage to everything in the room",
       "Damage dealt is equal to your tear damage * 2 + 10"
-      
     ],
     "quality": "1",
     "tags": "* shop room pool, shop item pool, item room, treasure room, item room pool, tissue, box, yellow, grey",
@@ -5645,7 +5868,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Pay to play"
   },
   {
     "id": "296",
@@ -5653,7 +5877,6 @@
     "description": [
       "When used, converts 1 soul/black heart into 1 red heart container",
       "This item will take from your soul hearts first"
-      
     ],
     "quality": "2",
     "tags": "* shop room pool, shop item pool, the lost item pool, blue, gray, grey, yellow, sprocket",
@@ -5665,7 +5888,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Convert your soul"
   },
   {
     "id": "297",
@@ -5682,7 +5906,6 @@
       "Home: Gives Red Key.",
       "Pandora's Box considers XL floors to always be the first floor of a chapter",
       "Alternative floors drop the same stuff e.g. Corpse II drops same as Womb II"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by beating the Dark Room with Lazarus",
@@ -5696,7 +5919,8 @@
     ],
     "recharge_time": [
       "One time use"
-    ]
+    ],
+    "pickup": "? ?"
   },
   {
     "id": "298",
@@ -5706,7 +5930,6 @@
       "You cannot fire tears while the stump is active",
       "Very similar to the My Little Unicorn item but does not deal contact damage",
       "When used with Mom's Knife, you can still deal contact damage but will be unable to change the way the knife faces while the effect is active"
-      
     ],
     "quality": "1",
     "tags": "* item room, treasure room, item room pool, white, lump, grey, gray, blob",
@@ -5718,7 +5941,8 @@
     ],
     "recharge_time": [
       "1 room"
-    ]
+    ],
+    "pickup": "You feel stumped"
   },
   {
     "id": "299",
@@ -5737,7 +5961,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Speed down + rage is building"
   },
   {
     "id": "300",
@@ -5755,7 +5980,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Ramming speed"
   },
   {
     "id": "301",
@@ -5772,7 +5998,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Yay, cancer!"
   },
   {
     "id": "302",
@@ -5791,7 +6018,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Stompy"
   },
   {
     "id": "303",
@@ -5809,7 +6037,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "You feel refreshed and protected"
   },
   {
     "id": "304",
@@ -5829,7 +6058,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "You feel balanced"
   },
   {
     "id": "305",
@@ -5846,7 +6076,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Poison tears"
   },
   {
     "id": "306",
@@ -5864,7 +6095,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Penetrative shot + speed up"
   },
   {
     "id": "307",
@@ -5886,7 +6118,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "All stats up"
   },
   {
     "id": "308",
@@ -5903,7 +6136,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "A trail of tears"
   },
   {
     "id": "309",
@@ -5921,7 +6155,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Tears up + knockback shot"
   },
   {
     "id": "310",
@@ -5940,7 +6175,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Shot speed down + DMG up"
   },
   {
     "id": "311",
@@ -5959,7 +6195,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "Sweet revenge"
   },
   {
     "id": "312",
@@ -5977,7 +6214,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "HP up + you feel healthy"
   },
   {
     "id": "313",
@@ -5997,7 +6235,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Holy shield"
   },
   {
     "id": "314",
@@ -6017,7 +6256,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "HP + speed down + you feel strong"
   },
   {
     "id": "315",
@@ -6033,7 +6273,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Magnetic tears"
   },
   {
     "id": "316",
@@ -6054,7 +6295,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "Cursed charged shot"
   },
   {
     "id": "317",
@@ -6069,7 +6311,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Toxic splash damage"
   },
   {
     "id": "318",
@@ -6086,7 +6329,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Conjoined friend"
   },
   {
     "id": "319",
@@ -6104,7 +6348,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Near sighted friend"
   },
   {
     "id": "320",
@@ -6122,7 +6367,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Controlled friend"
   },
   {
     "id": "321",
@@ -6142,7 +6388,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "The ol' ball and chain"
   },
   {
     "id": "322",
@@ -6161,7 +6408,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Mongo friend"
   },
   {
     "id": "323",
@@ -6169,7 +6417,6 @@
     "description": [
       "A spacebar item that fires 8 of Isaac's tears in a circle around him",
       "Tears spawned from this item keep most effect that Isaac currently has applied to his tears, and deal an additional +5 flat damage"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by beating the Isaac boss with Isaac",
@@ -6182,7 +6429,8 @@
     ],
     "recharge_time": [
       "1 bar per tear fired"
-    ]
+    ],
+    "pickup": "Collected tears"
   },
   {
     "id": "324",
@@ -6190,7 +6438,6 @@
     "description": [
       "Upon use, teleports you to one of the following rooms at random: Item room, Secret room, Super secret room, the I AM ERROR room or the Black Market (very low chance)",
       "There are no I AM ERROR rooms on the final floors, preventing looping with this item"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by beating Boss Rush with Eden",
@@ -6203,7 +6450,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Undefined"
   },
   {
     "id": "325",
@@ -6212,7 +6460,6 @@
       "When used will cut your head from your body. Isaac's head will remain stationary and fire tears. His body can be controlled and spews blood nearby",
       "Tears fired by the head do a flat 3.5 damage and don't scale",
       "REPENTANCE - Scissors has been redesigned. The stationary head is now affected by Isaac's stats and attack modifiers, and the body will spew a controllable fountain of blood shots. Charge time increased to 4 (from 2)"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by dying 100 times",
@@ -6225,7 +6472,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Lose your head"
   },
   {
     "id": "326",
@@ -6236,7 +6484,6 @@
       "During the invincibility period, Isaac deals 3.5 contact damage to enemies and beams of light will strike down from the sky, dealing 15 damage",
       "If damage is blocked perfectly at the exact second the charge bar reaches zero, it will release holy beams in four directions and grant a brief shile effect",
       "The invincibility effect is shown via a rapid flashing animation"
-      
     ],
     "quality": "1",
     "tags": "* angel room pool, god room pool, angel room item, white, blue, ball, circle",
@@ -6248,7 +6495,8 @@
     ],
     "recharge_time": [
       "Timed (1 bar per second)"
-    ]
+    ],
+    "pickup": "Invincibility at a cost"
   },
   {
     "id": "327",
@@ -6268,7 +6516,8 @@
     ],
     "item_pool": [
       "None (Mom's foot boss only)"
-    ]
+    ],
+    "pickup": "Fate chosen"
   },
   {
     "id": "328",
@@ -6289,7 +6538,8 @@
     ],
     "item_pool": [
       "None (Mom's foot boss only)"
-    ]
+    ],
+    "pickup": "Fate chosen"
   },
   {
     "id": "329",
@@ -6309,7 +6559,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Controlled tears"
   },
   {
     "id": "330",
@@ -6328,7 +6579,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "DMG down + tears way up"
   },
   {
     "id": "331",
@@ -6350,7 +6602,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "God tears"
   },
   {
     "id": "332",
@@ -6369,7 +6622,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Eternal life?"
   },
   {
     "id": "333",
@@ -6386,7 +6640,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "I know all"
   },
   {
     "id": "334",
@@ -6404,7 +6659,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "I feel all"
   },
   {
     "id": "335",
@@ -6422,7 +6678,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "I am all"
   },
   {
     "id": "336",
@@ -6441,7 +6698,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Toxic aura tears"
   },
   {
     "id": "337",
@@ -6458,7 +6716,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "I think its broken"
   },
   {
     "id": "338",
@@ -6470,7 +6729,6 @@
       "The range of the boomerang is affected by range, with number one the distance is very short and makes the item a lot less effective",
       "The Boomerang can be used to kill shopkeeper corpses, allowing you to farm their drops for coins, items, Steam Sale etc",
       "REPENTANCE - Boomerang is now piercing, and has far less downtime between throwing it and being able to fire tears again"
-      
     ],
     "quality": "1",
     "tags": "* shop room pool, shop item pool, crescent, moon, blue, grey, gray",
@@ -6482,7 +6740,8 @@
     ],
     "recharge_time": [
       "Timed (A few seconds)"
-    ]
+    ],
+    "pickup": "It will never leave you"
   },
   {
     "id": "339",
@@ -6500,7 +6759,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "Evil up + range + shot speed"
   },
   {
     "id": "340",
@@ -6518,7 +6778,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "Speed up + size down"
   },
   {
     "id": "341",
@@ -6535,7 +6796,8 @@
     "item_pool": [
       "Boss Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Tears + shot speed up"
   },
   {
     "id": "342",
@@ -6555,7 +6817,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "HP + tears + shot speed down"
   },
   {
     "id": "343",
@@ -6574,7 +6837,8 @@
       "Boss Room",
       "Gold/Stone Chest",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Luck up"
   },
   {
     "id": "344",
@@ -6593,7 +6857,8 @@
     "item_pool": [
       "Boss Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Evil up"
   },
   {
     "id": "345",
@@ -6610,7 +6875,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "DMG up + range"
   },
   {
     "id": "346",
@@ -6626,7 +6892,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "347",
@@ -6637,7 +6904,6 @@
       "If used on a trinket, another random trinket will spawn instead of a duplicate",
       "If used in the Boss Rush, all the duplicates can be taken for free as well as one of the original items",
       "If used in a Devil Room or Black Market, the duplicates can be taken for free"
-      
     ],
     "quality": "3",
     "tags": "*, white, button, eye",
@@ -6649,7 +6915,8 @@
     ],
     "recharge_time": [
       "Instant (One time use)"
-    ]
+    ],
+    "pickup": "Double item vision"
   },
   {
     "id": "348",
@@ -6658,7 +6925,6 @@
       "When used, copies the effect of the pill you are currently holding without consuming it",
       "The charge time of this item depends on the quality of the pill you're holding",
       "Does not copy effects of Cards or Runes"
-      
     ],
     "quality": "2",
     "tags": "*, grey, gray, white, medicine, tablet",
@@ -6671,7 +6937,8 @@
     ],
     "recharge_time": [
       "Varies"
-    ]
+    ],
+    "pickup": "Pill mimic"
   },
   {
     "id": "349",
@@ -6679,7 +6946,6 @@
     "description": [
       "When used, has a 50% chance to drop one random type of coin (penny, nickel or dime)",
       "Keeper starts with this item after beating Isaac with Keeper"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by donating 33 coins to the Greed Donation Machine",
@@ -6693,7 +6959,8 @@
     ],
     "recharge_time": [
       "1 room"
-    ]
+    ],
+    "pickup": "Flip a coin"
   },
   {
     "id": "350",
@@ -6711,7 +6978,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Mass poison"
   },
   {
     "id": "351",
@@ -6721,7 +6989,6 @@
       "The enemies in close range will take 5 damage then have a poison over time effect which deals your tear damage 4 or 6 times",
       "The spike wave will deal 10 damage to any enemies in contact with it",
       "Can be used to open secret rooms"
-      
     ],
     "quality": "1",
     "tags": "*, pink, kidney",
@@ -6734,7 +7001,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Giga fart!"
   },
   {
     "id": "352",
@@ -6745,7 +7013,6 @@
       "When you take damage and the cannon breaks, you take an additional 2 full hearts of damage and gain the Anemic effect for the room.",
       "The damage done by Glass Cannon is calculated as follows: dmg = (dmg * 10) + 10 (i.e. at base damage of 3.5, that's 45 damage)",
       "Self-inflicted damage such as Blood Donation machines don't trigger this effect"
-      
     ],
     "quality": "1",
     "tags": "*, silver",
@@ -6758,7 +7025,8 @@
     ],
     "recharge_time": [
       "5 seconds"
-    ]
+    ],
+    "pickup": "Be gentle..."
   },
   {
     "id": "353",
@@ -6777,7 +7045,8 @@
       "Item Room",
       "Greed Mode Item Room",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "Explosive blast!"
   },
   {
     "id": "354",
@@ -6794,7 +7063,8 @@
     "item_pool": [
       "Boss Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Don't swallow the prize!"
   },
   {
     "id": "355",
@@ -6814,7 +7084,8 @@
       "Boss Room",
       "Gold/Stone Chest",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "Range + luck up"
   },
   {
     "id": "356",
@@ -6831,7 +7102,8 @@
     "item_pool": [
       "Shop",
       "Greed Mode Shop"
-    ]
+    ],
+    "pickup": "Double charge!"
   },
   {
     "id": "357",
@@ -6842,7 +7114,6 @@
       "If the familiar only appears when taking damage (i.e. Dead Bird) then Box of Friends will cause it to spawn but won't create duplicates",
       "This can be used multiple times in the same room to generate more familiars, meaning you can get a level 4 meatboy or bandage girl by using this item 3 times in the same room",
       "If used when you have no familiars, it will give you a Demon Baby temporarily"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by beating Greed Mode with Lilith",
@@ -6856,7 +7127,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Double your friends"
   },
   {
     "id": "358",
@@ -6873,7 +7145,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Double wiz shot!"
   },
   {
     "id": "359",
@@ -6892,7 +7165,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Stick it to 'em!"
   },
   {
     "id": "360",
@@ -6914,7 +7188,8 @@
     "item_pool": [
       "Devil Room",
       "Greed Mode Devil Room"
-    ]
+    ],
+    "pickup": "Dark friend"
   },
   {
     "id": "361",
@@ -6932,7 +7207,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Your fate beside you"
   },
   {
     "id": "362",
@@ -6953,7 +7229,8 @@
       "Item Room",
       "Greed Mode Item Room",
       "Beggar"
-    ]
+    ],
+    "pickup": "What's in the box?"
   },
   {
     "id": "363",
@@ -6976,7 +7253,8 @@
     "item_pool": [
       "Angel Room",
       "Greed Mode Angel Room"
-    ]
+    ],
+    "pickup": "Protective friend"
   },
   {
     "id": "364",
@@ -6996,7 +7274,8 @@
       "Item Room",
       "Greed Mode Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Friendly fly"
   },
   {
     "id": "365",
@@ -7017,7 +7296,8 @@
       "Item Room",
       "Greed Mode Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Lost protector"
   },
   {
     "id": "366",
@@ -7036,7 +7316,8 @@
       "Item Room",
       "Greed Mode Item Room",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "We put bombs in your bombs!"
   },
   {
     "id": "367",
@@ -7058,7 +7339,8 @@
       "Greed Mode Item Room",
       "Bomb Beggar",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "Egg sack bombs!"
   },
   {
     "id": "368",
@@ -7077,7 +7359,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Intensifying tears"
   },
   {
     "id": "369",
@@ -7095,7 +7378,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Transcendent tears"
   },
   {
     "id": "370",
@@ -7113,7 +7397,8 @@
     "item_pool": [
       "Boss Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Range + tears up"
   },
   {
     "id": "371",
@@ -7132,7 +7417,8 @@
       "Red Chest",
       "Curse Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "You feel cursed..."
   },
   {
     "id": "372",
@@ -7151,7 +7437,8 @@
     "item_pool": [
       "Shop",
       "Greed Mode Shop"
-    ]
+    ],
+    "pickup": "Bbbzzzzzt!"
   },
   {
     "id": "373",
@@ -7170,7 +7457,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Accuracy brings power!"
   },
   {
     "id": "374",
@@ -7190,7 +7478,8 @@
       "Item Room",
       "Greed Mode Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Holy shot!"
   },
   {
     "id": "375",
@@ -7209,7 +7498,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Nice hat!"
   },
   {
     "id": "376",
@@ -7229,7 +7519,8 @@
     "item_pool": [
       "Shop",
       "Beggar"
-    ]
+    ],
+    "pickup": "Never ending stores!"
   },
   {
     "id": "377",
@@ -7247,7 +7538,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Spider love"
   },
   {
     "id": "378",
@@ -7266,7 +7558,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Uh oh..."
   },
   {
     "id": "379",
@@ -7283,7 +7576,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Wide shot"
   },
   {
     "id": "380",
@@ -7303,7 +7597,8 @@
       "Shop",
       "Greed Mode Item Room",
       "Greed Mode Shop"
-    ]
+    ],
+    "pickup": "Money talks"
   },
   {
     "id": "381",
@@ -7321,7 +7616,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Your future shines brighter"
   },
   {
     "id": "382",
@@ -7331,7 +7627,6 @@
       "After capturing an enemy, the next use of the Friendly Ball will re-spawn the same enemy as a friendly companion which will attack other enemies",
       "The companion will persist between rooms and floors until it dies by taking enough damage",
       "Walking over the thrown ball after capturing an enemy will immediately recharge it"
-      
     ],
     "quality": "1",
     "tags": "*, pokemon, grey, gray, blue, deathstar, circle",
@@ -7344,7 +7639,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Gotta fetch 'em all!"
   },
   {
     "id": "383",
@@ -7352,7 +7648,6 @@
     "description": [
       "When used, will detonate any tears currently on the screen and cause each one to split into 6 more tears which will fire in a circle, similar to Tammy's Head",
       "Luck-based items such as Holy Light are applied to each tear individually"
-      
     ],
     "quality": "1",
     "tags": "*, blue, tnt, boom",
@@ -7365,7 +7660,8 @@
     ],
     "recharge_time": [
       "15 seconds"
-    ]
+    ],
+    "pickup": "Remote tear detonation"
   },
   {
     "id": "384",
@@ -7385,7 +7681,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "A gurd of your own!"
   },
   {
     "id": "385",
@@ -7406,14 +7703,14 @@
     "item_pool": [
       "Item Room",
       "Beggar"
-    ]
+    ],
+    "pickup": "Bumbo want coin!"
   },
   {
     "id": "386",
     "name": "D12",
     "description": [
       "When used, the D12 re-rolls any rocks into another random type of object (e.g. poop, pots, TNT, red poop, stone blocks, spikes, fireplaces etc.)"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by beating Blue Womb (Hush) with Cain",
@@ -7427,7 +7724,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Rerolls rocks"
   },
   {
     "id": "387",
@@ -7445,7 +7743,8 @@
     "item_pool": [
       "Angel Room",
       "Greed Mode Angel Room"
-    ]
+    ],
+    "pickup": "Peace be with you"
   },
   {
     "id": "388",
@@ -7466,7 +7765,8 @@
       "Item Room",
       "Secret Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "He wants your keys!"
   },
   {
     "id": "389",
@@ -7484,7 +7784,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "Rune generator"
   },
   {
     "id": "390",
@@ -7503,7 +7804,8 @@
       "Item Room",
       "Angel Room",
       "Greed Mode Angel Room"
-    ]
+    ],
+    "pickup": "Sworn friend"
   },
   {
     "id": "391",
@@ -7522,7 +7824,8 @@
       "Greed Mode Item Room",
       "Devil Room",
       "Greed Mode Devil Room"
-    ]
+    ],
+    "pickup": "Turn your enemy"
   },
   {
     "id": "392",
@@ -7541,7 +7844,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "The heavens will change you"
   },
   {
     "id": "393",
@@ -7560,7 +7864,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "The kiss of death"
   },
   {
     "id": "394",
@@ -7582,7 +7887,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Directed tears"
   },
   {
     "id": "395",
@@ -7603,7 +7909,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Laser ring tears"
   },
   {
     "id": "396",
@@ -7612,7 +7919,6 @@
       "Allows you to create one brown tunnel and one blue tunnel in the floor, that can be used to teleport between wherever you placed each one",
       "This item will let you port out of the devil room but not back into it",
       "Very useful in the boss rush and challenge rooms"
-      
     ],
     "quality": "1",
     "tags": "*, scalpel, red, silver, white, grey, gray, metal, knife, cut",
@@ -7624,7 +7930,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Short cutter"
   },
   {
     "id": "397",
@@ -7646,7 +7953,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Controlled tears"
   },
   {
     "id": "398",
@@ -7664,7 +7972,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Shrink shot!"
   },
   {
     "id": "399",
@@ -7684,7 +7993,8 @@
     "item_pool": [
       "Devil Room",
       "Greed Mode Devil Room"
-    ]
+    ],
+    "pickup": "Consume thy enemy!"
   },
   {
     "id": "400",
@@ -7702,7 +8012,8 @@
     "item_pool": [
       "Angel Room",
       "Greed Mode Angel Room"
-    ]
+    ],
+    "pickup": "Your destiny"
   },
   {
     "id": "401",
@@ -7720,7 +8031,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Sticky bomb shot!"
   },
   {
     "id": "402",
@@ -7740,7 +8052,8 @@
     "item_pool": [
       "Shop",
       "Secret Room"
-    ]
+    ],
+    "pickup": "!!!"
   },
   {
     "id": "403",
@@ -7760,7 +8073,8 @@
     "item_pool": [
       "Shop",
       "Greed Mode Shop"
-    ]
+    ],
+    "pickup": "Mod buddy!"
   },
   {
     "id": "404",
@@ -7780,7 +8094,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "He farts!"
   },
   {
     "id": "405",
@@ -7801,7 +8116,8 @@
       "Item Room",
       "Secret Room",
       "Greed Mode Shop"
-    ]
+    ],
+    "pickup": "Game breaking bug, right away!"
   },
   {
     "id": "406",
@@ -7810,7 +8126,6 @@
       "When used, the D8 rerolls all of your stats",
       "Will only effect your damage, tears, range and speed stats",
       "Each stat is given a multiplier that applies after all other adjustments"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by beating Challenge #28 (Pride Day)",
@@ -7824,7 +8139,8 @@
     ],
     "recharge_time": [
       "4 Rooms"
-    ]
+    ],
+    "pickup": "Reroll stats"
   },
   {
     "id": "407",
@@ -7849,7 +8165,8 @@
       "Angel Room",
       "Greed Mode Item Room",
       "Greed Mode Angel Room"
-    ]
+    ],
+    "pickup": "Aura stat boost"
   },
   {
     "id": "408",
@@ -7869,7 +8186,8 @@
       "Devil Room",
       "Curse Room",
       "Greed Mode Devil Room"
-    ]
+    ],
+    "pickup": "Call to the void"
   },
   {
     "id": "409",
@@ -7888,7 +8206,8 @@
     "item_pool": [
       "Devil Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "I reward an empty vessel"
   },
   {
     "id": "410",
@@ -7906,7 +8225,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Eye shot!"
   },
   {
     "id": "411",
@@ -7926,7 +8246,8 @@
       "Item Room",
       "Devil Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Their blood brings rage!"
   },
   {
     "id": "412",
@@ -7948,7 +8269,8 @@
     "item_pool": [
       "Devil Room",
       "Greed Mode Devil Room"
-    ]
+    ],
+    "pickup": "Feed them hate"
   },
   {
     "id": "413",
@@ -7968,7 +8290,8 @@
     "item_pool": [
       "Angel Room",
       "Greed Mode Angel Room"
-    ]
+    ],
+    "pickup": "Feed them love"
   },
   {
     "id": "414",
@@ -7984,7 +8307,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "There are even more options!"
   },
   {
     "id": "415",
@@ -8004,7 +8328,8 @@
     "item_pool": [
       "Angel Room",
       "Greed Mode Angel Room"
-    ]
+    ],
+    "pickup": "The untainted gain power"
   },
   {
     "id": "416",
@@ -8024,7 +8349,8 @@
       "Shop",
       "Greed Mode Item Room",
       "Greed Mode Shop"
-    ]
+    ],
+    "pickup": "More stuff to carry!"
   },
   {
     "id": "417",
@@ -8044,7 +8370,8 @@
     "item_pool": [
       "Devil Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Damage booster"
   },
   {
     "id": "418",
@@ -8062,7 +8389,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Rainbow effects!"
   },
   {
     "id": "419",
@@ -8072,7 +8400,6 @@
       "After all the normal rooms have been explored, the hierarchy of rooms chosen is: Super Secret Room, Shop, Item Room, Sacrifice Room, Dice Room, Library, Curse Room, Miniboss, Challenge Room, Bedroom, Arcade, Vault, Secret Room, Devil/Angel Room, I AM ERROR",
       "This ordering means a Devil and I Am Error room can both be forced if all others have been visited",
       "If used in a normal room with enemies it will teleport you out and back into the exact same room"
-      
     ],
     "quality": "3",
     "tags": "*, golden, yellow, robot, antenna, black, teleport two, teleport 20",
@@ -8084,7 +8411,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "I-teleport!"
   },
   {
     "id": "420",
@@ -8102,7 +8430,8 @@
     "item_pool": [
       "Devil Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Spin the black circle!"
   },
   {
     "id": "421",
@@ -8111,7 +8440,6 @@
       "When used, applies the charm effect to any enemies in close range and deals 5 damage",
       "Charmed enemies will prioritize attacking other enemies in the room, otherwise they will still attack Isaac",
       "REPENTANCE - Kidney Bean now has a bigger effect radius, no longer deals damage to the enemies it's charming, and charge time has been reduced to 1 (from 2)."
-      
     ],
     "quality": "1",
     "tags": "*, red",
@@ -8124,7 +8452,8 @@
     ],
     "recharge_time": [
       "1 Rooms"
-    ]
+    ],
+    "pickup": "Love toots!"
   },
   {
     "id": "422",
@@ -8134,7 +8463,6 @@
       "This means any damage taken or consumables used in the current room will be reset back to the previous state",
       "Can be used to check the contents of an Item Room without affecting Planetarium spawn chances",
       "Glowing Hour Glass has no cooldown, but can only be used 3 times per floor"
-      
     ],
     "quality": "3",
     "tags": "* hourglass, hour glass, egg, timer, blue, brown Glowing Hourglass",
@@ -8148,7 +8476,8 @@
     ],
     "recharge_time": [
       "None (Max 3 use per floor)"
-    ]
+    ],
+    "pickup": "Turn back time"
   },
   {
     "id": "423",
@@ -8165,7 +8494,8 @@
     "item_pool": [
       "Angel Room",
       "Greed Mode Angel Room"
-    ]
+    ],
+    "pickup": "Protect me from myself"
   },
   {
     "id": "424",
@@ -8184,7 +8514,8 @@
     "item_pool": [
       "Shop",
       "Secret Room"
-    ]
+    ],
+    "pickup": "More sacks!"
   },
   {
     "id": "425",
@@ -8202,7 +8533,8 @@
     "item_pool": [
       "Shop",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Scared of the dark?"
   },
   {
     "id": "426",
@@ -8220,7 +8552,8 @@
     "item_pool": [
       "Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Follows my every move..."
   },
   {
     "id": "427",
@@ -8229,7 +8562,6 @@
       "When used, places an explosive TNT barrel next to you",
       "The TNT barrel can be pushed and used to explode rocks or damage enemies",
       "If used a second time in the same room while the last TNT barrel is still there, it will remotely explode the first TNT and not spawn another"
-      
     ],
     "quality": "1",
     "tags": "*, orange, brown",
@@ -8241,7 +8573,8 @@
     ],
     "recharge_time": [
       "1 room"
-    ]
+    ],
+    "pickup": "Booom!"
   },
   {
     "id": "428",
@@ -8259,7 +8592,8 @@
     "item_pool": [
       "Boss Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "You feel cozy"
   },
   {
     "id": "429",
@@ -8275,7 +8609,8 @@
     ],
     "item_pool": [
       "Dead shopkeeper"
-    ]
+    ],
+    "pickup": "Penny tears!"
   },
   {
     "id": "430",
@@ -8294,7 +8629,8 @@
     "item_pool": [
       "Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Turret follower"
   },
   {
     "id": "431",
@@ -8315,7 +8651,8 @@
       "Greed Mode Item Room",
       "Devil Room",
       "Greed Mode Devil Room"
-    ]
+    ],
+    "pickup": "ydduB Buddy"
   },
   {
     "id": "432",
@@ -8335,7 +8672,8 @@
     "item_pool": [
       "Item Room",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "Prize bombs!"
   },
   {
     "id": "433",
@@ -8354,7 +8692,8 @@
     "item_pool": [
       "Devil Room",
       "Greed Mode Devil Room"
-    ]
+    ],
+    "pickup": "Me! And my shaaaadow!"
   },
   {
     "id": "434",
@@ -8363,7 +8702,6 @@
       "Every time you kill an enemy a fly will be added to the Jar, allowing you to stack up to 20",
       "Using the Jar of Flies will release all the flies that are currently in the jar as friendly flies that will damage enemies",
       "Counts as 1 of 3 fly items needed towards the Beelzebub transformation"
-      
     ],
     "quality": "2",
     "tags": "*, glass, bottle",
@@ -8377,7 +8715,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Gotta catch 'em all?"
   },
   {
     "id": "435",
@@ -8392,7 +8731,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "4-way buddy!"
   },
   {
     "id": "436",
@@ -8410,7 +8750,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Dont cry over it..."
   },
   {
     "id": "437",
@@ -8421,7 +8762,6 @@
       "This item has no effect in Greed Mode, Challenge Rooms and rooms that had no enemies in originally",
       "If used in a Boss Room or Angel/Devil Room, you get teleported to another random room, which is reset instead of the boss/angel/devil room you were in",
       "Enemies respawned by the D7 don't drop loot if they were champions and also don't grant score in daily run"
-      
     ],
     "quality": "1",
     "tags": "* dice, pip, die, turban, white, grey, gray, dice effect",
@@ -8433,7 +8773,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Reroll rewards!"
   },
   {
     "id": "438",
@@ -8452,7 +8793,8 @@
     "item_pool": [
       "Boss Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Memories..."
   },
   {
     "id": "439",
@@ -8461,7 +8803,6 @@
       "When used, Mom's Box will drop a random trinket on the ground",
       "+1 Luck while held",
       "While held, doubles the effect of trinkets which make sense to be doubled (e.g. +4 damage from Curved Horn instead of 2, -4 Tear Delay from Cancer instead of 2)"
-      
     ],
     "quality": "2",
     "tags": "*, black, purple, mom box, moms box",
@@ -8475,7 +8816,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "What's inside?"
   },
   {
     "id": "440",
@@ -8493,7 +8835,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Matt's kidney stone"
   },
   {
     "id": "441",
@@ -8502,7 +8845,6 @@
       "Upon use, fires a huge Mega Satan laser for 15 seconds, dealing your tear damage * 5 per tick to anything in its path and pushing Isaac back by the force",
       "The laser persists for the entire 15 seconds even between rooms and floors",
       "This item appears in the Devil Room but is weighted to be about 5 times rarer than all other devil room items"
-      
     ],
     "quality": "4",
     "unlock": "Unlock this item by beating Mega Satan with every character",
@@ -8516,7 +8858,8 @@
     ],
     "recharge_time": [
       "12 rooms"
-    ]
+    ],
+    "pickup": "Laser breath"
   },
   {
     "id": "442",
@@ -8536,7 +8879,8 @@
     "item_pool": [
       "Devil Room",
       "Curse Room"
-    ]
+    ],
+    "pickup": "Loss is power"
   },
   {
     "id": "443",
@@ -8554,7 +8898,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Trick or treat?"
   },
   {
     "id": "444",
@@ -8572,7 +8917,8 @@
     "item_pool": [
       "Item Room",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Hes a bleeder!"
   },
   {
     "id": "445",
@@ -8590,7 +8936,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Bark at the moon!"
   },
   {
     "id": "446",
@@ -8606,7 +8953,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Halitosis"
   },
   {
     "id": "447",
@@ -8625,7 +8973,8 @@
     "item_pool": [
       "Item Room",
       "Beggar"
-    ]
+    ],
+    "pickup": "Crying makes me toot"
   },
   {
     "id": "448",
@@ -8646,7 +8995,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Blood and guts!"
   },
   {
     "id": "449",
@@ -8662,7 +9012,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "It itches..."
   },
   {
     "id": "450",
@@ -8681,7 +9032,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Gold tears!"
   },
   {
     "id": "451",
@@ -8700,7 +9052,8 @@
     "item_pool": [
       "Shop",
       "Curse Room"
-    ]
+    ],
+    "pickup": "I see the future"
   },
   {
     "id": "452",
@@ -8718,7 +9071,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "I'm leaking..."
   },
   {
     "id": "453",
@@ -8736,7 +9090,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Bone tears!"
   },
   {
     "id": "454",
@@ -8752,7 +9107,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Hold me!"
   },
   {
     "id": "455",
@@ -8771,7 +9127,8 @@
       "Boss Room",
       "Beggar",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "I remember this..."
   },
   {
     "id": "456",
@@ -8789,7 +9146,8 @@
       "Boss Room",
       "Beggar",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "457",
@@ -8806,7 +9164,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Hard headed!"
   },
   {
     "id": "458",
@@ -8822,7 +9181,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Whats in there?"
   },
   {
     "id": "459",
@@ -8839,7 +9199,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Booger tears!"
   },
   {
     "id": "460",
@@ -8857,7 +9218,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Blind tears!"
   },
   {
     "id": "461",
@@ -8875,7 +9237,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Egg tears!"
   },
   {
     "id": "462",
@@ -8893,7 +9256,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "Possessed tears!"
   },
   {
     "id": "463",
@@ -8910,7 +9274,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Acid tears!"
   },
   {
     "id": "464",
@@ -8938,7 +9303,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "A gift from above"
   },
   {
     "id": "465",
@@ -8955,7 +9321,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "360 tears!"
   },
   {
     "id": "466",
@@ -8971,7 +9338,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Outbreak!"
   },
   {
     "id": "467",
@@ -8990,7 +9358,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Watch where you point that!"
   },
   {
     "id": "468",
@@ -9009,7 +9378,8 @@
     "item_pool": [
       "Devil Room",
       "Curse Room"
-    ]
+    ],
+    "pickup": "It follows"
   },
   {
     "id": "469",
@@ -9026,7 +9396,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": ":("
   },
   {
     "id": "470",
@@ -9045,7 +9416,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Lil hush!"
   },
   {
     "id": "471",
@@ -9062,7 +9434,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Ain't he cute?"
   },
   {
     "id": "472",
@@ -9082,7 +9455,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Lord of the dead!"
   },
   {
     "id": "473",
@@ -9100,7 +9474,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Chub chub"
   },
   {
     "id": "475",
@@ -9112,7 +9487,6 @@
       "If used to kill a boss, the kill still counts as a victory for post-it note completion marks, but the run will still get a game over",
       "Delirium's death animation takes longer than 3 seconds, meaning you will die before it can count as a completion mark. One exception to this is if you are playing as Lazarus or have Lazarus' Rags - you will respawn in the same room and get the kill",
       "Plan C is 5 times rarer than other items in the same item pool, making it less likely to appear"
-      
     ],
     "quality": "0",
     "unlock": "Unlock this item by defeating Greedier Mode with Lazarus",
@@ -9129,7 +9503,8 @@
     ],
     "recharge_time": [
       "One time use"
-    ]
+    ],
+    "pickup": "My last resort"
   },
   {
     "id": "476",
@@ -9139,7 +9514,6 @@
       "Jera runes and trinkets cannot be duplicated using the D1",
       "Duplicated chests can turn into another kind of chest randomly (e.g. Red chests)",
       "Can be used in a shop to duplicate pickups which have not yet been purchased, and take the duplicate pickup for free"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating Greedier Mode with Isaac",
@@ -9152,7 +9526,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "What will it be?"
   },
   {
     "id": "477",
@@ -9165,7 +9540,6 @@
       "Void does not work on devil deal or shop items unless they have been bought first",
       "Using Void to absorb items in Boss Rush or Challenge Rooms counts as taking the items and will cause the encounter to start",
       "Using Void on one time use items such as Mama Mega or Diplopia will cause their effect to instantly trigger and will not give you further uses through activating Void again"
-      
     ],
     "quality": "4",
     "unlock": "Unlock this item by beating Delirium in The Void floor with Apollyon",
@@ -9179,7 +9553,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Consume"
   },
   {
     "id": "478",
@@ -9189,7 +9564,6 @@
       "Unlike other active items, bosses are not immune to this effect",
       "Touching a frozen enemy will still hurt you",
       "This item doesn not affect troll bombs - they will still explode"
-      
     ],
     "quality": "1",
     "tags": "*, green, robot, antenna",
@@ -9201,7 +9575,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Stop!"
   },
   {
     "id": "479",
@@ -9210,7 +9585,6 @@
       "Upon use, the Smelter will destroy your currently held trinket and give you the effect permanently, allowing you to stack up lots of different trinket effects",
       "Holding the Smelter increases the chance for a trinket to drop. (2% chance for the end of room drop to become a trinket)",
       "If a trinket has been smelted, it won't appear a second time unless the entire trinket pool is exhausted or you restart the run (e.g. by doing a victory lap)"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by beating Mom's Heart on Hard Mode with Apollyon",
@@ -9223,7 +9597,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Trinket melter!"
   },
   {
     "id": "480",
@@ -9232,7 +9607,6 @@
       "When used, Compost doubles up the current number of blue flies and spiders you have",
       "When picked up, Compost will also destroy every consumable on the ground in the current room and turn each of them into a blue fly or blue spider",
       "If you have no pickups on the ground in the current room and no other flies or spiders, Compost will spawn 1 blue fly or blue spider"
-      
     ],
     "quality": "1",
     "tags": "*, green, brown, grey, gray, ball, lump",
@@ -9244,7 +9618,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Gain more friends!"
   },
   {
     "id": "481",
@@ -9255,7 +9630,6 @@
       "Dataminer will randomly increase or decrease one of your stats by a small amount when used",
       "Gives you the Fruit Cake effect for the room when used, which will give a random tear effect with every tear fired",
       "All visual and tear effects reset after leaving the room"
-      
     ],
     "quality": "0",
     "tags": "* data miner, red, pickaxe, minecraft, pixel",
@@ -9267,7 +9641,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "109"
   },
   {
     "id": "482",
@@ -9279,7 +9654,6 @@
       "Cannot turn you into a character that isn't unlocked yet",
       "Also includes Lazarus II (Lazarus' revived form) and Dark Judas (effect of Judas' Shadow)",
       "It's also possible that this item will pick the same character, making it seem like nothing happened"
-      
     ],
     "quality": "0",
     "tags": "*, grey, gray, black, remote, zapper, changer, building",
@@ -9291,7 +9665,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Change"
   },
   {
     "id": "483",
@@ -9302,7 +9677,6 @@
       "Like all single-use items, this item cannot be absorbed and used multiple times by the Void item",
       "Entering a room with an angel statue will destroy it and automatically spawn one of the Angel mini bosses",
       "REPENTANCE - This now blows up machines, beggars and fireplaces too"
-      
     ],
     "quality": "3",
     "tags": "*, bomb, face, red, lips",
@@ -9315,7 +9689,8 @@
     ],
     "recharge_time": [
       "One time use"
-    ]
+    ],
+    "pickup": "BOOOOOOOOOM!"
   },
   {
     "id": "484",
@@ -9325,7 +9700,6 @@
       "Can be used to open secret rooms",
       "Visually this item is very similar to Butter Bean",
       "The rock waves can destroy destructible objects, e.g. poop"
-      
     ],
     "quality": "1",
     "tags": "*, white, yellow, bean",
@@ -9337,7 +9711,8 @@
     ],
     "recharge_time": [
       "10 seconds"
-    ]
+    ],
+    "pickup": "I can't believe it's not butter bean!"
   },
   {
     "id": "485",
@@ -9348,7 +9723,6 @@
       "If there are no consumables currently on the floor, Crooked Penny spawns 1 coin",
       "This item works with items which can be purchased such as shop items, allowing you to spawn a free version if the effect triggers",
       "If used in a shop and the effect fails, a Restock box can be used to restore the shop items. This mechanic is very useful on Greed and Greedier modes"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating Delirium in The Void floor with Keeper",
@@ -9363,14 +9737,14 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "50/50"
   },
   {
     "id": "486",
     "name": "Dull Razor",
     "description": [
       "Upon use this item hurts Isaac without actually taking health away, allowing you to activate any items which trigger when taking damage without losing health"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by defeating Delirium on The Void floor with Eve",
@@ -9383,7 +9757,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "I feel numb..."
   },
   {
     "id": "487",
@@ -9394,7 +9769,6 @@
       "Only works for red hearts and has no effect when used if you only have soul/black hearts",
       "Has no recharge time and can be used as often as you like",
       "It is possible to generate multiple meatboys by stacking more than 4 Cubes of Meat"
-      
     ],
     "quality": "2",
     "tags": "*, brown, metal, silver, grey, gray",
@@ -9407,7 +9781,8 @@
     ],
     "recharge_time": [
       "None"
-    ]
+    ],
+    "pickup": "A pound of flesh..."
   },
   {
     "id": "488",
@@ -9419,7 +9794,6 @@
       "Items do not grant consumable drops which would normally occur when that item is picked up",
       "Most flight-granting items have cosmetic effects only, and will not allow you to fly",
       "Items that usually give HP up will not give extra health when gained from Metronome"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by defeating Greedier Mode with Eden",
@@ -9432,7 +9806,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Waggles a finger"
   },
   {
     "id": "489",
@@ -9442,7 +9817,6 @@
       "Charge time scales based on the chosen dice, updating every time you use it",
       "Possible dice include: D1, D4, D6, D8, D10, D12, D20, D100",
       "REPENTANCE - This item was completely reworked for Repentance and no longer forces a random dice use each time. You can pick which dice you want to use."
-      
     ],
     "quality": "4",
     "unlock": "Unlock this item by defeating Delirium in The Void floor with Isaac",
@@ -9455,7 +9829,8 @@
     ],
     "recharge_time": [
       "Varies"
-    ]
+    ],
+    "pickup": "Reroll forever"
   },
   {
     "id": "490",
@@ -9463,7 +9838,6 @@
     "description": [
       "A one time use active item that when used, will spawn 2 random item pedestals from the item pool associated with the current room (e.g. in an Angel room, this will spawn 2 Angel room items)",
       "Starts with 0 charge and requires 12 charges to use"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by defeating Delirium in The Void floor with Eden",
@@ -9476,7 +9850,8 @@
     ],
     "recharge_time": [
       "12 rooms (one time use)"
-    ]
+    ],
+    "pickup": "..."
   },
   {
     "id": "491",
@@ -9496,7 +9871,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Pills pills pills!"
   },
   {
     "id": "492",
@@ -9516,7 +9892,8 @@
     "item_pool": [
       "Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Yo listen!"
   },
   {
     "id": "493",
@@ -9537,7 +9914,8 @@
     "item_pool": [
       "Item Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Panic - power"
   },
   {
     "id": "494",
@@ -9557,7 +9935,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Electric tears"
   },
   {
     "id": "495",
@@ -9575,7 +9954,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Flame tears"
   },
   {
     "id": "496",
@@ -9597,7 +9977,8 @@
       "Item Room",
       "Curse Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Needle shot"
   },
   {
     "id": "497",
@@ -9615,7 +9996,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Camo kid"
   },
   {
     "id": "498",
@@ -9635,7 +10017,8 @@
     "item_pool": [
       "Devil Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "You feel very balanced"
   },
   {
     "id": "499",
@@ -9654,7 +10037,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Peace be with you"
   },
   {
     "id": "500",
@@ -9671,7 +10055,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Gives Sacks!"
   },
   {
     "id": "501",
@@ -9690,7 +10075,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Money = Health!"
   },
   {
     "id": "502",
@@ -9707,7 +10093,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Creep shots"
   },
   {
     "id": "503",
@@ -9727,7 +10114,8 @@
       "Devil Room",
       "Curse Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Big brother is watching"
   },
   {
     "id": "504",
@@ -9737,7 +10125,6 @@
       "Only persists for the current room",
       "The fly's bullets deal 3.5 damage each and do not scale with your own damage stat",
       "REPENTANCE - Brown Nugget flies now have faster shot speed, and their damage has been increased to 3.5 (from 2)."
-      
     ],
     "quality": "0",
     "unlock": "Unlock this item by defeating Ultra Greed as Apollyon",
@@ -9750,7 +10137,8 @@
     ],
     "recharge_time": [
       "7 seconds"
-    ]
+    ],
+    "pickup": "Friendly Fly"
   },
   {
     "id": "505",
@@ -9768,7 +10156,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Gotta catch em..."
   },
   {
     "id": "506",
@@ -9789,7 +10178,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "Watch your back!"
   },
   {
     "id": "507",
@@ -9799,7 +10189,6 @@
       "The damage dealt is equal to Isaac's current tear damage plus 10% of the enemy's max health",
       "Every time this item deals damage, it has a 15% chance to drop 1/2 red hearts",
       "REPENTANCE - Sharp Straw is now only able to generate half red hearts (previously, it generated half soul hearts if the player had no heart containers)"
-      
     ],
     "quality": "2",
     "tags": "*, blue, white, stripe",
@@ -9811,7 +10200,8 @@
     ],
     "recharge_time": [
       "8 seconds"
-    ]
+    ],
+    "pickup": "More blood!"
   },
   {
     "id": "508",
@@ -9833,7 +10223,8 @@
     "item_pool": [
       "Item Room",
       "Mom's Chest"
-    ]
+    ],
+    "pickup": "It's sharp!"
   },
   {
     "id": "509",
@@ -9852,7 +10243,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Bloody friend"
   },
   {
     "id": "510",
@@ -9861,7 +10253,6 @@
       "When used, spawns a charmed random white delirium version of a boss, that will fight for you and kill other enemies for the rest of the current room",
       "Possible bosses spawned include most bosses in the game",
       "Some bosses' effects can harm Isaac. For example if the spawned boss leaves creep, it can damage Isaac"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by defeating Delirium for the first time on any character",
@@ -9874,7 +10265,8 @@
     ],
     "recharge_time": [
       "12 rooms"
-    ]
+    ],
+    "pickup": "Unleash the power!"
   },
   {
     "id": "511",
@@ -9894,7 +10286,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "He's violent"
   },
   {
     "id": "512",
@@ -9905,7 +10298,6 @@
       "The Black Hole will also suck Isaac into it, but with a much weaker effect than to enemies",
       "The Black Hole will destroy nearby obstacles such as rocks and pots",
       "Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Custom Phase"
-      
     ],
     "quality": "1",
     "tags": "*, pink, purple, black, planet",
@@ -9917,7 +10309,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Nothing can escape"
   },
   {
     "id": "513",
@@ -9937,7 +10330,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Party time!"
   },
   {
     "id": "514",
@@ -9957,7 +10351,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "LAG!"
   },
   {
     "id": "515",
@@ -9965,7 +10360,6 @@
     "description": [
       "A one-time use item that spawns a random item from the current room's item pool, with a chance for it to spawn Lump of Coal or The Poop instead",
       "Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Mills"
-      
     ],
     "quality": "3",
     "tags": "*, green, red, present, bow, xmas, christmas",
@@ -9977,7 +10371,8 @@
     ],
     "recharge_time": [
       "One time use"
-    ]
+    ],
+    "pickup": "Wrapped up nice for you!"
   },
   {
     "id": "516",
@@ -9986,7 +10381,6 @@
       "When used, spawns a Sprinkler that rotates in a circle, spraying tears in all directions",
       "Will also synergize with some other items, such as Mom's Eye, Brimstone, Dr. Fetus, Tech X or Loki's Horns",
       "Added as part of the Afterbirth+ Booster Pack #1 and based on the Steam Workshop mod created by Kieran and Stewartisme"
-      
     ],
     "quality": "2",
     "tags": "*, grey, gray, silver, metal, eye, stick",
@@ -9998,7 +10392,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Sprinkles."
   },
   {
     "id": "517",
@@ -10017,7 +10412,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Faster Bomb Drops!"
   },
   {
     "id": "518",
@@ -10037,7 +10433,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "What could it be?!"
   },
   {
     "id": "519",
@@ -10057,7 +10454,8 @@
     "item_pool": [
       "Angel Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "He's Delirious"
   },
   {
     "id": "520",
@@ -10075,7 +10473,8 @@
     "item_pool": [
       "Greed Mode Item Room",
       "Shop"
-    ]
+    ],
+    "pickup": "Bloody recharge!"
   },
   {
     "id": "521",
@@ -10085,7 +10484,6 @@
       "While held, guarantees a random item or pickup from the shop to be half price",
       "The effect of this item also works in Devil Rooms, allowing you to take one random item for free",
       "Added as part of the Afterbirth+ Booster Pack #2 and based on the Steam Workshop mod created by Plumbo"
-      
     ],
     "quality": "2",
     "tags": "*, paper, square, green, pink, white, barcode, letter, postcard",
@@ -10099,7 +10497,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Allow 6 weeks for delivery"
   },
   {
     "id": "522",
@@ -10108,7 +10507,6 @@
       "An active that causes all enemy tears to be held in place and then thrown back away from Isaac for a period of 3 seconds",
       "The aura from this item will repel nearby enemies",
       "Added as part of the Afterbirth+ Booster Pack #2"
-      
     ],
     "quality": "1",
     "tags": "*, blue, glow, hand",
@@ -10121,7 +10519,8 @@
     ],
     "recharge_time": [
       "6 seconds"
-    ]
+    ],
+    "pickup": "The power of mind!"
   },
   {
     "id": "523",
@@ -10132,7 +10531,6 @@
       "Using Moving Box with Car Battery will trigger 2 interactions at the same time: First it will drop all items currently inside the box and secondly will then pick up the current room's contents",
       "When used in a room with 2 items you can choose from (e.g. There's Options, Double item room, Boss Rush) the Moving Box will pick only one of the items at random",
       "Added as part of the Afterbirth+ Booster Pack #2 and based on the Steam Workshop mod created by HurleyFarrill"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by using Pandora's Box in the Dark Room floor",
@@ -10145,7 +10543,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Pack and unpack"
   },
   {
     "id": "524",
@@ -10165,7 +10564,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Static tears!"
   },
   {
     "id": "525",
@@ -10184,7 +10584,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "You're tearing me apart!"
   },
   {
     "id": "526",
@@ -10203,7 +10604,8 @@
     "item_pool": [
       "Devil Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Lil Harbingers!"
   },
   {
     "id": "527",
@@ -10218,7 +10620,6 @@
       "Boss rush door: Will open the Boss Rush door from either side, allowing you get into and escape the Boss Rush",
       "Slot machines, dead shopkeepers: Charges towards them and explodes them",
       "Added as part of the Afterbirth+ Booster Pack #3. Based on the Steam Workshop mod created by Jean-Alphonse"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by opening 20 locked chests",
@@ -10232,7 +10633,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Caaan Do!"
   },
   {
     "id": "528",
@@ -10251,7 +10653,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Eclipsed by the moon"
   },
   {
     "id": "529",
@@ -10268,7 +10671,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Eyeball tears!"
   },
   {
     "id": "530",
@@ -10287,7 +10691,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "Just hope you're not next"
   },
   {
     "id": "531",
@@ -10307,7 +10712,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "I'm seeing red..."
   },
   {
     "id": "532",
@@ -10328,7 +10734,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Feed them!"
   },
   {
     "id": "533",
@@ -10347,7 +10754,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Smite thy enemy"
   },
   {
     "id": "534",
@@ -10367,7 +10775,8 @@
     "item_pool": [
       "Shop",
       "Gold/Stone Chest"
-    ]
+    ],
+    "pickup": "Extra active item room"
   },
   {
     "id": "535",
@@ -10386,7 +10795,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "You feel safe"
   },
   {
     "id": "536",
@@ -10398,7 +10808,6 @@
       "Incubus won't be sacrificed if you're playing as Lilith",
       "If used while you have no familiar, this item will do nothing and won't consume the item",
       "Added as part of the Afterbirth+ Booster Pack #5. Based on the Steam Workshop mod created by Niro"
-      
     ],
     "quality": "2",
     "tags": "*, sacraficial, sacrafice",
@@ -10411,7 +10820,8 @@
     ],
     "recharge_time": [
       "Single use"
-    ]
+    ],
+    "pickup": "He demands a sacrifice"
   },
   {
     "id": "537",
@@ -10432,7 +10842,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Puking buddy"
   },
   {
     "id": "538",
@@ -10450,7 +10861,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "Choking hazard"
   },
   {
     "id": "539",
@@ -10468,7 +10880,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Sacrificial insemination"
   },
   {
     "id": "540",
@@ -10487,7 +10900,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Skipping tears"
   },
   {
     "id": "541",
@@ -10505,7 +10919,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "HP up?"
   },
   {
     "id": "542",
@@ -10524,7 +10939,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Projectile shield"
   },
   {
     "id": "543",
@@ -10547,7 +10963,8 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Portable sanctuary"
   },
   {
     "id": "544",
@@ -10565,7 +10982,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Stabbing time"
   },
   {
     "id": "545",
@@ -10576,7 +10994,6 @@
       "Bone orbitals break after dealing enough damage or blocking too many shots",
       "Added as part of the Afterbirth+ Booster Pack #5",
       "Counts as 1 of 3 book items needed towards the Bookworm transformation."
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by defeating Delirium in The Void floor as The Forgotten",
@@ -10591,7 +11008,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Rise from the grave"
   },
   {
     "id": "546",
@@ -10609,7 +11027,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Father's blessing"
   },
   {
     "id": "547",
@@ -10628,7 +11047,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "Tears up + you feel empty"
   },
   {
     "id": "548",
@@ -10647,7 +11067,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode item Room"
-    ]
+    ],
+    "pickup": "Fetch"
   },
   {
     "id": "549",
@@ -10667,7 +11088,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Everything hurts"
   },
   {
     "id": "550",
@@ -10681,7 +11103,8 @@
     "type_list": [
       "Pasivo"
     ],
-    "item_pool": []
+    "item_pool": [],
+    "pickup": "Lost but not forgotten"
   },
   {
     "id": "551",
@@ -10698,7 +11121,8 @@
     "item_pool": [],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Lost but not forgotten"
   },
   {
     "id": "552",
@@ -10719,7 +11143,8 @@
     "item_pool": [],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Lost but not forgotten"
   },
   {
     "id": "553",
@@ -10736,7 +11161,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Spore shot"
   },
   {
     "id": "554",
@@ -10751,7 +11177,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "4me"
   },
   {
     "id": "555",
@@ -10760,7 +11187,6 @@
       "+5 coins when picked up",
       "When used, this item takes away 5 of your coins and gives a +1.2 Damage Up that lasts for the current room",
       "Can stack as many times as you want. Using it with less than 5 coins does nothing"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by collecting 99 coins then spending all of them in the same run",
@@ -10774,7 +11200,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Pain from gain"
   },
   {
     "id": "556",
@@ -10784,7 +11211,6 @@
       "If used twice in the same room, the brimstone laser becomes massive and deals +1.8 more damage",
       "Using it more than twice in the same room will give a damage increase each time",
       "Counts as 1 of 3 evil items needed towards the Leviathan transformation."
-      
     ],
     "quality": "2",
     "tags": "*,",
@@ -10796,7 +11222,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Temporary demon form"
   },
   {
     "id": "557",
@@ -10804,7 +11231,6 @@
     "description": [
       "Upon use, displays a random fortune and has a chance to drop either a soul heart, a card (including dice shards), rune/soul stone or a trinket",
       "Soul hearts and tarot cards are much more common than trinkets"
-      
     ],
     "quality": "2",
     "tags": "*,",
@@ -10816,7 +11242,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Reusable fortunes"
   },
   {
     "id": "558",
@@ -10834,7 +11261,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "More eyes"
   },
   {
     "id": "559",
@@ -10851,7 +11279,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Zap!"
   },
   {
     "id": "560",
@@ -10867,7 +11296,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "No it doesn't..."
   },
   {
     "id": "561",
@@ -10885,7 +11315,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "DMG down + tears up + you feel nutty"
   },
   {
     "id": "562",
@@ -10905,7 +11336,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "It's only up from there"
   },
   {
     "id": "563",
@@ -10922,7 +11354,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Random blast +5 bombs"
   },
   {
     "id": "564",
@@ -10938,7 +11371,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "Tears + shot speed up"
   },
   {
     "id": "565",
@@ -10960,7 +11394,8 @@
       "Item Room",
       "Red Chest",
       "Curse Room"
-    ]
+    ],
+    "pickup": "What a cute little thing!"
   },
   {
     "id": "566",
@@ -10979,7 +11414,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Sweet dreams"
   },
   {
     "id": "567",
@@ -10996,7 +11432,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Keep the flame burning"
   },
   {
     "id": "568",
@@ -11015,7 +11452,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Double tap shield"
   },
   {
     "id": "569",
@@ -11034,7 +11472,8 @@
     "item_pool": [
       "Devil Room",
       "Curse Room"
-    ]
+    ],
+    "pickup": "Bleed me dry"
   },
   {
     "id": "570",
@@ -11050,7 +11489,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Tasty rainbow"
   },
   {
     "id": "571",
@@ -11067,7 +11507,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Speed up + your feet feel stronger"
   },
   {
     "id": "572",
@@ -11086,7 +11527,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "DMG up + range up + controlled tears"
   },
   {
     "id": "573",
@@ -11105,7 +11547,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Halo of tears"
   },
   {
     "id": "574",
@@ -11122,7 +11565,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Purifying light"
   },
   {
     "id": "575",
@@ -11140,7 +11584,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Invasive friend"
   },
   {
     "id": "576",
@@ -11165,7 +11610,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Filthy friends"
   },
   {
     "id": "577",
@@ -11178,7 +11624,6 @@
       "Self-inflicted damage i.e. Curse Rooms and Blood Donation Machines don't trigger this effect",
       "Items with a price will spawn the extra item free of charge (i.e. in shops or devil rooms)",
       "The only way to survive the falling sword is either through extra lives, by using items that would make you invincible, such as Gnawed Leaf or playing as The Lost. After the sword falls, extra items will no longer spawn"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating The Lamb as Jacob & Esau",
@@ -11191,7 +11636,8 @@
     ],
     "recharge_time": [
       "One time use"
-    ]
+    ],
+    "pickup": "A king's fortune... but at what cost?"
   },
   {
     "id": "578",
@@ -11200,7 +11646,6 @@
       "Upon use, spawns a giant puddle of lemonade that deals 8 damage per tick to any enemies which come in contact with it",
       "Lasts for about 19 seconds",
       "A similar effect to the Lemon Party pill"
-      
     ],
     "quality": "1",
     "tags": "*,",
@@ -11212,7 +11657,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Party time!"
   },
   {
     "id": "579",
@@ -11231,7 +11677,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Divine blade"
   },
   {
     "id": "580",
@@ -11242,7 +11689,6 @@
       "In rooms with multiple door outlines, the closest one will be opened",
       "Attempting to create a room outside the maximum boundary (13 x 13 rooms) of the map will take you to an I AM ERROR room. You can't use the Red Key to leave this room",
       "The Red Key can be used to open the secret room in the Home floor, which is the method for unlocking alternative 'Tainted' characters"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by opening Mom's Box in the Home floor",
@@ -11259,7 +11705,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Explore the other side"
   },
   {
     "id": "581",
@@ -11280,7 +11727,8 @@
     "item_pool": [
       "Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Flamboyant protector"
   },
   {
     "id": "582",
@@ -11292,7 +11740,6 @@
       "Each room you clear removes one use worth of effect - reducing the screen distortion slightly and giving +0.06 Speed Up and -0.3 Tears Down",
       "This item was called Black Mushroom in Antibirth",
       "Counts as 1 of 3 mushroom items needed towards the Fun Guy transformation."
-      
     ],
     "quality": "1",
     "tags": "*,",
@@ -11304,7 +11751,8 @@
     ],
     "recharge_time": [
       "Starts at 1 second, increasing by every time you use it. After 10 uses it stops auto recharging."
-    ]
+    ],
+    "pickup": "Tears up. A mind changing experience!"
   },
   {
     "id": "583",
@@ -11322,7 +11770,8 @@
     "item_pool": [
       "Item Room",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "Rocket propulsion +5 bombs"
   },
   {
     "id": "584",
@@ -11333,7 +11782,7 @@
       "The recharge time of this item is based on your 2nd active item, otherwise it's 4 rooms",
       "While held, guarantees the first Devil/Angel Room encountered to be an Angel Room, and increases the overall chance of getting one",
       "A maximum of 16 flames can be active at one time around Isaac",
-      "Counts as 1 of 3 book items needed towards the Bookworm transformation"      
+      "Counts as 1 of 3 book items needed towards the Bookworm transformation"
     ],
     "quality": "3",
     "unlock": "Unlock this item by defeating Isaac as Bethany",
@@ -11347,7 +11796,8 @@
     ],
     "recharge_time": [
       "Varies"
-    ]
+    ],
+    "pickup": "Spiritual companionship"
   },
   {
     "id": "585",
@@ -11358,7 +11808,6 @@
       "Unless fully charged, hearts picked up are consumed by the Alabaster Box, instead of being added to your life total",
       "If a devil deal was already taken this run, it spawns 2 soul hearts and 1 Angel Room item instead.",
       "Picking up Bone Hearts while at 12 hearts will remove charges from the Box"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating The Lamb as Bethany",
@@ -11371,7 +11820,8 @@
     ],
     "recharge_time": [
       "12 charges (one time use)"
-    ]
+    ],
+    "pickup": "A sacred offering"
   },
   {
     "id": "586",
@@ -11391,7 +11841,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Stairway to heaven"
   },
   {
     "id": "588",
@@ -11409,7 +11860,8 @@
     ],
     "item_pool": [
       "Planetarium"
-    ]
+    ],
+    "pickup": "Radiant victory"
   },
   {
     "id": "589",
@@ -11427,7 +11879,8 @@
     ],
     "item_pool": [
       "Planetarium"
-    ]
+    ],
+    "pickup": "More secrets"
   },
   {
     "id": "590",
@@ -11445,7 +11898,8 @@
     ],
     "item_pool": [
       "Planetarium"
-    ]
+    ],
+    "pickup": "Speed up + you feel elusive"
   },
   {
     "id": "591",
@@ -11464,7 +11918,8 @@
     ],
     "item_pool": [
       "Planetarium"
-    ]
+    ],
+    "pickup": "HP up + you feel pretty"
   },
   {
     "id": "592",
@@ -11482,7 +11937,8 @@
     ],
     "item_pool": [
       "Planetarium"
-    ]
+    ],
+    "pickup": "Born to rock"
   },
   {
     "id": "593",
@@ -11503,7 +11959,8 @@
     ],
     "item_pool": [
       "Planetarium"
-    ]
+    ],
+    "pickup": "Double tap dash"
   },
   {
     "id": "594",
@@ -11525,7 +11982,8 @@
     ],
     "item_pool": [
       "Planetarium"
-    ]
+    ],
+    "pickup": "You're a gas giant!"
   },
   {
     "id": "595",
@@ -11544,7 +12002,8 @@
     ],
     "item_pool": [
       "Planetarium"
-    ]
+    ],
+    "pickup": "Ring of tears"
   },
   {
     "id": "596",
@@ -11561,7 +12020,8 @@
     ],
     "item_pool": [
       "Planetarium"
-    ]
+    ],
+    "pickup": "Ice tears"
   },
   {
     "id": "597",
@@ -11580,7 +12040,8 @@
     ],
     "item_pool": [
       "Planetarium"
-    ]
+    ],
+    "pickup": "Open the floodgates"
   },
   {
     "id": "598",
@@ -11598,7 +12059,8 @@
     ],
     "item_pool": [
       "Planetarium"
-    ]
+    ],
+    "pickup": "Size down"
   },
   {
     "id": "599",
@@ -11616,7 +12078,8 @@
     "item_pool": [
       "Shop",
       "Crane Game"
-    ]
+    ],
+    "pickup": "Extra curse rooms"
   },
   {
     "id": "600",
@@ -11632,7 +12095,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "Tears up"
   },
   {
     "id": "601",
@@ -11649,7 +12113,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Tears up, you feel forgiven"
   },
   {
     "id": "602",
@@ -11667,7 +12132,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "Exclusive access!"
   },
   {
     "id": "603",
@@ -11683,7 +12149,8 @@
     "item_pool": [
       "Shop",
       "Battery Beggar"
-    ]
+    ],
+    "pickup": "Instant energy!"
   },
   {
     "id": "604",
@@ -11694,7 +12161,6 @@
       "Pressing the activate button again will drop the object where you stand, which doesn't consume a charge of use",
       "Allows you to remove the skull on top of Host enemies, turning them into the red version",
       "Counts as 1 of 3 mom items needed towards the Mom transformation"
-      
     ],
     "quality": "1",
     "tags": "*, arm, moms, ring, bracers, zelda, gold band, golden band, power bracelet",
@@ -11708,7 +12174,8 @@
     ],
     "recharge_time": [
       "1 second"
-    ]
+    ],
+    "pickup": "Mother's strength"
   },
   {
     "id": "605",
@@ -11717,7 +12184,6 @@
       "When used, this item spawns a Peeper familiar for the current room, which deals 12 contact damage per tick to enemies and leaves red creep in its path",
       "Using this item removes Isaac's right eye, causing tears from this eye to deal x1.5 your normal tear damage",
       "Using it more than once in the same room will spawn multiple Peeper familiars"
-      
     ],
     "quality": "1",
     "tags": "*,",
@@ -11729,7 +12195,8 @@
     ],
     "recharge_time": [
       "3 rooms"
-    ]
+    ],
+    "pickup": "Plop!"
   },
   {
     "id": "606",
@@ -11749,7 +12216,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "Stare into the abyss"
   },
   {
     "id": "607",
@@ -11767,7 +12235,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Messy friend"
   },
   {
     "id": "608",
@@ -11785,7 +12254,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Iced iced baby"
   },
   {
     "id": "609",
@@ -11794,7 +12264,6 @@
       "When used, rerolls all items in the room into another random item from the current room's item pool, however the item also has a 30% chance to disappear",
       "The chance associated with this item does NOT scale with your Luck stat - it's always 30%",
       "In the game files this item is called 'Florians Dice', which is a reference to the Eternal update for the original Binding of Isaac game, which changed the D6 to act as this item does"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by defeating Mother in the Corpse II as ???",
@@ -11809,7 +12278,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "???"
   },
   {
     "id": "610",
@@ -11827,7 +12297,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Fat buddy"
   },
   {
     "id": "611",
@@ -11836,7 +12307,6 @@
       "When used, this item does a shout-type attack, with its effect increasing in damage and size the more charges you have",
       "Larynx can be used with any number of charges. At 1 charge it deals 48 damage to any enemies close to Isaac. At the full 12 charges Isaac does a massive shout, dealing 356 damage to all enemies on the screen",
       "Larynx gains 1 charge every time you take damage (also charges as normal)"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating The Beast as Tainted Samson",
@@ -11850,7 +12320,8 @@
     ],
     "recharge_time": [
       "12 rooms (Can be used with partial charges)"
-    ]
+    ],
+    "pickup": "Hear my pain"
   },
   {
     "id": "612",
@@ -11870,7 +12341,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "Protect him"
   },
   {
     "id": "614",
@@ -11888,7 +12360,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Bloody blast + HP up"
   },
   {
     "id": "615",
@@ -11906,7 +12379,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Puffy buddy"
   },
   {
     "id": "616",
@@ -11924,7 +12398,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "It burns"
   },
   {
     "id": "617",
@@ -11942,7 +12417,8 @@
     "item_pool": [
       "Item Room",
       "Crane Game"
-    ]
+    ],
+    "pickup": "Magnetizing tears"
   },
   {
     "id": "618",
@@ -11960,7 +12436,8 @@
     "item_pool": [
       "Item Room",
       "Rotten Beggar"
-    ]
+    ],
+    "pickup": "Delicious!"
   },
   {
     "id": "619",
@@ -11993,7 +12470,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "???"
   },
   {
     "id": "619",
@@ -12026,7 +12504,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "???"
   },
   {
     "id": "621",
@@ -12045,7 +12524,8 @@
     "item_pool": [
       "Shop",
       "Ultra Secret Room"
-    ]
+    ],
+    "pickup": "Full HP + temporary DMG up"
   },
   {
     "id": "622",
@@ -12056,7 +12536,6 @@
       "The bedroom also contains a random trinket, 2 chests, 2 sacks and Isaac's bed, which can be used to full heal your red heart health",
       "The only way to exit Isaac's bedroom is teleporting out or via the trapdoor, which takes you to the next floor. This will deviate you from the alt path if you are currently on it",
       "Since this item resets your stats, this item can remove Broken Hearts"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by defeating Greedier Mode as Jacob & Esau",
@@ -12070,7 +12549,8 @@
     ],
     "recharge_time": [
       "One time use"
-    ]
+    ],
+    "pickup": "In the beginning"
   },
   {
     "id": "623",
@@ -12082,7 +12562,6 @@
       "Keys fired by this item can open locked doors/chests, secret rooms and destroy objects in the room, such as rocks",
       "Cannot be used if you don't have any keys",
       "Enemies killed by Sharp Key have a ~10% chance to spawn random items that appear in a chests. This can be anything that would normally drop from a chest including pedestal items"
-      
     ],
     "quality": "1",
     "tags": "*,",
@@ -12094,7 +12573,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Open your enemies"
   },
   {
     "id": "624",
@@ -12110,7 +12590,8 @@
     "item_pool": [
       "Boss Room",
       "Shop"
-    ]
+    ],
+    "pickup": "Collect them all!"
   },
   {
     "id": "625",
@@ -12121,7 +12602,6 @@
       "For the duration of the effect this gives you a x4 Damage Multiplier and +2.0 Range Up, but your rate of fire goes way down",
       "Deals significant contact damage to enemies while active (1600 dps).",
       "Counts as 1 of 3 mushroom items needed towards the Fun Guy transformation."
-      
     ],
     "quality": "4",
     "unlock": "Unlock this item by getting all hard mode completion marks for the 17 non-tainted characters",
@@ -12134,7 +12614,8 @@
     ],
     "recharge_time": [
       "12 rooms"
-    ]
+    ],
+    "pickup": "I'm a big boy now!"
   },
   {
     "id": "626",
@@ -12153,7 +12634,8 @@
     ],
     "item_pool": [
       "None (see above)"
-    ]
+    ],
+    "pickup": "???"
   },
   {
     "id": "627",
@@ -12172,7 +12654,8 @@
     ],
     "item_pool": [
       "None (see above)"
-    ]
+    ],
+    "pickup": "???"
   },
   {
     "id": "628",
@@ -12181,7 +12664,6 @@
       "This is a one time use item that teleports you to an alternate floor, which contains every single item in the game",
       "The items are spread between several different rooms all on pedestals. You may take only one of the items, before being teleported back to where you were",
       "It's literally every item, that includes items not in item pools like Knife Pieces"
-      
     ],
     "quality": "4",
     "unlock": "Unlock this item by completing every post-it note for every character, including the Tainted characters",
@@ -12194,7 +12676,8 @@
     ],
     "recharge_time": [
       "1 time use"
-    ]
+    ],
+    "pickup": "Where am I?"
   },
   {
     "id": "629",
@@ -12214,7 +12697,8 @@
       "Item Room",
       "Key Beggar",
       "Crane Game"
-    ]
+    ],
+    "pickup": "Defense drone"
   },
   {
     "id": "631",
@@ -12225,7 +12709,6 @@
       "If the enemy normally has a mechanic that splits it (e.g. Teratoma, Envy) then Meat Cleaver will deal a lot of damage and trigger the splitting effect",
       "If the split enemy has low enough health, it will just die instead of splitting",
       "Doesn't work on end-game bosses except Delirium, where it will deal a chunk of damage and spawn a 2nd Delirium to deal with"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by defeating Mother in the Corpse II as Isaac",
@@ -12238,7 +12721,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Slice but no dice"
   },
   {
     "id": "632",
@@ -12254,7 +12738,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Luck up + you feel protected"
   },
   {
     "id": "633",
@@ -12275,7 +12760,8 @@
     ],
     "item_pool": [
       "None"
-    ]
+    ],
+    "pickup": "Ascended"
   },
   {
     "id": "634",
@@ -12294,7 +12780,8 @@
     "item_pool": [
       "Devil Room",
       "Angel Room"
-    ]
+    ],
+    "pickup": "Help from beyond"
   },
   {
     "id": "635",
@@ -12318,7 +12805,8 @@
     ],
     "recharge_time": [
       "3 seconds"
-    ]
+    ],
+    "pickup": "Bait and switch"
   },
   {
     "id": "636",
@@ -12330,7 +12818,6 @@
       "In Greed Mode and while playing as Tainted Keeper, this item costs 99 coins instead of 15",
       "When used in the backwards path after picking up Dad's Note, R key will skip you to the Basement 1 version of this path, which leads directly to the Home floor. This may cause you to skip floors where you left a trinket to spawn a Cracked Key.",
       "Donation machines become fixed if they were jammed before using the R Key"
-      
     ],
     "quality": "4",
     "tags": "*,",
@@ -12342,7 +12829,8 @@
     ],
     "recharge_time": [
       "Single use"
-    ]
+    ],
+    "pickup": "Time to start over"
   },
   {
     "id": "637",
@@ -12358,7 +12846,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "They pack a punch!"
   },
   {
     "id": "638",
@@ -12369,7 +12858,6 @@
       "Works on bosses, except it doesn't kill them it just deals 15 damage",
       "Can only be used once per floor - batteries also cannot be used to recharge it to bypass this restriction",
       "The first use will raise it above your head, then by pressing the fire button it will be thrown in that direction"
-      
     ],
     "quality": "2",
     "tags": "*,",
@@ -12382,7 +12870,8 @@
     ],
     "recharge_time": [
       "1 room (Can only be used once per floor)"
-    ]
+    ],
+    "pickup": "Erase thy enemy"
   },
   {
     "id": "639",
@@ -12390,7 +12879,6 @@
     "description": [
       "When used, this item will give you +1 Rotten Heart",
       "Rotten Hearts act as red hearts and each one you currently have spawns 2 blue flies upon successfully clearing a room"
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by defeating Mother in the Corpse II as Maggy",
@@ -12404,7 +12892,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Gross!"
   },
   {
     "id": "640",
@@ -12415,7 +12904,6 @@
       "A charge is consumed roughly every 0.5 seconds of use",
       "Multi-part enemies such as Envy or Teratoma create a soul per each part killed",
       "A maximum of 20 souls can be held in the urn at one time"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by beating Satan as Bethany",
@@ -12428,7 +12916,8 @@
     ],
     "recharge_time": [
       "None (see above)"
-    ]
+    ],
+    "pickup": "Unleash their sorrow"
   },
   {
     "id": "641",
@@ -12446,7 +12935,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Spill your guts"
   },
   {
     "id": "642",
@@ -12457,7 +12947,6 @@
       "If Isaac has 12 broken hearts, he dies instantly (this also applies to The Lost despite having no health)",
       "Magic Skin will continue to appear after finding it once if you are not still holding it - the chance for it to replace an item is 1 ÷ (12 - number of times used) up to a maximum of 50%",
       "Broken hearts are empty heart containers that cannot be removed or refilled and will override other types of hearts when you reach 12 total. Replacing all 12 containers with broken hearts will kill you instantly. The only way to remove broken hearts is by donating to a Confessional Machine"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating Mother in the Corpse II as Jacob & Esau",
@@ -12472,7 +12961,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "All your desires fulfilled"
   },
   {
     "id": "643",
@@ -12492,7 +12982,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Awaken your faith"
   },
   {
     "id": "644",
@@ -12510,7 +13001,8 @@
       "Boss Room",
       "Golden Chest",
       "Crane Game"
-    ]
+    ],
+    "pickup": "+1 to lowest stat"
   },
   {
     "id": "645",
@@ -12530,7 +13022,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Itching for revenge"
   },
   {
     "id": "646",
@@ -12550,7 +13043,8 @@
       "Devil Room",
       "Bomb Beggar",
       "Greed Mode Devil Room"
-    ]
+    ],
+    "pickup": "Demon blast +5 bombs"
   },
   {
     "id": "647",
@@ -12568,7 +13062,8 @@
     "item_pool": [
       "Shop",
       "Battery Beggar"
-    ]
+    ],
+    "pickup": "Beat the juice out of them!"
   },
   {
     "id": "649",
@@ -12589,7 +13084,8 @@
     "item_pool": [
       "Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Bouncy friend"
   },
   {
     "id": "650",
@@ -12599,7 +13095,6 @@
       "It will jump to the nearest enemy, slam on the ground and fire tears around it, then propel itself around the room, dealing contact damage to any enemies it touches before disappearing",
       "It's possible to get a guaranteed spawn of this item by encountering the Baby Plum boss and not damaging her. After a minute or so of not hurting her she will fly away and spawn Plum Flute",
       "Counts as 1 of 3 fly items needed towards the Beelzebub transformation."
-      
     ],
     "quality": "1",
     "unlock": "Unlock this item by allowing Baby Plum to escape instead of killing her",
@@ -12612,7 +13107,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Play time!"
   },
   {
     "id": "651",
@@ -12635,7 +13131,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Follow the light"
   },
   {
     "id": "652",
@@ -12657,7 +13154,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Kick it!"
   },
   {
     "id": "653",
@@ -12670,7 +13168,6 @@
       "Larger enemies such as minibosses will spawn a larger red ghost that causes 3 explosions",
       "The red ghosts can be moved around slightly by firing tears through them",
       "Using the item will instantly kill any enemy or boss that has the 'ghost' tag and is at 50% or less HP. Enemies include Candler, Lil' Haunt, Polty, Red Ghost, Wizoob and The Forsaken, The Haunt, The Heretic and The Rainmaker bosses. This effect also works on Delirium if it is currently transformed into The Haunt while below half health"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating Greedier mode as Bethany",
@@ -12683,7 +13180,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Begone!"
   },
   {
     "id": "654",
@@ -12701,7 +13199,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "Worse pills + evil up"
   },
   {
     "id": "655",
@@ -12719,7 +13218,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Let it rip!"
   },
   {
     "id": "657",
@@ -12737,7 +13237,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Clogged enemies"
   },
   {
     "id": "658",
@@ -12756,7 +13257,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "Micro friends"
   },
   {
     "id": "659",
@@ -12772,7 +13274,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "Tear size + range up"
   },
   {
     "id": "660",
@@ -12790,7 +13293,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "A link to your future"
   },
   {
     "id": "661",
@@ -12809,7 +13313,8 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
-    ]
+    ],
+    "pickup": "They lurk inside"
   },
   {
     "id": "663",
@@ -12826,7 +13331,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "You feel prickly"
   },
   {
     "id": "664",
@@ -12848,7 +13354,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "All you can eat"
   },
   {
     "id": "665",
@@ -12868,7 +13375,8 @@
       "Devil Room",
       "Curse Room",
       "Red Chest"
-    ]
+    ],
+    "pickup": "An eye for secrets"
   },
   {
     "id": "667",
@@ -12890,7 +13398,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "A helping hand"
   },
   {
     "id": "668",
@@ -12908,7 +13417,8 @@
     ],
     "item_pool": [
       "None (see above)"
-    ]
+    ],
+    "pickup": "..."
   },
   {
     "id": "669",
@@ -12931,7 +13441,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "All stats up"
   },
   {
     "id": "670",
@@ -12947,7 +13458,8 @@
     ],
     "item_pool": [
       "Shop"
-    ]
+    ],
+    "pickup": "There might be options"
   },
   {
     "id": "671",
@@ -12965,7 +13477,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Power of love"
   },
   {
     "id": "672",
@@ -12985,7 +13498,8 @@
     "item_pool": [
       "Devil Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "Blood money"
   },
   {
     "id": "673",
@@ -13003,7 +13517,8 @@
     ],
     "item_pool": [
       "None"
-    ]
+    ],
+    "pickup": "Deliver me from evil"
   },
   {
     "id": "674",
@@ -13020,7 +13535,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Unfinished business"
   },
   {
     "id": "675",
@@ -13038,7 +13554,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "Shards of knowledge"
   },
   {
     "id": "676",
@@ -13057,7 +13574,8 @@
     "item_pool": [
       "Item Room",
       "Demon Beggar"
-    ]
+    ],
+    "pickup": "It multiplies"
   },
   {
     "id": "677",
@@ -13077,7 +13595,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "The true out-of-body experience!"
   },
   {
     "id": "678",
@@ -13096,7 +13615,8 @@
     "item_pool": [
       "Item Room",
       "Ultra Secret Room"
-    ]
+    ],
+    "pickup": "Fetus shots"
   },
   {
     "id": "679",
@@ -13115,7 +13635,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "Abyssal friend"
   },
   {
     "id": "680",
@@ -13133,7 +13654,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Oh no..."
   },
   {
     "id": "681",
@@ -13155,7 +13677,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "It hungers"
   },
   {
     "id": "682",
@@ -13174,7 +13697,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Clingy buddy"
   },
   {
     "id": "683",
@@ -13191,7 +13715,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Break your enemies"
   },
   {
     "id": "684",
@@ -13208,7 +13733,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "Out for blood"
   },
   {
     "id": "685",
@@ -13220,7 +13746,6 @@
       "If a flame touches an enemy, it deals contact damage equal to double your current tear damage and then disappears",
       "You can have a maximum of 24 flame orbitals at once",
       "Each flame has a chance to spawn as one of many variants, such as green flames that poison enemies, or a crucifix flame that spawns a random horseman familiar + Locusts when it is extinguished"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating The Beast as Bethany",
@@ -13233,7 +13758,8 @@
     ],
     "recharge_time": [
       "12 rooms"
-    ]
+    ],
+    "pickup": "Your faith grows"
   },
   {
     "id": "686",
@@ -13251,7 +13777,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Power of faith"
   },
   {
     "id": "687",
@@ -13259,7 +13786,6 @@
     "description": [
       "Spawns a random charmed enemy which fights by your side and copies your exact movements, similar to how Jacob & Esau work",
       "The familiars fire tears at the same time as Isaac, and have a visible health bar showing how much damage they can take before dying"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by defeating The Beast as Jacob & Esau",
@@ -13273,7 +13799,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Best friends forever!"
   },
   {
     "id": "688",
@@ -13292,7 +13819,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Let him free"
   },
   {
     "id": "689",
@@ -13308,7 +13836,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "?????"
   },
   {
     "id": "690",
@@ -13326,7 +13855,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Bounce away!"
   },
   {
     "id": "691",
@@ -13347,7 +13877,8 @@
     "item_pool": [
       "Angel Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "Destined for greatness"
   },
   {
     "id": "692",
@@ -13371,7 +13902,8 @@
     "item_pool": [
       "Devil Room",
       "Curse Room"
-    ]
+    ],
+    "pickup": "He awaits your offering"
   },
   {
     "id": "693",
@@ -13391,7 +13923,8 @@
     "item_pool": [
       "Item Room",
       "Key Beggar"
-    ]
+    ],
+    "pickup": "Infest"
   },
   {
     "id": "694",
@@ -13412,7 +13945,8 @@
     "item_pool": [
       "Devil Room",
       "Curse Room"
-    ]
+    ],
+    "pickup": "Eternal sorrow"
   },
   {
     "id": "695",
@@ -13432,7 +13966,8 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
-    ]
+    ],
+    "pickup": "May your rage bring haste"
   },
   {
     "id": "696",
@@ -13451,7 +13986,8 @@
     ],
     "item_pool": [
       "Angel Room"
-    ]
+    ],
+    "pickup": "Divine protection"
   },
   {
     "id": "697",
@@ -13470,7 +14006,8 @@
     "item_pool": [
       "Secret Room",
       "Curse Room"
-    ]
+    ],
+    "pickup": "He wants revenge"
   },
   {
     "id": "698",
@@ -13490,7 +14027,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "Double trouble!"
   },
   {
     "id": "699",
@@ -13508,7 +14046,8 @@
     ],
     "item_pool": [
       "Devil Room"
-    ]
+    ],
+    "pickup": "Ancient power"
   },
   {
     "id": "700",
@@ -13525,7 +14064,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "I can see see the future future future"
   },
   {
     "id": "701",
@@ -13544,7 +14084,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Buried memories"
   },
   {
     "id": "702",
@@ -13564,7 +14105,8 @@
     "item_pool": [
       "Devil Room",
       "Curse Room"
-    ]
+    ],
+    "pickup": "Hot blooded"
   },
   {
     "id": "703",
@@ -13573,7 +14115,6 @@
       "Using this item swaps you between the character you started as, and Esau, which has 3 black hearts, +2 base damage and the ability to fly",
       "This character keeps its own separate health and items. Items picked up are not shared between the two characters",
       "If either character dies it's game over"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating The Beast as Tainted Jacob",
@@ -13587,7 +14128,8 @@
     ],
     "recharge_time": [
       "1 room"
-    ]
+    ],
+    "pickup": "Lost brother"
   },
   {
     "id": "704",
@@ -13600,7 +14142,6 @@
       "You don't die while in Berserk mode, but taking lethal damage will kill you after the effect wears off",
       "The bone sword from this item is similar to Donkey Jawbone from Antibirth",
       "Tainted Samson starts with a passive version of this item"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating Delirium as Tainted Samson",
@@ -13613,7 +14154,8 @@
     ],
     "recharge_time": [
       "Enemy damage taken = charge"
-    ]
+    ],
+    "pickup": "Rip and tear"
   },
   {
     "id": "705",
@@ -13622,7 +14164,6 @@
       "When used, Isaac turns into a ghost for 1 second and his speed goes up to maximum (2.0). During this time he can walk over enemies to mark them for death. When the effect wears off, Isaac quickly runs between each marked enemy, dealing high damage to each one rapidly (roughly x2.5 your tear damage)",
       "The damage caused by this effect scales up with every target it hits in a row",
       "Tainted Judas starts with this item"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating Delirium as Tainted Judas",
@@ -13635,7 +14176,8 @@
     ],
     "recharge_time": [
       "7 seconds"
-    ]
+    ],
+    "pickup": "One with the shadows"
   },
   {
     "id": "706",
@@ -13645,7 +14187,6 @@
       "Red attack flies will charge across the room in the same direction Isaac is shooting, dealing contact damage to enemies equal to Isaac's tear damage",
       "The flies don't block enemy shots, but this also means they never die and stay with Isaac forever",
       "Tainted Apollyon starts with this item"
-      
     ],
     "quality": "4",
     "unlock": "Unlock this item by defeating Delirium as Tainted Apollyon",
@@ -13658,7 +14199,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Come forth from the depths"
   },
   {
     "id": "707",
@@ -13673,7 +14215,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "HP up"
   },
   {
     "id": "708",
@@ -13689,7 +14232,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "DMG up"
   },
   {
     "id": "709",
@@ -13699,7 +14243,6 @@
       "In the brief period while holding the enemy you can move a target to decide where it lands",
       "Actually does work on bosses! However after the attack you end up near the boss, which puts you in danger of taking damage too",
       "Scales in damage and area of effect with the player's size"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating Delirium as Jacob & Esau",
@@ -13713,7 +14256,8 @@
     ],
     "recharge_time": [
       "8 seconds"
-    ]
+    ],
+    "pickup": "Angel breaker"
   },
   {
     "id": "710",
@@ -13726,7 +14270,6 @@
       "Has other uses - Will deal 3 damage to enemies it hits, and can be used to quickly push bombs and objects across rooms",
       "Tainted Cain starts with this item, but can be used by any character after unlocking it and finding it in the item room",
       "Cannot be used to craft another Bag of Crafting!"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by defeating Delirium as Tainted Cain",
@@ -13739,7 +14282,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Make your destiny"
   },
   {
     "id": "711",
@@ -13751,7 +14295,6 @@
       "Does nothing with item pedestals that don't have a ghost item behind them",
       "When playing as Tainted Lazarus, activating Flip also changes you between Lazarus and Dead Lazarus",
       "Tainted Lazarus starts with this item, but can be used by any character after unlocking it and finding it in the item room"
-      
     ],
     "quality": "4",
     "unlock": "Unlock this item by defeating Delirium as Tainted Lazarus",
@@ -13766,7 +14309,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Life and death"
   },
   {
     "id": "712",
@@ -13777,7 +14321,6 @@
       "Tainted Bethany starts with this item",
       "Wisps are randomly chosen from Item Room, Boss Room and Shop item pools, with a 25% chance to pick the same pool as the current room",
       "Counts as 1 of 3 book items needed towards the Bookworm transformation."
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by defeating Delirium as Tainted Bethany",
@@ -13791,7 +14334,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "Item summoner"
   },
   {
     "id": "713",
@@ -13803,7 +14347,6 @@
       "Works differently as Tainted Eve - instead clots are created by firing for 2 seconds, down to a minimum of half a red heart. Using Sumptorium as her will then cause all Clots to be consumed and return your hearts back to you. Clots returning back to Eve deal 3x damage as they suck back in",
       "The type of heart consumed to create a clot will give it different abilities: Soul Hearts = More health, Black Hearts = Dark Matter effect, Eternal Hearts = Sacred Heart effect, Gold Hearts = Midas Touch effect, Bone Hearts = Compound Fracture effect, Rotten Hearts = Less health",
       "Tainted Eve starts with this item, but can be used by any character after unlocking it and finding it in the item room"
-      
     ],
     "quality": "3",
     "unlock": "This item comes along with Tainted Eve. The achievement 'Sumptorium' is unlocked by defeating Delirium as Tainted Eve",
@@ -13816,7 +14359,8 @@
     ],
     "recharge_time": [
       "10 seconds"
-    ]
+    ],
+    "pickup": "Return"
   },
   {
     "id": "714",
@@ -13825,7 +14369,6 @@
       "When used, this will retreive the Tainted Forgotten's skeleton back to its owner's hands from any distance",
       "Tainted Forgotten's Birthright effect. Cannot be obtained and has no use for any other character",
       "Birthright is a Shop item that has unique effects depending on what character you're playing as"
-      
     ],
     "quality": "0",
     "tags": "*,",
@@ -13837,7 +14380,8 @@
     ],
     "recharge_time": [
       "3 seconds"
-    ]
+    ],
+    "pickup": "Come back"
   },
   {
     "id": "715",
@@ -13846,7 +14390,6 @@
       "This is the item Tainted Blue Baby (???) uses as his main mechanic",
       "Killing or damaging enemies spawns various poops, which add to his collection. Pressing the bomb button will put the next poop into the 'Hold' jar. Pressing it again allows you to throw it at enemies. Each poop has random effects like Butt Bombs, Fire Poops etc",
       "Tainted Blue Baby starts with this item, and is the only one who can use it"
-      
     ],
     "quality": "0",
     "tags": "*,",
@@ -13858,7 +14401,8 @@
     ],
     "recharge_time": [
       "Instant"
-    ]
+    ],
+    "pickup": "Saved for later"
   },
   {
     "id": "716",
@@ -13879,7 +14423,8 @@
     "item_pool": [
       "Shop",
       "Secret Room"
-    ]
+    ],
+    "pickup": "Spending power"
   },
   {
     "id": "717",
@@ -13898,7 +14443,8 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
-    ]
+    ],
+    "pickup": "Under a rock"
   },
   {
     "id": "719",
@@ -13906,7 +14452,6 @@
     "description": [
       "When used, spawns a random shop item or consumable, however you have to pay the relevant cost to pick it up",
       "Can include anything that would appear in the shop"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating The Beast as Keeper",
@@ -13921,7 +14466,8 @@
     ],
     "recharge_time": [
       "4 rooms"
-    ]
+    ],
+    "pickup": "Portable shop"
   },
   {
     "id": "720",
@@ -13929,7 +14475,6 @@
     "description": [
       "With every bar of charge this item has, a different consumable is shown inside the Jar. 1 = poop, 2 = penny, 3 = bomb, 4 = key, 5 = red heart, 6 = pill, 7 = card, 8 = soul heart, 9 = gold heart, 10 = gold key, 11 = gold bomb",
       "At the full 12 charges, a completely random effect will happen. It can be anything including spawning a bunch of consumables, spawning a glitched pedestal item, creating a bunch of light beams, spawning troll bombs or nothing at all"
-      
     ],
     "quality": "3",
     "unlock": "Unlock this item by defeating The Beast as Eden",
@@ -13943,7 +14488,8 @@
     ],
     "recharge_time": [
       "12 rooms"
-    ]
+    ],
+    "pickup": "Anything is possible"
   },
   {
     "id": "721",
@@ -13962,7 +14508,8 @@
     ],
     "item_pool": [
       "Secret Room"
-    ]
+    ],
+    "pickup": "Isaac and his mother lived alone in a small house on a hill"
   },
   {
     "id": "722",
@@ -13971,7 +14518,6 @@
       "When used, it puts the closes enemy in chains for 5 seconds, preventing it from moving. You can release the enemy early by using it again",
       "Tainted Jacob starts with this item. While playing as him Anima Sola will always target Dark Esau. Releasing Dark Esau will cause him to charge directly at Jacob and deal damage to anything in his path. If used in a room with no enemies, Dark Esau will instantly spawn",
       "Will chain up to two targets if you have Car Battery, if only one valid target is present it will be chained for twice the duration"
-      
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating Delirium as Tainted Jacob",
@@ -13984,7 +14530,8 @@
     ],
     "recharge_time": [
       "15 seconds"
-    ]
+    ],
+    "pickup": "Repent"
   },
   {
     "id": "723",
@@ -13995,7 +14542,6 @@
       "Sad Onion (ID = 1) will reroll into nothing",
       "There are some gaps in item IDs which are skipped if no item exists, or will reroll into unexpected items if hidden items are present at that ID. For example rerolling Plan C (ID = 475) changes it into the Broken Glass Cannon, which is a hidden item with ID = 474",
       "Items that are yet to be unlocked will also be skipped over, preventing you from getting items you don't have access to yet"
-      
     ],
     "quality": "4",
     "unlock": "Unlock this item by defeating Delirium as Tainted Isaac",
@@ -14010,7 +14556,8 @@
     ],
     "recharge_time": [
       "6 rooms"
-    ]
+    ],
+    "pickup": "-1"
   },
   {
     "id": "724",
@@ -14026,7 +14573,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Thick blooded"
   },
   {
     "id": "725",
@@ -14049,7 +14597,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Your stomach rumbles"
   },
   {
     "id": "726",
@@ -14066,7 +14615,8 @@
     ],
     "item_pool": [
       "Item Room"
-    ]
+    ],
+    "pickup": "Double tap sneeze"
   },
   {
     "id": "727",
@@ -14086,7 +14636,8 @@
     "item_pool": [
       "Item Room",
       "Bomb Beggar"
-    ]
+    ],
+    "pickup": "Spooky blast +5 bombs"
   },
   {
     "id": "728",
@@ -14095,7 +14646,7 @@
       "Spawns a familiar that's attached via an Umbilical Cord, but will move and shoot in the same direction Isaac is shooting",
       "When activated you first need to throw the familiar, which deals x3 your tear damage to any enemies it touches",
       "Gello's tears deal x0.75 your tear damage (x1.0 if Lilith)",
-      "Can be used multiple times per room to spawn more familiars, however they only last for the current room"     
+      "Can be used multiple times per room to spawn more familiars, however they only last for the current room"
     ],
     "quality": "3",
     "unlock": "Unlock this item by defeating Delirium as Tainted Lilith",
@@ -14109,7 +14660,8 @@
     ],
     "recharge_time": [
       "2 rooms"
-    ]
+    ],
+    "pickup": "Demonic gestation"
   },
   {
     "id": "729",
@@ -14117,7 +14669,7 @@
     "description": [
       "When used, this item allows you to throw your head where it will sit as a stationary sentry firing bullets until you walk over and pick it up again",
       "Throwing Isaac's head deals 24 damage to anything it hits while being thrown",
-      "Your hitbox remains with the body. Enemies touching the head don't hurt Isaac"      
+      "Your hitbox remains with the body. Enemies touching the head don't hurt Isaac"
     ],
     "quality": "2",
     "unlock": "Unlock this item by defeating Delirium as Tainted Forgotten",
@@ -14130,7 +14682,8 @@
     ],
     "recharge_time": [
       "4 seconds"
-    ]
+    ],
+    "pickup": "Chuck away!"
   },
   {
     "id": "730",
@@ -14148,7 +14701,8 @@
       "Boss Room",
       "Crane Game",
       "Golden Chest"
-    ]
+    ],
+    "pickup": "DMG + luck up"
   },
   {
     "id": "731",
@@ -14165,7 +14719,8 @@
     ],
     "item_pool": [
       "Boss Room"
-    ]
+    ],
+    "pickup": "DMG + range up"
   },
   {
     "id": "732",
@@ -14185,6 +14740,7 @@
       "Golden Chest",
       "Mom's Chest",
       "Old Chest"
-    ]
+    ],
+    "pickup": "DMG up"
   }
 ]
