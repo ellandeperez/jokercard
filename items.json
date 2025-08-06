@@ -589,6 +589,9 @@
       "Shop",
       "Library",
       "Angel Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -611,6 +614,9 @@
     "item_pool": [
       "Library",
       "Devil Room"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -631,6 +637,9 @@
       "Library",
       "Secret Room",
       "Devil Room"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -651,6 +660,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "1 room"
     ]
   },
   {
@@ -671,6 +683,9 @@
       "Item Room",
       "Wrath Miniboss",
       "Bomb Beggar"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -690,6 +705,9 @@
     "item_pool": [
       "Item Room",
       "Gold Chest"
+    ],
+    "recharge_time": [
+      "1 room"
     ]
   },
   {
@@ -709,6 +727,9 @@
       "Item Room",
       "Challenge Room",
       "Mom's Chest"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -726,6 +747,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -746,6 +770,9 @@
       "Item Room",
       "Challenge Room",
       "Mom's Chest"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -767,6 +794,9 @@
     "item_pool": [
       "Item Room",
       "Sloth Miniboss"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -784,6 +814,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -804,6 +837,9 @@
     "item_pool": [
       "Item Room",
       "Super Lust Miniboss"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -840,6 +876,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -875,6 +914,9 @@
       "Item Room",
       "Envy Miniboss",
       "Super Envy Miniboss"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -1008,6 +1050,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -1045,6 +1090,9 @@
     "item_pool": [
       "Item Room",
       "Library"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -1135,6 +1183,9 @@
       "Item Room",
       "Library",
       "Pride Miniboss"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -1151,6 +1202,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -1359,6 +1413,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -1380,6 +1437,9 @@
     "item_pool": [
       "Item Room",
       "Library"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -1482,6 +1542,9 @@
     "item_pool": [
       "Devil Room",
       "Demon Beggar"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -1503,6 +1566,9 @@
     "item_pool": [
       "Secret Room",
       "Devil Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -1521,6 +1587,9 @@
     "item_pool": [
       "Item Room",
       "Shop"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -1538,6 +1607,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -1665,6 +1737,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -1741,6 +1816,9 @@
       "Item Room",
       "Library",
       "Devil Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -1846,6 +1924,9 @@
       "Beggar",
       "Demon Beggar",
       "Mom's Chest"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -1898,6 +1979,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -1935,6 +2019,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -2015,6 +2102,9 @@
     "item_pool": [
       "Item Room",
       "Beggar"
+    ],
+    "recharge_time": [
+      "1 room"
     ]
   },
   {
@@ -2245,6 +2335,9 @@
       "Item Room",
       "Devil Room",
       "Library"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -2265,6 +2358,9 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -2303,6 +2399,9 @@
       "Item Room",
       "Curse Room",
       "Demon Beggar"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -2323,6 +2422,9 @@
       "Secret Room",
       "Devil Room",
       "Demon Beggar"
+    ],
+    "recharge_time": [
+      "Instant (One time use)"
     ]
   },
   {
@@ -2377,6 +2479,9 @@
     ],
     "item_pool": [
       "None (Headless horseman only)"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -2431,6 +2536,9 @@
       "Devil Room",
       "Curse Room",
       "Red Chest"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -2470,6 +2578,9 @@
     ],
     "item_pool": [
       "None (Blood donation machine only)"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -2487,6 +2598,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -2507,6 +2621,9 @@
       "Item Room",
       "Shop",
       "Bomb Beggar"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -2658,6 +2775,9 @@
       "Curse Room",
       "Red Chest",
       "Gold/Stone Chest"
+    ],
+    "recharge_time": [
+      "1 room"
     ]
   },
   {
@@ -2676,6 +2796,9 @@
     "item_pool": [
       "Item Room",
       "Angel Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -2696,6 +2819,9 @@
     "item_pool": [
       "Shop",
       "Crane Game"
+    ],
+    "recharge_time": [
+      "At the start of each new floor"
     ]
   },
   {
@@ -2900,6 +3026,9 @@
     ],
     "item_pool": [
       "None (Fortune machine only)"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -2934,6 +3063,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -3009,6 +3141,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "Timed (A few seconds)"
     ]
   },
   {
@@ -3044,6 +3179,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -3134,6 +3272,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -3209,6 +3350,9 @@
     "item_pool": [
       "Item Room",
       "Key Beggar"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -3244,6 +3388,9 @@
     "item_pool": [
       "Shop",
       "Beggar"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -3317,6 +3464,9 @@
     ],
     "item_pool": [
       "None (Conquest boss only)"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -3412,6 +3562,9 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -3526,6 +3679,9 @@
     "item_pool": [
       "Item Room",
       "Library"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -4824,6 +4980,9 @@
     "item_pool": [
       "Secret Room",
       "Crane Game"
+    ],
+    "recharge_time": [
+      "Varies"
     ]
   },
   {
@@ -5193,6 +5352,9 @@
     "item_pool": [
       "Item Room",
       "Library"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -5211,6 +5373,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -5231,6 +5396,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -5249,6 +5417,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -5269,6 +5440,9 @@
     "item_pool": [
       "Shop",
       "Secret Room"
+    ],
+    "recharge_time": [
+      "Varies"
     ]
   },
   {
@@ -5290,6 +5464,9 @@
       "Item Room",
       "Library",
       "Secret Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -5308,6 +5485,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -5327,6 +5507,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "Timed (A few seconds)"
     ]
   },
   {
@@ -5346,6 +5529,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -5365,6 +5551,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -5387,6 +5576,9 @@
       "Item Room",
       "Library",
       "Devil Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -5407,6 +5599,9 @@
     ],
     "item_pool": [
       "None (Krampus only)"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -5427,6 +5622,9 @@
     "item_pool": [
       "Item Room",
       "Beggar"
+    ],
+    "recharge_time": [
+      "Timed (A few seconds)"
     ]
   },
   {
@@ -5445,6 +5643,9 @@
     "item_pool": [
       "Item Room",
       "Shop"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -5462,6 +5663,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -5490,6 +5694,9 @@
     "item_pool": [
       "Shop",
       "Red Chest"
+    ],
+    "recharge_time": [
+      "One time use"
     ]
   },
   {
@@ -5509,6 +5716,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "1 room"
     ]
   },
   {
@@ -5970,6 +6180,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "1 bar per tear fired"
     ]
   },
   {
@@ -5988,6 +6201,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -6007,6 +6223,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -6027,6 +6246,9 @@
     ],
     "item_pool": [
       "Angel Room"
+    ],
+    "recharge_time": [
+      "Timed (1 bar per second)"
     ]
   },
   {
@@ -6258,6 +6480,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "Timed (A few seconds)"
     ]
   },
   {
@@ -6422,6 +6647,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "Instant (One time use)"
     ]
   },
   {
@@ -6441,6 +6669,9 @@
     "item_pool": [
       "Shop",
       "Greed Mode Shop"
+    ],
+    "recharge_time": [
+      "Varies"
     ]
   },
   {
@@ -6460,6 +6691,9 @@
     "item_pool": [
       "Shop",
       "Greed Mode Item Room"
+    ],
+    "recharge_time": [
+      "1 room"
     ]
   },
   {
@@ -6498,6 +6732,9 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -6519,6 +6756,9 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
+    ],
+    "recharge_time": [
+      "5 seconds"
     ]
   },
   {
@@ -6614,6 +6854,9 @@
     "item_pool": [
       "Shop",
       "Greed Mode Item Room"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -7099,6 +7342,9 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -7117,6 +7363,9 @@
     "item_pool": [
       "Shop",
       "Greed Mode Item Room"
+    ],
+    "recharge_time": [
+      "15 seconds"
     ]
   },
   {
@@ -7176,6 +7425,9 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Shop"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -7370,6 +7622,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -7567,6 +7822,9 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Shop"
+    ],
+    "recharge_time": [
+      "4 Rooms"
     ]
   },
   {
@@ -7824,6 +8082,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -7861,6 +8122,9 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
+    ],
+    "recharge_time": [
+      "1 Rooms"
     ]
   },
   {
@@ -7882,6 +8146,9 @@
       "Item Room",
       "Shop",
       "Greed Mode Item Room"
+    ],
+    "recharge_time": [
+      "None (Max 3 use per floor)"
     ]
   },
   {
@@ -7972,6 +8239,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "1 room"
     ]
   },
   {
@@ -8105,6 +8375,9 @@
       "Shop",
       "Greed Mode Item Room",
       "Greed Mode Shop"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -8158,6 +8431,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -8197,6 +8473,9 @@
       "Shop",
       "Greed Mode Shop",
       "Mom's Chest"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -8235,6 +8514,9 @@
     "item_pool": [
       "Devil Room",
       "Greed Mode Devil Room"
+    ],
+    "recharge_time": [
+      "12 rooms"
     ]
   },
   {
@@ -8845,6 +9127,9 @@
       "Curse Room",
       "Red Chest",
       "Demon Beggar"
+    ],
+    "recharge_time": [
+      "One time use"
     ]
   },
   {
@@ -8865,6 +9150,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -8889,6 +9177,9 @@
     "item_pool": [
       "Devil Room",
       "Angel Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -8908,6 +9199,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -8927,6 +9221,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -8945,6 +9242,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -8965,6 +9265,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -8986,6 +9289,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -9007,6 +9313,9 @@
     "item_pool": [
       "Shop",
       "Bomb Beggar"
+    ],
+    "recharge_time": [
+      "One time use"
     ]
   },
   {
@@ -9026,6 +9335,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "10 seconds"
     ]
   },
   {
@@ -9049,6 +9361,9 @@
       "Item Room",
       "Shop",
       "Beggar"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -9066,6 +9381,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -9087,6 +9405,9 @@
     "item_pool": [
       "Shop",
       "Demon Beggar"
+    ],
+    "recharge_time": [
+      "None"
     ]
   },
   {
@@ -9109,6 +9430,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -9129,6 +9453,9 @@
     ],
     "item_pool": [
       "Secret Room"
+    ],
+    "recharge_time": [
+      "Varies"
     ]
   },
   {
@@ -9147,6 +9474,9 @@
     ],
     "item_pool": [
       "Angel Room"
+    ],
+    "recharge_time": [
+      "12 rooms (one time use)"
     ]
   },
   {
@@ -9418,6 +9748,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "7 seconds"
     ]
   },
   {
@@ -9476,6 +9809,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "8 seconds"
     ]
   },
   {
@@ -9536,6 +9872,9 @@
     ],
     "item_pool": [
       "Angel Room"
+    ],
+    "recharge_time": [
+      "12 rooms"
     ]
   },
   {
@@ -9576,6 +9915,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -9633,6 +9975,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "One time use"
     ]
   },
   {
@@ -9651,6 +9996,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -9749,6 +10097,9 @@
       "Item room",
       "Shop",
       "Beggar"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -9768,6 +10119,9 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
+    ],
+    "recharge_time": [
+      "6 seconds"
     ]
   },
   {
@@ -9789,6 +10143,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -9873,6 +10230,9 @@
     "item_pool": [
       "Shop",
       "Key Beggar"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -10049,6 +10409,9 @@
     "item_pool": [
       "Devil Room",
       "Curse Room"
+    ],
+    "recharge_time": [
+      "Single use"
     ]
   },
   {
@@ -10226,6 +10589,9 @@
       "Item Room",
       "Library",
       "Devil Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -10330,7 +10696,10 @@
     "type_list": [
       "Passive"
     ],
-    "item_pool": []
+    "item_pool": [],
+    "recharge_time": [
+      "4 rooms"
+    ]
   },
   {
     "id": "552",
@@ -10348,7 +10717,10 @@
     "type_list": [
       "Active"
     ],
-    "item_pool": []
+    "item_pool": [],
+    "recharge_time": [
+      "4 rooms"
+    ]
   },
   {
     "id": "553",
@@ -10400,6 +10772,9 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -10419,6 +10794,9 @@
     ],
     "item_pool": [
       "Devil Room"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -10436,6 +10814,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -10808,6 +11189,9 @@
     ],
     "item_pool": [
       "Devil Room"
+    ],
+    "recharge_time": [
+      "One time use"
     ]
   },
   {
@@ -10826,6 +11210,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -10870,6 +11257,9 @@
       "Curse Room",
       "Key Beggar",
       "Mom's Chest"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -10912,6 +11302,9 @@
     ],
     "item_pool": [
       "Secret Room"
+    ],
+    "recharge_time": [
+      "Starts at 1 second, increasing by every time you use it. After 10 uses it stops auto recharging."
     ]
   },
   {
@@ -10953,6 +11346,9 @@
     "item_pool": [
       "Angel Room",
       "Library"
+    ],
+    "recharge_time": [
+      "Varies"
     ]
   },
   {
@@ -10974,6 +11370,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "12 charges (one time use)"
     ]
   },
   {
@@ -11308,6 +11707,9 @@
       "Shop",
       "Crane Game",
       "Mom's Chest"
+    ],
+    "recharge_time": [
+      "1 second"
     ]
   },
   {
@@ -11326,6 +11728,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "3 rooms"
     ]
   },
   {
@@ -11403,6 +11808,9 @@
       "Item Room",
       "Secret Room",
       "Crane Game"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -11441,6 +11849,9 @@
     "item_pool": [
       "Item Room",
       "Greed Mode Item Room"
+    ],
+    "recharge_time": [
+      "12 rooms (Can be used with partial charges)"
     ]
   },
   {
@@ -11658,6 +12069,9 @@
     "item_pool": [
       "Angel Room",
       "Greed Mode Angel Room"
+    ],
+    "recharge_time": [
+      "One time use"
     ]
   },
   {
@@ -11679,6 +12093,9 @@
     ],
     "item_pool": [
       "Shop"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -11716,6 +12133,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "12 rooms"
     ]
   },
   {
@@ -11773,6 +12193,9 @@
     ],
     "item_pool": [
       "Secret Room"
+    ],
+    "recharge_time": [
+      "1 time use"
     ]
   },
   {
@@ -11814,6 +12237,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -11891,6 +12317,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "3 seconds"
     ]
   },
   {
@@ -11912,6 +12341,9 @@
     ],
     "item_pool": [
       "Secret Room"
+    ],
+    "recharge_time": [
+      "Single use"
     ]
   },
   {
@@ -11949,6 +12381,9 @@
     "item_pool": [
       "Shop",
       "Crane Game"
+    ],
+    "recharge_time": [
+      "1 room (Can only be used once per floor)"
     ]
   },
   {
@@ -11968,6 +12403,9 @@
     "item_pool": [
       "Item Room",
       "Rotten Beggar"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -11989,6 +12427,9 @@
     ],
     "item_pool": [
       "Angel Room"
+    ],
+    "recharge_time": [
+      "None (see above)"
     ]
   },
   {
@@ -12030,6 +12471,9 @@
       "Shop",
       "Red Chest",
       "Curse Room"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -12167,6 +12611,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -12235,6 +12682,9 @@
     ],
     "item_pool": [
       "Angel Room"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -12782,6 +13232,9 @@
     ],
     "item_pool": [
       "Angel Room"
+    ],
+    "recharge_time": [
+      "12 rooms"
     ]
   },
   {
@@ -12819,6 +13272,9 @@
     "item_pool": [
       "Item Room",
       "Crane Game"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -13130,6 +13586,9 @@
     "item_pool": [
       "Item Room",
       "Secret Room"
+    ],
+    "recharge_time": [
+      "1 room"
     ]
   },
   {
@@ -13153,6 +13612,9 @@
     ],
     "item_pool": [
       "Devil Room"
+    ],
+    "recharge_time": [
+      "Enemy damage taken = charge"
     ]
   },
   {
@@ -13172,6 +13634,9 @@
     ],
     "item_pool": [
       "Devil Room"
+    ],
+    "recharge_time": [
+      "7 seconds"
     ]
   },
   {
@@ -13192,6 +13657,9 @@
     ],
     "item_pool": [
       "Devil Room"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -13244,6 +13712,9 @@
     "item_pool": [
       "Item Room",
       "Crane Game"
+    ],
+    "recharge_time": [
+      "8 seconds"
     ]
   },
   {
@@ -13267,6 +13738,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -13291,6 +13765,9 @@
       "Curse Room",
       "Secret Room",
       "Shop"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -13313,6 +13790,9 @@
     "item_pool": [
       "Devil Room",
       "Library"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -13335,6 +13815,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "10 seconds"
     ]
   },
   {
@@ -13353,6 +13836,9 @@
     ],
     "item_pool": [
       "None"
+    ],
+    "recharge_time": [
+      "3 seconds"
     ]
   },
   {
@@ -13371,6 +13857,9 @@
     ],
     "item_pool": [
       "None"
+    ],
+    "recharge_time": [
+      "Instant"
     ]
   },
   {
@@ -13431,6 +13920,9 @@
       "Shop",
       "Secret Room",
       "Wooden Chest"
+    ],
+    "recharge_time": [
+      "4 rooms"
     ]
   },
   {
@@ -13450,6 +13942,9 @@
     "item_pool": [
       "Item Room",
       "Crane Game"
+    ],
+    "recharge_time": [
+      "12 rooms"
     ]
   },
   {
@@ -13488,6 +13983,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "15 seconds"
     ]
   },
   {
@@ -13511,6 +14009,9 @@
       "Item Room",
       "Secret Room",
       "Crane Game"
+    ],
+    "recharge_time": [
+      "6 rooms"
     ]
   },
   {
@@ -13608,6 +14109,9 @@
     "item_pool": [
       "Item Room",
       "Devil Room"
+    ],
+    "recharge_time": [
+      "2 rooms"
     ]
   },
   {
@@ -13627,6 +14131,9 @@
     ],
     "item_pool": [
       "Item Room"
+    ],
+    "recharge_time": [
+      "4 seconds"
     ]
   },
   {
