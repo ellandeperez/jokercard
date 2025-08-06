@@ -131,9 +131,6 @@
             <button class="filter-btn" data-filter="planetarium">Planetarium</button>
             <button class="filter-btn" data-filter="trinkets">Trinkets</button>
             <button class="filter-btn" data-filter="consumibles">Consumibles</button>
-            <!-- Ordenar -->
-            <button class="filter-btn order-btn" data-order="id">Ordenar por ID</button>
-            <button class="filter-btn order-btn" data-order="color">Ordenar por Color</button>
         </div>
         <h2 id="h2-items">ITEMS</h2>
         <div id="items" class="img-grid"></div>
@@ -221,14 +218,6 @@
         // Filtros activos
         let activeFilters = [];
 
-        // Orden activo: 'id', 'color' o null
-        let activeOrder = null;
-
-        // Colores reconocidos para ordenar
-        const colorList = [
-            "red", "blue", "green", "yellow", "purple", "pink", "brown", "black", "white", "orange", "grey", "gray", "cyan", "gold", "silver"
-        ];
-
         // Limpia todos los grids y oculta los h2
         function clearAllGrids() {
             document.getElementById('items').innerHTML = '';
@@ -239,17 +228,7 @@
             document.getElementById('h2-cards').style.display = 'none';
         }
 
-        // Devuelve el primer color encontrado en tags
-        function getFirstColor(tags) {
-            if (!tags) return null;
-            const tagStr = Array.isArray(tags) ? tags.join(' ').toLowerCase() : tags.toLowerCase();
-            for (const color of colorList) {
-                if (tagStr.includes(color)) return color;
-            }
-            return null;
-        }
-
-        // Renderiza según los filtros activos y el orden activo
+        // Renderiza según los filtros activos
         function renderByFilters() {
             clearAllGrids();
             let showItems = [];
@@ -259,10 +238,11 @@
             if (activeFilters.length === 0) {
                 // Nada seleccionado, no mostrar nada
             } else if (activeFilters.includes('all')) {
-                showItems = allItems.slice();
+                showItems = allItems;
                 showTrinkets = true;
                 showCards = true;
             } else {
+                // Acumular items según filtros stackeados
                 const pools = {
                     shop: 'Shop',
                     itemroom: 'Item Room',
@@ -280,20 +260,6 @@
                 }
                 if (activeFilters.includes('trinkets')) showTrinkets = true;
                 if (activeFilters.includes('consumibles')) showCards = true;
-            }
-
-            // Ordenar si corresponde
-            if (activeOrder === 'id') {
-                showItems.sort((a, b) => Number(a.id) - Number(b.id));
-            } else if (activeOrder === 'color') {
-                showItems.sort((a, b) => {
-                    const colorA = getFirstColor(a.tags);
-                    const colorB = getFirstColor(b.tags);
-                    if (colorA === colorB) return 0;
-                    if (!colorA) return 1;
-                    if (!colorB) return -1;
-                    return colorList.indexOf(colorA) - colorList.indexOf(colorB);
-                });
             }
 
             if (showItems.length > 0) renderItems(showItems);
@@ -346,22 +312,7 @@
 
         // Filtros: stackeables, "All" es exclusivo
         document.getElementById('filter-bar').addEventListener('click', function(e) {
-            if (e.target.classList.contains('order-btn')) {
-                // Botones de orden: toggle exclusivo entre ellos
-                const order = e.target.dataset.order;
-                if (activeOrder === order) {
-                    activeOrder = null;
-                    e.target.classList.remove('active');
-                } else {
-                    activeOrder = order;
-                    document.querySelectorAll('.order-btn').forEach(btn => btn.classList.remove('active'));
-                    e.target.classList.add('active');
-                }
-                renderByFilters();
-                return;
-            }
             if (!e.target.classList.contains('filter-btn')) return;
-            if (e.target.classList.contains('order-btn')) return; // Ya gestionado arriba
             const filter = e.target.dataset.filter;
 
             if (filter === 'all') {
@@ -397,11 +348,6 @@
             if (activeFilters.length === 0) {
                 document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
             }
-            // Mantener el estado de los botones de orden
-            document.querySelectorAll('.order-btn').forEach(btn => {
-                if (btn.dataset.order === activeOrder) btn.classList.add('active');
-                else btn.classList.remove('active');
-            });
             renderByFilters();
         });
 
