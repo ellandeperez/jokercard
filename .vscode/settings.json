@@ -1,0 +1,16 @@
+{
+    "projectTranslator.specifiedFiles": [
+        {
+            "sourceFile": {
+                "path": "cards.json",
+                "lang": "en-us"
+            },
+            "targetFiles": [
+                {
+                    "path": "i18n\\zh-cn\\cards.json",
+                    "lang": "zh-cn"
+                }
+            ]
+        }
+    ]
+}
