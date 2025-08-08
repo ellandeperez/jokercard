@@ -4689,7 +4689,7 @@
         "description": [
             "Aumenta tus posibilidades de encontrar una Sala del Ángel en lugar de una Sala del Diablo. Consulta la página dedicada a la Sala del Diablo para más detalles.",
             "Primera mitad de la llave necesaria para entrar por la puerta del jefe Mega Satán",
-            "Gotas de uno de los ángeles que aparecen al bombardear la estatua en una habitación de ángeles."
+            "Lo da uno de los ángeles que aparecen al bombardear la estatua en una habitación de ángeles."
         ],
         "quality": "0",
         "tags": "* angel room, angels, broken, yellow, gold, circle",
@@ -4698,7 +4698,8 @@
             "Familiar"
         ],
         "item_pool": [
-            "None (Angel statue only)"
+            "None (Angel statue only)",
+            "Angel Room"
         ],
         "pickup": "???"
     },
@@ -4717,7 +4718,8 @@
             "Familiar"
         ],
         "item_pool": [
-            "None (Angel statue only)"
+            "None (Angel statue only)",
+            "Angel Room"
         ],
         "pickup": "???"
     },

@@ -4698,7 +4698,8 @@
       "Familiar"
     ],
     "item_pool": [
-      "None (Angel statue only)"
+      "None (Angel statue only)",
+            "Angel Room"
     ],
     "pickup": "???"
   },
@@ -4717,7 +4718,8 @@
       "Familiar"
     ],
     "item_pool": [
-      "None (Angel statue only)"
+      "None (Angel statue only)",
+            "Angel Room"
     ],
     "pickup": "???"
   },
