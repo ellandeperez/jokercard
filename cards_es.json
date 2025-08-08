@@ -458,7 +458,7 @@
         "name": "Card Against Humanity",
         "pickup": "Something stinks...",
         "description": [
-            "¡Cuando se usa, llena toda la habitación con caca!"
+            "¡Cuando se usa, llena toda la habitación con mierda!"
         ],
         "tags": "*, black, white, writing",
         "unlock": "Unlock this card by beating Challenge #12 (When Life Gives You Lemons)"
@@ -1040,7 +1040,7 @@
             "Telepíldoras: Te teletransportan a una sala aleatoria al usarlas. Tiene una pequeña probabilidad de llevarte a la sala \"SOY ERROR\" y una probabilidad aún menor de teletransportarte a un Mercado Negro.",
             "Adicto: Recibes un corazón completo de daño por todas las fuentes de daño en la sala actual. Desbloqueado en el Desafío n.° 24: PAGA PARA JUGAR.",
             "Amigos hasta el final: genera tres amigables moscas de ataque azules.",
-            "¡Infestado! - Destruye todas las cacas de la habitación y genera una araña de ataque azul en cada caca destruida.",
+            "¡Infestado! - Destruye todas las mierdas de la habitación y genera una araña de ataque azul en cada mierda destruida.",
             "¿Infestado? - Genera una araña de ataque azul por cada enemigo en la sala. Si no hay enemigos, esta píldora genera de 1 a 3 arañas azules.",
             "Uno te hace más pequeño: reduce el tamaño de Isaac y el tamaño del hitbox.",
             "Uno te hace más grande: aumenta el tamaño de Isaac, pero no afecta el tamaño de su hitbox.",

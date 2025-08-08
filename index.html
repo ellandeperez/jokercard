@@ -67,6 +67,7 @@
         }
 
         .img-grid img:hover {
+            image-rendering: pixelated;
             transform: scale(1.5);
             z-index: 1000;
             filter:drop-shadow(0 0 1px #ffffff)drop-shadow(0 0 1px #ffffff)drop-shadow(0 0 1px #ffffff)drop-shadow(0 0 10px #ff0000);
@@ -170,6 +171,16 @@
             font-weight: bold;
             box-shadow: 0 0 8px #fff2;
         }
+        .cat-corner {
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            width: 125px;
+            height: 125px;
+            z-index: 10;
+            pointer-events: none;
+            filter:drop-shadow(0 0 5px #000000);
+        }
         
         @media (max-width: 700px) {
             .content {
@@ -214,6 +225,10 @@
             .modal-content {
                 max-width: 70vw;
                 padding: 1em;
+            }
+            .cat-corner {
+                width: 75px;
+                height: 75px;
             }
         }
     </style>
@@ -536,9 +551,14 @@
         const itemModal = document.getElementById('item-modal');
         const itemModalContent = document.getElementById('modal-content-item');
         function showItemModal(item) {
+            let catImg = '';
+            if (item.cat === 'up' || item.cat === 'down') {
+                catImg = `<img src="${baseUrl}cat_${item.cat}.png" alt="cat_${item.cat}" class="cat-corner">`;
+            }
             itemModalContent.innerHTML = `
                 <span class="modal-close" id="modal-close-item">&times;</span>
                 <img src="${baseUrl}All_Items/item_${item.id}.png" alt="${item.name}" style="width:100px;height:100px;display:block;margin:auto;object-fit: contain;">
+                ${catImg}
                 <h3>${item.name}</h3>
                 ${item.pickup ? `<h3>"${item.pickup}"</h3>` : ''}
                 <p>${Array.isArray(item.description) ? item.description.join('<br><br>') : item.description || ''}</p>
@@ -557,9 +577,14 @@
         const trinketModal = document.getElementById('trinket-modal');
         const trinketModalContent = document.getElementById('modal-content-trinket');
         function showTrinketModal(trinket) {
+            let catImg = '';
+            if (trinket.cat === 'up' || trinket.cat === 'down') {
+                catImg = `<img src="${baseUrl}cat_${trinket.cat}.png" alt="cat_${trinket.cat}" class="cat-corner">`;
+            }
             trinketModalContent.innerHTML = `
                 <span class="modal-close" id="modal-close-trinket">&times;</span>
                 <img src="${baseUrl}All_Trinkets/trinket_${trinket.trinketId}.png" alt="${trinket.name}" style="width:100px;height:100px;display:block;margin:auto;object-fit: contain;">
+                ${catImg}
                 <h3>${trinket.name}</h3>
                 ${trinket.pickup ? `<h3>"${trinket.pickup}"</h3>` : ''}
                 <p>${Array.isArray(trinket.description) ? trinket.description.join('<br><br>') : trinket.description || ''}</p>
@@ -576,9 +601,14 @@
         const cardModal = document.getElementById('card-modal');
         const cardModalContent = document.getElementById('modal-content-card');
         function showCardModal(card) {
+            let catImg = '';
+            if (card.cat === 'up' || card.cat === 'down') {
+                catImg = `<img src="${baseUrl}cat_${card.cat}.png" alt="cat_${card.cat}" class="cat-corner">`;
+            }
             cardModalContent.innerHTML = `
                 <span class="modal-close" id="modal-close-card">&times;</span>
                 <img src="${baseUrl}All_Consumables/card_${card.cardId}.png" alt="${card.name}" style="width:100px;height:100px;display:block;margin:auto;object-fit: contain;">
+                ${catImg}
                 <h3>${card.name}</h3>
                 ${card.pickup ? `<h3>"${card.pickup}"</h3>` : ''}
                 <p>${Array.isArray(card.description) ? card.description.join('<br><br>') : card.description || ''}</p>

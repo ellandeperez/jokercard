@@ -14,9 +14,10 @@
         "name": "Petrified Poop",
         "pickup": "\"It feels lucky?\"",
         "description": [
-            "Mientras está sostenido, Isaac tiene una probabilidad significativamente mayor de encontrar objetos al romper cacas."
+            "Mientras está sostenido, Isaac tiene una probabilidad significativamente mayor de encontrar objetos al romper mierdas."
         ],
-        "tags": "*, grey, gray"
+        "tags": "*, grey, gray",
+        "cat": "up"
     },
     {
         "trinketId": "3",
@@ -246,7 +247,7 @@
         "pickup": "\"Wealth of gas\"",
         "description": [
             "Cada vez que recoges una moneda, te tiras un pedo, lo que inflige daño por veneno a los enemigos cercanos.",
-            "Aumenta enormemente la posibilidad de que caigan monedas de las cacas."
+            "Aumenta enormemente la posibilidad de que caigan monedas de las mierdas."
         ],
         "tags": "*, brown, orange, flat"
     },
@@ -255,7 +256,7 @@
         "name": "Mysterious Candy",
         "pickup": "\"Uh-oh!\"",
         "description": [
-            "Hace que Isaac cree caca aleatoriamente."
+            "Hace que Isaac cree mierda aleatoriamente."
         ],
         "tags": "*, chocolate, brown, rectangle"
     },
@@ -397,7 +398,8 @@
             "El aumento de la velocidad de disparo se aplica de tal manera que cuanto mayor sea tu estadística de lágrima, más efectivo será el cáncer.",
             "Rompe el límite de velocidad de disparo normal, lo que te permite disparar más rápido que el máximo normal."
         ],
-        "tags": "*, green, brown, red, saddle, tube"
+        "tags": "*, green, brown, red, saddle, tube",
+        "cat": "up"
     },
     {
         "trinketId": "40",
@@ -848,7 +850,7 @@
         "name": "Lil Larva",
         "pickup": "\"the poop is moving...\"",
         "description": [
-            "Destruir cacas ahora te da una mosca azul"
+            "Destruir mierdas ahora te da una mosca azul"
         ],
         "tags": "*, white, grey, gray, bent"
     },
@@ -889,7 +891,7 @@
         "name": "Brown Cap",
         "pickup": "\"Fartoom!\"",
         "description": [
-            "La caca en el entorno ahora explotará cuando se destruya."
+            "La mierda en el entorno ahora explotará cuando se destruya."
         ],
         "tags": "*, circle, rectangle"
     },
@@ -898,8 +900,8 @@
         "name": "Meconium",
         "pickup": "\"Eww\"",
         "description": [
-            "Mientras lo sostienes, tienes una mayor probabilidad de que aparezcan Cacas Negras, que infligen daño a todos los enemigos en la sala cuando son destruidas.",
-            "Le da al objeto activo La Caca la posibilidad de generar también una Caca Negra"
+            "Mientras lo sostienes, tienes una mayor probabilidad de que aparezcan mierdas Negras, que infligen daño a todos los enemigos en la sala cuando son destruidas.",
+            "Le da al objeto activo La mierda la posibilidad de generar también una mierda Negra"
         ],
         "tags": "*, black, grey, gray, poop",
         "unlock": "Desbloquea esta baratija al derrotar al modo Greedier con ???"
@@ -1452,7 +1454,8 @@
             "Las lágrimas que no alcanzan a los enemigos se redirigirán y viajarán 90 grados hacia ellos.",
             "Las lágrimas deben tener aproximadamente 2 casillas o menos para activar este efecto."
         ],
-        "tags": "*,"
+        "tags": "*,",
+        "cat": "up"
     },
     {
         "trinketId": "145",

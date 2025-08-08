@@ -16,7 +16,8 @@
     "description": [
       "While held, Isaac has a significantly higher chance to find drops when breaking poops"
     ],
-    "tags": "*, grey, gray"
+    "tags": "*, grey, gray",
+    "cat": "up"
   },
   {
     "trinketId": "3",
@@ -1452,7 +1453,8 @@
       "Tears that miss enemies will redirect themselves and travel 90 degrees towards enemies",
       "Tears must be roughly 2 tiles or closer to activate this effect"
     ],
-    "tags": "*,"
+    "tags": "*,",
+    "cat": "up"
   },
   {
     "trinketId": "145",

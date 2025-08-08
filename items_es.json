@@ -47,7 +47,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Homing shots"
+        "pickup": "Homing shots",
+        "cat": "up"
     },
     {
         "id": "4",
@@ -155,7 +156,7 @@
             "Moter, Level 2 Fly, Full Fly, Pooter y Super Pooter se mueven más lento y no infligen daño por contacto.",
             "Sólo se puede obtener del juego de shell en la sala de juegos.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú",
-            "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap."
+            "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap."
         ],
         "quality": "0",
         "tags": "* arcade, skull game, black, heart, pink, love",
@@ -679,11 +680,11 @@
         "id": "36",
         "name": "The Poop",
         "description": [
-            "Deja caer una caca en el suelo",
+            "Deja caer una mierda en el suelo",
             "Blue Baby comienza con este artículo",
             "Se puede colocar junto a un pozo y explotar para hacer un puente.",
-            "Se puede colocar sobre una caca roja rota para sobrescribirla, lo que hace que ya no se regenere.",
-            "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap"
+            "Se puede colocar sobre una mierda roja rota para sobrescribirla, lo que hace que ya no se regenere.",
+            "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap"
         ],
         "quality": "0",
         "tags": "* item room, treasure room, item room pool, starting, turd, brown",
@@ -1209,7 +1210,8 @@
             "Greed Miniboss",
             "Shopkeeper"
         ],
-        "pickup": "50% off"
+        "pickup": "50% off",
+        "cat": "up"
     },
     {
         "id": "65",
@@ -1562,7 +1564,8 @@
             "Red Chest",
             "Super Pride Miniboss"
         ],
-        "pickup": "9 lives"
+        "pickup": "9 lives",
+        "cat": "up"
     },
     {
         "id": "82",
@@ -2251,7 +2254,8 @@
             "Challenge Room",
             "Mom's Chest"
         ],
-        "pickup": "Stab stab stab"
+        "pickup": "Stab stab stab",
+        "cat": "up"
     },
     {
         "id": "115",
@@ -3049,7 +3053,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Quad Shot"
+        "pickup": "Quad Shot",
+        "cat": "up"
     },
     {
         "id": "154",
@@ -4008,7 +4013,7 @@
             "El toque de Isaac ahora petrifica a los enemigos, convirtiéndolos en oro durante unos segundos.",
             "If an enemy is killed while it is golden, it will drop between 1-4 coins",
             "El daño de contacto también se inflige a los enemigos en una cantidad igual a la cantidad de monedas que Isaac tiene en ese momento.",
-            "Tiene una sinergia con el objeto The Poop, lo que le da una alta probabilidad de generar cacas doradas."
+            "Tiene una sinergia con el objeto The Poop, lo que le da una alta probabilidad de generar mierdas doradas."
         ],
         "quality": "2",
         "tags": "* item room, treasure room, item room pool, gold, ingot, bar, orange",
@@ -4142,9 +4147,9 @@
         "name": "Butt Bombs",
         "description": [
             "+5 bombas",
-            "Las bombas ahora se convierten en bombas de caca, que infligen 10 puntos de daño a todos los enemigos en la sala y los aturden por un breve período de tiempo.",
-            "Las bombas de trasero curan a los jefes de caca (Dingle, Dangle, Brownie) en un 25% de su HP máximo.",
-            "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap."
+            "Las bombas ahora se convierten en bombas de mierda, que infligen 10 puntos de daño a todos los enemigos en la sala y los aturden por un breve período de tiempo.",
+            "Las bombas de trasero curan a los jefes de mierda (Dingle, Dangle, Brownie) en un 25% de su HP máximo.",
+            "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap."
         ],
         "quality": "2",
         "tags": "* boss rush pool, boss rush room, item room, treasure room, item room pool, poop, face, brown",
@@ -4264,7 +4269,8 @@
             "Devil Room",
             "Curse Room"
         ],
-        "pickup": "He accepts your offering"
+        "pickup": "He accepts your offering",
+        "cat": "up"
     },
     {
         "id": "216",
@@ -4387,7 +4393,8 @@
             "Item Room",
             "Greed Mode Item Room"
         ],
-        "pickup": "Bouncing tears"
+        "pickup": "Bouncing tears",
+        "cat": "up"
     },
     {
         "id": "222",
@@ -4444,7 +4451,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Splash damage + tears up"
+        "pickup": "Splash damage + tears up",
+        "cat": "up"
     },
     {
         "id": "225",
@@ -4654,11 +4662,11 @@
         "id": "236",
         "name": "E. Coli",
         "description": [
-            "E. coli convierte a los enemigos normales en caca si te tocan",
-            "Los enemigos pueden convertirse en caca incluso si no hacen daño de contacto, lo que te permite aplicar el efecto sin recibir daño.",
-            "Se puede combinar con Toque de Midas para convertir a los enemigos en caca dorada.",
+            "E. coli convierte a los enemigos normales en mierda si te tocan",
+            "Los enemigos pueden convertirse en mierda incluso si no hacen daño de contacto, lo que te permite aplicar el efecto sin recibir daño.",
+            "Se puede combinar con Toque de Midas para convertir a los enemigos en mierda dorada.",
             "Esto no funciona con mini-jefes y jefes.",
-            "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap"
+            "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap"
         ],
         "quality": "1",
         "tags": "* e coli, item room, treasure room, item room pool, tampon, bloody, red, white, red sperm, ecoli",
@@ -4884,7 +4892,8 @@
             "Shop",
             "Key Beggar"
         ],
-        "pickup": "Your friends rule!"
+        "pickup": "Your friends rule!",
+        "cat": "up"
     },
     {
         "id": "248",
@@ -5133,7 +5142,8 @@
             "Shop",
             "Curse Room"
         ],
-        "pickup": "Curse of immunity + evil up"
+        "pickup": "Curse of immunity + evil up",
+        "cat": "up"
     },
     {
         "id": "261",
@@ -5302,7 +5312,8 @@
             "Item Room",
             "Devil Room"
         ],
-        "pickup": "Infested friend"
+        "pickup": "Infested friend",
+        "cat": "up"
     },
     {
         "id": "269",
@@ -5774,10 +5785,10 @@
         "id": "291",
         "name": "FLUSH!",
         "description": [
-            "¡Cuando se usa, convierte a todos los enemigos normales de la habitación en caca!",
+            "¡Cuando se usa, convierte a todos los enemigos normales de la habitación en mierda!",
             "No funciona con mini-jefes y jefes.",
-            "Mata a los jefes de caca cuando se usa: Dingle, Dangle y Brownie",
-            "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap"
+            "Mata a los jefes de mierda cuando se usa: Dingle, Dangle y Brownie",
+            "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap"
         ],
         "quality": "1",
         "tags": "* item room, treasure room, item room pool, silver spoon handle, grey, gray, white, toilet",
@@ -5849,7 +5860,7 @@
             "Si un enemigo empujado golpea una roca o una pared con suficiente fuerza, recibe 10 puntos de daño."
         ],
         "quality": "1",
-        "unlock": "Desbloquea este objeto destruyendo 100 cacas.",
+        "unlock": "Desbloquea este objeto destruyendo 100 mierdas.",
         "tags": "* normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, white",
         "type_list": [
             "Activa"
@@ -6020,7 +6031,7 @@
         "description": [
             "Isaac aumenta de tamaño, obtiene una melena de león y ahora tiene la habilidad de aplastar rocas caminando sobre ellas.",
             "Las rocas trituradas y los excrementos pueden llenar los agujeros si caminas en su dirección.",
-            "Te permite aplastar a los Caca Roja y, a veces, no recibir daño. Sin embargo, si también tienes habilidad de volar, siempre recibirás daño.",
+            "Te permite aplastar a los mierda Roja y, a veces, no recibir daño. Sin embargo, si también tienes habilidad de volar, siempre recibirás daño.",
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios",
             "Cuenta como 1 de los 3 elementos que aumentan el tamaño necesarios para la transformación de Stompy."
         ],
@@ -6261,7 +6272,7 @@
             "Ahora puedes romper obstáculos caminando sobre ellos.",
             "Cura un contenedor de corazón rojo al recogerlo.",
             "Los agujeros en el suelo se pueden rellenar triturando rocas adyacentes, de forma similar a como se puede hacer con las bombas.",
-            "Te permite aplastar a los Caca Roja y, a veces, no recibir daño. Sin embargo, si también tienes habilidad de volar, siempre recibirás daño."
+            "Te permite aplastar a los mierda Roja y, a veces, no recibir daño. Sin embargo, si también tienes habilidad de volar, siempre recibirás daño."
         ],
         "quality": "1",
         "tags": "* item room, treasure room, item room pool, cheetos, cheese, grey, gray, orange, jar",
@@ -6657,7 +6668,8 @@
             "Item Room",
             "Angel Room"
         ],
-        "pickup": "I know all"
+        "pickup": "I know all",
+        "cat": "up"
     },
     {
         "id": "334",
@@ -6932,7 +6944,8 @@
         "recharge_time": [
             "Instant (One time use)"
         ],
-        "pickup": "Double item vision"
+        "pickup": "Double item vision",
+        "cat": "up"
     },
     {
         "id": "348",
@@ -7567,7 +7580,7 @@
             "Disparar o cargar lágrimas continuamente durante 3 segundos hace que Isaac se tire un pedo y suelte una bomba en el trasero.",
             "Solo se puede dejar caer 1 bomba por carga, por lo que tendrás que dejar de disparar y luego comenzar de nuevo para dejar caer otra.",
             "Las bombas de trasero explotan e infligen 50 de daño como las bombas normales, pero también causan 10 de daño a todos los enemigos en la sala y los aturden por un breve período de tiempo.",
-            "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap."
+            "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap."
         ],
         "quality": "2",
         "tags": "*, yfront, y-front, underpants, underwear, white, grey, gray, no 2, number two, number 2, no two",
@@ -7729,7 +7742,7 @@
         "id": "386",
         "name": "D12",
         "description": [
-            "Cuando se usa, el D12 vuelve a lanzar cualquier roca para transformarla en otro tipo de objeto aleatorio (por ejemplo, caca, ollas, TNT, caca roja, bloques de piedra, picos, chimeneas, etc.)"
+            "Cuando se usa, el D12 vuelve a lanzar cualquier roca para transformarla en otro tipo de objeto aleatorio (por ejemplo, mierda, ollas, TNT, mierda roja, bloques de piedra, picos, chimeneas, etc.)"
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Blue Womb (Hush) con Caín.",
@@ -8982,7 +8995,7 @@
         "id": "447",
         "name": "Linger Bean",
         "description": [
-            "Mientras disparas lágrimas constantemente durante 7,5 segundos, generas una nube de caca que inflige daño periódico a cualquier enemigo que se acerque a ella.",
+            "Mientras disparas lágrimas constantemente durante 7,5 segundos, generas una nube de mierda que inflige daño periódico a cualquier enemigo que se acerque a ella.",
             "La nube inflige daño igual a tu daño de desgarro base por cada tic, aproximadamente 5 veces por segundo.",
             "Las nubes duran 15 segundos antes de desaparecer.",
             "La nube se puede empujar ligeramente lanzándole lágrimas."
@@ -9368,7 +9381,7 @@
         "name": "Finger!",
         "description": [
             "Le otorga a Isaac un dedo que flota frente a él y apunta en la misma dirección en la que mira o dispara. El dedo inflige el 10% de su daño normal a todos los enemigos en la misma dirección en la que apunta.",
-            "El dedo también causará daño a entidades como fuegos y cacas.",
+            "El dedo también causará daño a entidades como fuegos y mierdas.",
             "Aplica efectos de estado al impactar, como la desventaja de quemadura de Mente de fuego.",
             "Genera moscas guppy si tienes la transformación Guppy"
         ],
@@ -9721,7 +9734,7 @@
             "Al usarlo, este objeto arrojará pedos, empujando a los enemigos y provocando que se genere una ola de rocas que se extienden hacia afuera desde Isaac en un círculo, lo que inflige 10 de daño por golpe a cualquier enemigo atrapado en ella.",
             "Se puede utilizar para abrir habitaciones secretas.",
             "Visualmente este artículo es muy similar a Butter Bean",
-            "Las ondas de roca pueden destruir objetos destructibles, por ejemplo, caca."
+            "Las ondas de roca pueden destruir objetos destructibles, por ejemplo, mierda."
         ],
         "quality": "1",
         "tags": "*, white, yellow, bean",
@@ -9915,7 +9928,8 @@
             "Item Room",
             "Key Beggar"
         ],
-        "pickup": "Yo listen!"
+        "pickup": "Yo listen!",
+        "cat": "up"
     },
     {
         "id": "493",
@@ -9958,7 +9972,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Electric tears"
+        "pickup": "Electric tears",
+        "cat": "up"
     },
     {
         "id": "495",
@@ -10341,11 +10356,11 @@
             "+0.1 aumento de daño",
             "+1 Corazón del alma",
             "Agrega una posibilidad aleatoria de que un enemigo en la sala actual quede encantado o temido brevemente.",
-            "Agrega una posibilidad aleatoria de generar una caca de arcoíris al recibir daño.",
+            "Agrega una posibilidad aleatoria de generar una mierda de arcoíris al recibir daño.",
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod Steam Workshop creado por Electoon"
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto rompiendo 5 cacas de arcoíris.",
+        "unlock": "Desbloquea este objeto rompiendo 5 mierdas de arcoíris.",
         "tags": "*, red, white, stripe, hat, clown, waldo, wally",
         "type_list": [
             "Pasivo"
@@ -10380,7 +10395,7 @@
         "id": "515",
         "name": "Mystery Gift",
         "description": [
-            "Un objeto de un solo uso que genera un objeto aleatorio del grupo de objetos de la sala actual, con una posibilidad de que genere un trozo de carbón o una caca en su lugar.",
+            "Un objeto de un solo uso que genera un objeto aleatorio del grupo de objetos de la sala actual, con una posibilidad de que genere un trozo de carbón o una mierda en su lugar.",
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod Steam Workshop creado por Mills"
         ],
         "quality": "3",
@@ -10394,7 +10409,8 @@
         "recharge_time": [
             "One time use"
         ],
-        "pickup": "Wrapped up nice for you!"
+        "pickup": "Wrapped up nice for you!",
+        "cat": "up"
     },
     {
         "id": "516",
@@ -10777,7 +10793,8 @@
         "item_pool": [
             "Angel Room"
         ],
-        "pickup": "Smite thy enemy"
+        "pickup": "Smite thy enemy",
+        "cat": "up"
     },
     {
         "id": "534",
@@ -10968,13 +10985,13 @@
         "id": "543",
         "name": "Hallowed Ground",
         "description": [
-            "Un familiar que sigue a Isaac y genera una caca blanca cuando recibes daño.",
-            "La caca blanca otorga un aura que reduce el retraso de lágrimas a la mitad (Lágrimas) y tiene la posibilidad de bloquear el daño.",
-            "El aura desaparece si se destruye la caca.",
+            "Un familiar que sigue a Isaac y genera una mierda blanca cuando recibes daño.",
+            "La mierda blanca otorga un aura que reduce el retraso de lágrimas a la mitad (Lágrimas) y tiene la posibilidad de bloquear el daño.",
+            "El aura desaparece si se destruye la mierda.",
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5",
-            "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap.",
-            "Puede provocar caca blanca a través de los efectos de otros objetos, como Una carta contra la humanidad o las píldoras Re-Lax.",
-            "ARREPENTIMIENTO - La caca blanca de Tierra Sagrada ahora es más duradera, similar a la caca dorada. Mientras permanece en el aura, el daño de Isaac también aumenta un 25% y sus lágrimas adquieren un efecto de búsqueda."
+            "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap.",
+            "Puede provocar mierda blanca a través de los efectos de otros objetos, como Una carta contra la humanidad o las píldoras Re-Lax.",
+            "ARREPENTIMIENTO - La mierda blanca de Tierra Sagrada ahora es más duradera, similar a la mierda dorada. Mientras permanece en el aura, el daño de Isaac también aumenta un 25% y sus lágrimas adquieren un efecto de búsqueda."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Hush como El Olvidado.",
@@ -11620,16 +11637,16 @@
         "id": "576",
         "name": "Dirty Mind",
         "description": [
-            "Cada vez que destruyes una caca, este objeto generará entre 1 y 4 familiares Dip amistosos que te seguirán, bloquearán disparos y atacarán a los enemigos cercanos.",
-            "Los diferentes tipos de caca generarán diferentes tipos de Dip, cada uno con su propio efecto.",
-            "Los baños de caca dorados pueden petrificar a los enemigos, convirtiéndolos en oro durante unos segundos. Si el enemigo muere en este estado, dejará caer de 1 a 4 monedas.",
+            "Cada vez que destruyes una mierda, este objeto generará entre 1 y 4 familiares Dip amistosos que te seguirán, bloquearán disparos y atacarán a los enemigos cercanos.",
+            "Los diferentes tipos de mierda generarán diferentes tipos de Dip, cada uno con su propio efecto.",
+            "Los baños de mierda dorados pueden petrificar a los enemigos, convirtiéndolos en oro durante unos segundos. Si el enemigo muere en este estado, dejará caer de 1 a 4 monedas.",
             "Los dips de excremento de maíz generan una mosca azul al morir",
-            "Los dips de caca de arcoíris encantan a los enemigos y tienen la posibilidad de generar medio corazón rojo al morir.",
+            "Los dips de mierda de arcoíris encantan a los enemigos y tienen la posibilidad de generar medio corazón rojo al morir.",
             "Las heces negras dejan un rastro de suciedad.",
-            "Los Dips de caca blanca tienen un pequeño efecto de aura de Tierra Sagrada, lo que aumenta tu daño y velocidad de disparo mientras estás en ella.",
-            "Las cacas generadas por Tainted ??? e IBS también tienen efectos especiales: los Inmersiones de Piedra infligen 3.5 más de daño y pueden resistir 6 golpes antes de morir. Las Inmersiones Tóxicas liberan una nube de veneno al moverse o morir. Las Inmersiones de Fuego queman a los enemigos y dejan un rastro de fuego al morir.",
+            "Los Dips de mierda blanca tienen un pequeño efecto de aura de Tierra Sagrada, lo que aumenta tu daño y velocidad de disparo mientras estás en ella.",
+            "Las mierdas generadas por Tainted ??? e IBS también tienen efectos especiales: los Inmersiones de Piedra infligen 3.5 más de daño y pueden resistir 6 golpes antes de morir. Las Inmersiones Tóxicas liberan una nube de veneno al moverse o morir. Las Inmersiones de Fuego queman a los enemigos y dejan un rastro de fuego al morir.",
             "Todas las inmersiones enemigas se vuelven amigas.",
-            "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap."
+            "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al superar el desafío n.º 36 (Scat Man)",
@@ -11757,7 +11774,8 @@
             "Item Room",
             "Key Beggar"
         ],
-        "pickup": "Flamboyant protector"
+        "pickup": "Flamboyant protector",
+        "cat": "up"
     },
     {
         "id": "582",
@@ -11909,7 +11927,8 @@
         "item_pool": [
             "Planetarium"
         ],
-        "pickup": "More secrets"
+        "pickup": "More secrets",
+        "cat": "up"
     },
     {
         "id": "590",
@@ -12511,7 +12530,7 @@
             "Maggy contaminada: agrega 1 contenedor de corazón real adicional que no se agota",
             "Caín contaminado: las selecciones dobles se caen al tocar un objeto",
             "Judas contaminado: aumenta el alcance en el que las Artes Oscuras golpean a los enemigos y desgarran",
-            "¿Contaminado? - Permite almacenar hasta 29 cacas.",
+            "¿Contaminado? - Permite almacenar hasta 29 mierdas.",
             "Tainted Eve: Los coágulos creados solo a partir de corazones rojos generan un corazón que desaparece después de 2 segundos cuando mueren.",
             "Tainted Samson: encadenar asesinatos agrega 3 segundos al temporizador de Berserk en lugar de 1.",
             "Azazel contaminado: duplica el tamaño de sus estornudos.",
@@ -13674,9 +13693,9 @@
         "id": "680",
         "name": "Montezuma's Revenge",
         "description": [
-            "Mientras disparas lágrimas, ahora cargas un ataque de caca durante 3 segundos que, cuando se suelta, se dispara desde atrás de Isaac.",
-            "El ataque de caca inflige tu daño de desgarro actual a cualquier enemigo atrapado en la explosión.",
-            "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap"
+            "Mientras disparas lágrimas, ahora cargas un ataque de mierda durante 3 segundos que, cuando se suelta, se dispara desde atrás de Isaac.",
+            "El ataque de mierda inflige tu daño de desgarro actual a cualquier enemigo atrapado en la explosión.",
+            "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap"
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como ???",
@@ -14421,7 +14440,7 @@
         "name": "Hold",
         "description": [
             "Este es el objeto que Tainted Blue Baby (???) usa como su mecánica principal.",
-            "Matar o dañar enemigos genera varias cacas, que se suman a su colección. Al presionar el botón de bomba, la siguiente caca se colocará en el frasco de \"Retener\". Al presionarlo de nuevo, podrás lanzársela a los enemigos. Cada caca tiene efectos aleatorios como bombas de trasero, cacas de fuego, etc.",
+            "Matar o dañar enemigos genera varias mierdas, que se suman a su colección. Al presionar el botón de bomba, la siguiente mierda se colocará en el frasco de \"Retener\". Al presionarlo de nuevo, podrás lanzársela a los enemigos. Cada mierda tiene efectos aleatorios como bombas de trasero, mierdas de fuego, etc.",
             "Tainted Blue Baby comienza con este objeto y es el único que puede usarlo."
         ],
         "quality": "0",
@@ -14506,7 +14525,7 @@
         "id": "720",
         "name": "Everything Jar",
         "description": [
-            "Por cada barra de carga que tenga este objeto, se mostrará un consumible diferente dentro del frasco. 1 = caca, 2 = centavo, 3 = bomba, 4 = llave, 5 = corazón rojo, 6 = píldora, 7 = tarjeta, 8 = corazón de alma, 9 = corazón de oro, 10 = llave de oro, 11 = bomba de oro",
+            "Por cada barra de carga que tenga este objeto, se mostrará un consumible diferente dentro del frasco. 1 = mierda, 2 = centavo, 3 = bomba, 4 = llave, 5 = corazón rojo, 6 = píldora, 7 = tarjeta, 8 = corazón de alma, 9 = corazón de oro, 10 = llave de oro, 11 = bomba de oro",
             "Con las 12 cargas completas, se producirá un efecto completamente aleatorio. Puede ser cualquier cosa, como la generación de consumibles, la generación de un pedestal defectuoso, la creación de rayos de luz, la generación de bombas trol o nada en absoluto."
         ],
         "quality": "3",
@@ -14613,14 +14632,14 @@
         "id": "725",
         "name": "IBS",
         "description": [
-            "Siempre que infliges daño a un enemigo, tiene la posibilidad de otorgar el efecto de una de las cacas únicas de Tainted ???",
-            "Caca de maíz: genera una mosca azul cada 2 segundos",
-            "Caca llameante: deja fuego que daña a los enemigos.",
-            "Caca apestosa: emite una nube tóxica",
-            "Caca negra: Crea una criatura negra que ralentiza. Confunde brevemente a todos los enemigos al ser destruida.",
-            "Caca blanca: el mismo efecto que Hallowed Ground",
-            "Caca de piedra: Inflige daño adicional al lanzarla y puede golpear a varios enemigos. Aguanta más disparos antes de romperse.",
-            "Bomba de caca: lanza una bomba en el trasero que explota después de 2 segundos."
+            "Siempre que infliges daño a un enemigo, tiene la posibilidad de otorgar el efecto de una de las mierdas únicas de Tainted ???",
+            "mierda de maíz: genera una mosca azul cada 2 segundos",
+            "mierda llameante: deja fuego que daña a los enemigos.",
+            "mierda apestosa: emite una nube tóxica",
+            "mierda negra: Crea una criatura negra que ralentiza. Confunde brevemente a todos los enemigos al ser destruida.",
+            "mierda blanca: el mismo efecto que Hallowed Ground",
+            "mierda de piedra: Inflige daño adicional al lanzarla y puede golpear a varios enemigos. Aguanta más disparos antes de romperse.",
+            "Bomba de mierda: lanza una bomba en el trasero que explota después de 2 segundos."
         ],
         "quality": "0",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Blue Baby.",
