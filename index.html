@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Joker Card</title>
     <link rel="icon" href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon.png" type="image/x-icon">
@@ -80,7 +81,7 @@
             align-items: center;
         }
         .modal-content {
-            border: 5px inset #99866e;
+            border: 10px inset #99866e;
             background: #f6d6b0;
             padding: 2em;
             border-radius: 8px;
@@ -115,6 +116,15 @@
             background:#f6d6b0;
             color:#222;
             font-family: 'Jersey 15', Arial, sans-serif;
+        }
+        .lang-img {
+            padding:5px;
+            margin-top: 5px;
+            margin-left: 10px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            image-rendering: pixelated;
         }
         .filter-bar {
             position: sticky;
@@ -160,17 +170,60 @@
             font-weight: bold;
             box-shadow: 0 0 8px #fff2;
         }
+        
+        @media (max-width: 700px) {
+            .content {
+                width: 100vw;
+                padding: 2px;
+                margin: 0;
+                border-radius: 0;
+            }
+            .search-bar-content {
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+                justify-content: center;
+            }
+            .search-bar {
+                font-size: 1.3em;
+                padding: 10px;
+                width: 70vw;
+                box-sizing: border-box;
+            }
+            .lang-img {
+                width: 48px;
+                height: 48px;
+                margin-left: 10px;
+                padding: 2px;
+            }
+            .filter-bar {
+                flex-wrap: wrap;
+                gap: 2px;
+                padding: 5px;
+            }
+            .filter-btn {
+                width: 60px;
+                height: 50px;
+                font-size: .8em;
+                padding-bottom: 2px;
+            }
+            .img-grid img {
+                width: 60px;
+                height: 60px;
+            }
+            .modal-content {
+                max-width: 70vw;
+                padding: 1em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="content">
         <!-- Search bar -->
         <div class="search-bar-content">
-            <input class="search-bar" id="search-bar" type="text" placeholder="Buscar por nombre, habitación, etc...">
-            <img id="lang-toggle"
-                src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/languages.png"
-                alt="Cambiar idioma"
-                style="margin-left:10px; width:40px; height:40px; border-radius:8px; border:2px solid #99866e; background:#f6d6b0; cursor:pointer;">
+            <input class="search-bar" id="search-bar" type="text" placeholder="Nombre, habitación, etc...">
+            <img id="lang-toggle" src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/languages_es.png" alt="Cambiar idioma" class="lang-img">
         </div>
         <!-- Filtro -->
         <div class="filter-bar" id="filter-bar">
@@ -215,7 +268,7 @@
         <div id="items" class="img-grid itemgrid"></div>
         <h2 id="h2-trinkets">TRINKETS</h2>
         <div id="trinkets" class="img-grid trinketgrid"></div>
-        <h2 id="h2-cards">CONSUMIBLES</h2>
+        <h2 id="h2-cards">MISC</h2>
         <div id="cards" class="img-grid cardgrid"></div>
     </div>
     <!-- Mensaje de error -->
@@ -542,6 +595,8 @@
         document.getElementById('lang-toggle').addEventListener('click', function() {
             language = (language === 'es') ? 'en' : 'es';
             this.src = `https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/languages_${language}.png`;
+            document.getElementById('search-bar').placeholder =
+                (language === 'es') ? 'Nombre, habitación, etc...' : 'Name, room, etc...';
             loadAllData();
         });
     </script>
