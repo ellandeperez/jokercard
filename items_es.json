@@ -37,7 +37,7 @@
         "id": "3",
         "name": "Spoon Bender",
         "description": [
-            "Da a las lágrimas de Isaac un efecto hogareño."
+            "Da a las lágrimas de Isaac un efecto teledirigido."
         ],
         "quality": "3",
         "tags": "* item room, treasure room, item room pool, grey, gray, bent",
@@ -11103,10 +11103,9 @@
         "type_list": [
             "Pasivo"
         ],
-        "item_pool": {
-            "one": "",
-            "other": ""
-        },
+        "item_pool": [
+            "None"
+        ],
         "pickup": "Lost but not forgotten"
     },
     {
@@ -11121,10 +11120,9 @@
         "type_list": [
             "Pasivo"
         ],
-        "item_pool": {
-            "one": "",
-            "other": ""
-        },
+        "item_pool": [
+            "None"
+        ],
         "recharge_time": [
             "4 rooms"
         ],
@@ -11146,10 +11144,9 @@
         "type_list": [
             "Activa"
         ],
-        "item_pool": {
-            "one": "",
-            "other": ""
-        },
+        "item_pool": [
+            "None"
+        ],
         "recharge_time": [
             "4 rooms"
         ],

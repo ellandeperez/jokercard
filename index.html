@@ -167,10 +167,6 @@
         <!-- Search bar -->
         <div class="search-bar-content">
             <input class="search-bar" id="search-bar" type="text" placeholder="Buscar por nombre, habitación, etc...">
-            <div id="lang-toggle" style="display:flex;align-items:center;margin-left:10px;">
-                <img id="lang-es" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.png" alt="Español" style="width:32px;height:32px;cursor:pointer;border-radius:6px;border:2px solid #99866e;background:#f6d6b0;">
-                <img id="lang-en" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.png" alt="English" style="width:32px;height:32px;cursor:pointer;border-radius:6px;border:2px solid #99866e;background:#f6d6b0;opacity:0.4;">
-            </div>
         </div>
         <!-- Filtro -->
         <div class="filter-bar" id="filter-bar">
@@ -261,7 +257,7 @@
         }
 
         // Cargar datos pero no mostrar nada aún
-        fetch(`${baseUrl}items.json`)
+        fetch(`${baseUrl}items_es.json`)
             .then(res => {
                 if (!res.ok) throw new Error('No se pudo cargar items.json');
                 return res.json();
@@ -272,7 +268,7 @@
                     "Error cargando items.json. Si estás abriendo el archivo localmente, usa un servidor local (por ejemplo: 'npx serve', 'python -m http.server', etc).";
             });
 
-        fetch(`${baseUrl}trinkets.json`)
+        fetch(`${baseUrl}trinkets_es.json`)
             .then(res => {
                 if (!res.ok) throw new Error('No se pudo cargar trinkets.json');
                 return res.json();
@@ -283,7 +279,7 @@
                     "\nError cargando trinkets.json.";
             });
 
-        fetch(`${baseUrl}cards.json`)
+        fetch(`${baseUrl}cards_es.json`)
             .then(res => {
                 if (!res.ok) throw new Error('No se pudo cargar cards.json');
                 return res.json();
@@ -349,7 +345,11 @@
                 let itemFilters = Object.keys(pools).filter(f => activeFilters.includes(f));
                 if (itemFilters.length > 0) {
                     showItems = allItems.filter(i =>
-                        i.item_pool && itemFilters.some(f => i.item_pool.includes(pools[f]))
+                        i.item_pool && itemFilters.some(f =>
+                            i.item_pool.some(poolStr =>
+                                poolStr && poolStr.toLowerCase().includes(pools[f].toLowerCase())
+                            )
+                        )
                     );
                 }
                 if (activeFilters.includes('trinkets')) showTrinkets = allTrinkets;
@@ -520,48 +520,6 @@
         }
         cardModal.onclick = function(e) {
             if (e.target === cardModal) cardModal.style.display = 'none';
-        };
-
-        let currentLang = 'es';
-
-        // Función para cargar los datos según idioma
-        function loadData(lang) {
-            clearAllGrids();
-            const suffix = lang === 'en' ? '_en' : '_es';
-            Promise.all([
-                fetch(`${baseUrl}items${suffix}.json`).then(res => res.ok ? res.json() : []),
-                fetch(`${baseUrl}trinkets${suffix}.json`).then(res => res.ok ? res.json() : []),
-                fetch(`${baseUrl}cards${suffix}.json`).then(res => res.ok ? res.json() : [])
-            ]).then(([items, trinkets, cards]) => {
-                allItems = items;
-                allTrinkets = trinkets;
-                allCards = cards;
-                renderByFilters();
-            }).catch(err => {
-                document.getElementById('error-msg').textContent =
-                    "Error cargando los datos. Si estás abriendo el archivo localmente, usa un servidor local.";
-            });
-        }
-
-        // Inicialmente carga español
-        loadData(currentLang);
-
-        // Toggle de idioma
-        document.getElementById('lang-es').onclick = function() {
-            if (currentLang !== 'es') {
-                currentLang = 'es';
-                document.getElementById('lang-es').style.opacity = '1';
-                document.getElementById('lang-en').style.opacity = '0.4';
-                loadData('es');
-            }
-        };
-        document.getElementById('lang-en').onclick = function() {
-            if (currentLang !== 'en') {
-                currentLang = 'en';
-                document.getElementById('lang-en').style.opacity = '1';
-                document.getElementById('lang-es').style.opacity = '0.4';
-                loadData('en');
-            }
         };
     </script>
 </body>
