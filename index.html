@@ -541,6 +541,7 @@
         // Toggle de idioma
         document.getElementById('lang-toggle').addEventListener('click', function() {
             language = (language === 'es') ? 'en' : 'es';
+            this.src = `https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/languages_${language}.png`;
             loadAllData();
         });
     </script>
