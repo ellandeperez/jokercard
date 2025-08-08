@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Joker Card</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/All_Consumables/card_31.png" type="image/x-icon">
+    <link rel="icon" href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon.png" type="image/x-icon">
     <style>
         html{
             background-color: black;
@@ -30,6 +30,19 @@
             border-radius: 20px;
             padding: 10px;
         }
+        .itemgrid, .trinketgrid, .cardgrid {
+            border-radius: 20px;
+            padding: 10px 0px;
+        }
+        .itemgrid {
+            background: rgba(255, 255, 0, 0.08);
+        }
+        .trinketgrid {
+            background: rgba(128, 128, 128, 0.12);
+        }
+        .cardgrid {
+            background: rgba(165, 104, 42, 0.15);
+        }
         h2 { color: rgb(240, 234, 234); text-align: center; font-family: 'Jersey 15';margin: 0 0; text-shadow: rgb(18, 13, 13) 5px 5px 0px, rgb(0, 0, 0) 0px 0px 10px;font-size: 5em;letter-spacing: 5px;}
         h3{text-align:center;margin:0;font-family: 'Jersey 15';font-weight: lighter;font-size: 2em;}
         .img-grid {
@@ -37,8 +50,8 @@
             flex-wrap: wrap;
             gap: 10px; /* Menor separación */
             align-items: flex-end;   /* Alinea arriba */
-            justify-content: flex-start; /* Centra horizontalmente */
-            margin: 10px auto; /* Centra el grid en la pantalla */
+            justify-content: center; /* Centra horizontalmente */
+            margin: 0px auto; /* Centra el grid en la pantalla */
         }
         .img-grid img {
             image-rendering: pixelated;
@@ -86,31 +99,63 @@
             cursor: pointer;
             font-size: 1.5em;
         }
+        .search-bar-content{
+            width:100%;
+            display:flex;
+            justify-content:center;
+            margin-bottom:10px;
+        }
+        .search-bar {
+            margin-top: 5px;
+            width:65%;
+            padding:10px;
+            font-size:2em;
+            border-radius:8px;
+            border:4px inset #99866e;
+            background:#f6d6b0;
+            color:#222;
+            font-family: 'Jersey 15', Arial, sans-serif;
+        }
         .filter-bar {
             position: sticky;
             top: 0;
-            background: rgba(0,0,0,0.85);
+            background: rgba(0,0,0,0.5);
             z-index: 10;
             display: flex;
-            gap: 10px;
-            padding: 10px 0 10px 0;
+            gap: 5px;
+            padding: 10px;
             justify-content: center;
-            border-radius: 20px 20px 0 0;
+            border-radius: 10px;
         }
         .filter-btn {
             font-family: 'Jersey 15', Arial, sans-serif;
             font-size: 1.2em;
-            padding: 8px 18px;
-            border: none;
-            border-radius: 8px;
-            background: #f6d6b0;
+            padding: 0; /* Elimina padding para que la imagen ocupe todo el botón */
+            padding-bottom: 4px;
+            border-radius: 10px;
+            border: outset 3px #99866e;
+            background: #99866e;
             color: #222;
             cursor: pointer;
             transition: background 0.2s, color 0.2s;
             outline: none;
+            width: 100px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .filter-btn img {
+            width: 95%;
+            height: 95%;
+            object-fit: contain;
+            pointer-events: none; /* Permite que el click pase al botón */
+            display: block;
+            image-rendering: pixelated;
+            
         }
         .filter-btn.active {
-            background: #99866e;
+            background: #f6d6b0;
             color: #fff;
             font-weight: bold;
             box-shadow: 0 0 8px #fff2;
@@ -119,25 +164,59 @@
 </head>
 <body>
     <div class="content">
+        <!-- Search bar -->
+        <div class="search-bar-content">
+            <input class="search-bar" id="search-bar" type="text" placeholder="Buscar por nombre, habitación, etc...">
+            <div id="lang-toggle" style="display:flex;align-items:center;margin-left:10px;">
+                <img id="lang-es" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.png" alt="Español" style="width:32px;height:32px;cursor:pointer;border-radius:6px;border:2px solid #99866e;background:#f6d6b0;">
+                <img id="lang-en" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.png" alt="English" style="width:32px;height:32px;cursor:pointer;border-radius:6px;border:2px solid #99866e;background:#f6d6b0;opacity:0.4;">
+            </div>
+        </div>
         <!-- Filtro -->
         <div class="filter-bar" id="filter-bar">
-            <button class="filter-btn" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="shop">Shop</button>
-            <button class="filter-btn" data-filter="itemroom">Item Room</button>
-            <button class="filter-btn" data-filter="bossroom">Boss Room</button>
-            <button class="filter-btn" data-filter="devilroom">Devil Room</button>
-            <button class="filter-btn" data-filter="angelroom">Angel Room</button>
-            <button class="filter-btn" data-filter="secretroom">Secret Room</button>
-            <button class="filter-btn" data-filter="planetarium">Planetarium</button>
-            <button class="filter-btn" data-filter="trinkets">Trinkets</button>
-            <button class="filter-btn" data-filter="consumibles">Consumibles</button>
+            <button class="filter-btn" data-filter="all">
+                <span style="pointer-events: none;margin:0;font-family: 'Jersey 10';font-weight: lighter;font-size: 3em;">ALL</span>
+            </button>
+            <button class="filter-btn" data-filter="shop">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/shop_door.png" alt="Shop" >
+            </button>
+            <button class="filter-btn" data-filter="itemroom">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/itemroom_door.png" alt="Item Room" >
+            </button>
+            <button class="filter-btn" data-filter="planetarium">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/planetarium_door.png" alt="Planetarium" >
+            </button>
+            <button class="filter-btn" data-filter="library">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/library_door.png" alt="Library" >
+            </button>
+            <button class="filter-btn" data-filter="curseroom">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/curseroom_door.png" alt="Curse Room" >
+            </button>
+            <button class="filter-btn" data-filter="secretroom">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/secretroom_door.png" alt="Secret Room" >
+            </button>
+            <button class="filter-btn" data-filter="bossroom">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/bossroom_door.png" alt="Boss Room" >
+            </button>
+            <button class="filter-btn" data-filter="devilroom">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/devilroom_door.png" alt="Devil Room" >
+            </button>
+            <button class="filter-btn" data-filter="angelroom">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/angelroom_door.png" alt="Angel Room" >
+            </button>
+            <button class="filter-btn" data-filter="trinkets">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/trinkets.png" alt="Trinkets" >
+            </button>
+            <button class="filter-btn" data-filter="consumibles">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/consumibles.png" alt="Consumibles" >
+            </button>
         </div>
         <h2 id="h2-items">ITEMS</h2>
-        <div id="items" class="img-grid"></div>
+        <div id="items" class="img-grid itemgrid"></div>
         <h2 id="h2-trinkets">TRINKETS</h2>
-        <div id="trinkets" class="img-grid"></div>
+        <div id="trinkets" class="img-grid trinketgrid"></div>
         <h2 id="h2-cards">CONSUMIBLES</h2>
-        <div id="cards" class="img-grid"></div>
+        <div id="cards" class="img-grid cardgrid"></div>
     </div>
     <!-- Mensaje de error -->
     <div id="error-msg" style="color:red; margin:1em 0;"></div>
@@ -228,28 +307,43 @@
             document.getElementById('h2-cards').style.display = 'none';
         }
 
+        // Search logic
+        document.getElementById('search-bar').addEventListener('input', function(e) {
+            window.searchText = e.target.value.trim().toLowerCase();
+            // Si no hay filtros activos y hay texto, activa "all"
+            if (window.searchText && activeFilters.length === 0) {
+                activeFilters = ['all'];
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
+            }
+            renderByFilters();
+        });
+        window.searchText = "";
+
         // Renderiza según los filtros activos
         function renderByFilters() {
             clearAllGrids();
             let showItems = [];
-            let showTrinkets = false;
-            let showCards = false;
+            let showTrinkets = [];
+            let showCards = [];
 
+            // Filtrado por filtros
             if (activeFilters.length === 0) {
                 // Nada seleccionado, no mostrar nada
             } else if (activeFilters.includes('all')) {
                 showItems = allItems;
-                showTrinkets = true;
-                showCards = true;
+                showTrinkets = allTrinkets;
+                showCards = allCards;
             } else {
-                // Acumular items según filtros stackeados
                 const pools = {
                     shop: 'Shop',
                     itemroom: 'Item Room',
                     bossroom: 'Boss Room',
                     devilroom: 'Devil Room',
                     angelroom: 'Angel Room',
+                    curseroom: 'Curse Room',
                     secretroom: 'Secret Room',
+                    library: 'Library',
                     planetarium: 'Planetarium'
                 };
                 let itemFilters = Object.keys(pools).filter(f => activeFilters.includes(f));
@@ -258,13 +352,30 @@
                         i.item_pool && itemFilters.some(f => i.item_pool.includes(pools[f]))
                     );
                 }
-                if (activeFilters.includes('trinkets')) showTrinkets = true;
-                if (activeFilters.includes('consumibles')) showCards = true;
+                if (activeFilters.includes('trinkets')) showTrinkets = allTrinkets;
+                if (activeFilters.includes('consumibles')) showCards = allCards;
             }
 
+            // Filtrado por search
+            if (window.searchText) {
+                const matchesText = obj => {
+                    return Object.values(obj).some(val => {
+                        if (!val) return false;
+                        if (typeof val === 'string') return val.toLowerCase().includes(window.searchText);
+                        if (typeof val === 'number') return val.toString().includes(window.searchText);
+                        if (Array.isArray(val)) return val.join(' ').toLowerCase().includes(window.searchText);
+                        return false;
+                    });
+                };
+                showItems = showItems.filter(matchesText);
+                showTrinkets = showTrinkets.filter(matchesText);
+                showCards = showCards.filter(matchesText);
+            }
+
+            // Render
             if (showItems.length > 0) renderItems(showItems);
-            if (showTrinkets) renderTrinkets(allTrinkets);
-            if (showCards) renderCards(allCards);
+            if (showTrinkets.length > 0) renderTrinkets(showTrinkets);
+            if (showCards.length > 0) renderCards(showCards);
 
             document.getElementById('h2-items').style.display = document.getElementById('items').children.length ? '' : 'none';
             document.getElementById('h2-trinkets').style.display = document.getElementById('trinkets').children.length ? '' : 'none';
@@ -409,6 +520,48 @@
         }
         cardModal.onclick = function(e) {
             if (e.target === cardModal) cardModal.style.display = 'none';
+        };
+
+        let currentLang = 'es';
+
+        // Función para cargar los datos según idioma
+        function loadData(lang) {
+            clearAllGrids();
+            const suffix = lang === 'en' ? '_en' : '_es';
+            Promise.all([
+                fetch(`${baseUrl}items${suffix}.json`).then(res => res.ok ? res.json() : []),
+                fetch(`${baseUrl}trinkets${suffix}.json`).then(res => res.ok ? res.json() : []),
+                fetch(`${baseUrl}cards${suffix}.json`).then(res => res.ok ? res.json() : [])
+            ]).then(([items, trinkets, cards]) => {
+                allItems = items;
+                allTrinkets = trinkets;
+                allCards = cards;
+                renderByFilters();
+            }).catch(err => {
+                document.getElementById('error-msg').textContent =
+                    "Error cargando los datos. Si estás abriendo el archivo localmente, usa un servidor local.";
+            });
+        }
+
+        // Inicialmente carga español
+        loadData(currentLang);
+
+        // Toggle de idioma
+        document.getElementById('lang-es').onclick = function() {
+            if (currentLang !== 'es') {
+                currentLang = 'es';
+                document.getElementById('lang-es').style.opacity = '1';
+                document.getElementById('lang-en').style.opacity = '0.4';
+                loadData('es');
+            }
+        };
+        document.getElementById('lang-en').onclick = function() {
+            if (currentLang !== 'en') {
+                currentLang = 'en';
+                document.getElementById('lang-en').style.opacity = '1';
+                document.getElementById('lang-es').style.opacity = '0.4';
+                loadData('en');
+            }
         };
     </script>
 </body>

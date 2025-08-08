@@ -1,101 +1,139 @@
 [
     {
         "id": "1",
+        "name": "The Sad Onion",
+        "description": [
+            "+0.7 Lágrimas"
+        ],
         "quality": "3",
+        "tags": "* item room, treasure room, item room pool, green, cry, plant",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Tears up"
     },
     {
         "id": "2",
-        "description": {
-            "1": "Desgarros reducidos significativamente - Lágrimas disparadas por segundo * 0,51"
-        },
+        "name": "The Inner Eye",
+        "description": [
+            "Las lágrimas ahora disparan tres a la vez (Triple Disparo)",
+            "Desgarros reducidos significativamente - Lágrimas disparadas por segundo * 0,51"
+        ],
         "quality": "2",
+        "tags": "* item room, treasure room, item room pool, round, circle, white",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Triple shot"
     },
     {
         "id": "3",
+        "name": "Spoon Bender",
+        "description": [
+            "Da a las lágrimas de Isaac un efecto hogareño."
+        ],
         "quality": "3",
+        "tags": "* item room, treasure room, item room pool, grey, gray, bent",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Homing shots"
     },
     {
         "id": "4",
-        "description": {
-            "1": "Multiplicador de daño x1,5 veces (no se acumula con el multiplicador de hongos mágicos)",
-            "2": "Se puede encontrar en cofres dorados.",
-            "3": "La Cabeza de Cricket solía ser conocida como la Cabeza de Max en el juego original y fue renombrada para Rebirth."
-        },
+        "name": "Cricket's Head",
+        "description": [
+            "+0,5 aumento de daño",
+            "Multiplicador de daño x1,5 veces (no se acumula con el multiplicador de hongos mágicos)",
+            "Se puede encontrar en cofres dorados.",
+            "La Cabeza de Cricket solía ser conocida como la Cabeza de Max en el juego original y fue renombrada para Rebirth."
+        ],
         "quality": "4",
+        "tags": "* crickets head, cricket head, item room, treasure room, item room pool, golden chest pool, gold chest pool, cat, dead, brown, pink",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "DMG up"
     },
     {
         "id": "5",
-        "description": {
-            "1": "+1,5 aumento de daño",
-            "2": "+0,6 aumento de velocidad de disparo",
-            "3": "-1 Suerte abajo",
-            "4": "Aumento de rango (1,6x + 1,5)"
-        },
+        "name": "My Reflection",
+        "description": [
+            "Da a las lágrimas un efecto bumerán.",
+            "+1,5 aumento de daño",
+            "+0,6 aumento de velocidad de disparo",
+            "-1 Suerte abajo",
+            "Aumento de rango (1,6x + 1,5)"
+        ],
         "quality": "2",
+        "tags": "* item room, treasure room, item room pool, broken, mirror, cracked, grey, gray, silver",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Boomerang tears"
     },
     {
         "id": "6",
-        "description": {
-            "1": "+1.5 Lágrimas",
-            "2": "-2.5 Rango hacia abajo"
-        },
+        "name": "Number One",
+        "description": [
+            "Te da una tasa de desgarro muy alta a cambio de un gran alcance hacia abajo.",
+            "+1.5 Lágrimas",
+            "-2.5 Rango hacia abajo"
+        ],
         "quality": "2",
+        "tags": "* item room, treasure room, item room pool, mm sweet lemonade, urine, yellow, tear, drop",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Tears up"
     },
     {
         "id": "7",
+        "name": "Blood of the Martyr",
+        "description": [
+            "+1.0 aumento de daño",
+            "Multiplicador de daño x1,5 veces si también tienes Libro de Belial (no se acumula con los multiplicadores de Hongo Mágico o Cabeza de Grillo)"
+        ],
         "quality": "3",
+        "tags": "* item room, treasure room, item room pool, crown, thorns, brown, hat",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room",
             "Angel Room"
-        ]
+        ],
+        "pickup": "DMG up"
     },
     {
         "id": "8",
-        "description": {
-            "1": "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta"
-        },
+        "name": "Brother Bobby",
+        "description": [
+            "Un familiar que sigue a Isaac y dispara lágrimas normales que causan 3,5 de daño.",
+            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta"
+        ],
         "quality": "1",
+        "tags": "* item room, treasure room, item room pool, devil pool, devil room pool, devil deal, purple, blue, dead, baby",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -103,32 +141,41 @@
         "item_pool": [
             "Item Room",
             "Devil Room"
-        ]
+        ],
+        "pickup": "Friends 'till the end"
     },
     {
         "id": "9",
-        "description": {
-            "1": "Attack Fly, Dart Fly, Eternal Fly y Ring Fly se transforman en una mosca negra neutral.",
-            "2": "Boom Fly, Red Boom Fly y Drowned Boom Fly se mueven más lento, pero aún infligen daño por contacto.",
-            "3": "Moter, Level 2 Fly, Full Fly, Pooter y Super Pooter se mueven más lento y no infligen daño por contacto.",
-            "4": "Sólo se puede obtener del juego de shell en la sala de juegos.",
-            "5": "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú",
-            "6": "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap."
-        },
+        "name": "Skatole",
+        "description": [
+            "Muchos enemigos mosca ya no son agresivos hacia Isaac.",
+            "Attack Fly, Dart Fly, Eternal Fly y Ring Fly se transforman en una mosca negra neutral.",
+            "Boom Fly, Red Boom Fly y Drowned Boom Fly se mueven más lento, pero aún infligen daño por contacto.",
+            "Moter, Level 2 Fly, Full Fly, Pooter y Super Pooter se mueven más lento y no infligen daño por contacto.",
+            "Sólo se puede obtener del juego de shell en la sala de juegos.",
+            "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú",
+            "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap."
+        ],
         "quality": "0",
+        "tags": "* arcade, skull game, black, heart, pink, love",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "None (Arcade shell game only)"
-        ]
+        ],
+        "pickup": "Fly love"
     },
     {
         "id": "10",
-        "description": {
-            "2": "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
-        },
+        "name": "Halo of Flies",
+        "description": [
+            "Le otorga a Isaac 2 vuelos orbitales que bloquean los disparos enemigos.",
+            "Recoger este objeto, así como otros 2 objetos de tipo mosca, te permitirá transformarte en El señor de las moscas.",
+            "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
+        ],
         "quality": "2",
+        "tags": "* item room, treasure room, item room pool, key master pool, key beggar pool, key judgement pool, two, flies, black",
         "type_list": [
             "Pasivo",
             "Orbital"
@@ -136,49 +183,63 @@
         "item_pool": [
             "Item Room",
             "Key Beggar"
-        ]
+        ],
+        "pickup": "Projectile protection"
     },
     {
         "id": "11",
-        "description": {
-            "1": "Al revivir, el hongo verde que sigue a Isaac desaparecerá y reaparecerá con la misma cantidad de contenedores de corazón rojo con la salud completa.",
-            "2": "La resurrección ocurre antes que todos los demás objetos que te otorgan una vida extra."
-        },
+        "name": "1UP",
+        "description": [
+            "Le da al jugador una vida extra.",
+            "Al revivir, el hongo verde que sigue a Isaac desaparecerá y reaparecerá con la misma cantidad de contenedores de corazón rojo con la salud completa.",
+            "La resurrección ocurre antes que todos los demás objetos que te otorgan una vida extra."
+        ],
         "quality": "2",
+        "tags": "* secret room pool, mario, green mushroom, extra life, spots, spotted",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Secret Room"
-        ]
+        ],
+        "pickup": "Extra life"
     },
     {
         "id": "12",
-        "description": {
-            "2": "x1,5 veces Multiplicador de daño (No se acumula con los multiplicadores de Cabeza de grillo \/ Sangre del mártir + Libro de Belial)",
-            "3": "+1,5 aumento de alcance",
-            "4": "+0.3 Aceleración",
-            "5": "Aumenta el tamaño del sprite de tu jugador, pero no aumenta el hitbox.",
-            "6": "Restaura completamente todos los contenedores de corazón rojo.",
-            "7": "Cuenta como 1 de los 3 elementos de hongo necesarios para la transformación de Fun Guy.",
-            "8": "Cuenta como 1 de los 3 elementos que aumentan el tamaño necesarios para la transformación de Stompy."
-        },
+        "name": "Magic Mushroom",
+        "description": [
+            "+1 HP arriba",
+            "+0.3 aumento de daño",
+            "x1,5 veces Multiplicador de daño (No se acumula con los multiplicadores de Cabeza de grillo \/ Sangre del mártir + Libro de Belial)",
+            "+1,5 aumento de alcance",
+            "+0.3 Aceleración",
+            "Aumenta el tamaño del sprite de tu jugador, pero no aumenta el hitbox.",
+            "Restaura completamente todos los contenedores de corazón rojo.",
+            "Cuenta como 1 de los 3 elementos de hongo necesarios para la transformación de Fun Guy.",
+            "Cuenta como 1 de los 3 elementos que aumentan el tamaño necesarios para la transformación de Stompy."
+        ],
         "quality": "4",
+        "tags": "* boss room pool, boss room item, item room, treasure room, item room pool, red, spots, spotted, amanita muscaria",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room",
             "Mushrooms"
-        ]
+        ],
+        "pickup": "All stats up!"
     },
     {
         "id": "13",
-        "description": {
-            "2": "Tiene la posibilidad de caerse de la pelea contra el minijefe Lust.",
-            "3": "Cuenta como 1 de los 3 elementos de jeringa necesarios para la transformación de Spun"
-        },
+        "name": "The Virus",
+        "description": [
+            "Los enemigos que te tocan reciben 12 puntos de daño, luego se aplica un efecto de veneno durante 6-7 ticks, causando daño igual a la cantidad de corazones rojos que tienes (hasta 30.8 con 12 corazones rojos completos)",
+            "+0.2 Aceleración",
+            "Tiene la posibilidad de caerse de la pelea contra el minijefe Lust.",
+            "Cuenta como 1 de los 3 elementos de jeringa necesarios para la transformación de Spun"
+        ],
         "quality": "2",
+        "tags": "* demon beggar pool, demon judgement pool, devil beggar pool, item room, treasure room, item room pool, syringe, needle, injection, the lost item pool, red",
         "type_list": [
             "Pasivo"
         ],
@@ -186,16 +247,20 @@
             "Item Room",
             "Demon Beggar",
             "Lust Miniboss"
-        ]
+        ],
+        "pickup": "Poison touch"
     },
     {
         "id": "14",
-        "description": {
-            "1": "+1,5 aumento de alcance",
-            "2": "+0,5 Altura de disparo",
-            "3": "Cuenta como 1 de los 3 elementos de jeringa necesarios para la transformación de Spun"
-        },
+        "name": "Roid Rage",
+        "description": [
+            "+0.3 Aceleración",
+            "+1,5 aumento de alcance",
+            "+0,5 Altura de disparo",
+            "Cuenta como 1 de los 3 elementos de jeringa necesarios para la transformación de Spun"
+        ],
         "quality": "2",
+        "tags": "* demon beggar pool, demon judgement pool, devil beggar pool, boss room pool, boss room item, item room, treasure room, item room pool, syringe, needle, injection, green",
         "type_list": [
             "Pasivo"
         ],
@@ -203,15 +268,19 @@
             "Item Room",
             "Boss Room",
             "Demon Beggar"
-        ]
+        ],
+        "pickup": "Speed and range up"
     },
     {
         "id": "15",
-        "description": {
-            "1": "Restaura completamente todos los contenedores de corazón rojo.",
-            "2": "Tiene la posibilidad de caerse en la pelea contra el minijefe Gluttony."
-        },
+        "name": "<3",
+        "description": [
+            "+1 HP arriba",
+            "Restaura completamente todos los contenedores de corazón rojo.",
+            "Tiene la posibilidad de caerse en la pelea contra el minijefe Gluttony."
+        ],
         "quality": "2",
+        "tags": "* boss room pool, boss room item, item room, treasure room, item room pool, red heart, ballchinnian, ball sack, full heal, gluttony, the lost item pool",
         "type_list": [
             "Pasivo"
         ],
@@ -222,76 +291,117 @@
     },
     {
         "id": "16",
-        "description": {
-            "1": "Curación completa del corazón rojo"
-        },
+        "name": "Raw Liver",
+        "description": [
+            "+2 Salud aumentada",
+            "Curación completa del corazón rojo"
+        ],
         "quality": "2",
+        "tags": "* secret room pool, the lost item pool, brown, poop, turd",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Secret Room"
-        ]
+        ],
+        "pickup": "HP up"
     },
     {
         "id": "17",
+        "name": "Skeleton Key",
+        "description": [
+            "Le da a Isaac 99 llaves"
+        ],
         "quality": "3",
+        "tags": "* secret room pool, silver, grey, gray, skull",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room",
             "Secret Room"
-        ]
+        ],
+        "pickup": "99 keys"
     },
     {
         "id": "18",
+        "name": "A Dollar",
+        "description": [
+            "Le da a Isaac 100 monedas",
+            "Puede caerse de una máquina tragamonedas explosiva mientras juegas."
+        ],
         "quality": "3",
+        "tags": "* slot machine, arcade machine, money, bill, cash, green",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "None (Arcade machine only)"
-        ]
+        ],
+        "pickup": "$$$"
     },
     {
         "id": "19",
+        "name": "Boom!",
+        "description": [
+            "+10 bombas"
+        ],
         "quality": "0",
+        "tags": "* boss rush pool, boss rush room, item room, treasure room, item room pool, grey, gray, x10",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "10 bombs"
     },
     {
         "id": "20",
+        "name": "Transcendence",
+        "description": [
+            "Le da a Isaac la habilidad de volar."
+        ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al vencer al Corazón de Mamá 3 veces",
+        "tags": "* secret room pool, the lost item pool, brown, noose, hang",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Secret Room"
-        ]
+        ],
+        "pickup": "We all float down here..."
     },
     {
         "id": "21",
-        "description": {
-            "3": "Los íconos de las habitaciones no se mostrarán si hay una Maldición de los Perdidos vigente en el piso actual."
-        },
+        "name": "The Compass",
+        "description": [
+            "Muestra la mayoría de los íconos en el mapa (tiendas, salas de objetos, salas de jefes, etc.)",
+            "No muestra el diseño del mapa.",
+            "No muestra la ubicación de las habitaciones secretas o súper secretas.",
+            "Los íconos de las habitaciones no se mostrarán si hay una Maldición de los Perdidos vigente en el piso actual."
+        ],
         "quality": "2",
+        "tags": "* normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool, pink, red",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Shop",
             "Beggar"
-        ]
+        ],
+        "pickup": "The end is near"
     },
     {
         "id": "22",
+        "name": "Lunch",
+        "description": [
+            "+1 HP arriba",
+            "Cura un contenedor de corazón rojo al recogerlo."
+        ],
         "quality": "1",
+        "tags": "* dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool, brown, bowl, grey, gray, poop, fly",
         "type_list": [
             "Pasivo"
         ],
@@ -299,11 +409,18 @@
             "Boss Room",
             "Challenge Room",
             "Beggar"
-        ]
+        ],
+        "pickup": "HP up"
     },
     {
         "id": "23",
+        "name": "Dinner",
+        "description": [
+            "+1 HP arriba",
+            "Cura un contenedor de corazón rojo al recogerlo."
+        ],
         "quality": "1",
+        "tags": "* dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool, dog, can, tin, brown",
         "type_list": [
             "Pasivo"
         ],
@@ -311,11 +428,18 @@
             "Boss Room",
             "Beggar",
             "Challenge Room"
-        ]
+        ],
+        "pickup": "HP up"
     },
     {
         "id": "24",
+        "name": "Dessert",
+        "description": [
+            "+1 HP arriba",
+            "Cura un contenedor de corazón rojo al recogerlo."
+        ],
         "quality": "1",
+        "tags": "* dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool, dog, brown, sack, bag, fly",
         "type_list": [
             "Pasivo"
         ],
@@ -323,11 +447,18 @@
             "Boss Room",
             "Beggar",
             "Challenge Room"
-        ]
+        ],
+        "pickup": "HP up"
     },
     {
         "id": "25",
+        "name": "Breakfast",
+        "description": [
+            "+1 HP arriba",
+            "Cura un contenedor de corazón rojo al recogerlo."
+        ],
         "quality": "1",
+        "tags": "* dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool, carton, fly, flies, milk",
         "type_list": [
             "Pasivo"
         ],
@@ -335,11 +466,18 @@
             "Boss Room",
             "Challenge Room",
             "Beggar"
-        ]
+        ],
+        "pickup": "HP up"
     },
     {
         "id": "26",
+        "name": "Rotten Meat",
+        "description": [
+            "+1 HP arriba",
+            "Cura un contenedor de corazón rojo al recogerlo."
+        ],
         "quality": "1",
+        "tags": "* dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool, green, bone, lump, yellow",
         "type_list": [
             "Pasivo"
         ],
@@ -347,36 +485,52 @@
             "Boss Room",
             "Beggar",
             "Challenge Room"
-        ]
+        ],
+        "pickup": "HP up"
     },
     {
         "id": "27",
+        "name": "Wooden Spoon",
+        "description": [
+            "+0.3 Aceleración"
+        ],
         "quality": "1",
+        "tags": "* boss room pool, boss room item, brown",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Boss Room"
-        ]
+        ],
+        "pickup": "Speed up"
     },
     {
         "id": "28",
+        "name": "The Belt",
+        "description": [
+            "+0.3 Aceleración"
+        ],
         "quality": "1",
+        "tags": "* boss room pool, boss room item, brown, leather, bag, sack, golden chest pool, gold chest pool",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Boss Room",
             "Gold\/Stone Chest"
-        ]
+        ],
+        "pickup": "Speed up"
     },
     {
         "id": "29",
-        "description": {
-            "1": "Da de 3 a 6 moscas de ataque azules cuando se recogen",
-            "2": "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
-        },
+        "name": "Mom's Underwear",
+        "description": [
+            "+1,5 aumento de alcance",
+            "Da de 3 a 6 moscas de ataque azules cuando se recogen",
+            "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
+        ],
         "quality": "1",
+        "tags": "* dungeon room, blood challenge room, arena pool, boss room pool, boss room item, pant, pants, under wear, pink, knickers, moms underwear, mom underwear",
         "type_list": [
             "Pasivo"
         ],
@@ -385,15 +539,19 @@
             "Challenge Room",
             "Gold\/Stone Chest",
             "Mom's Chest"
-        ]
+        ],
+        "pickup": "Range Up"
     },
     {
         "id": "30",
-        "description": {
-            "1": "Hace que Isaac inflija 12 daños de contacto por cada tic (24 daños por segundo).",
-            "2": "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
-        },
+        "name": "Mom's Heels",
+        "description": [
+            "+1,5 aumento de alcance",
+            "Hace que Isaac inflija 12 daños de contacto por cada tic (24 daños por segundo).",
+            "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
+        ],
         "quality": "1",
+        "tags": "* dungeon room, blood challenge room, arena pool, boss room pool, boss room item, red, high, shoe, moms heels, mom heels",
         "type_list": [
             "Pasivo"
         ],
@@ -401,15 +559,19 @@
             "Boss Room",
             "Challenge Room",
             "Mom's Chest"
-        ]
+        ],
+        "pickup": "Range up"
     },
     {
         "id": "31",
-        "description": {
-            "1": "Deja caer un corazón al azar al suelo cuando lo recoges.",
-            "2": "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
-        },
+        "name": "Mom's Lipstick",
+        "description": [
+            "+2,25 aumento de rango",
+            "Deja caer un corazón al azar al suelo cuando lo recoges.",
+            "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
+        ],
         "quality": "1",
+        "tags": "* moms lipstick, mom lipstick, dungeon room, blood challenge room, arena pool, boss room pool, boss room item, red, grey, gray",
         "type_list": [
             "Pasivo"
         ],
@@ -417,22 +579,39 @@
             "Boss Room",
             "Challenge Room",
             "Mom's Chest"
-        ]
+        ],
+        "pickup": "Range up"
     },
     {
         "id": "32",
+        "name": "Wire Coat Hanger",
+        "description": [
+            "+0.7 Lágrimas"
+        ],
         "quality": "3",
+        "unlock": "Desbloquea este objeto al vencer al Corazón de Mamá 4 veces",
+        "tags": "* boss room pool, boss room item, black",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Boss Room",
             "Gold\/Stone Chest"
-        ]
+        ],
+        "pickup": "Tears up"
     },
     {
         "id": "33",
+        "name": "The Bible",
+        "description": [
+            "Le otorga a Isaac alas de ángel para la habitación actual, lo que le permite volar.",
+            "Mata instantáneamente a los jefes de las peleas Pie de Mamá, Corazón de Mamá y Vive.",
+            "Si se usa durante la lucha contra Satanás, la Biblia matará instantáneamente a Isaac.",
+            "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín.",
+            "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
+        ],
         "quality": "1",
+        "tags": "* library pool, library room, book room pool, angel room pool, god room pool, angel room, shop room pool, shop item pool, cross, brown",
         "type_list": [
             "Activa"
         ],
@@ -443,17 +622,22 @@
         ],
         "recharge_time": [
             "4 rooms"
-        ]
+        ],
+        "pickup": "Temporary flight"
     },
     {
         "id": "34",
-        "description": {
-            "2": "Aumenta tus posibilidades de obtener una habitación de diablo\/ángel en un +12,5 %",
-            "3": "Judas comienza con este objeto",
-            "4": "Los usos adicionales en la misma habitación o combinados con El Diablo XV otorgan +1 de daño por uso.",
-            "5": "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
-        },
+        "name": "The Book of Belial",
+        "description": [
+            "Al usarlo, otorga +2 de daño que dura mientras esté en la habitación actual.",
+            "Multiplicador de daño x1,5 veces si también tienes Sangre del mártir (no se acumula con los multiplicadores de Hongo mágico o Cabeza de grillo)",
+            "Aumenta tus posibilidades de obtener una habitación de diablo\/ángel en un +12,5 %",
+            "Judas comienza con este objeto",
+            "Los usos adicionales en la misma habitación o combinados con El Diablo XV otorgan +1 de daño por uso.",
+            "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
+        ],
         "quality": "2",
+        "tags": "* library pool, library room, book room pool, devil pool, devil room pool, devil deal, star grey, gray, pentagram",
         "type_list": [
             "Activa"
         ],
@@ -463,11 +647,19 @@
         ],
         "recharge_time": [
             "3 rooms"
-        ]
+        ],
+        "pickup": "Temporary DMG up"
     },
     {
         "id": "35",
+        "name": "The Necronomicon",
+        "description": [
+            "Inflige 40 de daño a todo lo que esté en la habitación cuando se usa.",
+            "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
+        ],
         "quality": "1",
+        "unlock": "Desbloquea este objeto usando 4 cartas de XIII - Muerte",
+        "tags": "* library pool, library room, book room pool, secret room pool, devil pool, devil room devil deal, pink, brown, face, spots",
         "type_list": [
             "Activa"
         ],
@@ -478,17 +670,21 @@
         ],
         "recharge_time": [
             "3 rooms"
-        ]
+        ],
+        "pickup": "Mass room damage"
     },
     {
         "id": "36",
-        "description": {
-            "1": "Blue Baby comienza con este artículo",
-            "2": "Se puede colocar junto a un pozo y explotar para hacer un puente.",
-            "3": "Se puede colocar sobre una caca roja rota para sobrescribirla, lo que hace que ya no se regenere.",
-            "4": "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap"
-        },
+        "name": "The Poop",
+        "description": [
+            "Deja caer una caca en el suelo",
+            "Blue Baby comienza con este artículo",
+            "Se puede colocar junto a un pozo y explotar para hacer un puente.",
+            "Se puede colocar sobre una caca roja rota para sobrescribirla, lo que hace que ya no se regenere.",
+            "Cuenta como 1 de los 3 elementos de caca necesarios para la transformación Oh Crap"
+        ],
         "quality": "0",
+        "tags": "* item room, treasure room, item room pool, starting, turd, brown",
         "type_list": [
             "Activa"
         ],
@@ -497,15 +693,19 @@
         ],
         "recharge_time": [
             "1 room"
-        ]
+        ],
+        "pickup": "Plop!"
     },
     {
         "id": "37",
-        "description": {
-            "1": "Compatible con modificadores de bombas, como bombas de purpurina, bombas adhesivas, etc.",
-            "2": "Tiene la posibilidad de caerse de la pelea contra el minijefe Wrath."
-        },
+        "name": "Mr. Boom",
+        "description": [
+            "Deja caer una gran bomba debajo del jugador que causa 185 de daño.",
+            "Compatible con modificadores de bombas, como bombas de purpurina, bombas adhesivas, etc.",
+            "Tiene la posibilidad de caerse de la pelea contra el minijefe Wrath."
+        ],
         "quality": "1",
+        "tags": "* mr boom, boss rush pool, boss rush room, item room, treasure room, item room pool, bomb beggar, face, smile, grey",
         "type_list": [
             "Activa"
         ],
@@ -516,15 +716,19 @@
         ],
         "recharge_time": [
             "2 rooms"
-        ]
+        ],
+        "pickup": "Reusable bomb buddy"
     },
     {
         "id": "38",
-        "description": {
-            "1": "Cada lágrima equivale a tu estadística de daño + 25 de daño fijo",
-            "2": "Las lágrimas generadas por la cabeza de Tammy conservan los efectos lacrimógenos de las lágrimas de Isaac, como el veneno o el rastreo."
-        },
+        "name": "Tammy's Head",
+        "description": [
+            "Dispara 10 lágrimas en un círculo alrededor de Isaac.",
+            "Cada lágrima equivale a tu estadística de daño + 25 de daño fijo",
+            "Las lágrimas generadas por la cabeza de Tammy conservan los efectos lacrimógenos de las lágrimas de Isaac, como el veneno o el rastreo."
+        ],
         "quality": "2",
+        "tags": "* golden chest pool, gold chest pool, dead, cat, white, yellow, tammys head, tammy head",
         "type_list": [
             "Activa"
         ],
@@ -534,14 +738,18 @@
         ],
         "recharge_time": [
             "1 room"
-        ]
+        ],
+        "pickup": "Reusable tear burst"
     },
     {
         "id": "39",
-        "description": {
-            "1": "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
-        },
+        "name": "Mom's Bra",
+        "description": [
+            "Cuando se usa, congela a todos los enemigos en la habitación actual durante aproximadamente 4 segundos.",
+            "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
+        ],
         "quality": "1",
+        "tags": "* dungeon room, blood challenge room, arena pool, item room, treasure room, item room, white, brown, underwear, moms bra, mom bra",
         "type_list": [
             "Activa"
         ],
@@ -552,11 +760,18 @@
         ],
         "recharge_time": [
             "3 rooms"
-        ]
+        ],
+        "pickup": "Mass fear"
     },
     {
         "id": "40",
+        "name": "Kamikaze",
+        "description": [
+            "Provoca una explosión cerca de Isaac que le quita medio corazón y le hace 40 de daño a todos los enemigos cercanos.",
+            "No reduce tus posibilidades de entrar en la sala del diablo o del ángel cuando se usa"
+        ],
         "quality": "0",
+        "tags": "* item room, treasure room, item room pool, the lost item pool, bomb, tnt, clock, red",
         "type_list": [
             "Activa"
         ],
@@ -565,14 +780,19 @@
         ],
         "recharge_time": [
             "Instant"
-        ]
+        ],
+        "pickup": "Become the bomb!"
     },
     {
         "id": "41",
-        "description": {
-            "2": "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
-        },
+        "name": "Mom's Pad",
+        "description": [
+            "Cuando se usa, hace que todos los enemigos en la sala actual huyan de Isaac con miedo durante 5 segundos.",
+            "Genera 1 mosca de ataque azul por uso",
+            "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
+        ],
         "quality": "0",
+        "tags": "* item room, treasure room, item room pool, dungeon room, blood challenge room, arena, white, grey, gray moms pad, mom pad",
         "type_list": [
             "Activa"
         ],
@@ -583,11 +803,21 @@
         ],
         "recharge_time": [
             "2 rooms"
-        ]
+        ],
+        "pickup": "Gross..."
     },
     {
         "id": "42",
+        "name": "Bob's Rotten Head",
+        "description": [
+            "Una bomba venenosa que se puede lanzar y deja un efecto venenoso en cualquier enemigo dentro del radio de explosión. También deja una nube de gas en el lugar donde explotó.",
+            "La bomba causa 185 de daño + tu daño de desgarro al impactar y deja un efecto de veneno con daño en el tiempo que hace 3 veces tu daño de desgarro por cada tic.",
+            "Se sinergiza con elementos que modifican lágrimas como My Reflection o Tiny Planet.",
+            "Tiene la posibilidad de caerse de la pelea contra el minijefe Perezoso.",
+            "Cuenta como 1 de los 3 elementos venenosos necesarios para la transformación de Bob."
+        ],
         "quality": "1",
+        "tags": "* golden chest pool, gold chest pool, item room, treasure room, item room pool, bob, grey, gray, green, mouth, bobs rotten head, bob rotten head",
         "type_list": [
             "Activa"
         ],
@@ -597,11 +827,18 @@
         ],
         "recharge_time": [
             "2 rooms"
-        ]
+        ],
+        "pickup": "Reusable ranged bomb"
     },
     {
         "id": "44",
+        "name": "Teleport",
+        "description": [
+            "Teletransporta a Isaac a una ubicación aleatoria en el mapa.",
+            "No se puede usar para teletransportarse a la sala YO SOY ERROR"
+        ],
         "quality": "0",
+        "tags": "* item room, treasure room, item room pool, blue remote, robot",
         "type_list": [
             "Activa"
         ],
@@ -610,11 +847,20 @@
         ],
         "recharge_time": [
             "2 rooms"
-        ]
+        ],
+        "pickup": "Teleport!"
     },
     {
         "id": "45",
+        "name": "Yum Heart",
+        "description": [
+            "Cura a Isaac por un corazón rojo entero",
+            "Maggy comienza con este artículo.",
+            "Cuando se usa como Guardián, se restaura una moneda de HP.",
+            "Tiene la posibilidad de caerse de la pelea contra el minijefe Super Lust."
+        ],
         "quality": "1",
+        "tags": "* item room, treasure room, item room pool, the lost item pool, maggy, start, red, pink, broken",
         "type_list": [
             "Activa"
         ],
@@ -624,27 +870,38 @@
         ],
         "recharge_time": [
             "4 rooms"
-        ]
+        ],
+        "pickup": "Reusable regeneration"
     },
     {
         "id": "46",
-        "description": {
-            "1": "Mayores posibilidades de ganar mientras juegas en el juego de la concha y la máquina de adivinación",
-            "2": "Mayor probabilidad de obtener un objeto aleatorio después de limpiar una habitación.",
-            "3": "Convierte todas las píldoras negativas en sus contrapartes positivas. No afecta a las neutrales y las píldoras permanecen sin identificar."
-        },
+        "name": "Lucky Foot",
+        "description": [
+            "+1.0 Suerte arriba",
+            "Mayores posibilidades de ganar mientras juegas en el juego de la concha y la máquina de adivinación",
+            "Mayor probabilidad de obtener un objeto aleatorio después de limpiar una habitación.",
+            "Convierte todas las píldoras negativas en sus contrapartes positivas. No afecta a las neutrales y las píldoras permanecen sin identificar."
+        ],
         "quality": "2",
+        "tags": "* normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, starting, pink, white, yellow",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room",
             "Beggar"
-        ]
+        ],
+        "pickup": "Luck up"
     },
     {
         "id": "47",
+        "name": "Doctor's Remote",
+        "description": [
+            "Se coloca un objetivo en el suelo que se puede controlar. Tras unos segundos, un enorme misil impacta en el objetivo e inflige 20 veces tu daño de desgarro a todo lo que esté cerca.",
+            "Esencialmente, un uso único del elemento Feto épico."
+        ],
         "quality": "1",
+        "tags": "* item room, treasure room, item room pool, grey, gray, robot",
         "type_list": [
             "Activa"
         ],
@@ -653,25 +910,35 @@
         ],
         "recharge_time": [
             "2 rooms"
-        ]
+        ],
+        "pickup": "Reusable air strike"
     },
     {
         "id": "48",
+        "name": "Cupid's Arrow",
+        "description": [
+            "Las lágrimas de Isaac ahora tienen un efecto perforante que les permite viajar a través de los enemigos en lugar de romperse al impactar."
+        ],
         "quality": "3",
+        "tags": "* item room, treasure room, item room pool, arrow, penetrative, penetrating shots, grey, red, bolt, cupid arrow, cupids arrow",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Piercing shots"
     },
     {
         "id": "49",
-        "description": {
-            "1": "El láser inflige daño equivalente al doble de tu daño por desgarro. El láser impacta hasta 13 veces si un enemigo permanece dentro mientras dura.",
-            "2": "Tiene la posibilidad de aparecer en las peleas contra los minijefes Envy y Super Envy."
-        },
+        "name": "Shoop Da Whoop!",
+        "description": [
+            "Cuando se usa, dispara un láser de alto daño en línea recta a través de la habitación de manera similar a Brimstone.",
+            "El láser inflige daño equivalente al doble de tu daño por desgarro. El láser impacta hasta 13 veces si un enemigo permanece dentro mientras dura.",
+            "Tiene la posibilidad de aparecer en las peleas contra los minijefes Envy y Super Envy."
+        ],
         "quality": "2",
+        "tags": "* item room, treasure room, item room pool, red, lips, white, eyes",
         "type_list": [
             "Activa"
         ],
@@ -682,30 +949,38 @@
         ],
         "recharge_time": [
             "2 rooms"
-        ]
+        ],
+        "pickup": "BLLLARRRRGGG!"
     },
     {
         "id": "50",
-        "description": {
-            "1": "Sólo lo puede dejar caer el jefe Steven"
-        },
+        "name": "Steven",
+        "description": [
+            "+1 aumento de daño",
+            "Sólo lo puede dejar caer el jefe Steven"
+        ],
         "quality": "3",
         "unlock": "Desbloquea este objeto superando el Sótano 40 veces y derrotando al jefe Steven.",
+        "tags": "*, black, white, face, eyes, mouth, golden chest pool",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Steven Boss"
-        ]
+        ],
+        "pickup": "DMG up"
     },
     {
         "id": "51",
-        "description": {
-            "1": "+10% de probabilidad de que se abra una sala de diablos\/ángeles mientras se mantiene presionado",
-            "2": "Un segundo pentagrama otorgará un 5% adicional de probabilidad",
-            "3": "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
-        },
+        "name": "Pentagram",
+        "description": [
+            "+1.0 aumento de daño",
+            "+10% de probabilidad de que se abra una sala de diablos\/ángeles mientras se mantiene presionado",
+            "Un segundo pentagrama otorgará un 5% adicional de probabilidad",
+            "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
+        ],
         "quality": "3",
+        "tags": "* curse room pool, devil pool, devil room pool, devil deal, boss room pool, boss room, satanic, star, red, black",
         "type_list": [
             "Pasivo"
         ],
@@ -715,58 +990,80 @@
             "Devil Room",
             "Demon Beggar",
             "Crane Game"
-        ]
+        ],
+        "pickup": "DMG up"
     },
     {
         "id": "52",
-        "description": {
-            "3": "Las bombas también se sinergizarán con otros elementos de bomba y modificadores de desgarro, incluidas las Bombas Tristes, Mr. Mega y muchas más.",
-            "4": "Las bombas crecen o se hacen más pequeñas con modificadores de tamaño de lágrima y son inmunes al retroceso de sus propias explosiones."
-        },
+        "name": "Dr. Fetus",
+        "description": [
+            "En lugar de lágrimas, Isaac ahora dispara bombas desde sus ojos, que explotan e infligen daño a todo lo que esté cerca.",
+            "Daño de bomba = daño * 10",
+            "Desgarros hacia abajo (Retardo de desgarro * 2.5)",
+            "Las bombas también se sinergizarán con otros elementos de bomba y modificadores de desgarro, incluidas las Bombas Tristes, Mr. Mega y muchas más.",
+            "Las bombas crecen o se hacen más pequeñas con modificadores de tamaño de lágrima y son inmunes al retroceso de sus propias explosiones."
+        ],
         "quality": "4",
+        "unlock": "Desbloquea este objeto al vencer al Corazón de Mamá 9 veces",
+        "tags": "* item room, treasure room, item room pool, baby, fetus, foetus, jar, white, pink, bug, dr fetus",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "???"
     },
     {
         "id": "53",
-        "description": {
-            "2": "Los cofres a hasta 2 casillas de distancia de Isaac se abren automáticamente. Los cofres con pinchos se abren sin dañar a Isaac. Los cofres cerrados y de piedra no se abren y requieren una llave o una bomba."
-        },
+        "name": "Magneto",
+        "description": [
+            "Hace que las pastillas en el suelo se muevan hacia el jugador.",
+            "Funciona a través de boxes, pero no a través de bloques clave.",
+            "Los cofres a hasta 2 casillas de distancia de Isaac se abren automáticamente. Los cofres con pinchos se abren sin dañar a Isaac. Los cofres cerrados y de piedra no se abren y requieren una llave o una bomba."
+        ],
         "quality": "1",
+        "tags": "* item room, treasure room, item room pool, red, horse shoe",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Item snatcher"
     },
     {
         "id": "54",
-        "description": {
-            "2": "Todavía puede ayudarte a adivinar en qué dirección está la sala del jefe, debido al hecho de que la sala del jefe generalmente está en la sala más alejada de la primera sala."
-        },
+        "name": "Treasure Map",
+        "description": [
+            "Revela el mapa completo de cada piso, excepto las ubicaciones de las habitaciones secretas.",
+            "No muestra los íconos de ninguna sala inexplorada.",
+            "Todavía puede ayudarte a adivinar en qué dirección está la sala del jefe, debido al hecho de que la sala del jefe generalmente está en la sala más alejada de la primera sala."
+        ],
         "quality": "2",
+        "tags": "* normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room, shop item pool, brown, x, cross, paper",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Shop",
             "Beggar"
-        ]
+        ],
+        "pickup": "Full visible map"
     },
     {
         "id": "55",
-        "description": {
-            "2": "Con +0 de suerte, hay un ~50 % de posibilidades de que se active este efecto.",
-            "3": "Combina muy bien con muchos objetos. Si se usa con Azufre, tienes un 100 % de probabilidad de disparar un láser por la nuca.",
-            "4": "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
-        },
+        "name": "Mom's Eye",
+        "description": [
+            "Isaac tiene una oportunidad aleatoria de disparar otra lágrima por la parte posterior de su cabeza.",
+            "La posibilidad de disparar la segunda lágrima puede mejorar según tu estadística de suerte y siempre se activará con +5 Suerte.",
+            "Con +0 de suerte, hay un ~50 % de posibilidades de que se active este efecto.",
+            "Combina muy bien con muchos objetos. Si se usa con Azufre, tienes un 100 % de probabilidad de disparar un láser por la nuca.",
+            "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
+        ],
         "quality": "1",
+        "tags": "* dungeon room, blood challenge room, arena pool, item room, treasure room, item room, white, red, moms eye, mom eye",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -775,11 +1072,17 @@
             "Item Room",
             "Challenge Room",
             "Mom's Chest"
-        ]
+        ],
+        "pickup": "Eye in the back of your head"
     },
     {
         "id": "56",
+        "name": "Lemon Mishap",
+        "description": [
+            "Cuando se usa, deja caer un charco de \"limonada\" en el suelo que daña a cualquier enemigo que entre en contacto con él por 8 puntos de daño por cada tic."
+        ],
         "quality": "0",
+        "tags": "* item room, treasure room, item room pool, yellow, chet lemon",
         "type_list": [
             "Activa"
         ],
@@ -788,11 +1091,18 @@
         ],
         "recharge_time": [
             "2 rooms"
-        ]
+        ],
+        "pickup": "Oops..."
     },
     {
         "id": "57",
+        "name": "Distant Admiration",
+        "description": [
+            "Le otorga a Isaac un vuelo orbital que inflige 5 puntos de daño de contacto a los enemigos por cada tic.",
+            "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
+        ],
         "quality": "2",
+        "tags": "* key master pool, key beggar pool, key judgement pool, item room, treasure room, item room, grey, gray",
         "type_list": [
             "Pasivo",
             "Orbital"
@@ -800,14 +1110,19 @@
         "item_pool": [
             "Item Room",
             "Key Beggar"
-        ]
+        ],
+        "pickup": "Attack fly"
     },
     {
         "id": "58",
-        "description": {
-            "2": "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
-        },
+        "name": "Book of Shadows",
+        "description": [
+            "Otorga al jugador un efecto de invulnerabilidad que dura 10 segundos.",
+            "Se puede usar para obtener golpes gratis en las máquinas de donación de sangre y en los mendigos diabólicos.",
+            "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
+        ],
         "quality": "3",
+        "tags": "* library pool, library room, book room pool, item room, treasure room, item room pool, white, pink",
         "type_list": [
             "Activa"
         ],
@@ -817,53 +1132,72 @@
         ],
         "recharge_time": [
             "3 rooms"
-        ]
+        ],
+        "pickup": "Temporary invincibility"
     },
     {
         "id": "60",
+        "name": "The Ladder",
+        "description": [
+            "Permite a Isaac caminar sobre huecos con un ancho de una baldosa."
+        ],
         "quality": "1",
+        "tags": "* shop room pool, shop item pool, the lost item pool, brown, wooden",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Shop"
-        ]
+        ],
+        "pickup": "Building bridges"
     },
     {
         "id": "62",
-        "description": {
-            "1": "Cura medio corazón después de cada 13 enemigos asesinados.",
-            "2": "Funciona con el Guardián para restaurar HP de las monedas."
-        },
+        "name": "Charm of the Vampire",
+        "description": [
+            "+0.3 aumento de daño",
+            "Cura medio corazón después de cada 13 enemigos asesinados.",
+            "Funciona con el Guardián para restaurar HP de las monedas."
+        ],
         "quality": "1",
+        "tags": "* item room, treasure room, item room pool, the lost item pool, black, grey, gray, bat",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Kills heal"
     },
     {
         "id": "63",
-        "description": {
-            "2": "Este artículo funciona con artículos autorrecargables."
-        },
+        "name": "The Battery",
+        "description": [
+            "Todos los elementos de la barra espaciadora ahora se pueden \"sobrecargar\", lo que permite cargarlos dos veces en lugar de una.",
+            "Los cargos adicionales aparecen en amarillo encima de las barras verdes normales.",
+            "Este artículo funciona con artículos autorrecargables."
+        ],
         "quality": "2",
+        "tags": "* shop room pool, shop item pool, pink, purple",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Shop"
-        ]
+        ],
+        "pickup": "Stores energy"
     },
     {
         "id": "64",
-        "description": {
-            "1": "Los artículos de 15c se reducen a 7c. Las recolecciones de 5c se convierten en 3c. Las recolecciones de 3c se convierten en 2c.",
-            "2": "Aprovechar más de una oferta de Steam reduce aún más el precio de todos los artículos.",
-            "3": "Este artículo se llama Steamy Sale en las versiones de PS4, PS Vita, Xbox One y Switch, probablemente debido a razones de derechos de autor."
-        },
+        "name": "Steam Sale",
+        "description": [
+            "Los artículos de la tienda ahora tienen un -50% de descuento.",
+            "Los artículos de 15c se reducen a 7c. Las recolecciones de 5c se convierten en 3c. Las recolecciones de 3c se convierten en 2c.",
+            "Aprovechar más de una oferta de Steam reduce aún más el precio de todos los artículos.",
+            "Este artículo se llama Steamy Sale en las versiones de PS4, PS Vita, Xbox One y Switch, probablemente debido a razones de derechos de autor."
+        ],
         "quality": "2",
+        "tags": "* shop room pool, shop item pool, red, pink, white, paper",
         "type_list": [
             "Pasivo"
         ],
@@ -871,15 +1205,20 @@
             "Shop",
             "Greed Miniboss",
             "Shopkeeper"
-        ]
+        ],
+        "pickup": "50% off"
     },
     {
         "id": "65",
-        "description": {
-            "2": "Tiene la posibilidad de caerse de la pelea contra el minijefe Orgullo.",
-            "3": "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
-        },
+        "name": "Anarchist Cookbook",
+        "description": [
+            "Genera 6 bombas de troll en ubicaciones aleatorias alrededor de la habitación.",
+            "Las bombas se ven afectadas por otros elementos de bomba pasivos.",
+            "Tiene la posibilidad de caerse de la pelea contra el minijefe Orgullo.",
+            "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
+        ],
         "quality": "1",
+        "tags": "* Anarchist's Cookbook, Anarchists Cookbook library pool, library room, book room pool, item room, treasure room, item room pool, white, red, pink",
         "type_list": [
             "Activa"
         ],
@@ -890,11 +1229,17 @@
         ],
         "recharge_time": [
             "3 rooms"
-        ]
+        ],
+        "pickup": "Summon bombs"
     },
     {
         "id": "66",
+        "name": "The Hourglass",
+        "description": [
+            "Cuando se usa, ralentiza a todos los enemigos en la sala actual y sus proyectiles durante aproximadamente 8 segundos."
+        ],
         "quality": "1",
+        "tags": "* item room, treasure room, item room pool, hour glass, hourglass, egg timer, sandbrown, glass",
         "type_list": [
             "Activa"
         ],
@@ -903,16 +1248,20 @@
         ],
         "recharge_time": [
             "2 rooms"
-        ]
+        ],
+        "pickup": "Temporary enemy slowdown"
     },
     {
         "id": "67",
-        "description": {
-            "1": "Las lágrimas aparecen rojas pero no tienen daño adicional.",
-            "2": "La hermana Maggy dispara lágrimas a una velocidad de 1 lágrima por segundo.",
-            "3": "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta"
-        },
+        "name": "Sister Maggy",
+        "description": [
+            "Un familiar que sigue a Isaac y dispara lágrimas de sangre que infligen 5 puntos de daño.",
+            "Las lágrimas aparecen rojas pero no tienen daño adicional.",
+            "La hermana Maggy dispara lágrimas a una velocidad de 1 lágrima por segundo.",
+            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta"
+        ],
         "quality": "1",
+        "tags": "* devil pool, devil room pool, devil deal, item room, treasure room, item room pool, red, dead, baby",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -920,109 +1269,141 @@
         "item_pool": [
             "Item Room",
             "Devil Room"
-        ]
+        ],
+        "pickup": "Friends 'till the end"
     },
     {
         "id": "68",
-        "description": {
-            "1": "Los láseres viajan a través de los enemigos pero no de los obstáculos en la habitación.",
-            "2": "Se sinergiza con la mayoría de los elementos que afectan la cantidad de lágrimas que disparas (20\/20, Araña mutante, etc.) o el camino que toman (Mi reflejo, Pequeño planeta, etc.)"
-        },
+        "name": "Technology",
+        "description": [
+            "Las lágrimas de Isaac son reemplazadas por un láser que tiene un alcance ilimitado y solo puede disparar en ángulos rectos.",
+            "Los láseres viajan a través de los enemigos pero no de los obstáculos en la habitación.",
+            "Se sinergiza con la mayoría de los elementos que afectan la cantidad de lágrimas que disparas (20\/20, Araña mutante, etc.) o el camino que toman (Mi reflejo, Pequeño planeta, etc.)"
+        ],
         "quality": "3",
+        "tags": "* item room, treasure room, item room pool, red, wire, white, eye",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Laser tears"
     },
     {
         "id": "69",
-        "description": {
-            "2": "Las lágrimas disparadas con la mínima carga posible causan aproximadamente 1\/3 del daño normal.",
-            "3": "Puedes presionar repetidamente el botón de disparo para disparar rápidamente, sin embargo, el daño general por segundo será bajo.",
-            "4": "Lentitud de Lagrimas, Delay * 2.5"
-        },
+        "name": "Chocolate Milk",
+        "description": [
+            "Isaac ahora puede cargar disparos para causar más daño manteniendo presionado el botón de disparo.",
+            "Con carga completa, tus lágrimas hacen 4 veces más daño.",
+            "Las lágrimas disparadas con la mínima carga posible causan aproximadamente 1\/3 del daño normal.",
+            "Puedes presionar repetidamente el botón de disparo para disparar rápidamente, sin embargo, el daño general por segundo será bajo.",
+            "Desmontaje: Retraso * 2.5"
+        ],
         "quality": "3",
+        "tags": "* item room, treasure room, item room pool, brown, glass, beaker, white",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Charge shots"
     },
     {
         "id": "70",
-        "description": {
-            "1": "+0.2 Aceleración",
-            "2": "Cuenta como 1 de los 3 elementos de jeringa necesarios para la transformación de Spun"
-        },
+        "name": "Growth Hormones",
+        "description": [
+            "+1.0 aumento de daño",
+            "+0.2 Aceleración",
+            "Cuenta como 1 de los 3 elementos de jeringa necesarios para la transformación de Spun"
+        ],
         "quality": "3",
+        "tags": "* demon beggar pool, demon judgement pool, devil beggar pool, boss room pool, boss room item, syringe, needle, injection, purple, grey, gray",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Boss Room",
             "Demon Beggar"
-        ]
+        ],
+        "pickup": "DMG up + speed up"
     },
     {
         "id": "71",
-        "description": {
-            "2": "Hace que Isaac se reduzca de tamaño (incluso ligeramente su hitbox)",
-            "3": "Se puede obtener al explotar hongos en el entorno que normalmente se encuentran en las cuevas\/catacumbas y en las habitaciones secretas.",
-            "4": "Cuenta como 1 de los 3 elementos de hongo necesarios para la transformación de Fun Guy."
-        },
+        "name": "Mini Mush",
+        "description": [
+            "+0.3 Aceleración",
+            "+1,5 aumento de alcance",
+            "Hace que Isaac se reduzca de tamaño (incluso ligeramente su hitbox)",
+            "Se puede obtener al explotar hongos en el entorno que normalmente se encuentran en las cuevas\/catacumbas y en las habitaciones secretas.",
+            "Cuenta como 1 de los 3 elementos de hongo necesarios para la transformación de Fun Guy."
+        ],
         "quality": "2",
+        "tags": "* item room, treasure room, item room pool, mushroom, blue, spotted",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Speed + range up"
     },
     {
         "id": "72",
-        "description": {
-            "1": "+0.5 Lágrimas",
-            "2": "Agrega varias instancias del elemento La Biblia a todos los grupos de elementos",
-            "3": "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
-        },
+        "name": "Rosary",
+        "description": [
+            "+3 Corazones del alma",
+            "+0.5 Lágrimas",
+            "Agrega varias instancias del elemento La Biblia a todos los grupos de elementos",
+            "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
+        ],
         "quality": "2",
+        "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool, red, beads, grey, gray, cross, necklace,",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room",
             "Angel Room"
-        ]
+        ],
+        "pickup": "Faith up"
     },
     {
         "id": "73",
-        "description": {
-            "1": "Obtenido exclusivamente de uno de los jefes jinetes.",
-            "2": "2 cubos de carne transforman el orbital en una cabeza de carne que dispara lágrimas de sangre que causan 3,5 de daño cada una.",
-            "3": "3 cubos de carne lo transforman en un familiar de carne que camina y causa 3,5 de daño de contacto por tic a los enemigos.",
-            "4": "4 cubos de carne hacen que el familiar chico de carne crezca en tamaño y cause 5,5 de daño por tic.",
-            "5": "Cualquier cubo de carne adicional después de 4 iniciará el ciclo nuevamente."
-        },
+        "name": "Cube of Meat",
+        "description": [
+            "Un orbital que bloquea los disparos y daña a los enemigos con los que entra en contacto por 7 puntos de daño por cada tic.",
+            "Obtenido exclusivamente de uno de los jefes jinetes.",
+            "2 cubos de carne transforman el orbital en una cabeza de carne que dispara lágrimas de sangre que causan 3,5 de daño cada una.",
+            "3 cubos de carne lo transforman en un familiar de carne que camina y causa 3,5 de daño de contacto por tic a los enemigos.",
+            "4 cubos de carne hacen que el familiar chico de carne crezca en tamaño y cause 5,5 de daño por tic.",
+            "Cualquier cubo de carne adicional después de 4 iniciará el ciclo nuevamente."
+        ],
         "quality": "2",
+        "unlock": "Desbloquea este objeto al vencer a mamá por primera vez.",
+        "tags": "* red, box, square",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "None (Horsemen boss only)"
-        ]
+        ],
+        "pickup": "Gotta meat em all"
     },
     {
         "id": "74",
-        "description": {
-            "1": "Tiene una probabilidad muy pequeña de caer después de destruir una de las ollas que aparecen en los pisos del sótano y la bodega.",
-            "2": "Tiene la posibilidad de caerse de la pelea contra el minijefe Super Greed."
-        },
+        "name": "A Quarter",
+        "description": [
+            "+25 monedas",
+            "Tiene una probabilidad muy pequeña de caer después de destruir una de las ollas que aparecen en los pisos del sótano y la bodega.",
+            "Tiene la posibilidad de caerse de la pelea contra el minijefe Super Greed."
+        ],
         "quality": "0",
+        "unlock": "Desbloquea este objeto al vencer al Corazón de Mamá 8 veces",
+        "tags": "* secret room pool, item room, treasure room, item room pool, 25, grey, gray, silver,  devil pool, devil room pool, devil deal",
         "type_list": [
             "Pasivo"
         ],
@@ -1030,39 +1411,56 @@
             "Devil Room",
             "Gold Chest",
             "Super Greed Miniboss"
-        ]
+        ],
+        "pickup": "+25 coins"
     },
     {
         "id": "75",
-        "description": {
-            "3": "Cura 2 corazones rojos completos",
-            "4": "Agrega de 0 a 2 monedas al pago cuando usas una máquina de donación de sangre o una bolsa intravenosa."
-        },
+        "name": "PhD",
+        "description": [
+            "Convierte la mayoría de las píldoras negativas en sus contrapartes positivas; por ejemplo, Bajar estadísticas se convierte en Subir estadísticas. Mal viaje se convierte en Bolas de acero. Amnesia se convierte en Puedo ver para siempre, etc.",
+            "Las pastillas se identifican antes de usarlas",
+            "Deja caer una pastilla al recogerla",
+            "Cura 2 corazones rojos completos",
+            "Agrega de 0 a 2 monedas al pago cuando usas una máquina de donación de sangre o una bolsa intravenosa."
+        ],
         "quality": "2",
+        "tags": "* shop room pool, shop item pool, item room, treasure room, item room pool, pink, yellow, paper",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room",
             "Shop"
-        ]
+        ],
+        "pickup": "Better pills"
     },
     {
         "id": "76",
+        "name": "X-Ray Vision",
+        "description": [
+            "Revela la entrada a habitaciones secretas y abre automáticamente el agujero, eliminando la necesidad de bombas para entrar."
+        ],
         "quality": "2",
+        "tags": "* item room, treasure room, item room pool, xray vision, xray glasses, pink, white, black",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "I've seen everything"
     },
     {
         "id": "77",
-        "description": {
-            "2": "Permite golpes gratis en las máquinas de donación de sangre y mendigos diabólicos."
-        },
+        "name": "My Little Unicorn",
+        "description": [
+            "Otorga a Isaac invencibilidad y +0,28 de velocidad durante 6 segundos.",
+            "Mientras esté activo no puedes disparar lágrimas, pero chocar con enemigos causará 40 de daño de contacto por segundo.",
+            "Permite golpes gratis en las máquinas de donación de sangre y mendigos diabólicos."
+        ],
         "quality": "1",
+        "tags": "* item room, treasure room, item room pool, white, horn",
         "type_list": [
             "Activa"
         ],
@@ -1071,15 +1469,21 @@
         ],
         "recharge_time": [
             "4 rooms"
-        ]
+        ],
+        "pickup": "Temporary badass"
     },
     {
         "id": "78",
-        "description": {
-            "2": "+17,5 % de probabilidad de que se abra un trato con el diablo después de la pelea con el jefe",
-            "3": "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
-        },
+        "name": "Book of Revelations",
+        "description": [
+            "Al usarlo, le otorga a Isaac un corazón de alma adicional.",
+            "Usar este objeto te da una mayor probabilidad de encontrar un jefe jinete al final del piso.",
+            "+17,5 % de probabilidad de que se abra un trato con el diablo después de la pelea con el jefe",
+            "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
+        ],
         "quality": "3",
+        "unlock": "Desbloquea este objeto al derrotar a uno de los jefes jinetes por primera vez.",
+        "tags": "* library pool, library room, book room pool, item room, treasure room, item room pool, the lost item pool, purple, cross",
         "type_list": [
             "Activa"
         ],
@@ -1089,16 +1493,20 @@
         ],
         "recharge_time": [
             "6 rooms"
-        ]
+        ],
+        "pickup": "Reusable soul protection"
     },
     {
         "id": "79",
-        "description": {
-            "1": "+0.2 Aceleración",
-            "2": "+1 Corazón del alma",
-            "3": "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
-        },
+        "name": "The Mark",
+        "description": [
+            "+1.0 aumento de daño",
+            "+0.2 Aceleración",
+            "+1 Corazón del alma",
+            "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
+        ],
         "quality": "3",
+        "tags": "* curse room pool, devil pool, devil room pool, devil deal, red, 666",
         "type_list": [
             "Pasivo"
         ],
@@ -1106,16 +1514,20 @@
             "Curse Room",
             "Devil Room",
             "Demon Beggar"
-        ]
+        ],
+        "pickup": "DMG up"
     },
     {
         "id": "80",
-        "description": {
-            "1": "+0.7 Lágrimas",
-            "2": "+2 Corazones Negros",
-            "3": "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
-        },
+        "name": "The Pact",
+        "description": [
+            "+0,5 aumento de daño",
+            "+0.7 Lágrimas",
+            "+2 Corazones Negros",
+            "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
+        ],
         "quality": "3",
+        "tags": "* curse room pool, devil pool, devil room pool, devil deal, piece of paper, bloody paper, contract, red, drip",
         "type_list": [
             "Pasivo"
         ],
@@ -1123,16 +1535,21 @@
             "Devil Room",
             "Curse Room",
             "Demon Beggar"
-        ]
+        ],
+        "pickup": "DMG + tears up"
     },
     {
         "id": "81",
-        "description": {
-            "2": "Tiene la posibilidad de caer del minijefe Super Pride.",
-            "3": "La cabeza flotante de Dead Cat que te sigue desaparecerá cuando estés en tu última vida (Muy útil para The Lost)",
-            "4": "Cuenta como 1 de los 3 elementos de gato necesarios para la transformación de Guppy"
-        },
+        "name": "Dead Cat",
+        "description": [
+            "La salud de Isaac se establece en 1 y también gana 9 vidas adicionales.",
+            "Cada vez que Isaac muere, reaparecerá con 1 de salud.",
+            "Tiene la posibilidad de caer del minijefe Super Pride.",
+            "La cabeza flotante de Dead Cat que te sigue desaparecerá cuando estés en tu última vida (Muy útil para The Lost)",
+            "Cuenta como 1 de los 3 elementos de gato necesarios para la transformación de Guppy"
+        ],
         "quality": "3",
+        "tags": "* curse room pool, red chest pool, red chest item pool, devil pool, devil room pool, devil deal",
         "type_list": [
             "Pasivo"
         ],
@@ -1141,32 +1558,41 @@
             "Curse Room",
             "Red Chest",
             "Super Pride Miniboss"
-        ]
+        ],
+        "pickup": "9 lives"
     },
     {
         "id": "82",
-        "description": {
-            "1": "+0.3 Aceleración",
-            "2": "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
-        },
+        "name": "Lord of the Pit",
+        "description": [
+            "Le otorga a Isaac alas de demonio y la capacidad de volar.",
+            "+0.3 Aceleración",
+            "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
+        ],
         "quality": "3",
+        "tags": "* devil pool, devil room pool, devil deal, the lost item pool, cross, upside down, red, black",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Devil Room",
             "Demon Beggar"
-        ]
+        ],
+        "pickup": "Demon wings"
     },
     {
         "id": "83",
-        "description": {
-            "1": "Cada uso también otorga medio corazón negro, sin embargo, este permanece entre habitaciones a diferencia de los otros efectos.",
-            "2": "Permite que Isaac inflija 40 de daño de contacto a los enemigos en la sala actual. No impide que Isaac reciba daño de contacto.",
-            "3": "Todos los efectos anteriores solo están activos cuando el elemento se usa en la sala actual.",
-            "4": "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
-        },
+        "name": "The Nail",
+        "description": [
+            "Cada uso de este objeto otorga +0,7 de aumento de daño, -0,18 de reducción de velocidad y la capacidad de destruir la mayoría de los obstáculos de la sala actual.",
+            "Cada uso también otorga medio corazón negro, sin embargo, este permanece entre habitaciones a diferencia de los otros efectos.",
+            "Permite que Isaac inflija 40 de daño de contacto a los enemigos en la sala actual. No impide que Isaac reciba daño de contacto.",
+            "Todos los efectos anteriores solo están activos cuando el elemento se usa en la sala actual.",
+            "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
+        ],
         "quality": "2",
+        "unlock": "Desbloquea este objeto al vencer al jefe Rush con Azazel",
+        "tags": "* devil pool, devil room pool, devil deal, grey, gray, bloody",
         "type_list": [
             "Activa"
         ],
@@ -1176,11 +1602,21 @@
         ],
         "recharge_time": [
             "6 rooms"
-        ]
+        ],
+        "pickup": "Temporary demon form"
     },
     {
         "id": "84",
+        "name": "We Need To Go Deeper",
+        "description": [
+            "Genera una trampilla a los pies de Isaac que le permite viajar al siguiente piso.",
+            "Cavar en ciertos lugares con objetos o marcas en el piso garantizará un espacio de acceso una vez por piso.",
+            "En Sheol, Catedral, Cofre y Habitación Oscura, este objeto abre un espacio de rastreo o no hace nada.",
+            "No se puede generar una trampilla directamente frente a la entrada de una habitación secreta.",
+            "Puede destruir rocas si se usa cuando Isaac está volando sobre una roca."
+        ],
         "quality": "2",
+        "tags": "* secret room pool, devil pool, devil room pool, devil deal, silver, grey, gray, dig, spade, shovel",
         "type_list": [
             "Activa"
         ],
@@ -1190,14 +1626,18 @@
         ],
         "recharge_time": [
             "6 rooms"
-        ]
+        ],
+        "pickup": "Reusable level skip"
     },
     {
         "id": "85",
-        "description": {
-            "1": "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
-        },
+        "name": "Deck of Cards",
+        "description": [
+            "Le da a Isaac una carta del tarot al azar al usarla.",
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+        ],
         "quality": "2",
+        "tags": "* shop room pool, shop item pool, item room, treasure room, item room pool, brown, pink",
         "type_list": [
             "Activa"
         ],
@@ -1207,11 +1647,18 @@
         ],
         "recharge_time": [
             "6 rooms"
-        ]
+        ],
+        "pickup": "Reusable card generator"
     },
     {
         "id": "86",
+        "name": "Monstro's Tooth",
+        "description": [
+            "Cuando se usa, genera un Monstruo que saltará sobre un enemigo aleatorio en la habitación, lo que le inflige 120 de daño y destruye los obstáculos cercanos."
+        ],
         "quality": "1",
+        "unlock": "Desbloquea este objeto superando el Sótano II por primera vez.",
+        "tags": "* item room, treasure room, item room pool, white, grey, gray, bloody, monstros tooth, monstro tooth",
         "type_list": [
             "Activa"
         ],
@@ -1220,15 +1667,20 @@
         ],
         "recharge_time": [
             "3 rooms"
-        ]
+        ],
+        "pickup": "Summon monstro"
     },
     {
         "id": "87",
-        "description": {
-            "1": "La posibilidad de disparar lágrimas de 4 vías se ve afectada por tu estadística de suerte y con +15 Suerte se activará cada vez",
-            "2": "Con +0 de suerte, el efecto tiene un 30 % de probabilidad de activarse."
-        },
+        "name": "Loki's Horns",
+        "description": [
+            "Cada vez que disparas una lágrima, existe la posibilidad de que también dispares tres lágrimas más en todas las direcciones cardinales.",
+            "La posibilidad de disparar lágrimas de 4 vías se ve afectada por tu estadística de suerte y con +15 Suerte se activará cada vez",
+            "Con +0 de suerte, el efecto tiene un 30 % de probabilidad de activarse."
+        ],
         "quality": "1",
+        "unlock": "Desbloquea este objeto al derrotar a Lokii por primera vez.",
+        "tags": "* item room, treasure room, item room pool, grey, gray, devil, lokis horns loki horns",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -1236,81 +1688,113 @@
         "item_pool": [
             "Item Room",
             "Demon Beggar"
-        ]
+        ],
+        "pickup": "Cross tears"
     },
     {
         "id": "88",
+        "name": "Little Chubby",
+        "description": [
+            "Un familiar que sigue a Isaac y carga hacia adelante, infligiendo 3,5 de daño por tic a cualquier enemigo con el que entre en contacto."
+        ],
         "quality": "2",
+        "unlock": "Desbloquea este objeto superando las Cuevas II por primera vez.",
+        "tags": "* item room, treasure room, item room pool, yellow, smile, face, bug",
         "type_list": [
             "Pasivo",
             "Familiar"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Attack buddy"
     },
     {
         "id": "89",
-        "description": {
-            "1": "La posibilidad de ralentizar a los enemigos se ve afectada por tu estadística de suerte y, con +15 Suerte, se activará cada vez."
-        },
+        "name": "Spider Bite",
+        "description": [
+            "Las lágrimas ahora tienen la posibilidad de ralentizar a los enemigos y sus proyectiles durante 2,5 segundos.",
+            "La posibilidad de ralentizar a los enemigos se ve afectada por tu estadística de suerte y, con +15 Suerte, se activará cada vez."
+        ],
         "quality": "2",
+        "tags": "* item room, treasure room, item room pool, black, grey, gray, red, bug",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Slow effect"
     },
     {
         "id": "90",
-        "description": {
-            "1": "+0.2 Lágrimas",
-            "2": "-0.2 Disminución de velocidad",
-            "3": "Tiene la posibilidad de caerse al explotar una roca teñida."
-        },
+        "name": "The Small Rock",
+        "description": [
+            "+1.0 aumento de daño",
+            "+0.2 Lágrimas",
+            "-0.2 Disminución de velocidad",
+            "Tiene la posibilidad de caerse al explotar una roca teñida."
+        ],
         "quality": "3",
+        "unlock": "Desbloquea este objeto destruyendo 100 rocas coloreadas.",
+        "tags": "* tinted rock, marked rock, grey, gray, lump, white",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "None (Tinted rock only)"
-        ]
+        ],
+        "pickup": "DMG up"
     },
     {
         "id": "91",
-        "description": {
-            "2": "Bloquea el daño de los proyectiles que caen desde arriba."
-        },
+        "name": "Spelunker Hat",
+        "description": [
+            "Revela habitaciones adyacentes hasta a 2 habitaciones de distancia, esto incluye revelar si estás al lado de una habitación secreta o habitaciones súper secretas.",
+            "Le da a Isaac un ligero brillo cuando la Maldición de la Oscuridad está activa.",
+            "Bloquea el daño de los proyectiles que caen desde arriba."
+        ],
         "quality": "2",
+        "tags": "* item room, treasure room, item room pool, spelunky, miner, mining, helpmet, light, purple, olmec, grey, gray, lamp",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "See-through doors"
     },
     {
         "id": "92",
-        "description": {
-            "2": "Cura un contenedor de corazón rojo al recogerlo."
-        },
+        "name": "Super Bandage",
+        "description": [
+            "+1 HP arriba",
+            "+2 Corazones del Alma",
+            "Cura un contenedor de corazón rojo al recogerlo."
+        ],
         "quality": "2",
+        "unlock": "Desbloquea este objeto creando una Super Bandage Girl",
+        "tags": "* boss room pool, boss room item, pink, plaster, sticker, item room, treasure room, item room pool, the lost item pool",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room",
             "Boss Room"
-        ]
+        ],
+        "pickup": "+2 hearts"
     },
     {
         "id": "93",
-        "description": {
-            "1": "Cada vez que te 'comes' a 2 enemigos, recuperas 1\/2 corazón de salud roja",
-            "2": "No puedes disparar lágrimas mientras el efecto esté activo."
-        },
+        "name": "The Gamekid",
+        "description": [
+            "Cuando se usa, Isaac se transforma en Pac-Man, lo que lo hace invencible durante 6 segundos y causa 40 de daño de contacto a los enemigos por cada mordida.",
+            "Cada vez que te 'comes' a 2 enemigos, recuperas 1\/2 corazón de salud roja",
+            "No puedes disparar lágrimas mientras el efecto esté activo."
+        ],
         "quality": "1",
+        "unlock": "Desbloquea este objeto visitando 10 salas de juego.",
+        "tags": "* item room, treasure room, item room pool, gameboy, grey, gray, white",
         "type_list": [
             "Activa"
         ],
@@ -1319,38 +1803,56 @@
         ],
         "recharge_time": [
             "4 rooms"
-        ]
+        ],
+        "pickup": "Temporary Man-Pac"
     },
     {
         "id": "94",
+        "name": "Sack of Pennies",
+        "description": [
+            "Una bolsa que flota siguiendo a Isaac y deja caer una moneda al azar cada 2 habitaciones."
+        ],
         "quality": "1",
+        "unlock": "Desbloquea este objeto derrotando a Isaac con Caín.",
+        "tags": "* secret room pool, item room, treasure room, item room pool, bag, purple, pouch",
         "type_list": [
             "Pasivo",
             "Familiar"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Gives money"
     },
     {
         "id": "95",
-        "description": {
-            "1": "El láser de Robo-Baby es espectral y penetrante (atravesará rocas y objetos del entorno)",
-            "2": "Los láseres de Robo-Baby causan 3,5 de daño por golpe.",
-            "3": "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta."
-        },
+        "name": "Robo-Baby",
+        "description": [
+            "Un familiar que sigue a Isaac y dispara láseres, similar al objeto de Tecnología.",
+            "El láser de Robo-Baby es espectral y penetrante (atravesará rocas y objetos del entorno)",
+            "Los láseres de Robo-Baby causan 3,5 de daño por golpe.",
+            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta."
+        ],
         "quality": "1",
+        "tags": "* item room, treasure room, item room pool, robo baby, robot baby, white, grey, gray, silver, red",
         "type_list": [
             "Pasivo",
             "Familiar"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Friends till the bzzzttt"
     },
     {
         "id": "96",
+        "name": "Little C.H.A.D",
+        "description": [
+            "Un familiar que sigue a Isaac y deja caer medio corazón rojo cada 3 habitaciones."
+        ],
         "quality": "2",
+        "unlock": "Desbloquea este objeto superando las Cuevas 30 veces y derrotando a CHAD.",
+        "tags": "* lil chad, little chad, item room, treasure room, item room pool, the lost item pool, red, smile, face, bug",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -1358,11 +1860,21 @@
         "item_pool": [
             "Item Room",
             "C.H.A.D. Boss"
-        ]
+        ],
+        "pickup": "Gives kisses"
     },
     {
         "id": "97",
+        "name": "The Book of Sin",
+        "description": [
+            "Genera un objeto de recogida aleatorio en el suelo.",
+            "Es posible recolectar cualquier cosa de este artículo, incluidas bombas, corazones, llaves, monedas, píldoras, baterías, cartas del tarot, runas, etc.",
+            "No produce microbaterías, solo de tamaño regular y rara vez baterías doradas o mega",
+            "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
+        ],
         "quality": "2",
+        "unlock": "Desbloquea este objeto superando cada uno de los Siete Pecados una vez.",
+        "tags": "* library pool, library room, book room pool, devil pool, devil room pool, devil deal, item room, treasure room, item room pool, red 7 book, grey, gray, black",
         "type_list": [
             "Activa"
         ],
@@ -1373,11 +1885,18 @@
         ],
         "recharge_time": [
             "4 rooms"
-        ]
+        ],
+        "pickup": "Reusable item generator"
     },
     {
         "id": "98",
+        "name": "The Relic",
+        "description": [
+            "Una cruz azul que sigue a Isaac y deja caer un corazón de alma cada 7 u 8 habitaciones."
+        ],
         "quality": "3",
+        "unlock": "Desbloquea este objeto derrotando al jefe Isaac con Maggy.",
+        "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -1385,15 +1904,21 @@
         "item_pool": [
             "Item Room",
             "Angel Room"
-        ]
+        ],
+        "pickup": "Soul generator"
     },
     {
         "id": "99",
-        "description": {
-            "2": "El pequeño Gish dispara lágrimas a una velocidad de 1 lágrima por segundo.",
-            "3": "Una caída garantizada de la pelea contra el jefe Gish"
-        },
+        "name": "Little Gish",
+        "description": [
+            "Un familiar que sigue a Isaac y dispara lágrimas de alquitrán negro, que ralentizan el movimiento del enemigo y la velocidad del proyectil durante unos segundos.",
+            "Las lágrimas del pequeño Gish hacen 3,5 de daño.",
+            "El pequeño Gish dispara lágrimas a una velocidad de 1 lágrima por segundo.",
+            "Una caída garantizada de la pelea contra el jefe Gish"
+        ],
         "quality": "2",
+        "unlock": "Desbloquea este objeto derrotando a las Profundidades 20 veces y matando al jefe Gish.",
+        "tags": "* item room, treasure room, item room pool, grey, gray, yellow, eyes, face",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -1401,15 +1926,21 @@
         "item_pool": [
             "Item Room",
             "Gish Boss"
-        ]
+        ],
+        "pickup": "Sticky friend"
     },
     {
         "id": "100",
-        "description": {
-            "2": "El pequeño Steven dispara lágrimas a una velocidad de 1 lágrima por segundo con un alcance ligeramente mayor que otros familiares.",
-            "3": "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta"
-        },
+        "name": "Little Steven",
+        "description": [
+            "Un familiar que sigue a Isaac y dispara lágrimas teledirigidas que infligen 3,5 de daño cada una.",
+            "Tiene una alta probabilidad de caerse en la pelea contra el jefe Steven.",
+            "El pequeño Steven dispara lágrimas a una velocidad de 1 lágrima por segundo con un alcance ligeramente mayor que otros familiares.",
+            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta"
+        ],
         "quality": "2",
+        "unlock": "Desbloquea este objeto matando al jefe Steven por primera vez.",
+        "tags": "* boss room pool, boss room item, item room, treasure room, item room pool, black, baby, white, eyes",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -1417,23 +1948,42 @@
         "item_pool": [
             "Item Room",
             "Steven Boss"
-        ]
+        ],
+        "pickup": "Psychic friend"
     },
     {
         "id": "101",
+        "name": "The Halo",
+        "description": [
+            "+1 HP arriba",
+            "+0.3 aumento de daño",
+            "+0.2 Lágrimas",
+            "+0,38 Rango ascendente",
+            "+0.3 Aceleración",
+            "Cura un contenedor de corazón rojo al recogerlo.",
+            "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
+        ],
         "quality": "2",
         "unlock": "Desbloquea este objeto matando a mamá (el pie de mamá o el corazón de mamá) usando La Biblia",
+        "tags": "* angel room pool, god room pool, angel room item, boss room pool, boss room item, item room, treasure room, item room pool, yellow, golden, ring, circle",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room",
             "Angel Room"
-        ]
+        ],
+        "pickup": "All stats up"
     },
     {
         "id": "102",
+        "name": "Mom's Bottle of Pills",
+        "description": [
+            "Cuando se usa, le da a Isaac una pastilla al azar.",
+            "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
+        ],
         "quality": "1",
+        "tags": "* dungeon room, blood challenge room, arena pool, demon beggar pool, demon judgement pool, devil beggar pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool, item room, treasure room, item room pool, yellow, red, blue, medicine, jar, drug, moms bottle of pills",
         "type_list": [
             "Activa"
         ],
@@ -1447,35 +1997,55 @@
         ],
         "recharge_time": [
             "6 rooms"
-        ]
+        ],
+        "pickup": "Reusable pill generator"
     },
     {
         "id": "103",
+        "name": "The Common Cold",
+        "description": [
+            "Las lágrimas ahora tienen una probabilidad aleatoria de aplicar un efecto de veneno, lo que causa el doble de daño de lágrimas por tic a los enemigos a lo largo del tiempo.",
+            "La posibilidad de disparar tiros venenosos se ve afectada por tu estadística de suerte y con +12 Suerte se activará cada vez"
+        ],
         "quality": "1",
+        "tags": "* item room, treasure room, item room pool, green, snot, booger, ball, slime",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Poison damage"
     },
     {
         "id": "104",
-        "description": {
-            "2": "Las lágrimas pueden seguir partiéndose si aún tienen alcance y daño superior a 1."
-        },
+        "name": "The Parasite",
+        "description": [
+            "Las lágrimas de Isaac ahora se dividen en dos al entrar en contacto con enemigos o el entorno.",
+            "Las lágrimas que se desprenden del desgarro principal causan menos daño (daño por desgarro * 0,5)",
+            "Las lágrimas pueden seguir partiéndose si aún tienen alcance y daño superior a 1."
+        ],
         "quality": "3",
+        "unlock": "Desbloquea este objeto reuniendo dos de los siguientes objetos: Cabeza podrida de Bob, Gato muerto, Cabeza de Cricket, Cabeza de Tammy",
+        "tags": "* item room, treasure room, item room pool, pink, slug, bug, face",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room"
-        ]
+        ],
+        "pickup": "Split shot"
     },
     {
         "id": "105",
+        "name": "The D6",
+        "description": [
+            "Al usarlo, reemplaza todos los objetos del pedestal de la sala actual con otro objeto aleatorio. Los objetos repetidos se eligen del conjunto de objetos de la sala actual.",
+            "Isaac comienza con este objeto después de desbloquearlo."
+        ],
         "quality": "4",
         "unlock": "Desbloquea este objeto al derrotar al jefe Isaac con Blue Baby.",
+        "tags": "* item room, treasure room, item room pool, dice pip, starting, pink, red, cube, dice effect",
         "type_list": [
             "Activa"
         ],
@@ -1484,15 +2054,21 @@
         ],
         "recharge_time": [
             "6 rooms"
-        ]
+        ],
+        "pickup": "Reroll your destiny"
     },
     {
         "id": "106",
-        "description": {
-            "2": "Se puede encontrar en la habitación secreta.",
-            "3": "Tiene la posibilidad de tocar de la pelea contra el minijefe Super Wrath."
-        },
+        "name": "Mr. Mega",
+        "description": [
+            "+5 Bombas",
+            "Las bombas ahora hacen 185 de daño (antes 100) y tienen un radio de explosión más grande.",
+            "Se puede encontrar en la habitación secreta.",
+            "Tiene la posibilidad de caerse de la pelea contra el minijefe Super Wrath."
+        ],
         "quality": "2",
+        "unlock": "Desbloquea este objeto destruyendo 10 rocas coloreadas.",
+        "tags": "* boss rush pool, boss rush room, secret room pool, item room, treasure room, item room pool, dungeon room, blood challenge room, arena pool, slackaholicus, grey, gray, face",
         "type_list": [
             "Pasivo"
         ],
@@ -1500,11 +2076,17 @@
             "Item Room",
             "Bomb Beggar",
             "Super Wrath Miniboss"
-        ]
+        ],
+        "pickup": "Blast damage"
     },
     {
         "id": "107",
+        "name": "Pinking Shears",
+        "description": [
+            "Corta la cabeza de Isaac de su cuerpo para la habitación actual, lo que le permite volar y deja el cuerpo decapitado corriendo y atacando enemigos por 5,5 de daño por tic."
+        ],
         "quality": "2",
+        "tags": "* item room, treasure room, item room pool, scissors, cutters, snip, scissors, silver, grey, gray",
         "type_list": [
             "Activa"
         ],
@@ -1513,48 +2095,63 @@
         ],
         "recharge_time": [
             "4 rooms"
-        ]
+        ],
+        "pickup": "Cut and run"
     },
     {
         "id": "108",
-        "description": {
-            "3": "La Oblea se vuelve más efectiva en el Útero y más allá, donde todos los enemigos infligen un corazón entero de daño.",
-            "4": "La oblea hace que el objeto Tapón afilado cueste solo 1\/2 corazón por uso",
-            "5": "No tiene ningún efecto con el Guardián: no existe tal cosa como medio punto de salud de una moneda."
-        },
+        "name": "The Wafer",
+        "description": [
+            "Todo el daño recibido se reduce a medio corazón.",
+            "La reducción de daño se reduce en todas las fuentes del juego, excepto Devil Deals y las píldoras de reducción de salud.",
+            "No previene la muerte (es decir, el Rey Suicida o usar la Biblia en Isaac, ??? o Satanás)",
+            "La Oblea se vuelve más efectiva en el Útero y más allá, donde todos los enemigos infligen un corazón entero de daño.",
+            "La oblea hace que el objeto Tapón afilado cueste solo 1\/2 corazón por uso",
+            "No tiene ningún efecto con el Guardián: no existe tal cosa como medio punto de salud de una moneda."
+        ],
         "quality": "4",
+        "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, communion, the lost item pool, circle, cross, white, yellow",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room",
             "Angel Room"
-        ]
+        ],
+        "pickup": "Damage resistance"
     },
     {
         "id": "109",
-        "description": {
-            "1": "Por 99 monedas, este objeto otorga +3,96 de aumento de daño.",
-            "2": "+0.04 por moneda es la cantidad añadida antes de calcular la fórmula de daño, ya que es la única forma de mostrar una cantidad constante de daño infligido. Puede que veas más o menos en la superposición del HUD de Encontrados; sin embargo, este número varía según tus otros objetos que aumentan el daño."
-        },
+        "name": "Money = Power",
+        "description": [
+            "+0,04 de aumento de daño por cada moneda que tengas actualmente",
+            "Por 99 monedas, este objeto otorga +3,96 de aumento de daño.",
+            "+0.04 por moneda es la cantidad añadida antes de calcular la fórmula de daño, ya que es la única forma de mostrar una cantidad constante de daño infligido. Puede que veas más o menos en la superposición del HUD de Encontrados; sin embargo, este número varía según tus otros objetos que aumentan el daño."
+        ],
         "quality": "3",
+        "tags": "* item room, treasure room, item room pool, money is power, dollar, red, grey, gray,",
         "type_list": [
             "Pasivo"
         ],
         "item_pool": [
             "Item Room",
             "Devil Room"
-        ]
+        ],
+        "pickup": "$$$ = DMG"
     },
     {
         "id": "110",
-        "description": {
-            "1": "La posibilidad de congelar enemigos se ve afectada por tu estadística de suerte.",
-            "2": "+0,38 Rango ascendente",
-            "3": "La probabilidad de activación aumenta con la suerte, hasta alrededor de un 50 % de probabilidad con +20 de suerte.",
-            "4": "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
-        },
+        "name": "Mom's Contacts",
+        "description": [
+            "Las lágrimas ahora tienen una probabilidad aleatoria de congelar a los enemigos en su lugar.",
+            "La posibilidad de congelar enemigos se ve afectada por tu estadística de suerte.",
+            "+0,38 Rango ascendente",
+            "La probabilidad de activación aumenta con la suerte, hasta alrededor de un 50 % de probabilidad con +20 de suerte.",
+            "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
+        ],
         "quality": "3",
+        "unlock": "Desbloquea este objeto reuniendo 3 objetos de \"Mamá\" en una partida.",
+        "tags": "* item room, treasure room, item room pool, dungeon room, blood challenge room, arena pool, pink, red, eye, glow moms contacts mom contact",
         "type_list": [
             "Pasivo"
         ],
@@ -1562,14 +2159,19 @@
             "Item Room",
             "Challenge Room",
             "Mom's Chest"
-        ]
+        ],
+        "pickup": "Freeze effect"
     },
     {
         "id": "111",
-        "description": {
-            "2": "El veneno inflige tu daño de desgarro actual por cada tic."
-        },
+        "name": "The Bean",
+        "description": [
+            "Al usarlo, este objeto hace que Isaac se tire pedos y envenene a los enemigos cercanos.",
+            "El frijol causa 5 puntos de daño y luego envenena a los enemigos por un total de 6 ticks de daño.",
+            "El veneno inflige tu daño de desgarro actual por cada tic."
+        ],
         "quality": "0",
+        "tags": "* normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, team bean, #teambean, brown, kidney",
         "type_list": [
             "Activa"
         ],
@@ -1579,23 +2181,39 @@
         ],
         "recharge_time": [
             "1 room"
-        ]
+        ],
+        "pickup": "Toot on command"
     },
     {
         "id": "112",
+        "name": "Guardian Angel",
+        "description": [
+            "Un orbital que hace 7 daños de contacto por cada tic, bloquea disparos y aumenta la velocidad de todos los demás orbitales.",
+            "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín.",
+            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta."
+        ],
         "quality": "2",
+        "unlock": "Desbloquea este objeto derrotando a Satanás con Maggy.",
+        "tags": "* angel room pool, god room pool, angel room item, baby, wings",
         "type_list": [
             "Pasivo",
             "Orbital"
         ],
         "item_pool": [
             "Angel Room"
-        ]
+        ],
+        "pickup": "Extra protection"
     },
     {
         "id": "113",
+        "name": "Demon Baby",
+        "description": [
+            "Un familiar que sigue a Isaac y dispara automáticamente lágrimas que infligen 3 daños cada una a cualquier enemigo en un rango cercano.",
+            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta."
+        ],
         "quality": "2",
         "unlock": "Desbloquea este objeto superando la Habitación Oscura con Azazel.",
+        "tags": "* devil pool, devil room pool, devil deal, item room, treasure room, item room pool, dead, black, grey, gray, horns",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -1603,7 +2221,8 @@
         "item_pool": [
             "Item Room",
             "Devil Room"
-        ]
+        ],
+        "pickup": "Auto-turret friend"
     },
     {
         "id": "114",
@@ -2043,7 +2662,7 @@
             "Puede caerse de una máquina de donación de sangre después de jugarlo.",
             "En el útero y más allá, esto causa 1 corazón completo de daño.",
             "Si no existen corazones rojos, se consumen otros tipos de corazones en su lugar.",
-            "Con Keeper esto cambia y genera entre 0 y 1 moneda por uso."
+            "Con el Guardián esto cambia y genera entre 0 y 1 moneda por uso."
         ],
         "quality": "1",
         "tags": "* , the lost item pool, red, white",
@@ -2352,7 +2971,7 @@
         "name": "Tough Love",
         "description": [
             "Isaac tiene una posibilidad aleatoria de disparar un diente en lugar de una lágrima a veces.",
-            "Los disparos de dientes infligen un daño igual al daño de tu desgarro * 3.2",
+            "Los disparos de dientes infligen un daño igual a tu daño de desgarro * 3.2",
             "La posibilidad de disparar un diente se ve afectada por tu estadística de suerte y con +9 Suerte se activará cada vez",
             "Se sinergiza bien con algunos modificadores de lágrimas como Ipecacuana, lo que hace que cause un daño masivo."
         ],
@@ -3379,7 +3998,7 @@
         "name": "Midas Touch",
         "description": [
             "El toque de Isaac ahora petrifica a los enemigos, convirtiéndolos en oro durante unos segundos.",
-            "Si un enemigo muere mientras está dorado, caerá entre 1 y 4 monedas.",
+            "If an enemy is killed while it is golden, it will drop between 1-4 coins",
             "El daño de contacto también se inflige a los enemigos en una cantidad igual a la cantidad de monedas que Isaac tiene en ese momento.",
             "Tiene una sinergia con el objeto The Poop, lo que le da una alta probabilidad de generar cacas doradas."
         ],
@@ -3690,7 +4309,7 @@
             "Da la posibilidad de curar 1\/2 un corazón rojo cada vez que el temporizador del juego llega a un nuevo minuto.",
             "Cura un contenedor de corazón rojo al recogerlo.",
             "No hay restricciones sobre cuándo ocurre el efecto de regeneración siempre y cuando el juego no esté en pausa, por lo que puedes simplemente afk y curarte con el tiempo.",
-            "Funciona en espacios de acceso",
+            "Es posible encontrar este objeto haciendo explotar pólipos (las extrañas rocas rojas que se encuentran en los pisos del Útero).",
             "Es posible encontrar este objeto haciendo explotar pólipos (las extrañas rocas rojas que se encuentran en los pisos del Útero)."
         ],
         "quality": "2",
@@ -4780,7 +5399,7 @@
         "description": [
             "Cuando Isaac recibe daño, aparecerá una mosca de ataque blanca que lo orbita a una distancia similar a la de la mosca de Admiración Distante.",
             "La mosca orbita mucho más rápido que Admiración Distante o Solo para Siempre y causa 10 puntos de daño por cada tic.",
-            "Al recoger este objeto, así como otros 2 objetos de tipo mosca, podrás transformarte en El señor de las moscas.",
+            "Recoger este objeto, así como otros 2 objetos de tipo mosca, te permitirá transformarte en El señor de las moscas.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
         ],
         "quality": "0",
@@ -5195,7 +5814,7 @@
             "Si te acercas lo suficiente a un enemigo que tiene un área de impacto grande, puedes golpearlo con 2 rayos láser, lo que te permite causar más daño."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar a Krampus (Krampus se desbloquea al obtener 20 objetos del trato del diablo)",
+        "unlock": "Desbloquea este objeto al derrotar a Krampus (Krampus se desbloquea al conseguir 20 objetos del trato del diablo)",
         "tags": "*, horns, grey, gray, white, red, dead, tongue, krampus head",
         "type_list": [
             "Activa"
@@ -5427,7 +6046,7 @@
         "description": [
             "Te da 6 llaves, 6 bombas y 6 monedas.",
             "Equilibra tus estadísticas principales para acercar las estadísticas altas y bajas a un valor promedio.",
-            "Todos los objetos que mejoren estadísticas en el futuro se distribuirán entre todas las demás estadísticas. Por ejemplo, un objeto que normalmente otorga +1 de daño otorgará un pequeño aumento de todas las estadísticas.",
+            "Todos los objetos que mejoren las estadísticas en el futuro se distribuirán entre todas las demás estadísticas. Por ejemplo, un objeto que normalmente otorga +1 de daño otorgará un pequeño aumento de todas las estadísticas.",
             "Las estadísticas afectadas por este objeto son: Daño, Desgarros, Alcance, Velocidad.",
             "Cuando se toma con otro elemento que otorga un valor extremo en una determinada estadística (por ejemplo, leche de soja), puede generar sinergias interesantes.",
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
@@ -5489,7 +6108,7 @@
             "+0.1 Aceleración",
             "+0,75 Rango Arriba",
             "+1 Llave, +1 Bomba, +1 Moneda",
-            "+1 Llave, +1 Bomba, +1 Moneda",
+            "Cura un contenedor de corazón rojo al recogerlo.",
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
         ],
         "quality": "3",
@@ -5583,7 +6202,7 @@
         "id": "312",
         "name": "Maggy's Bow",
         "description": [
-            "Cura un contenedor de corazón rojo al recogerlo.",
+            "+1 HP arriba",
             "Cura un contenedor de corazón rojo al recogerlo.",
             "Todos los futuros corazones rojos ahora curan el doble. Los medios corazones curan un corazón entero y los corazones completos curan 2 corazones rojos."
         ],
@@ -5718,7 +6337,7 @@
         "name": "Cain's Other Eye",
         "description": [
             "Un ojo familiar que sigue a Isaac y copia todos sus modificadores\/efectos de lágrimas, pero dispara en direcciones aleatorias.",
-            "Las lágrimas de este familiar causan el 75% del daño por lágrimas de Isaac."
+            "Las lágrimas de este familiar causan el 75% del daño de lágrimas de Isaac."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Boss Rush con Caín.",
@@ -6303,7 +6922,7 @@
         "id": "348",
         "name": "Placebo",
         "description": [
-            "Cuando se usa, copia el efecto de la píldora que estás sosteniendo sin consumirla.",
+            "Cuando se usa, copia el efecto de la píldora que estás sosteniendo actualmente sin consumirla.",
             "El tiempo de carga de este artículo depende de la calidad de la pastilla que tengas en la mano.",
             "No copia efectos de cartas o runas."
         ],
@@ -6625,7 +7244,7 @@
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta."
         ],
         "quality": "3",
-        "unlock": "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta.",
+        "unlock": "Desbloquea este objeto al derrotar a Blue Womb (Hush) con The Lost",
         "tags": "*, angel, wings, pink, white",
         "type_list": [
             "Pasivo",
@@ -7257,7 +7876,7 @@
             "Puede ser anulado por otros modificadores de lágrimas como Mom's Knife o Brimstone.",
             "Cada vez que sales de la habitación, este efecto se desactiva hasta que vuelvas a presionar el botón de disparo.",
             "+0.7 Lágrimas",
-            "+3.0 Rango arriba",
+            "+3.0 aumento de rango",
             "No tiene efecto con el Íncubo de Lilith."
         ],
         "quality": "1",
@@ -7488,7 +8107,7 @@
             "No se pueden cambiar los jefes, en su lugar solo se infligen 8 puntos de daño por contacto."
         ],
         "quality": "1",
-        "unlock": "Desbloquea este objeto superando el modo Avaricia con Edén.",
+        "unlock": "Unlock this item by beating Greed Mode with Eden",
         "tags": "*, red, yellow, green, white, square, rectangle",
         "type_list": [
             "Pasivo"
@@ -7504,9 +8123,9 @@
         "id": "406",
         "name": "D8",
         "description": [
-            "Cuando se usa, el D8 vuelve a lanzar todas tus estadísticas.",
+            "When used, the D8 rerolls all of your stats",
             "Solo afectará tus estadísticas de daño, desgarros, alcance y velocidad.",
-            "Solo afectará tus estadísticas de daño, desgarros, alcance y velocidad."
+            "A cada estadística se le asigna un multiplicador que se aplica después de todos los demás ajustes."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto superando el desafío n.° 28 (Día del Orgullo).",
@@ -7842,7 +8461,7 @@
         "description": [
             "Al usarlo, este objeto retrocederá el tiempo y te colocará nuevamente en la habitación anterior, en el mismo estado en el que estabas en ese momento.",
             "Esto significa que cualquier daño recibido o consumibles utilizados en la sala actual se restablecerán al estado anterior.",
-            "Se puede usar para verificar el contenido de una sala de objetos sin afectar las posibilidades de aparición del planetario.",
+            "El reloj de arena brillante no tiene tiempo de reutilización, pero solo se puede usar 3 veces por piso.",
             "El reloj de arena brillante no tiene tiempo de reutilización, pero solo se puede usar 3 veces por piso."
         ],
         "quality": "3",
@@ -8423,7 +9042,7 @@
             "Deja caer una carta al azar al recogerla",
             "Duplica el efecto de la mayoría de las cartas del tarot. Aparece un efecto de contorno pulsante lento en el HUD para las cartas que serían potenciadas por la Tela del Tarot.",
             "Para ver la lista completa de efectos de las cartas del Tarot, consulta la página Mecánica > Tela del Tarot",
-            "Para ver la lista completa de efectos de las cartas del Tarot, consulta la página Mecánica > Tela del Tarot"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
         ],
         "quality": "2",
         "tags": "*, purple, grey, bag",
@@ -8459,7 +9078,7 @@
         "id": "453",
         "name": "Compound Fracture",
         "description": [
-            "Convierte tus lágrimas en huesos, que se rompen en 1-3 fragmentos de hueso más pequeños al golpear cualquier objeto o enemigo.",
+            "+0,38 Rango ascendente",
             "Los fragmentos de hueso más pequeños infligen un daño equivalente a la mitad del daño de desgarro normal.",
             "+0,38 Rango ascendente"
         ],
@@ -8747,7 +9366,7 @@
         "name": "Shade",
         "description": [
             "Isaac obtiene un familiar de sombra que seguirá el patrón de movimiento de Isaac con un retraso de 0,66 segundos e infligirá 5 puntos de daño de contacto a los enemigos por cada tic.",
-            "Isaac absorbe Sombra tras infligir más de 666 de daño. Esto genera enemigos aliados con carga y provoca que Isaac inflija 5 de daño por contacto (igual que Sombra). Este efecto se acumula con varias Sombras, aumentando el daño por contacto cada vez."
+            "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Judas."
         ],
         "quality": "0",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Judas.",
@@ -8892,7 +9511,7 @@
         "name": "D1",
         "description": [
             "Al usar el D1, se duplica un objeto aleatorio en la sala actual. Esto funciona con todos los objetos normales, como cartas, runas, cofres y abalorios. Los objetos duplicados podrían no ser copias idénticas del original; por ejemplo, duplicar una carta podría generar una carta diferente.",
-            "Las runas y baratijas de Jera no se pueden duplicar usando el D1",
+            "Los cofres duplicados pueden convertirse en otro tipo de cofre aleatoriamente (por ejemplo, cofres rojos)",
             "Los cofres duplicados pueden convertirse en otro tipo de cofre aleatoriamente (por ejemplo, cofres rojos)",
             "Se puede usar en una tienda para duplicar camionetas que aún no se han comprado y llevarse la camioneta duplicada de forma gratuita."
         ],
@@ -8964,7 +9583,7 @@
         "name": "Smelter",
         "description": [
             "Al usarlo, el Fundidor destruirá la baratija que tengas actualmente y te otorgará el efecto de forma permanente, lo que te permitirá acumular muchos efectos de baratija diferentes.",
-            "Sostener la fundición aumenta la probabilidad de que caiga una baratija. (2% de probabilidad de que el objeto que cae al final de la sala se convierta en una baratija)",
+            "Si se ha fundido una baratija, no aparecerá una segunda vez a menos que se agote todo el grupo de baratijas o se reinicie la carrera (por ejemplo, haciendo una vuelta de la victoria).",
             "Si se ha fundido una baratija, no aparecerá una segunda vez a menos que se agote todo el grupo de baratijas o se reinicie la carrera (por ejemplo, haciendo una vuelta de la victoria)."
         ],
         "quality": "3",
@@ -9029,7 +9648,7 @@
         "id": "482",
         "name": "Clicker",
         "description": [
-            "Todos los efectos visuales y de lágrimas se reinician después de salir de la habitación.",
+            "Cuando se usa, este objeto te cambiará aleatoriamente a otro personaje y eliminará el último objeto que hayas recogido.",
             "Se aplican todos los cambios de estadísticas del nuevo personaje (por ejemplo, los multiplicadores de daño del personaje).",
             "Este objeto solo reduce tus contenedores de corazón y no los aumenta si cambias a un personaje con más salud. Esto significa que si cambias a Los Perdidos, al cambiar a otro personaje, solo te quedará medio corazón de alma.",
             "No se puede convertir en un personaje que aún no esté desbloqueado.",
@@ -9346,7 +9965,7 @@
             "Si una aguja golpea a un enemigo que no sea un jefe, lo matará instantáneamente y explotará en un círculo de 10 agujas más.",
             "Las 10 agujas generadas también causarán 3 veces tu daño de desgarro, pero no matarán enemigos instantáneamente ni explotarán en más agujas.",
             "La probabilidad de que cada lágrima se convierta en una aguja se ve afectada por tu estadística de suerte y con +15 Suerte se activará el 50% del tiempo.",
-            "Cuenta como 1 de los 3 elementos de jeringa necesarios para la transformación de Spun"
+            "Cuenta como 1 de los 3 elementos de jeringa necesarios para la transformación Spun"
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Lilith.",
@@ -9465,7 +10084,7 @@
         "description": [
             "Te da una posibilidad aleatoria mientras disparas lágrimas de disparar también un tiro de creep, que inflige el doble de daño de tus lágrimas y coloca un creep blanco en el suelo frente a ti que ralentiza a los enemigos si caminan a través de él.",
             "A diferencia de algunos efectos de lágrimas similares, tu estadística de suerte no altera la probabilidad de que este efecto se active.",
-            "También se dispara un tiro de creep en una dirección aleatoria después de recibir daño."
+            "Al disparar lágrimas, tienes un 5% de probabilidad de disparar una lágrima de vacío. Las lágrimas de vacío que tocan a los enemigos generarán a Cuerno Grande, quien aparece y los atrapa, matándolos instantáneamente."
         ],
         "quality": "1",
         "tags": "*, pink, yellow, toe, nail, tooth",
@@ -9481,7 +10100,7 @@
         "id": "503",
         "name": "Little Horn",
         "description": [
-            "Al disparar lágrimas, tienes un 5% de probabilidad de disparar una lágrima de vacío. Las lágrimas de vacío que tocan a los enemigos generarán a Cuerno Grande, quien aparece y los atrapa, matándolos al instante.",
+            "Al disparar lágrimas, tienes un 5% de probabilidad de disparar una lágrima de vacío. Las lágrimas de vacío que tocan a los enemigos generarán a Cuerno Grande, quien aparece y los atrapa, matándolos instantáneamente.",
             "La probabilidad de que cada lágrima se convierta en una lágrima del vacío se ve afectada por tu estadística de suerte y, con +15 Suerte, se activará el 20 % de las veces.",
             "A Isaac también le crece un cuerno en la cabeza, lo que hace que inflijas daño de contacto a los enemigos al chocar contra ellos (este efecto inflige daño base de 3,5 por tic).",
             "Las lágrimas de vacío de este objeto también pueden destruir fuegos azules\/púrpuras, bloques con púas y muecas de piedra."
@@ -9800,7 +10419,7 @@
         "id": "518",
         "name": "Buddy in a Box",
         "description": [
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod Steam Workshop creado por Ashkait y Scayze",
+            "Cuando lo recoges, le da a Isaac un familiar aleatorio que tiene un sprite aleatorio y un efecto de lágrima.",
             "El familiar volverá a ser completamente aleatorio al ingresar al siguiente piso.",
             "La apariencia se elige de un sprite de bebé cooperativo aleatorio.",
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta.",
@@ -10520,7 +11139,7 @@
             "Desbloquea el personaje Olvidado cuando se usa en un montículo de tierra que aparece en una habitación en el piso de La Habitación Oscura.",
             "Se obtiene combinando las dos piezas de la Pala Rota. La primera pieza se obtiene al derrotar al jefe del primer piso en menos de un minuto y luego bombardear la sombra en la primera sala. La segunda pieza se obtiene tras derrotar al Jefe Asalto, siempre y cuando se tenga la primera pieza de la Pala Rota (ver los 2 objetos anteriores para más detalles).",
             "Después de desbloquear The Forgotten, al usarlo nuevamente en el montículo de tierra solo se genera un tipo de cofre aleatorio.",
-            "Se agregó como parte del paquete de refuerzo Afterbirth+ n.° 5 y se usó en la misión para desbloquear al personaje The Forgotten."
+            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5 y usado en la misión para desbloquear al personaje The Forgotten."
         ],
         "quality": "4",
         "tags": "*, moms shovel, mom shovel",
@@ -11846,7 +12465,7 @@
             "Edén: genera 3 elementos de cualquier grupo, solo puedes tomar 1",
             "Los perdidos: los objetos inútiles como las mejoras de HP, las lágrimas espectrales o el vuelo se eliminan de los grupos de objetos.",
             "Lilith: hace que todos tus familiares ofensivos se apilen frente a Lilith para causar un daño más controlado.",
-            "Keeper - +1 de PS. Aumenta el límite de PS en 1.",
+            "Guardián - +1 de PS. Aumenta el límite de PS en 1.",
             "Apollyon - El Vacío también puede generar un objeto previamente destruido. Cuantos más objetos consumidos, mayor probabilidad de este efecto.",
             "El Olvidado - Tu alma ahora está liberada y es libre de moverse.",
             "Bethany - Activar un objeto usando cargas de alma a veces es gratis",
@@ -11948,7 +12567,7 @@
         "description": [
             "+5 Llaves",
             "Al usarlo, te permite consumir 1 llave y dispararla a un enemigo, atravesándolo y causando un daño significativo.",
-            "El daño causado por el proyectil clave atraviesa a los enemigos y aumenta con tus mejoras de daño (x5 de daño + 30).",
+            "El daño causado por el proyectil clave atraviesa a los enemigos y aumenta con tus mejoras de daño (x5 de daño + 30)",
             "Las llaves disparadas por este objeto pueden abrir puertas o cofres cerrados, habitaciones secretas y destruir objetos en la habitación, como rocas.",
             "No se puede utilizar si no tienes ninguna clave",
             "Los enemigos eliminados por Llave Afilada tienen un 10% de probabilidad de generar objetos aleatorios que aparecen en cofres. Estos pueden ser cualquier objeto que normalmente caería de un cofre, incluyendo objetos de pedestal."
