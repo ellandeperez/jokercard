@@ -521,7 +521,8 @@
             "Cuando ingresas a la sala de un jefe, eliminas inmediatamente el 15% de salud del jefe y restauras 1 corazón rojo.",
             "Esta baratija no se puede soltar manteniendo pulsada la tecla de soltar ni recogiendo otras baratijas. La única forma de quitarla es tener una segunda ranura para baratijas (Bolso de Mamá, Ombligo), absorberla (Canicas, Fundidor, Píldora ¡Tragar!) o recoger la baratija de Cerilla, que la quemará."
         ],
-        "tags": "*, insect, bug, spider, beetle, grey, gray, brown"
+        "tags": "*, insect, bug, spider, beetle, grey, gray, brown",
+        "cat": "down"
     },
     {
         "trinketId": "54",

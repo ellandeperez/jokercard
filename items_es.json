@@ -66,7 +66,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "DMG up"
+        "pickup": "DMG up",
+        "cat": "up"
     },
     {
         "id": "5",
@@ -227,7 +228,8 @@
             "Item Room",
             "Mushrooms"
         ],
-        "pickup": "All stats up!"
+        "pickup": "All stats up!",
+        "cat": "up"
     },
     {
         "id": "13",
@@ -1013,7 +1015,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "???"
+        "pickup": "???",
+        "cat": "up"
     },
     {
         "id": "53",
@@ -2118,7 +2121,8 @@
             "Item Room",
             "Angel Room"
         ],
-        "pickup": "Damage resistance"
+        "pickup": "Damage resistance",
+        "cat": "up"
     },
     {
         "id": "109",
@@ -2321,7 +2325,8 @@
         "item_pool": [
             "Devil Room"
         ],
-        "pickup": "Blood laser barrage"
+        "pickup": "Blood laser barrage",
+        "cat": "up"
     },
     {
         "id": "119",
@@ -2964,7 +2969,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Explosive shots"
+        "pickup": "Explosive shots",
+        "cat": "up"
     },
     {
         "id": "150",
@@ -3356,7 +3362,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Mega tears"
+        "pickup": "Mega tears",
+        "cat": "up"
     },
     {
         "id": "170",
@@ -3617,7 +3624,8 @@
         "item_pool": [
             "Angel Room"
         ],
-        "pickup": "Homing shots + DMG up"
+        "pickup": "Homing shots + DMG up",
+        "cat": "up"
     },
     {
         "id": "183",
@@ -4621,7 +4629,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Orbiting tears + range up"
+        "pickup": "Orbiting tears + range up",
+        "cat": "down"
     },
     {
         "id": "234",
@@ -4821,7 +4830,7 @@
     },
     {
         "id": "245",
-        "name": "20\/20",
+        "name": "20/20",
         "description": [
             "Isaac ahora dispara dos lágrimas a la vez",
             "Multiplicador de daño de 0,75x",
@@ -4836,7 +4845,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Double shot"
+        "pickup": "Double shot",
+        "cat": "up"
     },
     {
         "id": "246",
@@ -5459,7 +5469,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Protect it"
+        "pickup": "Protect it",
+        "cat": "down"
     },
     {
         "id": "277",
@@ -6238,7 +6249,8 @@
             "Item Room",
             "Angel Room"
         ],
-        "pickup": "Holy shield"
+        "pickup": "Holy shield",
+        "cat": "up"
     },
     {
         "id": "314",
@@ -6582,7 +6594,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "DMG down + tears way up"
+        "pickup": "DMG down + tears way up",
+        "cat": "down"
     },
     {
         "id": "331",
@@ -6605,7 +6618,8 @@
         "item_pool": [
             "Angel Room"
         ],
-        "pickup": "God tears"
+        "pickup": "God tears",
+        "cat": "up"
     },
     {
         "id": "332",
@@ -7148,7 +7162,8 @@
             "Item Room",
             "Greed Mode Item Room"
         ],
-        "pickup": "Double wiz shot!"
+        "pickup": "Double wiz shot!",
+        "cat": "down"
     },
     {
         "id": "359",
@@ -7191,7 +7206,8 @@
             "Devil Room",
             "Greed Mode Devil Room"
         ],
-        "pickup": "Dark friend"
+        "pickup": "Dark friend",
+        "cat": "up"
     },
     {
         "id": "361",
@@ -7420,7 +7436,8 @@
             "Curse Room",
             "Greed Mode Item Room"
         ],
-        "pickup": "You feel cursed..."
+        "pickup": "You feel cursed...",
+        "cat": "down"
     },
     {
         "id": "372",
@@ -7912,7 +7929,8 @@
             "Item Room",
             "Greed Mode Item Room"
         ],
-        "pickup": "Laser ring tears"
+        "pickup": "Laser ring tears",
+        "cat": "up"
     },
     {
         "id": "396",
@@ -8331,7 +8349,8 @@
             "Angel Room",
             "Greed Mode Angel Room"
         ],
-        "pickup": "The untainted gain power"
+        "pickup": "The untainted gain power",
+        "cat": "up"
     },
     {
         "id": "416",
@@ -8861,7 +8880,8 @@
         "recharge_time": [
             "12 rooms"
         ],
-        "pickup": "Laser breath"
+        "pickup": "Laser breath",
+        "cat": "up"
     },
     {
         "id": "442",
@@ -11324,7 +11344,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "DMG down + tears up + you feel nutty"
+        "pickup": "DMG down + tears up + you feel nutty",
+        "cat": "down"
     },
     {
         "id": "562",
@@ -12623,7 +12644,8 @@
         "recharge_time": [
             "12 rooms"
         ],
-        "pickup": "I'm a big boy now!"
+        "pickup": "I'm a big boy now!",
+        "cat": "up"
     },
     {
         "id": "626",
@@ -12685,7 +12707,8 @@
         "recharge_time": [
             "1 time use"
         ],
-        "pickup": "Where am I?"
+        "pickup": "Where am I?",
+        "cat": "up"
     },
     {
         "id": "629",
@@ -12838,7 +12861,8 @@
         "recharge_time": [
             "Single use"
         ],
-        "pickup": "Time to start over"
+        "pickup": "Time to start over",
+        "cat": "up"
     },
     {
         "id": "637",
@@ -13845,7 +13869,8 @@
         "item_pool": [
             "Secret Room"
         ],
-        "pickup": "?????"
+        "pickup": "?????",
+        "cat": "up"
     },
     {
         "id": "690",
