@@ -167,6 +167,10 @@
         <!-- Search bar -->
         <div class="search-bar-content">
             <input class="search-bar" id="search-bar" type="text" placeholder="Buscar por nombre, habitación, etc...">
+            <img id="lang-toggle"
+                src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/languages.png"
+                alt="Cambiar idioma"
+                style="margin-left:10px; width:40px; height:40px; border-radius:8px; border:2px solid #99866e; background:#f6d6b0; cursor:pointer;">
         </div>
         <!-- Filtro -->
         <div class="filter-bar" id="filter-bar">
@@ -245,6 +249,8 @@
         let allTrinkets = [];
         let allCards = [];
 
+        let language = 'es'; // Por defecto español
+
         // Helper para crear imágenes y eventos
         function createImg(src, alt, clickHandler) {
             const img = document.createElement('img');
@@ -256,39 +262,49 @@
             return img;
         }
 
-        // Cargar datos pero no mostrar nada aún
-        fetch(`${baseUrl}items_es.json`)
-            .then(res => {
-                if (!res.ok) throw new Error('No se pudo cargar items.json');
-                return res.json();
-            })
-            .then(items => { allItems = items; })
-            .catch(err => {
-                document.getElementById('error-msg').textContent =
-                    "Error cargando items.json. Si estás abriendo el archivo localmente, usa un servidor local (por ejemplo: 'npx serve', 'python -m http.server', etc).";
-            });
+        function loadAllData() {
+            // Limpia los arrays antes de cargar
+            allItems = [];
+            allTrinkets = [];
+            allCards = [];
+            clearAllGrids();
 
-        fetch(`${baseUrl}trinkets_es.json`)
-            .then(res => {
-                if (!res.ok) throw new Error('No se pudo cargar trinkets.json');
-                return res.json();
-            })
-            .then(trinkets => { allTrinkets = trinkets; })
-            .catch(err => {
-                document.getElementById('error-msg').textContent +=
-                    "\nError cargando trinkets.json.";
-            });
+            fetch(`${baseUrl}items_${language}.json`)
+                .then(res => {
+                    if (!res.ok) throw new Error('No se pudo cargar items.json');
+                    return res.json();
+                })
+                .then(items => { allItems = items; renderByFilters(); })
+                .catch(err => {
+                    document.getElementById('error-msg').textContent =
+                        "Error cargando items.json. Si estás abriendo el archivo localmente, usa un servidor local (por ejemplo: 'npx serve', 'python -m http.server', etc).";
+                });
 
-        fetch(`${baseUrl}cards_es.json`)
-            .then(res => {
-                if (!res.ok) throw new Error('No se pudo cargar cards.json');
-                return res.json();
-            })
-            .then(cards => { allCards = cards; })
-            .catch(err => {
-                document.getElementById('error-msg').textContent +=
-                    "\nError cargando cards.json.";
-            });
+            fetch(`${baseUrl}trinkets_${language}.json`)
+                .then(res => {
+                    if (!res.ok) throw new Error('No se pudo cargar trinkets.json');
+                    return res.json();
+                })
+                .then(trinkets => { allTrinkets = trinkets; renderByFilters(); })
+                .catch(err => {
+                    document.getElementById('error-msg').textContent +=
+                        "\nError cargando trinkets.json.";
+                });
+
+            fetch(`${baseUrl}cards_${language}.json`)
+                .then(res => {
+                    if (!res.ok) throw new Error('No se pudo cargar cards.json');
+                    return res.json();
+                })
+                .then(cards => { allCards = cards; renderByFilters(); })
+                .catch(err => {
+                    document.getElementById('error-msg').textContent +=
+                        "\nError cargando cards.json.";
+                });
+        }
+
+        // Inicializa con español
+        loadAllData();
 
         // Filtros activos
         let activeFilters = [];
@@ -521,6 +537,12 @@
         cardModal.onclick = function(e) {
             if (e.target === cardModal) cardModal.style.display = 'none';
         };
+
+        // Toggle de idioma
+        document.getElementById('lang-toggle').addEventListener('click', function() {
+            language = (language === 'es') ? 'en' : 'es';
+            loadAllData();
+        });
     </script>
 </body>
 </html>
