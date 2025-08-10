@@ -512,39 +512,17 @@
             if (!e.target.classList.contains('filter-btn')) return;
             const filter = e.target.dataset.filter;
 
-            if (filter === 'all') {
-                // Si ya está activo, desactívalo (toggle real)
-                if (activeFilters.includes('all')) {
-                    activeFilters = [];
-                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-                } else {
-                    activeFilters = ['all'];
-                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-                    e.target.classList.add('active');
-                }
-            } else {
-                // Si "all" está activo, desactívalo
-                if (activeFilters.includes('all')) {
-                    activeFilters = [];
-                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-                }
-                // Toggle real del filtro
-                if (activeFilters.includes(filter)) {
-                    activeFilters = activeFilters.filter(f => f !== filter);
-                    e.target.classList.remove('active');
-                } else {
-                    activeFilters.push(filter);
-                    e.target.classList.add('active');
-                }
-            }
-            // Marcar los botones activos
-            if (!activeFilters.includes('all')) {
-                document.querySelector('.filter-btn[data-filter="all"]').classList.remove('active');
-            }
-            // Si no hay filtros activos, desmarcar todos
-            if (activeFilters.length === 0) {
+            // Si el botón ya está activo, desactivarlo
+            if (activeFilters.includes(filter)) {
+                activeFilters = [];
                 document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            } else {
+                // Desactivar todos los botones y activar solo el nuevo
+                activeFilters = [filter];
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
             }
+
             renderByFilters();
         });
 
@@ -554,7 +532,7 @@
         const itemModalContent = document.getElementById('modal-content-item');
         function showItemModal(item) {
             let catImg = '';
-            if (item.cat === 'up' || item.cat === 'down') {
+            if (item.cat === 'up' || item.cat === 'up2' || item.cat === 'down') {
                 catImg = `<img src="${baseUrl}cat_${item.cat}.png" alt="cat_${item.cat}" class="cat-corner">`;
             }
             itemModalContent.innerHTML = `
