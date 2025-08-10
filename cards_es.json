@@ -1197,5 +1197,45 @@
             "6 puntos: repite todos tus objetos y todos los objetos que recoges en todo el piso (combinando 1 + 3 + 4 habitaciones)"
         ],
         "tags": "* pip"
+    },
+    {
+        "cardId": "111",
+        "name": "Donation Machine",
+        "pickup": "",
+        "description": [
+            "Recompensas en la siguiente cantidad de monedas donadas:",
+            "10",
+            "20",
+            "50",
+            "100",
+            "150",
+            "200",
+            "400",
+            "600",
+            "900",
+            "999"     
+        ],
+        "tags": "* Shop"
+    },
+    {
+        "cardId": "112",
+        "name": "Greed Machine",
+        "pickup": "",
+        "description": [
+            "Recompensas en la siguiente cantidad de monedas donadas:",
+            "2",
+            "14",
+            "33",
+            "68",
+            "111",
+            "234",
+            "439",
+            "500",
+            "666",
+            "897",
+            "999",
+            "1000"
+        ],
+        "tags": "* Shop"
     }
 ]
