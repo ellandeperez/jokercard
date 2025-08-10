@@ -2258,24 +2258,6 @@
     "cat": "up"
   },
   {
-    "id": "115",
-    "name": "Ouija Board",
-    "description": [
-      "Gives Isaac spectral tears which allows them to travel through objects in the environment (i.e. rocks)",
-      "+0.4 Tears Up"
-    ],
-    "quality": "2",
-    "tags": "* item room, treasure room, item room pool, luigi board, weeja board, paper, grown",
-    "type_list": [
-      "Pasivo"
-    ],
-    "item_pool": [
-      "Item Room",
-      "Devil Room"
-    ],
-    "pickup": "Spectral tears"
-  },
-  {
     "id": "116",
     "name": "9 Volt",
     "description": [
@@ -3798,7 +3780,7 @@
     "name": "3 Dollar Bill",
     "description": [
       "Grants Isaac random tear effects",
-      "Can pick from a list of 39 item effects, including 8 Inch Nails, 20/20, Apple!, Ball of Tar, Continuum, Cricket's Body, Dark Matter, Dead Eye, Death's Touch, Euthanasia, Explosivo, Eye of Belial, Fire Mind, Holy Light, Iron Bar, Little Horn, Lost Contact, Mom's Contacts, Mom's Eyeshadow, Mom's Perfume, Mutant Spider, My Reflection, Mysterious Liquid, Number One, Ouija Board, Parasitoid, Proptosis, Pupula Duplex, Rubber Cement, Sagittarius, Scorpio, Sinus Infection, Speed Ball, Spoon Bender, The Inner Eye, The Parasite, The Sad Onion, The Wiz and Tough Love",
+      "Can pick from a list of 39 item effects, including 8 Inch Nails, 20/20, Apple!, Ball of Tar, Continuum, Cricket's Body, Dark Matter, Dead Eye, Death's Touch, Euthanasia, Explosivo, Eye of Belial, Fire Mind, Holy Light, Iron Bar, Little Horn, Lost Contact, Mom's Contacts, Mom's Eyeshadow, Mom's Perfume, Mutant Spider, My Reflection, Mysterious Liquid, Number One, Parasitoid, Proptosis, Pupula Duplex, Rubber Cement, Sagittarius, Scorpio, Sinus Infection, Speed Ball, Spoon Bender, The Inner Eye, The Parasite, The Sad Onion, The Wiz and Tough Love",
       "The tear type changes every 2-3 seconds"
     ],
     "quality": "3",
@@ -8414,7 +8396,7 @@
     "name": "Fruit Cake",
     "description": [
       "Gives you a different tear effect with every tear that you fire",
-      "Tear effects include: Anti-Gravity, Ball of Bandages (Lvl 4), Bumbo (Lvl 3), Continuum, Cupid's Arrow, Compound Fracture, Euthanasia, Explosivo, Eye of Greed, Fire Mind, Flat Stone, Flat Worm, God's Flesh, Godhead, Head of the Keeper, Holy Light, Hook Worm, Ipecac, Iron Bar, Jacob's Ladder, Knockout Drops, Lachryphagy, Little Horn, Lodestone, Mom's Contacts, Mom's Eyeshadow, Mom's Perfume, Mucormycosis, My Reflection, Mysterious Liquid, Ocular Rift, Ouija Board, Ouroboros Worm, The Parasite, Parasitoid, Polyphemus, Pop!, Proptosis, Pulse Worm, Ring Worm, Rotten Tomato, Rubber Cement, Serpent's Kiss, Sinus Infection, Spider Bite, Strange Attractor, Sulfuric Acid, Technology Zero, Tiny Planet, Trisagion and Wiggle Worm",
+      "Tear effects include: Anti-Gravity, Ball of Bandages (Lvl 4), Bumbo (Lvl 3), Continuum, Cupid's Arrow, Compound Fracture, Euthanasia, Explosivo, Eye of Greed, Fire Mind, Flat Stone, Flat Worm, God's Flesh, Godhead, Head of the Keeper, Holy Light, Hook Worm, Ipecac, Iron Bar, Jacob's Ladder, Knockout Drops, Lachryphagy, Little Horn, Lodestone, Mom's Contacts, Mom's Eyeshadow, Mom's Perfume, Mucormycosis, My Reflection, Mysterious Liquid, Ocular Rift, Ouroboros Worm, The Parasite, Parasitoid, Polyphemus, Pop!, Proptosis, Pulse Worm, Ring Worm, Rotten Tomato, Rubber Cement, Serpent's Kiss, Sinus Infection, Spider Bite, Strange Attractor, Sulfuric Acid, Technology Zero, Tiny Planet, Trisagion and Wiggle Worm",
       "With Dr. Fetus, this item will also cycle through random Bomb Modifiers (e.g. Butt Bombs, Hot Bombs)"
     ],
     "quality": "3",

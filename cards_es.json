@@ -256,7 +256,7 @@
             "Cuando se usa, convierte todos los objetos, cofres y enemigos que no sean jefes en la sala en bombas."
         ],
         "tags": "*, playing, card, white, black",
-        "unlock": "Unlock this item by getting a 3 win streak"
+        "unlock": "Desbloquea este objeto consiguiendo una racha de 3 victorias."
     },
     {
         "cardId": "28",
@@ -266,7 +266,7 @@
             "Cuando se usa, convierte todos los objetos, cofres y enemigos que no sean jefes en la sala en monedas."
         ],
         "tags": "*, playing, card, white, red",
-        "unlock": "Unlock this item by defeating The Lamb in under 20 minutes"
+        "unlock": "Desbloquea este objeto derrotando a El Cordero en menos de 20 minutos."
     },
     {
         "cardId": "29",
@@ -276,7 +276,7 @@
             "Cuando se usa, convierte todos los objetos, cofres y enemigos que no sean jefes en la sala en llaves."
         ],
         "tags": "*, playing, card, white, black",
-        "unlock": "Unlock this item by defeating The Lamb without taking hearts, coins and bombs"
+        "unlock": "Desbloquea este objeto derrotando a El Cordero sin tomar corazones, monedas ni bombas."
     },
     {
         "cardId": "30",
@@ -286,7 +286,7 @@
             "Cuando se usa, convierte todos los objetos, cofres y enemigos que no sean jefes en la sala en corazones."
         ],
         "tags": "*, playing, card, white, red",
-        "unlock": "Unlock this item by defeating any floor after Basement I with only half a heart of health (works as The Lost)"
+        "unlock": "Desbloquea este objeto derrotando cualquier piso después del Sótano I con solo la mitad de un corazón de salud (funciona como Los Perdidos)"
     },
     {
         "cardId": "31",
@@ -306,7 +306,7 @@
             "Esto incluye bloques clave"
         ],
         "tags": "*, purple, glow",
-        "unlock": "Unlock this card by beating Challenge #1 (Pitch Black)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 1 (Pitch Black)"
     },
     {
         "cardId": "33",
@@ -320,7 +320,7 @@
             "No se puede utilizar para clonar baratijas u otras runas de Jera."
         ],
         "tags": "*, purple, glow",
-        "unlock": "Unlock this card by beating Challenge #2 (High Brow)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 2 (High Brow)"
     },
     {
         "cardId": "34",
@@ -331,7 +331,7 @@
             "Cavar en ciertos lugares con objetos o marcas en el piso garantizará un espacio de acceso una vez por piso."
         ],
         "tags": "*, purple, glow",
-        "unlock": "Unlock this card by beating Challenge #3 (Head Trauma)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 3 (Traumatismo craneal)."
     },
     {
         "cardId": "35",
@@ -343,7 +343,7 @@
             "+1 Corazón del alma"
         ],
         "tags": "*, purple, glow",
-        "unlock": "Unlock this card by beating Challenge #4 (Darkness Falls)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 4 (Darkness Falls)"
     },
     {
         "cardId": "36",
@@ -353,7 +353,7 @@
             "Cuando se usa, revela el mapa completo, incluidas todas las ubicaciones de las salas secretas y otras salas de iconos."
         ],
         "tags": "*, purple, glow",
-        "unlock": "Unlock this card by beating Challenge #5 (The Tank)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 5 (El Tanque)."
     },
     {
         "cardId": "37",
@@ -363,7 +363,7 @@
             "Vuelve a tirar todos los elementos del pedestal en la sala actual (uso único del D6)"
         ],
         "tags": "*, purple, glow",
-        "unlock": "Unlock this card by beating Challenge #6 (Solar System)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 6 (Sistema Solar)"
     },
     {
         "cardId": "38",
@@ -373,7 +373,7 @@
             "Invoca 3 arañas azules amistosas y 3 moscas azules."
         ],
         "tags": "*, purple, glow",
-        "unlock": "Unlock this card by beating Challenge #20 (Purist)"
+        "unlock": "Desbloquea esta carta superando el Desafío n.° 20 (Purist)"
     },
     {
         "cardId": "39",
@@ -383,7 +383,7 @@
             "Cuando se usa, te otorga un efecto de invencibilidad que dura 20 segundos."
         ],
         "tags": "*, purple, glow",
-        "unlock": "Unlock this card by beating Challenge #8 (Cat Got Your Tongue)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 8 (El gato te comió la lengua)."
     },
     {
         "cardId": "40",
@@ -395,7 +395,7 @@
             "También tiene un 25% de probabilidad de generar otra Runa en blanco al usarla."
         ],
         "tags": "*",
-        "unlock": "Unlock this card by beating Challenge #30 (Guardian)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 30 (Guardián)"
     },
     {
         "cardId": "41",
@@ -406,7 +406,7 @@
             "También consume todos los objetos de la sala y los convierte en moscas azules y arañas."
         ],
         "tags": "*, rock, black",
-        "unlock": "Unlock this item by beating Greedier mode as Apollyon"
+        "unlock": "Desbloquea este objeto superando el modo Greedier con Apollyon."
     },
     {
         "cardId": "42",
@@ -422,7 +422,7 @@
             "¡Si le lanzas esto al jefe Gran Gideon, se activará una animación especial y se revelará un espacio de arrastre que contiene varios cofres y objetos!"
         ],
         "tags": "*, mtg, card, magic, gathering, brown",
-        "unlock": "Unlock this card by beating Challenge #9 (Demo Man)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 9 (Demo Man)"
     },
     {
         "cardId": "43",
@@ -433,7 +433,7 @@
             "El efecto de la Tarjeta de Crédito solo dura la sala actual."
         ],
         "tags": "*, blue, green",
-        "unlock": "Unlock this card by beating Challenge #10 (Cursed!)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 10 (¡Maldito!)."
     },
     {
         "cardId": "44",
@@ -451,17 +451,17 @@
             "'¡A Chub no le gusta el humo!'"
         ],
         "tags": "*, white, black, writing",
-        "unlock": "Unlock this card by beating Challenge #11 (Glass Cannon)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 11 (Cañón de cristal)."
     },
     {
         "cardId": "45",
         "name": "Card Against Humanity",
         "pickup": "Something stinks...",
         "description": [
-            "¡Cuando se usa, llena toda la habitación con mierda!"
+            "¡Cuando se usa, llena toda la habitación con caca!"
         ],
         "tags": "*, black, white, writing",
-        "unlock": "Unlock this card by beating Challenge #12 (When Life Gives You Lemons)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 12 (Cuando la vida te da limones)"
     },
     {
         "cardId": "46",
@@ -473,7 +473,7 @@
             "Cualquier objeto de pedestal creado por Suicide King estará relacionado con la habitación donde se usó, lo que significa que usarlo en la habitación del Ángel generará objetos de la habitación del Ángel."
         ],
         "tags": "*, white, blue, red",
-        "unlock": "Unlock this card by beating Challenge #7 (Suicide King)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 7 (Rey Suicida)"
     },
     {
         "cardId": "47",
@@ -483,7 +483,7 @@
             "Cuando se usa, abrirá todas las puertas en la habitación actual, similar a un uso único de la Llave de papá."
         ],
         "tags": "*, brown, orange",
-        "unlock": "Unlock this card by beating Challenge #22 (Speed)"
+        "unlock": "Desbloquea esta carta superando el desafío n.° 22 (Velocidad)"
     },
     {
         "cardId": "48",
@@ -522,7 +522,7 @@
             "Tainted Lost comienza con esta carta y, mientras juegas con este personaje, todas las cartas y runas tienen un 10 % de probabilidad de convertirse en una Carta Sagrada."
         ],
         "tags": "*, playing, card, white, cross, blue",
-        "unlock": "Unlock this item by defeating Delirium in The Void floor with The Lost"
+        "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con The Lost."
     },
     {
         "cardId": "52",
@@ -533,7 +533,7 @@
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod de Steam Workshop creado por Coper140"
         ],
         "tags": "*, mtg, card, magic, gathering, green, brown, giant growth",
-        "unlock": "Unlock this item by getting 5 items or consumables that increase your size, e.g. 'One Makes you Larger' pills, Magic Mushroom etc"
+        "unlock": "Desbloquea este objeto obteniendo 5 artículos o consumibles que aumenten tu tamaño, por ejemplo, píldoras 'One Makes You Larger', hongos mágicos, etc."
     },
     {
         "cardId": "53",
@@ -554,7 +554,7 @@
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod de Steam Workshop creado por Coper140"
         ],
         "tags": "*, mtg, card, magic, gathering, blue",
-        "unlock": "Unlock this item by getting both the Broken Watch and the Stop Watch in your collection"
+        "unlock": "Desbloquea este objeto consiguiendo el reloj roto y el cronómetro en tu colección."
     },
     {
         "cardId": "55",
@@ -578,7 +578,7 @@
             "Si tienes el objeto Tarot Cloth, esta carta también dejará caer todos tus objetos pasivos al suelo como pedestales."
         ],
         "tags": "*, tarot, card, green",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Lost"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Lost"
     },
     {
         "cardId": "57",
@@ -589,7 +589,7 @@
             "Dura 60 segundos"
         ],
         "tags": "*, tarot, card, yellow",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Judas"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Judas"
     },
     {
         "cardId": "58",
@@ -599,7 +599,7 @@
             "Hace que el pie de mamá siga pisoteando aleatoriamente durante 60 segundos el lugar donde se encuentra Isaac."
         ],
         "tags": "*, tarot, card, red",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Lilith"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Lilith"
     },
     {
         "cardId": "59",
@@ -609,7 +609,7 @@
             "Otorga 2 puntos de vida adicionales y +1,5 de lágrimas durante 60 segundos."
         ],
         "tags": "* speed up, tarot, card, blue, red",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Eve"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Eve"
     },
     {
         "cardId": "60",
@@ -620,7 +620,7 @@
             "El jefe no es necesariamente del piso actual; por ejemplo, podrías encontrar un jefe de cuevas en el sótano."
         ],
         "tags": "*, tarot, card, yellow",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted ???"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted ???"
     },
     {
         "cardId": "61",
@@ -630,7 +630,7 @@
             "Genera 2 corazones de hueso en el suelo."
         ],
         "tags": "*, the lost item pool, tarot, card, blue, red",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Bethany"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier con Tainted Bethany."
     },
     {
         "cardId": "62",
@@ -641,7 +641,7 @@
             "A cambio, convierte un contenedor de corazón o dos corazones de alma en un corazón roto. Los corazones rotos restan permanentemente de tus posibles contenedores de salud."
         ],
         "tags": "* , the lost item pool, tarot, card, red",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Magdalene"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Magdalene"
     },
     {
         "cardId": "63",
@@ -651,7 +651,7 @@
             "Isaac se convierte en piedra y no puede moverse durante 10 segundos, pero su tasa de lágrimas aumenta significativamente durante la duración."
         ],
         "tags": "*, tarot, card, yellow",
-        "unlock": "Unlock this card by defeating challenge #42 (Hot Potato)"
+        "unlock": "Desbloquea esta carta al derrotar el desafío n.° 42 (Patata caliente)"
     },
     {
         "cardId": "64",
@@ -661,7 +661,7 @@
             "Genera de 2 a 4 cofres dorados cerrados"
         ],
         "tags": "*, tarot, card, red",
-        "unlock": "Unlock this card by defeating challenge #43 (Cantripped)"
+        "unlock": "Desbloquea esta carta al derrotar el desafío n.° 43 (Cantripped)"
     },
     {
         "cardId": "65",
@@ -671,7 +671,7 @@
             "Al usarlos, todos los objetos y objetos de la sala actual se convierten en dinero. Todo se vende a su precio de tienda: por ejemplo, objetos por 15 céntimos, corazones por 3 céntimos y sacos por 7 céntimos."
         ],
         "tags": "*, tarot, card, blue",
-        "unlock": "Unlock this card by defeating challenge #44 (Red Redemption)"
+        "unlock": "Desbloquea esta carta al derrotar el desafío n.° 44 (Redención Roja)"
     },
     {
         "cardId": "66",
@@ -682,7 +682,7 @@
             "Vea el icono de dados arriba para cada efecto posible."
         ],
         "tags": "*, tarot, card, pink",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Cain"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier con Tainted Cain."
     },
     {
         "cardId": "67",
@@ -692,7 +692,7 @@
             "Todos los enemigos en la sala actual se ralentizan y reciben el doble de daño."
         ],
         "tags": "*, tarot, card, pink",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Samson"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Samson"
     },
     {
         "cardId": "68",
@@ -703,7 +703,7 @@
             "Los enemigos dejan caer monedas aleatorias mientras este efecto está activo."
         ],
         "tags": "* , the lost item pool, tarot, card, grey, gray",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Keeper"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Keeper."
     },
     {
         "cardId": "69",
@@ -713,7 +713,7 @@
             "Activa el efecto Libro de los Muertos, generando un hueso orbital o un Bony encantado por cada enemigo asesinado en la sala actual."
         ],
         "tags": "*, tarot, card, grey, gray",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Forgotten"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Forgotten"
     },
     {
         "cardId": "70",
@@ -723,7 +723,7 @@
             "Cuando se usa, esta carta activa 5 efectos de píldora aleatorios uno tras otro."
         ],
         "tags": "* , the lost item pool, tarot, card, red, blue",
-        "unlock": "Unlock this card by defeating challenge #45 (DELETE THIS)"
+        "unlock": "Desbloquea esta carta derrotando el desafío n.° 45 (ELIMINAR ESTO)"
     },
     {
         "cardId": "71",
@@ -733,7 +733,7 @@
             "Activa el efecto Biblia (que otorga vuelo) y otorga un Serafín familiar durante 30 segundos."
         ],
         "tags": "* damage up, tarot, card, red",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Azazel"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Azazel"
     },
     {
         "cardId": "72",
@@ -745,7 +745,7 @@
             "Las rocas tienen una gran probabilidad de convertirse en rocas teñidas."
         ],
         "tags": "*, tarot, card, purple",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Apollyon"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Apollyon"
     },
     {
         "cardId": "73",
@@ -757,7 +757,7 @@
             "No elimina los elementos iniciales de tu personaje."
         ],
         "tags": "*, tarot, card, blue",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Isaac"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier con Tainted Isaac."
     },
     {
         "cardId": "74",
@@ -768,7 +768,7 @@
             "La sala ultrasecreta es una sala roja que contiene un objeto de la sala del ángel. Solo se puede acceder con la Llave Roja, la Llave de Cristal o la Llave Rota. Usar esta carta también abrirá un camino de salas rojas que conducen a la planta normal."
         ],
         "tags": "*, tarot, card, blue",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Jacob"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier con Tainted Jacob."
     },
     {
         "cardId": "75",
@@ -779,7 +779,7 @@
             "También otorga el efecto Maldición de la Oscuridad que no se puede eliminar en el piso actual."
         ],
         "tags": "*, tarot, card, yellow",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Jacob"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier con Tainted Jacob."
     },
     {
         "cardId": "76",
@@ -789,7 +789,7 @@
             "Genera una máquina de reabastecimiento"
         ],
         "tags": "*, tarot, card, blue",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Lazarus"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Lazarus"
     },
     {
         "cardId": "77",
@@ -799,7 +799,7 @@
             "Crea una trampilla que da acceso a un espacio de acceso garantizado."
         ],
         "tags": "*, tarot, card, pink",
-        "unlock": "Unlock this card by defeating Ultra Greedier mode as Tainted Eden"
+        "unlock": "Desbloquea esta carta al derrotar al modo Ultra Greedier como Tainted Eden."
     },
     {
         "cardId": "78",
@@ -810,7 +810,7 @@
             "El objetivo principal de la Llave Rota es desbloquear al personaje Corrupto en la planta principal sin necesidad de encontrar la Llave Roja. Puedes forzar la aparición de una llave rota dejando caer cualquier abalorio en una Sala de Jefes o de Objetos, en cualquier planta durante tu descenso a las Profundidades II. Al volver a la planta principal, el abalorio se convertirá en la Llave Rota en la misma planta o habitación donde lo dejaste caer."
         ],
         "tags": "*, Red Key Shard",
-        "unlock": "Unlock this card by opening Mom's Box on the Home floor."
+        "unlock": "Desbloquea esta tarjeta abriendo la Caja de Mamá en el piso de Inicio."
     },
     {
         "cardId": "79",
@@ -820,7 +820,7 @@
             "Deja caer de 1 a 20 corazones rojos llenos al suelo."
         ],
         "tags": "*,",
-        "unlock": "Unlock this card by defeating Mega Satan as Tainted Magdalene"
+        "unlock": "Desbloquea esta carta al derrotar a Mega Satan como Tainted Magdalene"
     },
     {
         "cardId": "80",
@@ -830,7 +830,7 @@
             "Al usarlo, copia el efecto de la carta, píldora, runa, piedra del alma o elemento activo que usaste más recientemente."
         ],
         "tags": "*, Uno Card",
-        "unlock": "Unlock this card by defeating Mega Satan as Tainted Eden"
+        "unlock": "Desbloquea esta carta al derrotar a Mega Satan como Tainted Eden"
     },
     {
         "cardId": "81",
@@ -844,7 +844,7 @@
             "Los artículos se eligen del grupo de artículos relacionados con el artículo actual."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Isaac"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Isaac."
     },
     {
         "cardId": "82",
@@ -854,7 +854,7 @@
             "Cuando se usa, todos los enemigos en la sala actual dejan caer medio corazón rojo que desaparecerá después de 2 segundos si no se recoge."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Magdalene"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Magdalene."
     },
     {
         "cardId": "83",
@@ -866,7 +866,7 @@
             "Consulte la descripción del elemento Llave Roja para obtener más información sobre cómo se comportan estas salas rojas."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Cain"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Cain."
     },
     {
         "cardId": "84",
@@ -876,7 +876,7 @@
             "Activa el efecto del objeto Artes Oscuras, que convierte a Isaac en un fantasma durante unos segundos. En esta forma, puedes caminar sobre los enemigos para marcarlos y matarlos. Tras unos segundos, atacará rápidamente a cada objetivo, infligiendo mayor daño por cada enemigo que golpee."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Judas"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Judas."
     },
     {
         "cardId": "85",
@@ -887,7 +887,7 @@
             "Pararse en el creep te otorga +1 aumento de daño y +1,35 aumento de lágrimas."
         ],
         "tags": "* Soul of Blue Baby",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Blue Baby"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Blue Baby."
     },
     {
         "cardId": "86",
@@ -897,7 +897,7 @@
             "En la sala actual, 14 pájaros muertos vuelan desde fuera de la pantalla y atacan a todos los enemigos, causando daño bajo pero frecuente."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Eve"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Eve."
     },
     {
         "cardId": "87",
@@ -907,7 +907,7 @@
             "Isaac obtiene el efecto ¡Furia! durante 10 segundos. Esto le otorga una espada de hueso y se lanza a una masacre, obteniendo +0,4 de velocidad y +3 de daño fijo."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Samson"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Samson."
     },
     {
         "cardId": "88",
@@ -918,7 +918,7 @@
             "El efecto dura 8 segundos pero persiste entre habitaciones."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Azazel"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Azazel."
     },
     {
         "cardId": "89",
@@ -929,7 +929,7 @@
             "El principal beneficio de esta Piedra del Alma es que se activa automáticamente si mueres, lo que significa que es efectivamente una vida pasiva adicional mientras la tienes."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Lazarus"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Lazarus."
     },
     {
         "cardId": "90",
@@ -939,7 +939,7 @@
             "Activa los efectos del D6 y el D20, reeditando todos los objetos y objetos de la sala. A diferencia del D6 normal, los objetos reeditados se pueden elegir de cualquier grupo de objetos."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Eden"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Eden."
     },
     {
         "cardId": "91",
@@ -950,7 +950,7 @@
             "El mismo efecto que tocar un fuego blanco, pero solo dura una habitación."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Lost"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Lost"
     },
     {
         "cardId": "92",
@@ -960,7 +960,7 @@
             "Te da 1 familiar permanente aleatorio"
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Lilith"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Lilith."
     },
     {
         "cardId": "93",
@@ -970,7 +970,7 @@
             "Genera hasta 25 monedas aleatorias en el suelo."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Keeper"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Keeper."
     },
     {
         "cardId": "94",
@@ -986,7 +986,7 @@
             "Conquista (Blanco): genera de 2 a 5 a la vez"
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Apollyon"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Apollyon."
     },
     {
         "cardId": "95",
@@ -997,7 +997,7 @@
             "Desaparece después de la sala actual o si recibe suficiente daño y muere."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Forgotten"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Forgotten"
     },
     {
         "cardId": "96",
@@ -1008,7 +1008,7 @@
             "La mayoría de los wisps serán los azules estándar, pero tienen la posibilidad de tener propiedades especiales aleatorias."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Bethany"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Bethany."
     },
     {
         "cardId": "97",
@@ -1019,7 +1019,7 @@
             "Desaparece después de la sala actual o si recibe suficiente daño y muere."
         ],
         "tags": "* Soul Stone",
-        "unlock": "Unlock this item by defeating Hush and Boss Rush as Tainted Jacob"
+        "unlock": "Desbloquea este objeto al derrotar a Hush y Boss Rush como Tainted Jacob."
     },
     {
         "cardId": "98",
@@ -1040,7 +1040,7 @@
             "Telepíldoras: Te teletransportan a una sala aleatoria al usarlas. Tiene una pequeña probabilidad de llevarte a la sala \"SOY ERROR\" y una probabilidad aún menor de teletransportarte a un Mercado Negro.",
             "Adicto: Recibes un corazón completo de daño por todas las fuentes de daño en la sala actual. Desbloqueado en el Desafío n.° 24: PAGA PARA JUGAR.",
             "Amigos hasta el final: genera tres amigables moscas de ataque azules.",
-            "¡Infestado! - Destruye todas las mierdas de la habitación y genera una araña de ataque azul en cada mierda destruida.",
+            "¡Infestado! - Destruye todas las cacas de la habitación y genera una araña de ataque azul en cada caca destruida.",
             "¿Infestado? - Genera una araña de ataque azul por cada enemigo en la sala. Si no hay enemigos, esta píldora genera de 1 a 3 arañas azules.",
             "Uno te hace más pequeño: reduce el tamaño de Isaac y el tamaño del hitbox.",
             "Uno te hace más grande: aumenta el tamaño de Isaac, pero no afecta el tamaño de su hitbox.",
@@ -1073,7 +1073,7 @@
             "La píldora de oro puede generarse como una píldora de caballo, lo que hace que otorgue efectos aleatorios de píldora de caballo."
         ],
         "tags": "*",
-        "unlock": "Unlock this by defeating Mega Satan as Tainted Cain"
+        "unlock": "Desbloquea esto al derrotar a Mega Satan como Tainted Cain"
     },
     {
         "cardId": "100",
@@ -1085,7 +1085,7 @@
             "En general, el efecto de una píldora de caballo duplica el de una píldora normal; por ejemplo, la aceleración será de +0,3 en lugar de +0,15. Las píldoras con efectos que no necesariamente se pueden duplicar son más fuertes; por ejemplo, Pretty Fly otorga un objeto Big Fan en lugar de un objeto orbital de mosca."
         ],
         "tags": "*",
-        "unlock": "Unlock this by defeating Mega Satan as Tainted Eve"
+        "unlock": "Desbloquea esto al derrotar a Mega Satan como Tainted Eve"
     },
     {
         "cardId": "101",
@@ -1096,7 +1096,7 @@
             "Cada vez que recoges un centavo dorado, tiene un 5% de posibilidades de desaparecer por completo."
         ],
         "tags": "*",
-        "unlock": "Unlock this by defeating Mega Satan as Tainted Keeper"
+        "unlock": "Desbloquea esto al derrotar a Mega Satán como Tainted Keeper"
     },
     {
         "cardId": "102",
@@ -1113,11 +1113,11 @@
         "name": "Golden Battery",
         "pickup": "",
         "description": [
-            "Carga completamente tu item activo al recogerlo",
+            "Carga completamente tu artículo activo al recogerlo",
             "Además, recibes un corazón completo de daño al recogerlo. Hacerlo hará que esta Batería Dorada reaparezca en otro lugar del suelo."
         ],
         "tags": "*",
-        "unlock": "Unlock this by defeating Mega Satan as Tainted Forgotten"
+        "unlock": "Desbloquea esto al derrotar a Mega Satan como Tainted Forgotten"
     },
     {
         "cardId": "104",
@@ -1128,7 +1128,7 @@
             "Usar una píldora 'Las bombas son la llave' con este efecto cambiará tu bomba dorada por una llave dorada."
         ],
         "tags": "*, yellow",
-        "unlock": "Unlock this item by beating challenge #23 (Blue Bomber)"
+        "unlock": "Desbloquea este objeto superando el desafío n.º 23 (Bombardero azul)."
     },
     {
         "cardId": "105",
@@ -1149,7 +1149,7 @@
             "Una vez recogido, el corazón de oro dejará caer dinero al suelo la próxima vez que Isaac pierda un corazón."
         ],
         "tags": "*, yellow heart, golden heart",
-        "unlock": "Unlock this item by beating challenge #21 (XXXXXXXXL)"
+        "unlock": "Desbloquea este objeto superando el desafío n.° 21 (XXXXXXXXL)"
     },
     {
         "cardId": "107",
@@ -1159,7 +1159,7 @@
             "Se necesitan tres golpes para agotarlo y se puede rellenar con corazones rojos, pero desaparece para siempre cuando se agota."
         ],
         "tags": "*, bone heart, white heart",
-        "unlock": "Unlock this item by unlocking the Forgotten character. See the Broken Shovel \/ Mom's Shovel items for more information on how to unlock"
+        "unlock": "Desbloquea este objeto desbloqueando al personaje Olvidado. Consulta los objetos Pala Rota y Pala de Mamá para obtener más información sobre cómo desbloquearlos."
     },
     {
         "cardId": "108",
@@ -1170,7 +1170,7 @@
             "Cada vez que limpies una habitación, aparecerán 2 moscas azules por cada corazón podrido que tengas actualmente."
         ],
         "tags": "*",
-        "unlock": "Unlock this by entering the Corpse floor for the first time"
+        "unlock": "Desbloquea esto entrando al piso de Cadáveres por primera vez."
     },
     {
         "cardId": "109",
@@ -1182,7 +1182,7 @@
             "Solo puede aparecer un corazón por saco como máximo."
         ],
         "tags": "*",
-        "unlock": "Unlock this by defeating Mega Satan as Tainted Judas"
+        "unlock": "Desbloquea esto al derrotar a Mega Satán como Tainted Judas"
     },
     {
         "cardId": "110",

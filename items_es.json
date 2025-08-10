@@ -2258,24 +2258,6 @@
         "cat": "up"
     },
     {
-        "id": "115",
-        "name": "Ouija Board",
-        "description": [
-            "Le otorga a Isaac lágrimas espectrales que le permiten viajar a través de objetos del entorno (es decir, rocas).",
-            "+0.4 Lágrimas"
-        ],
-        "quality": "2",
-        "tags": "* item room, treasure room, item room pool, luigi board, weeja board, paper, grown",
-        "type_list": [
-            "Pasivo"
-        ],
-        "item_pool": [
-            "Item Room",
-            "Devil Room"
-        ],
-        "pickup": "Spectral tears"
-    },
-    {
         "id": "116",
         "name": "9 Volt",
         "description": [
@@ -3798,7 +3780,7 @@
         "name": "3 Dollar Bill",
         "description": [
             "Otorga a Isaac efectos de lágrimas aleatorios.",
-            "Puede elegir entre una lista de 39 efectos de objetos, entre ellos Clavos de 8 pulgadas, 20\/20, ¡Manzana!, Bola de alquitrán, Continuum, Cuerpo de Cricket, Materia oscura, Ojo muerto, Toque de la muerte, Eutanasia, Explosivo, Ojo de Belial, Mente de fuego, Luz sagrada, Barra de hierro, Cuerno pequeño, Contacto perdido, Lentes de contacto de mamá, Sombra de ojos de mamá, Perfume de mamá, Araña mutante, Mi reflejo, Líquido misterioso, Número uno, Tabla Ouija, Parasitoide, Proptosis, Pupula Duplex, Cemento de goma, Sagitario, Escorpio, Infección sinusal, Bola de velocidad, Doblador de cucharas, El ojo interior, El parásito, La cebolla triste, El mago y Amor duro",
+            "Puede elegir entre una lista de 39 efectos de objetos, entre ellos Clavos de 8 pulgadas, 20\/20, ¡Manzana!, Bola de alquitrán, Continuum, Cuerpo de Cricket, Materia oscura, Ojo muerto, Toque de la muerte, Eutanasia, Explosivo, Ojo de Belial, Mente de fuego, Luz sagrada, Barra de hierro, Cuerno pequeño, Contacto perdido, Lentes de contacto de mamá, Sombra de ojos de mamá, Perfume de mamá, Araña mutante, Mi reflejo, Líquido misterioso, Número uno, Parasitoide, Proptosis, Pupula Duplex, Cemento de goma, Sagitario, Escorpio, Infección sinusal, Bola de velocidad, Doblador de cucharas, El ojo interior, El parásito, La cebolla triste, El mago y Amor duro",
             "El tipo de lágrima cambia cada 2-3 segundos."
         ],
         "quality": "3",
@@ -8412,7 +8394,7 @@
         "name": "Fruit Cake",
         "description": [
             "Te da un efecto de lágrima diferente con cada lágrima que disparas.",
-            "Los efectos de lágrima incluyen: Antigravedad, Bola de vendas (Nivel 4), Bumbo (Nivel 3), Continuum, Flecha de Cupido, Fractura compuesta, Eutanasia, Explosivo, Ojo de la avaricia, Mente de fuego, Piedra plana, Gusano plano, Carne de Dios, Deidad, Cabeza del guardián, Luz sagrada, Anquilostoma, Ipecacuana, Barra de hierro, Escalera de Jacob, Gotas de nocaut, Lacrifagia, Cuerno pequeño, Piedra imán, Lentes de contacto de mamá, Sombra de ojos de mamá, Perfume de mamá, Mucormicosis, Mi reflejo, Líquido misterioso, Grieta ocular, Tabla de ouija, Gusano Ouroboros, El parásito, Parasitoide, Polifemo, ¡Pop!, Proptosis, Gusano de pulso, Tiña, Tomate podrido, Cemento de goma, Beso de serpiente, Infección sinusal, Mordedura de araña, Atractor extraño, Ácido sulfúrico, Tecnología cero, Planeta diminuto, Trisagio y gusano ondulante",
+            "Los efectos de lágrima incluyen: Antigravedad, Bola de vendas (Nivel 4), Bumbo (Nivel 3), Continuum, Flecha de Cupido, Fractura compuesta, Eutanasia, Explosivo, Ojo de la avaricia, Mente de fuego, Piedra plana, Gusano plano, Carne de Dios, Deidad, Cabeza del guardián, Luz sagrada, Anquilostoma, Ipecacuana, Barra de hierro, Escalera de Jacob, Gotas de nocaut, Lacrifagia, Cuerno pequeño, Piedra imán, Lentes de contacto de mamá, Sombra de ojos de mamá, Perfume de mamá, Mucormicosis, Mi reflejo, Líquido misterioso, Grieta ocular, Gusano Ouroboros, El parásito, Parasitoide, Polifemo, ¡Pop!, Proptosis, Gusano de pulso, Tiña, Tomate podrido, Cemento de goma, Beso de serpiente, Infección sinusal, Mordedura de araña, Atractor extraño, Ácido sulfúrico, Tecnología cero, Planeta diminuto, Trisagio y gusano ondulante",
             "Con el Dr. Fetus, este objeto también circulará entre modificadores de bombas aleatorios (por ejemplo, bombas de trasero, bombas calientes)"
         ],
         "quality": "3",
