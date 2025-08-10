@@ -1197,5 +1197,25 @@
       "6 Dot - Reroll all of your items and all the pickups on the entire floor (Combined 1 + 3 + 4 rooms)"
     ],
     "tags": "* pip"
-  }
+  },
+    {
+        "cardId": "111",
+        "name": "Donation Machine",
+        "pickup": "",
+        "description": [
+            "Rewards in the following amount of coins donated:",
+            "10 - 20 - 50 - 100 - 150 - 200 - 400 - 600 - 900 - 999"     
+        ],
+        "tags": "* Shop"
+    },
+    {
+        "cardId": "112",
+        "name": "Greed Machine",
+        "pickup": "",
+        "description": [
+            "Rewards in the following amount of coins donated:",
+            "2 - 14 - 33 - 68 - 111 - 234 - 439 - 500 - 666 - 897 - 999 - 1000"
+        ],
+        "tags": "* Shop"
+    }
 ]
