@@ -1204,16 +1204,7 @@
         "pickup": "",
         "description": [
             "Recompensas en la siguiente cantidad de monedas donadas:",
-            "10",
-            "20",
-            "50",
-            "100",
-            "150",
-            "200",
-            "400",
-            "600",
-            "900",
-            "999"     
+            "10 - 20 - 50 - 100 - 150 - 200 - 400 - 600 - 900 - 999"     
         ],
         "tags": "* Shop"
     },
