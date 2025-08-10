@@ -328,6 +328,20 @@
             <!-- Info de la card aquí -->
         </div>
     </div>
+    
+    <div id="info-modal" class="modal">
+        <div class="modal-content" id="modal-content-info">
+            <span class="modal-close" id="modal-close-info">&times;</span>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;"><img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon.png"><h3>Joker Card</h3><img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon.png"></div>
+            <p>Esta es una aplicación web para consultar rápidamente información sobre los objetos de The Binding of Isaac</p>
+            <p>Puedes usar los filtros de la parte superior para mostrar objetos de habitaciones específicas, o usar la barra de búsqueda para encontrar objetos por nombre o descripción.</p>
+            <p>Haz clic en cualquier objeto para ver su información detallada.</p>
+            <p>El botón de idioma en la esquina superior derecha permite cambiar entre español e inglés.</p>
+            <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/kokomiLogo.png">
+            <p>Esta página ha sido desarrollada especificamente para cubrir las necesidades de mi novia</p>
+            <p>Todo aquel que la use deberá saber que esto va por ti 👀</p>
+        </div>
+    </div>
 
     <script>
         clearAllGrids(); // Limpia los grids al inicio
@@ -618,6 +632,18 @@
         }
         cardModal.onclick = function(e) {
             if (e.target === cardModal) cardModal.style.display = 'none';
+        };
+
+        // Info modal
+        const infoModal = document.getElementById('info-modal');
+        document.getElementById('info-btn').addEventListener('click', function() {
+            infoModal.style.display = 'flex';
+        });
+        document.getElementById('modal-close-info').onclick = () => {
+            infoModal.style.display = 'none';
+        };
+        infoModal.onclick = function(e) {
+            if (e.target === infoModal) infoModal.style.display = 'none';
         };
 
         // Toggle de idioma
