@@ -2125,7 +2125,7 @@
             "Angel Room"
         ],
         "pickup": "Damage resistance",
-        "cat": "up"
+        "cat": "up2"
     },
     {
         "id": "109",
@@ -3612,7 +3612,7 @@
             "Angel Room"
         ],
         "pickup": "Homing shots + DMG up",
-        "cat": "up"
+        "cat": "up2"
     },
     {
         "id": "183",
@@ -6243,7 +6243,7 @@
             "Angel Room"
         ],
         "pickup": "Holy shield",
-        "cat": "up"
+        "cat": "up2"
     },
     {
         "id": "314",
@@ -6612,7 +6612,7 @@
             "Angel Room"
         ],
         "pickup": "God tears",
-        "cat": "up"
+        "cat": "up2"
     },
     {
         "id": "332",
@@ -6651,7 +6651,7 @@
             "Angel Room"
         ],
         "pickup": "I know all",
-        "cat": "up"
+        "cat": "up2"
     },
     {
         "id": "334",
@@ -8345,7 +8345,7 @@
             "Greed Mode Angel Room"
         ],
         "pickup": "The untainted gain power",
-        "cat": "up"
+        "cat": "up2"
     },
     {
         "id": "416",
@@ -10776,7 +10776,7 @@
             "Angel Room"
         ],
         "pickup": "Smite thy enemy",
-        "cat": "up"
+        "cat": "up2"
     },
     {
         "id": "534",
