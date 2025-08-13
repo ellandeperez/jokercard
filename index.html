@@ -649,13 +649,19 @@
             if (card.cat === 'up' || card.cat === 'down') {
                 catImg = `<img src="${baseUrl}cat_${card.cat}.png" alt="cat_${card.cat}" class="cat-corner">`;
             }
+            let description;
+            if (card.cardId == 114) {
+                description = Array.isArray(card.description) ? card.description.join('') : card.description || ''; // Para las transformaciones, usa la descripción tal cual
+            } else {
+                description = Array.isArray(card.description) ? card.description.join('<br><br>') : card.description || '';
+            }
             cardModalContent.innerHTML = `
                 <span class="modal-close" id="modal-close-card">&times;</span>
                 <img src="${baseUrl}All_Consumables/card_${card.cardId}.png" alt="${card.name}" style="width:100px;height:100px;display:block;margin:auto;object-fit: contain;">
                 ${catImg}
                 <h3>${card.name}</h3>
                 ${card.pickup ? `<h3>"${card.pickup}"</h3>` : ''}
-                <p>${Array.isArray(card.description) ? card.description.join('<br><br>') : card.description || ''}</p>
+                <p>${description}</p>
                 ${card.unlock ? `<p><strong>Como se desbloquea:</strong> ${card.unlock}</p>` : ''}                
                 <p><strong>ID:</strong> ${card.cardId}</p>
             `;
