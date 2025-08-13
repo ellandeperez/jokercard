@@ -1240,7 +1240,7 @@
     },    
     {
         "cardId": "114",
-        "name": "Transformations",
+        "name": "Transformaciones",
         "pickup": "",
         "description": [
             "<div style='display: flex; align-items: center; justify-content: center; gap: 10px'><img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/guppy.png' style='width:50px; image-rendering: pixelated'><h2 style='margin: 0;font-size: calc(20px + 4vw)'>Guppy</h2><img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/guppy.png' style='width:50px; image-rendering: pixelated'></div>",
