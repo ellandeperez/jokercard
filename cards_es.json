@@ -1237,5 +1237,14 @@
             "12 - 50% Nada / 50% Teleport a la Dark Room"
         ],  
         "tags": "* Sacrifice Room"
+    },    
+    {
+        "cardId": "113",
+        "name": "Transformations",
+        "pickup": "",
+        "description": [
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/background.png'> Guppy"
+        ],  
+        "tags": "* Transformation"
     }
 ]
