@@ -1217,5 +1217,25 @@
             "2 - 14 - 33 - 68 - 111 - 234 - 439 - 500 - 666 - 897 - 999 - 1000"
         ],
         "tags": "* Shop"
+    },    
+    {
+        "cardId": "113",
+        "name": "Sacrifice Room",
+        "pickup": "",
+        "description": [
+            "Rewards in the following amount of red hearts donated:",
+            "1 and 2 - 50% Nothing / 50% 1 coin / 100% a bomb if you killed the boss in less than 1 minute",
+            "3 - 33% Nothing / 67% 'You Feel Blessed'", 
+            "4 - 50% Nothing / 50% A random chest",
+            "5 - 33% 3 coins / 67% 'You Feel Blessed'",
+            "6 - 33% Teleport to angel room / 67% A random chest",
+            "7 - 33% Angel room item / 67% A soul heart / 50% Redemption item if you've been in a devil room",
+            "8 - 100% 7 troll bombs",
+            "9 - 100% Fight against Uriel", 
+            "10 - 50% 7 Soul hearts / 30 coins",
+            "11 - 100% Fight against Gabriel",
+            "12 - 50% Nothing / 50% Teleport to the Dark Room"
+        ],  
+        "tags": "* Sacrifice Room"
     }
 ]
