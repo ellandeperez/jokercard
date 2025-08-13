@@ -1243,8 +1243,8 @@
         "name": "Transformations",
         "pickup": "",
         "description": [
-            "<div style='display: flex; align-items: center; justify-content: left; gap: 10px'><img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/guppy.png' style='width:50px; image-rendering: pixelated'><h3 style='margin: 0'>Guppy</h3></div>",
-            "Vuelo - Al atacatr enemigos, hay un 66% de generar una mosca azul.",
+            "<div style='display: flex; align-items: center; justify-content: left; gap: 10px'><img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/guppy.png' style='width:50px; image-rendering: pixelated'><h2 style='margin: 0'>Guppy</h2></div>",
+            "<p>Vuelo - Al atacatr enemigos, hay un 66% de generar una mosca azul.</p>",
             "<div style='display: flex; align-items: center; justify-content: left; gap: 10px'><img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/beelzebub.png' style='width:50px; image-rendering: pixelated'><h3 style='margin: 0'>Beelzebub</h3></div>",
             "Vuelo - Las moscas se vuelven amigables",
             "<div style='display: flex; align-items: center; justify-content: left; gap: 10px'><img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/funguy.png' style='width:50px; image-rendering: pixelated'><h3 style='margin: 0'>Fun Guy</h3></div>",
