@@ -1243,7 +1243,37 @@
         "name": "Transformations",
         "pickup": "",
         "description": [
-            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/background.png'> Guppy"
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/guppy.png'> Guppy",
+            "Vuelo - Al atacatr enemigos, hay un 66% de generar una mosca azul.",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/beelzebub.png'> Beelzebub",
+            "Vuelo - Las moscas se vuelven amigables",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/funguy.png'> Fun Guy",
+            "+1 HP",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/seraphim.png'> Seraphim",
+            "Vuelo - +3 Corazones azules",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/bob.png'> Bob",
+            "Dejas un rastro verde que hace 6 de daño por segundo",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/spun.png'> Spun",
+            "+2 Daño - +0.15 Speed - Dropea una pastilla",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/yesmother.png'> Yes Mother?",
+            "Un cuchillo te persigue por la espalda",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/conjoined.png'> Conjoined",
+            "Disparas 2 lágrimas extra diagonalmente",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/leviathan.png'> Leviathann",
+            "Vuelo - +2 corazones negros",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/ohcrap.png'> Oh Crap",
+            "Al romper mierdas recupera medio corazón rojo",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/bookworm.png'> Bookworm",
+            "25% de probabilidad de disparar una lagrima extra",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/adult.png'> Adult",
+            "+1 HP",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/spiderbaby.png'> Spider Baby",
+            "Genera Una araña que hace daño con efectos aleatorios",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/stompy.png'> Stompy",
+            "Puedes romper obstaculos al caminar - Probabilidad de generar un terremoto al recibir daño",
+            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/superbum.png'> Super Bum",
+            "Fusiona los familiares de corazones y llaves - Duplica todas las rewards"
+
         ],  
         "tags": "* Transformation"
     }
