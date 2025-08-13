@@ -23,7 +23,7 @@
             overflow-x: hidden;
         }
         body { 
-            font-family: Arial, sans-serif;
+            font-family: 'Jersey 15';font-weight: lighter;
             margin: 0;
         }
         .content {
@@ -48,6 +48,7 @@
         }
         h2 { color: rgb(240, 234, 234); text-align: center; font-family: 'Jersey 15';margin: 0 0; text-shadow: rgb(18, 13, 13) 5px 5px 0px, rgb(0, 0, 0) 0px 0px 10px;font-size: 5em;letter-spacing: 5px;}
         h3{text-align:center;margin:0;font-family: 'Jersey 15';font-weight: lighter;font-size: 2em;}
+        p{font-size: 1.2em;}
         .img-grid {
             display: flex;
             flex-wrap: wrap;
@@ -88,6 +89,7 @@
             background: #f6d6b0;
             padding: 2em;
             border-radius: 8px;
+            min-width: 200px;
             max-width: 400px;
             max-height: 80vh;
             overflow-y: auto;
@@ -605,6 +607,7 @@
                 ${item.recharge_time ? `<p><strong>Recarga:</strong> ${item.recharge_time}</p>` : ''}
                 <p><strong>Tipo:</strong> ${item.type_list ? item.type_list.join(', ') : ''}</p>
                 ${item.unlock ? `<p><strong>Como se desbloquea:</strong> ${item.unlock}</p>` : ''}
+                <p><strong>ID:</strong> ${item.id}</p>
             `;
             itemModal.style.display = 'flex';
             document.getElementById('modal-close-item').onclick = () => { itemModal.style.display = 'none'; };
@@ -629,6 +632,7 @@
                 ${trinket.pickup ? `<h3>"${trinket.pickup}"</h3>` : ''}
                 <p>${Array.isArray(trinket.description) ? trinket.description.join('<br><br>') : trinket.description || ''}</p>
                 ${trinket.unlock ? `<p><strong>Como se desbloquea:</strong> ${trinket.unlock}</p>` : ''}
+                <p><strong>ID:</strong> ${trinket.trinketId}</p>
             `;
             trinketModal.style.display = 'flex';
             document.getElementById('modal-close-trinket').onclick = () => { trinketModal.style.display = 'none'; };
@@ -652,7 +656,8 @@
                 <h3>${card.name}</h3>
                 ${card.pickup ? `<h3>"${card.pickup}"</h3>` : ''}
                 <p>${Array.isArray(card.description) ? card.description.join('<br><br>') : card.description || ''}</p>
-                ${card.unlock ? `<p><strong>Como se desbloquea:</strong> ${card.unlock}</p>` : ''}
+                ${card.unlock ? `<p><strong>Como se desbloquea:</strong> ${card.unlock}</p>` : ''}                
+                <p><strong>ID:</strong> ${card.cardId}</p>
             `;
             cardModal.style.display = 'flex';
             document.getElementById('modal-close-card').onclick = () => { cardModal.style.display = 'none'; };

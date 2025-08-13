@@ -1217,5 +1217,25 @@
             "2 - 14 - 33 - 68 - 111 - 234 - 439 - 500 - 666 - 897 - 999 - 1000"
         ],
         "tags": "* Shop"
+    },
+    {
+        "cardId": "113",
+        "name": "Sacrifice Room",
+        "pickup": "",
+        "description": [
+            "Recompensas en la siguiente cantidad de corazones rojos donados:",
+            "1 y 2 - 50% Nada / 50% 1 moneda / 100% una bomba si has matado al boss en menos de 1 minuto",
+            "3 - 33% Nada / 67% 'You Feel Blessed'",
+            "4 - 50% Nada / 50% Un cofre random",
+            "5 - 33% 3 monedas / 67% 'You Feel Blessed'",
+            "6 - 33% Teleport a sala de angel / 67% Un cofre randomm",
+            "7 - 33% Objeto de sala de angel / 67% Un corazon azul / 50% Objet Redemption si has estado en unasala de diablo",
+            "8 - 100% 7 bombas troll",
+            "9 - 100% Pela contra Uriel",
+            "10 - 50% 7 Corazones azules / 30 monedas",
+            "11 - 100% Pela contra Gabriel",
+            "12 - 50% Nada / 50% Teleport a la Dark Room"
+        ],  
+        "tags": "* Sacrifice Room"
     }
 ]
