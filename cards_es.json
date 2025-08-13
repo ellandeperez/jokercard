@@ -1243,7 +1243,7 @@
         "name": "Transformations",
         "pickup": "",
         "description": [
-            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/guppy.png' style=\"width:50px\"> <h2>Guppy</h2>",
+            "<div style='display: flex; align-items: center; justify-content: center; gap: 10px'><img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/guppy.png' style='width:50px; image-rendering: pixelated'><h2 style='margin: 0'>Guppy</h2></div>",
             "Vuelo - Al atacatr enemigos, hay un 66% de generar una mosca azul.",
             "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/beelzebub.png'> Beelzebub",
             "Vuelo - Las moscas se vuelven amigables",
