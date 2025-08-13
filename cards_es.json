@@ -1239,11 +1239,11 @@
         "tags": "* Sacrifice Room"
     },    
     {
-        "cardId": "113",
+        "cardId": "114",
         "name": "Transformations",
         "pickup": "",
         "description": [
-            "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/guppy.png'> Guppy",
+            "<img style='width:100px;height:100px;' src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/guppy.png'> Guppy",
             "Vuelo - Al atacatr enemigos, hay un 66% de generar una mosca azul.",
             "<img src='https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/beelzebub.png'> Beelzebub",
             "Vuelo - Las moscas se vuelven amigables",
