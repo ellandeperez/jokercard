@@ -675,13 +675,16 @@
             if (item.cat === 'up' || item.cat === 'up2' || item.cat === 'down') {
                 catImg = `<img src="${baseUrl}cat_${item.cat}.png" alt="cat_${item.cat}" class="cat-corner">`;
             }
-
             let rechargeImg = '';
             if (item.recharge_time && Array.isArray(item.recharge_time)) {
                 const validNumbers = ['1', '2', '3', '4', '6', '12'];
                 const firstValue = item.recharge_time[0];
-                if (firstValue && validNumbers.some(num => firstValue.startsWith(num))) {
-                    rechargeImg = `<img src="${baseUrl}bars/${firstValue[0]}.png" alt="recharge_${firstValue[0]}" style="width:40px;height:40px;display:inline-block;margin-left:10px;vertical-align:middle;">`;
+                if (firstValue) {
+                    // Extrae el número al principio del string
+                    const match = firstValue.match(/^(\d+)/);
+                    if (match && validNumbers.includes(match[1])) {
+                        rechargeImg = `<img src="${baseUrl}bars/${match[1]}.png" alt="recharge_${match[1]}" style="margin-left:10px;">`;
+                    }
                 }
             }
             // Encontrar el índice actual y comprobar si hay anterior/siguiente
@@ -693,7 +696,7 @@
                 ${prevItem ? `<div class="modal-nav modal-prev" onclick="showItemModal(allItems[${currentIndex - 1}])">&lt;</div>` : ''}
                 ${nextItem ? `<div class="modal-nav modal-next" onclick="showItemModal(allItems[${currentIndex + 1}])">&gt;</div>` : ''}
                 <div style="position:relative;display:flex;align-items:center;justify-content:center;">
-                    <img src="${baseUrl}All_Items/item_${item.id}.png" alt="${item.name}" style="width:100px;height:100px;display:block;margin:auto;object-fit: contain;">
+                    <img src="${baseUrl}All_Items/item_${item.id}.png" alt="${item.name}" style="width:100px;height:100px;display:block;object-fit: contain;">
                     ${rechargeImg}
                 </div>
                 ${catImg}
