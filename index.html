@@ -675,6 +675,15 @@
             if (item.cat === 'up' || item.cat === 'up2' || item.cat === 'down') {
                 catImg = `<img src="${baseUrl}cat_${item.cat}.png" alt="cat_${item.cat}" class="cat-corner">`;
             }
+
+            let rechargeImg = '';
+            if (item.recharge_time && Array.isArray(item.recharge_time)) {
+                const validNumbers = ['1', '2', '3', '4', '6', '12'];
+                const firstValue = item.recharge_time[0];
+                if (firstValue && validNumbers.some(num => firstValue.startsWith(num))) {
+                    rechargeImg = `<img src="${baseUrl}bars/${firstValue[0]}.png" alt="recharge_${firstValue[0]}" style="width:40px;height:40px;display:inline-block;margin-left:10px;vertical-align:middle;">`;
+                }
+            }
             // Encontrar el índice actual y comprobar si hay anterior/siguiente
             const currentIndex = allItems.findIndex(i => i.id === item.id);
             const prevItem = currentIndex > 0 ? allItems[currentIndex - 1] : null;
@@ -683,15 +692,18 @@
                 <span class="modal-close" id="modal-close-item">&times;</span>
                 ${prevItem ? `<div class="modal-nav modal-prev" onclick="showItemModal(allItems[${currentIndex - 1}])">&lt;</div>` : ''}
                 ${nextItem ? `<div class="modal-nav modal-next" onclick="showItemModal(allItems[${currentIndex + 1}])">&gt;</div>` : ''}
-                <img src="${baseUrl}All_Items/item_${item.id}.png" alt="${item.name}" style="width:100px;height:100px;display:block;margin:auto;object-fit: contain;">
+                <div style="position:relative;display:flex;align-items:center;justify-content:center;">
+                    <img src="${baseUrl}All_Items/item_${item.id}.png" alt="${item.name}" style="width:100px;height:100px;display:block;margin:auto;object-fit: contain;">
+                    ${rechargeImg}
+                </div>
                 ${catImg}
                 <h3>${item.name}</h3>
                 ${item.pickup ? `<h3>"${item.pickup}"</h3>` : ''}
                 <p>${Array.isArray(item.description) ? item.description.join('<br><br>') : item.description || ''}</p>
-                ${item.recharge_time ? `<p><strong>Recarga:</strong> ${item.recharge_time}</p>` : ''}
-                <p><strong>Tipo:</strong> ${item.type_list ? item.type_list.join(', ') : ''}</p>
-                ${item.unlock ? `<p><strong>Como se desbloquea:</strong> ${item.unlock}</p>` : ''}
-                <p><strong>ID:</strong> ${item.id}</p>
+                ${item.recharge_time ? `<p><i><strong>USOS:</strong></i> ${item.recharge_time}</p>` : ''}
+                <p><i><strong>TIPO:</strong></i> ${item.type_list ? item.type_list.join(', ') : ''}</p>
+                ${item.unlock ? `<p><i><strong>DESBLOQUEO:</strong></i> ${item.unlock}</p>` : ''}
+                <p><i><strong>ID:</strong></i> ${item.id}</p>
             `;
             itemModal.style.display = 'flex';
             document.getElementById('modal-close-item').onclick = () => { itemModal.style.display = 'none'; };
@@ -723,8 +735,8 @@
                 <h3>${trinket.name}</h3>
                 ${trinket.pickup ? `<h3>"${trinket.pickup}"</h3>` : ''}
                 <p>${Array.isArray(trinket.description) ? trinket.description.join('<br><br>') : trinket.description || ''}</p>
-                ${trinket.unlock ? `<p><strong>Como se desbloquea:</strong> ${trinket.unlock}</p>` : ''}
-                <p><strong>ID:</strong> ${trinket.trinketId}</p>
+                ${trinket.unlock ? `<p><i><strong>DESBLOQUEO:</strong></i> ${trinket.unlock}</p>` : ''}
+                <p><i><strong>ID:</strong></i> ${trinket.trinketId}</p>
             `;
             trinketModal.style.display = 'flex';
             document.getElementById('modal-close-trinket').onclick = () => { trinketModal.style.display = 'none'; };
@@ -763,8 +775,8 @@
                 <h3>${card.name}</h3>
                 ${card.pickup ? `<h3>"${card.pickup}"</h3>` : ''}
                 <p>${description}</p>
-                ${card.unlock ? `<p><strong>Como se desbloquea:</strong> ${card.unlock}</p>` : ''}
-                <p><strong>ID:</strong> ${card.cardId}</p>
+                ${card.unlock ? `<p><i><strong>DESBLOQUEO:</strong></i> ${card.unlock}</p>` : ''}
+                <p><i><strong>ID:</strong></i> ${card.cardId}</p>
             `;
             cardModal.style.display = 'flex';
             document.getElementById('modal-close-card').onclick = () => { cardModal.style.display = 'none'; };

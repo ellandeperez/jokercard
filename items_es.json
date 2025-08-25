@@ -227,7 +227,7 @@
         ],
         "item_pool": [
             "Item Room",
-            "Mushrooms"
+            "MushHabitaciones"
         ],
         "pickup": "All stats up!",
         "cat": "up"
@@ -624,7 +624,7 @@
             "Angel Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Temporary flight"
     },
@@ -649,7 +649,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Temporary DMG up"
     },
@@ -672,7 +672,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Mass room damage"
     },
@@ -695,7 +695,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "1 room"
+            "1 Habitación"
         ],
         "pickup": "Plop!"
     },
@@ -718,7 +718,7 @@
             "Bomb Beggar"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Reusable bomb buddy"
     },
@@ -740,7 +740,7 @@
             "Gold Chest"
         ],
         "recharge_time": [
-            "1 room"
+            "1 Habitación"
         ],
         "pickup": "Reusable tear burst"
     },
@@ -762,7 +762,7 @@
             "Mom's Chest"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Mass fear"
     },
@@ -782,7 +782,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Become the bomb!"
     },
@@ -805,7 +805,7 @@
             "Mom's Chest"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Gross..."
     },
@@ -829,7 +829,7 @@
             "Sloth Miniboss"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Reusable ranged bomb"
     },
@@ -849,7 +849,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Teleport!"
     },
@@ -872,7 +872,7 @@
             "Super Lust Miniboss"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Reusable regeneration"
     },
@@ -912,7 +912,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Reusable air strike"
     },
@@ -951,7 +951,7 @@
             "Super Envy Miniboss"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "BLLLARRRRGGG!"
     },
@@ -1094,7 +1094,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Oops..."
     },
@@ -1135,7 +1135,7 @@
             "Library"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Temporary invincibility"
     },
@@ -1233,7 +1233,7 @@
             "Pride Miniboss"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Summon bombs"
     },
@@ -1252,7 +1252,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Temporary enemy slowdown"
     },
@@ -1473,7 +1473,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Temporary badass"
     },
@@ -1497,7 +1497,7 @@
             "Library"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Reusable soul protection"
     },
@@ -1607,7 +1607,7 @@
             "Demon Beggar"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Temporary demon form"
     },
@@ -1631,7 +1631,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Reusable level skip"
     },
@@ -1652,7 +1652,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Reusable card generator"
     },
@@ -1672,7 +1672,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Summon monstro"
     },
@@ -1808,7 +1808,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Temporary Man-Pac"
     },
@@ -1890,7 +1890,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Reusable item generator"
     },
@@ -2002,7 +2002,7 @@
             "Mom's Chest"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Reusable pill generator"
     },
@@ -2059,7 +2059,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Reroll your destiny"
     },
@@ -2100,7 +2100,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Cut and run"
     },
@@ -2187,7 +2187,7 @@
             "Beggar"
         ],
         "recharge_time": [
-            "1 room"
+            "1 Habitación"
         ],
         "pickup": "Toot on command"
     },
@@ -2415,7 +2415,7 @@
             "Library"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Temporary buddy generator"
     },
@@ -2438,7 +2438,7 @@
             "Angel Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "It's a mystery"
     },
@@ -2480,7 +2480,7 @@
             "Demon Beggar"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Feel my pain"
     },
@@ -2503,7 +2503,7 @@
             "Demon Beggar"
         ],
         "recharge_time": [
-            "Instant (One time use)"
+            "Instant (One Uso)"
         ],
         "pickup": "I don't remember..."
     },
@@ -2562,7 +2562,7 @@
             "None (Headless horseman only)"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Flight + dash attack"
     },
@@ -2621,7 +2621,7 @@
             "Red Chest"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Soul converter"
     },
@@ -2664,7 +2664,7 @@
             "None (Blood donation machine only)"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Portable blood bank"
     },
@@ -2684,7 +2684,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Friends 'till the end"
     },
@@ -2707,7 +2707,7 @@
             "Bomb Beggar"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Remote bomb detonation"
     },
@@ -2868,7 +2868,7 @@
             "Gold/Stone Chest"
         ],
         "recharge_time": [
-            "1 room"
+            "1 Habitación"
         ],
         "pickup": "Reusable fly hive"
     },
@@ -2889,7 +2889,7 @@
             "Angel Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Reusable eternity"
     },
@@ -2912,7 +2912,7 @@
             "Crane Game"
         ],
         "recharge_time": [
-            "At the start of each new floor"
+            "Al inicio de cada piso"
         ],
         "pickup": "Rocks didn't stand a chance"
     },
@@ -3131,7 +3131,7 @@
             "None (Fortune machine only)"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "I see my future"
     },
@@ -3169,7 +3169,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Holy white death"
     },
@@ -3250,7 +3250,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "Timed (A few seconds)"
+            "Timed (A few Segundos)"
         ],
         "pickup": "Reusable flame"
     },
@@ -3289,7 +3289,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Reroll the basics"
     },
@@ -3387,7 +3387,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Mass enemy slowdown + damage"
     },
@@ -3468,7 +3468,7 @@
             "Key Beggar"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Opens all doors..."
     },
@@ -3507,7 +3507,7 @@
             "Beggar"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Gamble 24/7"
     },
@@ -3586,7 +3586,7 @@
             "None (Conquest boss only)"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Flight + holy death"
     },
@@ -3689,7 +3689,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Mass enemy damage at a cost"
     },
@@ -3811,7 +3811,7 @@
             "Library"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Temporary psychic shot"
     },
@@ -5582,7 +5582,7 @@
             "Library"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "It's time you learned how"
     },
@@ -5603,7 +5603,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "REEROLLLLL!"
     },
@@ -5626,7 +5626,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Reroll into something else"
     },
@@ -5647,7 +5647,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Rerolls enemies"
     },
@@ -5694,7 +5694,7 @@
             "Secret Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "??????"
     },
@@ -5715,7 +5715,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "It's a box of spiders"
     },
@@ -5737,7 +5737,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "Timed (A few seconds)"
+            "Timed (A few Segundos)"
         ],
         "pickup": "Flame on"
     },
@@ -5759,7 +5759,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Save your life"
     },
@@ -5781,7 +5781,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "..."
     },
@@ -5806,7 +5806,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Reusable evil... but at what cost?"
     },
@@ -5829,7 +5829,7 @@
             "None (Krampus only)"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Krampus rage"
     },
@@ -5852,7 +5852,7 @@
             "Beggar"
         ],
         "recharge_time": [
-            "Timed (A few seconds)"
+            "Timed (A few Segundos)"
         ],
         "pickup": "Reusable knockback"
     },
@@ -5873,7 +5873,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Pay to play"
     },
@@ -5893,7 +5893,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Convert your soul"
     },
@@ -5924,7 +5924,7 @@
             "Red Chest"
         ],
         "recharge_time": [
-            "One time use"
+            "One Uso"
         ],
         "pickup": "? ?"
     },
@@ -5946,7 +5946,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "1 room"
+            "1 Habitación"
         ],
         "pickup": "You feel stumped"
     },
@@ -6456,7 +6456,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Undefined"
     },
@@ -6478,7 +6478,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Lose your head"
     },
@@ -6749,7 +6749,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "Timed (A few seconds)"
+            "Timed (A few Segundos)"
         ],
         "pickup": "It will never leave you"
     },
@@ -6924,7 +6924,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "Instant (One time use)"
+            "Instant (One Uso)"
         ],
         "pickup": "Double item vision",
         "cat": "up"
@@ -6969,7 +6969,7 @@
             "Greed Mode Item Room"
         ],
         "recharge_time": [
-            "1 room"
+            "1 Habitación"
         ],
         "pickup": "Flip a coin"
     },
@@ -7011,7 +7011,7 @@
             "Greed Mode Item Room"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Giga fart!"
     },
@@ -7035,7 +7035,7 @@
             "Greed Mode Item Room"
         ],
         "recharge_time": [
-            "5 seconds"
+            "5 Segundos"
         ],
         "pickup": "Be gentle..."
     },
@@ -7137,7 +7137,7 @@
             "Greed Mode Item Room"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Double your friends"
     },
@@ -7652,7 +7652,7 @@
             "Greed Mode Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Gotta fetch 'em all!"
     },
@@ -7673,7 +7673,7 @@
             "Greed Mode Item Room"
         ],
         "recharge_time": [
-            "15 seconds"
+            "15 Segundos"
         ],
         "pickup": "Remote tear detonation"
     },
@@ -7737,7 +7737,7 @@
             "Greed Mode Shop"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Rerolls rocks"
     },
@@ -7944,7 +7944,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Short cutter"
     },
@@ -8153,7 +8153,7 @@
             "Greed Mode Shop"
         ],
         "recharge_time": [
-            "4 Rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Reroll stats"
     },
@@ -8426,7 +8426,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "I-teleport!"
     },
@@ -8467,7 +8467,7 @@
             "Greed Mode Item Room"
         ],
         "recharge_time": [
-            "1 Rooms"
+            "1 Habitaciones"
         ],
         "pickup": "Love toots!"
     },
@@ -8588,7 +8588,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "1 room"
+            "1 Habitación"
         ],
         "pickup": "Booom!"
     },
@@ -8730,7 +8730,7 @@
             "Greed Mode Shop"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Gotta catch 'em all?"
     },
@@ -8788,7 +8788,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Reroll rewards!"
     },
@@ -8831,7 +8831,7 @@
             "Mom's Chest"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "What's inside?"
     },
@@ -8873,7 +8873,7 @@
             "Greed Mode Devil Room"
         ],
         "recharge_time": [
-            "12 rooms"
+            "12 Habitaciones"
         ],
         "pickup": "Laser breath",
         "cat": "up"
@@ -9519,7 +9519,7 @@
             "Demon Beggar"
         ],
         "recharge_time": [
-            "One time use"
+            "One Uso"
         ],
         "pickup": "My last resort"
     },
@@ -9542,7 +9542,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "What will it be?"
     },
@@ -9569,7 +9569,7 @@
             "Angel Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Consume"
     },
@@ -9591,7 +9591,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Stop!"
     },
@@ -9613,7 +9613,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Trinket melter!"
     },
@@ -9634,7 +9634,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Gain more friends!"
     },
@@ -9657,7 +9657,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "109"
     },
@@ -9681,7 +9681,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Change"
     },
@@ -9705,7 +9705,7 @@
             "Bomb Beggar"
         ],
         "recharge_time": [
-            "One time use"
+            "One Uso"
         ],
         "pickup": "BOOOOOOOOOM!"
     },
@@ -9727,7 +9727,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "10 seconds"
+            "10 Segundos"
         ],
         "pickup": "I can't believe it's not butter bean!"
     },
@@ -9753,7 +9753,7 @@
             "Beggar"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "50/50"
     },
@@ -9773,7 +9773,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "I feel numb..."
     },
@@ -9822,7 +9822,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Waggles a finger"
     },
@@ -9866,7 +9866,7 @@
             "Angel Room"
         ],
         "recharge_time": [
-            "12 rooms (one time use)"
+            "12 Habitaciones"
         ],
         "pickup": "..."
     },
@@ -10155,7 +10155,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "7 seconds"
+            "7 Segundos"
         ],
         "pickup": "Friendly Fly"
     },
@@ -10218,7 +10218,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "8 seconds"
+            "8 Segundos"
         ],
         "pickup": "More blood!"
     },
@@ -10283,7 +10283,7 @@
             "Angel Room"
         ],
         "recharge_time": [
-            "12 rooms"
+            "12 Habitaciones"
         ],
         "pickup": "Unleash the power!"
     },
@@ -10327,7 +10327,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Nothing can escape"
     },
@@ -10389,7 +10389,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "One time use"
+            "One Uso"
         ],
         "pickup": "Wrapped up nice for you!",
         "cat": "up"
@@ -10411,7 +10411,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Sprinkles."
     },
@@ -10516,7 +10516,7 @@
             "Beggar"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Allow 6 weeks for delivery"
     },
@@ -10538,7 +10538,7 @@
             "Greed Mode Item Room"
         ],
         "recharge_time": [
-            "6 seconds"
+            "6 Segundos"
         ],
         "pickup": "The power of mind!"
     },
@@ -10562,7 +10562,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Pack and unpack"
     },
@@ -10652,7 +10652,7 @@
             "Key Beggar"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Caaan Do!"
     },
@@ -10840,7 +10840,7 @@
             "Curse Room"
         ],
         "recharge_time": [
-            "Single use"
+            "Un unico uso"
         ],
         "pickup": "He demands a sacrifice"
     },
@@ -11028,7 +11028,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Rise from the grave"
     },
@@ -11145,7 +11145,7 @@
             "None"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Lost but not forgotten"
     },
@@ -11169,7 +11169,7 @@
             "None"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Lost but not forgotten"
     },
@@ -11226,7 +11226,7 @@
             "Greed Mode Item Room"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Pain from gain"
     },
@@ -11248,7 +11248,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Temporary demon form"
     },
@@ -11268,7 +11268,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Reusable fortunes"
     },
@@ -11663,7 +11663,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "One time use"
+            "One Uso"
         ],
         "pickup": "A king's fortune... but at what cost?"
     },
@@ -11684,7 +11684,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Party time!"
     },
@@ -11732,7 +11732,7 @@
             "Mom's Chest"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Explore the other side"
     },
@@ -11848,7 +11848,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "12 charges (one time use)"
+            "12 charges (one Uso)"
         ],
         "pickup": "A sacred offering"
     },
@@ -12109,7 +12109,7 @@
             "Shop",
             "Crane Game"
         ],
-        "pickup": "Extra curse rooms"
+        "pickup": "Extra curse Habitaciones"
     },
     {
         "id": "600",
@@ -12224,7 +12224,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "3 rooms"
+            "3 Habitaciones"
         ],
         "pickup": "Plop!"
     },
@@ -12307,7 +12307,7 @@
             "Crane Game"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "???"
     },
@@ -12349,7 +12349,7 @@
             "Greed Mode Item Room"
         ],
         "recharge_time": [
-            "12 rooms (Can be used with partial charges)"
+            "12 Habitaciones"
         ],
         "pickup": "Hear my pain"
     },
@@ -12578,7 +12578,7 @@
             "Greed Mode Angel Room"
         ],
         "recharge_time": [
-            "One time use"
+            "One Uso"
         ],
         "pickup": "In the beginning"
     },
@@ -12602,7 +12602,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Open your enemies"
     },
@@ -12643,7 +12643,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "12 rooms"
+            "12 Habitaciones"
         ],
         "pickup": "I'm a big boy now!",
         "cat": "up"
@@ -12706,7 +12706,7 @@
             "Secret Room"
         ],
         "recharge_time": [
-            "1 time use"
+            "1 Uso"
         ],
         "pickup": "Where am I?",
         "cat": "up"
@@ -12752,7 +12752,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Slice but no dice"
     },
@@ -12836,7 +12836,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "3 seconds"
+            "3 Segundos"
         ],
         "pickup": "Bait and switch"
     },
@@ -12860,7 +12860,7 @@
             "Secret Room"
         ],
         "recharge_time": [
-            "Single use"
+            "Un unico uso"
         ],
         "pickup": "Time to start over",
         "cat": "up"
@@ -12902,7 +12902,7 @@
             "Crane Game"
         ],
         "recharge_time": [
-            "1 room (Can only be used once per floor)"
+            "1 Habitacion (Un solo uso por piso)"
         ],
         "pickup": "Erase thy enemy"
     },
@@ -12924,7 +12924,7 @@
             "Rotten Beggar"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Gross!"
     },
@@ -12948,7 +12948,7 @@
             "Angel Room"
         ],
         "recharge_time": [
-            "None (see above)"
+            "Ninguno (Lee descripción)"
         ],
         "pickup": "Unleash their sorrow"
     },
@@ -12993,7 +12993,7 @@
             "Curse Room"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "All your desires fulfilled"
     },
@@ -13139,7 +13139,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Play time!"
     },
@@ -13212,7 +13212,7 @@
             "Angel Room"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Begone!"
     },
@@ -13699,7 +13699,7 @@
             "Cuando el portal absorbe 4 objetos, se convierte en un portal que permite teletransportarse a habitaciones inexploradas en la planta. Puede llevarte a habitaciones que requieren bombas o llaves, como la Habitación Secreta o la Tienda.",
             "Cada vez que el portal absorbe un objeto, genera una mosca de ataque azul para ti.",
             "Una vez exploradas todas las habitaciones, el portal no hace nada.",
-            "No puede llevarte a habitaciones que no sean parte de la estructura del piso, por ejemplo, habitaciones Devil Rooms o I AM ERROR."
+            "No puede llevarte a habitaciones que no sean parte de la estructura del piso, por ejemplo, habitaciones del diablo o I AM ERROR."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando a Madre como Apollyon",
@@ -13790,7 +13790,7 @@
             "Angel Room"
         ],
         "recharge_time": [
-            "12 rooms"
+            "12 Habitaciones"
         ],
         "pickup": "Your faith grows"
     },
@@ -13831,7 +13831,7 @@
             "Crane Game"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Best friends forever!"
     },
@@ -14161,7 +14161,7 @@
             "Secret Room"
         ],
         "recharge_time": [
-            "1 room"
+            "1 Habitación"
         ],
         "pickup": "Lost brother"
     },
@@ -14209,7 +14209,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "7 seconds"
+            "7 Segundos"
         ],
         "pickup": "One with the shadows"
     },
@@ -14232,7 +14232,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Come forth from the depths"
     },
@@ -14289,7 +14289,7 @@
             "Crane Game"
         ],
         "recharge_time": [
-            "8 seconds"
+            "8 Segundos"
         ],
         "pickup": "Angel breaker"
     },
@@ -14315,7 +14315,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Make your destiny"
     },
@@ -14342,7 +14342,7 @@
             "Shop"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Life and death"
     },
@@ -14367,7 +14367,7 @@
             "Library"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "Item summoner"
     },
@@ -14392,7 +14392,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "10 seconds"
+            "10 Segundos"
         ],
         "pickup": "Return"
     },
@@ -14413,7 +14413,7 @@
             "None"
         ],
         "recharge_time": [
-            "3 seconds"
+            "3 Segundos"
         ],
         "pickup": "Come back"
     },
@@ -14434,7 +14434,7 @@
             "None"
         ],
         "recharge_time": [
-            "Instant"
+            "Instantaneo"
         ],
         "pickup": "Saved for later"
     },
@@ -14499,7 +14499,7 @@
             "Wooden Chest"
         ],
         "recharge_time": [
-            "4 rooms"
+            "4 Habitaciones"
         ],
         "pickup": "Portable shop"
     },
@@ -14521,7 +14521,7 @@
             "Crane Game"
         ],
         "recharge_time": [
-            "12 rooms"
+            "12 Habitaciones"
         ],
         "pickup": "Anything is possible"
     },
@@ -14563,7 +14563,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "15 seconds"
+            "15 Segundos"
         ],
         "pickup": "Repent"
     },
@@ -14589,7 +14589,7 @@
             "Crane Game"
         ],
         "recharge_time": [
-            "6 rooms"
+            "6 Habitaciones"
         ],
         "pickup": "-1"
     },
@@ -14693,7 +14693,7 @@
             "Devil Room"
         ],
         "recharge_time": [
-            "2 rooms"
+            "2 Habitaciones"
         ],
         "pickup": "Demonic gestation"
     },
@@ -14715,7 +14715,7 @@
             "Item Room"
         ],
         "recharge_time": [
-            "4 seconds"
+            "4 Segundos"
         ],
         "pickup": "Chuck away!"
     },
