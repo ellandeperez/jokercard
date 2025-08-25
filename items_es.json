@@ -381,8 +381,7 @@
         "name": "The Compass",
         "description": [
             "Muestra la mayoría de los íconos en el mapa (tiendas, salas de objetos, salas de jefes, etc.)",
-            "No muestra el diseño del mapa.",
-            "No muestra la ubicación de las habitaciones secretas o súper secretas.",
+            "No muestra el diseño del mapa ni las habitaciones secretas.",
             "Los íconos de las habitaciones no se mostrarán si hay una Maldición de Amnesia vigente en el piso actual."
         ],
         "quality": "2",
@@ -550,7 +549,7 @@
         "name": "Mom's Heels",
         "description": [
             "+1,5 alcance",
-            "Hace que Isaac inflija daño por contacto 12 por cada tic (24 daño por segundo).",
+            "Hace que Isaac inflija daño por contacto, 12 por cada tic (24 daño por segundo).",
             "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
         ],
         "quality": "1",
@@ -610,8 +609,7 @@
             "Le otorga a Isaac alas de ángel para la habitación actual, lo que le permite volar.",
             "Mata instantáneamente a los jefes de las peleas Pie de Mamá, Corazón de Mamá y It Lives.",
             "Si se usa durante la lucha contra Satanás, la Biblia matará instantáneamente a Isaac.",
-            "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín.",
-            "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
+            "Cuenta como 1 de los 3 elementos necesarios para la transformación de Serafín y de Bookworm."
         ],
         "quality": "1",
         "tags": "* library pool, library room, book room pool, angel room pool, god room pool, angel room, shop room pool, shop item pool, cross, brown",
@@ -681,8 +679,8 @@
         "name": "The Poop",
         "description": [
             "Deja caer una mierda en el suelo",
-            "Blue Baby comienza con este artículo",
-            "Se puede colocar junto a un aguejro y explotarlo para hacer un puente.",
+            "Blue Baby comienza con este item",
+            "Se puede colocar junto a un agujero y explotarlo para hacer un puente.",
             "Se puede colocar sobre una mierda roja rota para sobrescribirla, lo que hace que ya no se regenere.",
             "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap"
         ],
@@ -813,10 +811,10 @@
         "id": "42",
         "name": "Bob's Rotten Head",
         "description": [
-            "Una bomba venenosa que se puede lanzar y deja un efecto venenoso en cualquier enemigo dentro del radio de explosión. También deja una nube de gas en el lugar donde explotó.",
-            "La bomba causa 185 de daño + tu daño de desgarro al impactar y deja un efecto de veneno con daño en el tiempo que hace 3 veces tu daño de desgarro por cada tic.",
+            "Una bomba venenosa que se puede lanzar en la direción que desees.",
+            "La bomba causa 185 de daño + tu daño al impactar y deja un efecto de veneno con daño en el tiempo que hace 3 veces tu daño de desgarro por cada tic.",
             "Se sinergiza con elementos que modifican lágrimas como My Reflection o Tiny Planet.",
-            "Tiene la posibilidad de caerse de la pelea contra el minijefe Perezoso.",
+            "Tiene la posibilidad de dropear de la pelea contra el minijefe Sloth.",
             "Cuenta como 1 de los 3 elementos venenosos necesarios para la transformación de Bob."
         ],
         "quality": "1",
@@ -859,8 +857,8 @@
         "description": [
             "Cura a Isaac por un corazón rojo entero",
             "Maggy comienza con este artículo.",
-            "Cuando se usa como Guardián, se restaura una moneda de HP.",
-            "Tiene la posibilidad de caerse de la pelea contra el minijefe Super Lust."
+            "Cuando se usa como Keeper, se restaura una moneda de HP.",
+            "Tiene la posibilidad de dropearlo el minijefe Super Lust."
         ],
         "quality": "1",
         "tags": "* item room, treasure room, item room pool, the lost item pool, maggy, start, red, pink, broken",
@@ -881,8 +879,8 @@
         "name": "Lucky Foot",
         "description": [
             "+1.0 Suerte ",
-            "Mayores posibilidades de ganar mientras juegas en el juego de la concha y la máquina de adivinación",
-            "Mayor probabilidad de obtener un objeto aleatorio después de limpiar una habitación.",
+            "Mayores posibilidades de ganar mientras juegas en las maquinas arcade o adivinas las calaveras",
+            "Mayor probabilidad de obtener un objeto aleatorio después de acabar una habitación.",
             "Convierte todas las píldoras negativas en sus contrapartes positivas. No afecta a las neutrales y las píldoras permanecen sin identificar."
         ],
         "quality": "2",
@@ -900,8 +898,7 @@
         "id": "47",
         "name": "Doctor's Remote",
         "description": [
-            "Se coloca un objetivo en el suelo que se puede controlar. Tras unos segundos, un enorme misil impacta en el objetivo e inflige 20 veces tu daño de desgarro a todo lo que esté cerca.",
-            "Esencialmente, un uso único del elemento Feto épico."
+            "Se coloca un objetivo en el suelo que se puede controlar. Tras unos segundos, un enorme misil impacta en el objetivo e inflige 20 veces tu daño a todo lo que esté cerca."
         ],
         "quality": "1",
         "tags": "* item room, treasure room, item room pool, grey, gray, robot",
@@ -920,7 +917,7 @@
         "id": "48",
         "name": "Cupid's Arrow",
         "description": [
-            "Las lágrimas de Isaac ahora tienen un efecto perforante que les permite viajar a través de los enemigos en lugar de romperse al impactar."
+            "Las lágrimas de Isaac ahora tienen un efecto perforante que les permite atravesar a los enemigos en lugar de romperse al impactar."
         ],
         "quality": "3",
         "tags": "* item room, treasure room, item room pool, arrow, penetrative, penetrating shots, grey, red, bolt, cupid arrow, cupids arrow",
@@ -937,7 +934,7 @@
         "name": "Shoop Da Whoop!",
         "description": [
             "Cuando se usa, dispara un láser de alto daño en línea recta a través de la habitación de manera similar a Brimstone.",
-            "El láser inflige daño equivalente al doble de tu daño por desgarro. El láser impacta hasta 13 veces si un enemigo permanece dentro mientras dura.",
+            "El láser inflige daño equivalente al doble de tu daño. El láser impacta hasta 13 veces si un enemigo permanece dentro mientras dura.",
             "Tiene la posibilidad de aparecer en las peleas contra los minijefes Envy y Super Envy."
         ],
         "quality": "2",
@@ -978,7 +975,7 @@
         "name": "Pentagram",
         "description": [
             "+1.0 daño",
-            "+10% de probabilidad de que se abra una sala de diablos/ángeles mientras se mantiene presionado",
+            "+10% de probabilidad de que se abra una sala de diablo/ángeles",
             "Un segundo pentagrama otorgará un 5% adicional de probabilidad",
             "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
         ],
@@ -1002,8 +999,8 @@
         "description": [
             "En lugar de lágrimas, Isaac ahora dispara bombas desde sus ojos, que explotan e infligen daño a todo lo que esté cerca.",
             "Daño de bomba = daño * 10",
-            "Desgarros hacia abajo (Retardo de desgarro * 2.5)",
-            "Las bombas también se sinergizarán con otros elementos de bomba y modificadores de desgarro, incluidas las Bombas Tristes, Mr. Mega y muchas más.",
+            "- Cadencia (Delay de lágrima * 2.5)",
+            "Las bombas también se sinergizarán con otros elementos de bomba y modificadores de lágrima.",
             "Las bombas crecen o se hacen más pequeñas con modificadores de tamaño de lágrima y son inmunes al retroceso de sus propias explosiones."
         ],
         "quality": "4",
@@ -1024,7 +1021,7 @@
         "name": "Magneto",
         "description": [
             "Hace que las pastillas en el suelo se muevan hacia el jugador.",
-            "Funciona a través de boxes, pero no a través de bloques clave.",
+            "Funciona a través de bloques, pero no a través de bloques clave.",
             "Los cofres a hasta 2 casillas de distancia de Isaac se abren automáticamente. Los cofres con pinchos se abren sin dañar a Isaac. Los cofres cerrados y de piedra no se abren y requieren una llave o una bomba."
         ],
         "quality": "1",
@@ -1060,10 +1057,9 @@
         "id": "55",
         "name": "Mom's Eye",
         "description": [
-            "Isaac tiene una oportunidad aleatoria de disparar otra lágrima por la parte posterior de su cabeza.",
+            "Probabilidad de disparar una lagrima por la parte posterior de su cabeza.",
             "La posibilidad de disparar la segunda lágrima puede mejorar según tu estadística de suerte y siempre se activará con +5 Suerte.",
             "Con +0 de suerte, hay un ~50 % de posibilidades de que se active este efecto.",
-            "Combina muy bien con muchos objetos. Si se usa con Azufre, tienes un 100 % de probabilidad de disparar un láser por la nuca.",
             "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
         ],
         "quality": "1",
@@ -1102,7 +1098,7 @@
         "id": "57",
         "name": "Distant Admiration",
         "description": [
-            "Le otorga a Isaac un vuelo orbital que inflige 5 puntos de daño de contacto a los enemigos por cada tic.",
+            "Le otorga a Isaac una mosca orbital que inflige 5 puntos de daño de contacto a los enemigos por cada tic.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
         ],
         "quality": "2",
@@ -1161,7 +1157,7 @@
         "description": [
             "+0.3 daño",
             "Cura medio corazón después de cada 13 enemigos asesinados.",
-            "Funciona con el Guardián para restaurar HP de las monedas."
+            "Funciona con Keeper para restaurar HP de las monedas."
         ],
         "quality": "1",
         "tags": "* item room, treasure room, item room pool, the lost item pool, black, grey, gray, bat",
@@ -1178,7 +1174,7 @@
         "name": "The Battery",
         "description": [
             "Todos los elementos de la barra espaciadora ahora se pueden \"sobrecargar\", lo que permite cargarlos dos veces en lugar de una.",
-            "Los cargos adicionales aparecen en amarillo encima de las barras verdes normales.",
+            "Las cargos adicionales aparecen en amarillo encima de las barras verdes normales.",
             "Este artículo funciona con artículos autorrecargables."
         ],
         "quality": "2",
@@ -1196,9 +1192,8 @@
         "name": "Steam Sale",
         "description": [
             "Los artículos de la tienda ahora tienen un -50% de descuento.",
-            "Los artículos de 15c se reducen a 7c. Las recolecciones de 5c se convierten en 3c. Las recolecciones de 3c se convierten en 2c.",
-            "Aprovechar más de una oferta de Steam reduce aún más el precio de todos los artículos.",
-            "Este artículo se llama Steamy Sale en las versiones de PS4, PS Vita, Xbox One y Switch, probablemente debido a razones de derechos de autor."
+            "Los artículos de 15c se reducen a 7c. De 5c se convierten en 3c. De 3c se convierten en 2c.",
+            "Aprovechar más de una oferta de Steam reduce aún más el precio de todos los artículos."
         ],
         "quality": "2",
         "tags": "* shop room pool, shop item pool, red, pink, white, paper",
@@ -1217,9 +1212,9 @@
         "id": "65",
         "name": "Anarchist Cookbook",
         "description": [
-            "Genera 6 bombas de troll en ubicaciones aleatorias alrededor de la habitación.",
+            "Genera 6 bombas troll en ubicaciones aleatorias alrededor de la habitación.",
             "Las bombas se ven afectadas por otros elementos de bomba pasivos.",
-            "Tiene la posibilidad de caerse de la pelea contra el minijefe Orgullo.",
+            "Tiene la posibilidad de dropear de la pelea contra el minijefe Pride.",
             "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
         ],
         "quality": "1",
@@ -1241,7 +1236,7 @@
         "id": "66",
         "name": "The Hourglass",
         "description": [
-            "Cuando se usa, ralentiza a todos los enemigos en la sala actual y sus proyectiles durante aproximadamente 8 segundos."
+            "Cuando se usa, ralentiza a todos los enemigos en la sala actual y sus proyectiles durante 8 segundos."
         ],
         "quality": "1",
         "tags": "* item room, treasure room, item room pool, hour glass, hourglass, egg timer, sandbrown, glass",
@@ -1261,8 +1256,6 @@
         "name": "Sister Maggy",
         "description": [
             "Un familiar que sigue a Isaac y dispara lágrimas de sangre que infligen 5 puntos de daño.",
-            "Las lágrimas aparecen rojas pero no tienen daño adicional.",
-            "La hermana Maggy dispara lágrimas a una velocidad de 1 lágrima por segundo.",
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta"
         ],
         "quality": "1",
@@ -1283,7 +1276,7 @@
         "description": [
             "Las lágrimas de Isaac son reemplazadas por un láser que tiene un alcance ilimitado y solo puede disparar en ángulos rectos.",
             "Los láseres viajan a través de los enemigos pero no de los obstáculos en la habitación.",
-            "Se sinergiza con la mayoría de los elementos que afectan la cantidad de lágrimas que disparas (20/20, Araña mutante, etc.) o el camino que toman (Mi reflejo, Pequeño planeta, etc.)"
+            "Se sinergiza con la mayoría de los elementos que afectan la cantidad de lágrimas que disparas."
         ],
         "quality": "3",
         "tags": "* item room, treasure room, item room pool, red, wire, white, eye",
@@ -1303,8 +1296,7 @@
             "Isaac ahora puede cargar disparos para causar más daño manteniendo presionado el botón de disparo.",
             "Con carga completa, tus lágrimas hacen 4 veces más daño.",
             "Las lágrimas disparadas con la mínima carga posible causan aproximadamente 1/3 del daño normal.",
-            "Puedes presionar repetidamente el botón de disparo para disparar rápidamente, sin embargo, el daño general por segundo será bajo.",
-            "Desmontaje: Retraso * 2.5"
+            "Puedes presionar repetidamente el botón de disparo para disparar rápidamente, sin embargo, el daño general por segundo será bajo."
         ],
         "quality": "3",
         "tags": "* item room, treasure room, item room pool, brown, glass, beaker, white",
@@ -1343,7 +1335,7 @@
             "+0.3 Speed",
             "+1,5 alcance",
             "Hace que Isaac se reduzca de tamaño (incluso ligeramente su hitbox)",
-            "Se puede obtener al explotar hongos en el entorno que normalmente se encuentran en las cuevas/catacumbas y en las habitaciones secretas.",
+            "Se puede obtener al explotar hongos.",
             "Cuenta como 1 de los 3 elementos de hongo necesarios para la transformación de Fun Guy."
         ],
         "quality": "2",
@@ -1360,9 +1352,9 @@
         "id": "72",
         "name": "Rosary",
         "description": [
-            "+3 Corazones del alma",
+            "+3 Corazones de alma",
             "+0.5 Lágrimas",
-            "Agrega varias instancias del elemento La Biblia a todos los grupos de elementos",
+            "Agrega varias instancias del elemento La Biblia a todos los tipos de habitaciones",
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
         ],
         "quality": "2",
@@ -1403,8 +1395,8 @@
         "name": "A Quarter",
         "description": [
             "+25 monedas",
-            "Tiene una probabilidad muy pequeña de caer después de destruir una de las ollas que aparecen en los pisos del sótano y la bodega.",
-            "Tiene la posibilidad de caerse de la pelea contra el minijefe Super Greed."
+            "Tiene una probabilidad muy pequeña de caer después de destruir una de las urnas que aparecen en los pisos del sótano y la bodega.",
+            "Tiene la posibilidad de dropear de la pelea contra el minijefe Super Greed."
         ],
         "quality": "0",
         "unlock": "Desbloquea este objeto al vencer al Corazón de Mamá 8 veces",
@@ -1423,7 +1415,7 @@
         "id": "75",
         "name": "PhD",
         "description": [
-            "Convierte la mayoría de las píldoras negativas en sus contrapartes positivas; por ejemplo, Bajar estadísticas se convierte en Subir estadísticas. Mal viaje se convierte en Bolas de acero. Amnesia se convierte en Puedo ver para siempre, etc.",
+            "Convierte la mayoría de las píldoras negativas en sus contrapartes positivas; por ejemplo, Bajar estadísticas se convierte en Subir estadísticas. Bad Trip se convierte en Balls of Steel. Amnesia se convierte en I can see forever, etc.",
             "Las pastillas se identifican antes de usarlas",
             "Deja caer una pastilla al recogerla",
             "Cura 2 corazones rojos completos",
@@ -1507,7 +1499,7 @@
         "description": [
             "+1.0 daño",
             "+0.2 Speed",
-            "+1 Corazón del alma",
+            "+1 Corazón de alma",
             "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
         ],
         "quality": "3",
@@ -1547,10 +1539,9 @@
         "id": "81",
         "name": "Dead Cat",
         "description": [
-            "La salud de Isaac se establece en 1 y también gana 9 vidas adicionales.",
-            "Cada vez que Isaac muere, reaparecerá con 1 de salud.",
+            "La salud roja de Isaac se establece en 1 y también gana 9 vidas adicionales.",
+            "Cada vez que Isaac muere, reaparecerá con 1 de salud máxima.",
             "Tiene la posibilidad de caer del minijefe Super Pride.",
-            "La cabeza flotante de Dead Cat que te sigue desaparecerá cuando estés en tu última vida (Muy útil para The Lost)",
             "Cuenta como 1 de los 3 elementos de gato necesarios para la transformación de Guppy"
         ],
         "quality": "3",
@@ -1593,7 +1584,6 @@
             "Cada uso de este objeto otorga +0,7 de daño, -0,18 de reducción de velocidad y la capacidad de destruir la mayoría de los obstáculos de la sala actual.",
             "Cada uso también otorga medio corazón negro, sin embargo, este permanece entre habitaciones a diferencia de los otros efectos.",
             "Permite que Isaac inflija 40 de daño de contacto a los enemigos en la sala actual. No impide que Isaac reciba daño de contacto.",
-            "Todos los efectos anteriores solo están activos cuando el elemento se usa en la sala actual.",
             "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
         ],
         "quality": "2",
@@ -1616,8 +1606,8 @@
         "name": "We Need To Go Deeper",
         "description": [
             "Genera una trampilla a los pies de Isaac que le permite viajar al siguiente piso.",
-            "Cavar en ciertos lugares con objetos o marcas en el piso garantizará un espacio de acceso una vez por piso.",
-            "En Sheol, Catedral, Cofre y Habitación Oscura, este objeto abre un espacio de rastreo o no hace nada.",
+            "Cavar en ciertos lugares con objetos o marcas en el piso garantizará una sala especial una vez por piso.",
+            "En Sheol, Catedral, Cofre y Habitación Oscura, este objeto abre una sala especial o no hace nada.",
             "No se puede generar una trampilla directamente frente a la entrada de una habitación secreta.",
             "Puede destruir rocas si se usa cuando Isaac está volando sobre una roca."
         ],
@@ -1640,7 +1630,7 @@
         "name": "Deck of Cards",
         "description": [
             "Le da a Isaac una carta del tarot al azar al usarla.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "2",
         "tags": "* shop room pool, shop item pool, item room, treasure room, item room pool, brown, pink",
@@ -1739,7 +1729,7 @@
             "+1.0 daño",
             "+0.2 Lágrimas",
             "-0.2 Disminución de velocidad",
-            "Tiene la posibilidad de caerse al explotar una roca teñida."
+            "Tiene la posibilidad de dropear al explotar una tainted rock."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto destruyendo 100 rocas coloreadas.",
@@ -1775,7 +1765,7 @@
         "name": "Super Bandage",
         "description": [
             "+1 HP",
-            "+2 Corazones del Alma",
+            "+2 Corazones de alma",
             "Cura un contenedor de corazón rojo al recogerlo."
         ],
         "quality": "2",
@@ -2028,7 +2018,7 @@
         "name": "The Parasite",
         "description": [
             "Las lágrimas de Isaac ahora se dividen en dos al entrar en contacto con enemigos o el entorno.",
-            "Las lágrimas que se desprenden del desgarro principal causan menos daño (daño por desgarro * 0,5)",
+            "Las lágrimas que se desprenden del desgarro principal causan menos daño (daño * 0,5)",
             "Las lágrimas pueden seguir partiéndose si aún tienen alcance y daño superior a 1."
         ],
         "quality": "3",
@@ -2940,7 +2930,7 @@
         "description": [
             "Las lágrimas de Isaac son reemplazadas por bombas venenosas explosivas, que se arquearán hacia arriba y explotarán al entrar en contacto con el suelo, causando un daño enorme y dejando un efecto de veneno en los enemigos dentro del alcance.",
             "Los disparos de ipecacuana reciben un daño fijo de +40 además del daño base normal de 3,5.",
-            "Desgarros hacia abajo (Retraso de desgarro * 2 + 10)",
+            "- Cadencia (Retraso de desgarro * 2 + 10)",
             "Escalas de tamaño de explosión de ipecacuana con tamaño de lágrima",
             "Los disparos dañarán a Isaac si está en el radio de explosión cuando explotan.",
             "Cuenta como 1 de los 3 elementos venenosos necesarios para la transformación de Bob."
@@ -3002,7 +2992,7 @@
         "description": [
             "Isaac ahora también tiene un láser con alcance ilimitado que dispara continuamente e inflige daño 15 veces por segundo.",
             "Las lágrimas siguen saliendo de tu ojo izquierdo a un ritmo de 2/3",
-            "El láser causa daño equivalente a 1/7 de tu daño por desgarro, pero muy rápidamente.",
+            "El láser causa daño equivalente a 1/7 de tu daño, pero muy rápidamente.",
             "El láser puede aplicar efectos de estado (por ejemplo, veneno) rápidamente debido a la frecuencia con la que golpea.",
             "No aplica un multiplicador de daño negativo como solía hacerlo antes de Arrepentimiento."
         ],
@@ -3119,7 +3109,7 @@
             "Al usarlo, revela el mapa y deja caer un corazón de alma o una carta/runa aleatoria (50 % de probabilidad para cada una).",
             "Revela la ubicación de la habitación secreta, sin embargo no revela la habitación súper secreta.",
             "Tiene la posibilidad de caerse al jugar en una máquina de la fortuna.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios",
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios",
             "Garantiza un Planetario si se ha omitido una sala de objetos; de lo contrario, aumenta un 15 % la probabilidad de que aparezcan Planetarios al mantenerlos. Tras entrar en un Planetario, la probabilidad vuelve al 1 %. La generación de suelo puede fallar y, en ocasiones, provocar que el Planetario garantizado no aparezca."
         ],
         "quality": "3",
@@ -3157,7 +3147,7 @@
         "id": "160",
         "name": "Crack The Sky",
         "description": [
-            "Crea 5 rayos de luz desde el cielo que infligen un daño igual a tu daño por desgarro + 20 a cualquier enemigo que entre en contacto con ellos.",
+            "Crea 5 rayos de luz desde el cielo que infligen un daño igual a tu daño + 20 a cualquier enemigo que entre en contacto con ellos.",
             "Los rayos tienen una alta probabilidad de aparecer encima de los enemigos cuando sea posible."
         ],
         "quality": "2",
@@ -3597,7 +3587,7 @@
             "Las lágrimas ahora son blancas, hacen mucho más daño y se mueven más lentamente por la pantalla con un efecto teledirigido.",
             "+1 HP",
             "daño (daño * 2,3 + 1)",
-            "-0.4 Desgarros hacia abajo",
+            "-0.4 - Cadencia",
             "-0,25 reducción de velocidad de disparo",
             "Curación completa del corazón rojo",
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
@@ -3840,7 +3830,7 @@
             "+0,16 velocidad de disparo",
             "Le da a Isaac una carta del tarot al azar cuando la recoge.",
             "+15% de probabilidad de que aparezcan planetarios",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "1",
         "tags": "* boss room pool, boss room item, eight, grey, gray",
@@ -3879,7 +3869,7 @@
         "id": "196",
         "name": "Squeezy",
         "description": [
-            "+2 Corazones del Alma",
+            "+2 Corazones de alma",
             "+0.4 Lágrimas"
         ],
         "quality": "3",
@@ -4012,7 +4002,7 @@
         "name": "Humbleing Bundle",
         "description": [
             "Todos los centavos, llaves, bombas y corazones futuros tienen la posibilidad de caer en pares.",
-            "No funciona con otros tipos de pastillas, como corazones del alma, monedas de cinco centavos, de diez centavos, tarjetas, pastillas, etc.",
+            "No funciona con otros tipos de pastillas, como Corazones de alma, monedas de cinco centavos, de diez centavos, tarjetas, pastillas, etc.",
             "No afecta a las recolecciones existentes que ya se habían soltado antes de tomar este artículo."
         ],
         "quality": "3",
@@ -4088,7 +4078,7 @@
         "name": "Ball of Bandages",
         "description": [
             "Le otorga a Isaac una bola orbital de vendajes que inflige 7 puntos de daño de contacto por cada tic y bloquea los disparos enemigos.",
-            "Recolectar una segunda Bola de Vendajes en la carrera convierte al orbital en una cabeza rosa que dispara lágrimas que infligen 7 de daño cada una y tienen la posibilidad de encantar a los enemigos.",
+            "Recolectar una segunda Bola de Vendajes en la run convierte al orbital en una cabeza rosa que dispara lágrimas que infligen 7 de daño cada una y tienen la posibilidad de encantar a los enemigos.",
             "Obtener una tercera Bola de vendajes transformará la cabeza en una chica vendada que perseguirá a los enemigos, infligiendo 3,5 de daño de contacto por cada tic, mientras dispara lágrimas de encanto.",
             "Una cuarta Bola de Vendajes hará que la Chica Vendaje sea más grande y más fuerte, lo que le permitirá causar 5.5 de daño por tic en lugar de...",
             "Cualquier otra bola de vendas repetirá el ciclo.",
@@ -4462,7 +4452,7 @@
         "name": "Black Lotus",
         "description": [
             "+1 HP",
-            "+1 Corazón del alma",
+            "+1 Corazón de alma",
             "+1 Corazón Negro",
             "Cura un contenedor de corazón rojo al recogerlo.",
             "Cuando se agotan, los Corazones Negros infligen 40 de daño a toda la sala, con un efecto estilo Necronomicón.",
@@ -4524,7 +4514,7 @@
         "name": "Monstro's Lung",
         "description": [
             "Ahora las lágrimas se pueden cargar y liberar con un efecto estilo escopeta, muy parecido al ataque principal de Monstro.",
-            "Desgarros hacia abajo (Retraso de desgarro * 4.3)",
+            "- Cadencia (Retraso de desgarro * 4.3)",
             "La carga parcial no hace nada: debe estar completamente cargada para usarla"
         ],
         "quality": "2",
@@ -4665,7 +4655,7 @@
         "name": "Death's Touch",
         "description": [
             "+1,5 daño",
-            "-0.3 Desgarros hacia abajo",
+            "-0.3 - Cadencia",
             "x2 Tamaño de lágrima",
             "Las lágrimas de Isaac se convierten en grandes guadañas que atraviesan a los enemigos (similar a cómo se ven las guadañas de la Muerte)"
         ],
@@ -4901,7 +4891,7 @@
         "id": "249",
         "name": "There's Options",
         "description": [
-            "Ahora aparecen dos elementos después de vencer una pelea contra un jefe y la carrera contra el jefe, sin embargo, solo se puede tomar uno.",
+            "Ahora aparecen dos elementos después de vencer una pelea contra un jefe y la run contra el jefe, sin embargo, solo se puede tomar uno.",
             "El artículo adicional se seleccionará del grupo de artículos del jefe.",
             "No hace nada después de la pelea con Krampus.",
             "Se desbloquea donando a la máquina de donaciones en la tienda."
@@ -5133,7 +5123,7 @@
         "description": [
             "Otorga a Isaac lágrimas de alto daño con un alcance corto.",
             "El tamaño del desgarro y el daño disminuyen muy rápido con este objeto, cuanto más lejos viaja el desgarro, menos daño causa.",
-            "El daño por desgarro comienza en el triple (300 %) y disminuye con el alcance hasta llegar al 0 %."
+            "El daño comienza en el triple (300 %) y disminuye con el alcance hasta llegar al 0 %."
         ],
         "quality": "3",
         "tags": "* item room, treasure room, item room pool, red, bloody, eyeball",
@@ -5569,7 +5559,7 @@
         "description": [
             "Cuando se usa, hace que Isaac salte en el aire, similar a los enemigos saltadores.",
             "Mantiene el impulso si ya te estás moviendo en la misma dirección.",
-            "Si ya tienes un objeto que te da vuelo, este objeto se convierte en un efecto de carrera en su lugar.",
+            "Si ya tienes un objeto que te da vuelo, este objeto se convierte en un efecto de run en su lugar.",
             "Se puede usar en la pelea contra el jefe Isaac para saltar sobre los rayos de luz que genera."
         ],
         "quality": "1",
@@ -5747,7 +5737,7 @@
         "description": [
             "Isaac ahora puede recoger corazones mientras tiene la salud completa, que se almacenarán en el frasco y se pueden generar nuevamente usando la barra espaciadora.",
             "Se pueden almacenar hasta 4 corazones en el tarro",
-            "Los corazones del alma y los corazones negros no se pueden almacenar.",
+            "Los Corazones de alma y los corazones negros no se pueden almacenar.",
             "Si se usa en una sala súper secreta de Corazón Negro o Corazón Eterno, generará el corazón correspondiente."
         ],
         "quality": "0",
@@ -5861,7 +5851,7 @@
         "name": "Magic Fingers",
         "description": [
             "Al usarlo, consume una moneda y causa daño a todo lo que se encuentra en la habitación.",
-            "El daño infligido es igual a tu daño por desgarro * 2 + 10"
+            "El daño infligido es igual a tu daño * 2 + 10"
         ],
         "quality": "1",
         "tags": "* shop room pool, shop item pool, item room, treasure room, item room pool, tissue, box, yellow, grey",
@@ -5958,7 +5948,7 @@
             "Mientras estés en una sala hostil, tu velocidad aumenta a un ritmo de +0,065 por cada tick del juego.",
             "Cuando alcanzas una estadística de velocidad de 2.0, Isaac obtendrá un efecto de invencibilidad durante 5 segundos, lo que aumentará la velocidad y le permitirá chocar con los enemigos para infligir 40 de daño de contacto por golpe.",
             "El tiempo que tarda el efecto en activarse se acorta con una estadística de Velocidad base más alta.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "1",
         "tags": "* astrology, astronomy, item room, treasure room, item room pool, blue, glow, circle, horns",
@@ -5977,7 +5967,7 @@
             "+0,25 Speed",
             "Chocar contra enemigos a alta velocidad inflige 25 de daño. Moverse a esta velocidad también previene el daño por contacto.",
             "No causará daño por contacto a menos que te muevas lo suficientemente rápido (al menos 0,85 de velocidad).",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "2",
         "tags": "* astrology, astronomy, item room, treasure room, item room pool, black, blue, cyan, glow",
@@ -5993,9 +5983,9 @@
         "id": "301",
         "name": "Cancer",
         "description": [
-            "+3 Corazones del alma",
+            "+3 Corazones de alma",
             "Después de recibir un golpe, obtienes una reducción de daño para el resto de la habitación similar al objeto The Wafer (-50 % de daño recibido).",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
         "tags": "* astrology, astronomy, item room, treasure room, item room pool, cyan, black, the lost item pool, blue, glow, 69",
@@ -6014,7 +6004,7 @@
             "Isaac aumenta de tamaño, obtiene una melena de león y ahora tiene la habilidad de aplastar rocas caminando sobre ellas.",
             "Las rocas trituradas y los excrementos pueden llenar los agujeros si caminas en su dirección.",
             "Te permite aplastar a los mierda Roja y, a veces, no recibir daño. Sin embargo, si también tienes habilidad de volar, siempre recibirás daño.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios",
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios",
             "Cuenta como 1 de los 3 elementos que aumentan el tamaño necesarios para la transformación de Stompy."
         ],
         "quality": "1",
@@ -6034,7 +6024,7 @@
             "Una posibilidad aleatoria de obtener un escudo de invencibilidad durante 7 segundos cuando recibes daño.",
             "La posibilidad de obtener un escudo de invencibilidad se ve afectada por tu estadística de suerte y, con +10 Suerte, se activará cada vez que recibas un golpe.",
             "Convierte todas las píldoras negativas en sus contrapartes positivas, por ejemplo, Stat Down se convierte en Stat Up, 'Bad Trip' se convierte en 'Balls of Steel' y 'Amnesia' se convierte en 'I can see forever'.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "2",
         "tags": "* astrology, astronomy, item room, treasure room, item room pool, blue glow, m",
@@ -6055,7 +6045,7 @@
             "Todos los objetos que mejoren las estadísticas en el futuro se distribuirán entre todas las demás estadísticas. Por ejemplo, un objeto que normalmente otorga +1 de daño otorgará un pequeño todas las estadísticas.",
             "Las estadísticas afectadas por este objeto son: Daño, Desgarros, Alcance, Velocidad.",
             "Cuando se toma con otro elemento que otorga un valor extremo en una determinada estadística (por ejemplo, leche de soja), puede generar sinergias interesantes.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "1",
         "tags": "* astrology, astronomy, item room, treasure room, item room pool, ohm, blue, glow",
@@ -6073,7 +6063,7 @@
         "description": [
             "Las lágrimas de Isaac se vuelven de un verde brillante y siempre aplican un efecto de veneno a los enemigos que inflige un total del doble del daño de tus lágrimas.",
             "Esta es esencialmente una versión superior del artículo The Common Cold.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
         "tags": "* astrology, astronomy, item room, treasure room, item room pool, m, tail, blue, glow",
@@ -6092,7 +6082,7 @@
             "+0.2 Speed",
             "Otorga lágrimas penetrantes",
             "Las lágrimas no viajan a través de las rocas con este artículo.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
         "tags": "*astrology, astronomy, item room, treasure room, item room pool, nys, notyoursagittarius, blue, glow, arrow, cross",
@@ -6115,7 +6105,7 @@
             "+0,75 Alcance",
             "+1 Llave, +1 Bomba, +1 Moneda",
             "Cura un contenedor de corazón rojo al recogerlo.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
         "tags": "* astrology, astronomy, item room, treasure room, item room pool, cyan, black, blue, glow, tail",
@@ -6132,7 +6122,7 @@
         "name": "Aquarius",
         "description": [
             "Deja un rastro de lágrimas en el suelo detrás de Isaac que daña a los enemigos que caminan sobre él por 2 puntos de daño por cada tic.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios",
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios",
             "Acuario se sinergiza con los efectos lacrimógenos"
         ],
         "quality": "2",
@@ -6152,7 +6142,7 @@
             "-1 Retraso de lágrima (Lágrimas arriba)",
             "x1.25 Tamaño de lágrima aumentado",
             "Las lágrimas ahora tienen un efecto de retroceso mayor, que empuja a los enemigos hacia atrás.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "2",
         "tags": "* astrology, astronomy, item room, treasure room, item room pool, blue, glow",
@@ -6326,7 +6316,7 @@
         "name": "Gemini",
         "description": [
             "Un familiar que está unido a Isaac, que buscará y dañará a cualquier enemigo cercano por 3 puntos de daño de contacto.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "1",
         "tags": "* astrology, astronomy, item room, treasure room, item room pool, blue, glow",
@@ -6596,7 +6586,7 @@
         "description": [
             "Las lágrimas de Isaac se vuelven teledirigidas y tienen un aura a su alrededor que infligirá 2 puntos de daño por tic a cualquier cosa dentro de su radio.",
             "+0,5 daño",
-            "-0.3 Desgarros hacia abajo",
+            "-0.3 - Cadencia",
             "-0.3 Disminución de la velocidad de disparo",
             "Múltiples GodHeads no acumulan el daño del aura",
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
@@ -6676,7 +6666,7 @@
         "id": "335",
         "name": "The Soul",
         "description": [
-            "+2 Corazones del Alma",
+            "+2 Corazones de alma",
             "Los proyectiles enemigos ahora se alejarán lentamente de Isaac y evitarán golpearlo."
         ],
         "quality": "3",
@@ -6734,7 +6724,7 @@
         "name": "Boomerang",
         "description": [
             "Un bumerán azul que se puede lanzar de manera similar al Cuchillo de Mamá, para aturdir a cualquier enemigo que golpee y causar daño.",
-            "El daño infligido por el bumerán es igual al doble de tu daño por desgarro.",
+            "El daño infligido por el bumerán es igual al doble de tu daño.",
             "El bumerán también se puede usar para agarrar objetos y consumibles a distancia, similar al bumerán de la leyenda de Zelda.",
             "El alcance del bumerán se ve afectado por el alcance; en el número uno, la distancia es muy corta y hace que el objeto sea mucho menos efectivo.",
             "El bumerán se puede usar para matar cadáveres de comerciantes, lo que te permite cultivar sus botines para obtener monedas, artículos, ofertas de Steam, etc.",
@@ -6835,7 +6825,7 @@
         "name": "Latch Key",
         "description": [
             "+1 Suerte arriba",
-            "+1 Corazón del alma",
+            "+1 Corazón de alma",
             "Genera 2 llaves en el suelo."
         ],
         "quality": "1",
@@ -6977,9 +6967,9 @@
         "id": "350",
         "name": "Toxic Shock",
         "description": [
-            "Con este objeto, al comienzo de cada sala infligirás el doble de daño por desgarro a toda la sala con un efecto de veneno.",
+            "Con este objeto, al comienzo de cada sala infligirás el doble de daño a toda la sala con un efecto de veneno.",
             "Los enemigos eliminados ahora también dejan un charco de biomateria en el suelo donde murieron. Esto inflige 1 de daño por cada tick.",
-            "Un alto daño por desgarro hará que este objeto se vuelva muy poderoso para salas con muchos enemigos, ya que pueden morir instantáneamente y dejar la sala inofensiva.",
+            "Un alto daño hará que este objeto se vuelva muy poderoso para salas con muchos enemigos, ya que pueden morir instantáneamente y dejar la sala inofensiva.",
             "Los enemigos que aparecen después de los primeros segundos de cada sala no se ven afectados por este elemento, por ejemplo, las moscas generadas por un Mulligan moribundo."
         ],
         "quality": "3",
@@ -7083,7 +7073,7 @@
         "description": [
             "+0,38 Alcance ",
             "+1 Suerte arriba",
-            "+1 Corazón del alma",
+            "+1 Corazón de alma",
             "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
         ],
         "quality": "2",
@@ -7209,7 +7199,7 @@
         "name": "Fate's Reward",
         "description": [
             "Una cabeza azul familiar que seguirá a Isaac y disparará lágrimas copiando su daño y efectos de lágrimas.",
-            "Este familiar es muy similar a Incubus, sin embargo, solo copia el daño y no se ve afectado por desgarros o mejoras de alcance."
+            "Este familiar es muy similar a Incubus, sin embargo, solo copia el daño y no se ve afectados o mejoras de alcance."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a Blue Womb (Silencio) con ??? (Bebé azul).",
@@ -7479,7 +7469,7 @@
         "name": "Holy Light!",
         "description": [
             "Isaac tiene una probabilidad aleatoria de disparar una lágrima sagrada, que cuando golpea a un enemigo, generará un rayo de luz en el mismo enemigo y le causará daño.",
-            "Los rayos de este objeto infligen un daño equivalente al 400 % de tu daño por desgarro (multiplicador de daño x4 solo para los rayos)",
+            "Los rayos de este objeto infligen un daño equivalente al 400 % de tu daño (multiplicador de daño x4 solo para los rayos)",
             "La probabilidad de disparar una lágrima sagrada se ve afectada por tu estadística de suerte, con un máximo del 50 % de probabilidad.",
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
         ],
@@ -7619,7 +7609,7 @@
         "name": "Eden's Blessing",
         "description": [
             "+0.7 Lágrimas",
-            "Te da un objeto aleatorio al comienzo de tu próxima carrera (debes comenzar una nueva carrera para recibir el objeto)",
+            "Te da un objeto aleatorio al comienzo de tu próxima run (debes comenzar una nueva run para recibir el objeto)",
             "Los elementos de progresión importantes, como las piezas clave o las piezas de la pala de mamá, no se pueden otorgar mediante la Bendición del Edén."
         ],
         "quality": "3",
@@ -7847,7 +7837,7 @@
         "description": [
             "El zodíaco te dará un efecto de objeto del zodíaco aleatorio que cambia después de cada piso.",
             "Los posibles efectos de los artículos incluyen: Tauro, Aries, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario, Géminis o Piscis.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto superando el modo Avaricia con The Lost",
@@ -7995,7 +7985,7 @@
         "name": "Maw of The Void",
         "description": [
             "Después de disparar lágrimas durante 3 segundos, aparece una cruz roja en la cabeza de Isaac que, al soltar el botón de disparo, crea un anillo negro que causa mucho daño a cualquier enemigo que se encuentre dentro de él.",
-            "El anillo inflige daño equivalente a tu daño por desgarro rápidamente a cualquier enemigo en contacto con él, por un total de 30 ticks de daño.",
+            "El anillo inflige daño equivalente a tu daño rápidamente a cualquier enemigo en contacto con él, por un total de 30 ticks de daño.",
             "Tienes que mantener presionado el botón de disparo durante 3 segundos completos para provocar este efecto.",
             "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
         ],
@@ -8035,7 +8025,7 @@
         "name": "Explosivo",
         "description": [
             "Las lágrimas ahora tienen una probabilidad aleatoria de convertirse en bombas adhesivas, que se adherirán a los enemigos y explotarán después de unos segundos.",
-            "La explosión de la bomba inflige daño por desgarro + 60",
+            "La explosión de la bomba inflige daño + 60",
             "Los disparos explosivos causan daño de desgarro regular al adherirse a un enemigo."
         ],
         "quality": "3",
@@ -8188,7 +8178,7 @@
         "name": "Athame",
         "description": [
             "Agrega una posibilidad de que aparezca un anillo negro alrededor de los enemigos muertos, lo que inflige daño a otros que lo tocan.",
-            "El daño del anillo aumenta con el daño por desgarro.",
+            "El daño del anillo aumenta con el daño.",
             "La probabilidad de que aparezca un anillo varía según tu estadística de suerte."
         ],
         "quality": "3",
@@ -8329,7 +8319,7 @@
         "id": "415",
         "name": "Crown of Light",
         "description": [
-            "+2 Corazones del Alma",
+            "+2 Corazones de alma",
             "Una corona que reemplaza las lágrimas normales con lágrimas de diamante azul mientras no tenga ningún contenedor de corazón rojo vacío o corazones de hueso",
             "Mientras el efecto esté activo, las lágrimas hacen el doble de daño y tienen -0,30 de velocidad de disparo.",
             "La corona brillará en azul cuando esté activa, si está inactiva aparecerá en gris.",
@@ -8596,7 +8586,7 @@
         "id": "428",
         "name": "PJs",
         "description": [
-            "+4 Corazones del alma",
+            "+4 Corazones de alma",
             "Restaura completamente tu salud roja.",
             "ARREPENTIMIENTO - Añadido al fondo del cofre de oro"
         ],
@@ -8777,7 +8767,7 @@
             "Se puede utilizar para generar infinitas combinaciones de consumibles y obtener tantas monedas, llaves y bombas como necesites.",
             "Este objeto no tiene efecto en el modo Codicia, salas de desafío y salas que no tenían enemigos originalmente.",
             "Si se usa en una sala de jefe o en una sala de ángel/diablo, te teletransportarás a otra sala aleatoria, que se reinicia en lugar de la sala de jefe/ángel/diablo en la que estabas.",
-            "Los enemigos reaparecidos por el D7 no dejan caer botín si eran campeones y tampoco otorgan puntos en la carrera diaria."
+            "Los enemigos reaparecidos por el D7 no dejan caer botín si eran campeones y tampoco otorgan puntos en la run diaria."
         ],
         "quality": "1",
         "tags": "* dice, pip, die, turban, white, grey, gray, dice effect",
@@ -8796,7 +8786,7 @@
         "id": "438",
         "name": "Binky",
         "description": [
-            "+1 Corazón del alma",
+            "+1 Corazón de alma",
             "+0,75 Lágrimas",
             "Isaac reduce su tamaño",
             "Hace que Isaac sea muy pequeño como un bebé, reduciendo el tamaño de su hitbox."
@@ -9019,7 +9009,7 @@
         "id": "449",
         "name": "Metal Plate",
         "description": [
-            "+1 Corazón del alma",
+            "+1 Corazón de alma",
             "Las balas enemigas tienen un 25% de probabilidad de ser desviadas hacia el enemigo, lo que lo lastimará y aplicará el efecto de estado conmocionante, lo que hace que quede aturdido durante unos segundos."
         ],
         "quality": "1",
@@ -9059,7 +9049,7 @@
             "Deja caer una carta al azar al recogerla",
             "Duplica el efecto de la mayoría de las cartas del tarot. Aparece un efecto de contorno pulsante lento en el HUD para las cartas que serían potenciadas por la Tela del Tarot.",
             "Para ver la lista completa de efectos de las cartas del Tarot, consulta la página Mecánica > Tela del Tarot",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "2",
         "tags": "*, purple, grey, bag",
@@ -9077,7 +9067,7 @@
         "name": "Varicose Veins",
         "description": [
             "Cada vez que recibes daño, se disparan 10 lágrimas de alto daño en un círculo a tu alrededor (similar al efecto Cabeza de Tammy)",
-            "El daño por desgarro es igual al daño por desgarro de Isaac + 25 de daño fijo",
+            "El daño es igual al daño de Isaac + 25 de daño fijo",
             "Además, tiene la posibilidad de activar el efecto Anémico al recibir daño durante 2 segundos.",
             "Similar a la Cabeza de Tammy, este objeto se sinergiza con muchos objetos (es decir, con Brimstone dispara 10 láseres)."
         ],
@@ -9170,7 +9160,7 @@
         "id": "457",
         "name": "Cone Head",
         "description": [
-            "+1 Corazón del alma",
+            "+1 Corazón de alma",
             "Cada vez que recibes daño de cualquier fuente, Cone Head tiene un 20% de probabilidad de evitar que reduzca tu salud.",
             "Isaac parpadea en azul muy brevemente cuando el daño es negado por este objeto."
         ],
@@ -9298,9 +9288,9 @@
         "id": "464",
         "name": "Glyph of Balance",
         "description": [
-            "+2 Corazones del Alma",
+            "+2 Corazones de alma",
             "Este objeto modificará los objetos que se obtienen al limpiar la sala y los enemigos campeones según tu estado de jugador. La lista de objetos que se obtienen de los enemigos campeones es la siguiente:",
-            "Corazones del alma: cuando no tienes contenedores de corazones rojos y menos de 2 corazones del alma",
+            "Corazones de alma: cuando no tienes contenedores de corazones rojos y menos de 2 Corazones de alma",
             "Corazones rojos (corazones llenos) - Mientras que en 0,5 corazones rojos",
             "Llaves - Cuando no tienes llaves",
             "Bombas - Cuando no tienes bombas",
@@ -9309,7 +9299,7 @@
             "Llaves - Cuando tienes menos de 5 llaves",
             "Bombas - Cuando tienes menos de 5 bombas",
             "Baratijas: si no tienes baratijas y no hay baratijas en el suelo de la habitación",
-            "Corazones del alma: cuando tienes menos de 6 contenedores de corazones en total de cualquier tipo",
+            "Corazones de alma: cuando tienes menos de 6 contenedores de corazones en total de cualquier tipo",
             "Si ninguna de las condiciones anteriores se cumple, los campeones volverán a soltar sus recolecciones habituales."
         ],
         "quality": "2",
@@ -9403,7 +9393,7 @@
         "name": "Depression",
         "description": [
             "Isaac obtiene una nube familiar que lo sigue y deja un rastro de lágrimas en el suelo que daña a los enemigos por 2 puntos de daño por cada tick.",
-            "Los enemigos que tocan la nube tienen la posibilidad de activar el efecto Crack the Sky, que genera un rayo de luz que inflige daño igual a tu daño por desgarro + 20"
+            "Los enemigos que tocan la nube tienen la posibilidad de activar el efecto Crack the Sky, que genera un rayo de luz que inflige daño igual a tu daño + 20"
         ],
         "quality": "1",
         "tags": "*, pink, purple, cloud, smoke",
@@ -9501,7 +9491,7 @@
             "Al usarlo, este objeto inflige 9,999,999 de daño a todos los enemigos en la habitación y luego te mata 3 segundos después.",
             "Este es un elemento activo de un solo uso, lo que significa que se destruye después de usarlo.",
             "No mata ambas fases de jefes multifase como Silencio o Ultra Avaricia",
-            "Si se usa para matar a un jefe, la muerte aún cuenta como una victoria para las marcas de finalización de notas adhesivas, pero la carrera aún obtendrá el final del juego.",
+            "Si se usa para matar a un jefe, la muerte aún cuenta como una victoria para las marcas de finalización de notas adhesivas, pero la run aún obtendrá el final del juego.",
             "La animación de muerte de Delirium dura más de 3 segundos, lo que significa que morirás antes de que se considere como una marca de finalización. Una excepción a esto es si juegas con Lázaro o tienes los harapos de Lázaro: reaparecerás en la misma sala y conseguirás la muerte.",
             "El Plan C es 5 veces más raro que otros artículos del mismo grupo de artículos, lo que hace que sea menos probable que aparezca."
         ],
@@ -9600,8 +9590,8 @@
         "name": "Smelter",
         "description": [
             "Al usarlo, el Fundidor destruirá la baratija que tengas actualmente y te otorgará el efecto de forma permanente, lo que te permitirá acumular muchos efectos de baratija diferentes.",
-            "Si se ha fundido una baratija, no aparecerá una segunda vez a menos que se agote todo el grupo de baratijas o se reinicie la carrera (por ejemplo, haciendo una vuelta de la victoria).",
-            "Si se ha fundido una baratija, no aparecerá una segunda vez a menos que se agote todo el grupo de baratijas o se reinicie la carrera (por ejemplo, haciendo una vuelta de la victoria)."
+            "Si se ha fundido una baratija, no aparecerá una segunda vez a menos que se agote todo el grupo de baratijas o se reinicie la run (por ejemplo, haciendo una vuelta de la victoria).",
+            "Si se ha fundido una baratija, no aparecerá una segunda vez a menos que se agote todo el grupo de baratijas o se reinicie la run (por ejemplo, haciendo una vuelta de la victoria)."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto superando el Corazón de Mamá en el modo difícil con Apollyon.",
@@ -9941,7 +9931,7 @@
         "description": [
             "Isaac obtiene lágrimas eléctricas, que disparan 1 o 2 chispas de electricidad en direcciones aleatorias al golpear cualquier objeto o enemigo.",
             "La electricidad se encadenará entre los enemigos cercanos.",
-            "La electricidad causa la mitad del daño normal por desgarro.",
+            "La electricidad causa la mitad del daño normal.",
             "Los efectos de desgarro seguirán aplicándose a tus chispas eléctricas en muchos casos. Doblacucharas les otorgará un efecto de búsqueda, y efectos de estado como miedo/veneno se propagarán a todos los enemigos a los que las cadenas eléctricas...",
             "Las lágrimas que caen naturalmente al suelo a máxima distancia no generan chispas.",
             "Es posible disparar lágrimas a una pared para crear electricidad que daña a los enemigos del otro lado de la pared."
@@ -10336,7 +10326,7 @@
         "name": "Bozo",
         "description": [
             "+0.1 daño",
-            "+1 Corazón del alma",
+            "+1 Corazón de alma",
             "Agrega una posibilidad aleatoria de que un enemigo en la sala actual quede encantado o temido brevemente.",
             "Agrega una posibilidad aleatoria de generar una mierda de arcoíris al recibir daño.",
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod Steam Workshop creado por Electoon"
@@ -10720,7 +10710,7 @@
         "description": [
             "Con Haemolacria, las lágrimas de Isaac se vuelven sangrientas y ahora se disparan en el aire en un arco.",
             "Al golpear el suelo, un obstáculo o un enemigo, la lágrima sangrienta estallará y disparará muchas lágrimas más pequeñas en direcciones aleatorias alrededor del punto de impacto.",
-            "Desgarros hacia abajo - (Retraso de desgarro * 2) + 10",
+            "- Cadencia - (Retraso de desgarro * 2) + 10",
             "Tu estadística de daño no se ve afectada por este objeto, sin embargo, la lágrima sangrienta grande inflige un 31 % más de tu daño de lágrima y las lágrimas dispersas más pequeñas infligen entre un 50 % y un 80 % de tu daño de lágrima.",
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 4. Basado en el mod de Steam Workshop (originalmente llamado Water Balloon) creado por HiHowAreYou."
         ],
@@ -10788,7 +10778,7 @@
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 4"
         ],
         "quality": "3",
-        "unlock": "Desbloquea este objeto entrando a todas las tiendas desde el primer piso hasta Mom's Foot (Profundidades 2) en una sola carrera.",
+        "unlock": "Desbloquea este objeto entrando a todas las tiendas desde el primer piso hasta Mom's Foot (Profundidades 2) en una sola run.",
         "tags": "*, backpack back pack school bag",
         "type_list": [
             "Pasivo"
@@ -10803,7 +10793,7 @@
         "id": "535",
         "name": "Blanket",
         "description": [
-            "+1 Corazón del alma",
+            "+1 Corazón de alma",
             "Cura 1 corazón rojo al recogerlo",
             "Te otorga un escudo al entrar en la Sala del Jefe, que previene el daño de un golpe y luego desaparece. Este escudo se acumula con Manto Sagrado, lo que te otorga 2 golpes gratis.",
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5. Basado en el mod de Steam Workshop creado por Ratlah."
@@ -11075,7 +11065,7 @@
         "id": "548",
         "name": "Jaw Bone",
         "description": [
-            "Un familiar que vuela por la habitación cada pocos segundos mientras dispara y daña a los enemigos (el doble de daño por desgarro).",
+            "Un familiar que vuela por la habitación cada pocos segundos mientras dispara y daña a los enemigos (el doble de daño).",
             "También se puede utilizar como el Boomerang para recoger consumibles en el suelo.",
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5"
         ],
@@ -11216,7 +11206,7 @@
             "Se puede acumular tantas veces como quieras. Usarlo con menos de 5 monedas no tiene ningún efecto."
         ],
         "quality": "1",
-        "unlock": "Desbloquea este objeto recolectando 99 monedas y luego gastándolas todas en la misma carrera.",
+        "unlock": "Desbloquea este objeto recolectando 99 monedas y luego gastándolas todas en la misma run.",
         "tags": "*,",
         "type_list": [
             "Activa"
@@ -11257,7 +11247,7 @@
         "name": "Fortune Cookie",
         "description": [
             "Al usarlo, muestra una fortuna aleatoria y tiene la posibilidad de obtener un corazón de alma, una carta (incluidos fragmentos de dados), una runa/piedra de alma o una baratija.",
-            "Los corazones del alma y las cartas del tarot son mucho más comunes que las baratijas."
+            "Los Corazones de alma y las cartas del tarot son mucho más comunes que las baratijas."
         ],
         "quality": "2",
         "tags": "*,",
@@ -11350,7 +11340,7 @@
         "id": "562",
         "name": "Rock Bottom",
         "description": [
-            "Evita que tus estadísticas se reduzcan más durante el resto de la carrera.",
+            "Evita que tus estadísticas se reduzcan más durante el resto de la run.",
             "Por ejemplo, las píldoras para bajar estadísticas no hacen nada, y los elementos como el Tratamiento experimental aumentan las estadísticas pero no las reducen.",
             "Este efecto funciona en elementos que aplican modificadores de estadísticas negativos, como la leche de soja.",
             "Este efecto funciona para cualquier cosa que otorgue beneficios temporales, como cartas de Diablo/Fuerza, o bonificaciones por muerte como Lujuria Sangrienta.",
@@ -11524,7 +11514,7 @@
         "id": "571",
         "name": "Orphan Socks",
         "description": [
-            "+2 Corazones del Alma",
+            "+2 Corazones de alma",
             "+0.3 Speed",
             "Permite caminar sobre efectos dañinos del suelo sin sufrir daño (p. ej., púas, criaturas). No incluye puertas de la Sala de Maldiciones ni rocas con púas."
         ],
@@ -12886,7 +12876,7 @@
         "id": "638",
         "name": "Eraser",
         "description": [
-            "Un objeto activo que te permite lanzar un borrador a cualquier enemigo, lo que lo matará y evitará que aparezca durante el resto de la carrera.",
+            "Un objeto activo que te permite lanzar un borrador a cualquier enemigo, lo que lo matará y evitará que aparezca durante el resto de la run.",
             "Los enemigos que son eliminados crean una nube de humo en lugar de aparecer.",
             "Funciona con los jefes, excepto que no los mata, solo les inflige 15 de daño.",
             "Solo se puede usar una vez por piso; tampoco se pueden usar baterías para recargarlo para evitar esta restricción.",
@@ -13001,7 +12991,7 @@
         "id": "643",
         "name": "Revelation",
         "description": [
-            "+2 Corazones del Alma",
+            "+2 Corazones de alma",
             "Te otorga la capacidad de volar.",
             "Mantener presionado el botón de disparo carga un ataque de rayo de luz similar a Brimstone.",
             "El rayo de luz inflige daño equivalente a tu daño de desgarro actual por cada tic a cualquier enemigo que lo toque.",
@@ -13153,7 +13143,7 @@
             "En el piso The Void, se moverá hacia la sala del jefe que contiene Delirium.",
             "No viaja a la sala del jefe Hush o Mega Satan.",
             "Puede viajar a través de salas secretas/malditas en su ruta hacia la sala del jefe.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Bethany.",
@@ -13317,7 +13307,7 @@
             "Al comienzo de todos los pisos futuros, aparecerán dos portales que pueden llevarte a la sala del jefe (portal rojo), la sala de objetos (portal amarillo) o la sala secreta (portal azul).",
             "Después del Capítulo 3 (pisos de las Profundidades), solo aparecerá un portal.",
             "Los portales desaparecen si abandonas la sala de inicio.",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
         "tags": "*, paper, tarot card",
@@ -14088,7 +14078,7 @@
         "name": "Echo Chamber",
         "description": [
             "Al usar una carta, píldora o runa, también usas una copia de las últimas 3 cartas/píldoras/runas que usaste después de recoger Cámara de eco",
-            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma carrera para desbloquear Planetarios"
+            "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Apollyon",
@@ -14126,7 +14116,7 @@
         "name": "Vengeful Spirit",
         "description": [
             "Cada vez que recibas daño, aparecerá una llama roja orbital alrededor de Isaac por el resto del piso, hasta un máximo de 6",
-            "Las llamas infligen daño de contacto que aumenta con el daño por desgarro.",
+            "Las llamas infligen daño de contacto que aumenta con el daño.",
             "Al llegar a 6 llamas, también comenzarán a disparar lágrimas junto con Isaac, lo que inflige un daño fijo de 3,2 por lágrima.",
             "Al entrar en un nuevo piso, todas las llamas desaparecen."
         ],
@@ -14638,7 +14628,7 @@
         "id": "726",
         "name": "Hemoptysis",
         "description": [
-            "Te permite tocar rápidamente dos veces el botón de disparo para estornudar sobre los enemigos cercanos, lo que inflige x1,5 de daño por desgarro y los empuja ligeramente hacia atrás.",
+            "Te permite tocar rápidamente dos veces el botón de disparo para estornudar sobre los enemigos cercanos, lo que inflige x1,5 de daño y los empuja ligeramente hacia atrás.",
             "Si un enemigo es empujado contra una pared u objeto, recibe 10 puntos de daño."
         ],
         "quality": "2",
