@@ -4638,7 +4638,7 @@
             "+1,5 daño",
             "-0.3 Cadencia",
             "x2 Tamaño de lágrima",
-            "Las lágrimas de Isaac se convierten en grandes guadañas que atraviesan a los enemigos (similar a cómo se ven las guadañas de la Muerte)"
+            "Las lágrimas de Isaac se convierten en grandes guadañas que atraviesan a los enemigos."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto superando el desafío n.° 17 (Waka Waka).",
@@ -4657,7 +4657,7 @@
         "id": "238",
         "name": "Key Piece #1",
         "description": [
-            "Aumenta tus posibilidades de encontrar una Sala del Ángel en lugar de una Sala del Diablo. Consulta la página dedicada a la Sala del Diablo para más detalles.",
+            "Aumenta tus posibilidades de encontrar una Sala del Ángel en lugar de una Sala del Diablo.",
             "Primera mitad de la llave necesaria para entrar por la puerta del jefe Mega Satán",
             "Lo da uno de los ángeles que aparecen al bombardear la estatua en una habitación de ángeles."
         ],
@@ -4677,7 +4677,7 @@
         "id": "239",
         "name": "Key Piece #2",
         "description": [
-            "Aumenta tus posibilidades de encontrar una Sala del Ángel en lugar de una Sala del Diablo. Consulta la página dedicada a la Sala del Diablo para más detalles.",
+            "Aumenta tus posibilidades de encontrar una Sala del Ángel en lugar de una Sala del Diablo.",
             "Segunda mitad de la llave necesaria para entrar a la puerta del jefe Mega Satán",
             "Gotas de uno de los ángeles que aparecen al bombardear la estatua en una habitación de ángeles."
         ],
