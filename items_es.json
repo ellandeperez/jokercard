@@ -4720,7 +4720,7 @@
         "description": [
             "Duplica los objetos y cofres que se recogen al limpiar una habitación.",
             "También da un 30% de probabilidad de que las recompensas por limpiar la sala no aparezcan.",
-            "No afecta a las monedas generadas en el modo Codicia."
+            "No afecta a las monedas generadas en el modo Greed."
         ],
         "quality": "3",
         "tags": "* curse room pool, demon beggar pool, demon judgement pool, devil beggar pool, devil pool, devil room pool, devil deal, paper, pink, brown, isaac",
@@ -4774,8 +4774,7 @@
         "description": [
             "Le da a Isaac un láser que disparará a intervalos aleatorios además de sus lágrimas normales.",
             "Cada láser causa un daño igual a tu daño de lagrima actual.",
-            "El láser se disparará ocasionalmente con uno de estos efectos: Gusano gancho, Doblador de cucharas, Planeta diminuto, Líquido misterioso, Cemento de caucho",
-            "La suerte no tiene efecto en la velocidad a la que se activa Tech.5 y no se escala con elementos que aumentan tu estadística de lágrimas."
+            "El láser se disparará ocasionalmente con uno de estos efectos: Gusano gancho, Doblador de cucharas, Planeta diminuto, Líquido misterioso, Cemento de caucho"
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto superando el desafío n.° 18 (El anfitrión).",
@@ -4794,8 +4793,7 @@
         "name": "20/20",
         "description": [
             "Isaac ahora dispara dos lágrimas a la vez",
-            "Multiplicador de daño de 0,75x",
-            "A diferencia de los objetos Ojo interior y Araña mutante, este objeto de doble disparo no produce lágrimas."
+            "Multiplicador de daño de 0,75x"
         ],
         "quality": "4",
         "tags": "* 20 20, 2020, item room, treasure room, item room pool, black glasses, spectacles",
@@ -4852,9 +4850,8 @@
         "id": "248",
         "name": "Hive Mind",
         "description": [
-            "Hace que tus amigables arañas y moscas azules se vuelvan más grandes y causen el doble de daño.",
+            "Hace que tus arañas y moscas azules se vuelvan más grandes y causen el doble de daño.",
             "Permite que la Peluca de Mamá genere un máximo de 10 arañas a la vez en lugar de 5",
-            "Los familiares de moscas y arañas se vuelven más fuertes de manera similar a los mejores amigos.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú",
             "Cuenta como 1 de los 3 elementos de araña necesarios para la transformación de Bebé Araña."
         ],
@@ -4872,10 +4869,9 @@
         "id": "249",
         "name": "There's Options",
         "description": [
-            "Ahora aparecen dos elementos después de vencer una pelea contra un jefe y la run contra el jefe, sin embargo, solo se puede tomar uno.",
+            "Ahora aparecen dos elementos después de vencer una pelea contra un jefe, sin embargo, solo se puede tomar uno.",
             "El artículo adicional se seleccionará del grupo de artículos del jefe.",
-            "No hace nada después de la pelea con Krampus.",
-            "Se desbloquea donando a la máquina de donaciones en la tienda."
+            "No hace nada después de la pelea con Krampus."
         ],
         "quality": "3",
         "unlock": "Desbloquea este artículo donando 50 centavos a la Tienda",
@@ -4892,8 +4888,7 @@
         "id": "250",
         "name": "Bogo Bombs",
         "description": [
-            "Todas las bombas que se pueden recoger ahora son bombas 1+1",
-            "Un artículo que solo se encuentra en el grupo de artículos de la Tienda"
+            "Todas las bombas que se pueden recoger ahora son bombas dobles"
         ],
         "quality": "1",
         "tags": "* shop room pool, shop item pool, purple, paper, ticket",
@@ -4911,8 +4906,7 @@
         "description": [
             "Genera una carta aleatoria",
             "Isaac ahora puede llevar dos cartas o runas a la vez. Toca el botón de soltar para alternar entre ellas.",
-            "Todas las futuras pastillas que se obtengan ahora se convertirán en tarjetas.",
-            "Un artículo disponible únicamente en la sala de la tienda."
+            "Todas las futuras pastillas que se obtengan ahora se convertirán en tarjetas."
         ],
         "quality": "2",
         "tags": "* shop room pool, shop item pool, packet, deck, brown, orange",
@@ -4928,7 +4922,7 @@
         "id": "252",
         "name": "Little Baggy",
         "description": [
-            "Permite colocar dos pastillas. Pulse el botón para alternar entre cada una.",
+            "Permite llevar dos pastillas. Pulse el botón para alternar entre cada una.",
             "Deja caer una pastilla al suelo cuando la recogen",
             "Convierte todas las cartas y runas que se sueltan en píldoras. Cualquier carta del Tarot o runa que esté en el suelo o que se mantenga en la mano al recoger este objeto se convertirá en una píldora.",
             "El fragmento de dado cuenta como una carta y se convertirá"
@@ -4984,7 +4978,7 @@
         "id": "255",
         "name": "Screw",
         "description": [
-            "+0.5 Lágrimas",
+            "+0.5 Cadencia",
             "+0,2 velocidad de disparo"
         ],
         "quality": "3",
@@ -5041,8 +5035,8 @@
         "id": "258",
         "name": "Missing No",
         "description": [
-            "Al recogerlo, y al comienzo de cada piso, se renuevan todos tus objetos actuales, lo que te da un objeto nuevo para reemplazar cada uno de los que tenías.",
-            "También vuelve a lanzar todas tus estadísticas al mismo tiempo, lo que otorga un modificador fijo aleatorio que cambia cada vez.",
+            "Al recogerlo, y al comienzo de cada piso, se renuevan todos tus objetos actuales.",
+            "También vuelve a cambiar todas tus estadísticas al mismo tiempo.",
             "No afecta elementos importantes como Polaroid, negativos y piezas clave."
         ],
         "quality": "0",
@@ -5062,8 +5056,7 @@
         "description": [
             "+1.0 daño",
             "Las lágrimas ahora tienen la posibilidad de aplicar el efecto de miedo a los enemigos, lo que hace que huyan de Isaac.",
-            "La posibilidad de temer a los enemigos se ve afectada por tu estadística de suerte y, con +20 Suerte, se activará cada vez.",
-            "Un objeto que solo se encuentra en la piscina de la Sala del Diablo (Nota: El jefe Caído obtiene objetos de la Piscina de la Sala del Diablo)"
+            "La posibilidad de temer a los enemigos se ve afectada por tu estadística de suerte y, con +20 Suerte, se activará cada vez."
         ],
         "quality": "3",
         "tags": "* devil pool, devil room pool, devil deal, grey, gray, fist, glow",
@@ -5081,8 +5074,8 @@
         "name": "Black Candle",
         "description": [
             "+1 Corazón Negro",
-            "Inmunidad a todas las maldiciones de suelo (por ejemplo, Maldición de los perdidos)",
-            "Vela Negra elimina el efecto de teletransportación de Ojo Maldito",
+            "Inmunidad a todas las maldiciones del piso",
+            "Vela Negra elimina el efecto de teletransportación de Cursed Eye",
             "+15% de probabilidad de que se abra una sala de demonios o ángeles después de la pelea contra el jefe"
         ],
         "quality": "3",
@@ -5123,7 +5116,7 @@
         "description": [
             "+1 Corazón Negro",
             "Si la suma total de toda tu salud está en un corazón después de recibir daño, se activará el efecto del necronomicón, causando 40 de daño a toda la sala.",
-            "La página 2 faltante ahora duplica todo el daño del Corazón Negro y del Necronomicón a 80"
+            "Duplica todo el daño del Corazón Negro y del Necronomicón a 80"
         ],
         "quality": "0",
         "tags": "* demon beggar pool, demon judgement pool, devil beggar pool, secret room pool, devil pool, devil room pool, devil deal, the lost item pool, red, bloody, purple, paper",
@@ -5141,7 +5134,7 @@
         "id": "263",
         "name": "Clear Rune",
         "description": [
-            "Cuando se usa, copia el efecto de la Runa o Piedra del Alma que estás sosteniendo (como la Carta en Blanco)",
+            "Cuando se usa, copia el efecto de la Runa o Piedra del Alma que estás sosteniendo (como la Blank Card)",
             "Deja caer una runa aleatoria al suelo cuando se recoge.",
             "El tiempo de recarga de este objeto depende de la Runa/Piedra del Alma que se posea:",
             "1 habitación: Alma de Lázaro",
@@ -5191,8 +5184,7 @@
         "description": [
             "Un familiar que sigue a Isaac y bloquea cualquier disparo que lo alcance.",
             "Si Dry Baby bloquea un proyectil, tiene un 10 % de probabilidad de activar el efecto Necronomicon, lo que inflige 40 puntos de daño a toda la sala.",
-            "La probabilidad de activar el efecto no cambia según tu estadística de Suerte.",
-            "Puede caerse al destruir cráneos en los pisos de las Profundidades y la Necrópolis.",
+            "Puede dropear al destruir cráneos en los pisos de las Profundidades y la Necrópolis.",
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "3",
@@ -5210,7 +5202,7 @@
         "id": "266",
         "name": "Juicy Sack",
         "description": [
-            "Un familiar que sigue a Isaac y deja caer una criatura blanca que ralentiza a los enemigos que caminan sobre él.",
+            "Un familiar que sigue a Isaac y deja caer un charco blanco que ralentiza a los enemigos que caminan sobre él.",
             "Genera 1 o 2 arañas azules familiares después de cada habitación.",
             "Las arañas azules hacen el doble de daño que Isaac.",
             "Cuenta como 1 de los 3 elementos de araña necesarios para la transformación de Bebé Araña."
@@ -5333,7 +5325,6 @@
             "Una gran mosca negra familiar que rebota por la habitación y explota al entrar en contacto con los enemigos, infligiendo 70 de daño.",
             "No explota si golpea a Isaac, sin embargo, si explota en un enemigo mientras Isaac está dentro del alcance, recibirá daño.",
             "Reaparece después de 10 segundos o al moverse a otra habitación.",
-            "Recoger este objeto, así como otros 2 objetos de tipo mosca, te permitirá transformarte en El señor de las moscas.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
         ],
         "quality": "1",
@@ -5374,8 +5365,7 @@
         "name": "Best Bud",
         "description": [
             "Cuando Isaac recibe daño, aparecerá una mosca de ataque blanca que lo orbita a una distancia similar a la de la mosca de Admiración Distante.",
-            "La mosca orbita mucho más rápido que Admiración Distante o Solo para Siempre y causa 10 puntos de daño por cada tic.",
-            "Recoger este objeto, así como otros 2 objetos de tipo mosca, te permitirá transformarte en El señor de las moscas.",
+            "La mosca orbita muy rápido y causa 10 puntos de daño por cada tic.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
         ],
         "quality": "0",
@@ -5520,8 +5510,8 @@
         "id": "281",
         "name": "Punching Bag",
         "description": [
-            "Genera un Mulligan amistoso que camina por la habitación. Mulligan puede ser alcanzado por proyectiles enemigos, lo que lo convierte en un buen escudo.",
-            "Los enemigos a veces apuntarán al Mulligan si está más cerca."
+            "Genera un bicho amistoso que camina por la habitación. El bicho puede ser alcanzado por proyectiles enemigos, lo que lo convierte en un buen escudo.",
+            "Los enemigos a veces apuntarán al bicho si está más cerca."
         ],
         "quality": "1",
         "tags": "* item room, treasure room, item room pool, sad, baby, lumpy, brown, pink",
@@ -5561,8 +5551,7 @@
         "id": "283",
         "name": "D100",
         "description": [
-            "Al usarlo, el D100 activará los efectos de todos los demás dados a la vez, incluyendo D1, D4, D6, D7, D8, D10, D12 y D20. Busca \"Efecto de dado\" para ver todos esos dados y sus efectos.",
-            "Nota: Los efectos de repetición de ejecución completa (como D4) pueden eliminar los contenedores de corazón y las transformaciones si se pierden los elementos respectivos durante la repetición."
+            "Al usarlo, el D100 activará los efectos de todos los demás dados a la vez, incluyendo D1, D4, D6, D7, D8, D10, D12 y D20."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al vencer a Boss Rush con The Lost",
@@ -5582,10 +5571,8 @@
         "id": "284",
         "name": "D4",
         "description": [
-            "Cuando se usa, el D4 vuelve a lanzar cada elemento que tienes actualmente en otro elemento aleatorio del mismo grupo de elementos.",
-            "Si tienes un objeto sin reserva de sala (por ejemplo, Bolsa de sangre), se volverá a generar un objeto aleatorio de la Sala de objetos.",
-            "Los efectos de repetición de ejecución completa, como D4, pueden eliminar los contenedores de corazón y las transformaciones si se pierden los elementos respectivos durante la repetición.",
-            "No se puede eliminar el láser de brimstone de Azazel ni el manto sagrado de Los Perdidos."
+            "Cuando se usa, el D4 cambia cada item que tienes actualmente en otro item aleatorio del mismo grupo de elementos.",
+            "No se puede eliminar el láser de brimstone de Azazel ni el Holy Mantle de The Lost."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto haciendo explotar 30 máquinas tragamonedas.",
@@ -5651,7 +5638,7 @@
         "description": [
             "Al usarlo, tienes la posibilidad de obtener uno de los tres efectos siguientes: Mapa del tesoro (diseño del piso), Brújula (íconos del mapa) o Mapa azul (ubicaciones de habitaciones secretas).",
             "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm.",
-            "El Libro de Secretos evita otorgar efectos de mapeo que ya posees. Si el jugador posee todos los efectos de mapeo, otorga el efecto \"¡Puedo ver para siempre!\" para el suelo."
+            "El Libro de Secretos evita otorgar efectos de mapeo que ya posees. Si el jugador posee todos los efectos de mapeo, otorga el efecto \"¡Puedo ver para siempre!\" para el piso."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando a Satanás con Edén.",
@@ -5716,10 +5703,10 @@
         "id": "290",
         "name": "The Jar",
         "description": [
-            "Isaac ahora puede recoger corazones mientras tiene la salud completa, que se almacenarán en el frasco y se pueden generar nuevamente usando la barra espaciadora.",
+            "Isaac ahora puede recoger corazones mientras tiene la salud completa, que se almacenarán en el frasco y se pueden sacar usando el objeto.",
             "Se pueden almacenar hasta 4 corazones en el tarro",
             "Los Corazones de alma y los corazones negros no se pueden almacenar.",
-            "Si se usa en una sala súper secreta de Corazón Negro o Corazón Eterno, generará el corazón correspondiente."
+            "Si se usa en una sala súper secreta de Corazón Negro o Corazón Eterno, sacará el corazón correspondiente."
         ],
         "quality": "0",
         "tags": "* shop room pool, shop item pool, the lost item pool, glass",
@@ -5787,7 +5774,7 @@
         "description": [
             "Cuando se usa, dispara un láser de brimstone de 4 direcciones en todas las direcciones cardinales, lo que causa mucho daño a cualquier enemigo.",
             "El daño del láser no se ajusta a tu estadística de daño: es un daño fijo de 10 por tic durante 20 tics (200 en total por uso).",
-            "Tiene la posibilidad de caer después de vencer a Krampus.",
+            "Tiene la posibilidad de dropear después de vencer a Krampus.",
             "Si te acercas lo suficiente a un enemigo que tiene un área de impacto grande, puedes golpearlo con 2 rayos láser, lo que te permite causar más daño."
         ],
         "quality": "2",
@@ -5872,7 +5859,7 @@
         "id": "297",
         "name": "Pandora's Box",
         "description": [
-            "Cuando se usa, este objeto generará un conjunto de elementos o consumibles según el capítulo en el que se encuentre actualmente.",
+            "Cuando se usa, este objeto generará un conjunto de items o consumibles según el capítulo en el que se encuentre actualmente.",
             "Sótano 1: 2 Corazones de alma. Sótano 2: 2 Bombas + 2 Llaves",
             "Cuevas 1: 1 objeto de jefe. Cuevas 2: 1 objeto de jefe + 2 corazones de alma.",
             "Profundidades 1: 4 corazones de alma. Profundidades 2: 20 monedas.",
@@ -6043,7 +6030,7 @@
         "name": "Scorpio",
         "description": [
             "Las lágrimas de Isaac se vuelven de un verde brillante y siempre aplican un efecto de veneno a los enemigos que inflige un total del doble del daño de tus lágrimas.",
-            "Esta es esencialmente una versión superior del artículo The Common Cold.",
+            "Esta es esencialmente una versión superior del item The Common Cold.",
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
@@ -6062,7 +6049,7 @@
         "description": [
             "+0.2 Speed",
             "Otorga lágrimas penetrantes",
-            "Las lágrimas no viajan a través de las rocas con este artículo.",
+            "Las lágrimas no viajan a través de las rocas con este item.",
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
@@ -6104,7 +6091,7 @@
         "description": [
             "Deja un rastro de lágrimas en el suelo detrás de Isaac que daña a los enemigos que caminan sobre él por 2 puntos de daño por cada tic.",
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios",
-            "Acuario se sinergiza con los efectos lacrimógenos"
+            "Se sinergiza con los efectos de lágrimas"
         ],
         "quality": "2",
         "tags": "* astrology, astronomy, item room, treasure room, item room pool, black, blue, cyan, blue, lightning, bolt, hot garbage",
@@ -6120,7 +6107,7 @@
         "id": "309",
         "name": "Pisces",
         "description": [
-            "-1 Retraso de lágrima (Lágrimas arriba)",
+            "-1 Retraso de lágrima (Cadencia mejorada)",
             "x1.25 Tamaño de lágrima aumentado",
             "Las lágrimas ahora tienen un efecto de retroceso mayor, que empuja a los enemigos hacia atrás.",
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
@@ -6201,8 +6188,8 @@
             "Cada vez que ingresas a una nueva habitación, el daño se niega la primera vez que recibes un golpe.",
             "Se puede usar para entrar y salir de una sala maldita sin recibir daño.",
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín.",
-            "The Lost comienza con este objeto después de donar 879 monedas a la Máquina de Donación de Avaricia.",
-            "ARREPENTIMIENTO - El Manto Sagrado de los Perdidos ya no puede volver a lanzarse utilizando un objeto como D4."
+            "The Lost comienza con este objeto después de donar ??? monedas a la Máquina de Donación de Avaricia.",
+            "El Manto Sagrado de The lost no puede perderse utilizando un objeto como D4."
         ],
         "quality": "4",
         "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, starting, blue, white, glow, cross",
@@ -6225,7 +6212,7 @@
             "Ahora puedes romper obstáculos caminando sobre ellos.",
             "Cura un contenedor de corazón rojo al recogerlo.",
             "Los agujeros en el suelo se pueden rellenar triturando rocas adyacentes, de forma similar a como se puede hacer con las bombas.",
-            "Te permite aplastar a los mierda Roja y, a veces, no recibir daño. Sin embargo, si también tienes habilidad de volar, siempre recibirás daño."
+            "Te permite aplastar a las mierdas Rojas y, a veces, no recibir daño. Sin embargo, si también tienes habilidad de volar, siempre recibirás daño."
         ],
         "quality": "1",
         "tags": "* item room, treasure room, item room pool, cheetos, cheese, grey, gray, orange, jar",
@@ -6261,8 +6248,7 @@
             "Las lágrimas ahora se cargan y se disparan rápidamente en una ráfaga de hasta 5 disparos a la vez.",
             "La cantidad de lágrimas disparadas en la carga depende de cuánto tiempo se carga.",
             "El ojo tiene tres estados: blanco (sin disparar), negro (primer segundo de carga) y parpadeante entre blanco y negro. Si recibes un golpe mientras el ojo maldito está completamente negro, te teletransportarás a otra habitación aleatoria en el suelo. Si recibes un golpe en cualquiera de los otros dos estados, no te teletransportarás.",
-            "El objeto Vela Negra eliminará el efecto de teletransportación del Ojo Maldito.",
-            "ARREPENTIMIENTO - Ráfaga ahora tiene 5 disparos en lugar de 4"
+            "El objeto Vela Negra eliminará el efecto de teletransportación del Ojo Maldito."
         ],
         "quality": "0",
         "tags": "* secret room pool, item room, treasure room, item room pool, white, circle, pearl",
@@ -6280,7 +6266,7 @@
         "id": "317",
         "name": "Mysterious Liquid",
         "description": [
-            "Cuando las lágrimas de Isaac golpean cualquier cosa, dejan una criatura tóxica verde en el suelo que daña a los enemigos por 1 punto de daño por cada tic."
+            "Cuando las lágrimas de Isaac golpean cualquier cosa, dejan un charco tóxico verde en el suelo que daña a los enemigos por 1 punto de daño por cada tic."
         ],
         "quality": "3",
         "tags": "* item room, treasure room, item room pool, mystery liquid, grey, gray, green",
@@ -6375,8 +6361,7 @@
         "description": [
             "Un familiar que seguirá a Isaac y copiará el efecto de uno de tus otros familiares.",
             "Si no tienes otros familiares, simplemente disparará lágrimas normales.",
-            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined",
-            "ARREPENTIMIENTO - Se eliminó el multiplicador de daño doble en los ataques de Mongo Baby"
+            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined"
         ],
         "quality": "2",
         "tags": "* item room, treasure room, item room pool, pink, blue, grey, gray",
@@ -6436,8 +6421,7 @@
         "name": "Scissors",
         "description": [
             "Al usarlo, te separará la cabeza del cuerpo. La cabeza de Isaac permanecerá inmóvil y lanzará lágrimas. Su cuerpo puede ser controlado y escupe sangre cerca.",
-            "Las lágrimas disparadas desde la cabeza hacen un daño fijo de 3,5 y no escalan.",
-            "ARREPENTIMIENTO - Se ha rediseñado Tijeras. La cabeza estacionaria ahora se ve afectada por las estadísticas y modificadores de ataque de Isaac, y el cuerpo expulsará una fuente controlable de disparos de sangre. El tiempo de carga aumentó de 2 a 4."
+            "Se ha rediseñado Tijeras. La cabeza estacionaria ahora se ve afectada por las estadísticas y modificadores de ataque de Isaac, y el cuerpo expulsará una fuente controlable de disparos de sangre."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto muriendo 100 veces",
@@ -6524,7 +6508,7 @@
         "name": "The Ludovico Technique",
         "description": [
             "Ya no disparas lágrimas y en su lugar ahora controlas una única lágrima grande con las teclas de flecha",
-            "Los elementos que aumentan tu estadística de lágrimas harán que estas causen daño a un ritmo más rápido.",
+            "Los elementos que aumentan tu estadística de cacencia harán que estas causen daño a un ritmo más rápido.",
             "Los elementos que aumentan la velocidad de disparo hacen que la lágrima viaje más rápido por la pantalla.",
             "Ludo y Brimstone crean un gran anillo rojo controlable de la muerte que causa un daño masivo a todo lo que se encuentra en su camino.",
             "Tomar esto con el Cuchillo de Mamá te permite controlar remotamente el cuchillo por la habitación, lo que causa un daño enorme."
@@ -6544,10 +6528,9 @@
         "id": "330",
         "name": "Soy Milk",
         "description": [
-            "Lágrimas muy altas: Lágrimas * 5.5",
+            "Cadencia muy alta: Cadencia * 5.5",
             "-80% de reducción de daño",
-            "x0.5 Tamaño de lágrima",
-            "ARREPENTIMIENTO - Las lágrimas de leche de soja ahora causan drásticamente menos retroceso"
+            "x0.5 Tamaño de lágrima"
         ],
         "quality": "2",
         "tags": "* item room, treasure room, item room pool, white, glass, square",
@@ -6632,7 +6615,7 @@
             "Los tres contenedores de corazones están prellenados con corazones rojos."
         ],
         "quality": "3",
-        "unlock": "Desbloquea este objeto superando el Cofre con Los Perdidos",
+        "unlock": "Desbloquea este objeto superando el Cofre con The Lost",
         "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, real platinum god, the lost item pool",
         "type_list": [
             "Pasivo"
@@ -6667,7 +6650,7 @@
         "name": "Dead Onion",
         "description": [
             "Las lágrimas de Isaac se vuelven grandes, marrones y penetrarán todos los objetos y enemigos (perforantes + espectrales)",
-            "-1.2 Alcance hacia abajo",
+            "-1.2 Alcance",
             "-0,4 reducción de velocidad de disparo",
             "x1.5 Tamaño de lágrima",
             "A pesar del aumento del tamaño de las lágrimas, Cebolla Muerta NO aumenta tu estadística de daño. Tampoco inflige daño por veneno a pesar de tener el eslogan \"lágrimas de aura tóxicas\"."
@@ -6687,8 +6670,7 @@
         "name": "Broken Watch",
         "description": [
             "Al ingresar a cada cuarta habitación inexplorada, el Reloj Roto ralentizará o acelerará a todos los enemigos en la habitación.",
-            "El efecto lento es mucho más común que el de Speed.",
-            "Un artículo que solo se encuentra en el grupo de artículos de la Tienda"
+            "El efecto lento es mucho más común que el de Speed."
         ],
         "quality": "1",
         "tags": "* shop room pool, shop item pool, blue, grey, gray, smashed, clock, broken stop watch, broken stopwatch",
@@ -6708,8 +6690,7 @@
             "El daño infligido por el bumerán es igual al doble de tu daño.",
             "El bumerán también se puede usar para agarrar objetos y consumibles a distancia, similar al bumerán de la leyenda de Zelda.",
             "El alcance del bumerán se ve afectado por el alcance; en el número uno, la distancia es muy corta y hace que el objeto sea mucho menos efectivo.",
-            "El bumerán se puede usar para matar cadáveres de comerciantes, lo que te permite cultivar sus botines para obtener monedas, artículos, ofertas de Steam, etc.",
-            "ARREPENTIMIENTO - El bumerán ahora es penetrante y tiene mucho menos tiempo de inactividad entre su lanzamiento y poder volver a disparar lágrimas."
+            "El bumerán se puede usar para matar cadáveres de comerciantes, lo que te permite pillar sus rewards para obtener monedas, artículos, ofertas de Steam, etc."
         ],
         "quality": "1",
         "tags": "* shop room pool, shop item pool, crescent, moon, blue, grey, gray",
@@ -6730,8 +6711,7 @@
         "description": [
             "+1,5 alcance",
             "+0,16 velocidad de disparo",
-            "+1 Corazón Negro",
-            "Cuando se agotan, los Corazones Negros infligen 40 de daño a toda la sala, con un efecto estilo Necronomicón."
+            "+1 Corazón Negro"
         ],
         "quality": "1",
         "tags": "* boss room pool, boss room item, grey, gray, punk",
@@ -6749,8 +6729,7 @@
         "description": [
             "+0.3 Speed",
             "Reduce el tamaño de Isaac y el área de impacto de tu jugador, lo que hace que sea menos probable que te golpeen.",
-            "Te da una pastilla al azar cuando la recoges",
-            "Un objeto que solo se encuentra en la piscina de la sala del jefe."
+            "Te da una pastilla al azar cuando la recoges"
         ],
         "quality": "1",
         "tags": "* boss room pool, boss room item, pro plus, tablet, medicine, white",
@@ -6766,7 +6745,7 @@
         "id": "341",
         "name": "Torn Photo",
         "description": [
-            "+0.7 Lágrimas",
+            "+0.7 Cadencia",
             "+0,16 velocidad de disparo"
         ],
         "quality": "3",
@@ -6785,10 +6764,9 @@
         "name": "Blue Cap",
         "description": [
             "+1 HP",
-            "+0.7 Lágrimas",
+            "+0.7 Cadencia",
             "-0,16 reducción de velocidad de disparo",
             "Cura un contenedor de corazón rojo al recogerlo.",
-            "Un objeto que solo se encuentra en el grupo de la Sala del Jefe",
             "Cuenta como 1 de los 3 elementos de hongo necesarios para la transformación de Fun Guy."
         ],
         "quality": "3",
@@ -6805,7 +6783,7 @@
         "id": "343",
         "name": "Latch Key",
         "description": [
-            "+1 Suerte arriba",
+            "+1 Suerte",
             "+1 Corazón de alma",
             "Genera 2 llaves en el suelo."
         ],
@@ -6827,8 +6805,7 @@
         "description": [
             "+1 Corazón Negro",
             "+3 Bombas",
-            "Cuando se agotan, los Corazones Negros infligen 40 de daño a toda la sala, con un efecto estilo Necronomicón.",
-            "ARREPENTIMIENTO - También suelta la baratija de cerilla."
+            "También suelta la trinket de cerilla."
         ],
         "quality": "1",
         "tags": "* boss room pool, boss room item, white, red",
@@ -6882,7 +6859,7 @@
         "description": [
             "Un artículo de un solo uso que, al usarse, duplicará cualquier artículo de pedestal o consumible en la sala actual.",
             "Si se utilizan en una tienda, los artículos duplicados se pueden llevar de forma gratuita.",
-            "Si se usa en una baratija, aparecerá otra baratija aleatoria en lugar de un duplicado.",
+            "Si se usa en un trinket, aparecerá otro trinket aleatorio en lugar de un duplicado.",
             "Si se usan en Boss Rush, todos los duplicados se pueden tomar gratis, así como uno de los elementos originales.",
             "Si se usan en una Sala del Diablo o en el Mercado Negro, los duplicados se pueden tomar de forma gratuita."
         ],
