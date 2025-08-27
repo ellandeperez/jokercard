@@ -812,7 +812,7 @@
         "name": "Bob's Rotten Head",
         "description": [
             "Una bomba venenosa que se puede lanzar en la direción que desees.",
-            "La bomba causa 185 de daño + tu daño al impactar y deja un efecto de veneno con daño en el tiempo que hace 3 veces tu daño de desgarro por cada tic.",
+            "La bomba causa 185 de daño + tu daño al impactar y deja un efecto de veneno con daño en el tiempo que hace 3 veces tu daño de lagrima por cada tic.",
             "Se sinergiza con elementos que modifican lágrimas como My Reflection o Tiny Planet.",
             "Tiene la posibilidad de dropear de la pelea contra el minijefe Sloth.",
             "Cuenta como 1 de los 3 elementos venenosos necesarios para la transformación de Bob."
@@ -1789,7 +1789,7 @@
             "No puedes disparar lágrimas mientras el efecto esté activo."
         ],
         "quality": "1",
-        "unlock": "Desbloquea este objeto visitando 10 salas de juego.",
+        "unlock": "Desbloquea este objeto visitando 10 salas arcade.",
         "tags": "* item room, treasure room, item room pool, gameboy, grey, gray, white",
         "type_list": [
             "Activa"
@@ -1824,7 +1824,7 @@
         "id": "95",
         "name": "Robo-Baby",
         "description": [
-            "Un familiar que sigue a Isaac y dispara láseres, similar al objeto de Tecnología.",
+            "Un familiar que sigue a Isaac y dispara láseres.",
             "El láser de Robo-Baby es espectral y penetrante (atravesará rocas y objetos del entorno)",
             "Los láseres de Robo-Baby causan 3,5 de daño por golpe.",
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta."
@@ -1863,8 +1863,8 @@
         "id": "97",
         "name": "The Book of Sin",
         "description": [
-            "Genera un objeto de recogida aleatorio en el suelo.",
-            "Es posible recolectar cualquier cosa de este artículo, incluidas bombas, corazones, llaves, monedas, píldoras, baterías, cartas del tarot, runas, etc.",
+            "Genera un objeto consumible aleatorio en el suelo.",
+            "Bombas, corazones, llaves, monedas, píldoras, baterías, cartas del tarot, runas, etc.",
             "No produce microbaterías, solo de tamaño regular y rara vez baterías doradas o mega",
             "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
         ],
@@ -1909,8 +1909,7 @@
         "description": [
             "Un familiar que sigue a Isaac y dispara lágrimas de alquitrán negro, que ralentizan el movimiento del enemigo y la velocidad del proyectil durante unos segundos.",
             "Las lágrimas del pequeño Gish hacen 3,5 de daño.",
-            "El pequeño Gish dispara lágrimas a una velocidad de 1 lágrima por segundo.",
-            "Una caída garantizada de la pelea contra el jefe Gish"
+            "Lo dropea el jefe Gish"
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a las Profundidades 20 veces y matando al jefe Gish.",
@@ -1930,7 +1929,7 @@
         "name": "Little Steven",
         "description": [
             "Un familiar que sigue a Isaac y dispara lágrimas teledirigidas que infligen 3,5 de daño cada una.",
-            "Tiene una alta probabilidad de caerse en la pelea contra el jefe Steven.",
+            "Tiene una alta probabilidad de dropear en la pelea contra el jefe Steven.",
             "El pequeño Steven dispara lágrimas a una velocidad de 1 lágrima por segundo con un alcance ligeramente mayor que otros familiares.",
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta"
         ],
@@ -2018,7 +2017,7 @@
         "name": "The Parasite",
         "description": [
             "Las lágrimas de Isaac ahora se dividen en dos al entrar en contacto con enemigos o el entorno.",
-            "Las lágrimas que se desprenden del desgarro principal causan menos daño (daño * 0,5)",
+            "Las lágrimas que se desprenden de la lagrima principal causan menos daño (daño * 0,5)",
             "Las lágrimas pueden seguir partiéndose si aún tienen alcance y daño superior a 1."
         ],
         "quality": "3",
@@ -2165,7 +2164,7 @@
         "description": [
             "Al usarlo, este objeto hace que Isaac se tire pedos y envenene a los enemigos cercanos.",
             "El frijol causa 5 puntos de daño y luego envenena a los enemigos por un total de 6 ticks de daño.",
-            "El veneno inflige tu daño de desgarro actual por cada tic."
+            "El veneno inflige tu daño de lagrima actual por cada tic."
         ],
         "quality": "0",
         "tags": "* normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, team bean, #teambean, brown, kidney",
@@ -2227,8 +2226,8 @@
         "description": [
             "Las lágrimas se reemplazan con un cuchillo que se puede cargar y lanzar en una acción estilo bumerán.",
             "El cuchillo también puede hacer daño sin ser lanzado como un arma cuerpo a cuerpo de corto alcance.",
-            "Cuando se usa como arma cuerpo a cuerpo, el Cuchillo de mamá inflige daño de desgarro * 2 por tic.",
-            "En el punto más alejado de Isaac, el cuchillo inflige daño de desgarro * 6",
+            "Cuando se usa como arma cuerpo a cuerpo, el Cuchillo de mamá inflige daño de lagrima * 2 por tic.",
+            "En el punto más alejado de Isaac, el cuchillo inflige daño de lagrima * 6",
             "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
         ],
         "quality": "4",
@@ -2287,7 +2286,7 @@
         "id": "118",
         "name": "Brimstone",
         "description": [
-            "Las lágrimas se reemplazan con la capacidad de cargar y disparar un poderoso láser que viaja en línea recta por toda la habitación, lo que causa mucho daño (el daño de desgarro golpea durante 9 ticks por láser) a cualquier enemigo con el que entra en contacto.",
+            "Las lágrimas se reemplazan con la capacidad de cargar y disparar un poderoso láser que viaja en línea recta por toda la habitación, lo que causa mucho daño (el daño de lagrima golpea durante 9 ticks por láser) a cualquier enemigo con el que entra en contacto.",
             "No afecta directamente tu estadística de daño, pero golpea a los enemigos 9 veces por carga.",
             "Se sinergiza muy bien con muchos elementos, incluidos Tammy's Head, Tiny Planet, Inner Eye (Triple Shot), Mutant Spider (Quad Shot) y muchos otros.",
             "Si de alguna manera logras obtener un segundo Brimstone, el láser se vuelve masivo y causa el doble de daño."
@@ -2930,7 +2929,7 @@
         "description": [
             "Las lágrimas de Isaac son reemplazadas por bombas venenosas explosivas, que se arquearán hacia arriba y explotarán al entrar en contacto con el suelo, causando un daño enorme y dejando un efecto de veneno en los enemigos dentro del alcance.",
             "Los disparos de ipecacuana reciben un daño fijo de +40 además del daño base normal de 3,5.",
-            "- Cadencia (Retraso de desgarro * 2 + 10)",
+            "- Cadencia (Retraso de lagrima * 2 + 10)",
             "Escalas de tamaño de explosión de ipecacuana con tamaño de lágrima",
             "Los disparos dañarán a Isaac si está en el radio de explosión cuando explotan.",
             "Cuenta como 1 de los 3 elementos venenosos necesarios para la transformación de Bob."
@@ -2953,7 +2952,7 @@
         "name": "Tough Love",
         "description": [
             "Isaac tiene una posibilidad aleatoria de disparar un diente en lugar de una lágrima a veces.",
-            "Los disparos de dientes infligen un daño igual a tu daño de desgarro * 3.2",
+            "Los disparos de dientes infligen un daño igual a tu daño de lagrima * 3.2",
             "La posibilidad de disparar un diente se ve afectada por tu estadística de suerte y con +9 Suerte se activará cada vez",
             "Se sinergiza bien con algunos modificadores de lágrimas como Ipecacuana, lo que hace que cause un daño masivo."
         ],
@@ -4514,7 +4513,7 @@
         "name": "Monstro's Lung",
         "description": [
             "Ahora las lágrimas se pueden cargar y liberar con un efecto estilo escopeta, muy parecido al ataque principal de Monstro.",
-            "- Cadencia (Retraso de desgarro * 4.3)",
+            "- Cadencia (Retraso de lagrima * 4.3)",
             "La carga parcial no hace nada: debe estar completamente cargada para usarla"
         ],
         "quality": "2",
@@ -4792,7 +4791,7 @@
         "name": "Tech.5",
         "description": [
             "Le da a Isaac un láser que disparará a intervalos aleatorios además de sus lágrimas normales.",
-            "Cada láser causa un daño igual a tu daño de desgarro actual.",
+            "Cada láser causa un daño igual a tu daño de lagrima actual.",
             "El láser se disparará ocasionalmente con uno de estos efectos: Gusano gancho, Doblador de cucharas, Planeta diminuto, Líquido misterioso, Cemento de caucho",
             "La suerte no tiene efecto en la velocidad a la que se activa Tech.5 y no se escala con elementos que aumentan tu estadística de lágrimas."
         ],
@@ -4853,7 +4852,7 @@
         "description": [
             "Hace que todos los familiares de Isaac sean más fuertes y más grandes.",
             "Hace que la mayoría de los familiares inflijan el doble de daño.",
-            "No tiene efecto en la mayoría de los familiares que escalan con el daño de desgarro de Isaac."
+            "No tiene efecto en la mayoría de los familiares que escalan con el daño de lagrima de Isaac."
         ],
         "quality": "2",
         "tags": "* key master pool, key beggar pool, key judgement pool, shop room pool, shop item pool, red, arrow",
@@ -5122,7 +5121,7 @@
         "name": "Proptosis",
         "description": [
             "Otorga a Isaac lágrimas de alto daño con un alcance corto.",
-            "El tamaño del desgarro y el daño disminuyen muy rápido con este objeto, cuanto más lejos viaja el desgarro, menos daño causa.",
+            "El tamaño de la lagrima y el daño disminuyen muy rápido con este objeto, cuanto más lejos viaja la lagrima, menos daño causa.",
             "El daño comienza en el triple (300 %) y disminuye con el alcance hasta llegar al 0 %."
         ],
         "quality": "3",
@@ -6043,7 +6042,7 @@
             "Te da 6 llaves, 6 bombas y 6 monedas.",
             "Equilibra tus estadísticas principales para acercar las estadísticas altas y bajas a un valor promedio.",
             "Todos los objetos que mejoren las estadísticas en el futuro se distribuirán entre todas las demás estadísticas. Por ejemplo, un objeto que normalmente otorga +1 de daño otorgará un pequeño todas las estadísticas.",
-            "Las estadísticas afectadas por este objeto son: Daño, Desgarros, Alcance, Velocidad.",
+            "Las estadísticas afectadas por este objeto son: Daño, Cadencia, Alcance, Velocidad.",
             "Cuando se toma con otro elemento que otorga un valor extremo en una determinada estadística (por ejemplo, leche de soja), puede generar sinergias interesantes.",
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
@@ -6159,7 +6158,7 @@
         "name": "Eve's Mascara",
         "description": [
             "Multiplicador de daño x2",
-            "Se desgarra exactamente a la mitad (Retraso de desgarro * 2)",
+            "Cadencia baja a la mitad actual",
             "-0,5 Disminución de la velocidad de disparo",
             "Las lágrimas de este objeto son un multiplicador x2.0 después de la fórmula, lo que significa que siempre reducirá a la mitad tu tasa de lágrimas (a menos que tengas Pulmón de Monstruo o Leche de Soja)"
         ],
@@ -6987,7 +6986,7 @@
         "name": "Mega Bean",
         "description": [
             "Cuando se usa, el Mega Frijol congelará a todos los enemigos en la habitación actual por un par de segundos, causará 5 de daño y envenenará a los enemigos cercanos y enviará una ola de púas a través de la habitación en la dirección en la que estás mirando.",
-            "Los enemigos a corta distancia recibirán 5 puntos de daño y luego tendrán un efecto de veneno a lo largo del tiempo que inflige daño de desgarro 4 o 6 veces.",
+            "Los enemigos a corta distancia recibirán 5 puntos de daño y luego tendrán un efecto de veneno a lo largo del tiempo que inflige daño de lagrima 4 o 6 veces.",
             "La ola de púas causará 10 puntos de daño a cualquier enemigo que entre en contacto con ella.",
             "Se puede utilizar para abrir habitaciones secretas."
         ],
@@ -7175,7 +7174,7 @@
         "name": "Incubus",
         "description": [
             "Te da un íncubo demoníaco familiar que te sigue y dispara lágrimas que escalan con tus propias lágrimas en términos de daño, estadísticas y también efectos.",
-            "Imitará cualquier efecto de desgarro que tengas actualmente y también copiará tus estadísticas actuales, lo que significa que disparará con el mismo daño, velocidad de disparo y alcance.",
+            "Imitará cualquier efecto de lagrima que tengas actualmente y también copiará tus estadísticas actuales, lo que significa que disparará con el mismo daño, velocidad de disparo y alcance.",
             "Lilith comienza con este objeto",
             "El daño de Incubus se reduce en un 25% cuando se juega con personajes distintos a Lilith.",
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación conjunta"
@@ -7451,7 +7450,7 @@
             "Le otorga a Isaac un +25% de daño por cada lágrima que golpea con éxito a un enemigo.",
             "La bonificación de Dead Eye llega al doble de tu daño (+100%)",
             "Si una lágrima no alcanza a un enemigo, existe la posibilidad de que el multiplicador se restablezca a 1. Es una probabilidad del 20 % en el primer fallo, del 33 % en un segundo fallo y del 50 % para cualquier cosa más allá de eso.",
-            "Los disparos penetrantes funcionan con este objeto y varios golpes con un solo desgarro otorgarán una bonificación de daño cada uno."
+            "Los disparos penetrantes funcionan con este objeto y varios golpes con una sola lágrima otorgarán una bonificación de daño cada uno."
         ],
         "quality": "3",
         "tags": "*, bullseye, target, grey, gray, black, red, circle",
@@ -8026,7 +8025,7 @@
         "description": [
             "Las lágrimas ahora tienen una probabilidad aleatoria de convertirse en bombas adhesivas, que se adherirán a los enemigos y explotarán después de unos segundos.",
             "La explosión de la bomba inflige daño + 60",
-            "Los disparos explosivos causan daño de desgarro regular al adherirse a un enemigo."
+            "Los disparos explosivos causan daño de lagrima regular al adherirse a un enemigo."
         ],
         "quality": "3",
         "tags": "*, orange, black, ball, circle, explode",
@@ -8129,7 +8128,7 @@
         "name": "D8",
         "description": [
             "When used, the D8 rerolls all of your stats",
-            "Solo afectará tus estadísticas de daño, desgarros, alcance y velocidad.",
+            "Solo afectará tus estadísticas de daño, cadencia, alcance y velocidad.",
             "A cada estadística se le asigna un multiplicador que se aplica después de todos los demás ajustes."
         ],
         "quality": "2",
@@ -8155,7 +8154,7 @@
             "Cuando recibas daño, el aura se eliminará y se reemplazará con otra aleatoria cuando ingreses a la siguiente habitación.",
             "El código de colores es el siguiente:",
             "Rojo = +4.0 Daño",
-            "Azul = -4 Retraso de desgarro",
+            "Azul = -4 Retraso de lagrima",
             "Amarillo = +0,5 Speed",
             "Naranja = +3,0 Alcance "
         ],
@@ -8362,7 +8361,7 @@
         "id": "417",
         "name": "Succubus",
         "description": [
-            "Un familiar volador que rebota por la habitación con un aura dañina, infligiendo daño rápido a cualquier enemigo dentro de él y aumentando el daño de desgarro de Isaac.",
+            "Un familiar volador que rebota por la habitación con un aura dañina, infligiendo daño rápido a cualquier enemigo dentro de él y aumentando el daño de lagrima de Isaac.",
             "Mientras está parado en el aura negra, Isaac tiene un multiplicador de daño temporal de 1.5x (esto se acumulará si tienes más de un súcubo)",
             "El aura causa 2,5 de daño por tic o alrededor de 7,5 - 10 de daño por segundo."
         ],
@@ -8490,7 +8489,7 @@
         "name": "Circle of Protection",
         "description": [
             "Le da a Isaac un gran halo blanco a su alrededor, que inflige un poco de daño a cualquier enemigo en contacto con el anillo.",
-            "Cada vez que una bala enemiga entra en el ring, existe la posibilidad de que refleje un desgarro teledirigido hacia el enemigo."
+            "Cada vez que una bala enemiga entra en el ring, existe la posibilidad de que refleje una lágrima teledirigida hacia el enemigo."
         ],
         "quality": "2",
         "tags": "*, white, bandana, circle, bandage",
@@ -8808,7 +8807,7 @@
         "description": [
             "Cuando se usa, la Caja de Mamá dejará caer una baratija aleatoria en el suelo.",
             "+1 Suerte mientras se mantiene",
-            "Mientras se mantiene, duplica el efecto de las baratijas que tiene sentido duplicar (por ejemplo, +4 de daño de Cuerno curvo en lugar de 2, -4 Retraso de desgarro de Cáncer en lugar de 2)"
+            "Mientras se mantiene, duplica el efecto de las baratijas que tiene sentido duplicar (por ejemplo, +4 de daño de Cuerno curvo en lugar de 2, -4 Retraso de lagrima de Cáncer en lugar de 2)"
         ],
         "quality": "2",
         "tags": "*, black, purple, mom box, moms box",
@@ -8848,7 +8847,7 @@
         "id": "441",
         "name": "Mega Blast",
         "description": [
-            "Al usarlo, dispara un enorme láser Mega Satán durante 15 segundos, lo que inflige daño de desgarro * 5 por tic a todo lo que se encuentre en su camino y empuja a Isaac hacia atrás con la fuerza.",
+            "Al usarlo, dispara un enorme láser Mega Satán durante 15 segundos, lo que inflige daño de lagrima * 5 por tic a todo lo que se encuentre en su camino y empuja a Isaac hacia atrás con la fuerza.",
             "El láser persiste durante los 15 segundos completos, incluso entre habitaciones y pisos.",
             "Este objeto aparece en la Sala del Diablo, pero se considera que es aproximadamente 5 veces más raro que todos los demás objetos de la Sala del Diablo."
         ],
@@ -8950,7 +8949,7 @@
         "id": "446",
         "name": "Dead Tooth",
         "description": [
-            "Al disparar, obtienes un aura verde que envenena a los enemigos que la tocan. El veneno inflige daño de desgarro por cada tic, durante 2 tics.",
+            "Al disparar, obtienes un aura verde que envenena a los enemigos que la tocan. El veneno inflige daño de lagrima por cada tic, durante 2 tics.",
             "No tiene efecto sobre Lilith, ya que no puede disparar lágrimas."
         ],
         "quality": "1",
@@ -8968,7 +8967,7 @@
         "name": "Linger Bean",
         "description": [
             "Mientras disparas lágrimas constantemente durante 7,5 segundos, generas una nube de mierda que inflige daño periódico a cualquier enemigo que se acerque a ella.",
-            "La nube inflige daño igual a tu daño de desgarro base por cada tic, aproximadamente 5 veces por segundo.",
+            "La nube inflige daño igual a tu daño de lagrima base por cada tic, aproximadamente 5 veces por segundo.",
             "Las nubes duran 15 segundos antes de desaparecer.",
             "La nube se puede empujar ligeramente lanzándole lágrimas."
         ],
@@ -8990,7 +8989,7 @@
             "Al recibir daño, Isaac comienza a sangrar, dejando un rastro de sangre y rociando lágrimas de sangre por todas partes que infligen daño a los enemigos cercanos.",
             "Mientras sangra, Isaac recibe daño cada 30 segundos.",
             "La sangre se esparce en la dirección en la que estás disparando, o al azar cerca de Isaac si no estás disparando tus lágrimas.",
-            "El rocío de sangre aumenta con tu daño de desgarro actual y cualquier daño futuro aumenta.",
+            "El rocío de sangre aumenta con tu daño de lagrima actual y cualquier daño futuro aumenta.",
             "Este efecto dura hasta que recojas un corazón rojo.",
             "Al recibir daño, este objeto otorga un 25 % de probabilidad de dejar caer un corazón rojo completo.",
             "ARREPENTIMIENTO - Todo este artículo ha sido reelaborado"
@@ -9086,7 +9085,7 @@
         "name": "Compound Fracture",
         "description": [
             "+0,38 Alcance ",
-            "Los fragmentos de hueso más pequeños infligen un daño equivalente a la mitad del daño de desgarro normal.",
+            "Los fragmentos de hueso más pequeños infligen un daño equivalente a la mitad del daño de lagrima normal.",
             "+0,38 Alcance "
         ],
         "quality": "3",
@@ -9216,7 +9215,7 @@
             "Añade una posibilidad de disparar una lágrima conmocionante, que hará que los enemigos caminen aturdidos y confundidos.",
             "El efecto de aturdimiento es efectivamente permanente para los enemigos normales y tiene una duración mucho mayor para los jefes en comparación con otros efectos de estado.",
             "Hace que todas las habitaciones sean un poco más oscuras",
-            "El efecto visual de un desgarro por glaucoma es difícil de notar, sin embargo, es ligeramente más claro que las lágrimas normales y no tiene una forma circular perfecta."
+            "El efecto visual de una lágrima por glaucoma es difícil de notar, sin embargo, es ligeramente más claro que las lágrimas normales y no tiene una forma circular perfecta."
         ],
         "quality": "1",
         "tags": "*, white, circle, eye, circle",
@@ -9543,7 +9542,7 @@
             "Cuando se usa, Vacío consumirá cualquier elemento del pedestal en la sala actual.",
             "Si se consume un objeto activo, su efecto se agregará al efecto de Vacío cuando se use, lo que te permitirá consumir varios objetos y combinar sus efectos.",
             "Si se consume un objeto pasivo, obtienes una pequeña mejora de estadística a una estadística aleatoria.",
-            "Los posibles cambios de estadísticas incluyen: +1.0 daño fijo, +0.5 desgarros, +0.2 velocidad, +0.2 velocidad de disparo, +0.5 alcance, +1.0 suerte",
+            "Los posibles cambios de estadísticas incluyen: +1.0 daño fijo, +0.5 cadencia, +0.2 velocidad, +0.2 velocidad de disparo, +0.5 alcance, +1.0 suerte",
             "El vacío no funciona en tratos con el diablo ni en artículos de la tienda a menos que se hayan comprado primero.",
             "Usar Void para absorber elementos en Boss Rush o Salas de desafío cuenta como tomar los elementos y hará que el encuentro comience",
             "Usar Void en objetos de un solo uso como Mama Mega o Diplopia hará que su efecto se active instantáneamente y no te dará más usos al activar Void nuevamente."
@@ -9932,7 +9931,7 @@
             "Isaac obtiene lágrimas eléctricas, que disparan 1 o 2 chispas de electricidad en direcciones aleatorias al golpear cualquier objeto o enemigo.",
             "La electricidad se encadenará entre los enemigos cercanos.",
             "La electricidad causa la mitad del daño normal.",
-            "Los efectos de desgarro seguirán aplicándose a tus chispas eléctricas en muchos casos. Doblacucharas les otorgará un efecto de búsqueda, y efectos de estado como miedo/veneno se propagarán a todos los enemigos a los que las cadenas eléctricas...",
+            "Los efectos de lagrima seguirán aplicándose a tus chispas eléctricas en muchos casos. Doblacucharas les otorgará un efecto de búsqueda, y efectos de estado como miedo/veneno se propagarán a todos los enemigos a los que las cadenas eléctricas...",
             "Las lágrimas que caen naturalmente al suelo a máxima distancia no generan chispas.",
             "Es posible disparar lágrimas a una pared para crear electricidad que daña a los enemigos del otro lado de la pared."
         ],
@@ -9953,7 +9952,7 @@
         "description": [
             "Cada lágrima ahora tiene una pequeña posibilidad de convertirse en una llama azul espectral, que inflige daño a los enemigos que entran en contacto con ella.",
             "El fuego permanecerá en su lugar y se reducirá al infligir daño. Tras infligir suficiente daño, desaparecerá.",
-            "En su tamaño completo, la llama inflige 6 veces tu daño de desgarro y se reduce a 3 veces en su tamaño más pequeño.",
+            "En su tamaño completo, la llama inflige 6 veces tu daño de lagrima y se reduce a 3 veces en su tamaño más pequeño.",
             "La probabilidad de que cada lágrima se convierta en una llama se ve afectada por tu estadística de suerte y con +10 Suerte se activará el 50% del tiempo (comienza en 8.33% con +0 Suerte)"
         ],
         "quality": "4",
@@ -9972,7 +9971,7 @@
         "description": [
             "Cada lágrima ahora tiene una pequeña probabilidad (3,33 %) de ser una aguja, que inflige 3 veces el daño de tu lágrima.",
             "Si una aguja golpea a un enemigo que no sea un jefe, lo matará instantáneamente y explotará en un círculo de 10 agujas más.",
-            "Las 10 agujas generadas también causarán 3 veces tu daño de desgarro, pero no matarán enemigos instantáneamente ni explotarán en más agujas.",
+            "Las 10 agujas generadas también causarán 3 veces tu daño de lagrima, pero no matarán enemigos instantáneamente ni explotarán en más agujas.",
             "La probabilidad de que cada lágrima se convierta en una aguja se ve afectada por tu estadística de suerte y con +15 Suerte se activará el 50% del tiempo.",
             "Cuenta como 1 de los 3 elementos de jeringa necesarios para la transformación Spun"
         ],
@@ -10195,7 +10194,7 @@
         "name": "Sharp Straw",
         "description": [
             "Cuando se usa, Paja Afilada causará daño a todos los enemigos en la habitación.",
-            "El daño infligido es igual al daño de desgarro actual de Isaac más el 10% de la salud máxima del enemigo.",
+            "El daño infligido es igual al daño de lagrima actual de Isaac más el 10% de la salud máxima del enemigo.",
             "Cada vez que este objeto inflige daño, tiene un 15 % de probabilidad de soltar 1/2 corazones rojos.",
             "ARREPENTIMIENTO - La Paja Afilada ahora solo puede generar la mitad de corazones rojos (anteriormente, generaba la mitad de corazones de alma si el jugador no tenía contenedores de corazones)"
         ],
@@ -10710,7 +10709,7 @@
         "description": [
             "Con Haemolacria, las lágrimas de Isaac se vuelven sangrientas y ahora se disparan en el aire en un arco.",
             "Al golpear el suelo, un obstáculo o un enemigo, la lágrima sangrienta estallará y disparará muchas lágrimas más pequeñas en direcciones aleatorias alrededor del punto de impacto.",
-            "- Cadencia - (Retraso de desgarro * 2) + 10",
+            "- Cadencia - (Retraso de lagrima * 2) + 10",
             "Tu estadística de daño no se ve afectada por este objeto, sin embargo, la lágrima sangrienta grande inflige un 31 % más de tu daño de lágrima y las lágrimas dispersas más pequeñas infligen entre un 50 % y un 80 % de tu daño de lágrima.",
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 4. Basado en el mod de Steam Workshop (originalmente llamado Water Balloon) creado por HiHowAreYou."
         ],
@@ -10732,7 +10731,7 @@
             "Las lágrimas de Isaac disminuyen con el tiempo mientras se mueve por la habitación y, al detenerse por completo o golpear un objeto, estallarán en 8 lágrimas más pequeñas que se disparan en todas direcciones.",
             "Este objeto también te permitirá alimentar una lágrima con otras lágrimas. Esto aumentará su tamaño y también su daño, así como el de las lágrimas reventadas.",
             "Una vez que una lágrima es alimentada 5 veces, estallará inmediatamente.",
-            "Las lágrimas en la explosión causarán la mitad del daño que causaría el desgarro principal.",
+            "Las lágrimas en la explosión causarán la mitad del daño que causaría la lagrima principal.",
             "Las lágrimas que golpean a un enemigo no estallan.",
             "Añadido como parte del paquete de refuerzo Afterbirth+ n.º 4. Basado en el mod de Steam Workshop (originalmente llamado Hungry Tears) creado por Echo."
         ],
@@ -10752,7 +10751,7 @@
         "name": "Trisagion",
         "description": [
             "Las lágrimas de Isaac son reemplazadas por penetrantes destellos sagrados de luz, que viajan por la habitación a una velocidad similar a las lágrimas normales.",
-            "Las lágrimas de Trisagion infligen aproximadamente el 33 % de tu daño de desgarro habitual, sin embargo, debido al tamaño del destello sagrado, es probable que golpee a los enemigos varias veces.",
+            "Las lágrimas de Trisagion infligen aproximadamente el 33 % de tu daño de lagrima habitual, sin embargo, debido al tamaño del destello sagrado, es probable que golpee a los enemigos varias veces.",
             "Las lágrimas de Trisagion no hacen que los enemigos retrocedan y simplemente viajan a través de ellos (lágrimas penetrantes).",
             "Añadido como parte del paquete de refuerzo Afterbirth+ n.º 4. Basado en el mod de Steam Workshop (originalmente llamado Lightshot) creado por Wyvern y TRPG."
         ],
@@ -10981,7 +10980,7 @@
         "id": "544",
         "name": "Pointy Rib",
         "description": [
-            "Un familiar al que se puede apuntar con los botones de disparo de forma similar al objeto Dedo, lo que inflige daño de contacto a los enemigos igual a tu daño de desgarro.",
+            "Un familiar al que se puede apuntar con los botones de disparo de forma similar al objeto Dedo, lo que inflige daño de contacto a los enemigos igual a tu daño de lagrima.",
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5"
         ],
         "quality": "2",
@@ -11285,7 +11284,7 @@
         "id": "559",
         "name": "120 Volt",
         "description": [
-            "Este objeto disparará electricidad a los enemigos cercanos, lo que inflige aproximadamente x0,75 de tu daño de desgarro rápidamente.",
+            "Este objeto disparará electricidad a los enemigos cercanos, lo que inflige aproximadamente x0,75 de tu daño de lagrima rápidamente.",
             "La electricidad puede encadenar hasta 4 enemigos si están lo suficientemente cerca.",
             "En pisos con agua en el suelo (Aguacero, Cuevas inundadas, Escoria), este efecto se encadena a enemigos que están más lejos de lo normal."
         ],
@@ -11304,7 +11303,7 @@
         "name": "It Hurts",
         "description": [
             "Recibir daño hace que Isaac dispare un círculo de 10 lágrimas a su alrededor, cada una de las cuales inflige 10 puntos de daño.",
-            "Tras recibir daño, obtienes +1.2 de Desgarros por el resto de la sala. Los golpes posteriores otorgan +0.4 de Desgarros e ignoran el límite de cadencia de fuego normal."
+            "Tras recibir daño, obtienes +1.2 de Cadencia por el resto de la sala. Los golpes posteriores otorgan +0.4 de Cadencia e ignoran el límite de cadencia de fuego normal."
         ],
         "quality": "1",
         "tags": "*,",
@@ -11946,7 +11945,7 @@
         "name": "Terra",
         "description": [
             "Este objeto convierte tus lágrimas en rocas, que tienen mayor capacidad de retroceso y pueden romper otras rocas y objetos. Esto incluye bloques de llave y puertas de habitaciones secretas.",
-            "+1.0 daño, pero cada desgarro de roca tiene un modificador de daño aleatorio que puede aumentar o disminuir (x0.5 a x2)",
+            "+1.0 daño, pero cada lagrima de roca tiene un modificador de daño aleatorio que puede aumentar o disminuir (x0.5 a x2)",
             "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
         ],
         "quality": "3",
@@ -11967,7 +11966,7 @@
             "Permite que Isaac cargue tocando dos veces en la misma dirección, lo que inflige daño a cualquier enemigo atrapado.",
             "Eres invencible mientras estás cargando (no incluye daño propio como las máquinas de donación de sangre)",
             "Se puede utilizar varias veces por habitación.",
-            "El guión inflige x4 de tu daño de desgarro actual + 8",
+            "El guión inflige x4 de tu daño de lagrima actual + 8",
             "No tiene que estar en línea recta, puedes mantener presionado otro botón para curvarlo.",
             "Tiene un tiempo de reutilización de 3 segundos antes de poder usarse nuevamente.",
             "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
@@ -12225,7 +12224,7 @@
             "Las lágrimas disparadas ahora tienen la posibilidad de invocar una grieta cuando aterrizan en el suelo.",
             "La grieta generada absorbe enemigos, proyectiles y objetos, y causa daño a los enemigos atrapados en el interior durante 2 segundos.",
             "La probabilidad de disparar la lágrima de la grieta puede mejorar según tu estadística de suerte. Con +0 Suerte, hay un 2,5 % de probabilidad de que este efecto se active.",
-            "El tamaño de la grieta aumenta con el daño causado por el desgarro.",
+            "El tamaño de la grieta aumenta con el daño causado por la lágrima.",
             "Las grietas infligen la mitad del daño por cada tic.",
             "En Antibirth este objeto se llamaba Oculus Rift"
         ],
@@ -12407,7 +12406,7 @@
         "name": "Bird's Eye",
         "description": [
             "Tienes la posibilidad, junto a cada lágrima, de disparar una llama roja que inflige daño a los enemigos que entran en contacto con ella.",
-            "El daño comienza en x4 tu daño de desgarro actual y se reduce cada vez que un enemigo toca el fuego.",
+            "El daño comienza en x4 tu daño de lagrima actual y se reduce cada vez que un enemigo toca el fuego.",
             "La probabilidad de crear un fuego se ajusta a tu estadística de Suerte: con +11 Suerte tienes un 50 % de probabilidad de disparar uno.",
             "Las llamas de este objeto pueden destruir a los comerciantes, lo cual es útil ya que hacer esto una vez por piso aumenta ligeramente tus posibilidades de entrar en la sala del diablo/ángel."
         ],
@@ -12790,7 +12789,7 @@
         "name": "Purgatory",
         "description": [
             "Mientras estés en una habitación con enemigos, aparecerán grietas rojas en el suelo en ubicaciones aleatorias.",
-            "Caminar sobre la grieta genera un familiar de alma blanca, que se lanza hacia el enemigo más cercano, explota y causa el doble de daño de desgarro a todo lo que esté cerca.",
+            "Caminar sobre la grieta genera un familiar de alma blanca, que se lanza hacia el enemigo más cercano, explota y causa el doble de daño de lagrima a todo lo que esté cerca.",
             "Seguirán apareciendo grietas, pero solo puede haber una a la vez en la habitación."
         ],
         "quality": "2",
@@ -12994,7 +12993,7 @@
             "+2 Corazones de alma",
             "Te otorga la capacidad de volar.",
             "Mantener presionado el botón de disparo carga un ataque de rayo de luz similar a Brimstone.",
-            "El rayo de luz inflige daño equivalente a tu daño de desgarro actual por cada tic a cualquier enemigo que lo toque.",
+            "El rayo de luz inflige daño equivalente a tu daño de lagrima actual por cada tic a cualquier enemigo que lo toque.",
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
         ],
         "quality": "4",
@@ -13012,7 +13011,7 @@
         "id": "644",
         "name": "Consolation Prize",
         "description": [
-            "Al recogerlo, este objeto aumenta tus estadísticas según tu nivel más bajo. Las opciones son: +1.0 de daño, +0.6 de desgarro, +0.2 de velocidad, +5.25 de alcance.",
+            "Al recogerlo, este objeto aumenta tus estadísticas según tu nivel más bajo. Las opciones son: +1.0 de daño, +0.6 de cadencia, +0.2 de velocidad, +5.25 de alcance.",
             "También deja caer una bomba, una llave o 3 monedas al suelo. Esto se decide según lo que tengas menos. Las llaves y las bombas equivalen a 3 monedas para decidir cuál dar."
         ],
         "quality": "1",
@@ -13626,7 +13625,7 @@
         "name": "C Section",
         "description": [
             "Tus lágrimas son reemplazadas por un ataque de carga que dispara un feto espectral teledirigido.",
-            "Las lágrimas del feto infligen un daño equivalente al 75 % de tu daño de desgarro actual mientras estás en contacto con enemigos, aproximadamente 5 veces por segundo.",
+            "Las lágrimas del feto infligen un daño equivalente al 75 % de tu daño de lágrima actual mientras estás en contacto con enemigos, aproximadamente 5 veces por segundo.",
             "No se pueden mantener presionados como los ataques de carga normales, se liberarán automáticamente con la carga completa."
         ],
         "quality": "4",
@@ -13666,7 +13665,7 @@
         "name": "Montezuma's Revenge",
         "description": [
             "Mientras disparas lágrimas, ahora cargas un ataque de mierda durante 3 segundos que, cuando se suelta, se dispara desde atrás de Isaac.",
-            "El ataque de mierda inflige tu daño de desgarro actual a cualquier enemigo atrapado en la explosión.",
+            "El ataque de mierda inflige tu daño de lagrima actual a cualquier enemigo atrapado en la explosión.",
             "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap"
         ],
         "quality": "2",
@@ -13745,7 +13744,7 @@
         "id": "684",
         "name": "Hungry Soul",
         "description": [
-            "Cada vez que un enemigo muere, aparece un alma roja amiga. Cazará a otros enemigos e infligirá daño de contacto que escala según tu daño de desgarro.",
+            "Cada vez que un enemigo muere, aparece un alma roja amiga. Cazará a otros enemigos e infligirá daño de contacto que escala según tu daño de lagrima.",
             "Después de 5 segundos, el alma roja explota (Isaac no recibe daño por este efecto)"
         ],
         "quality": "2",
@@ -13766,7 +13765,7 @@
             "Cuando se usa, le proporciona la cantidad de orbitales de llama azul según el número que se muestra sobre este elemento.",
             "Comienza en 1 y aumenta con cada activación, lo que te da más familiares cada vez que lo usas.",
             "Las llamas disparan lágrimas al mismo tiempo que Isaac lo hace, lo que causa 3 puntos de daño fijo.",
-            "Si una llama toca a un enemigo, inflige daño de contacto igual al doble de tu daño de desgarro actual y luego desaparece.",
+            "Si una llama toca a un enemigo, inflige daño de contacto igual al doble de tu daño de lagrima actual y luego desaparece.",
             "Puedes tener un máximo de 24 orbitales de llama a la vez",
             "Cada llama tiene la posibilidad de aparecer como una de muchas variantes, como llamas verdes que envenenan a los enemigos o una llama de crucifijo que genera un familiar jinete aleatorio + Langostas cuando se extingue."
         ],
@@ -13978,7 +13977,7 @@
         "description": [
             "Cada vez que recibes daño, obtienes un velocidad y un lágrimas.",
             "Los aumentos de estadísticas comienzan pequeños y aumentan cada vez que recibes daño (+0,25 Tears Up por el primer golpe, +0,75 Tears Up por el sexto golpe)",
-            "El efecto alcanza un máximo de +3 de Desgarro y +1 de Velocidad tras recibir daño 6 veces. Esto te lleva a la velocidad máxima posible.",
+            "El efecto alcanza un máximo de +3 de Cadencia y +1 de Velocidad tras recibir daño 6 veces. Esto te lleva a la velocidad máxima posible.",
             "El efecto dura el resto del piso actual."
         ],
         "quality": "2",
@@ -14185,7 +14184,7 @@
         "id": "705",
         "name": "Dark Arts",
         "description": [
-            "Al usarlo, Isaac se transforma en un fantasma durante 1 segundo y su velocidad aumenta al máximo (2.0). Durante este tiempo, puede caminar sobre los enemigos para marcarlos y matarlos. Cuando el efecto desaparece, Isaac corre rápidamente entre cada enemigo marcado, infligiendo un gran daño a cada uno rápidamente (aproximadamente 2.5 veces tu daño de desgarro).",
+            "Al usarlo, Isaac se transforma en un fantasma durante 1 segundo y su velocidad aumenta al máximo (2.0). Durante este tiempo, puede caminar sobre los enemigos para marcarlos y matarlos. Cuando el efecto desaparece, Isaac corre rápidamente entre cada enemigo marcado, infligiendo un gran daño a cada uno rápidamente (aproximadamente 2.5 veces tu daño de lagrima).",
             "El daño causado por este efecto aumenta con cada objetivo que golpea en una fila.",
             "Judas contaminado comienza con este objeto"
         ],
@@ -14208,7 +14207,7 @@
         "name": "Abyss",
         "description": [
             "Cuando se usa, Abyss consume todos los elementos del pedestal en la sala actual y los convierte en moscas de ataque rojas.",
-            "Las moscas de ataque rojas cargarán por toda la habitación en la misma dirección en la que Isaac dispara, infligiendo daño de contacto a los enemigos igual al daño de desgarro de Isaac.",
+            "Las moscas de ataque rojas cargarán por toda la habitación en la misma dirección en la que Isaac dispara, infligiendo daño de contacto a los enemigos igual al daño de lagrima de Isaac.",
             "Las moscas no bloquean los disparos enemigos, pero esto también significa que nunca mueren y permanecen con Isaac para siempre.",
             "Apollyon contaminado comienza con este objeto"
         ],
@@ -14341,7 +14340,7 @@
         "name": "Lemegeton",
         "description": [
             "Al usarla, obtienes una llama orbital que representa otro objeto pasivo aleatorio del juego. Mientras tengas esta llama, también tendrás su efecto.",
-            "La llama inflige el doble de daño de desgarro a cualquier enemigo que la toque, pero si recibe demasiado daño, la llama desaparecerá y perderás el efecto del objeto.",
+            "La llama inflige el doble de daño de lagrima a cualquier enemigo que la toque, pero si recibe demasiado daño, la llama desaparecerá y perderás el efecto del objeto.",
             "Bethany contaminada comienza con este artículo",
             "Los Wisps se eligen al azar de los grupos de objetos de la Sala de objetos, la Sala del jefe y la Tienda, con un 25 % de probabilidad de elegir el mismo grupo que la sala actual.",
             "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
@@ -14648,7 +14647,7 @@
         "description": [
             "+5 Bombas",
             "Las bombas se vuelven espectrales y ahora pueden atravesar objetos.",
-            "Las bombas generan un alma blanca amistosa, que cazará a otros enemigos y causará daño de contacto que aumenta con tu daño de desgarro.",
+            "Las bombas generan un alma blanca amistosa, que cazará a otros enemigos y causará daño de contacto que aumenta con tu daño de lagrima.",
             "Tras 10 segundos, el alma blanca explota e inflige 7 de daño a los enemigos cercanos. Isaac no sufre daño por este efecto."
         ],
         "quality": "2",
@@ -14668,7 +14667,7 @@
         "name": "Gello",
         "description": [
             "Genera un familiar que está unido a través de un cordón umbilical, pero se moverá y disparará en la misma dirección en la que dispara Isaac.",
-            "Cuando se activa, primero debes lanzar al familiar, que inflige x3 de daño de desgarro a cualquier enemigo que toque.",
+            "Cuando se activa, primero debes lanzar al familiar, que inflige x3 de daño de lagrima a cualquier enemigo que toque.",
             "Las lágrimas de Gello infligen x0,75 de daño por lágrima (x1,0 si es Lilith)",
             "Se puede usar varias veces por sala para generar más familiares, sin embargo, solo duran en la sala actual."
         ],
