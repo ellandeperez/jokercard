@@ -2818,7 +2818,7 @@
         "name": "Bum Friend",
         "description": [
             "Un mendigo que sigue a Isaac y automáticamente recoge las monedas cercanas.",
-            "Después de recoger 6 monedas, dejará caer un objeto al azar, por ejemplo, corazones, llaves, bombas, monedas, píldoras, tarjetas, baratijas, baterías, etc.",
+            "Después de recoger 6 monedas, dejará caer un objeto al azar, por ejemplo, corazones, llaves, bombas, monedas, píldoras, tarjetas, trinkets, baterías, etc.",
             "Después de la primera caída, tiene un 67% de probabilidad de dejar caer un objeto después de 3 monedas y un 33% de probabilidad de dejar caer un objeto después de 4 monedas.",
             "Tiene la posibilidad de generar objetos del fondo de objetos del mendigo.",
             "Cuenta como 1 de los 3 elementos necesarios para la transformación de Super Bum."
@@ -3258,7 +3258,7 @@
         "name": "D20",
         "description": [
             "Al usarlo, vuelve a convertir todos los consumibles del suelo otro tipo de consumible aleatorio.",
-            "Esto incluye todo tipo de objetos como corazones, bombas, llaves, monedas, píldoras, cartas del tarot, cofres, baratijas, etc."
+            "Esto incluye todo tipo de objetos como corazones, bombas, llaves, monedas, píldoras, cartas del tarot, cofres, trinkets, etc."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto superando el cofre con Isaac.",
@@ -6858,7 +6858,7 @@
         "name": "Diplopia",
         "description": [
             "Un artículo de un solo uso que, al usarse, duplicará cualquier artículo de pedestal o consumible en la sala actual.",
-            "Si se utilizan en una tienda, los artículos duplicados se pueden llevar de forma gratuita.",
+            "Si se utilizan en una tienda, los items duplicados se pueden llevar de forma gratuita.",
             "Si se usa en un trinket, aparecerá otro trinket aleatorio en lugar de un duplicado.",
             "Si se usan en Boss Rush, todos los duplicados se pueden tomar gratis, así como uno de los elementos originales.",
             "Si se usan en una Sala del Diablo o en el Mercado Negro, los duplicados se pueden tomar de forma gratuita."
@@ -6927,8 +6927,7 @@
         "description": [
             "Con este objeto, al comienzo de cada sala infligirás el doble de daño a toda la sala con un efecto de veneno.",
             "Los enemigos eliminados ahora también dejan un charco de biomateria en el suelo donde murieron. Esto inflige 1 de daño por cada tick.",
-            "Un alto daño hará que este objeto se vuelva muy poderoso para salas con muchos enemigos, ya que pueden morir instantáneamente y dejar la sala inofensiva.",
-            "Los enemigos que aparecen después de los primeros segundos de cada sala no se ven afectados por este elemento, por ejemplo, las moscas generadas por un Mulligan moribundo."
+            "Un alto daño hará que este objeto se vuelva muy poderoso para salas con muchos enemigos, ya que pueden morir instantáneamente y dejar la sala inofensiva."
         ],
         "quality": "3",
         "tags": "*, green, glow, biohazard",
@@ -6944,7 +6943,7 @@
         "id": "351",
         "name": "Mega Bean",
         "description": [
-            "Cuando se usa, el Mega Frijol congelará a todos los enemigos en la habitación actual por un par de segundos, causará 5 de daño y envenenará a los enemigos cercanos y enviará una ola de púas a través de la habitación en la dirección en la que estás mirando.",
+            "Cuando se usa, congelará a todos los enemigos en la habitación actual por un par de segundos, causará 5 de daño y envenenará a los enemigos cercanos y enviará una ola de púas a través de la habitación en la dirección en la que estás mirando.",
             "Los enemigos a corta distancia recibirán 5 puntos de daño y luego tendrán un efecto de veneno a lo largo del tiempo que inflige daño de lagrima 4 o 6 veces.",
             "La ola de púas causará 10 puntos de daño a cualquier enemigo que entre en contacto con ella.",
             "Se puede utilizar para abrir habitaciones secretas."
@@ -6967,7 +6966,7 @@
         "id": "352",
         "name": "Glass Cannon",
         "description": [
-            "El cañón de cristal te permite disparar una enorme lágrima espectral que causa mucho daño.",
+            "Te permite disparar una enorme lágrima espectral que causa mucho daño.",
             "Al recibir daño, el cañón se romperá y permanecerá roto hasta que se recargue (Tiempo de recarga: 4 habitaciones)",
             "Cuando recibes daño y el cañón se rompe, recibes 2 corazones completos de daño adicionales y obtienes el efecto Anémico para la sala.",
             "El daño causado por el Cañón de Cristal se calcula de la siguiente manera: dmg = (dmg * 10) + 10 (es decir, con un daño base de 3,5, son 45 de daño)",
@@ -7012,7 +7011,7 @@
         "name": "Crack Jacks",
         "description": [
             "+1 HP",
-            "Genera una baratija aleatoria en el suelo."
+            "Genera un trinket aleatorio en el suelo."
         ],
         "quality": "2",
         "tags": "*, brown, red, tup, carton, box, golden chest pool, gold chest pool",
@@ -7030,7 +7029,7 @@
         "name": "Mom's Pearls",
         "description": [
             "+0,38 Alcance ",
-            "+1 Suerte arriba",
+            "+1 Suerte",
             "+1 Corazón de alma",
             "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
         ],
@@ -7050,7 +7049,7 @@
         "id": "356",
         "name": "Car Battery",
         "description": [
-            "La batería del automóvil hace que el item activo se active dos veces con cada uso",
+            "Hace que el item activo se active dos veces con cada uso",
             "Por ejemplo, con Yum Heart curarías 2 corazones rojos completos en lugar de 1."
         ],
         "quality": "3",
@@ -7075,7 +7074,7 @@
             "Si lo usas cuando no tienes familiares, te dará un Bebé Demonio temporalmente."
         ],
         "quality": "1",
-        "unlock": "Desbloquea este objeto superando el modo Codicia con Lilith.",
+        "unlock": "Desbloquea este objeto superando el modo Greed con Lilith.",
         "tags": "*, gold, black",
         "type_list": [
             "Activa"
@@ -7132,7 +7131,7 @@
         "id": "360",
         "name": "Incubus",
         "description": [
-            "Te da un íncubo demoníaco familiar que te sigue y dispara lágrimas que escalan con tus propias lágrimas en términos de daño, estadísticas y también efectos.",
+            "Familiar que te sigue y dispara lágrimas que escalan con tus propias lágrimas en términos de daño, estadísticas y también efectos.",
             "Imitará cualquier efecto de lagrima que tengas actualmente y también copiará tus estadísticas actuales, lo que significa que disparará con el mismo daño, velocidad de disparo y alcance.",
             "Lilith comienza con este objeto",
             "El daño de Incubus se reduce en un 25% cuando se juega con personajes distintos a Lilith.",
@@ -7157,10 +7156,10 @@
         "name": "Fate's Reward",
         "description": [
             "Una cabeza azul familiar que seguirá a Isaac y disparará lágrimas copiando su daño y efectos de lágrimas.",
-            "Este familiar es muy similar a Incubus, sin embargo, solo copia el daño y no se ve afectados o mejoras de alcance."
+            "Este familiar es muy similar a Incubus, sin embargo, solo copia el daño y no los efectos."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto derrotando a Blue Womb (Silencio) con ??? (Bebé azul).",
+        "unlock": "Desbloquea este objeto derrotando a Blue Womb (hush) con ??? (Bebé azul).",
         "tags": "*, dead, blue, face, fates reward, fate reward",
         "type_list": [
             "Pasivo",
@@ -7176,11 +7175,11 @@
         "name": "Lil Chest",
         "description": [
             "Un cofre familiar que sigue a Isaac y tiene un 25 % de probabilidad de dejar caer un objeto después de despejar una habitación.",
-            "Los posibles drops incluyen corazones, monedas, bombas, llaves, píldoras, cartas, runas, baterías y baratijas.",
-            "Hay un 10% de posibilidades de que aparezca una baratija."
+            "Los posibles drops incluyen corazones, monedas, bombas, llaves, píldoras, cartas, runas, baterías y trinkets.",
+            "Hay un 10% de posibilidades de que aparezca un trinket."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto superando el modo Codicia con Isaac.",
+        "unlock": "Desbloquea este objeto superando el modo Greed con Isaac.",
         "tags": "* lil' chest, brown, orange, wooden",
         "type_list": [
             "Pasivo",
@@ -7199,14 +7198,14 @@
         "description": [
             "Un ángel orbital que hace 7 daños de contacto por cada tic y bloquea disparos.",
             "El ángel atraerá las balas hacia él y las bloqueará.",
-            "El Protector Juramentado otorgará un corazón eterno si bloquea 10 disparos en una sala. Solo puede ocurrir una vez por sala.",
-            "Visualmente es casi idéntico al elemento Ángel Guardián, pero sin cara.",
+            "Otorgará un corazón eterno/blanco si bloquea 10 disparos en una sala. Solo puede ocurrir una vez por sala.",
+            "Visualmente es casi idéntico al item Ángel Guardián, pero sin cara.",
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín.",
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Blue Womb (Hush) con The Lost",
-        "tags": "*, angel, wings, pink, white",
+        "tags": "*, angel, wings, white",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -7222,7 +7221,7 @@
         "name": "Friend Zone",
         "description": [
             "Una mosca blanca que orbita y que causa 3 puntos de daño de contacto por cada tic a los enemigos.",
-            "Este familiar orbita a Isaac a una distancia media en algún lugar entre Admiración Distante y Para Siempre Solo.",
+            "Este familiar orbita a Isaac a una distancia media.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
         ],
         "quality": "1",
@@ -7284,7 +7283,7 @@
         "id": "367",
         "name": "Sticky Bombs",
         "description": [
-            "Este objeto hace que tus bombas se adhieran a los enemigos y, al explotar, dejarán una criatura blanca en el suelo que ralentizará a los enemigos.",
+            "Este objeto hace que tus bombas se adhieran a los enemigos y, al explotar, dejarán un charco blanco en el suelo que ralentizará a los enemigos.",
             "Cuando una de tus bombas mata a un enemigo, se generan un grupo de arañas azules para luchar a tu lado, lo que inflige x2 tu daño actual.",
             "+5 Bombas",
             "Cuenta como 1 de los 3 elementos de araña necesarios para la transformación de Bebé Araña."
@@ -7310,7 +7309,7 @@
             "Disparar en una dirección aumenta tu velocidad de disparo hasta alcanzar un límite.",
             "El efecto máximo es reducir a la mitad el retraso, lo que tarda aproximadamente 10 segundos en lograrse.",
             "La precisión de tus lágrimas también se reduce a medida que aumenta tu velocidad de disparo.",
-            "Tan pronto como cambias la dirección de disparo, tu velocidad de disparo se restablece a su valor normal."
+            "En cuanto cambias la dirección de disparo, tu velocidad de disparo se restablece a su valor normal."
         ],
         "quality": "2",
         "tags": "*, blue, drops, three, water",
@@ -7328,7 +7327,7 @@
         "name": "Continuum",
         "description": [
             "+3 alcance",
-            "Las lágrimas ahora viajarán a través de las paredes y aparecerán en la pared opuesta, similar a una mecánica de tipo portal.",
+            "Las lágrimas ahora viajarán a través de las paredes y aparecerán en la pared opuesta.",
             "Tus lágrimas ahora también pueden viajar sobre rocas y objetos del entorno."
         ],
         "quality": "2",
@@ -7346,7 +7345,7 @@
         "id": "370",
         "name": "Mr. Dolly",
         "description": [
-            "+0.7 Lágrimas",
+            "+0.7 Cadencia",
             "+1,5 alcance",
             "Genera 3 tipos de corazones aleatorios en el suelo."
         ],
@@ -7365,8 +7364,8 @@
         "id": "371",
         "name": "Curse of The Tower",
         "description": [
-            "Hace que Isaac genere 6 bombas de troll en el suelo cada vez que recibe un golpe, similar a la mecánica del Libro de cocina anarquista.",
-            "No se activa con el daño recibido de las máquinas de donación de sangre y los mendigos diabólicos (pero sí se activa con otras formas de daño autoinfligido intencional, como la bolsa intravenosa)."
+            "Hace que Isaac genere 6 bombas de troll en el suelo cada vez que recibe un golpe.",
+            "No se activa con el daño recibido de las máquinas de donación de sangre y los mendigos diabólicos (pero sí se activa con otras formas de daño autoinfligido intencional)."
         ],
         "quality": "0",
         "tags": "*, blue, orange, poster, torn, paper, page, ripped",
@@ -7469,8 +7468,8 @@
         "description": [
             "Hace que tus tiendas reabastezcan instantáneamente sus artículos cuando los compras.",
             "Los nuevos artículos generados por Restock provienen del grupo de artículos de la tienda",
-            "El costo aumenta exponencialmente cada vez que compras un artículo. Para los artículos, aumenta en 2 monedas x el número de compras. Para todo, aumenta en 1 moneda x el número de compras.",
-            "El precio máximo de un artículo siempre es 99c con este artículo",
+            "El costo aumenta exponencialmente cada vez que compras un artículo. Para los items, aumenta en 2 monedas x el número de compras. Para el resto, aumenta en 1 moneda x el número de compras.",
+            "El precio máximo de un artículo siempre es 99c con este item",
             "Funciona con Keeper's Box y la tienda extra de Member Card"
         ],
         "quality": "2",
@@ -7566,9 +7565,9 @@
         "id": "381",
         "name": "Eden's Blessing",
         "description": [
-            "+0.7 Lágrimas",
+            "+0.7 Cadencia",
             "Te da un objeto aleatorio al comienzo de tu próxima run (debes comenzar una nueva run para recibir el objeto)",
-            "Los elementos de progresión importantes, como las piezas clave o las piezas de la pala de mamá, no se pueden otorgar mediante la Bendición del Edén."
+            "Los elementos de progresión importantes, como las piezas clave o las piezas de la pala de mamá, no se pueden otorgar."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Blue Womb (Hush) con Eden.",
@@ -7696,7 +7695,7 @@
             "Le da a Isaac un incensario dorado familiar que crea un aura enorme de luz que ralentiza a cualquier enemigo que se encuentre dentro de él."
         ],
         "quality": "3",
-        "unlock": "Desbloquea este objeto superando el modo Codicia con Maggy.",
+        "unlock": "Desbloquea este objeto superando el modo Greed con Maggy.",
         "tags": "*, gold, vase, cross",
         "type_list": [
             "Pasivo",
@@ -7717,7 +7716,7 @@
             "Cuenta como 1 de los 3 elementos necesarios para la transformación de Super Bum."
         ],
         "quality": "0",
-        "unlock": "Desbloquea este objeto superando el modo Codicia con Lázaro.",
+        "unlock": "Desbloquea este objeto superando el modo Greed con Lázaro.",
         "tags": "*, grey, gray, black, face, stone, rock, baby",
         "type_list": [
             "Pasivo",
@@ -7753,7 +7752,7 @@
         "id": "390",
         "name": "Seraphim",
         "description": [
-            "Un ángel familiar que sigue a Isaac y dispara lágrimas del Sagrado Corazón que infligen 10 de daño a una velocidad de disparo del -25% y una cadencia de fuego reducida.",
+            "Un familiar que sigue a Isaac y dispara lágrimas que infligen 10 de daño a una velocidad de disparo del -25% y una cadencia de fuego reducida.",
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "3",
@@ -7798,7 +7797,7 @@
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "1",
-        "unlock": "Desbloquea este objeto superando el modo Avaricia con The Lost",
+        "unlock": "Desbloquea este objeto superando el modo Greed con The Lost",
         "tags": "*, cross, white, circle",
         "type_list": [
             "Pasivo"
@@ -7815,7 +7814,7 @@
         "description": [
             "Las lágrimas ahora tienen una probabilidad aleatoria de aplicar un efecto de veneno, causando daño igual a tus lágrimas cada tic, durante 2 tic.",
             "Isaac ahora inflige daño por veneno al entrar en contacto con enemigos de forma similar al objeto Virus (daño a lo largo del tiempo: 4 o 6 por tic).",
-            "Los enemigos envenenados por daño de contacto tienen un 20% de probabilidad de soltar un corazón de pecado negro al morir. Solo el veneno de contacto tiene este efecto; el veneno de lágrimas no funciona."
+            "Los enemigos envenenados por daño de contacto tienen un 20% de probabilidad de soltar un corazón negro al morir. Solo el veneno de contacto tiene este efecto; el veneno de lágrimas no funciona."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a Satanás con Lilith.",
@@ -7837,9 +7836,8 @@
             "Esto permite un radio de disparo de lágrimas de 360 grados.",
             "Puede ser anulado por otros modificadores de lágrimas como Mom's Knife o Brimstone.",
             "Cada vez que sales de la habitación, este efecto se desactiva hasta que vuelvas a presionar el botón de disparo.",
-            "+0.7 Lágrimas",
-            "+3.0 Alcance",
-            "No tiene efecto con el Íncubo de Lilith."
+            "+0.7 Cadencia",
+            "+3.0 Alcance"
         ],
         "quality": "1",
         "tags": "*, red, cross, circle",
@@ -7863,7 +7861,7 @@
             "Varias acumulaciones de Tech X: cada una tomada agrega otro anillo láser (no afecta tu velocidad de disparo)"
         ],
         "quality": "4",
-        "tags": "* tech 10, tech ten, donut laser rings, vr, headset, visor",
+        "tags": "* tech 10, tech ten, donut laser rings, vr, headset, visor, grey, yellow",
         "type_list": [
             "Pasivo",
             "Tear modifier"
@@ -7884,7 +7882,7 @@
             "Muy útil en las salas de desafíos y en las de jefes."
         ],
         "quality": "1",
-        "tags": "*, scalpel, red, silver, white, grey, gray, metal, knife, cut",
+        "tags": "*, scalpel, silver, white, grey, gray, red, metal, knife, cut",
         "type_list": [
             "Activa"
         ],
@@ -7901,7 +7899,7 @@
         "name": "Tractor Beam",
         "description": [
             "Las lágrimas de Isaac ahora viajan directamente hacia adelante siguiendo un rayo de luz, pero también se moverán hacia los lados según el movimiento del jugador.",
-            "+0.5 Lágrimas",
+            "+0.5 Cadencia",
             "+1,5 alcance",
             "+0,16 velocidad de disparo",
             "Permite una corrección más precisa al disparar lágrimas, ya que se puede controlar su dirección incluso después de haberlas disparado.",
@@ -8003,12 +8001,12 @@
         "description": [
             "Hace que todos los pedestales de objetos se elijan de un grupo de objetos aleatorio en lugar de los predefinidos que normalmente existen.",
             "Al recogerlo, deja caer entre 1 y 6 objetos aleatorios en el suelo.",
-            "Permite ver los objetos que se han vuelto a tirar, lo que evita vaciar el grupo de objetos y desayunar.",
+            "Permite ver los objetos que ya se han recogido, lo que evita vaciar el grupo de objetos.",
             "Los objetos que se sueltan de forma fija no se reemplazarán (por ejemplo, el Cubo de carne después de derrotar a un Jinete).",
             "Chaos asigna un peso a los grupos de objetos según su cantidad. Cuantos más objetos haya en un grupo, mayor será la probabilidad de que se elija."
         ],
         "quality": "3",
-        "tags": "*, red, cross",
+        "tags": "*, red, black, cross",
         "type_list": [
             "Pasivo"
         ],
@@ -8024,12 +8022,10 @@
         "description": [
             "Una araña gris familiar que deambula y te permite ver el daño causado por tus lágrimas y las barras de salud de todos los enemigos.",
             "La araña infligirá un efecto de estado aleatorio a cualquier enemigo con el que entre en contacto (por ejemplo, ralentización, encogimiento, miedo).",
-            "Spider Mod también arrojará consumibles de batería o arañas azules al azar cuando se complete una habitación.",
-            "Para simplificar para los jugadores, todos los valores de daño mostrados se multiplican por 10 y se redondean al número más cercano.",
-            "Este artículo es una referencia a Spider853, creador de Spidermod para el juego original y uno de los desarrolladores principales que trabajaron en Rebirth y sus DLC."
+            "Spider Mod también arrojará consumibles de batería o arañas azules al azar cuando se complete una habitación."
         ],
         "quality": "1",
-        "tags": "*, robot, red, grey, gray, silver, metal, antenna",
+        "tags": "*, robot, grey, gray, silver, red, metal, antenna",
         "type_list": [
             "Pasivo"
         ],
@@ -8065,12 +8061,12 @@
         "name": "GB Bug",
         "description": [
             "Genera un familiar que sigue a Isaac.",
-            "Al tocar dos veces el botón de disparo, se lanza hacia adelante, lo que hace que repita el lanzamiento del primer monstruo, abalorio o objeto que golpea.",
-            "El error de GB reaparece después de que se haya despejado una habitación.",
+            "Al tocar dos veces el botón de disparo, se lanza hacia adelante, lo que hace que repita el lanzamiento del primer monstruo, trinket o item que golpea.",
+            "Reaparece después de que se haya despejado una habitación.",
             "No se pueden cambiar los jefes, en su lugar solo se infligen 8 puntos de daño por contacto."
         ],
         "quality": "1",
-        "unlock": "Unlock this item by beating Greed Mode with Eden",
+        "unlock": "Derrota Greed con Eden",
         "tags": "*, red, yellow, green, white, square, rectangle",
         "type_list": [
             "Pasivo"
@@ -8109,11 +8105,11 @@
         "id": "407",
         "name": "Purity",
         "description": [
-            "La pureza aumentará una de las estadísticas de Isaac dependiendo del color del aura que lo rodea.",
+            "Aumentará una de las estadísticas de Isaac dependiendo del color del aura que lo rodea.",
             "Cuando recibas daño, el aura se eliminará y se reemplazará con otra aleatoria cuando ingreses a la siguiente habitación.",
             "El código de colores es el siguiente:",
             "Rojo = +4.0 Daño",
-            "Azul = -4 Retraso de lagrima",
+            "Azul = -4 Cadencia",
             "Amarillo = +0,5 Speed",
             "Naranja = +3,0 Alcance "
         ],
@@ -8180,7 +8176,7 @@
             "Los disparos de mal de ojo se destruirán si entran en contacto con enemigos u obstáculos."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto superando el modo Avaricia con Caín.",
+        "unlock": "Desbloquea este objeto superando el modo Greed con Caín.",
         "tags": "*, blue, glow, circle",
         "type_list": [
             "Pasivo"
@@ -8196,11 +8192,10 @@
         "name": "Lusty Blood",
         "description": [
             "Cada vez que Isaac mata a un enemigo, obtienes un daño temporal de +0,5 que dura la sala actual.",
-            "Cada muerte subsiguiente acumulará más daño hasta un máximo de +5 de daño después de 10 muertes.",
-            "Este objeto tiene el mismo principio que el objeto Bloody Lust del juego flash original."
+            "Cada muerte subsiguiente acumulará más daño hasta un máximo de +5 de daño después de 10 muertes."
         ],
         "quality": "3",
-        "unlock": "Desbloquea este objeto superando el modo Avaricia con Samson.",
+        "unlock": "Desbloquea este objeto superando el modo Greed con Samson.",
         "tags": "*, red, heart, bleed, bloody",
         "type_list": [
             "Pasivo"
@@ -8240,7 +8235,6 @@
         "name": "Immaculate Conception",
         "description": [
             "Después de recoger 15 corazones, Isaac obtiene un familiar angelical permanente y cae un corazón de alma.",
-            "Los posibles familiares incluyen: Agua Bendita, Ángel Guardián, Protector Jurado, La Reliquia y Serafines.",
             "Es posible obtener múltiples seguidores al continuar recogiendo corazones, en intervalos de 15 corazones cada uno.",
             "Una vez que hayan aparecido los 5 familiares, simplemente arrojará un corazón de alma cada 15 corazones recolectados."
         ],
@@ -8260,7 +8254,7 @@
         "id": "414",
         "name": "More Options",
         "description": [
-            "Ahora aparecen dos elementos en cada una de tus salas de elementos, sin embargo, solo se puede tomar uno y el otro desaparecerá.",
+            "Ahora aparecen dos items en cada una de tus salas de items, sin embargo, solo se puede tomar uno y el otro desaparecerá.",
             "No funciona para salas de objetos de tamaño medio."
         ],
         "quality": "3",
@@ -8300,11 +8294,10 @@
         "name": "Deep Pockets",
         "description": [
             "Aumenta tu límite de dinero a 999",
-            "Cuando limpiar una habitación no daría ninguna recompensa, ahora genera entre 1 y 3 centavos.",
-            "Anteriormente, este elemento agregaría una ranura para tarjeta/píldora adicional, sin embargo, esto se eliminó con el reequilibrio de Arrepentimiento."
+            "Cuando limpiar una habitación no daría ninguna recompensa, ahora genera entre 1 y 3 centavos."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto superando el suelo del Cofre con el Guardián",
+        "unlock": "Desbloquea este objeto superando el piso del Cofre con el Keeper",
         "tags": "*, grey, gray, bag, stone, rock",
         "type_list": [
             "Pasivo"
@@ -8321,11 +8314,11 @@
         "name": "Succubus",
         "description": [
             "Un familiar volador que rebota por la habitación con un aura dañina, infligiendo daño rápido a cualquier enemigo dentro de él y aumentando el daño de lagrima de Isaac.",
-            "Mientras está parado en el aura negra, Isaac tiene un multiplicador de daño temporal de 1.5x (esto se acumulará si tienes más de un súcubo)",
+            "Dentro de su aura Isaac tiene un multiplicador de daño temporal de 1.5x (esto se acumulará si tienes más de un súcubo)",
             "El aura causa 2,5 de daño por tic o alrededor de 7,5 - 10 de daño por segundo."
         ],
         "quality": "3",
-        "unlock": "Desbloquea este objeto derrotando a El Cordero con Lilith.",
+        "unlock": "Desbloquea este objeto derrotando a The Lamb con Lilith.",
         "tags": "*, black, red, wings, grey, gray",
         "type_list": [
             "Pasivo",
@@ -8362,8 +8355,7 @@
         "description": [
             "Cuando lo uses, te teletransportarás a otra habitación aleatoria que aún no haya sido explorada.",
             "Después de explorar todas las salas normales, la jerarquía de salas elegidas es: Sala súper secreta, Tienda, Sala de objetos, Sala de sacrificios, Sala de dados, Biblioteca, Sala de maldiciones, Minijefe, Sala de desafíos, Dormitorio, Arcade, Bóveda, Sala secreta, Sala del diablo/ángel, SOY ERROR",
-            "Este orden significa que se pueden forzar las salas de Diablo y Yo soy Error si se han visitado todas las demás.",
-            "Si lo usas en una habitación normal con enemigos, te teletransportará hacia afuera y hacia adentro de la misma habitación."
+            "Este orden significa que se pueden forzar las salas de Diablo y Yo soy Error si se han visitado todas las demás."
         ],
         "quality": "3",
         "tags": "*, golden, yellow, robot, antenna, black, teleport two, teleport 20",
@@ -8402,8 +8394,7 @@
         "name": "Kidney Bean",
         "description": [
             "Cuando se usa, aplica el efecto de encanto a cualquier enemigo en un Alcance cercano y causa 5 puntos de daño.",
-            "Los enemigos encantados priorizarán atacar a otros enemigos en la sala, de lo contrario, seguirán atacando a Isaac.",
-            "ARREPENTIMIENTO - Frijol ahora tiene un radio de efecto más grande, ya no inflige daño a los enemigos que encanta y el tiempo de carga se ha reducido a 1 (de 2)."
+            "Los enemigos encantados no son dañados y priorizarán atacar a otros enemigos en la sala, de lo contrario, seguirán atacando a Isaac."
         ],
         "quality": "1",
         "tags": "*, red",
@@ -8425,7 +8416,6 @@
         "description": [
             "Al usarlo, este objeto retrocederá el tiempo y te colocará nuevamente en la habitación anterior, en el mismo estado en el que estabas en ese momento.",
             "Esto significa que cualquier daño recibido o consumibles utilizados en la sala actual se restablecerán al estado anterior.",
-            "El reloj de arena brillante no tiene tiempo de reutilización, pero solo se puede usar 3 veces por piso.",
             "El reloj de arena brillante no tiene tiempo de reutilización, pero solo se puede usar 3 veces por piso."
         ],
         "quality": "3",
@@ -8467,8 +8457,7 @@
         "description": [
             "Las monedas tienen un 10 % de probabilidad de ser reemplazadas por Sack. Las bombas, llaves, cartas, runas y baterías tienen un 20 % de probabilidad.",
             "Genera un saco cuando se recoge.",
-            "Puede dar lugar a combinaciones revolucionarias con el D20 debido a la cantidad de consumibles y baterías generadas por los sacos de objetos.",
-            "ARREPENTIMIENTO - Añadido al grupo de la Sala Secreta"
+            "Puede dar lugar a combinaciones revolucionarias con el D20 debido a la cantidad de consumibles y baterías generadas por los sacos de objetos."
         ],
         "quality": "3",
         "tags": "*, bag, grey, cry, blue, tear, shia paper bag sackhead, sad",
@@ -8545,8 +8534,7 @@
         "name": "PJs",
         "description": [
             "+4 Corazones de alma",
-            "Restaura completamente tu salud roja.",
-            "ARREPENTIMIENTO - Añadido al fondo del cofre de oro"
+            "Restaura completamente tu salud roja."
         ],
         "quality": "2",
         "tags": "*, blue, baby, grow, headless, golden chest pool, gold chest pool",
@@ -8564,7 +8552,7 @@
         "name": "Head of the Keeper",
         "description": [
             "Las lágrimas de Isaac se convierten en monedas y ahora tienen un 5% de probabilidad de dejar caer centavos al suelo al golpear con éxito a un enemigo.",
-            "Tiene la posibilidad de caerse al explotar un comerciante muerto."
+            "Tiene la posibilidad de dropear al explotar un comerciante muerto."
         ],
         "quality": "2",
         "tags": "*, gold, eyes, grey, gray",
@@ -8600,7 +8588,7 @@
         "id": "431",
         "name": "Multidimensional Baby",
         "description": [
-            "Un bebé familiar que seguirá su patrón de movimiento con un retraso de 2 segundos.",
+            "Un bebé familiar que seguirá tu movimiento con un retraso de 2 segundos.",
             "Las lágrimas que pasan a través del bebé se duplicarán y obtendrán un velocidad de x1.33",
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
@@ -8623,9 +8611,9 @@
         "name": "Glitter Bombs",
         "description": [
             "+5 bombas",
-            "Las bombas normales de Isaac se vuelven rosas y hacen que arrojen objetos aleatorios cuando explotan (por ejemplo, llaves, monedas, bombas, baratijas).",
+            "Las bombas normales de Isaac se vuelven rosas y hacen que suelten objetos aleatorios cuando explotan (por ejemplo, llaves, monedas, bombas, trinkets).",
             "Las bombas tienen la posibilidad de encantar a los enemigos.",
-            "La probabilidad de que aparezcan objetos de recolección disminuye un 1% cada vez que las Bombas Brillantes otorgan algo (se reinicia en el siguiente piso). Esto es para evitar una sinergia como la del Dr. Feto o una Bomba Dorada que otorga recursos infinitos."
+            "La probabilidad de que aparezcan objetos disminuye un 1% cada vez que las Bombas Brillantes otorgan algo (se reinicia en el siguiente piso)."
         ],
         "quality": "2",
         "tags": "*, pink, sparkle",
@@ -8643,12 +8631,12 @@
         "id": "433",
         "name": "My Shadow",
         "description": [
-            "La sombra de Isaac lo seguirá de cerca y cuando entre en contacto con enemigos, generará turbas de cargadores oscuros amigables.",
-            "Los cargadores infligen daño por contacto a los enemigos y morirán si reciben demasiado daño.",
-            "Los cargadores desaparecen al entrar en una nueva habitación."
+            "La sombra de Isaac lo seguirá de cerca y cuando entre en contacto con enemigos, generará turbas de gusanos oscuros amigables.",
+            "Los gusanos infligen daño por contacto a los enemigos y morirán si reciben demasiado daño.",
+            "Los gusanos desaparecen al entrar en una nueva habitación."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto superando el modo Avaricia con Judas.",
+        "unlock": "Desbloquea este objeto superando el modo Greed con Judas.",
         "tags": "*, black, outline, upside, down",
         "type_list": [
             "Pasivo"
@@ -8668,7 +8656,7 @@
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
         ],
         "quality": "2",
-        "tags": "*, glass, bottle",
+        "tags": "*, gray, white, glass, bottle",
         "type_list": [
             "Activa"
         ],
@@ -8723,7 +8711,7 @@
         "description": [
             "Cuando se usa, el D7 reiniciará la sala actual y traerá de vuelta a todos los enemigos una vez más, lo que te permitirá obtener recompensas que aparecen al final después de vencer la sala.",
             "Se puede utilizar para generar infinitas combinaciones de consumibles y obtener tantas monedas, llaves y bombas como necesites.",
-            "Este objeto no tiene efecto en el modo Codicia, salas de desafío y salas que no tenían enemigos originalmente.",
+            "Este objeto no tiene efecto en el modo Greed, salas de desafío y salas que no tenían enemigos originalmente.",
             "Si se usa en una sala de jefe o en una sala de ángel/diablo, te teletransportarás a otra sala aleatoria, que se reinicia en lugar de la sala de jefe/ángel/diablo en la que estabas.",
             "Los enemigos reaparecidos por el D7 no dejan caer botín si eran campeones y tampoco otorgan puntos en la run diaria."
         ],
@@ -8745,7 +8733,7 @@
         "name": "Binky",
         "description": [
             "+1 Corazón de alma",
-            "+0,75 Lágrimas",
+            "+0,75 Cadencia",
             "Isaac reduce su tamaño",
             "Hace que Isaac sea muy pequeño como un bebé, reduciendo el tamaño de su hitbox."
         ],
@@ -8764,9 +8752,9 @@
         "id": "439",
         "name": "Mom's Box",
         "description": [
-            "Cuando se usa, la Caja de Mamá dejará caer una baratija aleatoria en el suelo.",
+            "Cuando se usa, la Caja de Mamá dejará caer un trinket aleatorio en el suelo.",
             "+1 Suerte mientras se mantiene",
-            "Mientras se mantiene, duplica el efecto de las baratijas que tiene sentido duplicar (por ejemplo, +4 de daño de Cuerno curvo en lugar de 2, -4 Retraso de lagrima de Cáncer en lugar de 2)"
+            "Mientras se mantiene, duplica el efecto de las trinkets que tiene sentido duplicar (por ejemplo, +4 de daño de Cuerno curvo en lugar de 2, -4 Retraso de lagrima de Cáncer en lugar de 2)"
         ],
         "quality": "2",
         "tags": "*, black, purple, mom box, moms box",
@@ -8787,8 +8775,7 @@
         "id": "440",
         "name": "Kidney Stone",
         "description": [
-            "Mientras dispara lágrimas, Isaac deja de disparar y se pone rojo, lo que le permite cargar y liberar muchas lágrimas de una sola vez. En el estallido de lágrimas hay un cálculo renal que causa mucho daño.",
-            "ARREPENTIMIENTO - Cálculo renal ya no es una degradación de velocidad"
+            "Mientras dispara lágrimas, Isaac deja de disparar y se pone rojo, lo que le permite cargar y liberar muchas lágrimas de una sola vez. En el estallido de lágrimas hay un cálculo renal que causa mucho daño."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto superando el desafío n.° 29 (Racha de Onan).",
@@ -8830,10 +8817,9 @@
         "id": "442",
         "name": "Dark Prince's Crown",
         "description": [
-            "Aparece una corona sobre tu cabeza y, mientras tengas exactamente 1 corazón rojo de salud, obtienes +1,5 alcance, +2,0 lágrimas y +0,20 velocidad de disparo.",
+            "Aparece una corona sobre tu cabeza y, mientras tengas exactamente 1 corazón rojo de salud, obtienes +1,5 alcance, +2,0 Cadencia y +0,20 velocidad de disparo.",
             "Cada vez que tu salud cambie a un valor distinto a 1 corazón rojo, perderás el efecto.",
-            "Este artículo no hace nada con The Lost",
-            "ARREPENTIMIENTO - La Corona del Príncipe Oscuro ahora otorga un mayor aumento en la velocidad de disparo y la bonificación ahora rompe el límite de lágrimas suaves."
+            "Este artículo no hace nada con The Lost"
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando a Delirium como Azazel.",
@@ -8852,7 +8838,7 @@
         "name": "Apple!",
         "description": [
             "Te da un 6,66 % de probabilidad de disparar una hoja de afeitar que inflige x4 de daño.",
-            "+0.3 Lágrimas",
+            "+0.3 Cadencia",
             "Este objeto también vuelve tus lágrimas rojas, pero no cambia tu estadística de daño real ni el daño que causan tus lágrimas normales.",
             "La probabilidad de disparar una cuchilla de afeitar depende de tu estadística de suerte, y con +14 de suerte dispararás una cuchilla de afeitar cada vez."
         ],
@@ -8871,8 +8857,7 @@
         "name": "Lead Pencil",
         "description": [
             "Por cada 15 lágrimas disparadas, Isaac disparará un grupo de 12 lágrimas en lugar de su lágrima normal.",
-            "Hace que las lágrimas normales salgan de un ojo, lo que significa que las lágrimas saldrán en una línea casi perfecta en lugar de ligeramente descentradas.",
-            "ARREPENTIMIENTO - El aluvión de lágrimas de Lápiz de plomo ya no inflige el doble de daño."
+            "Hace que las lágrimas normales salgan de un ojo, lo que significa que las lágrimas saldrán en una línea casi perfecta en lugar de ligeramente descentradas."
         ],
         "quality": "3",
         "tags": "*, yellow, pen",
@@ -8892,7 +8877,7 @@
             "+0.3 daño",
             "+0.1 Speed",
             "Al ingresar a una habitación conectada a una Habitación Secreta o una Habitación Súper Secreta, se reproducirá un sonido aullante.",
-            "Al entrar en una habitación con una trampilla en el espacio de acceso, se escuchará un sonido de ladrido."
+            "Al entrar en una habitación con una trampilla de sala especial, se escuchará un sonido de ladrido."
         ],
         "quality": "2",
         "tags": "*, white, silver",
@@ -8950,8 +8935,7 @@
             "La sangre se esparce en la dirección en la que estás disparando, o al azar cerca de Isaac si no estás disparando tus lágrimas.",
             "El rocío de sangre aumenta con tu daño de lagrima actual y cualquier daño futuro aumenta.",
             "Este efecto dura hasta que recojas un corazón rojo.",
-            "Al recibir daño, este objeto otorga un 25 % de probabilidad de dejar caer un corazón rojo completo.",
-            "ARREPENTIMIENTO - Todo este artículo ha sido reelaborado"
+            "Al recibir daño, este objeto otorga un 25 % de probabilidad de dejar caer un corazón rojo completo."
         ],
         "quality": "1",
         "tags": "*, blue, triangle, pyramid",
@@ -9006,7 +8990,6 @@
         "description": [
             "Deja caer una carta al azar al recogerla",
             "Duplica el efecto de la mayoría de las cartas del tarot. Aparece un efecto de contorno pulsante lento en el HUD para las cartas que serían potenciadas por la Tela del Tarot.",
-            "Para ver la lista completa de efectos de las cartas del Tarot, consulta la página Mecánica > Tela del Tarot",
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "2",
@@ -9044,8 +9027,7 @@
         "name": "Compound Fracture",
         "description": [
             "+0,38 Alcance ",
-            "Los fragmentos de hueso más pequeños infligen un daño equivalente a la mitad del daño de lagrima normal.",
-            "+0,38 Alcance "
+            "Los fragmentos de hueso más pequeños infligen un daño equivalente a la mitad del daño de lagrima normal."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Lazarus.",
@@ -9099,8 +9081,7 @@
         "id": "456",
         "name": "Midnight Snack",
         "description": [
-            "+1 HP",
-            "ARREPENTIMIENTO - Este nombre fue cambiado de Pan Mohoso."
+            "+1 HP"
         ],
         "quality": "1",
         "tags": "*, sandwich, toast, brown, green, bite, bitten",
@@ -9136,8 +9117,8 @@
         "id": "458",
         "name": "Belly Button",
         "description": [
-            "Deja caer una baratija al azar al recogerla",
-            "Te da una ranura para baratijas adicional"
+            "Deja caer un trinket al azar al recogerla",
+            "Te da una ranura para trinkets adicional"
         ],
         "quality": "3",
         "tags": "*, pink, circle, cross",
@@ -9190,7 +9171,7 @@
         "id": "461",
         "name": "Parasitoid",
         "description": [
-            "Este objeto te da la posibilidad de que en lugar de disparar lágrimas dispares un saco de huevos, que ralentiza a los enemigos al impactarlos y deja caer un charco de criatura blanca que los ralentiza debajo de ellos.",
+            "Este objeto te da la posibilidad de que en lugar de disparar lágrimas dispares un saco de huevos, que ralentiza a los enemigos al impactarlos y deja caer un charco blanco que los ralentiza debajo de ellos.",
             "Si un disparo de parasitoide impacta con éxito a un enemigo, se genera una mosca o araña azul amistosa.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú.",
             "Cuenta como 1 de los 3 elementos de araña necesarios para la transformación de Bebé Araña."
@@ -9256,7 +9237,7 @@
             "Monedas - Aunque cuestan menos de 15 centavos",
             "Llaves - Cuando tienes menos de 5 llaves",
             "Bombas - Cuando tienes menos de 5 bombas",
-            "Baratijas: si no tienes baratijas y no hay baratijas en el suelo de la habitación",
+            "Trinkets: si no tienes trinkets y no hay trinkets en el suelo de la habitación",
             "Corazones de alma: cuando tienes menos de 6 contenedores de corazones en total de cualquier tipo",
             "Si ninguna de las condiciones anteriores se cumple, los campeones volverán a soltar sus recolecciones habituales."
         ],
@@ -9275,7 +9256,7 @@
         "id": "465",
         "name": "Analog Stick",
         "description": [
-            "+0.35 Lágrimas",
+            "+0.35 Cadencia",
             "Permite disparar lágrimas en diagonal manteniendo presionados dos botones de disparo a la vez.",
             "Si estás usando un gamepad, este elemento te permite disparar en cualquier dirección."
         ],
@@ -9330,8 +9311,7 @@
         "id": "468",
         "name": "Shade",
         "description": [
-            "Isaac obtiene un familiar de sombra que seguirá el patrón de movimiento de Isaac con un retraso de 0,66 segundos e infligirá 5 puntos de daño de contacto a los enemigos por cada tic.",
-            "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Judas."
+            "Isaac obtiene un familiar de sombra que seguirá el patrón de movimiento de Isaac con un retraso de 0,66 segundos e infligirá 5 puntos de daño de contacto a los enemigos por cada tic."
         ],
         "quality": "0",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Judas.",
@@ -9368,7 +9348,7 @@
         "id": "470",
         "name": "Hushy",
         "description": [
-            "Le da a Isaac un pequeño familiar Silencio que rebota en diagonal por la habitación e inflige 2 puntos de daño de contacto por cada tic.",
+            "Le da a Isaac un pequeño familiar Hush que rebota en diagonal por la habitación e inflige 2 puntos de daño de contacto por cada tic.",
             "Mientras estés disparando lágrimas, Hushy dejará de moverse, lo que te permitirá mantenerlo en un solo lugar.",
             "Hushy bloqueará las lágrimas y los proyectiles enemigos."
         ],
@@ -9408,8 +9388,7 @@
         "description": [
             "Un bebé familiar que te sigue y hace que otros familiares lo sigan. Deja de moverse mientras Isaac dispara lágrimas y, al soltar el botón de disparo, el Bebé Rey se teletransportará de vuelta a tu ubicación.",
             "King Baby siempre aparecerá primero en la cola de familiares.",
-            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined.",
-            "ARREPENTIMIENTO - Los familiares ahora apuntan automáticamente a los enemigos cuando reciben órdenes del Rey Bebé."
+            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al vencer a Delirium en el piso The Void con ???",
@@ -9428,8 +9407,7 @@
         "name": "Big Chubby",
         "description": [
             "Un familiar que sigue a Isaac y avanza muy lentamente, infligiendo 2,7 de daño por cada tic a cualquier enemigo con el que entra en contacto.",
-            "Casi idéntico al familiar Little Chubby, pero este se mueve mucho más lentamente y causa menos daño.",
-            "ARREPENTIMIENTO - Se ha aumentado la tasa de daño de Big Chubby"
+            "Casi idéntico al familiar Little Chubby, pero este se mueve mucho más lentamente y causa menos daño."
         ],
         "quality": "2",
         "tags": "*, face, yellow, brown",
@@ -9447,11 +9425,10 @@
         "name": "Plan C",
         "description": [
             "Al usarlo, este objeto inflige 9,999,999 de daño a todos los enemigos en la habitación y luego te mata 3 segundos después.",
-            "Este es un elemento activo de un solo uso, lo que significa que se destruye después de usarlo.",
-            "No mata ambas fases de jefes multifase como Silencio o Ultra Avaricia",
+            "No mata ambas fases de jefes multifase como Hush o Ultra Greed",
             "Si se usa para matar a un jefe, la muerte aún cuenta como una victoria para las marcas de finalización de notas adhesivas, pero la run aún obtendrá el final del juego.",
             "La animación de muerte de Delirium dura más de 3 segundos, lo que significa que morirás antes de que se considere como una marca de finalización. Una excepción a esto es si juegas con Lázaro o tienes los harapos de Lázaro: reaparecerás en la misma sala y conseguirás la muerte.",
-            "El Plan C es 5 veces más raro que otros artículos del mismo grupo de artículos, lo que hace que sea menos probable que aparezca."
+            "El Plan C es 5 veces más raro que otros items del mismo grupo de items, lo que hace que sea menos probable que aparezca."
         ],
         "quality": "0",
         "unlock": "Desbloquea este objeto derrotando al modo Greedier con Lazarus",
@@ -9475,10 +9452,10 @@
         "id": "476",
         "name": "D1",
         "description": [
-            "Al usar el D1, se duplica un objeto aleatorio en la sala actual. Esto funciona con todos los objetos normales, como cartas, runas, cofres y abalorios. Los objetos duplicados podrían no ser copias idénticas del original; por ejemplo, duplicar una carta podría generar una carta diferente.",
+            "Al usar el D1, se duplica un objeto aleatorio en la sala actual. Esto funciona con todos los objetos normales, como cartas, runas, cofres y trinkets. Los objetos duplicados podrían no ser copias idénticas del original; por ejemplo, duplicar una carta podría generar una carta diferente.",
             "Los cofres duplicados pueden convertirse en otro tipo de cofre aleatoriamente (por ejemplo, cofres rojos)",
             "Los cofres duplicados pueden convertirse en otro tipo de cofre aleatoriamente (por ejemplo, cofres rojos)",
-            "Se puede usar en una tienda para duplicar camionetas que aún no se han comprado y llevarse la camioneta duplicada de forma gratuita."
+            "Se puede usar en una tienda para duplicar objetos que aún no se han comprado y llevarse la objetos duplicada de forma gratuita."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar al modo Greedier con Isaac.",
@@ -9547,9 +9524,8 @@
         "id": "479",
         "name": "Smelter",
         "description": [
-            "Al usarlo, el Fundidor destruirá la baratija que tengas actualmente y te otorgará el efecto de forma permanente, lo que te permitirá acumular muchos efectos de baratija diferentes.",
-            "Si se ha fundido una baratija, no aparecerá una segunda vez a menos que se agote todo el grupo de baratijas o se reinicie la run (por ejemplo, haciendo una vuelta de la victoria).",
-            "Si se ha fundido una baratija, no aparecerá una segunda vez a menos que se agote todo el grupo de baratijas o se reinicie la run (por ejemplo, haciendo una vuelta de la victoria)."
+            "Al usarlo,se destruirá el trinket que tengas actualmente y te otorgará el efecto de forma permanente, lo que te permitirá acumular muchos efectos de trinket diferentes.",
+            "Si se ha fundido un trinket, no aparecerá una segunda vez a menos que se agote todo el grupo de trinkets o se reinicie la run (por ejemplo, haciendo una vuelta de la victoria)."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto superando el Corazón de Mamá en el modo difícil con Apollyon.",
@@ -9592,7 +9568,7 @@
         "description": [
             "Al usarlo, este objeto distorsiona todos los sprites y la música, rotando los gráficos 90 grados y desplazándolos diagonalmente hacia arriba/izquierda, dejando la zona de impacto en el mismo lugar. Esto puede resultar confuso al navegar por la sala.",
             "Las zonas de impacto de los enemigos siguen siendo las mismas",
-            "El minero de datos aumentará o disminuirá aleatoriamente una de tus estadísticas en una pequeña cantidad cuando se use",
+            "Aumentará o disminuirá aleatoriamente una de tus estadísticas en una pequeña cantidad cuando se use",
             "Te otorga el efecto Pastel de frutas para la habitación cuando lo usas, lo que dará un efecto de lágrima aleatorio con cada lágrima disparada.",
             "Todos los efectos visuales y de lágrimas se reinician después de salir de la habitación."
         ],
@@ -9640,8 +9616,7 @@
             "Un elemento de un solo uso que, al usarse, hará explotar todos los objetos (es decir, rocas, excrementos) en la habitación y causará 200 daños a todos los enemigos en la habitación actual, así como en todas las demás habitaciones del resto del piso.",
             "También abre la puerta del jefe después de Mom's Foot, la puerta del útero azul después de Mom's Heart, habitaciones secretas y habitaciones súper secretas.",
             "Al igual que todos los objetos de un solo uso, este objeto no puede ser absorbido ni usado varias veces por el objeto Vacío.",
-            "Ingresar a una habitación con una estatua de ángel la destruirá y generará automáticamente uno de los mini jefes ángeles.",
-            "ARREPENTIMIENTO - Esto ahora también hace estallar máquinas, mendigos y chimeneas."
+            "Ingresar a una habitación con una estatua de ángel la destruirá y generará automáticamente uno de los mini jefes ángeles."
         ],
         "quality": "3",
         "tags": "*, bomb, face, red, lips",
@@ -9661,7 +9636,7 @@
         "id": "484",
         "name": "Wait What?",
         "description": [
-            "Al usarlo, este objeto arrojará pedos, empujando a los enemigos y provocando que se genere una ola de rocas que se extienden hacia afuera desde Isaac en un círculo, lo que inflige 10 de daño por golpe a cualquier enemigo atrapado en ella.",
+            "Al usarlo, este objeto soltará pedos, empujando a los enemigos y provocando que se genere una ola de rocas que se extienden hacia afuera desde Isaac en un círculo, lo que inflige 10 de daño por golpe a cualquier enemigo atrapado en ella.",
             "Se puede utilizar para abrir habitaciones secretas.",
             "Visualmente este artículo es muy similar a Butter Bean",
             "Las ondas de roca pueden destruir objetos destructibles, por ejemplo, mierda."
@@ -9687,7 +9662,7 @@
             "Si el efecto falla, todos los objetos y elementos se eliminan y Crooked Penny genera 1 moneda.",
             "Si no hay consumibles actualmente en el piso, Crooked Penny genera 1 moneda",
             "Este objeto funciona con objetos que se pueden comprar, como objetos de la tienda, lo que te permite generar una versión gratuita si se activa el efecto.",
-            "Si se usa en una tienda y el efecto falla, se puede usar una caja de reposición para restaurar los artículos de la tienda. Esta mecánica es muy útil en los modos Codicia y Más Codicioso."
+            "Si se usa en una tienda y el efecto falla, se puede usar una caja de restock para restaurar los artículos de la tienda. Esta mecánica es muy útil en los modos Greed."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Keeper.",
@@ -9755,7 +9730,6 @@
         "description": [
             "Cuando se usa, este objeto te otorga el efecto de un objeto aleatorio para el resto de la habitación.",
             "Usar este objeto varias veces en la misma habitación reemplazará el efecto del objeto anterior por uno nuevo.",
-            "Ciertos elementos se pueden activar con este elemento que tienen efectos inesperados y muchos elementos no harán nada.",
             "Los artículos no otorgan la obtención de consumibles que normalmente ocurriría cuando se recoge ese artículo.",
             "La mayoría de los objetos que otorgan vuelo solo tienen efectos cosméticos y no te permitirán volar.",
             "Los objetos que normalmente otorgan HP no otorgarán salud adicional cuando se obtengan de Metrónomo"
@@ -9780,8 +9754,7 @@
         "description": [
             "Este dado te permite presionar la tecla Soltar para alternar entre todos los posibles efectos de dados y elegir uno para usar.",
             "El tiempo de carga se escala en función de los dados elegidos y se actualiza cada vez que lo usas.",
-            "Los dados posibles incluyen: D1, D4, D6, D8, D10, D12, D20, D100",
-            "ARREPENTIMIENTO - Este objeto fue completamente rediseñado para Arrepentimiento y ya no obliga a usar dados aleatorios cada vez. Puedes elegir qué dados usar."
+            "Los dados posibles incluyen: D1, D4, D6, D8, D10, D12, D20, D100"
         ],
         "quality": "4",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Isaac.",
@@ -9825,8 +9798,7 @@
             "Cada 6-7 habitaciones, Acid Baby dejará caer una pastilla al azar.",
             "La primera pastilla cae después de 2 habitaciones.",
             "Cada vez que uses una pastilla, Acid Baby causará 10 puntos de daño a todos los enemigos y los envenenará durante 6-7 ticks.",
-            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined.",
-            "ARREPENTIMIENTO - El efecto del veneno es más fuerte, pero la probabilidad de obtener píldoras de Acid Baby se ha reducido a cada 6 o 7 habitaciones (anteriormente cada 2 o 3 habitaciones)."
+            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "2",
         "tags": "*, brown, yellow, face, red, eyes, ghost",
@@ -9843,9 +9815,8 @@
         "id": "492",
         "name": "YO LISTEN!",
         "description": [
-            "+1 Suerte arriba",
+            "+1 Suerte",
             "Un hada familiar que flotará por la habitación y resaltará la ubicación de cualquier puerta de habitación secreta, rocas teñidas o trampillas debajo de las rocas.",
-            "Al ingresar a una nueva habitación, si hay una habitación secreta sin descubrir o una roca teñida, se moverá directamente al punto de interés; de lo contrario, simplemente volará aleatoriamente por la habitación.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú."
         ],
         "quality": "2",
@@ -9869,8 +9840,7 @@
             "Solo funciona con corazones llenos: el daño no cambia si a Isaac le falta medio corazón en un contenedor.",
             "La curación de los contenedores de corazón rojo vacíos eliminará el daño.",
             "No tiene efecto para The Lost y ???, ya que no pueden obtener contenedores de corazón rojo (excepto para contar para la transformación Spun)",
-            "Cuenta como 1 de los 3 elementos de jeringa necesarios para la transformación de Spun",
-            "ARREPENTIMIENTO - La adrenalina ahora otorga una bonificación de daño cada vez mayor cuanto más contenedores de corazón vacíos tenga Isaac."
+            "Cuenta como 1 de los 3 elementos de jeringa necesarios para la transformación de Spun"
         ],
         "quality": "2",
         "tags": "* Adderline, pink, syringe, needle, injection",
@@ -9954,7 +9924,7 @@
             "Al entrar en una nueva habitación, Isaac se camuflará y los enemigos no atacarán hasta que comiences a disparar lágrimas.",
             "Los jefes son inmunes a este efecto.",
             "La ropa interior de camuflaje otorga +0,5 de velocidad mientras está camuflado.",
-            "Al descubrirse, todos los enemigos cercanos reciben daño e Isaac obtiene un breve lágrimas + daño."
+            "Al descubrirse, todos los enemigos cercanos reciben daño e Isaac obtiene un breve + Cadencia + daño."
         ],
         "quality": "3",
         "tags": "*, pink, purple, goggles underwear under wear",
@@ -10031,8 +10001,8 @@
         "description": [
             "Te otorga un contenedor de corazón adicional por cada 25 monedas que tengas actualmente, hasta un máximo de 4 HP adicionales con 99 monedas que tengas.",
             "Si tu contador de monedas baja de la cantidad requerida para un contenedor de corazón, lo perderás nuevamente.",
-            "Este objeto funciona para el Guardián, permitiéndole superar sus 2 contenedores de salud habituales.",
-            "Sin embargo, si el Guardián cae a menos de 2 monedas de salud como resultado del Gullet de Greed, no puede usar un HP Up para aumentar su salud a 2 y tiene que recuperar las monedas perdidas para hacerlo."
+            "Este objeto funciona para el Keeper, permitiéndole superar sus 2 contenedores de salud habituales.",
+            "Sin embargo, si el Keeper cae a menos de 2 monedas de salud como resultado del Gullet de Greed, no puede usar un HP Up para aumentar su salud a 2 y tiene que recuperar las monedas perdidas para hacerlo."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto superando el desafío n.° 35 (Pong)",
@@ -10050,7 +10020,6 @@
         "name": "Large Zit",
         "description": [
             "Te da una posibilidad aleatoria mientras disparas lágrimas de disparar también un tiro de creep, que inflige el doble de daño de tus lágrimas y coloca un creep blanco en el suelo frente a ti que ralentiza a los enemigos si caminan a través de él.",
-            "A diferencia de algunos efectos de lágrimas similares, tu estadística de suerte no altera la probabilidad de que este efecto se active.",
             "Al disparar lágrimas, tienes un 5% de probabilidad de disparar una lágrima de vacío. Las lágrimas de vacío que tocan a los enemigos generarán a Cuerno Grande, quien aparece y los atrapa, matándolos instantáneamente."
         ],
         "quality": "1",
@@ -10090,8 +10059,7 @@
         "description": [
             "Cuando se usa, generará una torreta voladora que no se mueve y dispara lágrimas a los enemigos cercanos.",
             "Solo persiste para la sala actual",
-            "Las balas de la mosca causan 3,5 de daño cada una y no se ajustan a tu propia estadística de daño.",
-            "ARREPENTIMIENTO - Las moscas Nugget marrones ahora tienen una velocidad de disparo más rápida y su daño ha aumentado a 3,5 (en lugar de 2)."
+            "Las balas de la mosca causan 3,5 de daño cada una y no se ajustan a tu propia estadística de daño."
         ],
         "quality": "0",
         "unlock": "Desbloquea este objeto al derrotar a Ultra Greed como Apollyon",
@@ -10133,7 +10101,7 @@
             "Cada vez que una de tus lágrimas golpea a un enemigo, tiene la posibilidad de comenzar a sangrar, lo que hará que reciba daño cada 5 segundos.",
             "El daño de sangrado infligido por BackStabber se basa en la velocidad con la que se mueve un enemigo (los enemigos más rápidos reciben más daño).",
             "Dañar a los enemigos por detrás otorga al efecto de sangrado un 100 % de probabilidad de aplicarse.",
-            "Mientras un enemigo sangra, deja un surgimiento que daña a otros enemigos.",
+            "Mientras un enemigo sangra, deja un charco que daña a otros enemigos.",
             "La lágrima que inflige el efecto de sangrado también causa el doble de daño.",
             "El efecto de sangrado no se puede aplicar a enemigos inmunes (por ejemplo, jefes y mini jefes)."
         ],
@@ -10152,10 +10120,9 @@
         "id": "507",
         "name": "Sharp Straw",
         "description": [
-            "Cuando se usa, Paja Afilada causará daño a todos los enemigos en la habitación.",
+            "Cuando se usa causará daño a todos los enemigos en la habitación.",
             "El daño infligido es igual al daño de lagrima actual de Isaac más el 10% de la salud máxima del enemigo.",
-            "Cada vez que este objeto inflige daño, tiene un 15 % de probabilidad de soltar 1/2 corazones rojos.",
-            "ARREPENTIMIENTO - La Paja Afilada ahora solo puede generar la mitad de corazones rojos (anteriormente, generaba la mitad de corazones de alma si el jugador no tenía contenedores de corazones)"
+            "Cada vez que este objeto inflige daño, tiene un 15 % de probabilidad de soltar 1/2 corazones rojos."
         ],
         "quality": "2",
         "tags": "*, blue, white, stripe",
@@ -10176,7 +10143,7 @@
         "description": [
             "Una hoja de afeitar orbital que inflige daño por contacto y aplica el efecto de estado de sangrado a enemigos y jefes, lo que hará que reciban daño cada 5 segundos.",
             "El daño de contacto infligido por la Navaja de Mamá se basa en la velocidad con la que se mueve el enemigo (los enemigos más rápidos reciben más daño).",
-            "Mientras un enemigo sangra, deja un surgimiento que daña a otros enemigos.",
+            "Mientras un enemigo sangra, deja un charco que daña a otros enemigos.",
             "Este artículo SÍ bloquea los disparos enemigos.",
             "Su velocidad no se ve afectada por el objeto Ángel guardián.",
             "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
@@ -10199,8 +10166,7 @@
         "description": [
             "Un orbital ocular que dispara lágrimas que infligen 3,5 de daño y causa 2 de daño de contacto por tic a los enemigos.",
             "El daño infligido por este orbital no se escala con las mejoras de daño.",
-            "Su velocidad no se ve afectada por el objeto Ángel guardián.",
-            "ARREPENTIMIENTO - Ojo inyectado en sangre ahora bloquea los disparos enemigos, tiene mayor velocidad de disparo y cadencia de fuego, y ahora solo dispara cuando está alineado con enemigos."
+            "Su velocidad no se ve afectada por el objeto Ángel guardián."
         ],
         "quality": "1",
         "tags": "*, pink, red",
@@ -10241,11 +10207,10 @@
         "description": [
             "Una mosca familiar que orbita alrededor de un enemigo aleatorio en la habitación hasta que ese enemigo muere, lo que inflige 2 puntos de daño de contacto a otros enemigos.",
             "Angry Fly se moverá al siguiente enemigo después de que el que está orbitando actualmente muera, hasta que la habitación esté despejada, momento en el cual regresará a orbitar a Isaac.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod Steam Workshop creado por Custom Phase",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
         ],
         "quality": "1",
-        "unlock": "Desbloquea este objeto transformándote en Belcebú (se consigue recogiendo 3 objetos relacionados con moscas; consulta la página de Transformaciones para ver la lista completa).",
+        "unlock": "Desbloquea este objeto transformándote en Belcebú.",
         "tags": "*, red, cube, wings, face",
         "type_list": [
             "Pasivo",
@@ -10263,8 +10228,7 @@
             "Un objeto activo arrojadizo que coloca un agujero negro en el suelo donde aterriza, absorbiendo a todos los enemigos durante 6 segundos.",
             "Los enemigos atrapados dentro del agujero negro sufren daños rápidos con el tiempo.",
             "El Agujero Negro también absorberá a Isaac, pero con un efecto mucho más débil que para los enemigos.",
-            "El agujero negro destruirá obstáculos cercanos como rocas y ollas.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod Steam Workshop creado por Custom Phase"
+            "El agujero negro destruirá obstáculos cercanos como rocas y ollas."
         ],
         "quality": "1",
         "tags": "*, pink, purple, black, planet",
@@ -10304,11 +10268,10 @@
         "id": "514",
         "name": "Broken Modem",
         "description": [
-            "Provoca que enemigos aleatorios se \"retrasen\" a intervalos aleatorios, lo que hace que se congelen en el lugar por un segundo.",
-            "El efecto de retraso también puede aplicarse a lágrimas, proyectiles y consumibles en el suelo.",
+            "Provoca que enemigos aleatorios se \"laggeen\" a intervalos aleatorios, lo que hace que se congelen en el lugar por un segundo.",
+            "El efecto de lag también puede aplicarse a lágrimas, proyectiles y consumibles en el suelo.",
             "Mientras se sostiene, este objeto tiene un 25 % de probabilidad de duplicar cualquier objeto que caiga al final de la sala (similar al efecto Contrato desde abajo).",
-            "La estadística de Suerte de Isaac afecta la frecuencia con la que se produce el efecto de retraso.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod Steam Workshop creado por Freezenification"
+            "La estadística de Suerte de Isaac afecta la frecuencia con la que se produce el efecto de lag."
         ],
         "quality": "3",
         "unlock": "Completa 7 desafíos diarios (30 en consola)",
@@ -10325,8 +10288,7 @@
         "id": "515",
         "name": "Mystery Gift",
         "description": [
-            "Un objeto de un solo uso que genera un objeto aleatorio del grupo de objetos de la sala actual, con una posibilidad de que genere un trozo de carbón o una mierda en su lugar.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod Steam Workshop creado por Mills"
+            "Un objeto de un solo uso que genera un objeto aleatorio del grupo de objetos de la sala actual, con una posibilidad de que genere un trozo de carbón o una mierda en su lugar."
         ],
         "quality": "3",
         "tags": "*, green, red, present, bow, xmas, christmas",
@@ -10347,8 +10309,7 @@
         "name": "Sprinkler",
         "description": [
             "Cuando se usa, genera un aspersor que gira en círculo y esparce lágrimas en todas direcciones.",
-            "También se sinergizará con otros elementos, como Mom's Eye, Brimstone, Dr. Fetus, Tech X o Loki's Horns.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod Steam Workshop creado por Kieran y Stewartisme"
+            "También se sinergizará con otros elementos, como Mom's Eye, Brimstone, Dr. Fetus, Tech X o Loki's Horns."
         ],
         "quality": "2",
         "tags": "*, grey, gray, silver, metal, eye, stick",
@@ -10369,8 +10330,7 @@
         "description": [
             "+7 Bombas",
             "Permite colocar rápidamente bombas en el suelo.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1",
-            "ARREPENTIMIENTO - Las bombas ya no se golpean entre sí cuando el jugador tiene Bombas rápidas, lo que permite una línea de explosiones más controlada."
+            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1"
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando a Lil Horn 20 veces.",
@@ -10390,8 +10350,7 @@
             "Cuando lo recoges, le da a Isaac un familiar aleatorio que tiene un sprite aleatorio y un efecto de lágrima.",
             "El familiar volverá a ser completamente aleatorio al ingresar al siguiente piso.",
             "La apariencia se elige de un sprite de bebé cooperativo aleatorio.",
-            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod Steam Workshop creado por Ashkait y Scayze"
+            "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "2",
         "tags": "*, brown, orange, snake, mgs, cardboard",
@@ -10410,8 +10369,7 @@
         "description": [
             "Un familiar que se transformará en otro familiar aleatorio cada 10 segundos, copiando su comportamiento y efecto.",
             "Puede ser cualquier otro familiar, incluidos (pero no limitados a) Lil Brimstone, Bob's Brain, BBF, Meatboy, Rotten Baby",
-            "Los familiares aparecen como una versión Delirium blanca del original.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 1 y basado en el mod Steam Workshop creado por Ashkait y Scayze"
+            "Los familiares aparecen como una versión Delirium blanca del original."
         ],
         "quality": "2",
         "tags": "*, white, yellow, eyes, face, circle",
@@ -10429,8 +10387,7 @@
         "id": "520",
         "name": "Jumper Cables",
         "description": [
-            "Este objeto te otorga 1 barra de carga en tu objeto activo por cada 15 enemigos que mates.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 2 y basado en el mod Steam Workshop creado por Ashkait y Scayze"
+            "Este objeto te otorga 1 barra de carga en tu objeto activo por cada 15 enemigos que mates."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto recogiendo 3 de estos objetos en una sola partida: 9 voltios, la batería, batería de automóvil, batería AAA, batería de reloj.",
@@ -10450,8 +10407,7 @@
         "description": [
             "Al usarlo, el cupón hace que un artículo aleatorio de la tienda se vuelva gratis.",
             "Mientras se mantiene, garantiza un artículo aleatorio o una recogida en la tienda a mitad de precio",
-            "El efecto de este objeto también funciona en las Salas del Diablo, lo que te permite tomar un objeto aleatorio de forma gratuita.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 2 y basado en el mod Steam Workshop creado por Plumbo"
+            "El efecto de este objeto también funciona en las Salas del Diablo, lo que te permite tomar un objeto aleatorio de forma gratuita."
         ],
         "quality": "2",
         "tags": "*, paper, square, green, pink, white, barcode, letter, postcard",
@@ -10473,8 +10429,7 @@
         "name": "Telekinesis",
         "description": [
             "Una habilidad activa que hace que todas las lágrimas enemigas se queden en su lugar y luego sean arrojadas lejos de Isaac por un período de 3 segundos.",
-            "El aura de este objeto repelerá a los enemigos cercanos.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 2"
+            "El aura de este objeto repelerá a los enemigos cercanos."
         ],
         "quality": "1",
         "tags": "*, blue, glow, hand",
@@ -10495,7 +10450,7 @@
         "name": "Moving Box",
         "description": [
             "Al usarla, la caja recogerá un máximo de 6 objetos. Al volver a usarla, los objetos recogidos volverán al suelo, lo que te permitirá moverlos entre habitaciones.",
-            "Puede mover cualquiera de los siguientes: Baterías, Objetos, Baratijas, Corazones, Llaves, Bombas, Monedas, Cofres y más",
+            "Puede mover cualquiera de los siguientes: Baterías, Objetos, Trinkets, Corazones, Llaves, Bombas, Monedas, Cofres y más",
             "Usar Moving Box con batería de automóvil activará 2 interacciones al mismo tiempo: primero, dejará caer todos los elementos que se encuentren dentro de la caja y, segundo, recogerá el contenido de la habitación actual.",
             "Cuando se usa en una sala con 2 elementos para elegir (por ejemplo, Hay opciones, Sala de elementos dobles, Boss Rush), la Caja móvil elegirá solo uno de los elementos al azar.",
             "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 2 y basado en el mod Steam Workshop creado por HurleyFarrill"
@@ -10519,9 +10474,7 @@
         "name": "Technology Zero",
         "description": [
             "Tus lágrimas ahora estarán conectadas entre sí por rayos de electricidad que infligen daño a los enemigos que golpean.",
-            "Los láseres de este objeto infligen el 30 % de tu estadística de daño actual.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 2 y basado en el mod Steam Workshop creado por Ashkait y Scayze",
-            "ARREPENTIMIENTO: Los láseres de Tecnología Cero ahora infligen el 30 % de la estadística de daño del jugador por cada tic (antes el 100 %)."
+            "Los láseres de este objeto infligen el 30 % de tu estadística de daño actual."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al tener 2 objetos tecnológicos a la vez",
@@ -10540,9 +10493,8 @@
         "name": "Leprosy",
         "description": [
             "Recibir daño generará un orbital que gira alrededor de Isaac, infligiendo daño de contacto a los enemigos y bloqueando proyectiles enemigos.",
-            "Un máximo de 3 orbitales Leprocy pueden estar activos al mismo tiempo",
-            "Usar el orbital para causar daño a los enemigos puede provocar que se rompa.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 2. Basado libremente en el mod de Steam Workshop creado por Extreme Ninja Home Makeover con cambios de Edmund McMillen."
+            "Un máximo de 3 orbitales Leprosy pueden estar activos al mismo tiempo",
+            "Usar el orbital para causar daño a los enemigos puede provocar que se rompa."
         ],
         "quality": "1",
         "tags": "*,  lepracy, leprasy, leprosy, pink, red, bloody, lump",
@@ -10560,9 +10512,7 @@
         "name": "7 Seals",
         "description": [
             "Te da un familiar Harbinger aleatorio que cambia cada 10 segundos",
-            "Cada heraldo se comporta de manera diferente, según cualquiera de los jefes originales de los 5 jinetes.",
-            "ARREPENTIMIENTO - Los heraldos también generarán aleatoriamente su variante de langosta correspondiente. La mosca langosta tendrá efectos diferentes para cada heraldo, por ejemplo, efecto de veneno para Pestilencia.",
-            "Añadido como parte del paquete de refuerzo Afterbirth+ n.º 3. Basado en el mod de Steam Workshop creado por Scayze y Ashkait."
+            "Cada heraldo se comporta de manera diferente, según cualquiera de los jefes originales de los 5 jinetes."
         ],
         "quality": "2",
         "tags": "*,  bloody, paper, script, white, red, toilet paper, seven seals",
@@ -10580,14 +10530,13 @@
         "name": "Mr. ME!",
         "description": [
             "Al usarlo, este objeto invoca un fantasma cerca de Isaac que lo seguirá. También invoca una mira azul que se puede mover libremente. Tras unos segundos, la mira desaparecerá y el fantasma realizará ciertas acciones según el objetivo:",
-            "Objetos, objetos para recoger, baratijas: Se los lleva a Isaac. Funcionan también en tiendas y tratos con el diablo, permitiéndote llevártelos gratis. Robar un objeto puede fallar (se oirá un zumbido si falla).",
+            "Objetos, objetos para recoger, trinkets: Se los lleva a Isaac. Funcionan también en tiendas y tratos con el diablo, permitiéndote llevártelos gratis. Robar un objeto puede fallar (se oirá un zumbido si falla).",
             "Botones: Presiona el botón",
             "Enemigos: Ataca al enemigo hasta que el fantasma o el enemigo mueren.",
             "Puertas: Abre la puerta, incluso si está cerrada.",
             "Entradas a habitaciones secretas: Explota y abre la entrada.",
             "Puerta de Boss Rush: abrirá la puerta de Boss Rush desde cualquier lado, lo que te permitirá entrar y escapar de Boss Rush.",
-            "Máquinas tragamonedas, comerciantes muertos: Carga contra ellos y los hace explotar.",
-            "Añadido como parte del paquete de refuerzo Afterbirth+ n.º 3. Basado en el mod de Steam Workshop creado por Jean-Alphonse."
+            "Máquinas tragamonedas, comerciantes muertos: Carga contra ellos y los hace explotar."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto abriendo 20 cofres cerrados.",
@@ -10610,8 +10559,7 @@
         "description": [
             "Otorga un orbital prismático con un radio orbital grande.",
             "Las lágrimas de Isaac que pasan a través del prisma se dividen en cuatro lágrimas multicolores.",
-            "No inflige daño de contacto a los enemigos sobre los que pasa.",
-            "Añadido como parte del paquete de refuerzo Afterbirth+ n.º 3. Basado en el mod de Steam Workshop creado por electoon y Erfly."
+            "No inflige daño de contacto a los enemigos sobre los que pasa."
         ],
         "quality": "3",
         "tags": "*, dark side of the moon, rainbow, red, yellow, green, white, triangle, pink floyd, thought",
@@ -10629,8 +10577,7 @@
         "name": "Pop!",
         "description": [
             "Reemplaza las lágrimas de Isaac con globos oculares que pueden rebotar entre sí.",
-            "Las lágrimas de Isaac ya no están limitadas por el alcance y, en cambio, se disiparán cuando dejen de moverse o cuando golpeen a un enemigo u obstáculo.",
-            "Añadido como parte del paquete de refuerzo Afterbirth+ n.º 3. Basado en el mod de Steam Workshop creado por Scayze y Ashkait."
+            "Las lágrimas de Isaac ya no están limitadas por el alcance y, en cambio, se disiparán cuando dejen de moverse o cuando golpeen a un enemigo u obstáculo."
         ],
         "quality": "1",
         "tags": "*,  eyes, eyeball, bloody, white, red, googly googley, bank shot",
@@ -10648,9 +10595,8 @@
         "description": [
             "Al entrar en una habitación, aparece una calavera sobre la cabeza de un enemigo al azar.",
             "Matar al enemigo marcado hará que el cráneo se mueva a un enemigo diferente.",
-            "Si todos los enemigos en la sala son eliminados en el orden en que están marcados, Isaac obtiene una recompensa aleatoria de una de las siguientes: Corazón de alma, Llave, Píldora, Bomba, Níquel, +0.2 Velocidad, +0.5 Alcance, +0.5 Lágrimas, +1 Daño fijo o +1 suerte",
-            "Matar enemigos en el orden incorrecto terminará la racha y te negará cualquier recompensa adicional.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 4. Basado en el mod de Steam Workshop creado por Merlo."
+            "Si todos los enemigos en la sala son eliminados en el orden en que están marcados, Isaac obtiene una recompensa aleatoria de una de las siguientes: Corazón de alma, Llave, Píldora, Bomba, Níquel, +0.2 Velocidad, +0.5 Alcance, +0.5 Cadencia, +1 Daño fijo o +1 suerte",
+            "Matar enemigos en el orden incorrecto terminará la racha y te negará cualquier recompensa adicional."
         ],
         "quality": "2",
         "tags": "*, parchment, quill, script, pact, feather, scroll, death list, deaths list, paper, contract,",
@@ -10669,11 +10615,10 @@
             "Con Haemolacria, las lágrimas de Isaac se vuelven sangrientas y ahora se disparan en el aire en un arco.",
             "Al golpear el suelo, un obstáculo o un enemigo, la lágrima sangrienta estallará y disparará muchas lágrimas más pequeñas en direcciones aleatorias alrededor del punto de impacto.",
             "- Cadencia - (Retraso de lagrima * 2) + 10",
-            "Tu estadística de daño no se ve afectada por este objeto, sin embargo, la lágrima sangrienta grande inflige un 31 % más de tu daño de lágrima y las lágrimas dispersas más pequeñas infligen entre un 50 % y un 80 % de tu daño de lágrima.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 4. Basado en el mod de Steam Workshop (originalmente llamado Water Balloon) creado por HiHowAreYou."
+            "Tu estadística de daño no se ve afectada por este objeto, sin embargo, la lágrima sangrienta grande inflige un 31 % más de tu daño de lágrima y las lágrimas dispersas más pequeñas infligen entre un 50 % y un 80 % de tu daño de lágrima."
         ],
         "quality": "4",
-        "unlock": "Desbloquea este objeto recogiendo el objeto Coágulo de sangre 10 veces",
+        "unlock": "Desbloquea este objeto recogiendo el objeto Blood Clot 10 veces",
         "tags": "*, water balloon, blood, heamolacria",
         "type_list": [
             "Pasivo"
@@ -10691,8 +10636,7 @@
             "Este objeto también te permitirá alimentar una lágrima con otras lágrimas. Esto aumentará su tamaño y también su daño, así como el de las lágrimas reventadas.",
             "Una vez que una lágrima es alimentada 5 veces, estallará inmediatamente.",
             "Las lágrimas en la explosión causarán la mitad del daño que causaría la lagrima principal.",
-            "Las lágrimas que golpean a un enemigo no estallan.",
-            "Añadido como parte del paquete de refuerzo Afterbirth+ n.º 4. Basado en el mod de Steam Workshop (originalmente llamado Hungry Tears) creado por Echo."
+            "Las lágrimas que golpean a un enemigo no estallan."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto tomando 10 objetos o píldoras Tears Up en la misma partida",
@@ -10711,8 +10655,7 @@
         "description": [
             "Las lágrimas de Isaac son reemplazadas por penetrantes destellos sagrados de luz, que viajan por la habitación a una velocidad similar a las lágrimas normales.",
             "Las lágrimas de Trisagion infligen aproximadamente el 33 % de tu daño de lagrima habitual, sin embargo, debido al tamaño del destello sagrado, es probable que golpee a los enemigos varias veces.",
-            "Las lágrimas de Trisagion no hacen que los enemigos retrocedan y simplemente viajan a través de ellos (lágrimas penetrantes).",
-            "Añadido como parte del paquete de refuerzo Afterbirth+ n.º 4. Basado en el mod de Steam Workshop (originalmente llamado Lightshot) creado por Wyvern y TRPG."
+            "Las lágrimas de Trisagion no hacen que los enemigos retrocedan y simplemente viajan a través de ellos (lágrimas penetrantes)."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto tomando 25 objetos de la Sala del Ángel",
@@ -10730,10 +10673,7 @@
         "id": "534",
         "name": "Schoolbag",
         "description": [
-            "Te da un espacio para un elemento activo adicional",
-            "Al presionar la tecla CTRL (R2 en PS4, RT en XB1, ZR en Switch) puedes cambiar elementos activos",
-            "Algunos elementos que otorgan efectos temporales, como El Clavo, podrían desactivarse si se cambian a la otra ranura.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 4"
+            "Te da un espacio para un elemento activo adicional"
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto entrando a todas las tiendas desde el primer piso hasta Mom's Foot (Profundidades 2) en una sola run.",
@@ -10753,8 +10693,7 @@
         "description": [
             "+1 Corazón de alma",
             "Cura 1 corazón rojo al recogerlo",
-            "Te otorga un escudo al entrar en la Sala del Jefe, que previene el daño de un golpe y luego desaparece. Este escudo se acumula con Manto Sagrado, lo que te otorga 2 golpes gratis.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5. Basado en el mod de Steam Workshop creado por Ratlah."
+            "Te otorga un escudo al entrar en la Sala del Jefe, que previene el daño de un golpe y luego desaparece. Este escudo se acumula con Manto Sagrado, lo que te otorga 2 golpes gratis."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto durmiendo en 10 camas diferentes.",
@@ -10773,10 +10712,9 @@
         "description": [
             "Cuando se usa, este objeto sacrificará hasta 2 de tus familiares (elegidos al azar) y generará un objeto aleatorio de la Sala del Diablo por cada familiar sacrificado de esta manera.",
             "Además de los familiares, cualquier mosca azul o araña se convertirá en 1 moneda cada una.",
-            "Si se sacrifica un ángel guardián, un protector jurado o un serafín, Satanás estará muy feliz y te recompensará con 2 corazones negros.",
-            "El Íncubo no será sacrificado si juegas como Lilith",
-            "Si se usa mientras no tienes ningún familiar, este objeto no hará nada y no consumirá el objeto.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5. Basado en el mod de Steam Workshop creado por Niro."
+            "Si se sacrifica un guardián angel, un sworn protector o un serafín, Satanás estará muy feliz y te recompensará con 2 corazones negros.",
+            "Incubbus no será sacrificado si juegas como Lilith",
+            "Si se usa mientras no tienes ningún familiar, este objeto no hará nada y no consumirá el objeto."
         ],
         "quality": "2",
         "tags": "*, sacraficial, sacrafice",
@@ -10796,14 +10734,13 @@
         "id": "537",
         "name": "Lil Spewer",
         "description": [
-            "Un familiar con un ataque cargado, que genera una línea de criaturas en el suelo que daña a los enemigos que caminan sobre ella.",
+            "Un familiar con un ataque cargado, que genera una línea de charcos en el suelo que daña a los enemigos que caminan sobre ella.",
             "Genera 1 píldora aleatoria al recogerla.",
-            "El familiar y su escalofrío cambiarán aleatoriamente cuando Isaac use una pastilla.",
-            "Los posibles tipos de creep incluyen verde (inflige daño), negro (ralentiza a los enemigos), rojo (inflige daño, forma una línea con un charco más grande), amarillo (inflige daño, forma un cono de corto alcance) y blanco (ralentiza a los enemigos, forma un anillo).",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5. Basado en el mod de Steam Workshop creado por Strawrat y Aczom."
+            "El familiar y su charco cambiarán aleatoriamente cuando Isaac use una pastilla.",
+            "Los posibles tipos de creep incluyen verde (inflige daño), negro (ralentiza a los enemigos), rojo (inflige daño, forma una línea con un charco más grande), amarillo (inflige daño, forma un cono de corto alcance) y blanco (ralentiza a los enemigos, forma un anillo)."
         ],
         "quality": "1",
-        "unlock": "Desbloquea este objeto muriendo por tu propia explosión de Ipecacuana.",
+        "unlock": "Desbloquea este objeto muriendo por tu propia explosión de Ipecac.",
         "tags": "*, face",
         "type_list": [
             "Pasivo"
@@ -10818,9 +10755,8 @@
         "id": "538",
         "name": "Marbles",
         "description": [
-            "Genera 3 baratijas aleatorias al recogerlas.",
-            "Al recibir daño, tienes una probabilidad aleatoria de consumir una de las baratijas que tienes actualmente y obtener su efecto de forma permanente.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5. Basado en el mod de Steam Workshop creado por Amethyst."
+            "Genera 3 trinkets aleatorias al recogerlas.",
+            "Al recibir daño, tienes una probabilidad aleatoria de consumir una de las trinkets que tienes actualmente y obtener su efecto de forma permanente."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto usando 5 píldoras Gulp! en una sola partida",
@@ -10838,8 +10774,7 @@
         "name": "Mystery Egg",
         "description": [
             "Un familiar que sigue a Isaac y, al recibir daño, generará un enemigo encantado que luchará por ti.",
-            "Cuando aparezca el enemigo encantado, el huevo se romperá, pero se regenerará en la siguiente habitación.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5. Basado en el mod de Steam Workshop creado por Strawrat y Aczom."
+            "Cuando aparezca el enemigo encantado, el huevo se romperá, pero se regenerará en la siguiente habitación."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto generando 3 enemigos encantados en una sola habitación.",
@@ -10856,12 +10791,11 @@
         "id": "540",
         "name": "Flat Stone",
         "description": [
-            "Flat Stone hace que tus lágrimas reboten por toda la habitación",
-            "Cada vez que una lágrima rebota, inflige daño por salpicadura a los enemigos cercanos por un 25% del daño de tu lágrima.",
-            "Añadido como parte del paquete de refuerzo Afterbirth+ n.º 5. Basado en el mod de Steam Workshop creado por Maddogs."
+            "Flat Stone hace que tus lágrimas reboten salpicando por toda la habitación",
+            "Cada vez que una lágrima rebota, inflige daño por salpicadura a los enemigos cercanos por un 25% del daño de tu lágrima."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto recogiendo cemento de caucho 5 veces",
+        "unlock": "Desbloquea este objeto recogiendo Rubber Cement 5 veces",
         "tags": "*,",
         "type_list": [
             "Pasivo"
@@ -10877,8 +10811,7 @@
         "name": "Marrow",
         "description": [
             "+1 Corazón de hueso",
-            "Genera 3 corazones rojos en el suelo cuando se recoge.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5"
+            "Genera 3 corazones rojos en el suelo cuando se recoge."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Mom's Heart en modo difícil como The Forgotten.",
@@ -10896,11 +10829,10 @@
         "name": "Slipped Rib",
         "description": [
             "Este objeto te otorga un orbital que reflejará los proyectiles hacia los enemigos.",
-            "A diferencia de otros orbitales, Slipped Rib no inflige daño de contacto a los enemigos.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5"
+            "A diferencia de otros orbitales, Slipped Rib no inflige daño de contacto a los enemigos."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar al jefe Isaac como El Olvidado.",
+        "unlock": "Desbloquea este objeto al derrotar al jefe Isaac como The Forgotten.",
         "tags": "*,",
         "type_list": [
             "Pasivo"
@@ -10918,13 +10850,11 @@
             "Un familiar que sigue a Isaac y genera una mierda blanca cuando recibes daño.",
             "La mierda blanca otorga un aura que reduce el retraso de lágrimas a la mitad (Lágrimas) y tiene la posibilidad de bloquear el daño.",
             "El aura desaparece si se destruye la mierda.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5",
-            "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap.",
             "Puede provocar mierda blanca a través de los efectos de otros objetos, como Una carta contra la humanidad o las píldoras Re-Lax.",
-            "ARREPENTIMIENTO - La mierda blanca de Tierra Sagrada ahora es más duradera, similar a la mierda dorada. Mientras permanece en el aura, el daño de Isaac también aumenta un 25% y sus lágrimas adquieren un efecto de búsqueda."
+            "Cuenta como 1 de los 3 elementos de mierda necesarios para la transformación Oh Crap."
         ],
         "quality": "1",
-        "unlock": "Desbloquea este objeto al derrotar a Hush como El Olvidado.",
+        "unlock": "Desbloquea este objeto al derrotar a Hush como The Forgotten.",
         "tags": "*,",
         "type_list": [
             "Pasivo"
@@ -10939,11 +10869,10 @@
         "id": "544",
         "name": "Pointy Rib",
         "description": [
-            "Un familiar al que se puede apuntar con los botones de disparo de forma similar al objeto Dedo, lo que inflige daño de contacto a los enemigos igual a tu daño de lagrima.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5"
+            "Un familiar al que se puede apuntar con los botones de disparo de forma similar al objeto Dedo, lo que inflige daño de contacto a los enemigos igual a tu daño de lagrima."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto derrotando a Satanás como El Olvidado.",
+        "unlock": "Desbloquea este objeto derrotando a Satanás como The Forgotten.",
         "tags": "*,",
         "type_list": [
             "Pasivo"
@@ -10961,7 +10890,6 @@
             "Cuando se usa, este objeto generará un hueso orbital o un hueso encantado por cada enemigo asesinado en la sala actual.",
             "Los orbitales y los enemigos encantados persisten al viajar entre habitaciones.",
             "Los orbitales óseos se rompen después de causar suficiente daño o bloquear demasiados disparos.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5",
             "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
         ],
         "quality": "3",
@@ -10985,8 +10913,7 @@
         "name": "Dad's Ring",
         "description": [
             "Un objeto pasivo que rodea a Isaac con un anillo amarillo. Los enemigos quedan congelados al tocar el anillo amarillo.",
-            "Los enemigos que toquen el anillo quedarán congelados permanentemente hasta que te alejes, excepto los jefes que solo obtienen un efecto de congelación temporal después de tocarlo.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5"
+            "Los enemigos que toquen el anillo quedarán congelados permanentemente hasta que te alejes, excepto los jefes que solo obtienen un efecto de congelación temporal después de tocarlo."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Ultra Greedier como The Forgotten.",
@@ -11004,9 +10931,8 @@
         "name": "Divorce Papers",
         "description": [
             "+1 Corazón de hueso",
-            "+0.7 Lágrimas",
-            "Cuando recoges este objeto, la baratija de papel misteriosa aparece en el suelo.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5"
+            "+0.7 Cadencia",
+            "Cuando recoges este objeto, el trinket de papel misterioso aparece en el suelo."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Boss Rush como The Forgotten",
@@ -11024,8 +10950,7 @@
         "name": "Jaw Bone",
         "description": [
             "Un familiar que vuela por la habitación cada pocos segundos mientras dispara y daña a los enemigos (el doble de daño).",
-            "También se puede utilizar como el Boomerang para recoger consumibles en el suelo.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5"
+            "También se puede utilizar como el Boomerang para recoger consumibles en el suelo."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando a ??? en el piso del Cofre como El Olvidado",
@@ -11044,9 +10969,8 @@
         "name": "Brittle Bones",
         "description": [
             "Al recogerlo, este objeto reemplaza todos tus contenedores de corazones rojos con 6 corazones de hueso.",
-            "Cada vez que pierdes un corazón de hueso, muchos huesos se disparan en todas direcciones dañando a cualquier enemigo golpeado y obtienes un +0,5 de Lágrimas permanente.",
-            "Para los personajes Lost y Keeper, este objeto simplemente otorga una Lágrimas permanentes.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5"
+            "Cada vez que pierdes un corazón de hueso, muchos huesos se disparan en todas direcciones dañando a cualquier enemigo golpeado y obtienes un +0,5 de Cadencia permanente.",
+            "Para los personajes Lost y Keeper, este objeto simplemente otorga una Cadencia permanente."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a The Lamb en el piso de Dark Room como The Forgotten.",
@@ -11064,25 +10988,8 @@
         "id": "550",
         "name": "Broken Shovel",
         "description": [
-            "Se obtiene después de vencer al Boss Rush mientras se sostiene la otra mitad de la Pala Rota (ver el elemento anterior para más detalles)",
-            "Se combina con la primera pieza de Pala Rota para crear la Pala de Mamá (ver el siguiente elemento para más detalles)"
-        ],
-        "quality": "4",
-        "tags": "*,",
-        "type_list": [
-            "Pasivo"
-        ],
-        "item_pool": [
-            "None"
-        ],
-        "pickup": "Lost but not forgotten"
-    },
-    {
-        "id": "551",
-        "name": "Broken Shovel",
-        "description": [
-            "Se obtiene después de vencer al Boss Rush mientras se sostiene la otra mitad de la Pala Rota (ver el elemento anterior para más detalles)",
-            "Se combina con la primera pieza de Pala Rota para crear la Pala de Mamá (ver el siguiente elemento para más detalles)"
+            "Se obtiene después de vencer al Boss del primer piso en menos de 1 minuto, lo cual genera una sombra de la pala en la sala inicial, bombardear la sombra hará caer la pieza de pala",
+            "Se combina con la segunda pieza de Pala Rota para crear la Pala de Mamá"
         ],
         "quality": "4",
         "tags": "*,",
@@ -11098,15 +11005,31 @@
         "pickup": "Lost but not forgotten"
     },
     {
+        "id": "551",
+        "name": "Broken Shovel",
+        "description": [
+            "Se obtiene después de vencer al Boss Rush mientras se sostiene la otra mitad de la Pala Rota",
+            "Se combina con la primera pieza de Pala Rota para crear la Pala de Mamá"
+        ],
+        "quality": "4",
+        "tags": "*,",
+        "type_list": [
+            "Pasivo"
+        ],
+        "item_pool": [
+            "None"
+        ],
+        "pickup": "Lost but not forgotten"
+    },
+    {
         "id": "552",
         "name": "Mom's Shovel",
         "description": [
             "Cuando se usa, genera una trampilla que conduce al siguiente piso.",
-            "Cavar en ciertos lugares con objetos o marcas en el piso garantizará un espacio de acceso una vez por piso.",
-            "Desbloquea el personaje Olvidado cuando se usa en un montículo de tierra que aparece en una habitación en el piso de La Habitación Oscura.",
-            "Se obtiene combinando las dos piezas de la Pala Rota. La primera pieza se obtiene al derrotar al jefe del primer piso en menos de un minuto y luego bombardear la sombra en la primera sala. La segunda pieza se obtiene tras derrotar al Jefe Asalto, siempre y cuando se tenga la primera pieza de la Pala Rota (ver los 2 objetos anteriores para más detalles).",
-            "Después de desbloquear The Forgotten, al usarlo nuevamente en el montículo de tierra solo se genera un tipo de cofre aleatorio.",
-            "Agregado como parte del paquete de refuerzo Afterbirth+ n.° 5 y usado en la misión para desbloquear al personaje The Forgotten."
+            "Cavar en ciertos lugares con objetos o marcas en el piso garantizará una sala especial una vez por piso.",
+            "Desbloquea el personaje The Forgotten cuando se usa en un montículo de tierra que aparece en una habitación en el piso de La Habitación Oscura.",
+            "Se obtiene combinando las dos piezas de la Pala Rota.",
+            "Después de desbloquear The Forgotten, al usarlo nuevamente en el montículo de tierra solo se genera un tipo de cofre aleatorio."
         ],
         "quality": "4",
         "tags": "*, moms shovel, mom shovel",
@@ -11143,7 +11066,7 @@
         "id": "554",
         "name": "2Spooky",
         "description": [
-            "Cualquier enemigo que se acerque a Isaac se volverá temido, lo que hará que huya."
+            "Cualquier enemigo que se acerque a Isaac se asustará, lo que hará que huya."
         ],
         "quality": "1",
         "tags": "*,",
@@ -11204,8 +11127,8 @@
         "id": "557",
         "name": "Fortune Cookie",
         "description": [
-            "Al usarlo, muestra una fortuna aleatoria y tiene la posibilidad de obtener un corazón de alma, una carta (incluidos fragmentos de dados), una runa/piedra de alma o una baratija.",
-            "Los Corazones de alma y las cartas del tarot son mucho más comunes que las baratijas."
+            "Al usarlo, muestra una fortuna aleatoria y tiene la posibilidad de obtener un corazón de alma, una carta, una runa/piedra de alma o un trinket.",
+            "Los Corazones de alma y las cartas del tarot son mucho más comunes que las trinkets."
         ],
         "quality": "2",
         "tags": "*,",
@@ -11300,12 +11223,12 @@
         "description": [
             "Evita que tus estadísticas se reduzcan más durante el resto de la run.",
             "Por ejemplo, las píldoras para bajar estadísticas no hacen nada, y los elementos como el Tratamiento experimental aumentan las estadísticas pero no las reducen.",
-            "Este efecto funciona en elementos que aplican modificadores de estadísticas negativos, como la leche de soja.",
+            "Este efecto funciona en elementos que aplican modificadores de estadísticas negativos, como Soy Milk.",
             "Este efecto funciona para cualquier cosa que otorgue beneficios temporales, como cartas de Diablo/Fuerza, o bonificaciones por muerte como Lujuria Sangrienta.",
             "Si de alguna manera pierdes Rock Bottom, tus estadísticas volverán a la normalidad."
         ],
         "quality": "3",
-        "unlock": "Desbloquea este objeto al derrotar al jefe Rush como Jacob y Esaú.",
+        "unlock": "Desbloquea este objeto al derrotar Boss Rush como Jacob y Esaú.",
         "tags": "*,",
         "type_list": [
             "Pasivo"
@@ -11320,8 +11243,7 @@
         "name": "Nancy Bombs",
         "description": [
             "+5 Bombas",
-            "Las bombas ahora explotan con un efecto aleatorio (por ejemplo, veneno, teledirigido, bombas de premio)",
-            "En Antibirth esto se llamó Bombas Enigma."
+            "Las bombas ahora explotan con un efecto aleatorio (por ejemplo, veneno, teledirigido, bombas de premio)"
         ],
         "quality": "2",
         "tags": "*,",
@@ -11337,7 +11259,7 @@
         "id": "564",
         "name": "A Bar of Soap",
         "description": [
-            "+0.5 Lágrimas",
+            "+0.5 Cadencia",
             "+0,2 velocidad de disparo"
         ],
         "quality": "3",
@@ -11357,7 +11279,7 @@
             "Genera un gusano familiar rojo que persigue a los enemigos cercanos por la habitación y causa 2 puntos de daño por contacto por cada tic.",
             "Tras matar a 15 enemigos, Cachorro Sangriento se transforma en una versión agresiva que también atacará a Isaac. Al dañarlo, volverá a su estado normal.",
             "Aunque es agresivo, Blood Puppy inflige 7,5 de daño y deja caer medio corazón rojo por cada 10 enemigos que mata.",
-            "Tras matar a 25 enemigos más, se transforma de nuevo, infligiendo 15 de daño y destruyendo los obstáculos contra los que carga. Isaac recibe un corazón completo si es herido por Cachorro Sangriento y suelta un corazón rojo completo por cada 10 enemigos que mata."
+            "Tras matar a 25 enemigos más, se transforma de nuevo, infligiendo 15 de daño y destruyendo los obstáculos contra los que carga. Isaac recibe un corazón completo si es herido y suelta un corazón rojo completo por cada 10 enemigos que mata."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como Lilith",
@@ -11377,11 +11299,10 @@
         "id": "566",
         "name": "Dream Catcher",
         "description": [
-            "Durante la transición entre pisos, este elemento te muestra una vista previa del elemento que aparecerá en la sala de elementos y del jefe que aparecerá.",
+            "Durante la transición entre pisos, este elemento te muestra una vista previa del elemento que aparecerá en la sala de item y del jefe que aparecerá.",
             "Este efecto funcionará incluso si tienes Maldición de los ciegos, pero el objeto seguirá apareciendo como un ? al ingresar a la sala de objetos.",
             "Otorga +1 Corazón de Alma al comenzar cada nuevo piso después de recoger esto",
-            "En los pisos XL se muestran ambos artículos.",
-            "Actualmente, este efecto no funciona en el modo Codicia: mostrará 2 elementos, pero las salas de elementos tendrán elementos diferentes en ellas."
+            "En los pisos XL se muestran ambos artículos."
         ],
         "quality": "2",
         "tags": "*,",
@@ -11397,9 +11318,9 @@
         "id": "567",
         "name": "Paschal Candle",
         "description": [
-            "Otorga +0,4 Lágrimas por cada habitación completada sin recibir daño, hasta un máximo de +2,0 Lágrimas.",
-            "Cuando recibes daño, la bonificación de lágrimas se reinicia.",
-            "Recoger este objeto cuenta y también te otorga +0,4 Lágrimas temporales."
+            "Otorga +0,4 Cadencia por cada habitación completada sin recibir daño, hasta un máximo de +2,0 Cadencia.",
+            "Cuando recibes daño, la bonificación de cadencia se reinicia.",
+            "Recoger este objeto cuenta y también te otorga +0,4 Cadencia temporales."
         ],
         "quality": "3",
         "tags": "*,",
@@ -11492,7 +11413,7 @@
         "description": [
             "Las lágrimas se pueden controlar en pleno vuelo usando las teclas direccionales.",
             "+1 daño",
-            "+2.0 Alcance arriba",
+            "+2.0 Alcance",
             "-0,16 reducción de velocidad de disparo",
             "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
         ],
@@ -12100,7 +12021,7 @@
         "description": [
             "Todas las tiendas ahora contienen una trampilla con una escalera que conduce a una tienda especial.",
             "La tienda especial contiene varios consumibles y artículos a un precio más alto de las salas del Diablo/Ángel, del Jefe y de la Sala Secreta.",
-            "Los artículos cuestan entre 15 y 30 céntimos, las baratijas cuestan 15 céntimos, las cartas/runas cuestan entre 6 y 8 céntimos, los corazones negros/de hueso 8 céntimos, los corazones eternos 15 céntimos, los corazones podridos 5 céntimos."
+            "Los artículos cuestan entre 15 y 30 céntimos, las trinkets cuestan 15 céntimos, las cartas/runas cuestan entre 6 y 8 céntimos, los corazones negros/de hueso 8 céntimos, los corazones eternos 15 céntimos, los corazones podridos 5 céntimos."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto gastando más de 40 monedas en la misma tienda.",
@@ -12511,7 +12432,7 @@
         "description": [
             "Cuando lo usas, elimina todos tus elementos pasivos y te teletransporta al dormitorio de Isaac.",
             "Por cada objeto pasivo eliminado, puedes elegir entre 3 objetos de pedestal aleatorios de cualquier grupo. Básicamente, estás reorganizando todos tus objetos, pero con cada objeto nuevo puedes elegir entre 3 opciones aleatorias.",
-            "El dormitorio también contiene una baratija al azar, 2 cofres, 2 sacos y la cama de Isaac, que se pueden usar para curar por completo la salud de tu corazón rojo.",
+            "El dormitorio también contiene un trinket al azar, 2 cofres, 2 sacos y la cama de Isaac, que se pueden usar para curar por completo la salud de tu corazón rojo.",
             "La única forma de salir del dormitorio de Isaac es teletransportándote o por la trampilla, que te lleva al siguiente piso. Esto te desviará del camino alternativo si estás en él.",
             "Dado que este objeto restablece tus estadísticas, este objeto puede eliminar Corazones rotos."
         ],
@@ -12796,7 +12717,7 @@
             "El temporizador del juego no se reinicia",
             "Permite encontrar habitaciones de ángeles en la nueva ejecución si se realizó un trato con el diablo en la primera ejecución.",
             "En el modo Avaricia y mientras juegas como el Guardián Manchado, este objeto cuesta 99 monedas en lugar de 15.",
-            "Al usar la tecla R en el camino inverso tras recoger la Nota de Papá, accederás al Sótano 1 de este camino, que lleva directamente a la planta principal. Esto puede hacer que te saltes plantas donde dejaste una baratija para generar una Llave Rota.",
+            "Al usar la tecla R en el camino inverso tras recoger la Nota de Papá, accederás al Sótano 1 de este camino, que lleva directamente a la planta principal. Esto puede hacer que te saltes plantas donde dejaste un trinket para generar una Llave Rota.",
             "Las máquinas de donación se reparan si se atascan antes de usar la tecla R"
         ],
         "quality": "4",
@@ -13510,7 +13431,7 @@
             "Tras este efecto, no podrá volver a activarse hasta que Isaac obtenga la mitad o el total de un Corazón de Alma o un Corazón Negro. Los Corazones de Alma que se usan para cargar Grilletes Espirituales no se añadirán a tu salud de forma normal."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar a La Bestia como El Olvidado.",
+        "unlock": "Desbloquea este objeto al derrotar a La Bestia como The Forgotten.",
         "tags": "*,",
         "type_list": [
             "Pasivo"
@@ -13644,7 +13565,7 @@
         "name": "Lil Portal",
         "description": [
             "Le da a Isaac un pequeño portal familiar que se mueve por la pantalla mientras disparas.",
-            "El portal absorberá todos los consumibles y baratijas que pasen por encima, lo que hará que se agrande y cause más daño por contacto.",
+            "El portal absorberá todos los consumibles y trinkets que pasen por encima, lo que hará que se agrande y cause más daño por contacto.",
             "Cuando el portal absorbe 4 objetos, se convierte en un portal que permite teletransportarse a habitaciones inexploradas en la planta. Puede llevarte a habitaciones que requieren bombas o llaves, como la Habitación Secreta o la Tienda.",
             "Cada vez que el portal absorbe un objeto, genera una mosca de ataque azul para ti.",
             "Una vez exploradas todas las habitaciones, el portal no hace nada.",
@@ -14056,7 +13977,7 @@
         "description": [
             "Genera un cofre viejo al comienzo de todos los pisos futuros.",
             "Los cofres antiguos funcionan igual que los cofres dorados: requieren una llave para abrirlos, pero contienen elementos diferentes.",
-            "El cofre viejo puede contener: 3 baratijas (42 % de probabilidad), 1-3 corazones de alma (43 % de probabilidad), un objeto aleatorio del grupo del cofre viejo (10 % de probabilidad) o un objeto de la sala del ángel (5 % de probabilidad)",
+            "El cofre viejo puede contener: 3 trinkets (42 % de probabilidad), 1-3 corazones de alma (43 % de probabilidad), un objeto aleatorio del grupo del cofre viejo (10 % de probabilidad) o un objeto de la sala del ángel (5 % de probabilidad)",
             "Genera un segundo cofre en el piso reflejado de Downpour II o Dross II, pero solo si tenías este objeto antes de ingresar al piso."
         ],
         "quality": "3",
