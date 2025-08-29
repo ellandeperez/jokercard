@@ -1196,7 +1196,7 @@
             "Aprovechar más de una oferta de Steam reduce aún más el precio de todos los artículos."
         ],
         "quality": "2",
-        "tags": "* shop room pool, shop item pool, red, pink, white, paper",
+        "tags": "* shop room pool, shop item pool, white, red, pink, white, paper",
         "type_list": [
             "Pasivo"
         ],
@@ -1524,7 +1524,7 @@
             "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
         ],
         "quality": "3",
-        "tags": "* curse room pool, devil pool, devil room pool, devil deal, piece of paper, bloody paper, contract, red, drip",
+        "tags": "* curse room pool, devil pool, devil room pool, devil deal, piece of paper, bloody paper, contract, white, red, drip",
         "type_list": [
             "Pasivo"
         ],
@@ -3009,7 +3009,7 @@
             "Cuenta como 1 de los 3 elementos de araña necesarios para la transformación del Bebé Araña"
         ],
         "quality": "3",
-        "tags": "* item room, treasure room, item room pool, green, black",
+        "tags": "* item room, treasure room, item room pool, green",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -3558,7 +3558,7 @@
             "Dropea de la pelea contra el jefe Conquista"
         ],
         "quality": "2",
-        "tags": "*, red, horse, head",
+        "tags": "*, white, red, horse, head",
         "type_list": [
             "Activa"
         ],
@@ -3681,7 +3681,7 @@
             "Cuenta como 1 de los 3 elementos de gato necesarios para la transformación de Guppy"
         ],
         "quality": "1",
-        "tags": "* devil pool, devil room pool, devil deal, grey, brown, pile, guppys hairball, guppy hairball",
+        "tags": "* devil pool, devil room pool, devil deal, brown, pile, guppys hairball, guppy hairball",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -5002,7 +5002,7 @@
             "Otorga a todas las bombas un efecto de quema cuando explotan, dejando fuego en el suelo que inflige 22 de daño a los enemigos."
         ],
         "quality": "1",
-        "tags": "* item room, treasure room, item room pool, fire, orange, flame, face",
+        "tags": "* item room, treasure room, item room pool, fire, gray, orange, flame, face",
         "type_list": [
             "Pasivo"
         ],
@@ -5938,7 +5938,7 @@
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "2",
-        "tags": "* astrology, astronomy, item room, treasure room, item room pool, black, blue, cyan, glow",
+        "tags": "* astrology, astronomy, item room, treasure room, item room pool, blue",
         "type_list": [
             "Pasivo"
         ],
@@ -5956,7 +5956,7 @@
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
-        "tags": "* astrology, astronomy, item room, treasure room, item room pool, cyan, black, the lost item pool, blue, glow, 69",
+        "tags": "* astrology, astronomy, item room, treasure room, item room pool, blue, the lost item pool, glow, 69",
         "type_list": [
             "Pasivo"
         ],
@@ -6269,7 +6269,7 @@
             "Cuando las lágrimas de Isaac golpean cualquier cosa, dejan un charco tóxico verde en el suelo que daña a los enemigos por 1 punto de daño por cada tic."
         ],
         "quality": "3",
-        "tags": "* item room, treasure room, item room pool, mystery liquid, grey, gray, green",
+        "tags": "* item room, treasure room, item room pool, mystery liquid, grey, green",
         "type_list": [
             "Pasivo"
         ],
@@ -6533,7 +6533,7 @@
             "x0.5 Tamaño de lágrima"
         ],
         "quality": "2",
-        "tags": "* item room, treasure room, item room pool, white, glass, square",
+        "tags": "* item room, treasure room, item room pool, yellow, white, glass, square",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -7985,7 +7985,7 @@
             "Los disparos explosivos causan daño de lagrima regular al adherirse a un enemigo."
         ],
         "quality": "3",
-        "tags": "*, orange, black, ball, circle, explode",
+        "tags": "*, black, orange, ball, circle, explode",
         "type_list": [
             "Pasivo"
         ],
@@ -8067,7 +8067,7 @@
         ],
         "quality": "1",
         "unlock": "Derrota Greed con Eden",
-        "tags": "*, red, yellow, green, white, square, rectangle",
+        "tags": "*, red, white, green, white, square, rectangle",
         "type_list": [
             "Pasivo"
         ],
@@ -8823,7 +8823,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando a Delirium como Azazel.",
-        "tags": "*, red, glow, Dark Prince's Crown, dark princes crown, dark prince crown",
+        "tags": "*, gray, black, glow, Dark Prince's Crown, dark princes crown, dark prince crown",
         "type_list": [
             "Pasivo"
         ],
@@ -9315,7 +9315,7 @@
         ],
         "quality": "0",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Judas.",
-        "tags": "*, blue, white, eyes",
+        "tags": "*, black, blue, white, eyes",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -9619,7 +9619,7 @@
             "Ingresar a una habitación con una estatua de ángel la destruirá y generará automáticamente uno de los mini jefes ángeles."
         ],
         "quality": "3",
-        "tags": "*, bomb, face, red, lips",
+        "tags": "*, bomb, face, gray, red, lips",
         "type_list": [
             "Activa"
         ],
@@ -9688,7 +9688,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Eve.",
-        "tags": "*, blue, pink, purple",
+        "tags": "*, gray, brown",
         "type_list": [
             "Activa"
         ],
@@ -9758,7 +9758,7 @@
         ],
         "quality": "4",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Isaac.",
-        "tags": "*, grey, gray, cube, box, oo, square",
+        "tags": "*, pink, gray, cube, box, oo, square",
         "type_list": [
             "Activa"
         ],
@@ -10562,7 +10562,7 @@
             "No inflige daño de contacto a los enemigos sobre los que pasa."
         ],
         "quality": "3",
-        "tags": "*, dark side of the moon, rainbow, red, yellow, green, white, triangle, pink floyd, thought",
+        "tags": "*, dark side of the moon, rainbow, red, white, green, yellow, triangle, pink floyd, thought",
         "type_list": [
             "Pasivo",
             "Orbital"
