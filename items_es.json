@@ -729,7 +729,7 @@
             "Las lágrimas generadas por la cabeza de Tammy conservan los efectos lacrimógenos de las lágrimas de Isaac, como el veneno o el rastreo."
         ],
         "quality": "2",
-        "tags": "* golden chest pool, gold chest pool, dead, cat, white, yellow, tammys head, tammy head",
+        "tags": "* golden chest pool, gold chest pool, dead, cat, brown, white, tammys head, tammy head",
         "type_list": [
             "Activa"
         ],
@@ -750,7 +750,7 @@
             "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
         ],
         "quality": "1",
-        "tags": "* dungeon room, blood challenge room, arena pool, item room, treasure room, item room, white, brown, underwear, moms bra, mom bra",
+        "tags": "* dungeon room, blood challenge room, arena pool, item room, treasure room, item room, brown, white, underwear, moms bra, mom bra",
         "type_list": [
             "Activa"
         ],
@@ -2105,7 +2105,7 @@
             "No tiene ningún efecto con Keeper: no existe tal cosa como medio punto de salud de una moneda."
         ],
         "quality": "4",
-        "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, communion, the lost item pool, circle, cross, white, yellow",
+        "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, communion, the lost item pool, circle, cross, yellow, white",
         "type_list": [
             "Pasivo"
         ],
@@ -2865,7 +2865,7 @@
             "Le da a Isaac un corazón eterno/blanco cuando se usa"
         ],
         "quality": "3",
-        "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool, white, yellow, blue",
+        "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool, yellow, white, blue",
         "type_list": [
             "Activa"
         ],
@@ -3859,7 +3859,7 @@
             "+0.4 Cadencia"
         ],
         "quality": "3",
-        "tags": "* boss room pool, boss room item, mr. squeezy, mr squeezy, cobaltstreak, white, brown, red",
+        "tags": "* boss room pool, boss room item, mr. squeezy, mr squeezy, cobaltstreak, brown, red",
         "type_list": [
             "Pasivo"
         ],
@@ -7205,7 +7205,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Blue Womb (Hush) con The Lost",
-        "tags": "*, angel, wings, white",
+        "tags": "*, angel, wings, pink, white",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -7411,7 +7411,7 @@
             "Los disparos penetrantes funcionan con este objeto y varios golpes con una sola lágrima otorgarán una bonificación de daño cada uno."
         ],
         "quality": "3",
-        "tags": "*, bullseye, target, grey, gray, black, red, circle",
+        "tags": "*, bullseye, target, red, black, circle",
         "type_list": [
             "Pasivo"
         ],
@@ -7756,7 +7756,7 @@
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "3",
-        "tags": "*, angel, halo, wings, blue, white, baby",
+        "tags": "*, angel, halo, wings, pink, blue, white, baby",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -7985,7 +7985,7 @@
             "Los disparos explosivos causan daño de lagrima regular al adherirse a un enemigo."
         ],
         "quality": "3",
-        "tags": "*, black, orange, ball, circle, explode",
+        "tags": "*, orange, ball, circle, explode",
         "type_list": [
             "Pasivo"
         ],
@@ -8046,7 +8046,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Blue Womb (Hush) con Isaac.",
-        "tags": "* fart baby, green, fat",
+        "tags": "* fart baby, brown, fat",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -8460,7 +8460,7 @@
             "Puede dar lugar a combinaciones revolucionarias con el D20 debido a la cantidad de consumibles y baterías generadas por los sacos de objetos."
         ],
         "quality": "3",
-        "tags": "*, bag, grey, cry, blue, tear, shia paper bag sackhead, sad",
+        "tags": "*, bag, brown, blue, shia paper bag sackhead, sad",
         "type_list": [
             "Pasivo"
         ],
