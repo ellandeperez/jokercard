@@ -2598,7 +2598,7 @@
             "Cuenta como 1 de los 3 elementos de gato necesarios para la transformación de Guppy"
         ],
         "quality": "3",
-        "tags": "* curse room pool, red chest pool, red chest item pool, devil pool, devil room pool, devil deal, the lost item pool, cat, bone, pink, grey, gray, guppys paw, guppy paw",
+        "tags": "* curse room pool, red chest pool, red chest item pool, devil pool, devil room pool, devil deal, the lost item pool, cat, bone, black, pink, grey, gray, guppys paw, guppy paw",
         "type_list": [
             "Activa"
         ],
@@ -3420,7 +3420,7 @@
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "1",
-        "tags": "* item room, treasure room, item room pool, purple",
+        "tags": "* item room, treasure room, item room pool, pink",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -9666,7 +9666,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Keeper.",
-        "tags": "*, orange, brown, yellow, gold, coin, cent",
+        "tags": "*, brown, yellow, gold, coin, cent",
         "type_list": [
             "Activa"
         ],
