@@ -197,7 +197,7 @@
             "La resurrección ocurre antes que todos los demás objetos que te otorgan una vida extra."
         ],
         "quality": "2",
-        "tags": "* secret room pool, mario, green mushroom, extra life, spots, spotted",
+        "tags": "* secret room pool, mario, green mushroom, extra life, spots, spotted,green,white",
         "type_list": [
             "Pasivo"
         ],
@@ -283,7 +283,7 @@
             "Tiene la posibilidad de dropear del minijefe Gluttony."
         ],
         "quality": "2",
-        "tags": "* boss room pool, boss room item, item room, treasure room, item room pool, red heart, ballchinnian, ball sack, full heal, gluttony, the lost item pool",
+        "tags": "* boss room pool, boss room item, item room, treasure room, item room pool, red heart, ballchinnian, ball sack, full heal, gluttony, the lost item pool,red",
         "type_list": [
             "Pasivo"
         ],
@@ -460,7 +460,7 @@
             "Cura un contenedor de corazón rojo al recogerlo."
         ],
         "quality": "1",
-        "tags": "* dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool, carton, fly, flies, milk",
+        "tags": "* dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool, carton, fly, flies, milk,white",
         "type_list": [
             "Pasivo"
         ],
@@ -839,7 +839,7 @@
             "No se puede usar para teletransportarse a la sala YO SOY ERROR"
         ],
         "quality": "0",
-        "tags": "* item room, treasure room, item room pool, blue remote, robot",
+        "tags": "* item room, treasure room, item room pool, blue remote, robot,blue",
         "type_list": [
             "Activa"
         ],
@@ -1239,7 +1239,7 @@
             "Cuando se usa, ralentiza a todos los enemigos en la sala actual y sus proyectiles durante 8 segundos."
         ],
         "quality": "1",
-        "tags": "* item room, treasure room, item room pool, hour glass, hourglass, egg timer, sandbrown, glass",
+        "tags": "* item room, treasure room, item room pool, hour glass, hourglass, egg timer, sandbrown, glass, brown, yellow",
         "type_list": [
             "Activa"
         ],
@@ -1381,7 +1381,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al vencer a mamá por primera vez.",
-        "tags": "* red, box, square",
+        "tags": "*, red, box, square",
         "type_list": [
             "Pasivo"
         ],
@@ -1545,7 +1545,7 @@
             "Cuenta como 1 de los 3 elementos de gato necesarios para la transformación de Guppy"
         ],
         "quality": "3",
-        "tags": "* curse room pool, red chest pool, red chest item pool, devil pool, devil room pool, devil deal",
+        "tags": "* curse room pool, red chest pool, red chest item pool, devil pool, devil room pool, devil deal, black, white",
         "type_list": [
             "Pasivo"
         ],
@@ -1892,7 +1892,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto derrotando al jefe Isaac con Maggy.",
-        "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool",
+        "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool, blue, cross",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -2190,7 +2190,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a Satanás con Maggy.",
-        "tags": "* angel room pool, god room pool, angel room item, baby, wings",
+        "tags": "* angel room pool, god room pool, angel room item, baby, wings, pink, white",
         "type_list": [
             "Pasivo",
             "Orbital"
@@ -2969,7 +2969,7 @@
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
         ],
         "quality": "3",
-        "tags": "* item room, treasure room, item room pool, heart",
+        "tags": "* item room, treasure room, item room pool, heart, blue, gray",
         "type_list": [
             "Pasivo"
         ],
@@ -3520,7 +3520,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto superando el cofre con Bebé Azul",
-        "tags": "* golden chest pool, gold chest pool, blue head, the lost item pool, dead, ball",
+        "tags": "* golden chest pool, gold chest pool, blue head, the lost item pool, dead, ball, blue",
         "type_list": [
             "Pasivo"
         ],
@@ -3622,7 +3622,7 @@
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
         ],
         "quality": "3",
-        "tags": "* angel room pool, god room pool, angel room item, the lost item pool, cup, wooden, chalice, indiana jones",
+        "tags": "* angel room pool, god room pool, angel room item, the lost item pool, cup, wooden, chalice, indiana jones,gold",
         "type_list": [
             "Pasivo"
         ],
@@ -3741,7 +3741,7 @@
             "Le da a Isaac 99 bombas"
         ],
         "quality": "3",
-        "tags": "* secret room pool, item room, treasure room, item room pool, smile, face, grinning, doitfgt",
+        "tags": "* secret room pool, item room, treasure room, item room pool, smile, face, grinning, doitfgt, black, white",
         "type_list": [
             "Pasivo"
         ],
@@ -3760,7 +3760,7 @@
             "Puede elegir entre una lista de 39 efectos de objetos, entre ellos Clavos de 8 pulgadas, 20/20, ¡Manzana!, Bola de alquitrán, Continuum, Cuerpo de Cricket, Materia oscura, Ojo muerto, Toque de la muerte, Eutanasia, Explosivo, Ojo de Belial, Mente de fuego, Luz sagrada, Barra de hierro, Cuerno pequeño, Contacto perdido, Lentes de contacto de mamá, Sombra de ojos de mamá, Perfume de mamá, Araña mutante, Mi reflejo, Líquido misterioso, Número uno, Parasitoide, Proptosis, Pupula Duplex, Cemento de goma, Sagitario, Escorpio, Infección sinusal, Bola de velocidad, Doblador de cucharas, El ojo interior, El parásito, La cebolla triste, El mago y Amor duro"
         ],
         "quality": "3",
-        "tags": "* item room, treasure room, item room pool, pink note, money, cash, three dollar bill, cash money",
+        "tags": "* item room, treasure room, item room pool, pink, note, money, cash, three dollar bill, cash money",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -3778,7 +3778,7 @@
             "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
         ],
         "quality": "1",
-        "tags": "* library pool, library room, book room pool, item room, treasure room, item room pool, yellow book how to",
+        "tags": "* library pool, library room, book room pool, item room, treasure room, item room pool, yellow, book how to",
         "type_list": [
             "Activa"
         ],
@@ -3837,7 +3837,7 @@
             "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
         ],
         "quality": "1",
-        "tags": "* dungeon room, blood challenge room, arena pool, demon beggar pool, demon judgement pool, devil beggar pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, shop room pool, shop item pool, bag, pouch, moms coin purse, mom coin purse",
+        "tags": "* dungeon room, blood challenge room, arena pool, demon beggar pool, demon judgement pool, devil beggar pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, shop room pool, shop item pool, bag, pouch, moms coin purse, mom coin purse, brown, gray",
         "type_list": [
             "Pasivo"
         ],
@@ -3913,7 +3913,7 @@
             "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
         ],
         "quality": "3",
-        "tags": "* key master pool, key beggar pool, key judgement pool, , dungeon room, blood challenge room, arena pool, shop room pool, shop item pool, golden, horns, moms key, mom key",
+        "tags": "* key master pool, key beggar pool, key judgement pool, , dungeon room, blood challenge room, arena pool, shop room pool, shop item pool, golden, horns, moms key, mom key, yellow",
         "type_list": [
             "Pasivo"
         ],
@@ -4201,7 +4201,7 @@
             "La forma revivida de Lázaro (Lázaro II) reaparece con este objeto."
         ],
         "quality": "1",
-        "tags": "* item room, treasure room, item room pool, blood drop, red blood, drip",
+        "tags": "* item room, treasure room, item room pool, blood drop, red, blood, drip",
         "type_list": [
             "Pasivo"
         ],
@@ -4320,7 +4320,7 @@
             "Las lágrimas de cada bomba causan un daño fijo de 25 y se ven afectadas por cualquier modificador de lágrimas que tenga Isaac."
         ],
         "quality": "2",
-        "tags": "* boss rush pool, boss rush room, item room, treasure room, item room pool, crying, face",
+        "tags": "* boss rush pool, boss rush room, item room, treasure room, item room pool, crying, face, gray, blue",
         "type_list": [
             "Pasivo"
         ],
@@ -4361,7 +4361,7 @@
             "Cuando se liberan las lágrimas, se dispararán en la dirección en la que Isaac estaba mirando originalmente cuando fue creado."
         ],
         "quality": "2",
-        "tags": "* anti gravity, item room, treasure room, item room pool, anti gravity, atom, nucleus",
+        "tags": "* anti gravity, item room, treasure room, item room pool, anti gravity, atom, nucleus, blue, cyan",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -4524,7 +4524,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto superando el cofre con Azazel.",
-        "tags": "* devil pool, devil room pool, devil deal, red devil sign, abandon, abadon, pentagram",
+        "tags": "* devil pool, devil room pool, devil deal, red devil sign, abandon, abadon, pentagram, red",
         "type_list": [
             "Pasivo"
         ],
@@ -4703,7 +4703,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al vencer al Corazón de Mamá 7 veces",
-        "tags": "* demon beggar pool, demon judgement pool, devil beggar pool, boss room pool, boss room item, item room, treasure room, item room pool, yellow syringe, needle, injection",
+        "tags": "* demon beggar pool, demon judgement pool, devil beggar pool, boss room pool, boss room item, item room, treasure room, item room pool, yellow syringe, needle, injection, yellow",
         "type_list": [
             "Pasivo"
         ],
@@ -4796,7 +4796,7 @@
             "Multiplicador de daño de 0,75x"
         ],
         "quality": "4",
-        "tags": "* 20 20, 2020, item room, treasure room, item room pool, black glasses, spectacles",
+        "tags": "* 20 20, 2020, item room, treasure room, item room pool, black glasses, spectacles, black",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -5145,7 +5145,7 @@
             "12 salas: Runa de Jera, Alma de Lilith, Alma del Guardián"
         ],
         "quality": "2",
-        "tags": "* Secret Room",
+        "tags": "* Secret Room, white",
         "type_list": [
             "Activa"
         ],
@@ -5328,7 +5328,7 @@
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
         ],
         "quality": "1",
-        "tags": "* item room, treasure room, item room pool, heart, smile",
+        "tags": "* item room, treasure room, item room pool, heart, smile, black, red",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -5391,7 +5391,7 @@
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "2",
-        "tags": "* devil pool, devil room pool, devil deal, item room, treasure room, item room pool, horns, smile, lil' brimstone",
+        "tags": "* devil pool, devil room pool, devil deal, item room, treasure room, item room pool, horns, smile, lil' brimstone, black",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -5687,7 +5687,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este artículo donando 400 centavos a la Tienda",
-        "tags": "* shop room pool, shop item pool",
+        "tags": "* shop room pool, shop item pool, red",
         "type_list": [
             "Activa"
         ],
@@ -5709,7 +5709,7 @@
             "Si se usa en una sala súper secreta de Corazón Negro o Corazón Eterno, sacará el corazón correspondiente."
         ],
         "quality": "0",
-        "tags": "* shop room pool, shop item pool, the lost item pool, glass",
+        "tags": "* shop room pool, shop item pool, the lost item pool, glass, white",
         "type_list": [
             "Activa"
         ],
@@ -5995,7 +5995,7 @@
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "2",
-        "tags": "* astrology, astronomy, item room, treasure room, item room pool, blue glow, m",
+        "tags": "* astrology, astronomy, item room, treasure room, item room pool, blue glow, blue",
         "type_list": [
             "Pasivo"
         ],
@@ -6153,7 +6153,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Boss Rush con Judas",
-        "tags": "* devil pool, devil room pool, devil deal, item room, treasure room, item room pool judas shadow",
+        "tags": "* devil pool, devil room pool, devil deal, item room, treasure room, item room pool judas shadow, black",
         "type_list": [
             "Pasivo"
         ],
@@ -6324,7 +6324,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Boss Rush con Blue Baby.",
-        "tags": "* item room, treasure room, item room pool, blue fly, big fly, blue baby's only friend, fat, dead, ???s only friend, blue bozzy",
+        "tags": "* item room, treasure room, item room pool, blue fly, big fly, blue baby's only friend, fat, dead, ???s only friend, blue bozzy, blue",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -6472,7 +6472,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a Isaac en la Catedral 5 veces.",
-        "tags": "*, photo, family, kodak",
+        "tags": "*, photo, family, kodak, white",
         "type_list": [
             "Pasivo"
         ],
@@ -6494,7 +6494,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a Satanás en el Seol 5 veces.",
-        "tags": "* mom's foot, mom fight, mom boss, dark room, photo, family, kodak, inverted",
+        "tags": "* mom's foot, mom fight, mom boss, dark room, photo, family, kodak, inverted, black",
         "type_list": [
             "Pasivo"
         ],
@@ -6616,7 +6616,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto superando el Cofre con The Lost",
-        "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, real platinum god, the lost item pool",
+        "tags": "* angel room pool, god room pool, angel room item, item room, treasure room, item room pool, real platinum god, the lost item pool, yellow, white",
         "type_list": [
             "Pasivo"
         ],
@@ -6770,7 +6770,7 @@
             "Cuenta como 1 de los 3 elementos de hongo necesarios para la transformación de Fun Guy."
         ],
         "quality": "3",
-        "tags": "* boss room pool, boss room item, mushroom, fungi, fungus",
+        "tags": "* boss room pool, boss room item, mushroom, fungi, fungus, blue, gray",
         "type_list": [
             "Pasivo"
         ],
@@ -7268,7 +7268,7 @@
             "Las bombas más pequeñas infligen la mitad del daño y tienen un área de explosión menor. Además, conservan la mayoría de los objetos sinérgicos de las bombas."
         ],
         "quality": "1",
-        "tags": "*, clear, transparent",
+        "tags": "*, clear, transparent, black, white",
         "type_list": [
             "Pasivo"
         ],
@@ -9372,7 +9372,7 @@
             "Las lágrimas de Lil Monstro infligen daño base (3,5) y no escalan con las mejoras de daño."
         ],
         "quality": "2",
-        "tags": "*, head, cleft, lip, palate, hairlip, tooth",
+        "tags": "*, head, cleft, lip, palate, hairlip, tooth, pink",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -10006,7 +10006,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto superando el desafío n.° 35 (Pong)",
-        "tags": "*, dollar, cash, sack, bag, pouch, greeds gullet, greed gullet",
+        "tags": "*, dollar, cash, sack, bag, pouch, greeds gullet, greed gullet, brown",
         "type_list": [
             "Pasivo"
         ],
@@ -10599,7 +10599,7 @@
             "Matar enemigos en el orden incorrecto terminará la racha y te negará cualquier recompensa adicional."
         ],
         "quality": "2",
-        "tags": "*, parchment, quill, script, pact, feather, scroll, death list, deaths list, paper, contract,",
+        "tags": "*, parchment, quill, script, pact, feather, scroll, death list, deaths list, paper, contract,brown, red",
         "type_list": [
             "Pasivo"
         ],
@@ -10619,7 +10619,7 @@
         ],
         "quality": "4",
         "unlock": "Desbloquea este objeto recogiendo el objeto Blood Clot 10 veces",
-        "tags": "*, water balloon, blood, heamolacria",
+        "tags": "*, water balloon, blood, heamolacria, red",
         "type_list": [
             "Pasivo"
         ],
@@ -10640,7 +10640,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto tomando 10 objetos o píldoras Tears Up en la misma partida",
-        "tags": "*,",
+        "tags": "*,blue,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -10659,7 +10659,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto tomando 25 objetos de la Sala del Ángel",
-        "tags": "*,",
+        "tags": "*,white,cyan,blue",
         "type_list": [
             "Pasivo"
         ],
@@ -10677,7 +10677,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto entrando a todas las tiendas desde el primer piso hasta Mom's Foot (Profundidades 2) en una sola run.",
-        "tags": "*, backpack back pack school bag",
+        "tags": "*, backpack back pack school bag, brown",
         "type_list": [
             "Pasivo"
         ],
@@ -10697,7 +10697,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto durmiendo en 10 camas diferentes.",
-        "tags": "*,",
+        "tags": "*,blue",
         "type_list": [
             "Pasivo"
         ],
@@ -10717,7 +10717,7 @@
             "Si se usa mientras no tienes ningún familiar, este objeto no hará nada y no consumirá el objeto."
         ],
         "quality": "2",
-        "tags": "*, sacraficial, sacrafice",
+        "tags": "*, sacraficial, sacrafice, brown, red",
         "type_list": [
             "Activa"
         ],
@@ -10741,7 +10741,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto muriendo por tu propia explosión de Ipecac.",
-        "tags": "*, face",
+        "tags": "*, face, pink",
         "type_list": [
             "Pasivo"
         ],
@@ -10760,7 +10760,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto usando 5 píldoras Gulp! en una sola partida",
-        "tags": "*,",
+        "tags": "*,brown, red, blue",
         "type_list": [
             "Pasivo"
         ],
@@ -10778,7 +10778,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto generando 3 enemigos encantados en una sola habitación.",
-        "tags": "*,",
+        "tags": "*,pink",
         "type_list": [
             "Pasivo"
         ],
@@ -10796,7 +10796,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto recogiendo Rubber Cement 5 veces",
-        "tags": "*,",
+        "tags": "*,gray, blue",
         "type_list": [
             "Pasivo"
         ],
@@ -10815,7 +10815,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Mom's Heart en modo difícil como The Forgotten.",
-        "tags": "*,",
+        "tags": "*,red, white",
         "type_list": [
             "Pasivo"
         ],
@@ -10833,7 +10833,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar al jefe Isaac como The Forgotten.",
-        "tags": "*,",
+        "tags": "*,white",
         "type_list": [
             "Pasivo"
         ],
@@ -10855,7 +10855,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Hush como The Forgotten.",
-        "tags": "*,",
+        "tags": "*,cyan, blue, white",
         "type_list": [
             "Pasivo"
         ],
@@ -10873,7 +10873,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a Satanás como The Forgotten.",
-        "tags": "*,",
+        "tags": "*,white,red",
         "type_list": [
             "Pasivo"
         ],
@@ -10894,7 +10894,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void como The Forgotten.",
-        "tags": "*,",
+        "tags": "*,black,white",
         "type_list": [
             "Activa"
         ],
@@ -10917,7 +10917,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Ultra Greedier como The Forgotten.",
-        "tags": "*, dads ring, dad ring",
+        "tags": "*, dads ring, dad ring, gold",
         "type_list": [
             "Pasivo"
         ],
@@ -11844,7 +11844,7 @@
             "Tiene un tiempo de reutilización de 3 segundos antes de poder usarse nuevamente."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,blue,gray",
         "type_list": [
             "Pasivo"
         ],
