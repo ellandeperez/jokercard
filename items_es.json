@@ -1567,7 +1567,7 @@
             "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
         ],
         "quality": "3",
-        "tags": "* devil pool, devil room pool, devil deal, the lost item pool, cross, upside down, red, black",
+        "tags": "* devil pool, devil room pool, devil deal, the lost item pool, cross, upside down, red",
         "type_list": [
             "Pasivo"
         ],
@@ -2291,7 +2291,7 @@
             "Si de alguna manera logras obtener un segundo Brimstone, el láser se vuelve masivo y causa el doble de daño."
         ],
         "quality": "4",
-        "tags": "* devil pool, devil room pool, devil deal, infinity, red, black",
+        "tags": "* devil pool, devil room pool, devil deal, infinity, red",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -2375,7 +2375,7 @@
             "Uno de los elementos iniciales de Eve"
         ],
         "quality": "2",
-        "tags": "* devil pool, devil room pool, devil deal, red, black, star, moon",
+        "tags": "* devil pool, devil room pool, devil deal, red, star, moon",
         "type_list": [
             "Pasivo"
         ],
@@ -3125,7 +3125,7 @@
             "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
         ],
         "quality": "3",
-        "tags": "* devil pool, devil room pool, devil deal, red, crescent, moon, drop, black",
+        "tags": "* devil pool, devil room pool, devil deal, red, crescent, moon, drop",
         "type_list": [
             "Pasivo"
         ],
@@ -11749,7 +11749,7 @@
             "En el piso The Void se muestra una sala de jefe aleatoria, que no es necesariamente la sala de Delirium."
         ],
         "quality": "2",
-        "tags": "*,blue,gray",
+        "tags": "*,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -11767,7 +11767,7 @@
             "Revela la ubicación de una habitación secreta en el minimapa."
         ],
         "quality": "2",
-        "tags": "*, moon, loona, lunar,blue,gray",
+        "tags": "*,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -11786,7 +11786,7 @@
             "No abre puertas cerradas ni la puerta que conduce a la Sala del Jefe."
         ],
         "quality": "3",
-        "tags": "*,blue,gray",
+        "tags": "*,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -11805,7 +11805,7 @@
             "El efecto del encanto desaparecerá muy rápidamente cuando los enemigos se alejen de Isaac."
         ],
         "quality": "2",
-        "tags": "*,blue,gray",
+        "tags": "*,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -11822,7 +11822,7 @@
             "+1.0 daño, pero cada lagrima de roca tiene un modificador de daño aleatorio que puede aumentar o disminuir (x0.5 a x2)"
         ],
         "quality": "3",
-        "tags": "*,blue,gray",
+        "tags": "*,cyan",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -11844,7 +11844,7 @@
             "Tiene un tiempo de reutilización de 3 segundos antes de poder usarse nuevamente."
         ],
         "quality": "2",
-        "tags": "*,blue,gray",
+        "tags": "*,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -11866,7 +11866,7 @@
             "Isaac es inmune al veneno de los enemigos, como Gasbag."
         ],
         "quality": "2",
-        "tags": "*,blue,gray",
+        "tags": "*,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -11885,7 +11885,7 @@
             "Las lágrimas de Saturno no pueden romper objetos como excrementos y barriles de TNT."
         ],
         "quality": "2",
-        "tags": "*,blue,gray",
+        "tags": "*,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -11902,7 +11902,7 @@
             "Los enemigos congelados nunca se descongelan y el juego los considera muertos. Patear a un enemigo congelado lo empujará contra la pared, donde se romperá y lanzará fragmentos de hielo por todas partes (estos pueden congelar a otros enemigos)."
         ],
         "quality": "3",
-        "tags": "*,blue,gray",
+        "tags": "*,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -11919,7 +11919,7 @@
             "Siempre que no estés disparando lágrimas, la barra de carga comenzará a llenarse durante un máximo de 3 segundos. Si mantienes presionado el botón de disparo de nuevo, liberarás rápidamente todas las lágrimas almacenadas."
         ],
         "quality": "3",
-        "tags": "*,blue,gray",
+        "tags": "*,cyan",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -11938,7 +11938,7 @@
             "Permite que Isaac se cuele entre algunos objetos."
         ],
         "quality": "3",
-        "tags": "*,blue,gray",
+        "tags": "*,cyan",
         "type_list": [
             "Pasivo"
         ],
