@@ -253,6 +253,28 @@
         .modal-next {
             right: 10px;
         }
+        #items-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        #items-header button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        #items-header img {
+            width: 48px;
+            height: 48px;
+            pointer-events: none;
+            image-rendering: pixelated;
+        }
         @media (max-width: 700px) {
             html{
                 background-color: rgb(19, 12, 9);
@@ -391,7 +413,15 @@
                 <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/consumibles.png" alt="Consumibles" >
             </button>
         </div>
-        <h2 id="h2-items">ITEMS</h2>
+        <div id="items-header">
+            <button id="sort-id-btn">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/id.png" alt="Ordenar por ID">
+            </button>
+            <h2 id="h2-items" style="margin:0;">ITEMS</h2>
+            <button id="sort-color-btn">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/color.png" alt="Ordenar por Color">
+            </button>
+        </div>
         <div id="items" class="img-grid itemgrid"></div>
         <h2 id="h2-trinkets">TRINKETS</h2>
         <div id="trinkets" class="img-grid trinketgrid"></div>
@@ -522,7 +552,7 @@
             document.getElementById('items').innerHTML = '';
             document.getElementById('trinkets').innerHTML = '';
             document.getElementById('cards').innerHTML = '';
-            document.getElementById('h2-items').style.display = 'none';
+            document.getElementById('items-header').style.display = 'none';
             document.getElementById('h2-trinkets').style.display = 'none';
             document.getElementById('h2-cards').style.display = 'none';
         }
@@ -614,7 +644,7 @@
             if (showTrinkets.length > 0) renderTrinkets(showTrinkets);
             if (showCards.length > 0) renderCards(showCards);
 
-            document.getElementById('h2-items').style.display = document.getElementById('items').children.length ? '' : 'none';
+            document.getElementById('items-header').style.display = document.getElementById('items').children.length ? '' : 'none';
             document.getElementById('h2-trinkets').style.display = document.getElementById('trinkets').children.length ? '' : 'none';
             document.getElementById('h2-cards').style.display = document.getElementById('cards').children.length ? '' : 'none';
         }
@@ -818,6 +848,89 @@
                 if (e.target === infoModal) infoModal.style.display = 'none';
             };
         });
+
+        // Lista de colores en orden cromático
+        const colorOrder = [
+            "white", "silver", "grey", "gray", "black", "brown", "red", "orange", "gold",
+            "yellow", "green", "cyan", "blue", "purple", "pink"
+        ];
+
+        // Estado de orden actual
+        let sortMode = "default";
+
+        // Función para extraer colores de tags
+        function getItemColors(item) {
+            if (!item.tags) return [];
+            const tagsArr = item.tags.split(',').map(t => t.trim().toLowerCase());
+            // Devuelve los colores en el orden en que aparecen en los tags
+            return tagsArr.filter(tag => colorOrder.includes(tag));
+        }
+
+        // Ordena los items por color principal y secundarios
+        function sortItemsByColor(items) {
+            return items.slice().sort((a, b) => {
+                const aColors = getItemColors(a);
+                const bColors = getItemColors(b);
+
+                // Si ninguno tiene color, van al final
+                if (aColors.length === 0 && bColors.length === 0) return 0;
+                if (aColors.length === 0) return 1;
+                if (bColors.length === 0) return -1;
+
+                // Orden por color principal
+                const aMain = colorOrder.findIndex(c => c === aColors[0]);
+                const bMain = colorOrder.findIndex(c => c === bColors[0]);
+                if (aMain !== bMain) return aMain - bMain;
+
+                // Si tienen el mismo color principal, compara secundarios
+                for (let i = 1; i < Math.max(aColors.length, bColors.length); i++) {
+                    const aSec = aColors[i] ? colorOrder.findIndex(c => c === aColors[i]) : Infinity;
+                    const bSec = bColors[i] ? colorOrder.findIndex(c => c === bColors[i]) : Infinity;
+                    if (aSec !== bSec) return aSec - bSec;
+                }
+
+                // Si todo igual, por ID
+                return (a.id || 0) - (b.id || 0);
+            });
+        }
+
+        // Ordena los items por ID
+        function sortItemsById(items) {
+            return items.slice().sort((a, b) => (a.id || 0) - (b.id || 0));
+        }
+
+        // Modifica renderItems para usar el modo de orden
+        function renderItems(items) {
+            const container = document.getElementById('items');
+            container.innerHTML = '';
+            let sortedItems = items;
+            if (sortMode === "id") {
+                sortedItems = sortItemsById(items);
+            } else if (sortMode === "color") {
+                sortedItems = sortItemsByColor(items);
+            }
+            sortedItems.forEach(item => {
+                if (!item.id) return;
+                const img = createImg(
+                    `${baseUrl}All_Items/item_${item.id}.png`,
+                    item.name,
+                    () => showItemModal(item)
+                );
+                container.appendChild(img);
+            });
+        }
+
+        // Botón ordenar por ID
+        document.getElementById('sort-id-btn').onclick = function() {
+            sortMode = "id";
+            renderByFilters();
+        };
+
+        // Botón ordenar por color
+        document.getElementById('sort-color-btn').onclick = function() {
+            sortMode = "color";
+            renderByFilters();
+        };
 
         // Toggle de idioma
         document.getElementById('lang-toggle').addEventListener('click', function() {
