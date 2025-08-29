@@ -4815,7 +4815,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este artículo donando 10 centavos a la Tienda",
-        "tags": "* normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool, x, paper",
+        "tags": "* normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool, x, paper, blue",
         "type_list": [
             "Pasivo"
         ],
@@ -5873,7 +5873,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto superando la Habitación Oscura con Lázaro.",
-        "tags": "* red chest pool, red chest item pool, shop room pool, shop item pool, blue box, pandoras box",
+        "tags": "*, blue, red chest pool, red chest item pool, shop room pool, shop item pool, blue box, pandoras box",
         "type_list": [
             "Activa"
         ],
@@ -6076,7 +6076,7 @@
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
-        "tags": "* astrology, astronomy, item room, treasure room, item room pool, cyan, black, blue, glow, tail",
+        "tags": "* astrology, astronomy, item room, treasure room, item room pool, blue, cyan, black, glow, tail",
         "type_list": [
             "Pasivo"
         ],
@@ -6094,7 +6094,7 @@
             "Se sinergiza con los efectos de lágrimas"
         ],
         "quality": "2",
-        "tags": "* astrology, astronomy, item room, treasure room, item room pool, black, blue, cyan, blue, lightning, bolt, hot garbage",
+        "tags": "* astrology, astronomy, item room, treasure room, item room pool, blue, cyan, black, lightning, bolt, hot garbage",
         "type_list": [
             "Pasivo"
         ],
@@ -10936,7 +10936,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Boss Rush como The Forgotten",
-        "tags": "*,",
+        "tags": "*,white,red",
         "type_list": [
             "Pasivo"
         ],
@@ -10953,8 +10953,8 @@
             "También se puede utilizar como el Boomerang para recoger consumibles en el suelo."
         ],
         "quality": "1",
-        "unlock": "Desbloquea este objeto derrotando a ??? en el piso del Cofre como El Olvidado",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto derrotando a ??? en el piso del The Forgotten",
+        "tags": "*,white",
         "type_list": [
             "Pasivo"
         ],
@@ -10974,7 +10974,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a The Lamb en el piso de Dark Room como The Forgotten.",
-        "tags": "*,",
+        "tags": "*,white",
         "type_list": [
             "Pasivo"
         ],
@@ -10992,7 +10992,7 @@
             "Se combina con la segunda pieza de Pala Rota para crear la Pala de Mamá"
         ],
         "quality": "4",
-        "tags": "*,",
+        "tags": "*,purple,black",
         "type_list": [
             "Pasivo"
         ],
@@ -11012,7 +11012,7 @@
             "Se combina con la primera pieza de Pala Rota para crear la Pala de Mamá"
         ],
         "quality": "4",
-        "tags": "*,",
+        "tags": "*,purple,black",
         "type_list": [
             "Pasivo"
         ],
@@ -11032,7 +11032,7 @@
             "Después de desbloquear The Forgotten, al usarlo nuevamente en el montículo de tierra solo se genera un tipo de cofre aleatorio."
         ],
         "quality": "4",
-        "tags": "*, moms shovel, mom shovel",
+        "tags": "*, moms shovel, mom shovel,purple,black",
         "type_list": [
             "Activa"
         ],
@@ -11053,7 +11053,7 @@
             "Los efectos que reemplazan tus lágrimas, como Brimstone, simplemente tienen la posibilidad de aplicar este efecto."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,purple,blue",
         "type_list": [
             "Pasivo"
         ],
@@ -11069,7 +11069,7 @@
             "Cualquier enemigo que se acerque a Isaac se asustará, lo que hará que huya."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,red,black",
         "type_list": [
             "Pasivo"
         ],
@@ -11088,7 +11088,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto recolectando 99 monedas y luego gastándolas todas en la misma run.",
-        "tags": "*,",
+        "tags": "*,gold,yellow",
         "type_list": [
             "Activa"
         ],
@@ -11111,7 +11111,7 @@
             "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Activa"
         ],
@@ -11131,7 +11131,7 @@
             "Los Corazones de alma y las cartas del tarot son mucho más comunes que las trinkets."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,brown,white",
         "type_list": [
             "Activa"
         ],
@@ -11153,7 +11153,7 @@
             "La posibilidad de disparar lágrimas adicionales no se ve afectada por la suerte."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,red,white",
         "type_list": [
             "Pasivo"
         ],
@@ -11171,7 +11171,7 @@
             "En pisos con agua en el suelo (Aguacero, Cuevas inundadas, Escoria), este efecto se encadena a enemigos que están más lejos de lo normal."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,white,gray,blue",
         "type_list": [
             "Pasivo"
         ],
@@ -11188,7 +11188,7 @@
             "Tras recibir daño, obtienes +1.2 de Cadencia por el resto de la sala. Los golpes posteriores otorgan +0.4 de Cadencia e ignoran el límite de cadencia de fuego normal."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,gray,red",
         "type_list": [
             "Pasivo"
         ],
@@ -11206,7 +11206,7 @@
             "Las lágrimas individuales obtienen efectos de gusano aleatorios (por ejemplo, Gusano anzuelo, Gusano meneante, etc.)"
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,white,blue",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -11229,7 +11229,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar Boss Rush como Jacob y Esaú.",
-        "tags": "*,",
+        "tags": "*,gray",
         "type_list": [
             "Pasivo"
         ],
@@ -11246,7 +11246,7 @@
             "Las bombas ahora explotan con un efecto aleatorio (por ejemplo, veneno, teledirigido, bombas de premio)"
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,pink",
         "type_list": [
             "Pasivo"
         ],
@@ -11263,7 +11263,7 @@
             "+0,2 velocidad de disparo"
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,white",
         "type_list": [
             "Pasivo"
         ],
@@ -11283,7 +11283,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como Lilith",
-        "tags": "*,",
+        "tags": "*,red,black",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -11305,7 +11305,7 @@
             "En los pisos XL se muestran ambos artículos."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,blue,brown",
         "type_list": [
             "Pasivo"
         ],
@@ -11323,7 +11323,7 @@
             "Recoger este objeto cuenta y también te otorga +0,4 Cadencia temporales."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,yellow,red",
         "type_list": [
             "Pasivo"
         ],
@@ -11343,7 +11343,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a Hush como Bethany",
-        "tags": "*,",
+        "tags": "*,yellow,white",
         "type_list": [
             "Pasivo"
         ],
@@ -11362,7 +11362,7 @@
             "El daño por ser apuñalado se puede evitar con invencibilidad, sin embargo, no se obtienen aumentos en las estadísticas de daño o velocidad si lo haces."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,white,red",
         "type_list": [
             "Pasivo"
         ],
@@ -11379,7 +11379,7 @@
             "Cada una de tus lágrimas obtiene un efecto aleatorio: Veneno, Miedo, Ralentización, Congelación, Encanto, Quemaduras, Recorrido, Sangrado, Daño x2 o Daño reducido."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,brown,red",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -11398,7 +11398,7 @@
             "Permite caminar sobre efectos dañinos del suelo sin sufrir daño (p. ej., púas, criaturas). No incluye puertas de la Sala de Maldiciones ni rocas con púas."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,blue,brown",
         "type_list": [
             "Pasivo"
         ],
@@ -11418,7 +11418,7 @@
             "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Pasivo"
         ],
@@ -11438,7 +11438,7 @@
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,red,orange,gray",
         "type_list": [
             "Pasivo"
         ],
@@ -11456,7 +11456,7 @@
             "El aura causa más daño hacia el centro, desde 0,75 en el alcance máximo hasta 4 de daño al tocar a Isaac."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,gold,white",
         "type_list": [
             "Pasivo"
         ],
@@ -11475,7 +11475,7 @@
             "Cuenta como 1 de los 3 elementos de araña necesarios para la transformación de Bebé Araña."
         ],
         "quality": "3",
-        "tags": "*, ew gross face spider in face",
+        "tags": "*, ew gross face spider in face, black,red",
         "type_list": [
             "Pasivo"
         ],
@@ -11490,7 +11490,7 @@
         "description": [
             "Cada vez que destruyes una mierda, este objeto generará entre 1 y 4 familiares Dip amistosos que te seguirán, bloquearán disparos y atacarán a los enemigos cercanos.",
             "Los diferentes tipos de mierda generarán diferentes tipos de Dip, cada uno con su propio efecto.",
-            "Los baños de mierda dorados pueden petrificar a los enemigos, convirtiéndolos en oro durante unos segundos. Si el enemigo muere en este estado, dejará caer de 1 a 4 monedas.",
+            "Los Dip dorados pueden petrificar a los enemigos, convirtiéndolos en oro durante unos segundos. Si el enemigo muere en este estado, dejará caer de 1 a 4 monedas.",
             "Los dips de excremento de maíz generan una mosca azul al morir",
             "Los dips de mierda de arcoíris encantan a los enemigos y tienen la posibilidad de generar medio corazón rojo al morir.",
             "Las heces negras dejan un rastro de suciedad.",
@@ -11501,7 +11501,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al superar el desafío n.º 36 (Scat Man)",
-        "tags": "*,",
+        "tags": "*,brown",
         "type_list": [
             "Pasivo"
         ],
@@ -11516,15 +11516,15 @@
         "description": [
             "Cuando se usa, coloca una espada directamente sobre la cabeza de Isaac y, mientras está activo, generará un elemento adicional por cada pedestal de elemento generado.",
             "Después de recibir un golpe con el objeto activado, en cualquier momento y sin previo aviso, la espada puede caer, matando instantáneamente a Isaac independientemente de su salud.",
-            "Tras ser golpeada, la espada tiene una probabilidad de 1/10 000 de caer cada 4 cuadros. Esta probabilidad no cambia si recibes más daño.",
+            "Tras ser golpeada, la espada tiene una probabilidad de 1/10 000 de caer cada 4 frames. Esta probabilidad no cambia si recibes más daño.",
             "Tienes efectivamente un 4,4 % de posibilidades de morir por cada minuto que pasa después de recibir daño.",
             "El daño autoinfligido, es decir, las salas malditas y las máquinas de donación de sangre, no activan este efecto.",
             "Los artículos con un precio generarán el artículo adicional de forma gratuita (es decir, en tiendas o salas de demonios).",
-            "La única forma de sobrevivir a la caída de la espada es con vidas extra, usando objetos que te hagan invencible, como Hoja Roída, o jugando como El Perdido. Tras la caída de la espada, ya no aparecerán objetos extra."
+            "La única forma de sobrevivir a la caída de la espada es con vidas extra, usando objetos que te hagan invencible, como Hoja Roída, o jugando como The lost. Tras la caída de la espada, ya no aparecerán objetos extra."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar a El Cordero como Jacob y Esaú.",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto al derrotar a The Lamb como Jacob y Esaú.",
+        "tags": "*,white,brown,red",
         "type_list": [
             "Activa"
         ],
@@ -11545,7 +11545,7 @@
             "Un efecto similar a la pastilla Lemon Party"
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,yellow",
         "type_list": [
             "Activa"
         ],
@@ -11567,7 +11567,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al superar el desafío n.º 39 (El despertar de Isaac).",
-        "tags": "*,",
+        "tags": "*,white,brown",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -11581,15 +11581,15 @@
         "id": "580",
         "name": "Red Key",
         "description": [
-            "Al mantenerla presionada, aparecerá el contorno rojo de una puerta en ciertas paredes. Al usar la Llave Roja cerca de ella, se abrirá una habitación roja.",
+            "Al tenerla, aparecerá el contorno rojo de una puerta en ciertas paredes. Al usar la Llave Roja cerca de ella, se abrirá una habitación roja.",
             "Esta sala elegirá al azar entre muchos tipos, incluidos (pero no limitados a) cualquier sala normal de ese piso, salas del tesoro, salas de maldiciones, salas del diablo, salas de ángeles, salas YO SOY ERROR y más.",
             "En habitaciones con varios contornos de puerta, se abrirá la más cercana.",
             "Intentar crear una sala fuera del límite máximo (13 x 13 salas) del mapa te llevará a una sala con el mensaje \"ERROR\". No puedes usar la Llave Roja para salir de esta sala.",
-            "La llave roja se puede usar para abrir la habitación secreta en el piso de inicio, que es el método para desbloquear personajes alternativos 'Contaminados'."
+            "La llave roja se puede usar para abrir la habitación secreta en el piso de inicio, que es el método para desbloquear personajes alternativos 'Tainted'."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto abriendo la Caja de Mamá en el piso de Inicio.",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Activa"
         ],
@@ -11609,14 +11609,14 @@
         "id": "581",
         "name": "Psy Fly",
         "description": [
-            "Le otorga a Isaac un vuelo orbital que lo llevará rápidamente y desviará cualquier lágrima que quiera golpear a Isaac.",
+            "Le otorga a Isaac un orbital rápido que desviará cualquier lágrima que quiera golpear a Isaac.",
             "No es 100% efectivo, pero el efecto es muy fuerte y desviará la mayoría de los disparos en una situación de infierno de balas.",
             "Las lágrimas reflejadas se transforman en lágrimas teledirigidas y disparan de vuelta a los enemigos, lo que les inflige 2 de daño.",
             "Después de reflejar una cierta cantidad de proyectiles, Psy Fly entra en un breve período de enfriamiento.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú."
         ],
         "quality": "4",
-        "tags": "*,",
+        "tags": "*,purple,black",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -11636,11 +11636,10 @@
             "Además, cuando se usa, este elemento distorsionará ligeramente la pantalla y el sonido, acumulándose cada vez que lo use.",
             "Todos estos efectos se acumulan en el resto del piso, lo que significa que si se usan demasiadas veces, la pantalla se distorsionará tanto que se volverá injugable.",
             "Cada habitación que limpies eliminará el equivalente a un uso del efecto: reduce ligeramente la distorsión de la pantalla y otorga +0,06 de Speed y -0,3 de daño.",
-            "Este artículo se llamó Hongo Negro en Antibirth",
             "Cuenta como 1 de los 3 elementos de hongo necesarios para la transformación de Fun Guy."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,black",
         "type_list": [
             "Activa"
         ],
@@ -11661,7 +11660,7 @@
             "Colocar una bomba mientras se está quieto colocará una bomba normal."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,black,gold",
         "type_list": [
             "Pasivo"
         ],
@@ -11684,7 +11683,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Isaac como Bethany.",
-        "tags": "*,",
+        "tags": "*,blue,white",
         "type_list": [
             "Activa y Pasivo"
         ],
@@ -11702,14 +11701,14 @@
         "name": "Alabaster Box",
         "description": [
             "Un objeto activo de un solo uso que generará 3 corazones de alma y 2 objetos del grupo de la Sala del Ángel.",
-            "Comienza completamente descargado y obtiene cargas solo al recoger alma y negro. (6 corazones llenos para cargar completamente)",
-            "A menos que estén completamente cargados, los corazones recogidos son consumidos por la Caja de Alabastro, en lugar de agregarse a tu total de vidas.",
+            "Comienza completamente descargado y obtiene cargas solo al recoger corazones de alma y corazones negros. (6 corazones llenos para cargar completamente)",
+            "A menos que estén completamente cargados, los corazones recogidos son consumidos por el item, en lugar de agregarse a tu total de vidas.",
             "Si ya se realizó un trato con el diablo en esta ejecución, en su lugar aparecen 2 corazones de alma y 1 objeto de la Sala del Ángel.",
             "Recoger Corazones de Hueso mientras tienes 12 corazones eliminará cargas de la Caja"
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a El Cordero como Bethany",
-        "tags": "*,",
+        "tags": "*,white,gold",
         "type_list": [
             "Activa"
         ],
@@ -11728,12 +11727,11 @@
             "Genera una escalera en la sala inicial de todos los pisos futuros, que conduce a una Sala del Ángel.",
             "Las salas de ángeles a las que se accede por The Stairway son diferentes: venden artículos de la sala de ángeles y corazones de almas por dinero, similar a la Tienda.",
             "Los artículos de pedestal cuestan 15 centavos, el resto de los artículos (corazones eternos/de alma, llaves y estampas sagradas) cuestan 5 centavos. Las ofertas se pueden aplicar aleatoriamente, igual que en las tiendas normales.",
-            "La escalera desaparece después de salir de la sala de inicio, incluso si aún no la has usado.",
-            "En Antibirth esto se llamaba Escalera de Jacob, que tuvo que cambiarse de nombre ya que Afterbirth+ ya tenía un objeto con este nombre."
+            "La escalera desaparece después de salir de la sala de inicio, incluso si aún no la has usado."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Isaac como Jacob y Esaú.",
-        "tags": "*,",
+        "tags": "*,yellow,white",
         "type_list": [
             "Pasivo"
         ],
@@ -11747,12 +11745,11 @@
         "name": "Sol",
         "description": [
             "Muestra permanentemente la ubicación de la sala del jefe en el mapa.",
-            "Después de derrotar a la pelea del jefe que se muestra, este objeto activará el uso de la carta Sol (curación completa y revelación del mapa), recargará completamente tu objeto activo, eliminará las maldiciones del piso, otorgará +3 de daño y +1 de suerte para el resto del piso.",
-            "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)",
+            "Después de derrotar al jefe, este objeto activará el uso de la carta Sun (curación completa y revelación del mapa), recargará completamente tu objeto activo, eliminará las maldiciones del piso, otorgará +3 de daño y +1 de suerte para el resto del piso.",
             "En el piso The Void se muestra una sala de jefe aleatoria, que no es necesariamente la sala de Delirium."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,blue,gray",
         "type_list": [
             "Pasivo"
         ],
@@ -11766,12 +11763,11 @@
         "name": "Luna",
         "description": [
             "Agrega una habitación secreta adicional y una habitación súper secreta adicional a cada piso.",
-            "Cada habitación secreta contiene un rayo de luz que otorga medio corazón de alma y una Lágrima para el resto del piso. Estas se acumulan con varias habitaciones secretas: la primera otorga +1.00 Lágrima, y las siguientes otorgan +0.5.",
-            "Revela la ubicación de una habitación secreta en el minimapa.",
-            "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
+            "Cada habitación secreta contiene un rayo de luz que otorga medio corazón de alma y Cadencia para el resto del piso. Estas se acumulan con varias habitaciones secretas: la primera otorga +1.00 Cadencia, y las siguientes otorgan +0.5.",
+            "Revela la ubicación de una habitación secreta en el minimapa."
         ],
         "quality": "2",
-        "tags": "*, moon, loona, lunar,",
+        "tags": "*, moon, loona, lunar,blue,gray",
         "type_list": [
             "Pasivo"
         ],
@@ -11787,11 +11783,10 @@
         "description": [
             "+0.40 Speed",
             "Las puertas permanecen abiertas al entrar en una habitación con enemigos. Esto significa que puedes salir de las habitaciones antes de derrotar a los enemigos que están dentro.",
-            "No abre puertas cerradas ni la puerta que conduce a la Sala del Jefe.",
-            "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
+            "No abre puertas cerradas ni la puerta que conduce a la Sala del Jefe."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,blue,gray",
         "type_list": [
             "Pasivo"
         ],
@@ -11807,11 +11802,10 @@
             "+1 HP",
             "Cura un contenedor de corazón rojo al recogerlo.",
             "Este objeto hace que los enemigos cercanos se vean afectados por el efecto de encanto, lo que hace que ataquen a otros enemigos cercanos.",
-            "El efecto del encanto desaparecerá muy rápidamente cuando los enemigos se alejen de Isaac.",
-            "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
+            "El efecto del encanto desaparecerá muy rápidamente cuando los enemigos se alejen de Isaac."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,blue,gray",
         "type_list": [
             "Pasivo"
         ],
@@ -11825,11 +11819,10 @@
         "name": "Terra",
         "description": [
             "Este objeto convierte tus lágrimas en rocas, que tienen mayor capacidad de retroceso y pueden romper otras rocas y objetos. Esto incluye bloques de llave y puertas de habitaciones secretas.",
-            "+1.0 daño, pero cada lagrima de roca tiene un modificador de daño aleatorio que puede aumentar o disminuir (x0.5 a x2)",
-            "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
+            "+1.0 daño, pero cada lagrima de roca tiene un modificador de daño aleatorio que puede aumentar o disminuir (x0.5 a x2)"
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,blue,gray",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -11846,10 +11839,9 @@
             "Permite que Isaac cargue tocando dos veces en la misma dirección, lo que inflige daño a cualquier enemigo atrapado.",
             "Eres invencible mientras estás cargando (no incluye daño propio como las máquinas de donación de sangre)",
             "Se puede utilizar varias veces por habitación.",
-            "El guión inflige x4 de tu daño de lagrima actual + 8",
+            "Inflige x4 de tu daño de lagrima actual + 8",
             "No tiene que estar en línea recta, puedes mantener presionado otro botón para curvarlo.",
-            "Tiene un tiempo de reutilización de 3 segundos antes de poder usarse nuevamente.",
-            "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
+            "Tiene un tiempo de reutilización de 3 segundos antes de poder usarse nuevamente."
         ],
         "quality": "2",
         "tags": "*,",
@@ -11871,11 +11863,10 @@
             "Mientras tengas esta bonificación de +0,5, moverte hará que Isaac se tire pedos por la habitación, lo que generará nubes de gas venenoso.",
             "Los pedos dejan de aparecer una vez que alcanzas tu velocidad de movimiento normal.",
             "El veneno inflige daño equivalente a la mitad de tus lágrimas por cada tic.",
-            "Isaac es inmune al veneno de los enemigos, como Gasbag.",
-            "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
+            "Isaac es inmune al veneno de los enemigos, como Gasbag."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,blue,gray",
         "type_list": [
             "Pasivo"
         ],
@@ -11891,11 +11882,10 @@
             "Te otorga un halo circular amplio que otorga 7 lágrimas orbitales al ingresar a una nueva habitación.",
             "Las lágrimas orbitan durante 13 segundos antes de caer.",
             "Tiene la posibilidad de absorber las lágrimas enemigas y añadirlas a las lágrimas en órbita. Pueden usarse para dañar a los enemigos.",
-            "Las lágrimas de Saturno no pueden romper objetos como excrementos y barriles de TNT.",
-            "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
+            "Las lágrimas de Saturno no pueden romper objetos como excrementos y barriles de TNT."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,blue,gray",
         "type_list": [
             "Pasivo"
         ],
@@ -11909,11 +11899,10 @@
         "name": "Uranus",
         "description": [
             "Isaac ahora dispara lágrimas de hielo que ralentizan a los enemigos. Los enemigos que mueren por estas lágrimas quedan congelados.",
-            "Los enemigos congelados nunca se descongelan y el juego los considera muertos. Patear a un enemigo congelado lo empujará contra la pared, donde se romperá y lanzará fragmentos de hielo por todas partes (estos pueden congelar a otros enemigos).",
-            "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
+            "Los enemigos congelados nunca se descongelan y el juego los considera muertos. Patear a un enemigo congelado lo empujará contra la pared, donde se romperá y lanzará fragmentos de hielo por todas partes (estos pueden congelar a otros enemigos)."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,blue,gray",
         "type_list": [
             "Pasivo"
         ],
@@ -11927,12 +11916,10 @@
         "name": "Neptunus",
         "description": [
             "Isaac ahora cargará lágrimas automáticamente, lo que te permitirá almacenarlas y dispararlas rápidamente por un corto tiempo.",
-            "Siempre que no estés disparando lágrimas, la barra de carga comenzará a llenarse durante un máximo de 3 segundos. Si mantienes presionado el botón de disparo de nuevo, liberarás rápidamente todas las lágrimas almacenadas.",
-            "El tiempo de carga y el máximo de lágrimas almacenadas varían según tu estadística de lágrimas actual.",
-            "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
+            "Siempre que no estés disparando lágrimas, la barra de carga comenzará a llenarse durante un máximo de 3 segundos. Si mantienes presionado el botón de disparo de nuevo, liberarás rápidamente todas las lágrimas almacenadas."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,blue,gray",
         "type_list": [
             "Pasivo",
             "Modifica Lagrimas"
@@ -11946,13 +11933,12 @@
         "id": "598",
         "name": "Pluto",
         "description": [
-            "+0.7 Lágrimas",
+            "+0.7 Cadencia",
             "Reduce considerablemente el tamaño de Isaac, hasta el punto de que algunas lágrimas enemigas ahora lo sobrepasarán sin causarle daño si están a gran altura. Las lágrimas aún pueden golpear a Isaac si la gravedad se aplica durante demasiado tiempo.",
-            "Permite que Isaac se introduzca entre algunos objetos.",
-            "Solo disponible dentro de un Planetario: una sala que tiene un 1 % de probabilidad base de aparecer, que aumenta un +20 % cada vez que te saltas una Sala de objetos (no debes ingresar para que cuente como salteado)"
+            "Permite que Isaac se cuele entre algunos objetos."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,blue,gray",
         "type_list": [
             "Pasivo"
         ],
@@ -11970,7 +11956,7 @@
             "Mejora los diseños y las recompensas de las salas de maldiciones."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,gray,red,black",
         "type_list": [
             "Pasivo"
         ],
@@ -11988,7 +11974,7 @@
             "Hace que tus lágrimas se disparen a un ritmo escalonado"
         ],
         "quality": "3",
-        "tags": "*, bottle container dropper medicine",
+        "tags": "*, bottle container dropper medicine,white,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -12002,11 +11988,11 @@
         "name": "Act of Contrition",
         "description": [
             "+1 Corazón eterno",
-            "+0.7 Lágrimas",
+            "+0.7 Cadencia",
             "Permite que las Salas de Ángeles aparezcan incluso si se ha realizado un trato con el Diablo antes."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,brown,white",
         "type_list": [
             "Pasivo"
         ],
@@ -12041,7 +12027,7 @@
             "Al recogerlo, este objeto recarga completamente el objeto activo que tengas y permite recoger entre 2 y 4 baterías. Estas pueden ser pequeñas o grandes."
         ],
         "quality": "0",
-        "tags": "*,",
+        "tags": "*,yellow,black",
         "type_list": [
             "Pasivo"
         ],
@@ -12058,11 +12044,11 @@
             "Al usarla, la Pulsera de Mamá te permite agarrar objetos en la habitación y lanzarlos, dañando a los enemigos que son alcanzados por 40 puntos de daño.",
             "Se pueden lanzar la mayoría de los objetos, incluidas ollas, piedras, excrementos, TNT, etc.",
             "Al presionar nuevamente el botón de activación, el objeto caerá donde te encuentres, lo que no consume ninguna carga de uso.",
-            "Te permite quitar la calavera de la parte superior de los enemigos anfitriones, convirtiéndolos en la versión roja.",
+            "Te permite quitar la calavera de la parte superior de los enemigos host, convirtiéndolos en la versión roja.",
             "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
         ],
         "quality": "1",
-        "tags": "*, arm, moms, ring, bracers, zelda, gold band, golden band, power bracelet",
+        "tags": "*, arm, moms, ring, bracers, zelda, gold band, golden band, power bracelet,gold",
         "type_list": [
             "Activa"
         ],
@@ -12080,12 +12066,12 @@
         "id": "605",
         "name": "The Scooper",
         "description": [
-            "Cuando se usa, este objeto genera un familiar Peeper para la sala actual, que inflige 12 de daño de contacto por tic a los enemigos y deja una criatura roja en su camino.",
+            "Cuando se usa, este objeto genera un familiar Peeper para la sala actual, que inflige 12 de daño de contacto por tic a los enemigos y deja un charco rojo en su camino.",
             "Usar este objeto elimina el ojo derecho de Isaac, lo que provoca que las lágrimas de este ojo causen x1.5 de su daño de lágrimas normal.",
             "Usarlo más de una vez en la misma habitación generará múltiples familiares Peeper."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,gray,black",
         "type_list": [
             "Activa"
         ],
@@ -12105,11 +12091,10 @@
             "La grieta generada absorbe enemigos, proyectiles y objetos, y causa daño a los enemigos atrapados en el interior durante 2 segundos.",
             "La probabilidad de disparar la lágrima de la grieta puede mejorar según tu estadística de suerte. Con +0 Suerte, hay un 2,5 % de probabilidad de que este efecto se active.",
             "El tamaño de la grieta aumenta con el daño causado por la lágrima.",
-            "Las grietas infligen la mitad del daño por cada tic.",
-            "En Antibirth este objeto se llamaba Oculus Rift"
+            "Las grietas infligen la mitad del daño por cada tic."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,red,yellow",
         "type_list": [
             "Pasivo"
         ],
@@ -12122,12 +12107,12 @@
         "id": "607",
         "name": "Boiled Baby",
         "description": [
-            "Un hervor familiar que dispara ráfagas de lágrimas al azar, similar al enemigo Hervir",
+            "Un familiar que dispara ráfagas de lágrimas al azar",
             "Las lágrimas causan 5,3 o 3,5 de daño.",
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -12146,7 +12131,7 @@
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined"
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,cyan,white",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -12161,12 +12146,11 @@
         "name": "Eternal D6",
         "description": [
             "Cuando se usa, cambia todos los elementos de la habitación por otro elemento aleatorio del grupo de elementos de la habitación actual; sin embargo, el elemento también tiene un 30 % de probabilidad de desaparecer.",
-            "La probabilidad asociada con este objeto NO se escala con tu estadística de Suerte: siempre es del 30 %.",
-            "En los archivos del juego, este objeto se llama 'Florians Dice', que es una referencia a la actualización Eternal para el juego original Binding of Isaac, que cambió el D6 para que actúe como lo hace este objeto."
+            "La probabilidad asociada con este objeto NO se escala con tu estadística de Suerte: siempre es del 30 %."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como ???",
-        "tags": "*,",
+        "tags": "*,white",
         "type_list": [
             "Activa"
         ],
@@ -12190,7 +12174,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como Eva.",
-        "tags": "*,",
+        "tags": "*,gray,black",
         "type_list": [
             "Pasivo"
         ],
@@ -12209,7 +12193,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Samson",
-        "tags": "*,",
+        "tags": "*,red,white",
         "type_list": [
             "Activa"
         ],
@@ -12231,8 +12215,8 @@
             "Se regenera al comienzo de cada piso si está muerto."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como Los Perdidos.",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como The Lost.",
+        "tags": "*,white",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -12249,11 +12233,11 @@
         "description": [
             "+1 HP",
             "Restaura 5 contenedores de corazón rojo vacíos",
-            "Las bombas ahora generan un charco de creep rojo al explotar, lo que inflige 2 de daño por cada tic a los enemigos que lo tocan.",
+            "Las bombas ahora generan un charco rojo al explotar, lo que inflige 2 de daño por cada tic a los enemigos que lo tocan.",
             "Si no tienes bombas, puedes colocar más por medio corazón (mata a Los Perdidos si lo usas así). Colocar una bomba de esta manera no afectará tus posibilidades de entrar en la sala de demonios o ángeles."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Pasivo"
         ],
@@ -12272,7 +12256,7 @@
             "El efecto solo funciona si Lil Dumpy está siguiendo y cerca de Isaac."
         ],
         "quality": "3",
-        "tags": "*, round, ball, eyes, lil' dumpy",
+        "tags": "*, round, ball, eyes, lil' dumpy,brown",
         "type_list": [
             "Pasivo"
         ],
@@ -12291,7 +12275,7 @@
             "Las llamas de este objeto pueden destruir a los comerciantes, lo cual es útil ya que hacer esto una vez por piso aumenta ligeramente tus posibilidades de entrar en la sala del diablo/ángel."
         ],
         "quality": "3",
-        "tags": "*, pepper, chili, face, birds",
+        "tags": "*, pepper, chili, face, birds,red,green",
         "type_list": [
             "Pasivo"
         ],
@@ -12309,7 +12293,7 @@
             "Las lágrimas enemigas que son arrastradas hacia otros enemigos los lastimarán."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,black,silver",
         "type_list": [
             "Pasivo"
         ],
@@ -12328,7 +12312,7 @@
             "La probabilidad de disparar una lágrima marcadora aumenta con tu estadística de suerte."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,red,green",
         "type_list": [
             "Pasivo"
         ],
@@ -12342,7 +12326,7 @@
         "id": "619",
         "name": "Birthright",
         "description": [
-            "Este objeto tiene un efecto diferente para cada personaje. Consulta el siguiente ícono para ver los efectos de los personajes contaminados.",
+            "Este objeto tiene un efecto diferente para cada personaje.",
             "Isaac: Todos los nuevos elementos de pedestal tienen dos opciones",
             "Maggy - +1 PS aumentado. Aumenta el límite máximo de corazones a 18.",
             "Caín - +1 Suerte. Se garantiza una Sala de Juegos en todos los pisos, excepto en los pisos del Cofre y la Sala Oscura.",
@@ -12353,17 +12337,17 @@
             "Azazel: Su rayo se vuelve mucho más amplio, sin efecto sobre el daño.",
             "Lázaro: cada vez que Lázaro muere, otorga +21,6 de daño temporal, que se desvanece gradualmente durante 1 minuto.",
             "Edén: genera 3 elementos de cualquier grupo, solo puedes tomar 1",
-            "Los perdidos: los objetos inútiles como las mejoras de HP, las lágrimas espectrales o el vuelo se eliminan de los grupos de objetos.",
+            "The Lost: los objetos inútiles como las mejoras de HP, las lágrimas espectrales o el vuelo se eliminan de los grupos de objetos.",
             "Lilith: hace que todos tus familiares ofensivos se apilen frente a Lilith para causar un daño más controlado.",
-            "Guardián - +1 de PS. Aumenta el límite de PS en 1.",
-            "Apollyon - El Vacío también puede generar un objeto previamente destruido. Cuantos más objetos consumidos, mayor probabilidad de este efecto.",
-            "El Olvidado - Tu alma ahora está liberada y es libre de moverse.",
+            "Keeper - +1 de PS. Aumenta el límite de PS en 1.",
+            "Apollyon - Void también puede generar un objeto previamente destruido. Cuantos más objetos consumidos, mayor probabilidad de este efecto.",
+            "The Forgotten - Tu alma ahora está liberada y es libre de moverse.",
             "Bethany - Activar un objeto usando cargas de alma a veces es gratis",
             "Jacob y Esaú: el personaje que recoge Birthright obtiene copias de tres de los objetos pasivos del otro personaje."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a ??? como Jacob y Esaú.",
-        "tags": "*,",
+        "tags": "*,brown,red",
         "type_list": [
             "Pasivo"
         ],
@@ -12377,27 +12361,27 @@
         "name": "Birthright (Tainted)",
         "description": [
             "Este objeto tiene un efecto diferente para cada personaje. Consulta el ícono anterior para ver los efectos normales de cada personaje.",
-            "Isaac contaminado: agrega 4 espacios más para elementos pasivos",
-            "Maggy contaminada: agrega 1 contenedor de corazón real adicional que no se agota",
-            "Caín contaminado: las selecciones dobles se caen al tocar un objeto",
-            "Judas contaminado: aumenta el alcance en el que las Artes Oscuras golpean a los enemigos y desgarran",
-            "¿Contaminado? - Permite almacenar hasta 29 mierdas.",
+            "Isaac tainted: agrega 4 espacios más para elementos pasivos",
+            "Maggy Tainted: agrega 1 contenedor de corazón real adicional que no se agota",
+            "Caín tainted: las selecciones dobles se caen al tocar un objeto",
+            "Judas tainted: aumenta el alcance en el que las Artes Oscuras golpean a los enemigos y desgarran",
+            "¿tainted? - Permite almacenar hasta 29 mierdas.",
             "Tainted Eve: Los coágulos creados solo a partir de corazones rojos generan un corazón que desaparece después de 2 segundos cuando mueren.",
             "Tainted Samson: encadenar asesinatos agrega 3 segundos al temporizador de Berserk en lugar de 1.",
-            "Azazel contaminado: duplica el tamaño de sus estornudos.",
+            "Azazel tainted: duplica el tamaño de sus estornudos.",
             "Lázaro Mancillado: El personaje inactivo se mueve contigo como Esaú. Puede disparar lágrimas, pero es inmune al daño.",
-            "Edén contaminado: los objetos obtenidos antes de Derecho de nacimiento ya no se vuelven a obtener al recibir daño.",
-            "Perdido Manchado: Otorga una vida extra. Inflige 200 de daño a los enemigos cercanos al revivir.",
-            "Lilith contaminada: todos los familiares ahora se adhieren a su cordón umbilical como el objeto Gello.",
-            "Guardián contaminado: las monedas cercanas que dejan caer los enemigos se mueven hacia ti rápidamente.",
-            "Apollyon contaminado: mantener presionado el botón de disparo hace que las langostas permanezcan cerca de los enemigos y los dañen en lugar de regresar.",
-            "Olvidado Manchado: Otorga la habilidad Rememoración. Al usarla, recupera el cráneo Olvidado, lo que hace que se dispare de vuelta a tus brazos.",
-            "Bethany contaminada: genera cuatro elementos aleatorios de alta calidad con HP significativamente más alto de lo normal.",
-            "Jacob contaminado - Esau oscuro se divide en 2. Ambos cargan al mismo tiempo y usando Anima Sola los encadena en el mismo lugar."
+            "Edén tainted: los objetos obtenidos antes de Derecho de nacimiento ya no se vuelven a obtener al recibir daño.",
+            "The Lost Manchado: Otorga una vida extra. Inflige 200 de daño a los enemigos cercanos al revivir.",
+            "Lilith Tainted: todos los familiares ahora se adhieren a su cordón umbilical como el objeto Gello.",
+            "Keeper tainted: las monedas cercanas que dejan caer los enemigos se mueven hacia ti rápidamente.",
+            "Apollyon tainted: mantener presionado el botón de disparo hace que las langostas permanezcan cerca de los enemigos y los dañen en lugar de regresar.",
+            "The Forgotten Tainted: Otorga la habilidad Rememoración. Al usarla, recupera el cráneo Olvidado, lo que hace que se dispare de vuelta a tus brazos.",
+            "Bethany Tainted: genera cuatro elementos aleatorios de alta calidad con HP significativamente más alto de lo normal.",
+            "Jacob tainted - Esau oscuro se divide en 2. Ambos cargan al mismo tiempo y usando Anima Sola los encadena en el mismo lugar."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a ??? como Jacob y Esaú.",
-        "tags": "*,",
+        "tags": "*,brown,red",
         "type_list": [
             "Pasivo"
         ],
@@ -12416,7 +12400,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a Satanás como Jacob y Esaú.",
-        "tags": "*, bowl, soup, broth",
+        "tags": "*, bowl, soup, broth,gray,red",
         "type_list": [
             "Pasivo"
         ],
@@ -12434,11 +12418,11 @@
             "Por cada objeto pasivo eliminado, puedes elegir entre 3 objetos de pedestal aleatorios de cualquier grupo. Básicamente, estás reorganizando todos tus objetos, pero con cada objeto nuevo puedes elegir entre 3 opciones aleatorias.",
             "El dormitorio también contiene un trinket al azar, 2 cofres, 2 sacos y la cama de Isaac, que se pueden usar para curar por completo la salud de tu corazón rojo.",
             "La única forma de salir del dormitorio de Isaac es teletransportándote o por la trampilla, que te lleva al siguiente piso. Esto te desviará del camino alternativo si estás en él.",
-            "Dado que este objeto restablece tus estadísticas, este objeto puede eliminar Corazones rotos."
+            "Dado que este objeto restablece tus estadísticas, este objeto puede eliminar Corazones rojos."
         ],
         "quality": "3",
-        "unlock": "Desbloquea este objeto al derrotar al Modo Más Codicioso con Jacob y Esaú.",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto al derrotar al Modo Greed con Jacob y Esaú.",
+        "tags": "*,cyan,white,blue",
         "type_list": [
             "Activa"
         ],
@@ -12463,7 +12447,7 @@
             "Los enemigos eliminados por Llave Afilada tienen un 10% de probabilidad de generar objetos aleatorios que aparecen en cofres. Estos pueden ser cualquier objeto que normalmente caería de un cofre, incluyendo objetos de pedestal."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,silver,red",
         "type_list": [
             "Activa"
         ],
@@ -12482,7 +12466,7 @@
             "Genera 5 cartas aleatorias"
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,brown,silver",
         "type_list": [
             "Pasivo"
         ],
@@ -12504,7 +12488,7 @@
         ],
         "quality": "4",
         "unlock": "Desbloquea este objeto obteniendo todas las marcas de finalización del modo difícil para los 17 personajes no contaminados.",
-        "tags": "*,",
+        "tags": "*,yellow,brown",
         "type_list": [
             "Activa"
         ],
@@ -12523,12 +12507,12 @@
         "description": [
             "Combínalo con Knife Piece 2 para crear un cuchillo que se puede disparar por toda la habitación e inflige 25 de daño a cualquier enemigo con el que entre en contacto.",
             "En el Aguacero/Escoria II, encontrarás una llama blanca en algún lugar y una habitación con un espejo. Tocar la llama blanca te transforma temporalmente en El Perdido, pero te permite atravesar el espejo hacia una versión reflejada de este piso. Tienes el efecto del Manto Sagrado para evitar un golpe por habitación, pero recibir otro golpe te matará. El Pieza de Cuchillo 1 se encuentra en la Sala de Objetos, en la zona reflejada. Regresar por la puerta del espejo te devuelve a la normalidad.",
-            "Si aún no has desbloqueado el Manto Sagrado para Los Perdidos, no obtendrás el efecto después de tocar un fuego blanco, ¡así que ten cuidado!",
+            "Si aún no has desbloqueado el Holy Mantle para The Lost, no obtendrás el efecto después de tocar un fuego blanco, ¡así que ten cuidado!",
             "Las habitaciones con pisos reflejados tienen enemigos que reaparecen y te permiten pelear opcionalmente con el jefe una segunda vez para obtener un objeto extra.",
             "Cuando se combina con Knife Piece 2, se puede usar para apuñalar la puerta carnosa en el Mausoleo II, que luego conduce al piso de Cadáveres y al jefe Madre."
         ],
         "quality": "0",
-        "tags": "*,",
+        "tags": "*,brown",
         "type_list": [
             "Pasivo"
         ],
@@ -12548,7 +12532,7 @@
             "Cuando se combina con Knife Piece 1, se puede usar para apuñalar la puerta carnosa en el Mausoleo II, que luego conduce al piso de Cadáveres y al jefe Madre."
         ],
         "quality": "0",
-        "tags": "*,",
+        "tags": "*,silver",
         "type_list": [
             "Pasivo"
         ],
@@ -12561,13 +12545,13 @@
         "id": "628",
         "name": "Death Certificate",
         "description": [
-            "Este es un elemento de un solo uso que te teletransporta a un piso alternativo, que contiene todos los elementos del juego.",
+            "Este es un elemento de un solo uso que te teletransporta a un piso alternativo, que contiene todos los items del juego.",
             "Los objetos están repartidos por varias salas, todos sobre pedestales. Puedes coger solo uno antes de ser teletransportado de vuelta a donde estabas.",
-            "Es literalmente cualquier artículo, incluidos los artículos que no están en los grupos de artículos, como piezas de cuchillo."
+            "Es literalmente cualquier item, incluidos los items que no están en los grupos de items, como piezas de cuchillo."
         ],
         "quality": "4",
-        "unlock": "Desbloquea este objeto completando todas las notas adhesivas de cada personaje, incluidos los personajes contaminados.",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto completando todas las notas adhesivas de cada personaje, incluidos los personajes tainted.",
+        "tags": "*,white,blue",
         "type_list": [
             "Activa"
         ],
@@ -12584,12 +12568,12 @@
         "id": "629",
         "name": "Bot Fly",
         "description": [
-            "Te da un robot volador familiar que orbita alrededor de Isaac y dispara lágrimas protegidas contra los proyectiles entrantes.",
+            "Te da un robot volador familiar que orbita alrededor de Isaac y dispara lágrimas con escudo contra los proyectiles entrantes.",
             "Inflige daño por contacto a los enemigos que toca.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú"
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,silver,red",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -12613,7 +12597,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como Isaac.",
-        "tags": "*,",
+        "tags": "*,silver,brown",
         "type_list": [
             "Activa"
         ],
@@ -12633,7 +12617,7 @@
             "Ya no recibes daño por efectos de veneno/gas tóxico/quemaduras y te vuelves inmune al miedo/confusión."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,blue,cyan,white",
         "type_list": [
             "Pasivo"
         ],
@@ -12655,7 +12639,7 @@
             "Establece tu salud en 6 corazones si tienes menos de 6. Esto curará los corazones rojos y luego otorgará corazones de alma hasta un total de 6. Esto no funciona con los personajes de The Lost."
         ],
         "quality": "3",
-        "tags": "*, godma",
+        "tags": "*, godma,white,grey",
         "type_list": [
             "Pasivo"
         ],
@@ -12674,7 +12658,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al superar el desafío n.° 38 (Bautismo de fuego).",
-        "tags": "*, ghost",
+        "tags": "*, ghost,white,red",
         "type_list": [
             "Pasivo"
         ],
@@ -12688,15 +12672,15 @@
         "id": "635",
         "name": "Stitches",
         "description": [
-            "Mientras se mantiene presionado este objeto, genera un familiar que se puede mover usando las teclas de flecha e inflige 1.5 de daño por cada tic a cualquier enemigo que toque.",
+            "Genera un familiar que se puede mover usando las teclas de flecha e inflige 1.5 de daño por cada tic a cualquier enemigo que toque.",
             "Cuando se activa, te teletransportas, intercambiando lugares con cualquier lugar donde se encontraba Stitches.",
             "Teletransportarse cerca de incendios los extinguirá (incluidos los incendios azules) y encima de los comerciantes los destruirá (otorga un 10 % más de probabilidad de espacio para demonios o ángeles como siempre)",
-            "Si se usa mientras los puntos están encima de un enemigo, se puede usar para telefragmentar a los enemigos, lo que inflige x3,5 de tu daño + 40",
+            "Si se usa mientras esta encima de un enemigo, se puede usar para telefragmentar a los enemigos, lo que inflige x3,5 de tu daño + 40",
             "Se puede usar para entrar y salir de las Salas Malditas gratis teletransportándote frente a la puerta mientras mantienes presionada la tecla de dirección para entrar inmediatamente. También sirve para abrir Cofres con Pinchos y Cofres Mímicos sin recibir daño.",
             "Tipo: Activo, Familiar"
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,brown,grey",
         "type_list": [
             "Activa",
             "Familiar"
@@ -12716,12 +12700,12 @@
             "Cuando se usa, este objeto reinicia el juego y te coloca nuevamente en el primer piso con todos los objetos que hayas recolectado, similar a hacer una vuelta de la victoria.",
             "El temporizador del juego no se reinicia",
             "Permite encontrar habitaciones de ángeles en la nueva ejecución si se realizó un trato con el diablo en la primera ejecución.",
-            "En el modo Avaricia y mientras juegas como el Guardián Manchado, este objeto cuesta 99 monedas en lugar de 15.",
+            "En el modo Greed y mientras juegas como el Guardián Manchado, este objeto cuesta 99 monedas en lugar de 15.",
             "Al usar la tecla R en el camino inverso tras recoger la Nota de Papá, accederás al Sótano 1 de este camino, que lleva directamente a la planta principal. Esto puede hacer que te saltes plantas donde dejaste un trinket para generar una Llave Rota.",
             "Las máquinas de donación se reparan si se atascan antes de usar la tecla R"
         ],
         "quality": "4",
-        "tags": "*,",
+        "tags": "*,brown",
         "type_list": [
             "Activa"
         ],
@@ -12742,7 +12726,7 @@
             "Los enemigos que sean derribados recibirán 10 puntos de daño y derribarán a cualquier enemigo contra el que sean derribados, infligiéndoles daño también."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,black,red,yellow",
         "type_list": [
             "Pasivo"
         ],
@@ -12762,7 +12746,7 @@
             "El primer uso lo elevará por encima de tu cabeza, luego al presionar el botón de disparo será lanzado en esa dirección."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,pink",
         "type_list": [
             "Activa"
         ],
@@ -12784,7 +12768,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como Maggy.",
-        "tags": "*,",
+        "tags": "*,green,red",
         "type_list": [
             "Activa"
         ],
@@ -12809,7 +12793,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto derrotando a Satanás como Bethany.",
-        "tags": "*,",
+        "tags": "*,white, gold",
         "type_list": [
             "Activa"
         ],
@@ -12831,7 +12815,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como Judas",
-        "tags": "*,",
+        "tags": "*,pink,red",
         "type_list": [
             "Pasivo"
         ],
@@ -12845,14 +12829,14 @@
         "name": "Magic Skin",
         "description": [
             "Al usarse, este objeto consume 1 contenedor de corazón o 2 corazones de alma y genera un pedestal de objeto del grupo de objetos de la sala actual.",
-            "Cada uso da un corazón roto, lo que significa que la ranura se rompe permanentemente y el límite máximo de salud se reduce en 1 para el resto de la ejecución.",
-            "Si Isaac tiene 12 corazones rotos, muere instantáneamente (esto también aplica a Los Perdidos a pesar de no tener salud)",
+            "Cada uso da un corazón roto, lo que significa que la ranura se rompe permanentemente y el límite máximo de salud se reduce en 1 para el resto de la run.",
+            "Si Isaac tiene 12 corazones rotos, muere instantáneamente (esto también aplica a The Lost a pesar de no tener salud)",
             "La Piel Mágica seguirá apareciendo después de encontrarla una vez si ya no la tienes en la mano: la probabilidad de que reemplace a un objeto es de 1 ÷ (12 - número de veces que se usa) hasta un máximo del 50 %.",
             "Los corazones rotos son contenedores vacíos que no se pueden extraer ni rellenar y anularán otros tipos de corazones al alcanzar un total de 12. Reemplazar los 12 contenedores con corazones rotos te matará al instante. La única forma de eliminar corazones rotos es donando a un confesionario."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como Jacob y Esaú.",
-        "tags": "*, blood",
+        "tags": "*, blood,pink,brown",
         "type_list": [
             "Activa"
         ],
@@ -12878,7 +12862,7 @@
         ],
         "quality": "4",
         "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como Bethany",
-        "tags": "*,",
+        "tags": "*,blue,yellow,white",
         "type_list": [
             "Pasivo"
         ],
@@ -12895,7 +12879,7 @@
             "También deja caer una bomba, una llave o 3 monedas al suelo. Esto se decide según lo que tengas menos. Las llaves y las bombas equivalen a 3 monedas para decidir cuál dar."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,brown,red",
         "type_list": [
             "Pasivo"
         ],
@@ -12917,7 +12901,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como Lázaro.",
-        "tags": "*,",
+        "tags": "*,black",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -12937,7 +12921,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto matando a Hornfel antes de que pueda escapar tras romper su vagoneta.",
-        "tags": "*,",
+        "tags": "*,black",
         "type_list": [
             "Pasivo"
         ],
@@ -12957,7 +12941,7 @@
             "60 de daño infligido = 1 carga"
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,black,red",
         "type_list": [
             "Pasivo"
         ],
@@ -12978,7 +12962,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando a Baby Plum 10 veces.",
-        "tags": "*, extremely cute omg, plum smug",
+        "tags": "*, extremely cute omg, plum smug, pink",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -12995,12 +12979,12 @@
         "description": [
             "Cuando se usa, este objeto invoca una versión amistosa del jefe Plum para que luche por ti durante 10 segundos.",
             "Saltará al enemigo más cercano, se estrellará contra el suelo y disparará lágrimas a su alrededor, luego se impulsará por la habitación, causando daño de contacto a cualquier enemigo que toque antes de desaparecer.",
-            "Es posible obtener este objeto garantizado al encontrarte con la jefa Ciruela Bebé sin dañarla. Tras un minuto aproximadamente sin dañarla, volará y generará Flauta de Ciruela.",
+            "Es posible obtener este objeto garantizado al no hacer ningun daño al boss Baby Plum durante un rato.",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto permitiendo que Baby Plum escape en lugar de matarla.",
-        "tags": "*, extremely cute omg :plumsmug:",
+        "tags": "*, extremely cute omg :plumsmug:, red, brown",
         "type_list": [
             "Activa"
         ],
@@ -13017,7 +13001,7 @@
         "name": "Star of Bethlehem",
         "description": [
             "Genera una estrella con un aura blanca a su alrededor, que flota muy lentamente a través de cada habitación del piso, dirigiéndose hacia la sala del jefe.",
-            "Mientras estés dentro del aura, obtienes grandes Lágrimas Arriba (x2.5 de velocidad de disparo), Daño Arriba (daño * 1.2 + 1) y Lágrimas Teledirigidas.",
+            "Mientras estés dentro del aura, obtienes muchisima cadencia (x2.5 de velocidad de disparo), Daño (daño * 1.2 + 1) y Lágrimas Teledirigidas.",
             "La estrella continúa su camino a través del suelo, incluso si no estás en la misma habitación que ella, moviéndose más rápido si estás a una gran distancia delante de ella.",
             "En el piso The Void, se moverá hacia la sala del jefe que contiene Delirium.",
             "No viaja a la sala del jefe Hush o Mega Satan.",
@@ -13026,7 +13010,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Bethany.",
-        "tags": "*,",
+        "tags": "*,white, cyan",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -13049,7 +13033,7 @@
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,blue,cyan,white",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -13073,7 +13057,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando al modo Greedier con Bethany.",
-        "tags": "*,",
+        "tags": "*,white,brown",
         "type_list": [
             "Activa"
         ],
@@ -13095,7 +13079,7 @@
             "+1 Corazón Negro al recogerlo"
         ],
         "quality": "2",
-        "tags": "*, p.h.d ph.d p.hd paper blood",
+        "tags": "*, p.h.d ph.d p.hd paper blood, red, brown",
         "type_list": [
             "Pasivo"
         ],
@@ -13113,7 +13097,7 @@
             "El daño orbital es igual a 1,5 x Daño Orbital + 6 mientras este efecto esté activo"
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,grey, red, blue, yellow",
         "type_list": [
             "Active & Passive",
             "Familiar"
@@ -13133,7 +13117,7 @@
             "Isaac no recibe daño de las lágrimas creadas por este objeto."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Pasivo"
         ],
@@ -13149,10 +13133,10 @@
             "Cada vez que recibes daño, aparecerá un pequeño familiar Isaac que te seguirá y disparará lágrimas a los enemigos cercanos que infligirán 1.3 de daño.",
             "Los mini-Isaacs permanecen contigo entre pisos, pero pueden morir si reciben demasiado daño.",
             "El número máximo de mini-Isaacs es 16 a la vez",
-            "Los mini-Isaac conservan algunas de las habilidades y la apariencia de Isaac, como la capacidad de volar. Como Azazel, disparan brimstone y como Los Olvidados usan un garrote de hueso."
+            "Los mini-Isaac conservan algunas de las habilidades y la apariencia de Isaac, como la capacidad de volar. Como Azazel, disparan brimstone y como The Forgotten usan un garrote de hueso."
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,pink,brown",
         "type_list": [
             "Pasivo"
         ],
@@ -13170,7 +13154,7 @@
             "Aumente el tamaño de las lágrimas"
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,yellow,red",
         "type_list": [
             "Pasivo"
         ],
@@ -13189,7 +13173,7 @@
             "Cuenta como 1 de los 3 elementos de astrología necesarios en la misma run para desbloquear Planetarios"
         ],
         "quality": "3",
-        "tags": "*, paper, tarot card",
+        "tags": "*, paper, tarot card,yellow,blue",
         "type_list": [
             "Pasivo"
         ],
@@ -13208,7 +13192,7 @@
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,gray,black",
         "type_list": [
             "Pasivo"
         ],
@@ -13227,7 +13211,7 @@
             "Si se usa en el momento oportuno, se puede usar para entrar en salas malditas y abrir cofres con pinchos sin recibir daño. Sin embargo, sí se recibe daño al usar máquinas de donación de sangre y mendigos diabólicos."
         ],
         "quality": "2",
-        "tags": "*, spikes, spikey, spike rock, greyhost, grey host",
+        "tags": "*, spikes, spikey, spike rock, greyhost, grey host,gray,silver",
         "type_list": [
             "Pasivo"
         ],
@@ -13246,11 +13230,11 @@
             "Mientras este daño temporal esté activo, cada enemigo que mates aumentará tu daño ligeramente, lo que te permitirá matar rápidamente a varios enemigos y encadenar el efecto durante más tiempo.",
             "Este objeto también otorga una reducción de velocidad de -0,03 por cada alimento que se posea.",
             "Los 2 aumentos de estadísticas permanentes dependen del objeto elegido:",
-            "Un refrigerio = +0.2 velocidad de disparo, +1 suerte. Desayuno = +0.2 velocidad de disparo, +1.5 alcance. Postre = +1 daño fijo, +0.2 velocidad de disparo. Cena = +0.5 lágrimas, +0.2 velocidad de disparo.",
-            "Almuerzo = +0.5 lágrimas, +1.5 alcance. Bocadillo de medianoche = +1 daño fijo, +1 suerte. Carne podrida = +1 daño fijo, +1.5 alcance. Cena = +0.5 lágrimas, +1 suerte."
+            "Un refrigerio = +0.2 velocidad de disparo, +1 suerte. Desayuno = +0.2 velocidad de disparo, +1.5 alcance. Postre = +1 daño fijo, +0.2 velocidad de disparo. Cena = +0.5 cadencia, +0.2 velocidad de disparo.",
+            "Almuerzo = +0.5 cadencia, +1.5 alcance. Bocadillo de medianoche = +1 daño fijo, +1 suerte. Carne podrida = +1 daño fijo, +1.5 alcance. Cena = +0.5 cadencia, +1 suerte."
         ],
         "quality": "4",
-        "tags": "*, dog, food,",
+        "tags": "*, dog, food,brown",
         "type_list": [
             "Pasivo"
         ],
@@ -13263,13 +13247,13 @@
         "id": "665",
         "name": "Guppy's Eye",
         "description": [
-            "Te muestra cómo ver el contenido de cofres, sacos, tenderos y objetos que caerán del fuego antes de destruirlos.",
-            "No funciona en rocas tintadas y otros obstáculos (por ejemplo, excrementos, ollas).",
+            "Te muestra el contenido de cofres, sacos, tenderos y objetos que caerán del fuego antes de destruirlos.",
+            "No funciona en tainted rocks y otros obstáculos (por ejemplo, excrementos, ollas).",
             "Cuenta como 1 de los 3 elementos de gato necesarios para la transformación de Guppy"
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Madre en el Cadáver II como Caín.",
-        "tags": "*, guppys eye, guppy eye",
+        "tags": "*, guppys eye, guppy eye, orange, yellow",
         "type_list": [
             "Pasivo"
         ],
@@ -13284,16 +13268,16 @@
         "id": "667",
         "name": "Strawman",
         "description": [
-            "Genera un familiar guardián que dispara lágrimas triples y sigue tus movimientos exactos mientras caminas.",
-            "El guardián tiene 3 monedas de salud y puede morir si recibe suficiente daño. Puede recoger monedas para recuperar salud.",
+            "Genera un familiar Keeper que dispara lágrimas triples y sigue tus movimientos exactos mientras caminas.",
+            "El Keeper tiene 3 monedas de salud y puede morir si recibe suficiente daño. Puede recoger monedas para recuperar salud.",
             "Al igual que otros familiares de este tipo, puedes mantener presionada la tecla de caída para hacer que se quede quieto.",
             "Si muere, su cadáver se transforma en unas cuantas arañas azules. No reaparecerá ni siquiera si te mudas a un nuevo piso.",
             "Siempre coincidirá con tu velocidad de movimiento actual.",
             "+1 Bomba"
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Guardián Manchado",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Keeper",
+        "tags": "*,gray",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -13309,11 +13293,10 @@
         "description": [
             "Solo se encuentra en la sala del jefe Mausoleo/Gehenna II",
             "El objeto en sí no tiene ningún efecto, pero activa el ascenso a través del camino inverso hacia el piso de inicio.",
-            "Una vez que hayas derrotado a Madre una vez, aparecerá una puerta en la sala inicial de Profundidades II, que lleva a los pisos del Mausoleo/Gehena. La puerta solo se puede abrir si tienes la Polaroid, el Negativo o la Polaroid Descolorida (el objeto/abalorio desaparece al abrirse). Esto significa que necesitas una forma de teletransportarte para escapar del combate contra el jefe Pie de Mamá. Si no la encontraste antes, encontrarás una Calavera tintada en algún lugar de Profundidades II, que contiene una carta del Loco al explotar.",
-            "No se puede volver a lanzar con salas de dados de 4 puntos ni con dados Spindown."
+            "Una vez que hayas derrotado a Madre una vez, aparecerá una puerta en la sala inicial de Profundidades II, que lleva a los pisos del Mausoleo/Gehena. La puerta solo se puede abrir si tienes la Polaroid, el Negativo o la Polaroid Descolorida (el objeto/abalorio desaparece al abrirse). Esto significa que necesitas una forma de teletransportarte para escapar del combate contra el jefe Pie de Mamá. Si no la encontraste antes, encontrarás una Calavera tintada en algún lugar de Profundidades II, que contiene una carta del Loco al explotar."
         ],
         "quality": "0",
-        "tags": "*, dads note, dad note, paper,",
+        "tags": "*, dads note, dad note, paper,white,yellow",
         "type_list": [
             "Pasivo"
         ],
@@ -13337,7 +13320,7 @@
             "+6,9 % de probabilidad de Planetario"
         ],
         "quality": "3",
-        "tags": "*, sosig, meat, food,",
+        "tags": "*, sosig, meat, food,pink,red",
         "type_list": [
             "Pasivo"
         ],
@@ -13354,7 +13337,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a La Bestia como Isaac",
-        "tags": "*,",
+        "tags": "*,silver",
         "type_list": [
             "Pasivo"
         ],
@@ -13367,13 +13350,13 @@
         "id": "671",
         "name": "Candy Heart",
         "description": [
-            "Cada medio corazón rojo que recojas te otorga un estadísticas pequeño pero permanente.",
-            "Elige aleatoriamente entre +0,10 daño, +0,05 lágrimas, +0,15 alcance, +0,02 velocidad, +0,1 suerte, +0,02 velocidad de disparo por cada medio corazón rojo.",
+            "Cada medio corazón rojo que recojas te otorga estadísticas pequeñas pero permanentes.",
+            "Elige aleatoriamente entre +0,10 daño, +0,05 cadencia, +0,15 alcance, +0,02 velocidad, +0,1 suerte, +0,02 velocidad de disparo por cada medio corazón rojo.",
             "Genera 1 corazón rojo al recogerlo."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando a La Bestia como Magdalena",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Pasivo"
         ],
@@ -13393,7 +13376,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando a La Bestia como Caín.",
-        "tags": "*,",
+        "tags": "*,black,red,gold",
         "type_list": [
             "Pasivo"
         ],
@@ -13414,7 +13397,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a La Bestia como Judas.",
-        "tags": "*,",
+        "tags": "*,white,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -13432,7 +13415,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como The Forgotten.",
-        "tags": "*,",
+        "tags": "*,blue,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -13450,7 +13433,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando a La Bestia como Eva.",
-        "tags": "*,",
+        "tags": "*,white,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -13470,7 +13453,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Sansón.",
-        "tags": "*, blood",
+        "tags": "*, blood, black, red",
         "type_list": [
             "Pasivo"
         ],
@@ -13491,7 +13474,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a La Bestia como Lázaro.",
-        "tags": "*,",
+        "tags": "*,pink,white",
         "type_list": [
             "Pasivo"
         ],
@@ -13511,7 +13494,7 @@
         ],
         "quality": "4",
         "unlock": "Desbloquea este objeto derrotando a La Bestia como Lilith",
-        "tags": "*,",
+        "tags": "*,pink,red",
         "type_list": [
             "Pasivo"
         ],
@@ -13525,13 +13508,13 @@
         "id": "679",
         "name": "Lil Abaddon",
         "description": [
-            "Te otorga un familiar que puede cargarse para liberar un anillo negro que daña a cualquier enemigo que lo toque con golpes rápidos (similar a los efectos de Fauces del Vacío / Athame)",
+            "Te otorga un familiar que puede cargarse para liberar un anillo negro que daña a cualquier enemigo que lo toque con golpes rápidos.",
             "El efecto causa una cantidad decente de daño, pero no se ajusta a tus mejoras de daño.",
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a La Bestia como Azazel.",
-        "tags": "*,",
+        "tags": "*,black,red",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -13551,7 +13534,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como ???",
-        "tags": "*, Montezumas revenge",
+        "tags": "*, Montezumas revenge,brown,green",
         "type_list": [
             "Pasivo"
         ],
@@ -13573,7 +13556,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando a Madre como Apollyon",
-        "tags": "*,",
+        "tags": "*,purple",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -13593,7 +13576,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto derrotando a La Bestia como Apollyon",
-        "tags": "*,",
+        "tags": "*,red,brown",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -13611,8 +13594,8 @@
             "Otros enemigos que toquen los fragmentos de hueso recibirán 3,5 de daño, con la posibilidad de rebotar en ellos o hacer que se rompan y desaparezcan."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar a Madre como La Olvidada.",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto al derrotar a Madre como The Forgotten.",
+        "tags": "*,white",
         "type_list": [
             "Pasivo"
         ],
@@ -13629,8 +13612,8 @@
             "Después de 5 segundos, el alma roja explota (Isaac no recibe daño por este efecto)"
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Los Perdidos.",
-        "tags": "*, this item is irrelevant 99.94% of you wont kill the beast as the lost me included :(",
+        "unlock": "Desbloquea este objeto al derrotar a La Bestia como The Lost.",
+        "tags": "*, red,black",
         "type_list": [
             "Pasivo"
         ],
@@ -13652,7 +13635,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a La Bestia como Bethany",
-        "tags": "*,",
+        "tags": "*,gold,blue",
         "type_list": [
             "Activa"
         ],
@@ -13670,11 +13653,11 @@
         "description": [
             "Genera 1 corazón de alma en el suelo.",
             "Los corazones de alma te otorgan pequeños aumentos de estadísticas permanentes cuando los recoges.",
-            "Las estadísticas posibles incluyen +0,3 alcance, +0,2 suerte, +0,2 daño, +0,1 lágrimas, +0,04 velocidad."
+            "Las estadísticas posibles incluyen +0,3 alcance, +0,2 suerte, +0,2 daño, +0,1 cadencia, +0,04 velocidad."
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto derrotando el modo Codicia como Bethany",
-        "tags": "*,",
+        "tags": "*,blue, silver",
         "type_list": [
             "Pasivo"
         ],
@@ -13692,7 +13675,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Jacob y Esaú.",
-        "tags": "*,",
+        "tags": "*,white, pink",
         "type_list": [
             "Activa"
         ],
@@ -13712,11 +13695,11 @@
             "Te da una vida extra",
             "Reaparecerás como una versión pequeña de Isaac, con un área de impacto muy reducida y +0,2 de velocidad.",
             "Cuando el efecto se activa, infliges 35 de daño a los enemigos cercanos.",
-            "Una vez desbloqueado, si ya has desbloqueado la versión contaminada del personaje con el que estás jugando, se garantiza que Inner Child aparecerá en el armario oculto en el piso de Inicio."
+            "Una vez desbloqueado, si ya has desbloqueado la versión tainted del personaje con el que estás jugando, se garantiza que Inner Child aparecerá en el armario oculto en el piso de Inicio."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar al Modo Avaricia con Jacob y Esaú.",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto al derrotar al Modo Greed con Jacob y Esaú.",
+        "tags": "*,pink,orange",
         "type_list": [
             "Pasivo"
         ],
@@ -13732,8 +13715,8 @@
             "Los pedestales de objetos ahora alternan entre 5 objetos aleatorios"
         ],
         "quality": "4",
-        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Isaac Manchado.",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Isaac Tainted.",
+        "tags": "*,gold",
         "type_list": [
             "Pasivo"
         ],
@@ -13753,7 +13736,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Magdalene",
-        "tags": "*,",
+        "tags": "*,green",
         "type_list": [
             "Pasivo"
         ],
@@ -13767,14 +13750,14 @@
         "name": "Sacred Orb",
         "description": [
             "Aumenta la calidad de los elementos generados.",
-            "Vuelve a lanzar objetos con una calidad de 0 o 1",
-            "33% de probabilidad de repetir objetos con una calidad de 2",
-            "La calidad es una mecánica oculta en Repetición para todos los objetos y varía de 0 a 4. Algunos objetos consideran la calidad para elegir qué objeto generar, lo que permite generar mejores objetos bajo ciertas condiciones.",
+            "Regenera los items que tengas con una calidad de 0 o 1",
+            "33% de probabilidad de regenerar los objetos con una calidad de 2",
+            "La calidad es una mecánica oculta en Repentance para todos los objetos y varía de 0 a 4. Algunos objetos consideran la calidad para elegir qué objeto generar, lo que permite generar mejores objetos bajo ciertas condiciones.",
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
         ],
         "quality": "4",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Lost",
-        "tags": "*,",
+        "tags": "*,gold",
         "type_list": [
             "Pasivo"
         ],
@@ -13798,8 +13781,8 @@
             "Transformación del Leviatán: 3 % de probabilidad"
         ],
         "quality": "1",
-        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Judas Manchado.",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Judas.",
+        "tags": "*,gray,red",
         "type_list": [
             "Pasivo"
         ],
@@ -13813,14 +13796,14 @@
         "id": "693",
         "name": "The Swarm",
         "description": [
-            "Al recogerlo, obtienes 9 vuelos orbitales.",
+            "Al recogerlo, obtienes 9 moscas orbitales.",
             "Cada vez que una mosca bloquea un disparo enemigo, se convertirá en una mosca azul y atacará a los enemigos cercanos, dejándote con una mosca orbital menos.",
             "Cada vez que despejes una habitación obtendrás +1 vuelo orbital, hasta un máximo de 9",
             "Cuenta como 1 de los 3 elementos de mosca necesarios para la transformación de Belcebú."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Blue Baby",
-        "tags": "*,",
+        "tags": "*,black",
         "type_list": [
             "Pasivo"
         ],
@@ -13837,12 +13820,12 @@
             "Te otorga +0,25 de daño por cada corazón roto que tengas.",
             "Da 3 corazones rotos al recogerlo",
             "Cada golpe de daño que te mataría, en cambio, agrega 2 corazones rotos más y causa 40 de daño a todos los enemigos en la habitación.",
-            "La angustia no puede matarte al recogerlo",
+            "Heartbreak no puede matarte al recogerlo",
             "Los corazones rotos son contenedores vacíos que no se pueden extraer ni rellenar y anularán otros tipos de corazones al alcanzar un total de 12. Reemplazar los 12 contenedores con corazones rotos te matará al instante. La única forma de eliminar corazones rotos es donando a un confesionario."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Eve",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Pasivo"
         ],
@@ -13856,14 +13839,14 @@
         "id": "695",
         "name": "Bloody Gust",
         "description": [
-            "Cada vez que recibes daño, obtienes un velocidad y un lágrimas.",
+            "Cada vez que recibes daño, obtienes velocidad y cadencia.",
             "Los aumentos de estadísticas comienzan pequeños y aumentan cada vez que recibes daño (+0,25 Tears Up por el primer golpe, +0,75 Tears Up por el sexto golpe)",
             "El efecto alcanza un máximo de +3 de Cadencia y +1 de Velocidad tras recibir daño 6 veces. Esto te lleva a la velocidad máxima posible.",
             "El efecto dura el resto del piso actual."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto derrotando a Madre como Sansón.",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Pasivo"
         ],
@@ -13879,12 +13862,12 @@
         "description": [
             "Isaac obtiene un halo de luz a su alrededor. Cuando un enemigo toca el halo durante un par de segundos, un rayo de luz desciende y le inflige una ráfaga de daño.",
             "El rayo disparado también dispara en las 4 direcciones cardinales, infligiendo daño a todo lo que toca.",
-            "Cada vez que Isaac recibe daño, el halo se agranda ligeramente hasta un máximo de 10 veces. El tamaño se reinicia al abandonar el suelo.",
+            "Cada vez que Isaac recibe daño, el halo se agranda ligeramente hasta un máximo de 10 veces. El tamaño se reinicia al abandonar el piso.",
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Lazarus",
-        "tags": "*,",
+        "tags": "*,white,cyan",
         "type_list": [
             "Pasivo"
         ],
@@ -13902,7 +13885,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Hush como Jacob y Esaú.",
-        "tags": "*,",
+        "tags": "*,brown",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -13923,8 +13906,8 @@
             "Cuenta como 1 de los 3 elementos familiares necesarios para la transformación Conjoined."
         ],
         "quality": "4",
-        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Lilith Manchada.",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Lilith.",
+        "tags": "*,black",
         "type_list": [
             "Pasivo",
             "Familiar"
@@ -13943,8 +13926,8 @@
             "La ira vuelve a cero y el ciclo continúa cada 5 salas despejadas."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Azazel Manchado.",
-        "tags": "*, azazels rage, azazel rage",
+        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Azazel.",
+        "tags": "*, azazels rage, azazel rage, black",
         "type_list": [
             "Pasivo"
         ],
@@ -13962,7 +13945,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Apollyon",
-        "tags": "*,",
+        "tags": "*,brown,red,white",
         "type_list": [
             "Pasivo"
         ],
@@ -13982,7 +13965,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Forgotten",
-        "tags": "*, isaacs tomb, isaac tomb",
+        "tags": "*, isaacs tomb, isaac tomb, black,brown",
         "type_list": [
             "Pasivo"
         ],
@@ -14002,7 +13985,7 @@
         ],
         "quality": "1",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Bethany",
-        "tags": "*,",
+        "tags": "*,red,white",
         "type_list": [
             "Pasivo"
         ],
@@ -14021,8 +14004,8 @@
             "Si cualquiera de los personajes muere, se acaba el juego."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Jacob Manchado.",
-        "tags": "*,",
+        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Jacob.",
+        "tags": "*,red,black",
         "type_list": [
             "Activa"
         ],
@@ -14041,15 +14024,14 @@
         "description": [
             "Cuando se activa, las lágrimas de Isaac son reemplazadas por una espada de hueso y se lanza a una matanza, ganando +0,4 de velocidad, +3 de daño fijo durante 5 segundos.",
             "La espada causa x3 de daño si se usa a corta distancia, o x1,5 de daño si se carga y se lanza.",
-            "Limpiar salas no cobra este objeto; la carga se añade en una cantidad igual al daño recibido por los enemigos. Esto incluye todas las fuentes de daño, incluido el daño ambiental a los enemigos.",
+            "Limpiar salas no para este objeto; la carga se añade en una cantidad igual al daño recibido por los enemigos. Esto incluye todas las fuentes de daño, incluido el daño ambiental a los enemigos.",
             "Matar a un enemigo mientras estás en estado de furia aumentará la duración del efecto en 1 segundo.",
             "No mueres mientras estás en modo Berserk, pero recibir daño letal te matará después de que el efecto desaparezca.",
-            "La espada de hueso de este artículo es similar a la mandíbula de burro de Antibirth.",
             "Tainted Samson comienza con una versión pasiva de este objeto."
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Samson.",
-        "tags": "*, berzerk, bamson",
+        "tags": "*, berzerk, bamson,white,red",
         "type_list": [
             "Activa"
         ],
@@ -14067,11 +14049,11 @@
         "description": [
             "Al usarlo, Isaac se transforma en un fantasma durante 1 segundo y su velocidad aumenta al máximo (2.0). Durante este tiempo, puede caminar sobre los enemigos para marcarlos y matarlos. Cuando el efecto desaparece, Isaac corre rápidamente entre cada enemigo marcado, infligiendo un gran daño a cada uno rápidamente (aproximadamente 2.5 veces tu daño de lagrima).",
             "El daño causado por este efecto aumenta con cada objetivo que golpea en una fila.",
-            "Judas contaminado comienza con este objeto"
+            "Tainted Judas comienza con este objeto"
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Judas.",
-        "tags": "*, budas, jubas, sword, blood, omae wa mou shindeiru",
+        "tags": "*, budas, jubas, sword, blood, omae wa mou shindeiru,silver,red",
         "type_list": [
             "Activa"
         ],
@@ -14090,11 +14072,11 @@
             "Cuando se usa, Abyss consume todos los elementos del pedestal en la sala actual y los convierte en moscas de ataque rojas.",
             "Las moscas de ataque rojas cargarán por toda la habitación en la misma dirección en la que Isaac dispara, infligiendo daño de contacto a los enemigos igual al daño de lagrima de Isaac.",
             "Las moscas no bloquean los disparos enemigos, pero esto también significa que nunca mueren y permanecen con Isaac para siempre.",
-            "Apollyon contaminado comienza con este objeto"
+            "Tainted Apollyon comienza con este objeto"
         ],
         "quality": "4",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Apollyon.",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Activa"
         ],
@@ -14113,7 +14095,7 @@
             "+1 HP"
         ],
         "quality": "1",
-        "tags": "*,",
+        "tags": "*,brown,pink",
         "type_list": [
             "Pasivo"
         ],
@@ -14130,7 +14112,7 @@
             "Grapa uno de los ojos de Isaac, lo que significa que solo dispara lágrimas de un ojo. Esto significa que algunos efectos, como las píldoras RUA WIZARD, solo disparan lágrimas en una dirección."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,gray,silver",
         "type_list": [
             "Pasivo"
         ],
@@ -14150,7 +14132,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Jacob y Esaú.",
-        "tags": "*,",
+        "tags": "*,gold,black",
         "type_list": [
             "Activa"
         ],
@@ -14172,12 +14154,11 @@
             "Las recetas de la Bolsa de Artesanía se basan en tu semilla actual, pero hay algunas recetas fijas que existen en cada ejecución, por ejemplo, 8 monedas = Máquina Tragamonedas",
             "Mientras juegas como Tainted Cain obtienes una interfaz visual para ver qué elementos hay en la bolsa, lo que te permite ver qué elemento se creará e intercambiar consumibles específicos.",
             "Tiene otros usos: inflige 3 puntos de daño a los enemigos que golpea y se puede usar para empujar rápidamente bombas y objetos a través de las habitaciones.",
-            "Tainted Cain comienza con este objeto, pero cualquier personaje puede usarlo después de desbloquearlo y encontrarlo en la sala de objetos.",
-            "¡No se puede utilizar para crear otra bolsa de artesanía!"
+            "Tainted Cain comienza con este objeto, pero cualquier personaje puede usarlo después de desbloquearlo y encontrarlo en la sala de objetos."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Cain.",
-        "tags": "*, Bain",
+        "tags": "*, Bain, brown",
         "type_list": [
             "Activa"
         ],
@@ -14193,7 +14174,7 @@
         "id": "711",
         "name": "Flip",
         "description": [
-            "Mientras mantienes presionado el botón de volteo, aparecerá un objeto fantasma detrás de los pedestales de objetos al ingresar a las salas de objetos y a la tienda con las que no se puede interactuar.",
+            "Aparecerá un objeto fantasma detrás de los pedestales de objetos al ingresar a las salas de objetos y a la tienda con las que no se puede interactuar.",
             "Cuando se activa, todos los elementos reales en la habitación se intercambiarán con los elementos fantasmas detrás de ellos.",
             "El objeto fantasma permanece allí incluso si tomas el objeto normal, lo que te permite usar Voltear para obtener ambos.",
             "No hace nada con los pedestales de objetos que no tienen un objeto fantasma detrás de ellos.",
@@ -14202,7 +14183,7 @@
         ],
         "quality": "4",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Lazarus.",
-        "tags": "*, Bazarus",
+        "tags": "*, Bazarus, red",
         "type_list": [
             "Activa"
         ],
@@ -14222,13 +14203,13 @@
         "description": [
             "Al usarla, obtienes una llama orbital que representa otro objeto pasivo aleatorio del juego. Mientras tengas esta llama, también tendrás su efecto.",
             "La llama inflige el doble de daño de lagrima a cualquier enemigo que la toque, pero si recibe demasiado daño, la llama desaparecerá y perderás el efecto del objeto.",
-            "Bethany contaminada comienza con este artículo",
+            "Tainted Bethany comienza con este artículo",
             "Los Wisps se eligen al azar de los grupos de objetos de la Sala de objetos, la Sala del jefe y la Tienda, con un 25 % de probabilidad de elegir el mismo grupo que la sala actual.",
             "Cuenta como 1 de los 3 elementos de libro necesarios para la transformación de Bookworm."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Bethany.",
-        "tags": "*,",
+        "tags": "*,black",
         "type_list": [
             "Activa"
         ],
@@ -14246,15 +14227,15 @@
         "name": "Sumptorium",
         "description": [
             "Cuando se usa, elimina la mitad de un corazón de salud y crea un coágulo familiar.",
-            "Los familiares Clot siguen los movimientos exactos de Isaac, incluyendo el vuelo, el disparo de lágrimas y los efectos de lágrimas.",
+            "Los familiares siguen los movimientos exactos de Isaac, incluyendo el vuelo, el disparo de lágrimas y los efectos de lágrimas.",
             "Si mantienes presionado el botón de intercambio, todos los coágulos permanecerán en su lugar.",
             "Funciona de forma diferente a Tainted Eve: los coágulos se crean al disparar durante 2 segundos, hasta un mínimo de medio corazón rojo. Usar Sumptorium como ella consumirá todos los coágulos y te devolverá tus corazones. Los coágulos que regresan a Eve infligen el triple de daño al absorberlos.",
             "El tipo de corazón consumido para crear un coágulo le otorgará diferentes habilidades: Corazones de alma = Más salud, Corazones negros = Efecto de materia oscura, Corazones eternos = Efecto de corazón sagrado, Corazones dorados = Efecto de toque de Midas, Corazones de hueso = Efecto de fractura compuesta, Corazones podridos = Menos salud",
             "Tainted Eve comienza con este objeto, pero cualquier personaje puede usarlo después de desbloquearlo y encontrarlo en la sala de objetos."
         ],
         "quality": "3",
-        "unlock": "Este objeto viene con Tainted Eve. El logro \"Sumptorium\" se desbloquea al derrotar a Delirium con Tainted Eve.",
-        "tags": "*,",
+        "unlock": "Se desbloquea al derrotar a Delirium con Tainted Eve.",
+        "tags": "*,silver,red",
         "type_list": [
             "Activa"
         ],
@@ -14270,12 +14251,12 @@
         "id": "714",
         "name": "Recall",
         "description": [
-            "Cuando se usa, esto devolverá el esqueleto del Olvidado Contaminado a las manos de su propietario desde cualquier distancia.",
-            "Efecto de Derecho de Nacimiento del Olvidado Manchado. No se puede obtener y no tiene utilidad para ningún otro personaje.",
+            "Cuando se usa, esto devolverá el esqueleto del Tainted Forgotten a las manos de su propietario desde cualquier distancia.",
+            "No tiene utilidad para ningún otro personaje.",
             "Birthright es un objeto de la tienda que tiene efectos únicos según el personaje con el que juegues."
         ],
         "quality": "0",
-        "tags": "*,",
+        "tags": "*,white,cyan",
         "type_list": [
             "Activa"
         ],
@@ -14292,11 +14273,11 @@
         "name": "Hold",
         "description": [
             "Este es el objeto que Tainted Blue Baby (???) usa como su mecánica principal.",
-            "Matar o dañar enemigos genera varias mierdas, que se suman a su colección. Al presionar el botón de bomba, la siguiente mierda se colocará en el frasco de \"Retener\". Al presionarlo de nuevo, podrás lanzársela a los enemigos. Cada mierda tiene efectos aleatorios como bombas de trasero, mierdas de fuego, etc.",
+            "Matar o dañar enemigos genera varias mierdas, que se suman a su colección. Al presionar el botón de bomba, la siguiente mierda se colocará en el frasco de \"Hold\". Al presionarlo de nuevo, podrás lanzársela a los enemigos. Cada mierda tiene efectos aleatorios como bombas de trasero, mierdas de fuego, etc.",
             "Tainted Blue Baby comienza con este objeto y es el único que puede usarlo."
         ],
         "quality": "0",
-        "tags": "*,",
+        "tags": "*,red,white",
         "type_list": [
             "Activa"
         ],
@@ -14319,8 +14300,8 @@
             "Los objetos de 5c otorgan 1 o 2 estadísticas: +0,5 daño **O** +0,25 alcance y +0,03 velocidad"
         ],
         "quality": "3",
-        "unlock": "Desbloquea este objeto al derrotar a Madre como El Guardián",
-        "tags": "*, keepers sack, keeper sack",
+        "unlock": "Desbloquea este objeto al derrotar a Madre como Keeper",
+        "tags": "*, keepers sack, keeper sack,gray",
         "type_list": [
             "Pasivo"
         ],
@@ -14340,7 +14321,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Keeper.",
-        "tags": "*, keepers kin, keeper kin",
+        "tags": "*, keepers kin, keeper kin,gray,blue",
         "type_list": [
             "Pasivo"
         ],
@@ -14358,8 +14339,8 @@
             "Puede incluir cualquier cosa que aparezca en la tienda."
         ],
         "quality": "2",
-        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Guardián.",
-        "tags": "*, keepers box, keeper box",
+        "unlock": "Desbloquea este objeto al derrotar a La Bestia como Keeper.",
+        "tags": "*, keepers box, keeper box, brown, gold",
         "type_list": [
             "Activa"
         ],
@@ -14377,12 +14358,12 @@
         "id": "720",
         "name": "Everything Jar",
         "description": [
-            "Por cada barra de carga que tenga este objeto, se mostrará un consumible diferente dentro del frasco. 1 = mierda, 2 = centavo, 3 = bomba, 4 = llave, 5 = corazón rojo, 6 = píldora, 7 = tarjeta, 8 = corazón de alma, 9 = corazón de oro, 10 = llave de oro, 11 = bomba de oro",
+            "Por cada barra de carga que tenga este objeto, se mostrará un consumible diferente dentro del frasco. 1 = mierda, 2 = centavo, 3 = bomba, 4 = llave, 5 = corazón rojo, 6 = píldora, 7 = carta, 8 = corazón de alma, 9 = corazón de oro, 10 = llave de oro, 11 = bomba de oro",
             "Con las 12 cargas completas, se producirá un efecto completamente aleatorio. Puede ser cualquier cosa, como la generación de consumibles, la generación de un pedestal defectuoso, la creación de rayos de luz, la generación de bombas trol o nada en absoluto."
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Edén.",
-        "tags": "*,",
+        "tags": "*,blue,white",
         "type_list": [
             "Activa"
         ],
@@ -14406,7 +14387,7 @@
         ],
         "quality": "0",
         "unlock": "Desbloquea este objeto al derrotar a La Bestia como Tainted Eden",
-        "tags": "*, tm trainer, glitched items, glitch item, tmt trainer, tmelt, t melt",
+        "tags": "*, tm trainer, glitched items, glitch item, tmt trainer, tmelt, t melt, pink, blue",
         "type_list": [
             "Pasivo"
         ],
@@ -14425,7 +14406,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Jacob.",
-        "tags": "*, Bacob",
+        "tags": "*, Bacob, black, orange",
         "type_list": [
             "Activa"
         ],
@@ -14441,7 +14422,7 @@
         "id": "723",
         "name": "Spindown Dice",
         "description": [
-            "Vuelve a lanzar todos los elementos del pedestal, reduciendo todos sus identificadores de elementos internos en 1",
+            "Vuelve a generar todos los elementos del pedestal, reduciendo todos sus identificadores de elementos internos en 1",
             "Por ejemplo: el ID de Brimstone es 118, por lo que se cambiaría a Dead Bird (ID = 117)",
             "Cebolla triste (ID = 1) se convertirá en nada",
             "Hay algunas lagunas en los ID de los objetos que se omiten si no existe ningún objeto, o que se reinician con objetos inesperados si hay objetos ocultos con ese ID. Por ejemplo, reiniciando el Plan C (ID = 475) se convierte en el Cañón de Cristales Rotos, que es un objeto oculto con ID = 474.",
@@ -14449,7 +14430,7 @@
         ],
         "quality": "4",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Isaac.",
-        "tags": "*,",
+        "tags": "*,black, red",
         "type_list": [
             "Activa"
         ],
@@ -14471,7 +14452,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Magdalene.",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Pasivo"
         ],
@@ -14495,7 +14476,7 @@
         ],
         "quality": "0",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Blue Baby.",
-        "tags": "*,",
+        "tags": "*,pink",
         "type_list": [
             "Pasivo"
         ],
@@ -14513,7 +14494,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Azazel.",
-        "tags": "*,",
+        "tags": "*,red",
         "type_list": [
             "Pasivo"
         ],
@@ -14533,7 +14514,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Lost",
-        "tags": "*,",
+        "tags": "*,white",
         "type_list": [
             "Pasivo"
         ],
@@ -14554,7 +14535,7 @@
         ],
         "quality": "3",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Lilith.",
-        "tags": "*,",
+        "tags": "*,red,pink",
         "type_list": [
             "Activa"
         ],
@@ -14577,7 +14558,7 @@
         ],
         "quality": "2",
         "unlock": "Desbloquea este objeto al derrotar a Delirium como Tainted Forgotten",
-        "tags": "*,",
+        "tags": "*,pink",
         "type_list": [
             "Activa"
         ],
@@ -14597,7 +14578,7 @@
             "+1 Suerte "
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,white,blue",
         "type_list": [
             "Pasivo"
         ],
@@ -14617,7 +14598,7 @@
             "-0.3 Disminución de la velocidad de disparo (solo ojo derecho)"
         ],
         "quality": "2",
-        "tags": "*,",
+        "tags": "*,pink",
         "type_list": [
             "Pasivo"
         ],
@@ -14635,7 +14616,7 @@
             "Cuenta como 1 de los 3 elementos de mamá necesarios para la transformación de mamá."
         ],
         "quality": "3",
-        "tags": "*,",
+        "tags": "*,gold,purple",
         "type_list": [
             "Pasivo"
         ],
