@@ -275,6 +275,55 @@
             pointer-events: none;
             image-rendering: pixelated;
         }
+
+        #trinkets-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        #trinkets-header button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        #trinkets-header img {
+            width: 48px;
+            height: 48px;
+            pointer-events: none;
+            image-rendering: pixelated;
+        }
+
+        #items-header button, #trinkets-header button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            border-radius: 100%;
+            filter: brightness(50%) saturate(100%) blur(1px);
+            transition: all 0.2s;
+            
+        }
+        #items-header button.active, #trinkets-header button.active {
+            background: rgba(246, 214, 176, 0.2);
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+            filter: blur(0px);
+        }
+        #items-header img, #trinkets-header img {
+            width: 48px;
+            height: 48px;
+            pointer-events: none;
+            image-rendering: pixelated;
+        }
+
         @media (max-width: 700px) {
             html{
                 background-color: rgb(19, 12, 9);
@@ -423,7 +472,15 @@
             </button>
         </div>
         <div id="items" class="img-grid itemgrid"></div>
-        <h2 id="h2-trinkets">TRINKETS</h2>
+        <div id="trinkets-header" style="display: flex; align-items: center; justify-content: center; gap: 30px; margin: 30px 0;">
+            <button id="sort-id-trinkets-btn">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/id.png" alt="Ordenar por ID">
+            </button>
+            <h2 id="h2-trinkets">TRINKETS</h2>
+            <button id="sort-color-trinkets-btn">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/color.png" alt="Ordenar por Color">
+            </button>
+        </div>
         <div id="trinkets" class="img-grid trinketgrid"></div>
         <h2 id="h2-cards">MISC</h2>
         <div id="cards" class="img-grid cardgrid"></div>
@@ -486,6 +543,10 @@
         let allItems = [];
         let allTrinkets = [];
         let allCards = [];
+        
+        // Estado de orden actual (mover estas declaraciones aquí arriba)
+        let sortMode = "id";
+        let sortModeTrinkets = "id";
 
         let language = 'es'; // Por defecto español
 
@@ -500,6 +561,16 @@
             return img;
         }
 
+        function initializeButtonStates() {
+            // Activar botones de ID al inicio
+            document.getElementById('sort-id-btn').classList.add('active');
+            document.getElementById('sort-id-trinkets-btn').classList.add('active');
+            // Asegurar que los botones de color estén desactivados
+            document.getElementById('sort-color-btn').classList.remove('active');
+            document.getElementById('sort-color-trinkets-btn').classList.remove('active');
+        }
+
+        // Modificar la función loadAllData para llamar a initializeButtonStates
         function loadAllData() {
             // Limpia los arrays antes de cargar
             allItems = [];
@@ -507,37 +578,33 @@
             allCards = [];
             clearAllGrids();
 
+            // Restablecer el estado de ordenamiento por defecto
+            sortMode = "id";
+            sortModeTrinkets = "id";
+            initializeButtonStates();
+
             fetch(`${baseUrl}items_${language}.json`)
                 .then(res => {
-                    if (!res.ok) throw new Error('No se pudo cargar items.json');
                     return res.json();
                 })
                 .then(items => { allItems = items; renderByFilters(); })
                 .catch(err => {
-                    document.getElementById('error-msg').textContent =
-                        "Error cargando items.json. Si estás abriendo el archivo localmente, usa un servidor local (por ejemplo: 'npx serve', 'python -m http.server', etc).";
                 });
 
             fetch(`${baseUrl}trinkets_${language}.json`)
                 .then(res => {
-                    if (!res.ok) throw new Error('No se pudo cargar trinkets.json');
                     return res.json();
                 })
                 .then(trinkets => { allTrinkets = trinkets; renderByFilters(); })
                 .catch(err => {
-                    document.getElementById('error-msg').textContent +=
-                        "\nError cargando trinkets.json.";
                 });
 
             fetch(`${baseUrl}cards_${language}.json`)
                 .then(res => {
-                    if (!res.ok) throw new Error('No se pudo cargar cards.json');
                     return res.json();
                 })
                 .then(cards => { allCards = cards; renderByFilters(); })
                 .catch(err => {
-                    document.getElementById('error-msg').textContent +=
-                        "\nError cargando cards.json.";
                 });
         }
 
@@ -553,7 +620,7 @@
             document.getElementById('trinkets').innerHTML = '';
             document.getElementById('cards').innerHTML = '';
             document.getElementById('items-header').style.display = 'none';
-            document.getElementById('h2-trinkets').style.display = 'none';
+            document.getElementById('trinkets-header').style.display = 'none';
             document.getElementById('h2-cards').style.display = 'none';
         }
 
@@ -645,7 +712,7 @@
             if (showCards.length > 0) renderCards(showCards);
 
             document.getElementById('items-header').style.display = document.getElementById('items').children.length ? '' : 'none';
-            document.getElementById('h2-trinkets').style.display = document.getElementById('trinkets').children.length ? '' : 'none';
+            document.getElementById('trinkets-header').style.display = document.getElementById('trinkets').children.length ? '' : 'none';
             document.getElementById('h2-cards').style.display = document.getElementById('cards').children.length ? '' : 'none';
         }
 
@@ -855,9 +922,6 @@
             "yellow", "green", "cyan", "blue", "purple", "pink"
         ];
 
-        // Estado de orden actual
-        let sortMode = "default";
-
         // Función para extraer colores de tags
         function getItemColors(item) {
             if (!item.tags) return [];
@@ -899,6 +963,30 @@
             return items.slice().sort((a, b) => (a.id || 0) - (b.id || 0));
         }
 
+                function sortTrinketsById(trinkets) {
+            return trinkets.slice().sort((a, b) => (a.trinketId || 0) - (b.trinketId || 0));
+        }
+
+        function sortTrinketsByColor(trinkets) {
+            return trinkets.slice().sort((a, b) => {
+                const aColors = getItemColors(a);
+                const bColors = getItemColors(b);
+
+                // Si ninguno tiene color, van al final
+                if (aColors.length === 0 && bColors.length === 0) return 0;
+                if (aColors.length === 0) return 1;
+                if (bColors.length === 0) return -1;
+
+                // Orden por color principal
+                const aMain = colorOrder.findIndex(c => c === aColors[0]);
+                const bMain = colorOrder.findIndex(c => c === bColors[0]);
+                if (aMain !== bMain) return aMain - bMain;
+
+                // Si todo igual, por ID
+                return (a.trinketId || 0) - (b.trinketId || 0);
+            });
+        }
+
         // Modifica renderItems para usar el modo de orden
         function renderItems(items) {
             const container = document.getElementById('items');
@@ -920,15 +1008,93 @@
             });
         }
 
-        // Botón ordenar por ID
+        function renderTrinkets(trinkets) {
+            const container = document.getElementById('trinkets');
+            container.innerHTML = '';
+            let sortedTrinkets = trinkets;
+            if (sortModeTrinkets === "id") {
+                sortedTrinkets = sortTrinketsById(trinkets);
+            } else if (sortModeTrinkets === "color") {
+                sortedTrinkets = sortTrinketsByColor(trinkets);
+            }
+            sortedTrinkets.forEach(trinket => {
+                if (!trinket.trinketId) return;
+                const img = createImg(
+                    `${baseUrl}All_Trinkets/trinket_${trinket.trinketId}.png`,
+                    trinket.name,
+                    () => showTrinketModal(trinket)
+                );
+                container.appendChild(img);
+            });
+        }
+
+        // Botones de ordenamiento para items
         document.getElementById('sort-id-btn').onclick = function() {
-            sortMode = "id";
+            const idBtn = document.getElementById('sort-id-btn');
+            const colorBtn = document.getElementById('sort-color-btn');
+            
+            if (sortMode === "id") {
+                // Si ya está en modo ID, desactivar
+                sortMode = "default";
+                idBtn.classList.remove('active');
+            } else {
+                // Activar modo ID y desactivar color
+                sortMode = "id";
+                idBtn.classList.add('active');
+                colorBtn.classList.remove('active');
+            }
             renderByFilters();
         };
 
-        // Botón ordenar por color
         document.getElementById('sort-color-btn').onclick = function() {
-            sortMode = "color";
+            const idBtn = document.getElementById('sort-id-btn');
+            const colorBtn = document.getElementById('sort-color-btn');
+            
+            if (sortMode === "color") {
+                // Si ya está en modo color, desactivar
+                sortMode = "default";
+                colorBtn.classList.remove('active');
+            } else {
+                // Activar modo color y desactivar ID
+                sortMode = "color";
+                colorBtn.classList.add('active');
+                idBtn.classList.remove('active');
+            }
+            renderByFilters();
+        };
+
+        // Botones de ordenamiento para trinkets
+        document.getElementById('sort-id-trinkets-btn').onclick = function() {
+            const idBtn = document.getElementById('sort-id-trinkets-btn');
+            const colorBtn = document.getElementById('sort-color-trinkets-btn');
+            
+            if (sortModeTrinkets === "id") {
+                // Si ya está en modo ID, desactivar
+                sortModeTrinkets = "default";
+                idBtn.classList.remove('active');
+            } else {
+                // Activar modo ID y desactivar color
+                sortModeTrinkets = "id";
+                idBtn.classList.add('active');
+                colorBtn.classList.remove('active');
+            }
+            renderByFilters();
+        };
+
+        document.getElementById('sort-color-trinkets-btn').onclick = function() {
+            const idBtn = document.getElementById('sort-id-trinkets-btn');
+            const colorBtn = document.getElementById('sort-color-trinkets-btn');
+            
+            if (sortModeTrinkets === "color") {
+                // Si ya está en modo color, desactivar
+                sortModeTrinkets = "default";
+                colorBtn.classList.remove('active');
+            } else {
+                // Activar modo color y desactivar ID
+                sortModeTrinkets = "color";
+                colorBtn.classList.add('active');
+                idBtn.classList.remove('active');
+            }
             renderByFilters();
         };
 
