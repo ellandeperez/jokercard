@@ -331,11 +331,23 @@
                 background-repeat: no-repeat;
                 background-size: cover;
             }
+
+            #trinkets-header {
+                gap: 10px;
+            }               
+            h2 {font-size: 4em;}         
             .content {
                 width: 100vw;
                 padding: 2px;
                 margin: 0;
                 border-radius: 0;
+            }
+            .img-grid {
+                gap: 5px; /* Menor separación */
+            }
+            .img-grid img {
+                width: 50px;
+                height: 50px;
             }
             .search-bar-content {
                 width: 100vw;
@@ -472,7 +484,7 @@
             </button>
         </div>
         <div id="items" class="img-grid itemgrid"></div>
-        <div id="trinkets-header" style="display: flex; align-items: center; justify-content: center; gap: 30px; margin: 30px 0;">
+        <div id="trinkets-header">
             <button id="sort-id-trinkets-btn">
                 <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/id.png" alt="Ordenar por ID">
             </button>
