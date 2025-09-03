@@ -947,7 +947,7 @@
         "pickup": "\"Sick...\"",
         "description": [
             "Cada vez que recibes daño tienes una posibilidad muy pequeña de obtener un familiar Tonsil, que te sigue y bloquea los proyectiles enemigos.",
-            "Este efecto puede ocurrir dos veces antes de que la baratija de amígdala se destruya.",
+            "Este efecto puede ocurrir dos veces antes de que el trinket se destruya.",
             "No inflige daño de contacto a los enemigos."
         ],
         "tags": "*, pink, red, bloody, brain"
@@ -958,8 +958,7 @@
         "pickup": "\"Seems magic...\"",
         "description": [
             "Tus lágrimas tienen una probabilidad aleatoria de convertirse en lágrimas de moco.",
-            "Las lágrimas de moco se adhieren a los enemigos e infligen daño venenoso periódico hasta que mueren o transcurren 60 segundos. Cada tic de daño venenoso equivale a tu daño de lágrima normal.",
-            "Los mocos tendrán un efecto de localización"
+            "Las lágrimas de moco se adhieren a los enemigos e infligen daño venenoso periódico hasta que mueren o transcurren 60 segundos. Cada tic de daño venenoso equivale a tu daño de lágrima normal."
         ],
         "tags": "*, green, snot, booger, bogey, slime"
     },
@@ -968,7 +967,7 @@
         "name": "Super Ball",
         "pickup": "\"Boing!\"",
         "description": [
-            "Algunas lágrimas aleatorias obtendrán el efecto de cemento de goma y se volverán elásticas."
+            "Algunas lágrimas rebotarán."
         ],
         "tags": "*, yellow, orange, red, circle, stripe"
     },
@@ -977,7 +976,7 @@
         "name": "Vibrant Bulb",
         "pickup": "\"It needs power\"",
         "description": [
-            "Otorga +0,25 de velocidad, +0,75 de alcance, +0,1 de velocidad de disparo, +0,2 desgarros, +0,5 de daño y +1 de suerte cuando el objeto activo de Isaac está completamente cargado.",
+            "Otorga +0,25 de velocidad, +0,75 de alcance, +0,1 de velocidad de disparo, +0,2 cadencia, +0,5 de daño y +1 de suerte cuando el objeto activo de Isaac está completamente cargado.",
             "Los artículos de uso infinito, como el pelador de patatas, cuentan como cargados y proporcionan la bonificación de este trinket."
         ],
         "tags": "*, yellow, light"
@@ -987,7 +986,7 @@
         "name": "Dim Bulb",
         "pickup": "\"I think it's broken\"",
         "description": [
-            "Otorga +0,5 de velocidad, +1,5 de alcance, +0,3 de velocidad de disparo, +0,4 desgarros y +1,5 de daño cuando el objeto activo de Isaac está completamente descargado.",
+            "Otorga +0,5 de velocidad, +1,5 de alcance, +0,3 de velocidad de disparo, +0,4 cadencia y +1,5 de daño cuando el objeto activo de Isaac está completamente descargado.",
             "Los artículos de un solo uso, como Mama Mega, se consideran sin cargar y proporcionan la bonificación de este trinket."
         ],
         "tags": "*, grey, gray, light"
@@ -997,7 +996,7 @@
         "name": "Fragmented Card",
         "pickup": "\"Double moon\"",
         "description": [
-            "Te da otra habitación secreta en cada nuevo piso mientras lo mantienes presionado",
+            "Te da otra habitación secreta en cada nuevo piso mientras lo mantienes",
             "No genera más de una sala súper secreta, solo la sala secreta normal."
         ],
         "tags": "*, purple, torn, ripped, paper, page, poster"
@@ -1007,8 +1006,7 @@
         "name": "Equality!",
         "pickup": "\"=\"",
         "description": [
-            "Cuando tienes la misma cantidad de monedas, bombas y llaves, la mitad de los consumibles se convierten en su versión duplicada.",
-            "Este efecto funciona para cualquier cantidad de consumibles, incluidos 0 y 99, siempre que el recuento de monedas\/llaves\/bombas sea igual."
+            "Cuando tienes la misma cantidad de monedas, bombas y llaves, la mitad de los consumibles se convierten en su versión duplicada."
         ],
         "tags": "*, red, lines, redpill"
     },
@@ -1018,7 +1016,7 @@
         "pickup": "\"Make a wish\"",
         "description": [
             "Cada vez que recibes daño tienes una posibilidad muy pequeña de generar un objeto de pedestal aleatorio.",
-            "Cuando se activa el efecto, la baratija se destruye."
+            "Cuando se activa el efecto, el trinket se destruye."
         ],
         "tags": "*, grey, gray, claw, rib"
     },
@@ -1037,7 +1035,7 @@
         "name": "Lost Cork",
         "pickup": "\"Uncorked\"",
         "description": [
-            "Aumenta el radio de cualquier criatura que produzcas."
+            "Aumenta el radio de cualquier charco que produzcas."
         ],
         "tags": "*, brown, yellow, orange, black"
     },
@@ -1046,8 +1044,8 @@
         "name": "Crow Heart",
         "pickup": "\"Drain me\"",
         "description": [
-            "Mientras se mantiene, cualquier daño recibido elimina primero los corazones rojos, antes que los corazones del alma, los corazones negros y el daño del corazón podrido.",
-            "Mientras esté en 1\/2 de un corazón rojo, comenzará a eliminar nuevamente sus otros corazones."
+            "Cualquier daño recibido elimina primero los corazones rojos, antes que los corazones del alma, los corazones negros y el daño del corazón podrido.",
+            "En 1\/2 de un corazón rojo, comenzará a eliminar nuevamente sus otros corazones."
         ],
         "tags": "* crow's, purple, blue, bloody",
         "unlock": "Desbloquea este objeto superando el modo Greedier con Eve."
@@ -1057,8 +1055,8 @@
         "name": "Walnut",
         "pickup": "\"Thats a hard nut to crack!\"",
         "description": [
-            "La nuez puede romperse al recibir daño de una explosión. Si lo hace, soltará una baratija, una moneda, un corazón y una llave al azar.",
-            "La baratija de nuez se destruye una vez que se activa el efecto."
+            "La nuez puede romperse al recibir daño de una explosión. Si lo hace, soltará un trinket, una moneda, un corazón y una llave al azar.",
+            "Se destruye una vez que se activa el efecto."
         ],
         "tags": "*, brown, brain, stone, rock"
     },
@@ -1067,9 +1065,7 @@
         "name": "Duct Tape",
         "pickup": "\"Stuck!\"",
         "description": [
-            "Provoca que cualquier orbital que tengas deje de moverse mientras lo mantienes presionado",
-            "Evita que los familiares que disparan se muevan (incluido el Íncubo de Lilith)",
-            "Algunos familiares con movimientos irregulares no se ven afectados por la cinta adhesiva, como Abel, BBF, Bumbo, Guppy's Hair Ball, Lil Gurdy, Punching Bag, Robo-Baby 2.0, Succubus."
+            "Provoca que cualquier orbital que tengas deje de moverse mientras lo mantienes presionado"
         ],
         "tags": "*, grey, gray, tp, toilet, paper, roll, silver"
     },
@@ -1078,9 +1074,9 @@
         "name": "Silver Dollar",
         "pickup": "\"Feels lucky...\"",
         "description": [
-            "Mientras estén en uso, las tiendas ahora aparecerán en los pisos del útero (The Womb, Utero y Scarred Womb)."
+            "Las tiendas ahora aparecerán en los pisos del útero (The Womb, Utero y Scarred Womb)."
         ],
-        "tags": "*, coin, money, cash, cent",
+        "tags": "*, silver, coin, money, cash, cent",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Cain."
     },
     {
@@ -1088,8 +1084,7 @@
         "name": "Bloody Crown",
         "pickup": "\"Drips with blood...\"",
         "description": [
-            "Mientras se mantienen, las salas de objetos ahora aparecen en los pisos del útero (El útero, El útero y El útero cicatrizado).",
-            "Hace que las salas de objetos aparezcan en los pisos de cadáveres."
+            "Las salas de objetos ahora aparecen en los pisos del útero (El útero, El útero y El útero cicatrizado)."
         ],
         "tags": "*, red, dripping",
         "unlock": "Desbloquea este objeto al derrotar a Delirium en el piso The Void con Samson."
@@ -1099,7 +1094,7 @@
         "name": "Pay To Win",
         "pickup": "\"...\"",
         "description": [
-            "Mientras se mantengan, las cajas de reposición siempre aparecerán en las salas de objetos."
+            "Las cajas de reposición siempre aparecerán en las salas de objetos."
         ],
         "tags": "*, cent, money, cash, coin, pixel, blue, green, p2w"
     },
