@@ -2712,7 +2712,8 @@
             "Pasivo"
         ],
         "item_pool": [
-            "Item Room"
+            "Item Room",
+            "Angel Room"
         ],
         "pickup": "DMG + HP up"
     },

@@ -950,7 +950,7 @@
             "Este efecto puede ocurrir dos veces antes de que la baratija de amígdala se destruya.",
             "No inflige daño de contacto a los enemigos."
         ],
-        "tags": "*, pink, bloody, brain"
+        "tags": "*, pink, red, bloody, brain"
     },
     {
         "trinketId": "98",
