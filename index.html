@@ -46,7 +46,11 @@
         }
         .itemgrid, .trinketgrid, .cardgrid {
             border-radius: 20px;
-            padding: 10px 0px;
+            padding: 0;
+        }        
+        /* Nueva clase para cuando los grids están activos */
+        .itemgrid.active, .trinketgrid.active, .cardgrid.active {
+            padding: 10px 0;
         }
         .itemgrid {
             background: rgba(255, 255, 0, 0.08);
@@ -258,7 +262,6 @@
             align-items: center;
             justify-content: center;
             gap: 30px;
-            margin: 30px 0;
         }
         #items-header button {
             background: none;
@@ -281,7 +284,6 @@
             align-items: center;
             justify-content: center;
             gap: 30px;
-            margin: 30px 0;
         }
         #trinkets-header button {
             background: none;
@@ -330,12 +332,17 @@
                 background-image: url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/background_mobile.png');                
                 background-repeat: no-repeat;
                 background-size: cover;
-            }
-
-            #trinkets-header {
+            }            
+            #trinkets-header, #items-header {
                 gap: 10px;
-            }               
-            h2 {font-size: 4em;}         
+            }     
+            #items-header img, #trinkets-header img {
+                width: 38px;
+                height: 38px;
+            }   
+            h2 {
+                font-size: 3.5em;
+            }         
             .content {
                 width: 100vw;
                 padding: 2px;
@@ -356,7 +363,7 @@
                 justify-content: center;
             }
             .search-bar {
-                font-size: 1.3em;
+                font-size: 1em;
                 padding: 10px 30px 10px 10px;  /* Agregado padding-right para dar espacio a la x */
                 width: 70vw;
                 box-sizing: border-box;
@@ -369,14 +376,14 @@
                 right: 8px;
             }
             .lang-img {
-                width: 48px;
-                height: 48px;
+                width: 40px;
+                height: 40px;
                 margin-left: 10px;
                 padding: 2px;
             }
             .info-img {
-                width: 48px;
-                height: 48px;
+                width: 40px;
+                height: 40px;
                 margin-right: 10px;
                 padding: 2px;
             }
@@ -390,6 +397,9 @@
                 height: 40px;
                 font-size: .8em;
                 padding-bottom: 2px;
+            }
+            .itemgrid, .trinketgrid, .cardgrid {
+                padding: 0px;
             }
             .modal-content {
                 max-width: 70vw;
@@ -714,10 +724,31 @@
                 showCards = showCards.filter(matchesText);
             }
 
-            // Render
-            if (showItems.length > 0) renderItems(showItems);
-            if (showTrinkets.length > 0) renderTrinkets(showTrinkets);
-            if (showCards.length > 0) renderCards(showCards);
+            // Render y manejo de clases active
+            const itemsGrid = document.getElementById('items');
+            const trinketsGrid = document.getElementById('trinkets');
+            const cardsGrid = document.getElementById('cards');
+
+            if (showItems.length > 0) {
+                renderItems(showItems);
+                itemsGrid.classList.add('active');
+            } else {
+                itemsGrid.classList.remove('active');
+            }
+
+            if (showTrinkets.length > 0) {
+                renderTrinkets(showTrinkets);
+                trinketsGrid.classList.add('active');
+            } else {
+                trinketsGrid.classList.remove('active');
+            }
+
+            if (showCards.length > 0) {
+                renderCards(showCards);
+                cardsGrid.classList.add('active');
+            } else {
+                cardsGrid.classList.remove('active');
+            }
 
             document.getElementById('items-header').style.display = document.getElementById('items').children.length ? '' : 'none';
             document.getElementById('trinkets-header').style.display = document.getElementById('trinkets').children.length ? '' : 'none';
