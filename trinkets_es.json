@@ -831,7 +831,7 @@
         "description": [
             "Donar a una máquina de donaciones tiene la posibilidad de curar a Isaac y devolverle un corazón rojo completo o generar un mendigo."
         ],
-        "tags": "*, black, three, spiral",
+        "tags": "*, green, black, three, spiral",
         "unlock": "Desbloquea este objeto al derrotar al jefe Cordero con Keeper."
     },
     {
