@@ -5,7 +5,7 @@
         "pickup": "Where your journey begins",
         "description": [
             "Teletransporta al jugador a la primera habitación del piso actual.",
-            "Hay una carta de Loco garantizada en las Profundidades 2 si bombardeas la calavera con una X. Esto te garantiza una forma de teletransportarte fuera de la pelea con el Pie de Mamá y acceder al camino al suelo del Mausoleo."
+            "Hay una carta de Fool garantizada en las Profundidades 2 si bombardeas la calavera con una X."
         ],
         "tags": "*, tarot, card, green"
     },
@@ -107,7 +107,7 @@
         "name": "XI - Strength",
         "pickup": "May your power bring rage",
         "description": [
-            "Otorga al jugador el efecto Hongo Mágico, que aumenta el tamaño y todas las estadísticas en 1 para la sala actual.",
+            "Otorga al jugador el efecto Magic Mush, que aumenta el tamaño y todas las estadísticas en 1 para la sala actual.",
             "Si usas la carta de Fuerza con 12 contenedores de corazón, te bajará a 11 cuando salgas de la habitación."
         ],
         "tags": "*, tarot, card, pink"
