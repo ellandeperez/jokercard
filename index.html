@@ -1182,7 +1182,7 @@
         });
         document.addEventListener('keydown', function(e) {
             if (e.key.toLowerCase() === 'b') {
-                const isUp2 = Math.random() < 0.1;
+                const isUp2 = Math.random() < 0.01;
                 const catSrc = isUp2
                     ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up2.png'
                     : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up.png';
@@ -1225,8 +1225,7 @@
             }
             lastTapTime = now;
             if (tapCount === 3) {
-                // Probabilidad de 20% para cat_up2
-                const isUp2 = Math.random() < 0.2;
+                const isUp2 = Math.random() < 0.01;
                 const catSrc = isUp2
                     ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up2.png'
                     : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up.png';
