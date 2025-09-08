@@ -1265,6 +1265,13 @@
                 alert('Un besito?');
             }
         });
+        document.getElementById('search-bar').addEventListener('input', function(e) {
+    if (e.target.value.trim().toLowerCase() === 'rainbow') {
+        document.documentElement.style.background = 'linear-gradient(270deg, #ff006e, #00ffe7, #ffe600, #00ffae)';
+        document.documentElement.style.backgroundSize = '600% 600%';
+        document.documentElement.style.animation = 'rainbow-bg .1s ease infinite';
+    }
+});
     </script>
 </body>
 </html>
