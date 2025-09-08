@@ -1180,6 +1180,92 @@
                 }
             }
         });
+        document.addEventListener('keydown', function(e) {
+            if (e.key.toLowerCase() === 'b') {
+                const isUp2 = Math.random() < 0.1;
+                const catSrc = isUp2
+                    ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up2.png'
+                    : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up.png';
+                const cat = document.createElement('img');
+                cat.src = catSrc;
+                cat.className = 'blondigo-cat';
+                cat.style.position = 'fixed';
+                cat.style.left = '-120px'; // Siempre desde la izquierda
+                // Altura aleatoria en la pantalla (funciona en móvil y escritorio)
+                const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+                cat.style.top = Math.floor(Math.random() * (vh - 120)) + 'px';
+                cat.style.width = '100px';
+                cat.style.height = '100px';
+                cat.style.zIndex = '9999';
+                cat.style.pointerEvents = 'none';
+                cat.style.opacity = '0';
+                cat.style.transition = 'opacity 0.3s, left 3s linear';
+                document.body.appendChild(cat);
+                setTimeout(() => { cat.style.opacity = '1'; cat.style.left = '110vw'; }, 100); // Mueve el gato
+                setTimeout(() => { cat.remove(); }, 3200); // Elimina después de cruzar
+            }
+        });
+        
+        let tapCount = 0;
+        let lastTapTime = 0;
+        document.documentElement.addEventListener('click', function(e) {
+            // Evita que cuente clics dentro de modals o grids
+            if (
+                e.target.closest('.modal') ||
+                e.target.closest('.img-grid') ||
+                e.target.closest('.filter-bar') ||
+                e.target.closest('.search-bar-content')
+            ) return;
+
+            const now = Date.now();
+            if (now - lastTapTime < 500) {
+                tapCount++;
+            } else {
+                tapCount = 1;
+            }
+            lastTapTime = now;
+            if (tapCount === 3) {
+                // Probabilidad de 20% para cat_up2
+                const isUp2 = Math.random() < 0.2;
+                const catSrc = isUp2
+                    ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up2.png'
+                    : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up.png';
+                const cat = document.createElement('img');
+                cat.src = catSrc;
+                cat.className = 'blondigo-cat';
+                cat.style.position = 'fixed';
+                cat.style.left = '-120px';
+                const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+                cat.style.top = Math.floor(Math.random() * (vh - 120)) + 'px';
+                cat.style.width = '100px';
+                cat.style.height = '100px';
+                cat.style.zIndex = '9999';
+                cat.style.pointerEvents = 'none';
+                cat.style.opacity = '0';
+                cat.style.transition = 'opacity 0.3s, left 3s linear';
+                document.body.appendChild(cat);
+                setTimeout(() => { cat.style.opacity = '1'; cat.style.left = '110vw'; }, 100);
+                setTimeout(() => { cat.remove(); }, 3200);
+                tapCount = 0;
+            }
+        });
+        document.getElementById('search-bar').addEventListener('input', function(e) {
+            if (e.target.value.trim().toLowerCase() === 'chucurrucu') {
+                alert('Te quiero mucho Tania 💜');
+            }
+            if (e.target.value.trim().toLowerCase() === 'blondigo') {
+                alert('🐈 El blondigo estuvo aquí 🐈');
+            }            
+            if (e.target.value.trim().toLowerCase() === 'carbonaro') {
+                alert('🐈 Si, el carbonaro también 🐈');
+            }
+            if (e.target.value.trim().toLowerCase() === 'plim') {
+                alert('PLIM PLIM PLOOOOOOOM');
+            }    
+            if (e.target.value.trim().toLowerCase() === 'ellandecito') {
+                alert('Un besito?');
+            }
+        });
     </script>
 </body>
 </html>
