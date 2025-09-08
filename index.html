@@ -83,13 +83,6 @@
             height: 60px;
             object-fit: contain;
         }
-
-        .img-grid img:hover {
-            image-rendering: pixelated;
-            transform: scale(1.5);
-            z-index: 1000;
-            filter:drop-shadow(0 0 1px #ffffff)drop-shadow(0 0 1px #ffffff)drop-shadow(0 0 1px #ffffff)drop-shadow(0 0 10px #ff0000);
-        }
         .modal {
             display: none;
             position: fixed;
@@ -324,6 +317,27 @@
             height: 48px;
             pointer-events: none;
             image-rendering: pixelated;
+        }
+        .img-wrap {
+            display: inline-block;
+        }
+        .img-wrap.cat-up, .img-wrap.cat-down {
+            animation: pixel-stretch 10s infinite;
+        }
+        @keyframes pixel-stretch {
+            0%, 93%, 98%, 100% { transform: scaleX(1) scaleY(1); }
+            94% { transform: scaleX(1.2) scaleY(0.9); }
+            95% { transform: scaleX(0.8) scaleY(1.1); }
+            96% { transform: scaleX(1.15) scaleY(0.85); }
+            97% { transform: scaleX(0.85) scaleY(1.15); }
+        }
+        .img-wrap img:hover {
+            transform: scale(1.5);
+            z-index: 1000;
+            filter: drop-shadow(0 0 1px #ffffff)
+                    drop-shadow(0 0 1px #ffffff)
+                    drop-shadow(0 0 1px #ffffff)
+                    drop-shadow(0 0 10px #ff0000);
         }
 
         @media (max-width: 700px) {
@@ -755,32 +769,6 @@
             document.getElementById('h2-cards').style.display = document.getElementById('cards').children.length ? '' : 'none';
         }
 
-        function renderItems(items) {
-            const container = document.getElementById('items');
-            items.forEach(item => {
-                if (!item.id) return;
-                const img = createImg(
-                    `${baseUrl}All_Items/item_${item.id}.png`,
-                    item.name,
-                    () => showItemModal(item)
-                );
-                container.appendChild(img);
-            });
-        }
-
-        function renderTrinkets(trinkets) {
-            const container = document.getElementById('trinkets');
-            trinkets.forEach(trinket => {
-                if (!trinket.trinketId) return;
-                const img = createImg(
-                    `${baseUrl}All_Trinkets/trinket_${trinket.trinketId}.png`,
-                    trinket.name,
-                    () => showTrinketModal(trinket)
-                );
-                container.appendChild(img);
-            });
-        }
-
         function renderCards(cards) {
             const container = document.getElementById('cards');
             cards.forEach(card => {
@@ -1043,7 +1031,12 @@
                     item.name,
                     () => showItemModal(item)
                 );
-                container.appendChild(img);
+                let wrap = document.createElement('div');
+                wrap.className = 'img-wrap';
+                if (item.cat === 'up' || item.cat === 'up2') wrap.classList.add('cat-up');
+                if (item.cat === 'down') wrap.classList.add('cat-down');
+                wrap.appendChild(img);
+                container.appendChild(wrap);
             });
         }
 
