@@ -1566,86 +1566,197 @@
             }
         });
         document.getElementById('search-bar').addEventListener('input', function(e) {
-    const val = e.target.value.trim().toLowerCase();
-    
-    // Limpiar efectos previos
-    document.querySelectorAll('.milk-effect').forEach(el => el.remove());
-    
-    if (val === 'soy milk') {
-        // Encontrar Soy Milk en la página
-        const milkImg = document.querySelector(`img[src$="item_330.png"]`);
-        if (!milkImg) return;
+            const val = e.target.value.trim().toLowerCase();
+            
+            // Limpiar efectos previos
+            document.querySelectorAll('.milk-effect').forEach(el => el.remove());
+            
+            if (val === 'soy milk') {
+                // Encontrar Soy Milk en la página
+                const milkImg = document.querySelector(`img[src$="item_330.png"]`);
+                if (!milkImg) return;
 
-        // Brillo al item
-        milkImg.style.transition = 'filter 0.3s';
-        milkImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #fff8dc) drop-shadow(0 0 30px #ffeb3b)';
+                // Brillo al item
+                milkImg.style.transition = 'filter 0.3s';
+                milkImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #fff8dc) drop-shadow(0 0 30px #ffeb3b)';
 
-        // Crear efecto ambiente
-        const milk = document.createElement('div');
-        milk.className = 'milk-effect';
-        milk.style.cssText = `
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: radial-gradient(circle at center, transparent 0%, rgba(255, 191, 3, 0.3) 100%);
-            pointer-events: none;
-            z-index: 9998;
-            opacity: 0;
-            transition: opacity 1s;
-        `;
-
-        // Crear gotas grandes
-        for (let i = 0; i < 20; i++) {
-            const drop = document.createElement('div');
-            drop.style.cssText = `
-                position: absolute;
-                width: ${12 + Math.random() * 12}px;
-                height: ${26 + Math.random() * 16}px;
-                background: rgba(255, 205, 205, 0.8);
-                border-radius: 40% 40% 50% 50%;
-                filter: blur(1px);
-                animation: milkDrop ${1 + Math.random()}s linear infinite;
-            `;
-            drop.style.left = Math.random() * 100 + 'vw';
-            drop.style.top = -20 + 'px';
-            milk.appendChild(drop);
-        }
-
-        // Añadir keyframes para las gotas
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes milkDrop {
-                0% { 
-                    transform: translateY(0) scaleY(1);
-                    opacity: 0.9;
-                }
-                80% {
-                    opacity: 0.9;
-                }
-                100% { 
-                    transform: translateY(110vh) scaleY(1.2);
+                // Crear efecto ambiente
+                const milk = document.createElement('div');
+                milk.className = 'milk-effect';
+                milk.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background: radial-gradient(circle at center, transparent 0%, rgba(255, 191, 3, 0.3) 100%);
+                    pointer-events: none;
+                    z-index: 9998;
                     opacity: 0;
+                    transition: opacity 1s;
+                `;
+
+                // Crear gotas grandes
+                for (let i = 0; i < 20; i++) {
+                    const drop = document.createElement('div');
+                    drop.style.cssText = `
+                        position: absolute;
+                        width: ${12 + Math.random() * 12}px;
+                        height: ${26 + Math.random() * 16}px;
+                        background: rgba(255, 205, 205, 0.8);
+                        border-radius: 40% 40% 50% 50%;
+                        filter: blur(1px);
+                        animation: milkDrop ${1 + Math.random()}s linear infinite;
+                    `;
+                    drop.style.left = Math.random() * 100 + 'vw';
+                    drop.style.top = -20 + 'px';
+                    milk.appendChild(drop);
                 }
+
+                // Añadir keyframes para las gotas
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes milkDrop {
+                        0% { 
+                            transform: translateY(0) scaleY(1);
+                            opacity: 0.9;
+                        }
+                        80% {
+                            opacity: 0.9;
+                        }
+                        100% { 
+                            transform: translateY(110vh) scaleY(1.2);
+                            opacity: 0;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+
+                document.body.appendChild(milk);
+                requestAnimationFrame(() => milk.style.opacity = '1');
+
+                // Limpiar efecto
+                setTimeout(() => {
+                    milk.style.opacity = '0';
+                    milkImg.style.filter = '';
+                    setTimeout(() => {
+                        milk.remove();
+                        style.remove();
+                    }, 1000);
+                }, 3500);
             }
-        `;
-        document.head.appendChild(style);
+        });
+        document.getElementById('search-bar').addEventListener('input', function(e) {
+            const val = e.target.value.trim().toLowerCase();
+            
+            // Limpiar efectos previos
+            document.querySelectorAll('.ipecac-effect').forEach(el => el.remove());
+            
+            if (val === 'ipecac') {
+                // Encontrar Ipecac en la página
+                const ipecacImg = document.querySelector(`img[src$="item_149.png"]`);
+                if (!ipecacImg) return;
 
-        document.body.appendChild(milk);
-        requestAnimationFrame(() => milk.style.opacity = '1');
+                // Brillo al item
+                ipecacImg.style.transition = 'filter 0.3s';
+                ipecacImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #32CD32) drop-shadow(0 0 30px #00FF00)';
 
-        // Limpiar efecto
-        setTimeout(() => {
-            milk.style.opacity = '0';
-            milkImg.style.filter = '';
-            setTimeout(() => {
-                milk.remove();
-                style.remove();
-            }, 1000);
-        }, 3500);
-    }
-});
+                // Crear efecto ambiente tóxico
+                const toxic = document.createElement('div');
+                toxic.className = 'ipecac-effect';
+                toxic.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background: radial-gradient(circle at center, transparent 0%, rgba(0,64,0,0.6) 100%);
+                    pointer-events: none;
+                    z-index: 9998;
+                    opacity: 0;
+                    transition: opacity 1s;
+                `;
+
+                // Crear burbujas tóxicas
+                for (let i = 0; i < 30; i++) {
+                    const bubble = document.createElement('div');
+                    bubble.style.cssText = `
+                        position: absolute;
+                        width: ${4 + Math.random() * 8}px;
+                        height: ${4 + Math.random() * 8}px;
+                        background: #32CD32;
+                        border-radius: 50%;
+                        filter: blur(1px);
+                        opacity: 0.6;
+                        animation: float ${3 + Math.random() * 4}s infinite;
+                    `;
+                    bubble.style.left = Math.random() * 100 + 'vw';
+                    bubble.style.top = Math.random() * 100 + 'vh';
+                    toxic.appendChild(bubble);
+                }
+
+                // Función para crear explosiones
+                function createExplosion() {
+                    const explosion = document.createElement('div');
+                    explosion.style.cssText = `
+                        position: absolute;
+                        left: ${Math.random() * 100}vw;
+                        top: ${Math.random() * 100}vh;
+                        width: 10px;
+                        height: 10px;
+                        background: #32CD32;
+                        border-radius: 50%;
+                        filter: blur(2px);
+                        animation: explode 1s ease-out forwards;
+                    `;
+                    toxic.appendChild(explosion);
+                    setTimeout(() => explosion.remove(), 1000);
+                }
+
+                // Añadir keyframes para animaciones
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes float {
+                        0%, 100% { transform: translate(0, 0); }
+                        50% { transform: translate(${-20 + Math.random() * 40}px, ${-20 + Math.random() * 40}px); }
+                    }
+                    @keyframes explode {
+                        0% { 
+                            transform: scale(1);
+                            opacity: 1;
+                        }
+                        50% {
+                            transform: scale(30);
+                            opacity: 0.5;
+                        }
+                        100% { 
+                            transform: scale(40);
+                            opacity: 0;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+
+                document.body.appendChild(toxic);
+                requestAnimationFrame(() => toxic.style.opacity = '1');
+
+                // Crear explosiones periódicamente
+                const explosionInterval = setInterval(() => {
+                    createExplosion();
+                }, 500);
+
+                // Limpiar efecto
+                setTimeout(() => {
+                    clearInterval(explosionInterval);
+                    toxic.style.opacity = '0';
+                    ipecacImg.style.filter = '';
+                    setTimeout(() => {
+                        toxic.remove();
+                        style.remove();
+                    }, 1000);
+                }, 3500);
+            }
+        });
     </script>
 </body>
 </html>
