@@ -331,6 +331,7 @@
             96% { transform: scaleX(1.15) scaleY(0.85); }
             97% { transform: scaleX(0.85) scaleY(1.15); }
         }
+        
         .img-wrap img:hover {
             transform: scale(1.5);
             z-index: 1000;
@@ -338,6 +339,36 @@
                     drop-shadow(0 0 1px #ffffff)
                     drop-shadow(0 0 1px #ffffff)
                     drop-shadow(0 0 10px #ff0000);
+        }
+
+        .rainbow-effect {
+            animation: rainbow-hue 2s linear infinite;
+            filter: hue-rotate(0deg);
+        }
+        @keyframes rainbow-hue {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        .brimstone-laser {
+            filter: brightness(1.5) blur(1px);
+            position: fixed;
+            pointer-events: none;
+            overflow: visible;
+            /* Añade estas dos líneas para que el pseudo-elemento herede la rotación */
+            transform-origin: top center;
+        }
+        .brimstone-laser::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 60px;
+            height: 40px;
+            background: radial-gradient(ellipse at center, #ffae00 60%, #ff2222 100%, transparent 100%);
+            transform: translateX(-50%) rotate(var(--curve-rotate, 0deg)) translateY(var(--curve-translate, 0px));
+            opacity: 0.8;
+            z-index: 10000;
+            pointer-events: none;
         }
 
         @media (max-width: 700px) {
@@ -675,10 +706,14 @@
             clearButton.style.display = this.value ? 'block' : 'none';
         });
 
-        clearButton.addEventListener('click', function() {
+        clearButton.addEventListener('click', function() {            
+            const html = document.documentElement;
+            const items = document.querySelectorAll('.img-grid img');
             searchInput.value = '';
             window.searchText = '';
-            this.style.display = 'none';
+            this.style.display = 'none';            
+            html.classList.remove('rainbow-effect');
+            items.forEach(img => img.classList.remove('rainbow-effect'));
             renderByFilters();
         });
 
@@ -723,20 +758,20 @@
             }
 
             // Filtrado por search
-            if (window.searchText) {
-                const matchesText = obj => {
-                    return Object.values(obj).some(val => {
-                        if (!val) return false;
-                        if (typeof val === 'string') return val.toLowerCase().includes(window.searchText);
-                        if (typeof val === 'number') return val.toString().includes(window.searchText);
-                        if (Array.isArray(val)) return val.join(' ').toLowerCase().includes(window.searchText);
-                        return false;
-                    });
-                };
-                showItems = showItems.filter(matchesText);
-                showTrinkets = showTrinkets.filter(matchesText);
-                showCards = showCards.filter(matchesText);
-            }
+            if (window.searchText && window.searchText !== 'rainbow') {
+            const matchesText = obj => {
+                return Object.values(obj).some(val => {
+                    if (!val) return false;
+                    if (typeof val === 'string') return val.toLowerCase().includes(window.searchText);
+                    if (typeof val === 'number') return val.toString().includes(window.searchText);
+                    if (Array.isArray(val)) return val.join(' ').toLowerCase().includes(window.searchText);
+                    return false;
+                });
+            };
+            showItems = showItems.filter(matchesText);
+            showTrinkets = showTrinkets.filter(matchesText);
+            showCards = showCards.filter(matchesText);
+        }
 
             // Render y manejo de clases active
             const itemsGrid = document.getElementById('items');
@@ -771,6 +806,7 @@
 
         function renderCards(cards) {
             const container = document.getElementById('cards');
+            container.innerHTML = '';
             cards.forEach(card => {
                 if (!card.cardId) return;
                 const img = createImg(
@@ -778,7 +814,10 @@
                     card.name,
                     () => showCardModal(card)
                 );
-                container.appendChild(img);
+                let wrap = document.createElement('div');
+                wrap.className = 'img-wrap';
+                wrap.appendChild(img);
+                container.appendChild(wrap);
             });
         }
 
@@ -1056,7 +1095,10 @@
                     trinket.name,
                     () => showTrinketModal(trinket)
                 );
-                container.appendChild(img);
+                let wrap = document.createElement('div');
+                wrap.className = 'img-wrap';
+                wrap.appendChild(img);
+                container.appendChild(wrap);
             });
         }
 
@@ -1180,31 +1222,6 @@
                 }
             }
         });
-        document.addEventListener('keydown', function(e) {
-            if (e.key.toLowerCase() === 'b') {
-                const isUp2 = Math.random() < 0.01;
-                const catSrc = isUp2
-                    ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up2.png'
-                    : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up.png';
-                const cat = document.createElement('img');
-                cat.src = catSrc;
-                cat.className = 'blondigo-cat';
-                cat.style.position = 'fixed';
-                cat.style.left = '-120px'; // Siempre desde la izquierda
-                // Altura aleatoria en la pantalla (funciona en móvil y escritorio)
-                const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-                cat.style.top = Math.floor(Math.random() * (vh - 120)) + 'px';
-                cat.style.width = '100px';
-                cat.style.height = '100px';
-                cat.style.zIndex = '9999';
-                cat.style.pointerEvents = 'none';
-                cat.style.opacity = '0';
-                cat.style.transition = 'opacity 0.3s, left 3s linear';
-                document.body.appendChild(cat);
-                setTimeout(() => { cat.style.opacity = '1'; cat.style.left = '110vw'; }, 100); // Mueve el gato
-                setTimeout(() => { cat.remove(); }, 3200); // Elimina después de cruzar
-            }
-        });
         
         let tapCount = 0;
         let lastTapTime = 0;
@@ -1266,10 +1283,367 @@
             }
         });
         document.getElementById('search-bar').addEventListener('input', function(e) {
-    if (e.target.value.trim().toLowerCase() === 'rainbow') {
-        document.documentElement.style.background = 'linear-gradient(270deg, #ff006e, #00ffe7, #ffe600, #00ffae)';
-        document.documentElement.style.backgroundSize = '600% 600%';
-        document.documentElement.style.animation = 'rainbow-bg .1s ease infinite';
+            const val = e.target.value.trim().toLowerCase();
+            const html = document.documentElement;
+            const items = document.querySelectorAll('.img-grid img');
+            if (val === 'rainbow') {
+                html.classList.add('rainbow-effect');
+                items.forEach(img => img.classList.add('rainbow-effect'));
+            } else {
+                html.classList.remove('rainbow-effect');
+                items.forEach(img => img.classList.remove('rainbow-effect'));
+            }
+        });
+        document.getElementById('search-bar').addEventListener('input', function(e) {
+            const val = e.target.value.trim().toLowerCase();
+            document.querySelectorAll('.guppy-fly').forEach(el => el.remove());
+            if (val === 'guppy') {
+                const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+                const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+                const isMobile = vw < 700;
+                // Ajusta cantidad y tamaño según pantalla
+                const numFlies = 100;
+                const flyWidth = isMobile ? 50 : 60;
+                const flyHeight = isMobile ? 40 : 50;
+                const spread = 300 + Math.random() * 300;
+                const cloudCenter = Math.floor(vh / 2);
+                const duration = isMobile ? 2 : 4;
+                for (let i = 0; i < numFlies; i++) {
+                    const fly = document.createElement('img');
+                    fly.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca.png';
+                    fly.className = 'guppy-fly';
+                    fly.style.position = 'fixed';
+                    fly.style.left = '-80px';
+                    fly.style.top = (cloudCenter + Math.random() * spread - spread/2) + 'px';
+                    fly.style.width = flyWidth + 'px';
+                    fly.style.height = flyHeight + 'px';
+                    fly.style.zIndex = '9999';
+                    fly.style.pointerEvents = 'none';
+                    fly.style.opacity = '1';
+                    fly.style.transition = `left ${duration}s linear`;
+                    document.body.appendChild(fly);
+                    // Delay aleatorio entre 0 y 1.5 segundos
+                    const delay = Math.random() * (isMobile ? 1000 : 2000);
+                    setTimeout(() => {
+                        fly.style.left = '110vw';
+                    }, 100 + delay);
+
+                    // Animación de cambio de imagen rápido con intervalo aleatorio
+                    let frame = 0;
+                    const frames = [
+                        'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca.png',
+                        'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca2.png'
+                    ];
+                    const intervalTime = 20 + Math.random() * 80;
+                    const interval = setInterval(() => {
+                        fly.src = frames[frame % 2];
+                        frame++;
+                    }, intervalTime);
+
+                    setTimeout(() => {
+                        clearInterval(interval);
+                        fly.remove();
+                    }, duration * 1000 + delay + 800);
+                }
+            }
+        });
+        document.getElementById('search-bar').addEventListener('input', function(e) {
+            const val = e.target.value.trim().toLowerCase();
+            
+            // Eliminar láser existente
+            document.querySelectorAll('.brimstone-laser').forEach(el => el.remove());
+            
+            if (val === 'brimstone') {
+                // Encontrar el elemento Brimstone en la página
+                const brimstoneImg = document.querySelector(`img[src$="item_118.png"]`);
+                if (!brimstoneImg) return;
+
+                // Obtener la posición del item
+                const rect = brimstoneImg.getBoundingClientRect();
+                const startX = rect.left + (rect.width / 2);
+                const startY = rect.top + (rect.height / 1);
+
+                const laser = document.createElement('div');
+                laser.className = 'brimstone-laser';
+                laser.style.position = 'fixed';
+                laser.style.top = startY + 'px';
+                laser.style.left = startX + 'px';
+                laser.style.transformOrigin = 'top center';
+                laser.style.transform = 'translateX(-50%)';
+                laser.style.width = '40px';
+                laser.style.height = '200vh';
+                laser.style.background = 'repeating-linear-gradient(45deg, #ff0000, #ff0000 10px, #a10000 10px, #a10000 20px)';
+                laser.style.backgroundSize = '28px 28px';
+                laser.style.animation = 'laserFlow 0.8s linear infinite';
+                laser.style.boxShadow = '0 0 20px #ff0000';
+                laser.style.zIndex = '9999';
+                laser.style.borderRadius = '20px 20px 0 0'; // Bordes redondeados arriba
+
+
+                // Actualiza las animaciones keyframes
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes laserFlow {
+                        0% { background-position: 0 0; }
+                        100% { background-position: 0 300px; }
+                    }
+                    @keyframes laserShake {
+                        0%, 100% { transform: translateX(-50%) rotate(0deg); }
+                        25% { transform: translateX(-50%) rotate(0.3deg); }
+                        75% { transform: translateX(-50%) rotate(-0.3deg); }
+                    }
+                `;
+                document.head.appendChild(style);
+                
+                document.body.appendChild(laser);
+
+                // Añadir shake
+                setTimeout(() => {
+                    laser.style.animation = 'laserFlow 0.8s linear infinite, laserShake 0.05s linear infinite';
+                }, 100);
+
+                // Animación de desaparición
+                setTimeout(() => {
+                    laser.style.transition = 'width 400ms ease-in, opacity 400ms ease-in';
+                    laser.style.width = '0px';
+                    laser.style.opacity = '0';
+                    brimstoneImg.style.filter = ''; // Quitar el brillo
+                    
+                    setTimeout(() => {
+                        laser.remove();
+                        style.remove();
+                    }, 400);
+                }, 3500);
+            }
+        });
+        document.getElementById('search-bar').addEventListener('input', function(e) {
+            const val = e.target.value.trim().toLowerCase();
+            
+            // Limpiar efectos infernales previos
+            document.querySelectorAll('.brimstone-effect').forEach(el => el.remove());
+            
+            if (val === 'brimstone') {
+                // Encontrar el item Brimstone en la página
+                const brimstoneImg = document.querySelector(`img[src$="item_118.png"]`);
+                if (!brimstoneImg) return;
+
+                // Añadir brillo al item
+                brimstoneImg.style.transition = 'filter 0.3s';
+                brimstoneImg.style.filter = 'brightness(5) drop-shadow(0 0 10px #ff0000) drop-shadow(0 0 20px #ff0000) drop-shadow(0 0 30px #ff0000)';
+
+                // Crear efecto infernal
+                const hell = document.createElement('div');
+                hell.className = 'brimstone-effect';
+                hell.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background: radial-gradient(circle at center, transparent 0%, rgba(64,0,0,0.6) 100%);
+                    pointer-events: none;
+                    z-index: 9998;
+                    opacity: 0;
+                    transition: opacity 1s;
+                `;
+
+                // Crear partículas de fuego
+                for (let i = 0; i < 30; i++) {
+                    const ember = document.createElement('div');
+                    ember.style.cssText = `
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background: #ff3300;
+                        border-radius: 50%;
+                        animation: ember ${1 + Math.random() * 1}s infinite;
+                    `;
+                    ember.style.left = Math.random() * 100 + 'vw';
+                    ember.style.bottom = -10 + 'px';
+                    hell.appendChild(ember);
+                }
+
+                // Añadir keyframes para las partículas
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes ember {
+                        0% { 
+                            transform: translateY(0) scale(1);
+                            opacity: 1;
+                        }
+                        100% { 
+                            transform: translateY(-${Math.random() * 200 + 100}px) scale(0);
+                            opacity: 0;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+
+                document.body.appendChild(hell);
+                requestAnimationFrame(() => hell.style.opacity = '1');
+
+                // Limpiar efecto después de que termine el láser
+                setTimeout(() => {
+                    hell.style.opacity = '0';
+                    setTimeout(() => {
+                        hell.remove();
+                        style.remove();
+                    }, 1000);
+                }, 3500);
+            }
+        });
+
+        ////////////////////////////////////////////////////////
+        document.getElementById('search-bar').addEventListener('input', function(e) {
+            const val = e.target.value.trim().toLowerCase();
+            
+            // Limpiar efectos lunares previos
+            document.querySelectorAll('.luna-effect').forEach(el => el.remove());
+            
+            if (val === 'luna') {
+                // Encontrar el item Luna en la página
+                const lunaImg = document.querySelector(`img[src$="item_589.png"]`);
+                if (!lunaImg) return;
+
+                // Añadir brillo al item
+                lunaImg.style.transition = 'filter 0.3s';
+                lunaImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 30px #4169E1)';
+
+                // Crear efecto de luna
+                const luna = document.createElement('div');
+                luna.className = 'luna-effect';
+                luna.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,32,0.6) 100%);
+                    pointer-events: none;
+                    z-index: 9998;
+                    opacity: 0;
+                    transition: opacity 1s;
+                `;
+
+                // Crear estrellas
+                for (let i = 0; i < 50; i++) {
+                    const star = document.createElement('div');
+                    star.style.cssText = `
+                        position: absolute;
+                        width: 2px;
+                        height: 2px;
+                        background: white;
+                        border-radius: 50%;
+                        animation: twinkle ${1 + Math.random() * 2}s infinite alternate;
+                    `;
+                    star.style.left = Math.random() * 100 + 'vw';
+                    star.style.top = Math.random() * 100 + 'vh';
+                    luna.appendChild(star);
+                }
+
+                // Añadir keyframes para el parpadeo de estrellas
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes twinkle {
+                        0% { opacity: 0.2; }
+                        100% { opacity: 1; transform: scale(1.5); }
+                    }
+                `;
+                document.head.appendChild(style);
+
+                document.body.appendChild(luna);
+                requestAnimationFrame(() => luna.style.opacity = '1');
+
+                // Limpiar efecto después de 3.5 segundos
+                setTimeout(() => {
+                    luna.style.opacity = '0';
+                    lunaImg.style.filter = '';
+                    setTimeout(() => {
+                        luna.remove();
+                        style.remove();
+                    }, 1000);
+                }, 3500);
+            }
+        });
+        document.getElementById('search-bar').addEventListener('input', function(e) {
+    const val = e.target.value.trim().toLowerCase();
+    
+    // Limpiar efectos previos
+    document.querySelectorAll('.milk-effect').forEach(el => el.remove());
+    
+    if (val === 'soy milk') {
+        // Encontrar Soy Milk en la página
+        const milkImg = document.querySelector(`img[src$="item_330.png"]`);
+        if (!milkImg) return;
+
+        // Brillo al item
+        milkImg.style.transition = 'filter 0.3s';
+        milkImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #fff8dc) drop-shadow(0 0 30px #ffeb3b)';
+
+        // Crear efecto ambiente
+        const milk = document.createElement('div');
+        milk.className = 'milk-effect';
+        milk.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(circle at center, transparent 0%, rgba(255, 191, 3, 0.3) 100%);
+            pointer-events: none;
+            z-index: 9998;
+            opacity: 0;
+            transition: opacity 1s;
+        `;
+
+        // Crear gotas grandes
+        for (let i = 0; i < 20; i++) {
+            const drop = document.createElement('div');
+            drop.style.cssText = `
+                position: absolute;
+                width: ${12 + Math.random() * 12}px;
+                height: ${26 + Math.random() * 16}px;
+                background: rgba(255, 205, 205, 0.8);
+                border-radius: 40% 40% 50% 50%;
+                filter: blur(1px);
+                animation: milkDrop ${1 + Math.random()}s linear infinite;
+            `;
+            drop.style.left = Math.random() * 100 + 'vw';
+            drop.style.top = -20 + 'px';
+            milk.appendChild(drop);
+        }
+
+        // Añadir keyframes para las gotas
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes milkDrop {
+                0% { 
+                    transform: translateY(0) scaleY(1);
+                    opacity: 0.9;
+                }
+                80% {
+                    opacity: 0.9;
+                }
+                100% { 
+                    transform: translateY(110vh) scaleY(1.2);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        document.body.appendChild(milk);
+        requestAnimationFrame(() => milk.style.opacity = '1');
+
+        // Limpiar efecto
+        setTimeout(() => {
+            milk.style.opacity = '0';
+            milkImg.style.filter = '';
+            setTimeout(() => {
+                milk.remove();
+                style.remove();
+            }, 1000);
+        }, 3500);
     }
 });
     </script>

@@ -2715,7 +2715,8 @@
             "Item Room",
             "Angel Room"
         ],
-        "pickup": "DMG + HP up"
+        "pickup": "DMG + HP up",
+        "cat": "up2"
     },
     {
         "id": "139",
@@ -2877,7 +2878,9 @@
         "recharge_time": [
             "6 Habitaciones"
         ],
-        "pickup": "Reusable eternity"
+        "pickup": "Reusable eternity",
+        "cat": "up2"
+
     },
     {
         "id": "147",
