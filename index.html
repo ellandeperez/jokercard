@@ -478,6 +478,11 @@
             pointer-events: none;
         }
 
+        .azazel-hide {
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
         @media (max-width: 700px) {
             html {
                 background-color: rgb(19, 12, 9);
@@ -749,7 +754,7 @@
     <div id="info-modal_en" class="modal">
         <div class="modal-content" id="modal-content-info">
             <span class="modal-close" id="modal-close-info">&times;</span>
-            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;"><img
+            <div style="display: flex; align-items: center; justify-content: center, gap: 10px;"><img
                     src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png">
                 <h3>Joker Card</h3><img
                     src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png">
@@ -802,6 +807,31 @@
                 document.getElementById('sort-color-trinkets-btn').classList.remove('active');
             }
 
+            function preloadAllImages() {
+                const baseUrl = "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/";
+                // Items
+                allItems.forEach(item => {
+                    if (item.id) {
+                        const img = new Image();
+                        img.src = `${baseUrl}All_Items/item_${item.id}.png`;
+                    }
+                });
+                // Trinkets
+                allTrinkets.forEach(trinket => {
+                    if (trinket.trinketId) {
+                        const img = new Image();
+                        img.src = `${baseUrl}All_Trinkets/trinket_${trinket.trinketId}.png`;
+                    }
+                });
+                // Cards
+                allCards.forEach(card => {
+                    if (card.cardId) {
+                        const img = new Image();
+                        img.src = `${baseUrl}All_Consumables/card_${card.cardId}.png`;
+                    }
+                });
+            }
+
             // Modificar la función loadAllData para llamar a initializeButtonStates
             function loadAllData() {
                 // Limpia los arrays antes de cargar
@@ -819,7 +849,7 @@
                     .then(res => {
                         return res.json();
                     })
-                    .then(items => { allItems = items; renderByFilters(); })
+                    .then(items => { allItems = items; renderByFilters(); preloadAllImages(); })
                     .catch(err => {
                     });
 
@@ -827,7 +857,7 @@
                     .then(res => {
                         return res.json();
                     })
-                    .then(trinkets => { allTrinkets = trinkets; renderByFilters(); })
+                    .then(trinkets => { allTrinkets = trinkets; renderByFilters(); preloadAllImages(); })
                     .catch(err => {
                     });
 
@@ -835,7 +865,7 @@
                     .then(res => {
                         return res.json();
                     })
-                    .then(cards => { allCards = cards; renderByFilters(); })
+                    .then(cards => { allCards = cards; renderByFilters(); preloadAllImages(); })
                     .catch(err => {
                     });
             }
@@ -1465,66 +1495,14 @@
             });
             document.getElementById('search-bar').addEventListener('input', function (e) {
                 const val = e.target.value.trim().toLowerCase();
-                document.querySelectorAll('.guppy-fly').forEach(el => el.remove());
-                if (val === 'guppy') {
-                    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-                    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-                    const isMobile = vw < 700;
-                    // Ajusta cantidad y tamaño según pantalla
-                    const numFlies = 100;
-                    const flyWidth = isMobile ? 50 : 60;
-                    const flyHeight = isMobile ? 40 : 50;
-                    const spread = 300 + Math.random() * 300;
-                    const cloudCenter = Math.floor(vh / 2);
-                    const duration = isMobile ? 2 : 4;
-                    for (let i = 0; i < numFlies; i++) {
-                        const fly = document.createElement('img');
-                        fly.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca.png';
-                        fly.className = 'guppy-fly';
-                        fly.style.position = 'fixed';
-                        fly.style.left = '-80px';
-                        fly.style.top = (cloudCenter + Math.random() * spread - spread / 2) + 'px';
-                        fly.style.width = flyWidth + 'px';
-                        fly.style.height = flyHeight + 'px';
-                        fly.style.zIndex = '9999';
-                        fly.style.pointerEvents = 'none';
-                        fly.style.opacity = '1';
-                        fly.style.transition = `left ${duration}s linear`;
-                        document.body.appendChild(fly);
-                        // Delay aleatorio entre 0 y 1.5 segundos
-                        const delay = Math.random() * (isMobile ? 1000 : 2000);
-                        setTimeout(() => {
-                            fly.style.left = '110vw';
-                        }, 100 + delay);
-
-                        // Animación de cambio de imagen rápido con intervalo aleatorio
-                        let frame = 0;
-                        const frames = [
-                            'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca.png',
-                            'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca2.png'
-                        ];
-                        const intervalTime = 20 + Math.random() * 80;
-                        const interval = setInterval(() => {
-                            fly.src = frames[frame % 2];
-                            frame++;
-                        }, intervalTime);
-
-                        setTimeout(() => {
-                            clearInterval(interval);
-                            fly.remove();
-                        }, duration * 1000 + delay + 800);
-                    }
-                }
-            });
-            document.getElementById('search-bar').addEventListener('input', function (e) {
-                const val = e.target.value.trim().toLowerCase();
 
                 // Eliminar láser existente
                 document.querySelectorAll('.brimstone-laser').forEach(el => el.remove());
 
                 if (val === 'brimstone') {
                     // Encontrar el elemento Brimstone en la página
-                    const brimstoneImg = document.querySelector(`img[src$="item_118.png"]`);
+                    const brimstoneImg = Array.from(document.querySelectorAll('.img-grid img'))
+                        .find(img => img.src.includes('item_118.png'));
                     if (!brimstoneImg) return;
 
                     // Obtener la posición del item
@@ -1576,7 +1554,9 @@
                         laser.style.transition = 'width 400ms ease-in, opacity 400ms ease-in';
                         laser.style.width = '0px';
                         laser.style.opacity = '0';
-                        brimstoneImg.style.filter = ''; // Quitar el brillo
+                        keepBrimstone = false;
+                        brimstoneImg.style.filter = '';
+                        clearInterval(interval);
 
                         setTimeout(() => {
                             laser.remove();
@@ -1593,12 +1573,18 @@
 
                 if (val === 'brimstone') {
                     // Encontrar el item Brimstone en la página
-                    const brimstoneImg = document.querySelector(`img[src$="item_118.png"]`);
+                    const brimstoneImg = Array.from(document.querySelectorAll('.img-grid img'))
+                        .find(img => img.src.includes('item_118.png'));
                     if (!brimstoneImg) return;
 
                     // Añadir brillo al item
                     brimstoneImg.style.transition = 'filter 0.3s';
-                    brimstoneImg.style.filter = 'brightness(5) drop-shadow(0 0 10px #ff0000) drop-shadow(0 0 20px #ff0000) drop-shadow(0 0 30px #ff0000)';
+                    let keepBrimstone = true;
+                    const interval = setInterval(() => {
+                        if (keepBrimstone && brimstoneImg) {
+                            brimstoneImg.style.filter = 'brightness(5) drop-shadow(0 0 10px #ff0000) drop-shadow(0 0 20px #ff0000) drop-shadow(0 0 30px #ff0000)';
+                        }
+                    }, 100);
 
                     // Crear efecto infernal
                     const hell = document.createElement('div');
@@ -1660,7 +1646,7 @@
                         }, 1000);
                     }, 3500);
                 }
-            });            
+            });
             document.getElementById('search-bar').addEventListener('input', function (e) {
                 const val = e.target.value.trim().toLowerCase();
 
@@ -1674,7 +1660,12 @@
 
                     // Añadir brillo al item
                     lunaImg.style.transition = 'filter 0.3s';
-                    lunaImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 30px #4169E1)';
+                    let keepLuna = true;
+                    const interval = setInterval(() => {
+                        if (keepLuna && lunaImg) {
+                            lunaImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 30px #4169E1)';
+                        }
+                    }, 100);
 
                     // Crear efecto de luna
                     const luna = document.createElement('div');
@@ -1745,7 +1736,12 @@
 
                     // Brillo al item
                     milkImg.style.transition = 'filter 0.3s';
-                    milkImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #fff8dc) drop-shadow(0 0 30px #ffeb3b)';
+                    let keepMilk = true;
+                    const interval = setInterval(() => {
+                        if (keepMilk && milkImg) {
+                            milkImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #fff8dc) drop-shadow(0 0 30px #ffeb3b)';
+                        }
+                    }, 100);
 
                     // Crear efecto ambiente
                     const milk = document.createElement('div');
@@ -1826,7 +1822,12 @@
 
                     // Brillo al item
                     ipecacImg.style.transition = 'filter 0.3s';
-                    ipecacImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #32CD32) drop-shadow(0 0 30px #00FF00)';
+                    let keepIpecac = true;
+                    const interval = setInterval(() => {
+                        if (keepIpecac && ipecacImg) {
+                            ipecacImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #32CD32) drop-shadow(0 0 30px #00FF00)';
+                        }
+                    }, 100);
 
                     // Crear efecto ambiente tóxico
                     const toxic = document.createElement('div');
@@ -1924,6 +1925,506 @@
                     }, 3500);
                 }
             });
+            // Añadir al evento input del search-bar
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                const val = e.target.value.trim().toLowerCase();
+
+                // Limpiar efectos previos
+                document.querySelectorAll('.sacred-effect').forEach(el => el.remove());
+
+                if (val === 'sacred heart') {
+                    const sacredImg = document.querySelector(`img[src$="item_182.png"]`);
+                    if (!sacredImg) return;
+
+                    // Brillo al item
+                    sacredImg.style.transition = 'filter 0.3s';
+                    let keepSacred = true;
+                    const interval = setInterval(() => {
+                        if (keepSacred && sacredImg) {
+                            sacredImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #ff69b4) drop-shadow(0 0 30px #ff1493)';
+                        }
+                    }, 100);
+
+                    // Crear efecto divino
+                    const sacred = document.createElement('div');
+                    sacred.className = 'sacred-effect';
+                    sacred.style.cssText = `
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100vw;
+                        height: 100vh;
+                        background: radial-gradient(circle at center, transparent 0%, rgba(255,192,203,0.3) 100%);
+                        pointer-events: none;
+                        z-index: 9998;
+                        opacity: 0;
+                        transition: opacity 1s;
+                    `;
+
+                    // Crear rayos de luz
+                    for (let i = 0; i < 12; i++) {
+                        const ray = document.createElement('div');
+                        const angle = (i * 30) % 360;
+                        ray.style.cssText = `
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 2px;
+                            height: 200vh;
+                            background: linear-gradient(to top, transparent, rgba(255,192,203,0.6), transparent);
+                            transform-origin: bottom center;
+                            transform: rotate(${angle}deg);
+                            animation: rayRotate 20s linear infinite;
+                        `;
+                        sacred.appendChild(ray);
+                    }
+
+                    // Crear corazones flotantes
+                    for (let i = 0; i < 20; i++) {
+                        const heart = document.createElement('div');
+                        heart.innerHTML = '❤';
+                        heart.style.cssText = `
+                            position: absolute;
+                            color: pink;
+                            font-size: ${20 + Math.random() * 20}px;
+                            opacity: ${0.3 + Math.random() * 0.7};
+                            left: ${Math.random() * 100}vw;
+                            top: ${Math.random() * 100}vh;
+                            animation: floatHeart ${3 + Math.random() * 4}s ease-in-out infinite;
+                        `;
+                        sacred.appendChild(heart);
+                    }
+
+                    // Añadir keyframes
+                    const style = document.createElement('style');
+                    style.textContent = `
+                        @keyframes rayRotate {
+                            from { transform: rotate(${Math.random() * 360}deg); }
+                            to { transform: rotate(${360 + Math.random() * 360}deg); }
+                        }
+                        @keyframes floatHeart {
+                            0%, 100% { transform: translate(0, 0); }
+                            50% { transform: translate(${-30 + Math.random() * 60}px, ${-30 + Math.random() * 60}px); }
+                        }
+                    `;
+                    document.head.appendChild(style);
+
+                    document.body.appendChild(sacred);
+                    requestAnimationFrame(() => sacred.style.opacity = '1');
+
+                    // Limpiar efecto
+                    setTimeout(() => {
+                        sacred.style.opacity = '0';
+                        sacredImg.style.filter = '';
+                        setTimeout(() => {
+                            sacred.remove();
+                            style.remove();
+                        }, 1000);
+                    }, 3500);
+                }
+            });
+
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                const val = e.target.value.trim().toLowerCase();
+
+                // Limpiar efectos previos y restaurar estados
+                const cleanup = () => {
+                    document.querySelectorAll('.wavy-effect').forEach(el => el.remove());
+                    document.body.style.filter = '';
+                    document.body.style.transform = '';
+                    document.querySelectorAll('*').forEach(el => {
+                        el.style.transform = '';
+                        el.style.filter = '';
+                        el.style.transition = '';
+                    });
+                };
+
+                if (val !== 'wavy cap') {
+                    cleanup();
+                    return;
+                }
+
+                const wavyImg = document.querySelector(`img[src$="item_582.png"]`);
+                if (!wavyImg) return;
+
+                // Efecto más intenso en el item
+                wavyImg.style.filter = 'brightness(3) saturate(200%) drop-shadow(0 0 25px #9370DB) drop-shadow(0 0 50px #8A2BE2)';
+                wavyImg.style.animation = 'pulse 0.5s infinite alternate';
+
+                const wavy = document.createElement('div');
+                wavy.className = 'wavy-effect';
+                wavy.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    pointer-events: none;
+                    z-index: 9998;
+                    mix-blend-mode: screen;
+                    opacity: 1;
+                    animation: wavyBackground 4s infinite linear;
+                `;
+
+                // Más esporas y más variadas
+                for (let i = 0; i < 50; i++) {
+                    const spore = document.createElement('div');
+                    const size = 4 + Math.random() * 12;
+                    spore.style.cssText = `
+                        position: absolute;
+                        width: ${size}px;
+                        height: ${size}px;
+                        background: ${Math.random() > 0.5 ? '#9370DB' : '#8A2BE2'};
+                        border-radius: 50%;
+                        filter: blur(${1 + Math.random() * 3}px) brightness(${1 + Math.random()});
+                        opacity: ${0.4 + Math.random() * 0.6};
+                        animation: float ${3 + Math.random() * 7}s infinite ease-in-out;
+                        box-shadow: 0 0 ${10 + Math.random() * 20}px ${Math.random() > 0.5 ? '#9370DB' : '#8A2BE2'};
+                    `;
+                    spore.style.left = Math.random() * 100 + 'vw';
+                    spore.style.top = Math.random() * 100 + 'vh';
+                    wavy.appendChild(spore);
+                }
+
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes pulse {
+                        0% { transform: scale(1); }
+                        100% { transform: scale(1.2); }
+                    }
+                    @keyframes float {
+                        0%, 100% { 
+                            transform: translate(0, 0) rotate(0deg) scale(1); 
+                        }
+                        50% { 
+                            transform: 
+                                translate(${-100 + Math.random() * 200}px, ${-100 + Math.random() * 200}px)
+                                rotate(${Math.random() * 720}deg)
+                                scale(${1 + Math.random()});
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+                document.body.appendChild(wavy);
+
+                let time = 0;
+                const animate = () => {
+                    time += 0.02;
+
+                    // Distorsión extrema de la página
+                    document.body.style.filter = `
+                        saturate(${100 + Math.sin(time) * 50}%)
+                    `;
+                    document.documentElement.style.filter = `
+                        blur(${Math.abs(Math.sin(time * 0.5))}px)
+                    hue-rotate(${Math.sin(time * 0.7) * 360}deg)
+                    `;
+
+                    document.body.style.transform = `
+                        perspective(${800 + Math.sin(time) * 200}px)
+                        rotate3d(
+                            ${Math.sin(time * 0.5) * 0.3},
+                            ${Math.cos(time * 0.5) * 0.3},
+                            ${Math.sin(time * 0.3) * 0.1},
+                            ${Math.sin(time) * 5}deg
+                        )
+                        scale(${1 + Math.sin(time * 0.8) * 0.1})
+                    `;
+
+                    // Distorsión psicodélica de imágenes
+                    document.querySelectorAll('.img-grid img').forEach((img, index) => {
+                        img.style.transform = `
+                            translate(
+                                ${Math.sin(time * 2 + index) * 15}px,
+                                ${Math.cos(time * 1.5 + index) * 15}px
+                            )
+                            rotate(${Math.sin(time + index) * 15}deg)
+                            scale(${1 + Math.sin(time * 3 + index * 0.1) * 0.2})
+                            skew(${Math.sin(time * 2) * 10}deg)
+                        `;
+                        img.style.filter = `
+                            brightness(${1 + Math.sin(time * 2) * 0.3})
+                            hue-rotate(${Math.sin(time * 0.7 + index) * 180}deg)
+                        `;
+                    });
+
+                    // Efecto en textos
+                    document.querySelectorAll('h2, h3, p').forEach((text, index) => {
+                        text.style.transform = `
+                            translate(
+                                ${Math.sin(time * 2 + index) * 10}px,
+                                ${Math.cos(time * 1.5 + index) * 8}px
+                            )
+                            rotate(${Math.sin(time + index) * 3}deg)
+                            scale(${1 + Math.sin(time * 2) * 0.1})
+                        `;
+                        text.style.filter = `blur(${Math.abs(Math.sin(time * 0.5))}px)`;
+                    });
+
+                    if (wavy.isConnected && document.getElementById('search-bar').value.trim().toLowerCase() === 'wavy cap') {
+                        requestAnimationFrame(animate);
+                    } else {
+                        cleanup();
+                        style.remove();
+                    }
+                };
+
+                requestAnimationFrame(animate);
+            });
+            // ...existing code...
+
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                const val = e.target.value.trim().toLowerCase();
+
+                // Limpiar efectos previos
+                document.querySelectorAll('.tazazel-portal-effect').forEach(el => el.remove());
+
+                // Diccionario de personajes y sus imágenes
+                const characters = {
+                    "isaac": "isaac.png",
+                    "tainted isaac": "isaac_t.png",
+                    "magdalene": "magdalene.png",
+                    "tainted magdalene": "magdalene_t.png",
+                    "cain": "cain.png",
+                    "tainted cain": "cain_t.png",
+                    "judas": "judas.png",
+                    "tainted judas": "judas_t.png",
+                    "blue baby": "bluebaby.png",
+                    "tainted blue baby": "bluebaby_t.png",
+                    "eve": "eve.png",
+                    "tainted eve": "eve_t.png",
+                    "samson": "samson.png",
+                    "tainted samson": "samson_t.png",
+                    "azazel": "azazel.png",
+                    "tainted azazel": "azazel_t.png",
+                    "lazarus": "lazarus.png",
+                    "tainted lazarus": "lazarus_t.png",
+                    "eden": "eden.png",
+                    "tainted eden": "eden_t.png",
+                    "the lost": "thelost.png",
+                    "tainted the lost": "thelost_t.png",
+                    "lilith": "lilith.png",
+                    "tainted lilith": "lilith_t.png",
+                    "keeper": "keeper.png",
+                    "tainted keeper": "keeper_t.png",
+                    "apollyon": "apollyon.png",
+                    "tainted apollyon": "apollyon_t.png",
+                    "the forgotten": "theforgotten.png",
+                    "tainted the forgotten": "theforgotten_t.png",
+                    "bethany": "bethany.png",
+                    "tainted bethany": "bethany_t.png",
+                    "jacob and esau": "jacobandesau.png",
+                    "tainted jacob": "jacobandesau_t.png"
+                };
+
+                // Si el input coincide con algún personaje, muestra el efecto
+                if (characters[val]) {
+                    // Fondo oscuro bloqueante
+                    const effect = document.createElement('div');
+                    effect.className = 'tazazel-portal-effect';
+                    effect.style.cssText = `
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: radial-gradient(circle at center, rgba(0,0,0,0.97) 0%, rgba(0,0,0,1) 100%);
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 1.2s;
+            pointer-events: all;
+        `;
+
+                    // Portal giratorio
+                    const portal = document.createElement('img');
+                    portal.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/main/characters/portal.png';
+                    portal.alt = 'Portal';
+                    portal.style.cssText = `
+            width:  100vw; height: 100vh;
+            object-fit: contain;
+            filter: drop-shadow(0 0 60px #000) brightness(1.2);
+            position: absolute;
+            opacity: 0;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%) scale(0.7) rotate(0deg);
+            transition: opacity 1.2s, transform 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+            z-index: 1;
+            animation: portal-spin 2.5s linear infinite;
+            pointer-events: none;
+            image-rendering: pixelated;
+        `;
+
+                    // Luz central del portal (pulsante)
+                    const portalLight = document.createElement('div');
+                    portalLight.style.cssText = `
+            position: absolute;
+            left: 50%; top: 50%;
+            width: 320px; height: 320px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background: radial-gradient(circle at center, rgba(255,0,255,0.25) 0%, rgba(255,255,255,0.12) 60%, transparent 100%);
+            filter: blur(18px);
+            opacity: 0;
+            z-index: 1;
+            pointer-events: none;
+            transition: opacity 1.2s;
+            animation: portal-light-pulse 2s infinite alternate;
+        `;
+
+                    // Personaje iluminado
+                    const characterImg = document.createElement('img');
+                    characterImg.src = `https://raw.githubusercontent.com/ellandeperez/jokercard/main/characters/${characters[val]}`;
+                    characterImg.alt = val;
+                    characterImg.style.cssText = `
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 60px #fff) drop-shadow(0 0 40px #ff00ff) brightness(2) saturate(1.5);
+            position: absolute;
+            left: 50%; top: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.1);
+            transition: opacity 1.2s, transform 1.2s cubic-bezier(.68,-0.55,.27,1.55), filter 1.2s;
+            z-index: 2;
+            cursor: pointer;
+            animation: azazel-pulse 1.2s infinite alternate;
+            image-rendering: pixelated;
+        `;
+
+                    // Fantasma del personaje
+                    const ghost = document.createElement('img');
+                    ghost.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/main/characters/death.png';
+                    ghost.alt = 'Ghost';
+                    ghost.style.cssText = `
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            position: absolute;
+            left: 50%; top: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.7) translateY(0);
+            z-index: 3;
+            pointer-events: none;
+            transition: opacity 0.8s, transform 2s cubic-bezier(.68,-0.55,.27,1.55);
+            filter: drop-shadow(0 0 40px #fff);
+            image-rendering: pixelated;
+        `;
+
+                    effect.appendChild(portalLight);
+                    effect.appendChild(portal);
+                    effect.appendChild(characterImg);
+                    effect.appendChild(ghost);
+                    document.body.appendChild(effect);
+
+                    // Keyframes para portal, luz y pulso
+                    const style = document.createElement('style');
+                    style.textContent = `
+            @keyframes portal-spin {
+                0% { transform: translate(-50%, -50%) scale(0.7) rotate(0deg);}
+                100% { transform: translate(-50%, -50%) scale(0.7) rotate(360deg);}
+            }
+            @keyframes portal-light-pulse {
+                0% { opacity: 0.8; }
+                100% { opacity: 1; }
+            }
+            @keyframes azazel-pulse {
+                0% { filter: drop-shadow(0 0 60px #fff) drop-shadow(0 0 40px #ff00ff)}
+                100% { filter: drop-shadow(0 0 80px #fff) drop-shadow(0 0 60px #ff00ff)}
+            }
+        `;
+                    document.head.appendChild(style);
+
+                    // Fade in fondo, portal y luz
+                    setTimeout(() => {
+                        effect.style.opacity = '1';
+                        portal.style.opacity = '1';
+                        portal.style.transform = 'translate(-50%, -50%) scale(1) rotate(0deg)';
+                        portalLight.style.opacity = '1';
+                    }, 100);
+
+                    // Personaje aparece del centro con pulso
+                    setTimeout(() => {
+                        characterImg.style.opacity = '1';
+                        characterImg.style.transform = 'translate(-50%, -50%) scale(1)';
+                    }, 900);
+
+                    // Solo se puede clicar el personaje
+                    effect.addEventListener('click', function (ev) {
+                        if (ev.target !== characterImg) {
+                            ev.stopPropagation();
+                            ev.preventDefault();
+                        }
+                    }, true);
+
+                    // Al clicar el personaje: baja brillo/saturación y aparece fantasma
+                    characterImg.addEventListener('click', function (ev) {
+                        ev.stopPropagation();
+                        characterImg.style.animation = '';
+                        characterImg.style.transition = 'filter 1.2s, opacity 1.2s';
+                        characterImg.style.filter = 'drop-shadow(0 0 10px #222) brightness(0.6) saturate(0.5)';
+                        portalLight.style.opacity = '0.3';
+                        portal.style.opacity = '0';
+
+                        // Fantasma aparece y sube
+                        setTimeout(() => {
+                            ghost.style.opacity = '1';
+                            ghost.style.transform = 'translate(-50%, -50%) scale(1) translateY(-120px)';
+                        }, 700);
+
+                        // Desaparece todo después de que el fantasma sube
+                        setTimeout(() => {
+                            ghost.style.opacity = '0';
+                            effect.style.opacity = '0';
+                            setTimeout(() => {
+                                effect.remove();
+                                style.remove();
+                            }, 1200);
+                        }, 2200);
+                    });
+
+                    // Limpiar efecto al cambiar el input
+                    const cleanup = () => {
+                        effect.style.opacity = '0';
+                        portal.style.opacity = '0';
+                        characterImg.style.opacity = '0';
+                        portalLight.style.opacity = '0';
+                        ghost.style.opacity = '0';
+                        setTimeout(() => {
+                            effect.remove();
+                            style.remove();
+                        }, 1200);
+                    };
+
+                    const inputHandler = function (ev) {
+                        if (ev.target.value.trim().toLowerCase() !== val) {
+                            cleanup();
+                            document.getElementById('search-bar').removeEventListener('input', inputHandler);
+                        }
+                    };
+                    document.getElementById('search-bar').addEventListener('input', inputHandler);
+                }
+            });
+            (function preloadCharacterImages() {
+                const baseUrl = 'https://raw.githubusercontent.com/ellandeperez/jokercard/main/characters/';
+                const images = [
+                    "isaac.png", "isaac_t.png", "magdalene.png", "magdalene_t.png",
+                    "cain.png", "cain_t.png", "judas.png", "judas_t.png",
+                    "bluebaby.png", "bluebaby_t.png", "eve.png", "eve_t.png",
+                    "samson.png", "samson_t.png", "azazel.png", "azazel_t.png",
+                    "lazarus.png", "lazarus_t.png", "eden.png", "eden_t.png",
+                    "thelost.png", "thelost_t.png", "lilith.png", "lilith_t.png",
+                    "keeper.png", "keeper_t.png", "apollyon.png", "apollyon_t.png",
+                    "theforgotten.png", "theforgotten_t.png", "bethany.png", "bethany_t.png",
+                    "jacobandesau.png", "jacobandesau_t.png", "portal.png", "death.png"
+                ];
+                images.forEach(img => {
+                    const image = new Image();
+                    image.src = baseUrl + img;
+                });
+            })();
+
+            // ...existing code...
         </script>
 </body>
 
