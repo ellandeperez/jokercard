@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon.png">
+    <link rel="apple-touch-icon"
+        href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon.png">
     <link rel="manifest" href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Joker Card</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon.png" type="image/x-icon">
+    <link rel="icon" href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon.png"
+        type="image/x-icon">
     <style>
         /* Webkit (Chrome, Edge, Safari) */
         ::-webkit-scrollbar {
             width: 0;
         }
-        html{
+
+        html {
             background-color: black;
             background-image: url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/background.png');
             background-repeat: repeat-y;
@@ -27,51 +31,95 @@
             overflow-x: hidden;
             cursor: url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/hover.cur'), auto !important;
         }
-        img, .clear-search, button, .modal-close, .modal-nav{
+
+        img,
+        .clear-search,
+        button,
+        .modal-close,
+        .modal-nav {
             cursor: url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cursor.cur'), auto !important;
         }
-        input{
+
+        input {
             cursor: url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/write.cur'), auto !important;
         }
-        body { 
-            font-family: 'Jersey 15';font-weight: lighter;
+
+        body {
+            font-family: 'Jersey 15';
+            font-weight: lighter;
             margin: 0;
         }
+
         .content {
             width: 75%;
-            margin: 30px auto; /* Centra el contenido */
+            margin: 30px auto;
+            /* Centra el contenido */
             backdrop-filter: blur(5px);
             border-radius: 20px;
             padding: 10px;
         }
-        .itemgrid, .trinketgrid, .cardgrid {
+
+        .itemgrid,
+        .trinketgrid,
+        .cardgrid {
             border-radius: 20px;
             padding: 0;
-        }        
+        }
+
         /* Nueva clase para cuando los grids están activos */
-        .itemgrid.active, .trinketgrid.active, .cardgrid.active {
+        .itemgrid.active,
+        .trinketgrid.active,
+        .cardgrid.active {
             padding: 10px 0;
         }
+
         .itemgrid {
             background: rgba(255, 255, 0, 0.08);
         }
+
         .trinketgrid {
             background: rgba(128, 128, 128, 0.12);
         }
+
         .cardgrid {
             background: rgba(165, 104, 42, 0.15);
         }
-        h2 { color: rgb(240, 234, 234); text-align: center; font-family: 'Jersey 15';margin: 0 0; text-shadow: rgb(18, 13, 13) 5px 5px 0px, rgb(0, 0, 0) 0px 0px 10px;font-size: 5em;letter-spacing: 5px;}
-        h3{text-align:center;margin:0;font-family: 'Jersey 15';font-weight: lighter;font-size: 2em;}
-        p{font-size: 1.5em;}
+
+        h2 {
+            color: rgb(240, 234, 234);
+            text-align: center;
+            font-family: 'Jersey 15';
+            margin: 0 0;
+            text-shadow: rgb(18, 13, 13) 5px 5px 0px, rgb(0, 0, 0) 0px 0px 10px;
+            font-size: 5em;
+            letter-spacing: 5px;
+        }
+
+        h3 {
+            text-align: center;
+            margin: 0;
+            font-family: 'Jersey 15';
+            font-weight: lighter;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
         .img-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px; /* Menor separación */
-            align-items: flex-end;   /* Alinea arriba */
-            justify-content: center; /* Centra horizontalmente */
-            margin: 0px auto; /* Centra el grid en la pantalla */
+            gap: 10px;
+            /* Menor separación */
+            align-items: flex-end;
+            /* Alinea arriba */
+            justify-content: center;
+            /* Centra horizontalmente */
+            margin: 0px auto;
+            /* Centra el grid en la pantalla */
         }
+
         .img-grid img {
             image-rendering: pixelated;
             display: block;
@@ -83,15 +131,20 @@
             height: 60px;
             object-fit: contain;
         }
+
         .modal {
             display: none;
             position: fixed;
             z-index: 1000;
-            left: 0; top: 0; width: 100vw; height: 100vh;
-            background: rgba(0,0,0,0.6);
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.6);
             justify-content: center;
             align-items: center;
         }
+
         .modal-content {
             border: 10px inset #99866e;
             background: #f6d6b0;
@@ -103,9 +156,11 @@
             overflow-y: auto;
             position: relative;
         }
+
         .modal-content img {
             image-rendering: pixelated;
         }
+
         .modal-close {
             position: absolute;
             right: 1em;
@@ -113,23 +168,27 @@
             cursor: pointer;
             font-size: 2em;
         }
-        .search-bar-content{
-            width:100%;
-            display:flex;
-            justify-content:center;
-            margin-bottom:10px;
+
+        .search-bar-content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
         }
+
         .search-bar {
             margin-top: 5px;
-            width:94%;
-            padding:10px 30px 10px 10px;  /* Agregado padding-right para dar espacio a la x */
-            font-size:2em;
-            border-radius:8px;
-            border:4px inset #99866e;
-            background:#f6d6b0;
-            color:#222;
+            width: 94%;
+            padding: 10px 30px 10px 10px;
+            /* Agregado padding-right para dar espacio a la x */
+            font-size: 2em;
+            border-radius: 8px;
+            border: 4px inset #99866e;
+            background: #f6d6b0;
+            color: #222;
             font-family: 'Jersey 15', Arial, sans-serif;
         }
+
         .search-bar-container {
             position: relative;
             width: 65%;
@@ -151,8 +210,9 @@
         .clear-search:hover {
             color: #000000;
         }
+
         .lang-img {
-            padding:5px;
+            padding: 5px;
             margin-top: 5px;
             margin-left: 10px;
             width: 50px;
@@ -160,8 +220,9 @@
             cursor: pointer;
             image-rendering: pixelated;
         }
+
         .info-img {
-            padding:5px;
+            padding: 5px;
             margin-top: 5px;
             margin-right: 10px;
             width: 50px;
@@ -169,10 +230,11 @@
             cursor: pointer;
             image-rendering: pixelated;
         }
+
         .filter-bar {
             position: sticky;
             top: 0;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0, 0, 0, 0.5);
             z-index: 10;
             display: flex;
             gap: 5px;
@@ -180,10 +242,12 @@
             justify-content: center;
             border-radius: 10px;
         }
+
         .filter-btn {
             font-family: 'Jersey 15', Arial, sans-serif;
             font-size: 1.2em;
-            padding: 0; /* Elimina padding para que la imagen ocupe todo el botón */
+            padding: 0;
+            /* Elimina padding para que la imagen ocupe todo el botón */
             padding-bottom: 4px;
             border-radius: 10px;
             border: outset 3px #99866e;
@@ -198,24 +262,29 @@
             align-items: center;
             justify-content: center;
         }
+
         .filter-btn img {
             width: 95%;
             height: 95%;
             object-fit: contain;
-            pointer-events: none; /* Permite que el click pase al botón */
+            pointer-events: none;
+            /* Permite que el click pase al botón */
             display: block;
             image-rendering: pixelated;
             filter: brightness(75%) saturate(0.25);
-            
+
         }
+
         .filter-btn.active {
             background: #f6d6b0;
             font-weight: bold;
             box-shadow: 0 0 8px #fff2;
         }
-        .filter-btn.active img{
+
+        .filter-btn.active img {
             filter: brightness(100%) saturate(100%);
         }
+
         .cat-corner {
             position: absolute;
             top: 1em;
@@ -224,8 +293,9 @@
             height: 125px;
             z-index: 10;
             pointer-events: none;
-            filter:drop-shadow(0 0 5px #000000);
+            filter: drop-shadow(0 0 5px #000000);
         }
+
         .modal-nav {
             position: absolute;
             top: 50%;
@@ -234,7 +304,7 @@
             color: #614e3c;
             cursor: pointer;
             padding: 0px;
-            text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
             transition: color 0.2s;
             user-select: none;
         }
@@ -250,12 +320,14 @@
         .modal-next {
             right: 10px;
         }
+
         #items-header {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 30px;
         }
+
         #items-header button {
             background: none;
             border: none;
@@ -265,6 +337,7 @@
             display: flex;
             align-items: center;
         }
+
         #items-header img {
             width: 48px;
             height: 48px;
@@ -278,6 +351,7 @@
             justify-content: center;
             gap: 30px;
         }
+
         #trinkets-header button {
             background: none;
             border: none;
@@ -287,6 +361,7 @@
             display: flex;
             align-items: center;
         }
+
         #trinkets-header img {
             width: 48px;
             height: 48px;
@@ -294,7 +369,8 @@
             image-rendering: pixelated;
         }
 
-        #items-header button, #trinkets-header button {
+        #items-header button,
+        #trinkets-header button {
             background: none;
             border: none;
             cursor: pointer;
@@ -305,50 +381,80 @@
             border-radius: 100%;
             filter: brightness(50%) saturate(100%) blur(1px);
             transition: all 0.2s;
-            
+
         }
-        #items-header button.active, #trinkets-header button.active {
+
+        #items-header button.active,
+        #trinkets-header button.active {
             background: rgba(246, 214, 176, 0.2);
             box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
             filter: blur(0px);
         }
-        #items-header img, #trinkets-header img {
+
+        #items-header img,
+        #trinkets-header img {
             width: 48px;
             height: 48px;
             pointer-events: none;
             image-rendering: pixelated;
         }
+
         .img-wrap {
             display: inline-block;
         }
-        .img-wrap.cat-up, .img-wrap.cat-down {
+
+        .img-wrap.cat-up,
+        .img-wrap.cat-down {
             animation: pixel-stretch 10s infinite;
         }
+
         @keyframes pixel-stretch {
-            0%, 93%, 98%, 100% { transform: scaleX(1) scaleY(1); }
-            94% { transform: scaleX(1.2) scaleY(0.9); }
-            95% { transform: scaleX(0.8) scaleY(1.1); }
-            96% { transform: scaleX(1.15) scaleY(0.85); }
-            97% { transform: scaleX(0.85) scaleY(1.15); }
+
+            0%,
+            93%,
+            98%,
+            100% {
+                transform: scaleX(1) scaleY(1);
+            }
+
+            94% {
+                transform: scaleX(1.2) scaleY(0.9);
+            }
+
+            95% {
+                transform: scaleX(0.8) scaleY(1.1);
+            }
+
+            96% {
+                transform: scaleX(1.15) scaleY(0.85);
+            }
+
+            97% {
+                transform: scaleX(0.85) scaleY(1.15);
+            }
         }
-        
+
         .img-wrap img:hover {
             transform: scale(1.5);
             z-index: 1000;
-            filter: drop-shadow(0 0 1px #ffffff)
-                    drop-shadow(0 0 1px #ffffff)
-                    drop-shadow(0 0 1px #ffffff)
-                    drop-shadow(0 0 10px #ff0000);
+            filter: drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 1px #ffffff) drop-shadow(0 0 10px #ff0000);
         }
 
         .rainbow-effect {
             animation: rainbow-hue 2s linear infinite;
             filter: hue-rotate(0deg);
         }
+
         @keyframes rainbow-hue {
-            0% { filter: hue-rotate(0deg); }
-            100% { filter: hue-rotate(360deg); }
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
         }
+
         .brimstone-laser {
             filter: brightness(1.5) blur(1px);
             position: fixed;
@@ -357,6 +463,7 @@
             /* Añade estas dos líneas para que el pseudo-elemento herede la rotación */
             transform-origin: top center;
         }
+
         .brimstone-laser::after {
             content: "";
             position: absolute;
@@ -372,95 +479,120 @@
         }
 
         @media (max-width: 700px) {
-            html{
+            html {
                 background-color: rgb(19, 12, 9);
-                background-image: url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/background_mobile.png');                
+                background-image: url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/background_mobile.png');
                 background-repeat: no-repeat;
                 background-size: cover;
-            }            
-            #trinkets-header, #items-header {
+            }
+
+            #trinkets-header,
+            #items-header {
                 gap: 10px;
-            }     
-            #items-header img, #trinkets-header img {
+            }
+
+            #items-header img,
+            #trinkets-header img {
                 width: 38px;
                 height: 38px;
-            }   
+            }
+
             h2 {
                 font-size: 3.5em;
-            }         
+            }
+
             .content {
                 width: 95vw;
                 padding: 2px;
                 border-radius: 0;
                 margin-top: 0;
             }
+
             .img-grid {
-                gap: 5px; /* Menor separación */
+                gap: 5px;
+                /* Menor separación */
             }
+
             .img-grid img {
                 width: 50px;
                 height: 50px;
             }
+
             .search-bar-content {
                 width: 95vw;
                 margin: 0;
                 padding: 0;
                 justify-content: center;
             }
+
             .search-bar {
                 font-size: 1em;
-                padding: 10px 30px 10px 10px;  /* Agregado padding-right para dar espacio a la x */
+                padding: 10px 30px 10px 10px;
+                /* Agregado padding-right para dar espacio a la x */
                 width: 70vw;
                 box-sizing: border-box;
-            }            
+            }
+
             .search-bar-container {
                 width: 70vw;
             }
+
             .clear-search {
                 font-size: 2em;
                 right: 8px;
             }
+
             .lang-img {
                 width: 40px;
                 height: 40px;
                 margin-left: 10px;
                 padding: 2px;
             }
+
             .info-img {
                 width: 40px;
                 height: 40px;
                 margin-right: 10px;
                 padding: 2px;
             }
+
             .filter-bar {
                 flex-wrap: wrap;
                 gap: 2px;
                 padding: 5px;
             }
+
             .filter-btn {
                 width: 55px;
                 height: 40px;
                 font-size: .8em;
                 padding-bottom: 2px;
             }
-            .itemgrid, .trinketgrid, .cardgrid {
+
+            .itemgrid,
+            .trinketgrid,
+            .cardgrid {
                 padding: 0px;
             }
+
             .modal-content {
                 max-width: 70vw;
                 padding: 1em 2em;
-            }            
+            }
+
             .modal-close {
                 right: .2em;
                 top: 0;
                 font-size: 3em;
             }
+
             .cat-corner {
                 top: 0;
                 left: .2em;
                 width: 100px;
                 height: 100px;
             }
+
             .modal-nav {
                 font-size: 2em;
             }
@@ -475,73 +607,93 @@
         }
     </style>
 </head>
+
 <body>
     <div class="content">
         <!-- Search bar -->
         <div class="search-bar-content">
-            <img id="info-btn" src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/info.png" alt="Cambiar idioma" class="info-img">
+            <img id="info-btn" src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/info.png"
+                alt="Cambiar idioma" class="info-img">
             <div class="search-bar-container">
                 <input class="search-bar" id="search-bar" type="text" placeholder="Nombre, habitación, etc...">
                 <span class="clear-search" id="clear-search">&times;</span>
             </div>
-            <img id="lang-toggle" src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/languages_es.png" alt="Cambiar idioma" class="lang-img">
+            <img id="lang-toggle"
+                src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/languages_es.png"
+                alt="Cambiar idioma" class="lang-img">
         </div>
         <!-- Filtro -->
         <div class="filter-bar" id="filter-bar">
             <button class="filter-btn" data-filter="all">
-                <span style="pointer-events: none;margin:0;font-family: 'Jersey 10';font-weight: lighter;font-size: 3em;">ALL</span>
+                <span
+                    style="pointer-events: none;margin:0;font-family: 'Jersey 10';font-weight: lighter;font-size: 3em;">ALL</span>
             </button>
             <button class="filter-btn" data-filter="shop">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/shop_door.png" alt="Shop" >
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/shop_door.png"
+                    alt="Shop">
             </button>
             <button class="filter-btn" data-filter="itemroom">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/itemroom_door.png" alt="Item Room" >
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/itemroom_door.png"
+                    alt="Item Room">
             </button>
             <button class="filter-btn" data-filter="planetarium">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/planetarium_door.png" alt="Planetarium" >
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/planetarium_door.png"
+                    alt="Planetarium">
             </button>
             <button class="filter-btn" data-filter="library">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/library_door.png" alt="Library" >
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/library_door.png"
+                    alt="Library">
             </button>
             <button class="filter-btn" data-filter="curseroom">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/curseroom_door.png" alt="Curse Room" >
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/curseroom_door.png"
+                    alt="Curse Room">
             </button>
             <button class="filter-btn" data-filter="secretroom">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/secretroom_door.png" alt="Secret Room" >
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/secretroom_door.png"
+                    alt="Secret Room">
             </button>
             <button class="filter-btn" data-filter="bossroom">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/bossroom_door.png" alt="Boss Room" >
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/bossroom_door.png"
+                    alt="Boss Room">
             </button>
             <button class="filter-btn" data-filter="devilroom">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/devilroom_door.png" alt="Devil Room" >
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/devilroom_door.png"
+                    alt="Devil Room">
             </button>
             <button class="filter-btn" data-filter="angelroom">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/angelroom_door.png" alt="Angel Room" >
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/angelroom_door.png"
+                    alt="Angel Room">
             </button>
             <button class="filter-btn" data-filter="trinkets">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/trinkets.png" alt="Trinkets" >
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/trinkets.png"
+                    alt="Trinkets">
             </button>
             <button class="filter-btn" data-filter="consumibles">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/consumibles.png" alt="Consumibles" >
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/pools/consumibles.png"
+                    alt="Consumibles">
             </button>
         </div>
         <div id="items-header">
             <button id="sort-id-btn">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/id.png" alt="Ordenar por ID">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/id.png"
+                    alt="Ordenar por ID">
             </button>
             <h2 id="h2-items" style="margin:0;">ITEMS</h2>
             <button id="sort-color-btn">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/color.png" alt="Ordenar por Color">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/color.png"
+                    alt="Ordenar por Color">
             </button>
         </div>
         <div id="items" class="img-grid itemgrid"></div>
         <div id="trinkets-header">
             <button id="sort-id-trinkets-btn">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/id.png" alt="Ordenar por ID">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/id.png"
+                    alt="Ordenar por ID">
             </button>
             <h2 id="h2-trinkets">TRINKETS</h2>
             <button id="sort-color-trinkets-btn">
-                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/color.png" alt="Ordenar por Color">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/color.png"
+                    alt="Ordenar por Color">
             </button>
         </div>
         <div id="trinkets" class="img-grid trinketgrid"></div>
@@ -569,17 +721,27 @@
             <!-- Info de la card aquí -->
         </div>
     </div>
-    
+
     <div id="info-modal_es" class="modal">
         <div class="modal-content" id="modal-content-info">
             <span class="modal-close" id="modal-close-info">&times;</span>
-            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;"><img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png" style="pointer-events: none;"><h3>Joker Card</h3><img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png" style="pointer-events: none;"></div>
-            <p>Esta es una aplicación web para consultar rápidamente información sobre los objetos de The Binding of Isaac</p>
-            <p>Puedes usar los filtros de la parte superior para mostrar objetos de habitaciones específicas, o usar la barra de búsqueda para encontrar objetos por nombre o descripción.</p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;"><img
+                    src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png"
+                    style="pointer-events: none;">
+                <h3>Joker Card</h3><img
+                    src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png"
+                    style="pointer-events: none;">
+            </div>
+            <p>Esta es una aplicación web para consultar rápidamente información sobre los objetos de The Binding of
+                Isaac</p>
+            <p>Puedes usar los filtros de la parte superior para mostrar objetos de habitaciones específicas, o usar la
+                barra de búsqueda para encontrar objetos por nombre o descripción.</p>
             <p>Haz clic en cualquier objeto para ver su información detallada.</p>
             <p>El botón de idioma en la esquina superior derecha permite cambiar entre español e inglés.</p>
-            <img style="width: 75%;border-radius: 20px; border:pink inset 10px; display: block; margin: 0 auto; pointer-events: none;" src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/kokomiLogo.png">
-            <p>Esta página ha sido desarrollada especificamente para cubrir las necesidades de mi novia y asegurarme de que en su camino al platinum god se lo pase lo mejor posible</p>
+            <img style="width: 75%;border-radius: 20px; border:pink inset 10px; display: block; margin: 0 auto; pointer-events: none;"
+                src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/kokomiLogo.png">
+            <p>Esta página ha sido desarrollada especificamente para cubrir las necesidades de mi novia y asegurarme de
+                que en su camino al platinum god se lo pase lo mejor posible</p>
             <p>Todo aquel que la use sabrá que esto va por ti 💜👀</p>
             <p>P.D. ya descubriras lo que es el platinum god</p>
         </div>
@@ -587,285 +749,292 @@
     <div id="info-modal_en" class="modal">
         <div class="modal-content" id="modal-content-info">
             <span class="modal-close" id="modal-close-info">&times;</span>
-            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;"><img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png"><h3>Joker Card</h3><img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png"></div>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;"><img
+                    src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png">
+                <h3>Joker Card</h3><img
+                    src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png">
+            </div>
             <p>This is a web application to quickly consult information about items in The Binding of Isaac</p>
-            <p>You can use the filters at the top to show items from specific rooms, or use the search bar to find items by name or description.</p>
+            <p>You can use the filters at the top to show items from specific rooms, or use the search bar to find items
+                by name or description.</p>
             <p>Click on any item to see its detailed information.</p>
             <p>The language button in the top right corner allows you to switch between Spanish and English.</p>
-            <img style="width: 75%;border-radius: 20px; border:pink inset 10px; display: block; margin: 0 auto;" src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/kokomiLogo.png">
-            <p>This page has been developed specifically to meet my girlfriend's needs and ensure that she enjoys her journey to platinum god as much as possible</p>
+            <img style="width: 75%;border-radius: 20px; border:pink inset 10px; display: block; margin: 0 auto;"
+                src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/kokomiLogo.png">
+            <p>This page has been developed specifically to meet my girlfriend's needs and ensure that she enjoys her
+                journey to platinum god as much as possible</p>
             <p>Anyone who uses it will know that this is for you 💜👀</p>
             <p>P.S. you'll find out what platinum god is</p>
         </div>
 
-    <script>
-        clearAllGrids(); // Limpia los grids al inicio
-        const baseUrl = "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/";
+        <script>
+            clearAllGrids(); // Limpia los grids al inicio
+            const baseUrl = "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/";
 
-        // Variables para almacenar los datos
-        let allItems = [];
-        let allTrinkets = [];
-        let allCards = [];
-        
-        // Estado de orden actual (mover estas declaraciones aquí arriba)
-        let sortMode = "id";
-        let sortModeTrinkets = "id";
+            // Variables para almacenar los datos
+            let allItems = [];
+            let allTrinkets = [];
+            let allCards = [];
 
-        let language = 'es'; // Por defecto español
+            // Estado de orden actual (mover estas declaraciones aquí arriba)
+            let sortMode = "id";
+            let sortModeTrinkets = "id";
 
-        // Helper para crear imágenes y eventos
-        function createImg(src, alt, clickHandler) {
-            const img = document.createElement('img');
-            img.src = src;
-            img.alt = alt;
-            img.style.objectFit = "contain";
-            img.onerror = function() { this.style.display = 'none'; };
-            img.addEventListener('click', clickHandler);
-            return img;
-        }
+            let language = 'es'; // Por defecto español
 
-        function initializeButtonStates() {
-            // Activar botones de ID al inicio
-            document.getElementById('sort-id-btn').classList.add('active');
-            document.getElementById('sort-id-trinkets-btn').classList.add('active');
-            // Asegurar que los botones de color estén desactivados
-            document.getElementById('sort-color-btn').classList.remove('active');
-            document.getElementById('sort-color-trinkets-btn').classList.remove('active');
-        }
-
-        // Modificar la función loadAllData para llamar a initializeButtonStates
-        function loadAllData() {
-            // Limpia los arrays antes de cargar
-            allItems = [];
-            allTrinkets = [];
-            allCards = [];
-            clearAllGrids();
-
-            // Restablecer el estado de ordenamiento por defecto
-            sortMode = "id";
-            sortModeTrinkets = "id";
-            initializeButtonStates();
-
-            fetch(`${baseUrl}items_${language}.json`)
-                .then(res => {
-                    return res.json();
-                })
-                .then(items => { allItems = items; renderByFilters(); })
-                .catch(err => {
-                });
-
-            fetch(`${baseUrl}trinkets_${language}.json`)
-                .then(res => {
-                    return res.json();
-                })
-                .then(trinkets => { allTrinkets = trinkets; renderByFilters(); })
-                .catch(err => {
-                });
-
-            fetch(`${baseUrl}cards_${language}.json`)
-                .then(res => {
-                    return res.json();
-                })
-                .then(cards => { allCards = cards; renderByFilters(); })
-                .catch(err => {
-                });
-        }
-
-        // Inicializa con español
-        loadAllData();
-
-        // Filtros activos
-        let activeFilters = [];
-
-        // Limpia todos los grids y oculta los h2
-        function clearAllGrids() {
-            document.getElementById('items').innerHTML = '';
-            document.getElementById('trinkets').innerHTML = '';
-            document.getElementById('cards').innerHTML = '';
-            document.getElementById('items-header').style.display = 'none';
-            document.getElementById('trinkets-header').style.display = 'none';
-            document.getElementById('h2-cards').style.display = 'none';
-        }
-
-        // Search logic
-        document.getElementById('search-bar').addEventListener('input', function(e) {
-            window.searchText = e.target.value.trim().toLowerCase();
-            // Si no hay filtros activos y hay texto, activa "all"
-            if (window.searchText && activeFilters.length === 0) {
-                activeFilters = ['all'];
-                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-                document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
+            // Helper para crear imágenes y eventos
+            function createImg(src, alt, clickHandler) {
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = alt;
+                img.style.objectFit = "contain";
+                img.onerror = function () { this.style.display = 'none'; };
+                img.addEventListener('click', clickHandler);
+                return img;
             }
-            renderByFilters();
-        });
-        window.searchText = "";
-        const searchInput = document.getElementById('search-bar');
-        const clearButton = document.getElementById('clear-search');
 
-        searchInput.addEventListener('input', function() {
-            clearButton.style.display = this.value ? 'block' : 'none';
-        });
+            function initializeButtonStates() {
+                // Activar botones de ID al inicio
+                document.getElementById('sort-id-btn').classList.add('active');
+                document.getElementById('sort-id-trinkets-btn').classList.add('active');
+                // Asegurar que los botones de color estén desactivados
+                document.getElementById('sort-color-btn').classList.remove('active');
+                document.getElementById('sort-color-trinkets-btn').classList.remove('active');
+            }
 
-        clearButton.addEventListener('click', function() {            
-            const html = document.documentElement;
-            const items = document.querySelectorAll('.img-grid img');
-            searchInput.value = '';
-            window.searchText = '';
-            this.style.display = 'none';            
-            html.classList.remove('rainbow-effect');
-            items.forEach(img => img.classList.remove('rainbow-effect'));
-            renderByFilters();
-        });
+            // Modificar la función loadAllData para llamar a initializeButtonStates
+            function loadAllData() {
+                // Limpia los arrays antes de cargar
+                allItems = [];
+                allTrinkets = [];
+                allCards = [];
+                clearAllGrids();
 
-        // Renderiza según los filtros activos
-        function renderByFilters() {
-            clearAllGrids();
-            let showItems = [];
-            let showTrinkets = [];
-            let showCards = [];
+                // Restablecer el estado de ordenamiento por defecto
+                sortMode = "id";
+                sortModeTrinkets = "id";
+                initializeButtonStates();
 
-            // Filtrado por filtros
-            if (activeFilters.length === 0) {
-                // Nada seleccionado, no mostrar nada
-            } else if (activeFilters.includes('all')) {
-                showItems = allItems;
-                showTrinkets = allTrinkets;
-                showCards = allCards;
-            } else {
-                const pools = {
-                    shop: 'Shop',
-                    itemroom: 'Item Room',
-                    bossroom: 'Boss Room',
-                    devilroom: 'Devil Room',
-                    angelroom: 'Angel Room',
-                    curseroom: 'Curse Room',
-                    secretroom: 'Secret Room',
-                    library: 'Library',
-                    planetarium: 'Planetarium'
-                };
-                let itemFilters = Object.keys(pools).filter(f => activeFilters.includes(f));
-                if (itemFilters.length > 0) {
-                    showItems = allItems.filter(i =>
-                        i.item_pool && itemFilters.some(f =>
-                            i.item_pool.some(poolStr =>
-                                poolStr && poolStr.toLowerCase().includes(pools[f].toLowerCase())
-                            )
-                        )
-                    );
+                fetch(`${baseUrl}items_${language}.json`)
+                    .then(res => {
+                        return res.json();
+                    })
+                    .then(items => { allItems = items; renderByFilters(); })
+                    .catch(err => {
+                    });
+
+                fetch(`${baseUrl}trinkets_${language}.json`)
+                    .then(res => {
+                        return res.json();
+                    })
+                    .then(trinkets => { allTrinkets = trinkets; renderByFilters(); })
+                    .catch(err => {
+                    });
+
+                fetch(`${baseUrl}cards_${language}.json`)
+                    .then(res => {
+                        return res.json();
+                    })
+                    .then(cards => { allCards = cards; renderByFilters(); })
+                    .catch(err => {
+                    });
+            }
+
+            // Inicializa con español
+            loadAllData();
+
+            // Filtros activos
+            let activeFilters = [];
+
+            // Limpia todos los grids y oculta los h2
+            function clearAllGrids() {
+                document.getElementById('items').innerHTML = '';
+                document.getElementById('trinkets').innerHTML = '';
+                document.getElementById('cards').innerHTML = '';
+                document.getElementById('items-header').style.display = 'none';
+                document.getElementById('trinkets-header').style.display = 'none';
+                document.getElementById('h2-cards').style.display = 'none';
+            }
+
+            // Search logic
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                window.searchText = e.target.value.trim().toLowerCase();
+                // Si no hay filtros activos y hay texto, activa "all"
+                if (window.searchText && activeFilters.length === 0) {
+                    activeFilters = ['all'];
+                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                    document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
                 }
-                if (activeFilters.includes('trinkets')) showTrinkets = allTrinkets;
-                if (activeFilters.includes('consumibles')) showCards = allCards;
-            }
-
-            // Filtrado por search
-            if (window.searchText && window.searchText !== 'rainbow') {
-            const matchesText = obj => {
-                return Object.values(obj).some(val => {
-                    if (!val) return false;
-                    if (typeof val === 'string') return val.toLowerCase().includes(window.searchText);
-                    if (typeof val === 'number') return val.toString().includes(window.searchText);
-                    if (Array.isArray(val)) return val.join(' ').toLowerCase().includes(window.searchText);
-                    return false;
-                });
-            };
-            showItems = showItems.filter(matchesText);
-            showTrinkets = showTrinkets.filter(matchesText);
-            showCards = showCards.filter(matchesText);
-        }
-
-            // Render y manejo de clases active
-            const itemsGrid = document.getElementById('items');
-            const trinketsGrid = document.getElementById('trinkets');
-            const cardsGrid = document.getElementById('cards');
-
-            if (showItems.length > 0) {
-                renderItems(showItems);
-                itemsGrid.classList.add('active');
-            } else {
-                itemsGrid.classList.remove('active');
-            }
-
-            if (showTrinkets.length > 0) {
-                renderTrinkets(showTrinkets);
-                trinketsGrid.classList.add('active');
-            } else {
-                trinketsGrid.classList.remove('active');
-            }
-
-            if (showCards.length > 0) {
-                renderCards(showCards);
-                cardsGrid.classList.add('active');
-            } else {
-                cardsGrid.classList.remove('active');
-            }
-
-            document.getElementById('items-header').style.display = document.getElementById('items').children.length ? '' : 'none';
-            document.getElementById('trinkets-header').style.display = document.getElementById('trinkets').children.length ? '' : 'none';
-            document.getElementById('h2-cards').style.display = document.getElementById('cards').children.length ? '' : 'none';
-        }
-
-        function renderCards(cards) {
-            const container = document.getElementById('cards');
-            container.innerHTML = '';
-            cards.forEach(card => {
-                if (!card.cardId) return;
-                const img = createImg(
-                    `${baseUrl}All_Consumables/card_${card.cardId}.png`,
-                    card.name,
-                    () => showCardModal(card)
-                );
-                let wrap = document.createElement('div');
-                wrap.className = 'img-wrap';
-                wrap.appendChild(img);
-                container.appendChild(wrap);
+                renderByFilters();
             });
-        }
+            window.searchText = "";
+            const searchInput = document.getElementById('search-bar');
+            const clearButton = document.getElementById('clear-search');
 
-        // Filtros: stackeables, "All" es exclusivo
-        document.getElementById('filter-bar').addEventListener('click', function(e) {
-            if (!e.target.classList.contains('filter-btn')) return;
-            const filter = e.target.dataset.filter;
+            searchInput.addEventListener('input', function () {
+                clearButton.style.display = this.value ? 'block' : 'none';
+            });
 
-            // Si el botón ya está activo, desactivarlo
-            if (activeFilters.includes(filter)) {
-                activeFilters = [];
-                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-            } else {
-                // Desactivar todos los botones y activar solo el nuevo
-                activeFilters = [filter];
-                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-                e.target.classList.add('active');
+            clearButton.addEventListener('click', function () {
+                const html = document.documentElement;
+                const items = document.querySelectorAll('.img-grid img');
+                searchInput.value = '';
+                window.searchText = '';
+                this.style.display = 'none';
+                html.classList.remove('rainbow-effect');
+                items.forEach(img => img.classList.remove('rainbow-effect'));
+                renderByFilters();
+            });
+
+            // Renderiza según los filtros activos
+            function renderByFilters() {
+                clearAllGrids();
+                let showItems = [];
+                let showTrinkets = [];
+                let showCards = [];
+
+                // Filtrado por filtros
+                if (activeFilters.length === 0) {
+                    // Nada seleccionado, no mostrar nada
+                } else if (activeFilters.includes('all')) {
+                    showItems = allItems;
+                    showTrinkets = allTrinkets;
+                    showCards = allCards;
+                } else {
+                    const pools = {
+                        shop: 'Shop',
+                        itemroom: 'Item Room',
+                        bossroom: 'Boss Room',
+                        devilroom: 'Devil Room',
+                        angelroom: 'Angel Room',
+                        curseroom: 'Curse Room',
+                        secretroom: 'Secret Room',
+                        library: 'Library',
+                        planetarium: 'Planetarium'
+                    };
+                    let itemFilters = Object.keys(pools).filter(f => activeFilters.includes(f));
+                    if (itemFilters.length > 0) {
+                        showItems = allItems.filter(i =>
+                            i.item_pool && itemFilters.some(f =>
+                                i.item_pool.some(poolStr =>
+                                    poolStr && poolStr.toLowerCase().includes(pools[f].toLowerCase())
+                                )
+                            )
+                        );
+                    }
+                    if (activeFilters.includes('trinkets')) showTrinkets = allTrinkets;
+                    if (activeFilters.includes('consumibles')) showCards = allCards;
+                }
+
+                // Filtrado por search
+                if (window.searchText && window.searchText !== 'rainbow') {
+                    const matchesText = obj => {
+                        return Object.values(obj).some(val => {
+                            if (!val) return false;
+                            if (typeof val === 'string') return val.toLowerCase().includes(window.searchText);
+                            if (typeof val === 'number') return val.toString().includes(window.searchText);
+                            if (Array.isArray(val)) return val.join(' ').toLowerCase().includes(window.searchText);
+                            return false;
+                        });
+                    };
+                    showItems = showItems.filter(matchesText);
+                    showTrinkets = showTrinkets.filter(matchesText);
+                    showCards = showCards.filter(matchesText);
+                }
+
+                // Render y manejo de clases active
+                const itemsGrid = document.getElementById('items');
+                const trinketsGrid = document.getElementById('trinkets');
+                const cardsGrid = document.getElementById('cards');
+
+                if (showItems.length > 0) {
+                    renderItems(showItems);
+                    itemsGrid.classList.add('active');
+                } else {
+                    itemsGrid.classList.remove('active');
+                }
+
+                if (showTrinkets.length > 0) {
+                    renderTrinkets(showTrinkets);
+                    trinketsGrid.classList.add('active');
+                } else {
+                    trinketsGrid.classList.remove('active');
+                }
+
+                if (showCards.length > 0) {
+                    renderCards(showCards);
+                    cardsGrid.classList.add('active');
+                } else {
+                    cardsGrid.classList.remove('active');
+                }
+
+                document.getElementById('items-header').style.display = document.getElementById('items').children.length ? '' : 'none';
+                document.getElementById('trinkets-header').style.display = document.getElementById('trinkets').children.length ? '' : 'none';
+                document.getElementById('h2-cards').style.display = document.getElementById('cards').children.length ? '' : 'none';
             }
 
-            renderByFilters();
-        });
-
-        // MODALS
-        // Item modal
-        const itemModal = document.getElementById('item-modal');
-        const itemModalContent = document.getElementById('modal-content-item');
-        function showItemModal(item) {
-            let catImg = '';
-            if (item.cat === 'up' || item.cat === 'up2' || item.cat === 'down') {
-                catImg = `<img src="${baseUrl}cat_${item.cat}.png" alt="cat_${item.cat}" class="cat-corner">`;
+            function renderCards(cards) {
+                const container = document.getElementById('cards');
+                container.innerHTML = '';
+                cards.forEach(card => {
+                    if (!card.cardId) return;
+                    const img = createImg(
+                        `${baseUrl}All_Consumables/card_${card.cardId}.png`,
+                        card.name,
+                        () => showCardModal(card)
+                    );
+                    let wrap = document.createElement('div');
+                    wrap.className = 'img-wrap';
+                    wrap.appendChild(img);
+                    container.appendChild(wrap);
+                });
             }
-            let rechargeImg = '';
-            if (item.recharge_time && Array.isArray(item.recharge_time)) {
-                const validNumbers = ['1', '2', '3', '4', '6', '12'];
-                const firstValue = item.recharge_time[0];
-                if (firstValue) {
-                    // Extrae el número al principio del string
-                    const match = firstValue.match(/^(\d+)/);
-                    if (match && validNumbers.includes(match[1])) {
-                        rechargeImg = `<img src="${baseUrl}bars/${match[1]}.png" alt="recharge_${match[1]}" style="margin-left:10px;pointer-events: none;">`;
+
+            // Filtros: stackeables, "All" es exclusivo
+            document.getElementById('filter-bar').addEventListener('click', function (e) {
+                if (!e.target.classList.contains('filter-btn')) return;
+                const filter = e.target.dataset.filter;
+
+                // Si el botón ya está activo, desactivarlo
+                if (activeFilters.includes(filter)) {
+                    activeFilters = [];
+                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                } else {
+                    // Desactivar todos los botones y activar solo el nuevo
+                    activeFilters = [filter];
+                    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                    e.target.classList.add('active');
+                }
+
+                renderByFilters();
+            });
+
+            // MODALS
+            // Item modal
+            const itemModal = document.getElementById('item-modal');
+            const itemModalContent = document.getElementById('modal-content-item');
+            function showItemModal(item) {
+                let catImg = '';
+                if (item.cat === 'up' || item.cat === 'up2' || item.cat === 'down') {
+                    catImg = `<img src="${baseUrl}cat_${item.cat}.png" alt="cat_${item.cat}" class="cat-corner">`;
+                }
+                let rechargeImg = '';
+                if (item.recharge_time && Array.isArray(item.recharge_time)) {
+                    const validNumbers = ['1', '2', '3', '4', '6', '12'];
+                    const firstValue = item.recharge_time[0];
+                    if (firstValue) {
+                        // Extrae el número al principio del string
+                        const match = firstValue.match(/^(\d+)/);
+                        if (match && validNumbers.includes(match[1])) {
+                            rechargeImg = `<img src="${baseUrl}bars/${match[1]}.png" alt="recharge_${match[1]}" style="margin-left:10px;pointer-events: none;">`;
+                        }
                     }
                 }
-            }
-            // Encontrar el índice actual y comprobar si hay anterior/siguiente
-            const currentIndex = allItems.findIndex(i => i.id === item.id);
-            const prevItem = currentIndex > 0 ? allItems[currentIndex - 1] : null;
-            const nextItem = currentIndex < allItems.length - 1 ? allItems[currentIndex + 1] : null;
-            itemModalContent.innerHTML = `
+                // Encontrar el índice actual y comprobar si hay anterior/siguiente
+                const currentIndex = allItems.findIndex(i => i.id === item.id);
+                const prevItem = currentIndex > 0 ? allItems[currentIndex - 1] : null;
+                const nextItem = currentIndex < allItems.length - 1 ? allItems[currentIndex + 1] : null;
+                itemModalContent.innerHTML = `
                 <span class="modal-close" id="modal-close-item">&times;</span>
                 ${prevItem ? `<div class="modal-nav modal-prev" onclick="showItemModal(allItems[${currentIndex - 1}])">&lt;</div>` : ''}
                 ${nextItem ? `<div class="modal-nav modal-next" onclick="showItemModal(allItems[${currentIndex + 1}])">&gt;</div>` : ''}
@@ -882,28 +1051,28 @@
                 ${item.unlock ? `<p><i><strong>DESBLOQUEO:</strong></i> ${item.unlock}</p>` : ''}
                 <p><i><strong>ID:</strong></i> ${item.id}</p>
             `;
-            itemModal.style.display = 'flex';
-            document.getElementById('modal-close-item').onclick = () => { itemModal.style.display = 'none'; };
-        }
-        itemModal.onclick = function(e) {
-            if (e.target === itemModal) itemModal.style.display = 'none';
-        };
-
-        // Trinket modal
-        const trinketModal = document.getElementById('trinket-modal');
-        const trinketModalContent = document.getElementById('modal-content-trinket');
-        function showTrinketModal(trinket) {
-            let catImg = '';
-            if (trinket.cat === 'up' || trinket.cat === 'down') {
-                catImg = `<img src="${baseUrl}cat_${trinket.cat}.png" alt="cat_${trinket.cat}" class="cat-corner">`;
+                itemModal.style.display = 'flex';
+                document.getElementById('modal-close-item').onclick = () => { itemModal.style.display = 'none'; };
             }
+            itemModal.onclick = function (e) {
+                if (e.target === itemModal) itemModal.style.display = 'none';
+            };
 
-            // Encontrar el índice actual y comprobar si hay anterior/siguiente
-            const currentIndex = allTrinkets.findIndex(t => t.trinketId === trinket.trinketId);
-            const prevTrinket = currentIndex > 0 ? allTrinkets[currentIndex - 1] : null;
-            const nextTrinket = currentIndex < allTrinkets.length - 1 ? allTrinkets[currentIndex + 1] : null;
+            // Trinket modal
+            const trinketModal = document.getElementById('trinket-modal');
+            const trinketModalContent = document.getElementById('modal-content-trinket');
+            function showTrinketModal(trinket) {
+                let catImg = '';
+                if (trinket.cat === 'up' || trinket.cat === 'down') {
+                    catImg = `<img src="${baseUrl}cat_${trinket.cat}.png" alt="cat_${trinket.cat}" class="cat-corner">`;
+                }
 
-            trinketModalContent.innerHTML = `
+                // Encontrar el índice actual y comprobar si hay anterior/siguiente
+                const currentIndex = allTrinkets.findIndex(t => t.trinketId === trinket.trinketId);
+                const prevTrinket = currentIndex > 0 ? allTrinkets[currentIndex - 1] : null;
+                const nextTrinket = currentIndex < allTrinkets.length - 1 ? allTrinkets[currentIndex + 1] : null;
+
+                trinketModalContent.innerHTML = `
                 <span class="modal-close" id="modal-close-trinket">&times;</span>
                 ${prevTrinket ? `<div class="modal-nav modal-prev" onclick="showTrinketModal(allTrinkets[${currentIndex - 1}])">&lt;</div>` : ''}
                 ${nextTrinket ? `<div class="modal-nav modal-next" onclick="showTrinketModal(allTrinkets[${currentIndex + 1}])">&gt;</div>` : ''}
@@ -915,35 +1084,35 @@
                 ${trinket.unlock ? `<p><i><strong>DESBLOQUEO:</strong></i> ${trinket.unlock}</p>` : ''}
                 <p><i><strong>ID:</strong></i> ${trinket.trinketId}</p>
             `;
-            trinketModal.style.display = 'flex';
-            document.getElementById('modal-close-trinket').onclick = () => { trinketModal.style.display = 'none'; };
-        }
-        trinketModal.onclick = function(e) {
-            if (e.target === trinketModal) trinketModal.style.display = 'none';
-        };
-
-        // Card modal
-        const cardModal = document.getElementById('card-modal');
-        const cardModalContent = document.getElementById('modal-content-card');
-        function showCardModal(card) {
-            let catImg = '';
-            if (card.cat === 'up' || card.cat === 'down') {
-                catImg = `<img src="${baseUrl}cat_${card.cat}.png" alt="cat_${card.cat}" class="cat-corner">`;
+                trinketModal.style.display = 'flex';
+                document.getElementById('modal-close-trinket').onclick = () => { trinketModal.style.display = 'none'; };
             }
+            trinketModal.onclick = function (e) {
+                if (e.target === trinketModal) trinketModal.style.display = 'none';
+            };
 
-            // Encontrar el índice actual y comprobar si hay anterior/siguiente
-            const currentIndex = allCards.findIndex(c => c.cardId === card.cardId);
-            const prevCard = currentIndex > 0 ? allCards[currentIndex - 1] : null;
-            const nextCard = currentIndex < allCards.length - 1 ? allCards[currentIndex + 1] : null;
+            // Card modal
+            const cardModal = document.getElementById('card-modal');
+            const cardModalContent = document.getElementById('modal-content-card');
+            function showCardModal(card) {
+                let catImg = '';
+                if (card.cat === 'up' || card.cat === 'down') {
+                    catImg = `<img src="${baseUrl}cat_${card.cat}.png" alt="cat_${card.cat}" class="cat-corner">`;
+                }
 
-            let description;
-            if (card.cardId == 114) {
-                description = card.description;
-            } else {
-                description = Array.isArray(card.description) ? card.description.join('<br><br>') : card.description || '';
-            }
+                // Encontrar el índice actual y comprobar si hay anterior/siguiente
+                const currentIndex = allCards.findIndex(c => c.cardId === card.cardId);
+                const prevCard = currentIndex > 0 ? allCards[currentIndex - 1] : null;
+                const nextCard = currentIndex < allCards.length - 1 ? allCards[currentIndex + 1] : null;
 
-            cardModalContent.innerHTML = `
+                let description;
+                if (card.cardId == 114) {
+                    description = card.description;
+                } else {
+                    description = Array.isArray(card.description) ? card.description.join('<br><br>') : card.description || '';
+                }
+
+                cardModalContent.innerHTML = `
                 <span class="modal-close" id="modal-close-card">&times;</span>
                 ${prevCard ? `<div class="modal-nav modal-prev" onclick="showCardModal(allCards[${currentIndex - 1}])">&lt;</div>` : ''}
                 ${nextCard ? `<div class="modal-nav modal-next" onclick="showCardModal(allCards[${currentIndex + 1}])">&gt;</div>` : ''}
@@ -955,434 +1124,434 @@
                 ${card.unlock ? `<p><i><strong>DESBLOQUEO:</strong></i> ${card.unlock}</p>` : ''}
                 <p><i><strong>ID:</strong></i> ${card.cardId}</p>
             `;
-            cardModal.style.display = 'flex';
-            document.getElementById('modal-close-card').onclick = () => { cardModal.style.display = 'none'; };
-        }
-        cardModal.onclick = function(e) {
-            if (e.target === cardModal) cardModal.style.display = 'none';
-        };
-
-        // Info modal
-        document.getElementById('info-btn').addEventListener('click', function() {
-            let infoModal;
-            if (language === 'es') {
-                infoModal = document.getElementById('info-modal_es');
-            } else {
-                infoModal = document.getElementById('info-modal_en'); 
+                cardModal.style.display = 'flex';
+                document.getElementById('modal-close-card').onclick = () => { cardModal.style.display = 'none'; };
             }
-            infoModal.style.display = 'flex';
-            
-            const closeBtn = infoModal.querySelector('.modal-close');
-            closeBtn.onclick = () => {
-                infoModal.style.display = 'none';
+            cardModal.onclick = function (e) {
+                if (e.target === cardModal) cardModal.style.display = 'none';
             };
-            
-            infoModal.onclick = function(e) {
-                if (e.target === infoModal) infoModal.style.display = 'none';
+
+            // Info modal
+            document.getElementById('info-btn').addEventListener('click', function () {
+                let infoModal;
+                if (language === 'es') {
+                    infoModal = document.getElementById('info-modal_es');
+                } else {
+                    infoModal = document.getElementById('info-modal_en');
+                }
+                infoModal.style.display = 'flex';
+
+                const closeBtn = infoModal.querySelector('.modal-close');
+                closeBtn.onclick = () => {
+                    infoModal.style.display = 'none';
+                };
+
+                infoModal.onclick = function (e) {
+                    if (e.target === infoModal) infoModal.style.display = 'none';
+                };
+            });
+
+            // Lista de colores en orden cromático
+            const colorOrder = [
+                "white", "silver", "grey", "gray", "black", "brown", "red", "orange", "gold",
+                "yellow", "green", "cyan", "blue", "purple", "pink"
+            ];
+
+            // Función para extraer colores de tags
+            function getItemColors(item) {
+                if (!item.tags) return [];
+                const tagsArr = item.tags.split(',').map(t => t.trim().toLowerCase());
+                // Devuelve los colores en el orden en que aparecen en los tags
+                return tagsArr.filter(tag => colorOrder.includes(tag));
+            }
+
+            // Ordena los items por color principal y secundarios
+            function sortItemsByColor(items) {
+                return items.slice().sort((a, b) => {
+                    const aColors = getItemColors(a);
+                    const bColors = getItemColors(b);
+
+                    // Si ninguno tiene color, van al final
+                    if (aColors.length === 0 && bColors.length === 0) return 0;
+                    if (aColors.length === 0) return 1;
+                    if (bColors.length === 0) return -1;
+
+                    // Orden por color principal
+                    const aMain = colorOrder.findIndex(c => c === aColors[0]);
+                    const bMain = colorOrder.findIndex(c => c === bColors[0]);
+                    if (aMain !== bMain) return aMain - bMain;
+
+                    // Si tienen el mismo color principal, compara secundarios
+                    for (let i = 1; i < Math.max(aColors.length, bColors.length); i++) {
+                        const aSec = aColors[i] ? colorOrder.findIndex(c => c === aColors[i]) : Infinity;
+                        const bSec = bColors[i] ? colorOrder.findIndex(c => c === bColors[i]) : Infinity;
+                        if (aSec !== bSec) return aSec - bSec;
+                    }
+
+                    // Si todo igual, por ID
+                    return (a.id || 0) - (b.id || 0);
+                });
+            }
+
+            // Ordena los items por ID
+            function sortItemsById(items) {
+                return items.slice().sort((a, b) => (a.id || 0) - (b.id || 0));
+            }
+
+            function sortTrinketsById(trinkets) {
+                return trinkets.slice().sort((a, b) => (a.trinketId || 0) - (b.trinketId || 0));
+            }
+
+            function sortTrinketsByColor(trinkets) {
+                return trinkets.slice().sort((a, b) => {
+                    const aColors = getItemColors(a);
+                    const bColors = getItemColors(b);
+
+                    // Si ninguno tiene color, van al final
+                    if (aColors.length === 0 && bColors.length === 0) return 0;
+                    if (aColors.length === 0) return 1;
+                    if (bColors.length === 0) return -1;
+
+                    // Orden por color principal
+                    const aMain = colorOrder.findIndex(c => c === aColors[0]);
+                    const bMain = colorOrder.findIndex(c => c === bColors[0]);
+                    if (aMain !== bMain) return aMain - bMain;
+
+                    // Si todo igual, por ID
+                    return (a.trinketId || 0) - (b.trinketId || 0);
+                });
+            }
+
+            // Modifica renderItems para usar el modo de orden
+            function renderItems(items) {
+                const container = document.getElementById('items');
+                container.innerHTML = '';
+                let sortedItems = items;
+                if (sortMode === "id") {
+                    sortedItems = sortItemsById(items);
+                } else if (sortMode === "color") {
+                    sortedItems = sortItemsByColor(items);
+                }
+                sortedItems.forEach(item => {
+                    if (!item.id) return;
+                    const img = createImg(
+                        `${baseUrl}All_Items/item_${item.id}.png`,
+                        item.name,
+                        () => showItemModal(item)
+                    );
+                    let wrap = document.createElement('div');
+                    wrap.className = 'img-wrap';
+                    if (item.cat === 'up' || item.cat === 'up2') wrap.classList.add('cat-up');
+                    if (item.cat === 'down') wrap.classList.add('cat-down');
+                    wrap.appendChild(img);
+                    container.appendChild(wrap);
+                });
+            }
+
+            function renderTrinkets(trinkets) {
+                const container = document.getElementById('trinkets');
+                container.innerHTML = '';
+                let sortedTrinkets = trinkets;
+                if (sortModeTrinkets === "id") {
+                    sortedTrinkets = sortTrinketsById(trinkets);
+                } else if (sortModeTrinkets === "color") {
+                    sortedTrinkets = sortTrinketsByColor(trinkets);
+                }
+                sortedTrinkets.forEach(trinket => {
+                    if (!trinket.trinketId) return;
+                    const img = createImg(
+                        `${baseUrl}All_Trinkets/trinket_${trinket.trinketId}.png`,
+                        trinket.name,
+                        () => showTrinketModal(trinket)
+                    );
+                    let wrap = document.createElement('div');
+                    wrap.className = 'img-wrap';
+                    wrap.appendChild(img);
+                    container.appendChild(wrap);
+                });
+            }
+
+            // Botones de ordenamiento para items
+            document.getElementById('sort-id-btn').onclick = function () {
+                const idBtn = document.getElementById('sort-id-btn');
+                const colorBtn = document.getElementById('sort-color-btn');
+
+                if (sortMode === "id") {
+                    // Si ya está en modo ID, desactivar
+                    sortMode = "default";
+                    idBtn.classList.remove('active');
+                } else {
+                    // Activar modo ID y desactivar color
+                    sortMode = "id";
+                    idBtn.classList.add('active');
+                    colorBtn.classList.remove('active');
+                }
+                renderByFilters();
             };
-        });
 
-        // Lista de colores en orden cromático
-        const colorOrder = [
-            "white", "silver", "grey", "gray", "black", "brown", "red", "orange", "gold",
-            "yellow", "green", "cyan", "blue", "purple", "pink"
-        ];
+            document.getElementById('sort-color-btn').onclick = function () {
+                const idBtn = document.getElementById('sort-id-btn');
+                const colorBtn = document.getElementById('sort-color-btn');
 
-        // Función para extraer colores de tags
-        function getItemColors(item) {
-            if (!item.tags) return [];
-            const tagsArr = item.tags.split(',').map(t => t.trim().toLowerCase());
-            // Devuelve los colores en el orden en que aparecen en los tags
-            return tagsArr.filter(tag => colorOrder.includes(tag));
-        }
-
-        // Ordena los items por color principal y secundarios
-        function sortItemsByColor(items) {
-            return items.slice().sort((a, b) => {
-                const aColors = getItemColors(a);
-                const bColors = getItemColors(b);
-
-                // Si ninguno tiene color, van al final
-                if (aColors.length === 0 && bColors.length === 0) return 0;
-                if (aColors.length === 0) return 1;
-                if (bColors.length === 0) return -1;
-
-                // Orden por color principal
-                const aMain = colorOrder.findIndex(c => c === aColors[0]);
-                const bMain = colorOrder.findIndex(c => c === bColors[0]);
-                if (aMain !== bMain) return aMain - bMain;
-
-                // Si tienen el mismo color principal, compara secundarios
-                for (let i = 1; i < Math.max(aColors.length, bColors.length); i++) {
-                    const aSec = aColors[i] ? colorOrder.findIndex(c => c === aColors[i]) : Infinity;
-                    const bSec = bColors[i] ? colorOrder.findIndex(c => c === bColors[i]) : Infinity;
-                    if (aSec !== bSec) return aSec - bSec;
+                if (sortMode === "color") {
+                    // Si ya está en modo color, desactivar
+                    sortMode = "default";
+                    colorBtn.classList.remove('active');
+                } else {
+                    // Activar modo color y desactivar ID
+                    sortMode = "color";
+                    colorBtn.classList.add('active');
+                    idBtn.classList.remove('active');
                 }
+                renderByFilters();
+            };
 
-                // Si todo igual, por ID
-                return (a.id || 0) - (b.id || 0);
+            // Botones de ordenamiento para trinkets
+            document.getElementById('sort-id-trinkets-btn').onclick = function () {
+                const idBtn = document.getElementById('sort-id-trinkets-btn');
+                const colorBtn = document.getElementById('sort-color-trinkets-btn');
+
+                if (sortModeTrinkets === "id") {
+                    // Si ya está en modo ID, desactivar
+                    sortModeTrinkets = "default";
+                    idBtn.classList.remove('active');
+                } else {
+                    // Activar modo ID y desactivar color
+                    sortModeTrinkets = "id";
+                    idBtn.classList.add('active');
+                    colorBtn.classList.remove('active');
+                }
+                renderByFilters();
+            };
+
+            document.getElementById('sort-color-trinkets-btn').onclick = function () {
+                const idBtn = document.getElementById('sort-id-trinkets-btn');
+                const colorBtn = document.getElementById('sort-color-trinkets-btn');
+
+                if (sortModeTrinkets === "color") {
+                    // Si ya está en modo color, desactivar
+                    sortModeTrinkets = "default";
+                    colorBtn.classList.remove('active');
+                } else {
+                    // Activar modo color y desactivar ID
+                    sortModeTrinkets = "color";
+                    colorBtn.classList.add('active');
+                    idBtn.classList.remove('active');
+                }
+                renderByFilters();
+            };
+
+            // Toggle de idioma
+            document.getElementById('lang-toggle').addEventListener('click', function () {
+                language = (language === 'es') ? 'en' : 'es';
+                this.src = `https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/languages_${language}.png`;
+                document.getElementById('search-bar').placeholder =
+                    (language === 'es') ? 'Nombre, habitación, etc...' : 'Name, room, etc...';
+                loadAllData();
             });
-        }
 
-        // Ordena los items por ID
-        function sortItemsById(items) {
-            return items.slice().sort((a, b) => (a.id || 0) - (b.id || 0));
-        }
+            // Soporte para navegación con teclado
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    // Cerrar cualquier modal que esté abierto
+                    if (itemModal.style.display === 'flex') itemModal.style.display = 'none';
+                    if (trinketModal.style.display === 'flex') trinketModal.style.display = 'none';
+                    if (cardModal.style.display === 'flex') cardModal.style.display = 'none';
+                    if (document.getElementById('info-modal_es').style.display === 'flex') document.getElementById('info-modal_es').style.display = 'none';
+                    if (document.getElementById('info-modal_en').style.display === 'flex') document.getElementById('info-modal_en').style.display = 'none';
+                    return;
+                }
 
-                function sortTrinketsById(trinkets) {
-            return trinkets.slice().sort((a, b) => (a.trinketId || 0) - (b.trinketId || 0));
-        }
-
-        function sortTrinketsByColor(trinkets) {
-            return trinkets.slice().sort((a, b) => {
-                const aColors = getItemColors(a);
-                const bColors = getItemColors(b);
-
-                // Si ninguno tiene color, van al final
-                if (aColors.length === 0 && bColors.length === 0) return 0;
-                if (aColors.length === 0) return 1;
-                if (bColors.length === 0) return -1;
-
-                // Orden por color principal
-                const aMain = colorOrder.findIndex(c => c === aColors[0]);
-                const bMain = colorOrder.findIndex(c => c === bColors[0]);
-                if (aMain !== bMain) return aMain - bMain;
-
-                // Si todo igual, por ID
-                return (a.trinketId || 0) - (b.trinketId || 0);
+                if (itemModal.style.display === 'flex') {
+                    const currentImg = document.querySelector('#modal-content-item img[style*="width:100px"]');
+                    const currentName = currentImg.alt;
+                    const currentIndex = allItems.findIndex(i => i.name === currentName);
+                    if (e.key === 'ArrowLeft' && currentIndex > 0) {
+                        showItemModal(allItems[currentIndex - 1]);
+                    } else if (e.key === 'ArrowRight' && currentIndex < allItems.length - 1) {
+                        showItemModal(allItems[currentIndex + 1]);
+                    }
+                } else if (trinketModal.style.display === 'flex') {
+                    const currentImg = document.querySelector('#modal-content-trinket img[style*="width:100px"]');
+                    const currentName = currentImg.alt;
+                    const currentIndex = allTrinkets.findIndex(t => t.name === currentName);
+                    if (e.key === 'ArrowLeft' && currentIndex > 0) {
+                        showTrinketModal(allTrinkets[currentIndex - 1]);
+                    } else if (e.key === 'ArrowRight' && currentIndex < allTrinkets.length - 1) {
+                        showTrinketModal(allTrinkets[currentIndex + 1]);
+                    }
+                } else if (cardModal.style.display === 'flex') {
+                    const currentImg = document.querySelector('#modal-content-card img[style*="width:100px"]');
+                    const currentName = currentImg.alt;
+                    const currentIndex = allCards.findIndex(c => c.name === currentName);
+                    if (e.key === 'ArrowLeft' && currentIndex > 0) {
+                        showCardModal(allCards[currentIndex - 1]);
+                    } else if (e.key === 'ArrowRight' && currentIndex < allCards.length - 1) {
+                        showCardModal(allCards[currentIndex + 1]);
+                    }
+                }
             });
-        }
 
-        // Modifica renderItems para usar el modo de orden
-        function renderItems(items) {
-            const container = document.getElementById('items');
-            container.innerHTML = '';
-            let sortedItems = items;
-            if (sortMode === "id") {
-                sortedItems = sortItemsById(items);
-            } else if (sortMode === "color") {
-                sortedItems = sortItemsByColor(items);
-            }
-            sortedItems.forEach(item => {
-                if (!item.id) return;
-                const img = createImg(
-                    `${baseUrl}All_Items/item_${item.id}.png`,
-                    item.name,
-                    () => showItemModal(item)
-                );
-                let wrap = document.createElement('div');
-                wrap.className = 'img-wrap';
-                if (item.cat === 'up' || item.cat === 'up2') wrap.classList.add('cat-up');
-                if (item.cat === 'down') wrap.classList.add('cat-down');
-                wrap.appendChild(img);
-                container.appendChild(wrap);
+            let tapCount = 0;
+            let lastTapTime = 0;
+            document.documentElement.addEventListener('click', function (e) {
+                // Evita que cuente clics dentro de modals o grids
+                if (
+                    e.target.closest('.modal') ||
+                    e.target.closest('.img-grid') ||
+                    e.target.closest('.filter-bar') ||
+                    e.target.closest('.search-bar-content')
+                ) return;
+
+                const now = Date.now();
+                if (now - lastTapTime < 500) {
+                    tapCount++;
+                } else {
+                    tapCount = 1;
+                }
+                lastTapTime = now;
+                if (tapCount === 3) {
+                    const isUp2 = Math.random() < 0.01;
+                    const catSrc = isUp2
+                        ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up2.png'
+                        : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up.png';
+                    const cat = document.createElement('img');
+                    cat.src = catSrc;
+                    cat.className = 'blondigo-cat';
+                    cat.style.position = 'fixed';
+                    cat.style.left = '-120px';
+                    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+                    cat.style.top = Math.floor(Math.random() * (vh - 120)) + 'px';
+                    cat.style.width = '100px';
+                    cat.style.height = '100px';
+                    cat.style.zIndex = '9999';
+                    cat.style.pointerEvents = 'none';
+                    cat.style.opacity = '0';
+                    cat.style.transition = 'opacity 0.3s, left 3s linear';
+                    document.body.appendChild(cat);
+                    setTimeout(() => { cat.style.opacity = '1'; cat.style.left = '110vw'; }, 100);
+                    setTimeout(() => { cat.remove(); }, 3200);
+                    tapCount = 0;
+                }
             });
-        }
-
-        function renderTrinkets(trinkets) {
-            const container = document.getElementById('trinkets');
-            container.innerHTML = '';
-            let sortedTrinkets = trinkets;
-            if (sortModeTrinkets === "id") {
-                sortedTrinkets = sortTrinketsById(trinkets);
-            } else if (sortModeTrinkets === "color") {
-                sortedTrinkets = sortTrinketsByColor(trinkets);
-            }
-            sortedTrinkets.forEach(trinket => {
-                if (!trinket.trinketId) return;
-                const img = createImg(
-                    `${baseUrl}All_Trinkets/trinket_${trinket.trinketId}.png`,
-                    trinket.name,
-                    () => showTrinketModal(trinket)
-                );
-                let wrap = document.createElement('div');
-                wrap.className = 'img-wrap';
-                wrap.appendChild(img);
-                container.appendChild(wrap);
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                if (e.target.value.trim().toLowerCase() === 'chucurrucu') {
+                    alert('Te quiero mucho Tania 💜');
+                }
+                if (e.target.value.trim().toLowerCase() === 'blondigo') {
+                    alert('🐈 El blondigo estuvo aquí 🐈');
+                }
+                if (e.target.value.trim().toLowerCase() === 'carbonaro') {
+                    alert('🐈 Si, el carbonaro también 🐈');
+                }
+                if (e.target.value.trim().toLowerCase() === 'plim') {
+                    alert('PLIM PLIM PLOOOOOOOM');
+                }
+                if (e.target.value.trim().toLowerCase() === 'ellandecito') {
+                    alert('Un besito?');
+                }
             });
-        }
-
-        // Botones de ordenamiento para items
-        document.getElementById('sort-id-btn').onclick = function() {
-            const idBtn = document.getElementById('sort-id-btn');
-            const colorBtn = document.getElementById('sort-color-btn');
-            
-            if (sortMode === "id") {
-                // Si ya está en modo ID, desactivar
-                sortMode = "default";
-                idBtn.classList.remove('active');
-            } else {
-                // Activar modo ID y desactivar color
-                sortMode = "id";
-                idBtn.classList.add('active');
-                colorBtn.classList.remove('active');
-            }
-            renderByFilters();
-        };
-
-        document.getElementById('sort-color-btn').onclick = function() {
-            const idBtn = document.getElementById('sort-id-btn');
-            const colorBtn = document.getElementById('sort-color-btn');
-            
-            if (sortMode === "color") {
-                // Si ya está en modo color, desactivar
-                sortMode = "default";
-                colorBtn.classList.remove('active');
-            } else {
-                // Activar modo color y desactivar ID
-                sortMode = "color";
-                colorBtn.classList.add('active');
-                idBtn.classList.remove('active');
-            }
-            renderByFilters();
-        };
-
-        // Botones de ordenamiento para trinkets
-        document.getElementById('sort-id-trinkets-btn').onclick = function() {
-            const idBtn = document.getElementById('sort-id-trinkets-btn');
-            const colorBtn = document.getElementById('sort-color-trinkets-btn');
-            
-            if (sortModeTrinkets === "id") {
-                // Si ya está en modo ID, desactivar
-                sortModeTrinkets = "default";
-                idBtn.classList.remove('active');
-            } else {
-                // Activar modo ID y desactivar color
-                sortModeTrinkets = "id";
-                idBtn.classList.add('active');
-                colorBtn.classList.remove('active');
-            }
-            renderByFilters();
-        };
-
-        document.getElementById('sort-color-trinkets-btn').onclick = function() {
-            const idBtn = document.getElementById('sort-id-trinkets-btn');
-            const colorBtn = document.getElementById('sort-color-trinkets-btn');
-            
-            if (sortModeTrinkets === "color") {
-                // Si ya está en modo color, desactivar
-                sortModeTrinkets = "default";
-                colorBtn.classList.remove('active');
-            } else {
-                // Activar modo color y desactivar ID
-                sortModeTrinkets = "color";
-                colorBtn.classList.add('active');
-                idBtn.classList.remove('active');
-            }
-            renderByFilters();
-        };
-
-        // Toggle de idioma
-        document.getElementById('lang-toggle').addEventListener('click', function() {
-            language = (language === 'es') ? 'en' : 'es';
-            this.src = `https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/languages_${language}.png`;
-            document.getElementById('search-bar').placeholder =
-                (language === 'es') ? 'Nombre, habitación, etc...' : 'Name, room, etc...';
-            loadAllData();
-        });
-
-        // Soporte para navegación con teclado
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                // Cerrar cualquier modal que esté abierto
-                if (itemModal.style.display === 'flex') itemModal.style.display = 'none';
-                if (trinketModal.style.display === 'flex') trinketModal.style.display = 'none';
-                if (cardModal.style.display === 'flex') cardModal.style.display = 'none';
-                if (document.getElementById('info-modal_es').style.display === 'flex') document.getElementById('info-modal_es').style.display = 'none';
-                if (document.getElementById('info-modal_en').style.display === 'flex') document.getElementById('info-modal_en').style.display = 'none';
-                return;
-            }
-
-            if (itemModal.style.display === 'flex') {
-                const currentImg = document.querySelector('#modal-content-item img[style*="width:100px"]');
-                const currentName = currentImg.alt;
-                const currentIndex = allItems.findIndex(i => i.name === currentName);
-                if (e.key === 'ArrowLeft' && currentIndex > 0) {
-                    showItemModal(allItems[currentIndex - 1]);
-                } else if (e.key === 'ArrowRight' && currentIndex < allItems.length - 1) {
-                    showItemModal(allItems[currentIndex + 1]);
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                const val = e.target.value.trim().toLowerCase();
+                const html = document.documentElement;
+                const items = document.querySelectorAll('.img-grid img');
+                if (val === 'rainbow') {
+                    html.classList.add('rainbow-effect');
+                    items.forEach(img => img.classList.add('rainbow-effect'));
+                } else {
+                    html.classList.remove('rainbow-effect');
+                    items.forEach(img => img.classList.remove('rainbow-effect'));
                 }
-            } else if (trinketModal.style.display === 'flex') {
-                const currentImg = document.querySelector('#modal-content-trinket img[style*="width:100px"]');
-                const currentName = currentImg.alt;
-                const currentIndex = allTrinkets.findIndex(t => t.name === currentName);
-                if (e.key === 'ArrowLeft' && currentIndex > 0) {
-                    showTrinketModal(allTrinkets[currentIndex - 1]);
-                } else if (e.key === 'ArrowRight' && currentIndex < allTrinkets.length - 1) {
-                    showTrinketModal(allTrinkets[currentIndex + 1]);
+            });
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                const val = e.target.value.trim().toLowerCase();
+                document.querySelectorAll('.guppy-fly').forEach(el => el.remove());
+                if (val === 'guppy') {
+                    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+                    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+                    const isMobile = vw < 700;
+                    // Ajusta cantidad y tamaño según pantalla
+                    const numFlies = 100;
+                    const flyWidth = isMobile ? 50 : 60;
+                    const flyHeight = isMobile ? 40 : 50;
+                    const spread = 300 + Math.random() * 300;
+                    const cloudCenter = Math.floor(vh / 2);
+                    const duration = isMobile ? 2 : 4;
+                    for (let i = 0; i < numFlies; i++) {
+                        const fly = document.createElement('img');
+                        fly.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca.png';
+                        fly.className = 'guppy-fly';
+                        fly.style.position = 'fixed';
+                        fly.style.left = '-80px';
+                        fly.style.top = (cloudCenter + Math.random() * spread - spread / 2) + 'px';
+                        fly.style.width = flyWidth + 'px';
+                        fly.style.height = flyHeight + 'px';
+                        fly.style.zIndex = '9999';
+                        fly.style.pointerEvents = 'none';
+                        fly.style.opacity = '1';
+                        fly.style.transition = `left ${duration}s linear`;
+                        document.body.appendChild(fly);
+                        // Delay aleatorio entre 0 y 1.5 segundos
+                        const delay = Math.random() * (isMobile ? 1000 : 2000);
+                        setTimeout(() => {
+                            fly.style.left = '110vw';
+                        }, 100 + delay);
+
+                        // Animación de cambio de imagen rápido con intervalo aleatorio
+                        let frame = 0;
+                        const frames = [
+                            'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca.png',
+                            'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca2.png'
+                        ];
+                        const intervalTime = 20 + Math.random() * 80;
+                        const interval = setInterval(() => {
+                            fly.src = frames[frame % 2];
+                            frame++;
+                        }, intervalTime);
+
+                        setTimeout(() => {
+                            clearInterval(interval);
+                            fly.remove();
+                        }, duration * 1000 + delay + 800);
+                    }
                 }
-            } else if (cardModal.style.display === 'flex') {
-                const currentImg = document.querySelector('#modal-content-card img[style*="width:100px"]');
-                const currentName = currentImg.alt;
-                const currentIndex = allCards.findIndex(c => c.name === currentName);
-                if (e.key === 'ArrowLeft' && currentIndex > 0) {
-                    showCardModal(allCards[currentIndex - 1]);
-                } else if (e.key === 'ArrowRight' && currentIndex < allCards.length - 1) {
-                    showCardModal(allCards[currentIndex + 1]);
-                }
-            }
-        });
-        
-        let tapCount = 0;
-        let lastTapTime = 0;
-        document.documentElement.addEventListener('click', function(e) {
-            // Evita que cuente clics dentro de modals o grids
-            if (
-                e.target.closest('.modal') ||
-                e.target.closest('.img-grid') ||
-                e.target.closest('.filter-bar') ||
-                e.target.closest('.search-bar-content')
-            ) return;
+            });
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                const val = e.target.value.trim().toLowerCase();
 
-            const now = Date.now();
-            if (now - lastTapTime < 500) {
-                tapCount++;
-            } else {
-                tapCount = 1;
-            }
-            lastTapTime = now;
-            if (tapCount === 3) {
-                const isUp2 = Math.random() < 0.01;
-                const catSrc = isUp2
-                    ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up2.png'
-                    : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up.png';
-                const cat = document.createElement('img');
-                cat.src = catSrc;
-                cat.className = 'blondigo-cat';
-                cat.style.position = 'fixed';
-                cat.style.left = '-120px';
-                const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-                cat.style.top = Math.floor(Math.random() * (vh - 120)) + 'px';
-                cat.style.width = '100px';
-                cat.style.height = '100px';
-                cat.style.zIndex = '9999';
-                cat.style.pointerEvents = 'none';
-                cat.style.opacity = '0';
-                cat.style.transition = 'opacity 0.3s, left 3s linear';
-                document.body.appendChild(cat);
-                setTimeout(() => { cat.style.opacity = '1'; cat.style.left = '110vw'; }, 100);
-                setTimeout(() => { cat.remove(); }, 3200);
-                tapCount = 0;
-            }
-        });
-        document.getElementById('search-bar').addEventListener('input', function(e) {
-            if (e.target.value.trim().toLowerCase() === 'chucurrucu') {
-                alert('Te quiero mucho Tania 💜');
-            }
-            if (e.target.value.trim().toLowerCase() === 'blondigo') {
-                alert('🐈 El blondigo estuvo aquí 🐈');
-            }            
-            if (e.target.value.trim().toLowerCase() === 'carbonaro') {
-                alert('🐈 Si, el carbonaro también 🐈');
-            }
-            if (e.target.value.trim().toLowerCase() === 'plim') {
-                alert('PLIM PLIM PLOOOOOOOM');
-            }    
-            if (e.target.value.trim().toLowerCase() === 'ellandecito') {
-                alert('Un besito?');
-            }
-        });
-        document.getElementById('search-bar').addEventListener('input', function(e) {
-            const val = e.target.value.trim().toLowerCase();
-            const html = document.documentElement;
-            const items = document.querySelectorAll('.img-grid img');
-            if (val === 'rainbow') {
-                html.classList.add('rainbow-effect');
-                items.forEach(img => img.classList.add('rainbow-effect'));
-            } else {
-                html.classList.remove('rainbow-effect');
-                items.forEach(img => img.classList.remove('rainbow-effect'));
-            }
-        });
-        document.getElementById('search-bar').addEventListener('input', function(e) {
-            const val = e.target.value.trim().toLowerCase();
-            document.querySelectorAll('.guppy-fly').forEach(el => el.remove());
-            if (val === 'guppy') {
-                const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-                const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-                const isMobile = vw < 700;
-                // Ajusta cantidad y tamaño según pantalla
-                const numFlies = 100;
-                const flyWidth = isMobile ? 50 : 60;
-                const flyHeight = isMobile ? 40 : 50;
-                const spread = 300 + Math.random() * 300;
-                const cloudCenter = Math.floor(vh / 2);
-                const duration = isMobile ? 2 : 4;
-                for (let i = 0; i < numFlies; i++) {
-                    const fly = document.createElement('img');
-                    fly.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca.png';
-                    fly.className = 'guppy-fly';
-                    fly.style.position = 'fixed';
-                    fly.style.left = '-80px';
-                    fly.style.top = (cloudCenter + Math.random() * spread - spread/2) + 'px';
-                    fly.style.width = flyWidth + 'px';
-                    fly.style.height = flyHeight + 'px';
-                    fly.style.zIndex = '9999';
-                    fly.style.pointerEvents = 'none';
-                    fly.style.opacity = '1';
-                    fly.style.transition = `left ${duration}s linear`;
-                    document.body.appendChild(fly);
-                    // Delay aleatorio entre 0 y 1.5 segundos
-                    const delay = Math.random() * (isMobile ? 1000 : 2000);
-                    setTimeout(() => {
-                        fly.style.left = '110vw';
-                    }, 100 + delay);
+                // Eliminar láser existente
+                document.querySelectorAll('.brimstone-laser').forEach(el => el.remove());
 
-                    // Animación de cambio de imagen rápido con intervalo aleatorio
-                    let frame = 0;
-                    const frames = [
-                        'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca.png',
-                        'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/mosca2.png'
-                    ];
-                    const intervalTime = 20 + Math.random() * 80;
-                    const interval = setInterval(() => {
-                        fly.src = frames[frame % 2];
-                        frame++;
-                    }, intervalTime);
+                if (val === 'brimstone') {
+                    // Encontrar el elemento Brimstone en la página
+                    const brimstoneImg = document.querySelector(`img[src$="item_118.png"]`);
+                    if (!brimstoneImg) return;
 
-                    setTimeout(() => {
-                        clearInterval(interval);
-                        fly.remove();
-                    }, duration * 1000 + delay + 800);
-                }
-            }
-        });
-        document.getElementById('search-bar').addEventListener('input', function(e) {
-            const val = e.target.value.trim().toLowerCase();
-            
-            // Eliminar láser existente
-            document.querySelectorAll('.brimstone-laser').forEach(el => el.remove());
-            
-            if (val === 'brimstone') {
-                // Encontrar el elemento Brimstone en la página
-                const brimstoneImg = document.querySelector(`img[src$="item_118.png"]`);
-                if (!brimstoneImg) return;
+                    // Obtener la posición del item
+                    const rect = brimstoneImg.getBoundingClientRect();
+                    const startX = rect.left + (rect.width / 2);
+                    const startY = rect.top + (rect.height / 1);
 
-                // Obtener la posición del item
-                const rect = brimstoneImg.getBoundingClientRect();
-                const startX = rect.left + (rect.width / 2);
-                const startY = rect.top + (rect.height / 1);
-
-                const laser = document.createElement('div');
-                laser.className = 'brimstone-laser';
-                laser.style.position = 'fixed';
-                laser.style.top = startY + 'px';
-                laser.style.left = startX + 'px';
-                laser.style.transformOrigin = 'top center';
-                laser.style.transform = 'translateX(-50%)';
-                laser.style.width = '40px';
-                laser.style.height = '200vh';
-                laser.style.background = 'repeating-linear-gradient(45deg, #ff0000, #ff0000 10px, #a10000 10px, #a10000 20px)';
-                laser.style.backgroundSize = '28px 28px';
-                laser.style.animation = 'laserFlow 0.8s linear infinite';
-                laser.style.boxShadow = '0 0 20px #ff0000';
-                laser.style.zIndex = '9999';
-                laser.style.borderRadius = '20px 20px 0 0'; // Bordes redondeados arriba
+                    const laser = document.createElement('div');
+                    laser.className = 'brimstone-laser';
+                    laser.style.position = 'fixed';
+                    laser.style.top = startY + 'px';
+                    laser.style.left = startX + 'px';
+                    laser.style.transformOrigin = 'top center';
+                    laser.style.transform = 'translateX(-50%)';
+                    laser.style.width = '40px';
+                    laser.style.height = '200vh';
+                    laser.style.background = 'repeating-linear-gradient(45deg, #ff0000, #ff0000 10px, #a10000 10px, #a10000 20px)';
+                    laser.style.backgroundSize = '28px 28px';
+                    laser.style.animation = 'laserFlow 0.8s linear infinite';
+                    laser.style.boxShadow = '0 0 20px #ff0000';
+                    laser.style.zIndex = '9999';
+                    laser.style.borderRadius = '20px 20px 0 0'; // Bordes redondeados arriba
 
 
-                // Actualiza las animaciones keyframes
-                const style = document.createElement('style');
-                style.textContent = `
+                    // Actualiza las animaciones keyframes
+                    const style = document.createElement('style');
+                    style.textContent = `
                     @keyframes laserFlow {
                         0% { background-position: 0 0; }
                         100% { background-position: 0 300px; }
@@ -1393,48 +1562,48 @@
                         75% { transform: translateX(-50%) rotate(-0.3deg); }
                     }
                 `;
-                document.head.appendChild(style);
-                
-                document.body.appendChild(laser);
+                    document.head.appendChild(style);
 
-                // Añadir shake
-                setTimeout(() => {
-                    laser.style.animation = 'laserFlow 0.8s linear infinite, laserShake 0.05s linear infinite';
-                }, 100);
+                    document.body.appendChild(laser);
 
-                // Animación de desaparición
-                setTimeout(() => {
-                    laser.style.transition = 'width 400ms ease-in, opacity 400ms ease-in';
-                    laser.style.width = '0px';
-                    laser.style.opacity = '0';
-                    brimstoneImg.style.filter = ''; // Quitar el brillo
-                    
+                    // Añadir shake
                     setTimeout(() => {
-                        laser.remove();
-                        style.remove();
-                    }, 400);
-                }, 3500);
-            }
-        });
-        document.getElementById('search-bar').addEventListener('input', function(e) {
-            const val = e.target.value.trim().toLowerCase();
-            
-            // Limpiar efectos infernales previos
-            document.querySelectorAll('.brimstone-effect').forEach(el => el.remove());
-            
-            if (val === 'brimstone') {
-                // Encontrar el item Brimstone en la página
-                const brimstoneImg = document.querySelector(`img[src$="item_118.png"]`);
-                if (!brimstoneImg) return;
+                        laser.style.animation = 'laserFlow 0.8s linear infinite, laserShake 0.05s linear infinite';
+                    }, 100);
 
-                // Añadir brillo al item
-                brimstoneImg.style.transition = 'filter 0.3s';
-                brimstoneImg.style.filter = 'brightness(5) drop-shadow(0 0 10px #ff0000) drop-shadow(0 0 20px #ff0000) drop-shadow(0 0 30px #ff0000)';
+                    // Animación de desaparición
+                    setTimeout(() => {
+                        laser.style.transition = 'width 400ms ease-in, opacity 400ms ease-in';
+                        laser.style.width = '0px';
+                        laser.style.opacity = '0';
+                        brimstoneImg.style.filter = ''; // Quitar el brillo
 
-                // Crear efecto infernal
-                const hell = document.createElement('div');
-                hell.className = 'brimstone-effect';
-                hell.style.cssText = `
+                        setTimeout(() => {
+                            laser.remove();
+                            style.remove();
+                        }, 400);
+                    }, 3500);
+                }
+            });
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                const val = e.target.value.trim().toLowerCase();
+
+                // Limpiar efectos infernales previos
+                document.querySelectorAll('.brimstone-effect').forEach(el => el.remove());
+
+                if (val === 'brimstone') {
+                    // Encontrar el item Brimstone en la página
+                    const brimstoneImg = document.querySelector(`img[src$="item_118.png"]`);
+                    if (!brimstoneImg) return;
+
+                    // Añadir brillo al item
+                    brimstoneImg.style.transition = 'filter 0.3s';
+                    brimstoneImg.style.filter = 'brightness(5) drop-shadow(0 0 10px #ff0000) drop-shadow(0 0 20px #ff0000) drop-shadow(0 0 30px #ff0000)';
+
+                    // Crear efecto infernal
+                    const hell = document.createElement('div');
+                    hell.className = 'brimstone-effect';
+                    hell.style.cssText = `
                     position: fixed;
                     top: 0;
                     left: 0;
@@ -1447,10 +1616,10 @@
                     transition: opacity 1s;
                 `;
 
-                // Crear partículas de fuego
-                for (let i = 0; i < 30; i++) {
-                    const ember = document.createElement('div');
-                    ember.style.cssText = `
+                    // Crear partículas de fuego
+                    for (let i = 0; i < 30; i++) {
+                        const ember = document.createElement('div');
+                        ember.style.cssText = `
                         position: absolute;
                         width: 5px;
                         height: 5px;
@@ -1458,14 +1627,14 @@
                         border-radius: 50%;
                         animation: ember ${1 + Math.random() * 1}s infinite;
                     `;
-                    ember.style.left = Math.random() * 100 + 'vw';
-                    ember.style.bottom = -10 + 'px';
-                    hell.appendChild(ember);
-                }
+                        ember.style.left = Math.random() * 100 + 'vw';
+                        ember.style.bottom = -10 + 'px';
+                        hell.appendChild(ember);
+                    }
 
-                // Añadir keyframes para las partículas
-                const style = document.createElement('style');
-                style.textContent = `
+                    // Añadir keyframes para las partículas
+                    const style = document.createElement('style');
+                    style.textContent = `
                     @keyframes ember {
                         0% { 
                             transform: translateY(0) scale(1);
@@ -1477,42 +1646,40 @@
                         }
                     }
                 `;
-                document.head.appendChild(style);
+                    document.head.appendChild(style);
 
-                document.body.appendChild(hell);
-                requestAnimationFrame(() => hell.style.opacity = '1');
+                    document.body.appendChild(hell);
+                    requestAnimationFrame(() => hell.style.opacity = '1');
 
-                // Limpiar efecto después de que termine el láser
-                setTimeout(() => {
-                    hell.style.opacity = '0';
+                    // Limpiar efecto después de que termine el láser
                     setTimeout(() => {
-                        hell.remove();
-                        style.remove();
-                    }, 1000);
-                }, 3500);
-            }
-        });
+                        hell.style.opacity = '0';
+                        setTimeout(() => {
+                            hell.remove();
+                            style.remove();
+                        }, 1000);
+                    }, 3500);
+                }
+            });            
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                const val = e.target.value.trim().toLowerCase();
 
-        ////////////////////////////////////////////////////////
-        document.getElementById('search-bar').addEventListener('input', function(e) {
-            const val = e.target.value.trim().toLowerCase();
-            
-            // Limpiar efectos lunares previos
-            document.querySelectorAll('.luna-effect').forEach(el => el.remove());
-            
-            if (val === 'luna') {
-                // Encontrar el item Luna en la página
-                const lunaImg = document.querySelector(`img[src$="item_589.png"]`);
-                if (!lunaImg) return;
+                // Limpiar efectos lunares previos
+                document.querySelectorAll('.luna-effect').forEach(el => el.remove());
 
-                // Añadir brillo al item
-                lunaImg.style.transition = 'filter 0.3s';
-                lunaImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 30px #4169E1)';
+                if (val === 'luna') {
+                    // Encontrar el item Luna en la página
+                    const lunaImg = document.querySelector(`img[src$="item_589.png"]`);
+                    if (!lunaImg) return;
 
-                // Crear efecto de luna
-                const luna = document.createElement('div');
-                luna.className = 'luna-effect';
-                luna.style.cssText = `
+                    // Añadir brillo al item
+                    lunaImg.style.transition = 'filter 0.3s';
+                    lunaImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 30px #4169E1)';
+
+                    // Crear efecto de luna
+                    const luna = document.createElement('div');
+                    luna.className = 'luna-effect';
+                    luna.style.cssText = `
                     position: fixed;
                     top: 0;
                     left: 0;
@@ -1525,10 +1692,10 @@
                     transition: opacity 1s;
                 `;
 
-                // Crear estrellas
-                for (let i = 0; i < 50; i++) {
-                    const star = document.createElement('div');
-                    star.style.cssText = `
+                    // Crear estrellas
+                    for (let i = 0; i < 50; i++) {
+                        const star = document.createElement('div');
+                        star.style.cssText = `
                         position: absolute;
                         width: 2px;
                         height: 2px;
@@ -1536,54 +1703,54 @@
                         border-radius: 50%;
                         animation: twinkle ${1 + Math.random() * 2}s infinite alternate;
                     `;
-                    star.style.left = Math.random() * 100 + 'vw';
-                    star.style.top = Math.random() * 100 + 'vh';
-                    luna.appendChild(star);
-                }
+                        star.style.left = Math.random() * 100 + 'vw';
+                        star.style.top = Math.random() * 100 + 'vh';
+                        luna.appendChild(star);
+                    }
 
-                // Añadir keyframes para el parpadeo de estrellas
-                const style = document.createElement('style');
-                style.textContent = `
+                    // Añadir keyframes para el parpadeo de estrellas
+                    const style = document.createElement('style');
+                    style.textContent = `
                     @keyframes twinkle {
                         0% { opacity: 0.2; }
                         100% { opacity: 1; transform: scale(1.5); }
                     }
                 `;
-                document.head.appendChild(style);
+                    document.head.appendChild(style);
 
-                document.body.appendChild(luna);
-                requestAnimationFrame(() => luna.style.opacity = '1');
+                    document.body.appendChild(luna);
+                    requestAnimationFrame(() => luna.style.opacity = '1');
 
-                // Limpiar efecto después de 3.5 segundos
-                setTimeout(() => {
-                    luna.style.opacity = '0';
-                    lunaImg.style.filter = '';
+                    // Limpiar efecto después de 3.5 segundos
                     setTimeout(() => {
-                        luna.remove();
-                        style.remove();
-                    }, 1000);
-                }, 3500);
-            }
-        });
-        document.getElementById('search-bar').addEventListener('input', function(e) {
-            const val = e.target.value.trim().toLowerCase();
-            
-            // Limpiar efectos previos
-            document.querySelectorAll('.milk-effect').forEach(el => el.remove());
-            
-            if (val === 'soy milk') {
-                // Encontrar Soy Milk en la página
-                const milkImg = document.querySelector(`img[src$="item_330.png"]`);
-                if (!milkImg) return;
+                        luna.style.opacity = '0';
+                        lunaImg.style.filter = '';
+                        setTimeout(() => {
+                            luna.remove();
+                            style.remove();
+                        }, 1000);
+                    }, 3500);
+                }
+            });
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                const val = e.target.value.trim().toLowerCase();
 
-                // Brillo al item
-                milkImg.style.transition = 'filter 0.3s';
-                milkImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #fff8dc) drop-shadow(0 0 30px #ffeb3b)';
+                // Limpiar efectos previos
+                document.querySelectorAll('.milk-effect').forEach(el => el.remove());
 
-                // Crear efecto ambiente
-                const milk = document.createElement('div');
-                milk.className = 'milk-effect';
-                milk.style.cssText = `
+                if (val === 'soy milk') {
+                    // Encontrar Soy Milk en la página
+                    const milkImg = document.querySelector(`img[src$="item_330.png"]`);
+                    if (!milkImg) return;
+
+                    // Brillo al item
+                    milkImg.style.transition = 'filter 0.3s';
+                    milkImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #fff8dc) drop-shadow(0 0 30px #ffeb3b)';
+
+                    // Crear efecto ambiente
+                    const milk = document.createElement('div');
+                    milk.className = 'milk-effect';
+                    milk.style.cssText = `
                     position: fixed;
                     top: 0;
                     left: 0;
@@ -1596,10 +1763,10 @@
                     transition: opacity 1s;
                 `;
 
-                // Crear gotas grandes
-                for (let i = 0; i < 20; i++) {
-                    const drop = document.createElement('div');
-                    drop.style.cssText = `
+                    // Crear gotas grandes
+                    for (let i = 0; i < 20; i++) {
+                        const drop = document.createElement('div');
+                        drop.style.cssText = `
                         position: absolute;
                         width: ${12 + Math.random() * 12}px;
                         height: ${26 + Math.random() * 16}px;
@@ -1608,14 +1775,14 @@
                         filter: blur(1px);
                         animation: milkDrop ${1 + Math.random()}s linear infinite;
                     `;
-                    drop.style.left = Math.random() * 100 + 'vw';
-                    drop.style.top = -20 + 'px';
-                    milk.appendChild(drop);
-                }
+                        drop.style.left = Math.random() * 100 + 'vw';
+                        drop.style.top = -20 + 'px';
+                        milk.appendChild(drop);
+                    }
 
-                // Añadir keyframes para las gotas
-                const style = document.createElement('style');
-                style.textContent = `
+                    // Añadir keyframes para las gotas
+                    const style = document.createElement('style');
+                    style.textContent = `
                     @keyframes milkDrop {
                         0% { 
                             transform: translateY(0) scaleY(1);
@@ -1630,41 +1797,41 @@
                         }
                     }
                 `;
-                document.head.appendChild(style);
+                    document.head.appendChild(style);
 
-                document.body.appendChild(milk);
-                requestAnimationFrame(() => milk.style.opacity = '1');
+                    document.body.appendChild(milk);
+                    requestAnimationFrame(() => milk.style.opacity = '1');
 
-                // Limpiar efecto
-                setTimeout(() => {
-                    milk.style.opacity = '0';
-                    milkImg.style.filter = '';
+                    // Limpiar efecto
                     setTimeout(() => {
-                        milk.remove();
-                        style.remove();
-                    }, 1000);
-                }, 3500);
-            }
-        });
-        document.getElementById('search-bar').addEventListener('input', function(e) {
-            const val = e.target.value.trim().toLowerCase();
-            
-            // Limpiar efectos previos
-            document.querySelectorAll('.ipecac-effect').forEach(el => el.remove());
-            
-            if (val === 'ipecac') {
-                // Encontrar Ipecac en la página
-                const ipecacImg = document.querySelector(`img[src$="item_149.png"]`);
-                if (!ipecacImg) return;
+                        milk.style.opacity = '0';
+                        milkImg.style.filter = '';
+                        setTimeout(() => {
+                            milk.remove();
+                            style.remove();
+                        }, 1000);
+                    }, 3500);
+                }
+            });
+            document.getElementById('search-bar').addEventListener('input', function (e) {
+                const val = e.target.value.trim().toLowerCase();
 
-                // Brillo al item
-                ipecacImg.style.transition = 'filter 0.3s';
-                ipecacImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #32CD32) drop-shadow(0 0 30px #00FF00)';
+                // Limpiar efectos previos
+                document.querySelectorAll('.ipecac-effect').forEach(el => el.remove());
 
-                // Crear efecto ambiente tóxico
-                const toxic = document.createElement('div');
-                toxic.className = 'ipecac-effect';
-                toxic.style.cssText = `
+                if (val === 'ipecac') {
+                    // Encontrar Ipecac en la página
+                    const ipecacImg = document.querySelector(`img[src$="item_149.png"]`);
+                    if (!ipecacImg) return;
+
+                    // Brillo al item
+                    ipecacImg.style.transition = 'filter 0.3s';
+                    ipecacImg.style.filter = 'brightness(2.5) drop-shadow(0 0 15px #32CD32) drop-shadow(0 0 30px #00FF00)';
+
+                    // Crear efecto ambiente tóxico
+                    const toxic = document.createElement('div');
+                    toxic.className = 'ipecac-effect';
+                    toxic.style.cssText = `
                     position: fixed;
                     top: 0;
                     left: 0;
@@ -1677,10 +1844,10 @@
                     transition: opacity 1s;
                 `;
 
-                // Crear burbujas tóxicas
-                for (let i = 0; i < 30; i++) {
-                    const bubble = document.createElement('div');
-                    bubble.style.cssText = `
+                    // Crear burbujas tóxicas
+                    for (let i = 0; i < 30; i++) {
+                        const bubble = document.createElement('div');
+                        bubble.style.cssText = `
                         position: absolute;
                         width: ${4 + Math.random() * 8}px;
                         height: ${4 + Math.random() * 8}px;
@@ -1690,15 +1857,15 @@
                         opacity: 0.6;
                         animation: float ${3 + Math.random() * 4}s infinite;
                     `;
-                    bubble.style.left = Math.random() * 100 + 'vw';
-                    bubble.style.top = Math.random() * 100 + 'vh';
-                    toxic.appendChild(bubble);
-                }
+                        bubble.style.left = Math.random() * 100 + 'vw';
+                        bubble.style.top = Math.random() * 100 + 'vh';
+                        toxic.appendChild(bubble);
+                    }
 
-                // Función para crear explosiones
-                function createExplosion() {
-                    const explosion = document.createElement('div');
-                    explosion.style.cssText = `
+                    // Función para crear explosiones
+                    function createExplosion() {
+                        const explosion = document.createElement('div');
+                        explosion.style.cssText = `
                         position: absolute;
                         left: ${Math.random() * 100}vw;
                         top: ${Math.random() * 100}vh;
@@ -1709,13 +1876,13 @@
                         filter: blur(2px);
                         animation: explode 1s ease-out forwards;
                     `;
-                    toxic.appendChild(explosion);
-                    setTimeout(() => explosion.remove(), 1000);
-                }
+                        toxic.appendChild(explosion);
+                        setTimeout(() => explosion.remove(), 1000);
+                    }
 
-                // Añadir keyframes para animaciones
-                const style = document.createElement('style');
-                style.textContent = `
+                    // Añadir keyframes para animaciones
+                    const style = document.createElement('style');
+                    style.textContent = `
                     @keyframes float {
                         0%, 100% { transform: translate(0, 0); }
                         50% { transform: translate(${-20 + Math.random() * 40}px, ${-20 + Math.random() * 40}px); }
@@ -1735,28 +1902,29 @@
                         }
                     }
                 `;
-                document.head.appendChild(style);
+                    document.head.appendChild(style);
 
-                document.body.appendChild(toxic);
-                requestAnimationFrame(() => toxic.style.opacity = '1');
+                    document.body.appendChild(toxic);
+                    requestAnimationFrame(() => toxic.style.opacity = '1');
 
-                // Crear explosiones periódicamente
-                const explosionInterval = setInterval(() => {
-                    createExplosion();
-                }, 500);
+                    // Crear explosiones periódicamente
+                    const explosionInterval = setInterval(() => {
+                        createExplosion();
+                    }, 500);
 
-                // Limpiar efecto
-                setTimeout(() => {
-                    clearInterval(explosionInterval);
-                    toxic.style.opacity = '0';
-                    ipecacImg.style.filter = '';
+                    // Limpiar efecto
                     setTimeout(() => {
-                        toxic.remove();
-                        style.remove();
-                    }, 1000);
-                }, 3500);
-            }
-        });
-    </script>
+                        clearInterval(explosionInterval);
+                        toxic.style.opacity = '0';
+                        ipecacImg.style.filter = '';
+                        setTimeout(() => {
+                            toxic.remove();
+                            style.remove();
+                        }, 1000);
+                    }, 3500);
+                }
+            });
+        </script>
 </body>
+
 </html>
