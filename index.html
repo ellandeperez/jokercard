@@ -540,6 +540,66 @@
             animation: blink .5s ease infinite;
         }
 
+        .loader-fusion {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader-fusion .loader {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .loader-fusion .loader-circular-progress {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            z-index: 3;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader-fusion .loader-percent-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6f604f;
+            font-family: 'Jersey 15', Arial, sans-serif;
+            font-size: 1.2em;
+            pointer-events: none;
+            user-select: none;
+            z-index: 4;
+        }
+
+        #loader-circle-bg {
+            stroke: #222;
+        }
+
+        #loader-circle {
+            transition: stroke-dashoffset 0.4s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+
         @keyframes blink {
 
             0%,
@@ -734,14 +794,15 @@
 <body>
     <div id="loader-bg">
         <div id="loader">
-            <span class="loader"></span>
-            <div class="loader-progress-bar">
-                <div class="loader-progress-bar-inner" id="loader-progress-bar-inner"></div>
+            <div class="loader-fusion">
+                <span class="loader"></span>
+                <div class="loader-circular-progress">
+                    <div id="loader-percent" class="loader-percent-text">0%</div>
+                </div>
             </div>
             <div class="loader-text" id="loader-quote">
                 <span id="loader-phrase"></span>
                 <br>
-                <span id="loader-progress"></span>
             </div>
         </div>
     </div>
@@ -1043,15 +1104,19 @@
                         }, 600);
                     }
                 }
-                const progressBar = document.getElementById('loader-progress-bar-inner');
-                const progressSpan = document.getElementById('loader-progress');
+                const circle = document.getElementById('loader-circle');
+                const percentText = document.getElementById('loader-percent');
+                const circleLength = 2 * Math.PI * 26; // r=26
+
                 images.forEach(src => {
                     const img = new window.Image();
                     img.onload = img.onerror = () => {
                         loaded++;
                         const percent = Math.round((loaded / total) * 100);
-                        if (progressSpan) progressSpan.textContent = `${percent}%`;
-                        if (progressBar) progressBar.style.width = percent + '%';
+                        if (percentText) percentText.textContent = `${percent}%`;
+                        if (circle) {
+                            circle.style.strokeDashoffset = circleLength * (1 - percent / 100);
+                        }
                         if (loaded === total) hideLoader();
                     };
                     img.src = src;
