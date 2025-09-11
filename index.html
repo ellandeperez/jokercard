@@ -483,6 +483,54 @@
             pointer-events: none !important;
         }
 
+        /* Loader styles */
+        #loader-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 200000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s;
+        }
+
+        #loader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .loader-spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #99866e;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loader-text {
+            color: #f6d6b0;
+            font-size: 2em;
+            font-family: 'Jersey 15', Arial, sans-serif;
+            text-align: center;
+        }
+
         @media (max-width: 700px) {
             html {
                 background-color: rgb(19, 12, 9);
@@ -614,6 +662,12 @@
 </head>
 
 <body>
+    <div id="loader-bg">
+        <div id="loader">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Cargando imágenes...</div>
+        </div>
+    </div>
     <div class="content">
         <!-- Search bar -->
         <div class="search-bar-content">
@@ -809,26 +863,74 @@
 
             function preloadAllImages() {
                 const baseUrl = "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/";
+                let images = [];
                 // Items
                 allItems.forEach(item => {
                     if (item.id) {
-                        const img = new Image();
-                        img.src = `${baseUrl}All_Items/item_${item.id}.png`;
+                        images.push(`${baseUrl}All_Items/item_${item.id}.png`);
                     }
                 });
                 // Trinkets
                 allTrinkets.forEach(trinket => {
                     if (trinket.trinketId) {
-                        const img = new Image();
-                        img.src = `${baseUrl}All_Trinkets/trinket_${trinket.trinketId}.png`;
+                        images.push(`${baseUrl}All_Trinkets/trinket_${trinket.trinketId}.png`);
                     }
                 });
                 // Cards
                 allCards.forEach(card => {
                     if (card.cardId) {
-                        const img = new Image();
-                        img.src = `${baseUrl}All_Consumables/card_${card.cardId}.png`;
+                        images.push(`${baseUrl}All_Consumables/card_${card.cardId}.png`);
                     }
+                });
+                // Personajes y extras
+                const characterImgs = [
+                    "isaac.png", "isaac_t.png", "magdalene.png", "magdalene_t.png",
+                    "cain.png", "cain_t.png", "judas.png", "judas_t.png",
+                    "bluebaby.png", "bluebaby_t.png", "eve.png", "eve_t.png",
+                    "samson.png", "samson_t.png", "azazel.png", "azazel_t.png",
+                    "lazarus.png", "lazarus_t.png", "eden.png", "eden_t.png",
+                    "thelost.png", "thelost_t.png", "lilith.png", "lilith_t.png",
+                    "keeper.png", "keeper_t.png", "apollyon.png", "apollyon_t.png",
+                    "theforgotten.png", "theforgotten_t.png", "bethany.png", "bethany_t.png",
+                    "jacobandesau.png", "jacobandesau_t.png", "portal.png", "death.png"
+                ];
+                characterImgs.forEach(img => images.push(baseUrl + 'characters/' + img));
+                // Otros iconos y recursos
+                images.push(
+                    `${baseUrl}icon.png`,
+                    `${baseUrl}icon50.png`,
+                    `${baseUrl}info.png`,
+                    `${baseUrl}languages_es.png`,
+                    `${baseUrl}languages_en.png`,
+                    `${baseUrl}kokomiLogo.png`,
+                    `${baseUrl}cat_up.png`,
+                    `${baseUrl}cat_up2.png`,
+                    `${baseUrl}cat_down.png`,
+                    `${baseUrl}bars/1.png`, `${baseUrl}bars/2.png`, `${baseUrl}bars/3.png`, `${baseUrl}bars/4.png`, `${baseUrl}bars/6.png`, `${baseUrl}bars/12.png`,
+                    `${baseUrl}mosca.png`, `${baseUrl}mosca2.png`,
+                    `${baseUrl}pools/shop_door.png`, `${baseUrl}pools/itemroom_door.png`, `${baseUrl}pools/planetarium_door.png`, `${baseUrl}pools/library_door.png`, `${baseUrl}pools/curseroom_door.png`, `${baseUrl}pools/secretroom_door.png`, `${baseUrl}pools/bossroom_door.png`, `${baseUrl}pools/devilroom_door.png`, `${baseUrl}pools/angelroom_door.png`, `${baseUrl}pools/trinkets.png`, `${baseUrl}pools/consumibles.png`,
+                    `${baseUrl}id.png`, `${baseUrl}color.png`
+                );
+                let loaded = 0;
+                const total = images.length;
+                if (total === 0) {
+                    hideLoader();
+                    return;
+                }
+                function hideLoader() {
+                    const loader = document.getElementById('loader-bg');
+                    if (loader) {
+                        loader.style.opacity = '0';
+                        setTimeout(() => loader.style.display = 'none', 600);
+                    }
+                }
+                images.forEach(src => {
+                    const img = new window.Image();
+                    img.onload = img.onerror = () => {
+                        loaded++;
+                        if (loaded === total) hideLoader();
+                    };
+                    img.src = src;
                 });
             }
 
@@ -2171,7 +2273,6 @@
 
                 requestAnimationFrame(animate);
             });
-            // ...existing code...
 
             document.getElementById('search-bar').addEventListener('input', function (e) {
                 const val = e.target.value.trim().toLowerCase();
@@ -2423,8 +2524,7 @@
                     image.src = baseUrl + img;
                 });
             })();
-
-            // ...existing code...
+            
         </script>
 </body>
 
