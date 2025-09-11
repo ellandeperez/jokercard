@@ -32,6 +32,11 @@
             cursor: url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/hover.cur'), auto !important;
         }
 
+        #loader-quote {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
         img,
         .clear-search,
         button,
@@ -45,7 +50,7 @@
         }
 
         body {
-            font-family: 'Jersey 15';
+            font-family: 'Jersey 15', Arial, sans-serif;
             font-weight: lighter;
             margin: 0;
         }
@@ -88,7 +93,7 @@
         h2 {
             color: rgb(240, 234, 234);
             text-align: center;
-            font-family: 'Jersey 15';
+            font-family: 'Jersey 15', Arial, sans-serif;
             margin: 0 0;
             text-shadow: rgb(18, 13, 13) 5px 5px 0px, rgb(0, 0, 0) 0px 0px 10px;
             font-size: 5em;
@@ -98,7 +103,7 @@
         h3 {
             text-align: center;
             margin: 0;
-            font-family: 'Jersey 15';
+            font-family: 'Jersey 15', Arial, sans-serif;
             font-weight: lighter;
             font-size: 2em;
         }
@@ -505,22 +510,69 @@
             gap: 20px;
         }
 
-        .loader-spinner {
-            border: 8px solid #f3f3f3;
-            border-top: 8px solid #99866e;
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            animation: spin 1s linear infinite;
+        .loader {
+            width: 48px;
+            height: 48px;
+            position: relative;
         }
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
+        .loader::before,
+        .loader::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 80em;
+            height: 80em;
+            background-image:
+                radial-gradient(circle 12px, #f6d6b0 100%, transparent 0);
+            background-position: 18em 0em;
+            background-repeat: no-repeat;
+            font-size: 1px;
+            border-radius: 50%;
+            animation: blast .5s linear infinite;
+        }
+
+        .loader::after {
+            font-size: 1px;
+            background: #f6d6b0;
+            animation: blink .5s ease infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            90%,
+            100% {
+                transform: translate(-50%, -50%) scaleY(1);
+                /* ojo abierto */
+            }
+
+            40%,
+            50%,
+            60% {
+                transform: translate(-50%, -50%) scaleY(0.9);
+                /* ojo cerrado */
+            }
+        }
+
+
+        @keyframes blast {
+
+            0%,
+            20% {
+                font-size: 0.5px;
+            }
+
+            70% {
+                opacity: 1;
+                font-size: 4px;
             }
 
             100% {
-                transform: rotate(360deg);
+                font-size: 6px;
+                opacity: 0;
             }
         }
 
@@ -529,6 +581,24 @@
             font-size: 2em;
             font-family: 'Jersey 15', Arial, sans-serif;
             text-align: center;
+        }
+
+        .loader-progress-bar {
+            width: 150px;
+            height: 20px;
+            background: #222;
+            border-radius: 8px;
+            margin-top: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 8px #000;
+        }
+
+        .loader-progress-bar-inner {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #f6d6b0 0%, #ffe6a0 100%);
+            border-radius: 8px;
+            transition: width 0.5s;
         }
 
         @media (max-width: 700px) {
@@ -664,8 +734,15 @@
 <body>
     <div id="loader-bg">
         <div id="loader">
-            <div class="loader-spinner"></div>
-            <div class="loader-text">Cargando imágenes...</div>
+            <span class="loader"></span>
+            <div class="loader-progress-bar">
+                <div class="loader-progress-bar-inner" id="loader-progress-bar-inner"></div>
+            </div>
+            <div class="loader-text" id="loader-quote">
+                <span id="loader-phrase"></span>
+                <br>
+                <span id="loader-progress"></span>
+            </div>
         </div>
     </div>
     <div class="content">
@@ -808,8 +885,8 @@
     <div id="info-modal_en" class="modal">
         <div class="modal-content" id="modal-content-info">
             <span class="modal-close" id="modal-close-info">&times;</span>
-            <div style="display: flex; align-items: center; justify-content: center, gap: 10px;"><img
-                    src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png">
                 <h3>Joker Card</h3><img
                     src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon50.png">
             </div>
@@ -860,6 +937,46 @@
                 document.getElementById('sort-color-btn').classList.remove('active');
                 document.getElementById('sort-color-trinkets-btn').classList.remove('active');
             }
+
+            const isaacLoadingQuotes = [
+                { text: "Afilando cuchillo de mama...", prob: 10 },
+                { text: "Bebiendo Soy Milk...", prob: 10 },
+                { text: "BLLLARRRRGGG!", prob: 10 },
+                { text: "Rerolleando...", prob: 10 },
+                { text: "Buscando la sala secreta...", prob: 10 },
+                { text: "Cargando Objetos...", prob: 10 },
+                { text: "El primer boss en un minuto...", prob: 5 },
+                { text: "Derrotando a ??????...", prob: 5 },
+                { text: "Ve a por Hush...", prob: 5 },
+                { text: "🐈Blondigo estuvo aquí🐈", prob: 1 },
+                { text: "🐈Carbonaro estuvo aquí🐈", prob: 1 }
+            ];
+
+            function pickWeightedQuote(quotes) {
+                const total = quotes.reduce((sum, q) => sum + q.prob, 0);
+                let r = Math.random() * total;
+                for (const q of quotes) {
+                    if (r < q.prob) return q.text;
+                    r -= q.prob;
+                }
+                return quotes[0].text; // fallback
+            }
+
+            const loaderQuote = document.getElementById('loader-quote');
+            if (loaderQuote) loaderQuote.textContent = pickWeightedQuote(isaacLoadingQuotes);
+
+            // Oculta solo la frase hasta que la fuente esté lista
+            loaderQuote.style.opacity = '0';
+            document.fonts.ready.then(() => {
+                loaderQuote.style.opacity = '1';
+            });
+
+            document.fonts.ready.then(() => {
+                document.getElementById('loader-bg').style.opacity = '1'; // Muestra el loader solo cuando la fuente está lista
+                // Aquí puedes poner la línea que asigna la frase aleatoria si quieres que aparezca justo con la fuente:
+                const loaderQuote = document.getElementById('loader-quote');
+                if (loaderQuote) loaderQuote.textContent = pickWeightedQuote(isaacLoadingQuotes);
+            });
 
             function preloadAllImages() {
                 const baseUrl = "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/";
@@ -920,14 +1037,21 @@
                 function hideLoader() {
                     const loader = document.getElementById('loader-bg');
                     if (loader) {
-                        loader.style.opacity = '0';
-                        setTimeout(() => loader.style.display = 'none', 600);
+                        setTimeout(() => {
+                            loader.style.opacity = '0';
+                            setTimeout(() => loader.style.display = 'none', 600);
+                        }, 600);
                     }
                 }
+                const progressBar = document.getElementById('loader-progress-bar-inner');
+                const progressSpan = document.getElementById('loader-progress');
                 images.forEach(src => {
                     const img = new window.Image();
                     img.onload = img.onerror = () => {
                         loaded++;
+                        const percent = Math.round((loaded / total) * 100);
+                        if (progressSpan) progressSpan.textContent = `${percent}%`;
+                        if (progressBar) progressBar.style.width = percent + '%';
                         if (loaded === total) hideLoader();
                     };
                     img.src = src;
@@ -2524,7 +2648,7 @@
                     image.src = baseUrl + img;
                 });
             })();
-            
+
         </script>
 </body>
 
