@@ -668,7 +668,7 @@
             right: 28px;
             z-index: 2001;
             background: #f6d6b0;
-            border: 4px solid #99866e;
+            border: 4px outset #99866e;
             border-radius: 50%;
             width: 64px;
             height: 64px;
@@ -2777,7 +2777,6 @@
                 startQuiz();
             };
 
-            quizBtn.addEventListener('click', startQuiz);
             quizModalClose.onclick = () => quizModal.style.display = 'none';
             quizModal.onclick = function (e) { if (e.target === quizModal) quizModal.style.display = 'none'; };
 
@@ -2790,32 +2789,77 @@
             function showQuizQuestion() {
                 // Decide aleatoriamente el tipo de pregunta: 0 = imagen->nombre, 1 = nombre->imagen
                 const questionType = Math.random() < 0.5 ? 0 : 1;
-                const correct = allItems[Math.floor(Math.random() * allItems.length)];
+
+                // Construye un pool de objetos posibles: items, trinkets y cartas válidas
+                const validCards = allCards.filter(card =>
+                    card.cardId &&
+                    ![98, 99, 100, 110, 111, 112, 113, 114].includes(Number(card.cardId))
+                );
+                // Añade una propiedad 'kind' para saber el tipo
+                const pool = [
+                    ...allItems.map(item => ({ ...item, kind: 'item' })),
+                    ...allTrinkets.map(trinket => ({ ...trinket, kind: 'trinket' })),
+                    ...validCards.map(card => ({ ...card, kind: 'card' }))
+                ];
+
+                // Elige uno correcto
+                const correct = pool[Math.floor(Math.random() * pool.length)];
+
+                // Elige 3 opciones incorrectas del mismo tipo
+                let sameTypePool = pool.filter(o => o.kind === correct.kind && o.id !== correct.id && o.trinketId !== correct.trinketId && o.cardId !== correct.cardId);
+                // Si hay menos de 3, rellena con otros tipos
                 let options = [correct];
                 while (options.length < 4) {
-                    const candidate = allItems[Math.floor(Math.random() * allItems.length)];
-                    if (!options.some(o => o.id === candidate.id)) options.push(candidate);
+                    let candidate;
+                    if (sameTypePool.length) {
+                        candidate = sameTypePool[Math.floor(Math.random() * sameTypePool.length)];
+                    } else {
+                        candidate = pool[Math.floor(Math.random() * pool.length)];
+                    }
+                    // Evita duplicados
+                    if (!options.some(o =>
+                        (o.kind === 'item' && candidate.kind === 'item' && o.id === candidate.id) ||
+                        (o.kind === 'trinket' && candidate.kind === 'trinket' && o.trinketId === candidate.trinketId) ||
+                        (o.kind === 'card' && candidate.kind === 'card' && o.cardId === candidate.cardId)
+                    )) {
+                        options.push(candidate);
+                    }
                 }
                 options = options.sort(() => Math.random() - 0.5);
 
+                // Helper para obtener nombre e imagen según tipo
+                function getName(obj) {
+                    return obj.name;
+                }
+                function getImg(obj) {
+                    if (obj.kind === 'item') return `${baseUrl}All_Items/item_${obj.id}.png`;
+                    if (obj.kind === 'trinket') return `${baseUrl}All_Trinkets/trinket_${obj.trinketId}.png`;
+                    if (obj.kind === 'card') return `${baseUrl}All_Consumables/card_${obj.cardId}.png`;
+                    return '';
+                }
+
                 let questionHtml = '';
                 if (questionType === 0) {
-                    // Imagen -> Nombre (como antes, pero en grid)
+                    // Imagen -> Nombre
                     questionHtml = `
-            <h3 style="margin-top:0;">¿Cómo se llama este objeto?</h3>
-            <img src="${baseUrl}All_Items/item_${correct.id}.png" alt="Quiz Item" style="width:90px;height:90px;image-rendering:pixelated;object-fit:contain;display:block;margin:0 auto;">
+            <h3 style="margin-top:0;">
+                ¿Cómo se llama este ${correct.kind === 'item' ? 'objeto' : correct.kind === 'trinket' ? 'trinket' : 'consumible'}?
+            </h3>
+            <img src="${getImg(correct)}" alt="Quiz ${correct.kind}" style="width:90px;height:90px;image-rendering:pixelated;object-fit:contain;display:block;margin:0 auto;">
             <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
-                ${options.map(o => `<button class="quiz-option" style="padding:8px 10px;font-size:1.1em;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';">${o.name}</button>`).join('')}
+                ${options.map(o => `<button class="quiz-option" style="padding:8px 10px;font-size:1.1em;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';">${getName(o)}</button>`).join('')}
             </div>
         `;
                 } else {
                     // Nombre -> Imagen
                     questionHtml = `
-            <h3 style="margin-top:0;">¿Cuál es el objeto <span style="color:#614e3c;">"${correct.name}"</span>?</h3>
+            <h3 style="margin-top:0;">
+                ¿Cuál es el ${correct.kind === 'item' ? 'objeto' : correct.kind === 'trinket' ? 'trinket' : 'consumible'} <span style="color:#614e3c;">"${getName(correct)}"</span>?
+            </h3>
             <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
                 ${options.map(o => `
                     <button class="quiz-option" style="padding:8px;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;display:flex;justify-content:center;align-items:center;">
-                        <img src="${baseUrl}All_Items/item_${o.id}.png" alt="${o.name}" style="width:70px;height:70px;image-rendering:pixelated;object-fit:contain;display:block;">
+                        <img src="${getImg(o)}" alt="${getName(o)}" style="width:70px;height:70px;image-rendering:pixelated;object-fit:contain;display:block;">
                     </button>
                 `).join('')}
             </div>
@@ -2823,13 +2867,13 @@
                 }
 
                 quizModalContent.innerHTML = `
-    <span class="modal-close" id="quiz-modal-close">&times;</span>
-    ${questionHtml}
-    <div id="quiz-feedback" style="font-size:1.2em;margin-top:10px;"></div>
-    <div id="quiz-timer-bar" style="height:8px;width:100%;background:#eee;border-radius:5px;overflow:hidden;margin-top:16px;display:none;">
-        <div id="quiz-timer-fill" style="height:100%;width:0%;background:#99866e;transition:width 1s linear;"></div>
-    </div>
-`;
+        <span class="modal-close" id="quiz-modal-close">&times;</span>
+        ${questionHtml}
+        <div id="quiz-feedback" style="font-size:1.2em;margin-top:10px;"></div>
+        <div id="quiz-timer-bar" style="height:8px;width:100%;background:#eee;border-radius:5px;overflow:hidden;margin-top:16px;display:none;">
+            <div id="quiz-timer-fill" style="height:100%;width:0%;background:#99866e;transition:width 1s linear;"></div>
+        </div>
+    `;
 
                 let answered = false;
                 let timer;
@@ -2845,10 +2889,10 @@
                         answered = true;
                         let isCorrect = false;
                         if (questionType === 0) {
-                            isCorrect = btn.textContent === correct.name;
+                            isCorrect = btn.textContent === getName(correct);
                         } else {
                             const img = btn.querySelector('img');
-                            isCorrect = img && img.alt === correct.name;
+                            isCorrect = img && img.alt === getName(correct);
                         }
                         if (isCorrect) {
                             btn.style.background = '#7be07b';
