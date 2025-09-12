@@ -179,6 +179,7 @@
             display: flex;
             justify-content: center;
             margin-bottom: 10px;
+            gap: 10px;
         }
 
         .search-bar {
@@ -219,7 +220,7 @@
         .lang-img {
             padding: 5px;
             margin-top: 5px;
-            margin-left: 10px;
+            margin-left: 20px;
             width: 50px;
             height: 50px;
             cursor: pointer;
@@ -229,7 +230,7 @@
         .info-img {
             padding: 5px;
             margin-top: 5px;
-            margin-right: 10px;
+            margin-right: -5px;
             width: 50px;
             height: 50px;
             cursor: pointer;
@@ -661,6 +662,37 @@
             transition: width 0.5s;
         }
 
+        #floating-quiz-btn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 2001;
+            background: #f6d6b0;
+            border: 4px solid #99866e;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            box-shadow: 0 4px 16px #0008;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
+        #floating-quiz-btn:hover {
+            box-shadow: 0 8px 24px #000a;
+            transform: scale(1.08);
+        }
+
+        #floating-quiz-btn img {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+            image-rendering: pixelated;
+            pointer-events: none;
+        }
+
         @media (max-width: 700px) {
             html {
                 background-color: rgb(19, 12, 9);
@@ -787,6 +819,18 @@
             .modal-next {
                 right: 5px;
             }
+
+            #floating-quiz-btn {
+                width: 48px;
+                height: 48px;
+                right: 12px;
+                bottom: 12px;
+            }
+
+            #floating-quiz-btn img {
+                width: 32px;
+                height: 32px;
+            }
         }
     </style>
 </head>
@@ -805,6 +849,10 @@
                 <br>
             </div>
         </div>
+    </div>
+
+    <div id="floating-quiz-btn" title="Quiz Isaac">
+        <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/quiz.png" alt="Quiz">
     </div>
     <div class="content">
         <!-- Search bar -->
@@ -964,6 +1012,13 @@
             <p>P.S. you'll find out what platinum god is</p>
         </div>
 
+    </div>
+
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content" id="quiz-modal-content" style="text-align:center;">
+            <span class="modal-close" id="quiz-modal-close">&times;</span>
+            <!-- Aquí va la pregunta del quiz -->
+        </div>
         <script>
             clearAllGrids(); // Limpia los grids al inicio
             const baseUrl = "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/";
@@ -2714,7 +2769,127 @@
                 });
             })();
 
+            const quizModal = document.getElementById('quiz-modal');
+            const quizModalContent = document.getElementById('quiz-modal-content');
+            const quizModalClose = document.getElementById('quiz-modal-close');
+            const floatingQuizBtn = document.getElementById('floating-quiz-btn');
+            floatingQuizBtn.onclick = function () {
+                startQuiz();
+            };
+
+            quizBtn.addEventListener('click', startQuiz);
+            quizModalClose.onclick = () => quizModal.style.display = 'none';
+            quizModal.onclick = function (e) { if (e.target === quizModal) quizModal.style.display = 'none'; };
+
+            function startQuiz() {
+                if (!allItems.length) return;
+                showQuizQuestion();
+                quizModal.style.display = 'flex';
+            }
+
+            function showQuizQuestion() {
+                // Decide aleatoriamente el tipo de pregunta: 0 = imagen->nombre, 1 = nombre->imagen
+                const questionType = Math.random() < 0.5 ? 0 : 1;
+                const correct = allItems[Math.floor(Math.random() * allItems.length)];
+                let options = [correct];
+                while (options.length < 4) {
+                    const candidate = allItems[Math.floor(Math.random() * allItems.length)];
+                    if (!options.some(o => o.id === candidate.id)) options.push(candidate);
+                }
+                options = options.sort(() => Math.random() - 0.5);
+
+                let questionHtml = '';
+                if (questionType === 0) {
+                    // Imagen -> Nombre (como antes, pero en grid)
+                    questionHtml = `
+            <h3 style="margin-top:0;">¿Cómo se llama este objeto?</h3>
+            <img src="${baseUrl}All_Items/item_${correct.id}.png" alt="Quiz Item" style="width:90px;height:90px;image-rendering:pixelated;object-fit:contain;display:block;margin:0 auto;">
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
+                ${options.map(o => `<button class="quiz-option" style="padding:8px 10px;font-size:1.1em;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';">${o.name}</button>`).join('')}
+            </div>
+        `;
+                } else {
+                    // Nombre -> Imagen
+                    questionHtml = `
+            <h3 style="margin-top:0;">¿Cuál es el objeto <span style="color:#614e3c;">"${correct.name}"</span>?</h3>
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
+                ${options.map(o => `
+                    <button class="quiz-option" style="padding:8px;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;display:flex;justify-content:center;align-items:center;">
+                        <img src="${baseUrl}All_Items/item_${o.id}.png" alt="${o.name}" style="width:70px;height:70px;image-rendering:pixelated;object-fit:contain;display:block;">
+                    </button>
+                `).join('')}
+            </div>
+        `;
+                }
+
+                quizModalContent.innerHTML = `
+    <span class="modal-close" id="quiz-modal-close">&times;</span>
+    ${questionHtml}
+    <div id="quiz-feedback" style="font-size:1.2em;margin-top:10px;"></div>
+    <div id="quiz-timer-bar" style="height:8px;width:100%;background:#eee;border-radius:5px;overflow:hidden;margin-top:16px;display:none;">
+        <div id="quiz-timer-fill" style="height:100%;width:0%;background:#99866e;transition:width 1s linear;"></div>
+    </div>
+`;
+
+                let answered = false;
+                let timer;
+                const NEXT_DELAY = 1200; // ms
+
+                function nextQuestion() {
+                    showQuizQuestion();
+                }
+
+                document.querySelectorAll('.quiz-option').forEach((btn, idx) => {
+                    btn.onclick = function () {
+                        if (answered) return;
+                        answered = true;
+                        let isCorrect = false;
+                        if (questionType === 0) {
+                            isCorrect = btn.textContent === correct.name;
+                        } else {
+                            const img = btn.querySelector('img');
+                            isCorrect = img && img.alt === correct.name;
+                        }
+                        if (isCorrect) {
+                            btn.style.background = '#7be07b';
+                            btn.style.borderColor = '#3c8c3c';
+                        } else {
+                            btn.style.background = '#e07b7b';
+                            btn.style.borderColor = '#8c3c3c';
+                        }
+                        document.querySelectorAll('.quiz-option').forEach(b => b.disabled = true);
+
+                        // Barra de progreso para siguiente pregunta
+                        const timerBar = document.getElementById('quiz-timer-bar');
+                        const timerFill = document.getElementById('quiz-timer-fill');
+                        timerBar.style.display = '';
+                        timerFill.style.width = '0%';
+                        setTimeout(() => { timerFill.style.width = '100%'; }, 10);
+
+                        timer = setTimeout(nextQuestion, NEXT_DELAY);
+                    };
+                });
+
+                // Permitir pasar con Enter o Espacio tras responder
+                quizModalContent.onkeydown = function (e) {
+                    if (!answered) return;
+                    if (e.key === "Enter" || e.key === " ") {
+                        clearTimeout(timer);
+                        nextQuestion();
+                    }
+                };
+                quizModalContent.tabIndex = 0; // Para que reciba eventos de teclado
+                quizModalContent.focus();
+
+                document.getElementById('quiz-modal-close').onclick = () => {
+                    quizModal.style.display = 'none';
+                    clearTimeout(timer);
+                };
+            }
+
         </script>
+
+
 </body>
 
 </html>
