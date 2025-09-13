@@ -13,7 +13,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Tears up"
+        "pickup": "Tears up",
+        "stat_change": "cdn_up"
     },
     {
         "id": "2",
@@ -31,7 +32,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Triple shot"
+        "pickup": "Triple shot",
+        "stat_change": "cdn_down"
     },
     {
         "id": "3",
@@ -67,7 +69,8 @@
             "Item Room"
         ],
         "pickup": "DMG up",
-        "cat": "up"
+        "cat": "up",
+        "stat_change": "dmg_up"
     },
     {
         "id": "5",
@@ -88,7 +91,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Boomerang tears"
+        "pickup": "Boomerang tears",
+        "stat_change": "dmg_up, shs_up, rg_up, lck_down"
     },
     {
         "id": "6",
@@ -106,7 +110,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Tears up"
+        "pickup": "Tears up",
+        "stat_change": "cdn_up, rg_down"
     },
     {
         "id": "7",
@@ -124,7 +129,8 @@
             "Item Room",
             "Angel Room"
         ],
-        "pickup": "DMG up"
+        "pickup": "DMG up",
+        "stat_change": "dmg_up"
     },
     {
         "id": "8",
@@ -211,7 +217,7 @@
         "name": "Magic Mushroom",
         "description": [
             "+1 HP",
-            "+0.3 daño",
+            "+0.3 Cadencia",
             "x1,5 de daño (No se acumula con los multiplicadores de Cricket's Head / Blood of the Martyr + Book of Belial)",
             "+1,5 alcance",
             "+0.3 Speed",
@@ -230,7 +236,8 @@
             "MushHabitaciones"
         ],
         "pickup": "All stats up!",
-        "cat": "up"
+        "cat": "up",
+        "stat_change": "hp_up, dmg_up, rg_up, cdn_up, sp_up"
     },
     {
         "id": "13",
@@ -251,7 +258,8 @@
             "Demon Beggar",
             "Lust Miniboss"
         ],
-        "pickup": "Poison touch"
+        "pickup": "Poison touch",
+        "stat_change": "sp_up"
     },
     {
         "id": "14",
@@ -272,7 +280,8 @@
             "Boss Room",
             "Demon Beggar"
         ],
-        "pickup": "Speed and range up"
+        "pickup": "Speed and range up",
+        "stat_change": "sp_up, rg_up"
     },
     {
         "id": "15",
@@ -290,7 +299,8 @@
         "item_pool": [
             "Item Room",
             "Gluttony Miniboss"
-        ]
+        ],
+        "pickup": "HP up"
     },
     {
         "id": "16",
@@ -307,7 +317,8 @@
         "item_pool": [
             "Secret Room"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "17",
@@ -412,7 +423,8 @@
             "Challenge Room",
             "Beggar"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "23",
@@ -431,7 +443,8 @@
             "Beggar",
             "Challenge Room"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "24",
@@ -450,7 +463,8 @@
             "Beggar",
             "Challenge Room"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "25",
@@ -469,7 +483,8 @@
             "Challenge Room",
             "Beggar"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "26",
@@ -488,7 +503,8 @@
             "Beggar",
             "Challenge Room"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "27",
@@ -504,7 +520,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "Speed up"
+        "pickup": "Speed up",
+        "stat_change": "sp_up"
     },
     {
         "id": "28",
@@ -521,7 +538,8 @@
             "Boss Room",
             "Gold/Stone Chest"
         ],
-        "pickup": "Speed up"
+        "pickup": "Speed up",
+        "stat_change": "sp_up"
     },
     {
         "id": "29",
@@ -542,7 +560,8 @@
             "Gold/Stone Chest",
             "Mom's Chest"
         ],
-        "pickup": "Range Up"
+        "pickup": "Range Up",
+        "stat_change": "rg_up"
     },
     {
         "id": "30",
@@ -562,7 +581,8 @@
             "Challenge Room",
             "Mom's Chest"
         ],
-        "pickup": "Range up"
+        "pickup": "Range up",
+        "stat_change": "rg_up"
     },
     {
         "id": "31",
@@ -582,7 +602,8 @@
             "Challenge Room",
             "Mom's Chest"
         ],
-        "pickup": "Range up"
+        "pickup": "Range up",
+        "stat_change": "rg_up"
     },
     {
         "id": "32",
@@ -600,7 +621,8 @@
             "Boss Room",
             "Gold/Stone Chest"
         ],
-        "pickup": "Tears up"
+        "pickup": "Tears up",
+        "stat_change": "cdn_up"
     },
     {
         "id": "33",
@@ -649,7 +671,8 @@
         "recharge_time": [
             "3 Habitaciones"
         ],
-        "pickup": "Temporary DMG up"
+        "pickup": "Temporary DMG up",
+        "stat_change": "dmg_up"
     },
     {
         "id": "35",
@@ -892,7 +915,8 @@
             "Item Room",
             "Beggar"
         ],
-        "pickup": "Luck up"
+        "pickup": "Luck up",
+        "stat_change": "lck_up"
     },
     {
         "id": "47",
@@ -968,7 +992,8 @@
         "item_pool": [
             "Steven Boss"
         ],
-        "pickup": "DMG up"
+        "pickup": "DMG up",
+        "stat_change": "dmg_up"
     },
     {
         "id": "51",
@@ -991,7 +1016,8 @@
             "Demon Beggar",
             "Crane Game"
         ],
-        "pickup": "DMG up"
+        "pickup": "DMG up",
+        "stat_change": "dmg_up"
     },
     {
         "id": "52",
@@ -1167,7 +1193,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Kills heal"
+        "pickup": "Kills heal",
+        "stat_change": "dmg_up"
     },
     {
         "id": "63",
@@ -1326,7 +1353,8 @@
             "Boss Room",
             "Demon Beggar"
         ],
-        "pickup": "DMG up + speed up"
+        "pickup": "DMG up + speed up",
+        "stat_change": "dmg_up, sp_up"
     },
     {
         "id": "71",
@@ -1346,14 +1374,15 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Speed + range up"
+        "pickup": "Speed + range up",
+        "stat_change": "sp_up, rg_up"
     },
     {
         "id": "72",
         "name": "Rosary",
         "description": [
             "+3 Corazones de alma",
-            "+0.5 Lágrimas",
+            "+0.5 Cadencia",
             "Agrega varias instancias del elemento La Biblia a todos los tipos de habitaciones",
             "Cuenta como 1 de los 3 elementos de ángel necesarios para la transformación de Serafín."
         ],
@@ -1366,7 +1395,8 @@
             "Item Room",
             "Angel Room"
         ],
-        "pickup": "Faith up"
+        "pickup": "Faith up",
+        "stat_change": "cdn_up"
     },
     {
         "id": "73",
@@ -1512,14 +1542,15 @@
             "Devil Room",
             "Demon Beggar"
         ],
-        "pickup": "DMG up"
+        "pickup": "DMG up",
+        "stat_change": "dmg_up, sp_up"
     },
     {
         "id": "80",
         "name": "The Pact",
         "description": [
             "+0,5 daño",
-            "+0.7 Lágrimas",
+            "+0.7 Cadencia",
             "+2 Corazones Negros",
             "Cuenta como 1 de los 3 elementos malignos necesarios para la transformación de Leviatán."
         ],
@@ -1533,7 +1564,8 @@
             "Curse Room",
             "Demon Beggar"
         ],
-        "pickup": "DMG + tears up"
+        "pickup": "DMG + tears up",
+        "stat_change": "dmg_up, cdn_up"
     },
     {
         "id": "81",
@@ -1575,7 +1607,8 @@
             "Devil Room",
             "Demon Beggar"
         ],
-        "pickup": "Demon wings"
+        "pickup": "Demon wings",
+        "stat_change": "sp_up"
     },
     {
         "id": "83",
@@ -1599,7 +1632,8 @@
         "recharge_time": [
             "6 Habitaciones"
         ],
-        "pickup": "Temporary demon form"
+        "pickup": "Temporary demon form",
+        "stat_change": "dmg_up, sp_down"
     },
     {
         "id": "84",
@@ -1727,7 +1761,7 @@
         "name": "The Small Rock",
         "description": [
             "+1.0 daño",
-            "+0.2 Lágrimas",
+            "+0.2 Cadencia",
             "-0.2 Disminución de velocidad",
             "Tiene la posibilidad de dropear al explotar una tainted rock."
         ],
@@ -1740,7 +1774,8 @@
         "item_pool": [
             "None (Tinted rock only)"
         ],
-        "pickup": "DMG up"
+        "pickup": "DMG up",
+        "stat_change": "dmg_up, cdn_up, shs_down"
     },
     {
         "id": "91",
@@ -1778,7 +1813,8 @@
             "Item Room",
             "Boss Room"
         ],
-        "pickup": "+2 hearts"
+        "pickup": "+2 hearts",
+        "stat_change": "hp_up"
     },
     {
         "id": "93",
@@ -1968,7 +2004,8 @@
             "Item Room",
             "Angel Room"
         ],
-        "pickup": "All stats up"
+        "pickup": "All stats up",
+        "stat_change": "hp_up, dmg_up, cdn_up, rg_up, sp_up"
     },
     {
         "id": "102",
@@ -2133,7 +2170,8 @@
             "Item Room",
             "Devil Room"
         ],
-        "pickup": "$$$ = DMG"
+        "pickup": "$$$ = DMG",
+        "stat_change": "dmg_up"
     },
     {
         "id": "110",
@@ -2156,7 +2194,8 @@
             "Challenge Room",
             "Mom's Chest"
         ],
-        "pickup": "Freeze effect"
+        "pickup": "Freeze effect",
+        "stat_change": "rg_up"
     },
     {
         "id": "111",
@@ -2320,7 +2359,8 @@
         "item_pool": [
             "None (Blood Donation machine only)"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up, sp_up"
     },
     {
         "id": "120",
@@ -2341,7 +2381,8 @@
             "Item Room",
             "Secret Room"
         ],
-        "pickup": "Fire rate up"
+        "pickup": "Fire rate up",
+        "stat_change": "cdn_up, sp_up, dmg_down"
     },
     {
         "id": "121",
@@ -2363,7 +2404,8 @@
             "Item Room",
             "Secret Room"
         ],
-        "pickup": "DMG up"
+        "pickup": "DMG up",
+        "stat_change": "hp_up, dmg_up, rg_up, shs_down"
     },
     {
         "id": "122",
@@ -2383,7 +2425,8 @@
             "Devil Room",
             "Demon Beggar"
         ],
-        "pickup": "Curse up"
+        "pickup": "Curse up",
+        "stat_change": "dmg_up, sp_up"
     },
     {
         "id": "123",
@@ -2516,9 +2559,9 @@
         "id": "129",
         "name": "Bucket of Lard",
         "description": [
-            "+2 Salud aumentada",
-            "-0.2 Disminución de velocidad",
-            "Tiene la posibilidad de caerse de la pelea contra el minijefe Súper Gluttony."
+            "+2 HP",
+            "-0.2 Speed",
+            "Tiene la posibilidad de dropear del minijefe Súper Gluttony."
         ],
         "quality": "1",
         "tags": "* item room, treasure room, item room pool, the lost item pool, white, grey, gray, tub",
@@ -2529,7 +2572,8 @@
             "Item Room",
             "Super Gluttony Miniboss"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up, shs_down"
     },
     {
         "id": "130",
@@ -2587,7 +2631,9 @@
         "item_pool": [
             "None (Krampus only)"
         ],
-        "pickup": "My Xmas present"
+        "pickup": "My Xmas present",
+        "cat": "up",
+        "stat_change": "dmg_up"
     },
     {
         "id": "133",
@@ -2716,7 +2762,8 @@
             "Angel Room"
         ],
         "pickup": "DMG + HP up",
-        "cat": "up2"
+        "cat": "up2",
+        "stat_change": "hp_up, dmg_up"
     },
     {
         "id": "139",
@@ -2813,7 +2860,8 @@
             "Boss Room",
             "Demon Beggar"
         ],
-        "pickup": "Speed + shot speed up"
+        "pickup": "Speed + shot speed up",
+        "stat_change": "sp_up, shs_up"
     },
     {
         "id": "144",
@@ -2880,7 +2928,6 @@
         ],
         "pickup": "Reusable eternity",
         "cat": "up2"
-
     },
     {
         "id": "147",
@@ -2944,7 +2991,8 @@
             "Item Room"
         ],
         "pickup": "Explosive shots",
-        "cat": "up"
+        "cat": "up",
+        "stat_change": "dmg_up, shs_down"
     },
     {
         "id": "150",
@@ -2962,7 +3010,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Tooth shot"
+        "pickup": "Tooth shot",
+        "stat_change": "dmg_up"
     },
     {
         "id": "151",
@@ -3022,7 +3071,8 @@
             "Item Room"
         ],
         "pickup": "Quad Shot",
-        "cat": "up"
+        "cat": "up",
+        "stat_change": "cdn_down"
     },
     {
         "id": "154",
@@ -3039,7 +3089,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "DMG up"
+        "pickup": "DMG up",
+        "stat_change": "dmg_up"
     },
     {
         "id": "155",
@@ -3096,7 +3147,8 @@
             "Item Room",
             "Devil Room"
         ],
-        "pickup": "RAGE!"
+        "pickup": "RAGE!",
+        "stat_change": "dmg_up"
     },
     {
         "id": "158",
@@ -3255,7 +3307,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "Shot speed up + DMG up"
+        "pickup": "Shot speed up + DMG up",
+        "stat_change": "dmg_up, shs_up"
     },
     {
         "id": "166",
@@ -3316,7 +3369,8 @@
         "item_pool": [
             "Secret Room"
         ],
-        "pickup": "On-demand air strike"
+        "pickup": "On-demand air strike",
+        "stat_change": "dmg_up"
     },
     {
         "id": "169",
@@ -3335,7 +3389,8 @@
             "Item Room"
         ],
         "pickup": "Mega tears",
-        "cat": "up"
+        "cat": "up",
+        "stat_change": "dmg_up, cdn_down"
     },
     {
         "id": "170",
@@ -3474,7 +3529,8 @@
             "Item Room",
             "Boss Room"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up, shs_up"
     },
     {
         "id": "177",
@@ -3596,7 +3652,8 @@
             "Angel Room"
         ],
         "pickup": "Homing shots + DMG up",
-        "cat": "up2"
+        "cat": "up2",
+        "stat_change": "hp_up, dmg_up, shs_down, cdn_down"
     },
     {
         "id": "183",
