@@ -2787,47 +2787,51 @@
             }
 
             function showQuizQuestion() {
-                // Decide aleatoriamente el tipo de pregunta: 0 = imagen->nombre, 1 = nombre->imagen
-                const questionType = Math.random() < 0.5 ? 0 : 1;
-
-                // Construye un pool de objetos posibles: items, trinkets y cartas válidas
-                const validCards = allCards.filter(card =>
-                    card.cardId &&
-                    ![98, 99, 100, 110, 111, 112, 113, 114].includes(Number(card.cardId))
-                );
-                // Añade una propiedad 'kind' para saber el tipo
-                const pool = [
-                    ...allItems.map(item => ({ ...item, kind: 'item' })),
-                    ...allTrinkets.map(trinket => ({ ...trinket, kind: 'trinket' })),
-                    ...validCards.map(card => ({ ...card, kind: 'card' }))
+                const NEXT_DELAY = 1200;
+                // --- Configuración pools ---
+                const itemPools = [
+                    { key: "shop", img: `${baseUrl}pools/shop_door.png`, name: "Shop" },
+                    { key: "item room", img: `${baseUrl}pools/itemroom_door.png`, name: "Item Room" },
+                    { key: "planetarium", img: `${baseUrl}pools/planetarium_door.png`, name: "Planetarium" },
+                    { key: "library", img: `${baseUrl}pools/library_door.png`, name: "Library" },
+                    { key: "curse room", img: `${baseUrl}pools/curseroom_door.png`, name: "Curse Room" },
+                    { key: "secret room", img: `${baseUrl}pools/secretroom_door.png`, name: "Secret Room" },
+                    { key: "boss room", img: `${baseUrl}pools/bossroom_door.png`, name: "Boss Room" },
+                    { key: "devil room", img: `${baseUrl}pools/devilroom_door.png`, name: "Devil Room" },
+                    { key: "angel room", img: `${baseUrl}pools/angelroom_door.png`, name: "Angel Room" }
                 ];
-
-                // Elige uno correcto
-                const correct = pool[Math.floor(Math.random() * pool.length)];
-
-                // Elige 3 opciones incorrectas del mismo tipo
-                let sameTypePool = pool.filter(o => o.kind === correct.kind && o.id !== correct.id && o.trinketId !== correct.trinketId && o.cardId !== correct.cardId);
-                // Si hay menos de 3, rellena con otros tipos
-                let options = [correct];
-                while (options.length < 4) {
-                    let candidate;
-                    if (sameTypePool.length) {
-                        candidate = sameTypePool[Math.floor(Math.random() * sameTypePool.length)];
-                    } else {
-                        candidate = pool[Math.floor(Math.random() * pool.length)];
+                function getItemPoolsList(item) {
+                    const poolsList = [];
+                    if (item.pool) poolsList.push(String(item.pool).toLowerCase());
+                    if (item.pools && item.pools.length) {
+                        for (const p of item.pools) if (p) poolsList.push(String(p).toLowerCase());
                     }
-                    // Evita duplicados
-                    if (!options.some(o =>
-                        (o.kind === 'item' && candidate.kind === 'item' && o.id === candidate.id) ||
-                        (o.kind === 'trinket' && candidate.kind === 'trinket' && o.trinketId === candidate.trinketId) ||
-                        (o.kind === 'card' && candidate.kind === 'card' && o.cardId === candidate.cardId)
-                    )) {
-                        options.push(candidate);
+                    if (item.tags) {
+                        const tags = item.tags.toLowerCase();
+                        for (const poolObj of itemPools) {
+                            if (tags.includes(poolObj.key.toLowerCase()) && !poolsList.includes(poolObj.key.toLowerCase())) {
+                                poolsList.push(poolObj.key.toLowerCase());
+                            }
+                        }
                     }
+                    // eliminar duplicados
+                    return [...new Set(poolsList)];
                 }
-                options = options.sort(() => Math.random() - 0.5);
 
-                // Helper para obtener nombre e imagen según tipo
+                // helper: elige un elemento aleatorio de un array
+                function pickRandom(arr) {
+                    return arr[Math.floor(Math.random() * arr.length)];
+                }
+                function getItemPool(item) {
+                    if (item.pool) return item.pool;
+                    if (item.pools && item.pools.length) return item.pools[0];
+                    if (item.tags) {
+                        for (const pool of itemPools) {
+                            if (item.tags.toLowerCase().includes(pool.key)) return pool.key;
+                        }
+                    }
+                    return null;
+                }
                 function getName(obj) {
                     return obj.name;
                 }
@@ -2837,99 +2841,163 @@
                     if (obj.kind === 'card') return `${baseUrl}All_Consumables/card_${obj.cardId}.png`;
                     return '';
                 }
-
+                let questionKind;
                 let questionHtml = '';
-                if (questionType === 0) {
-                    // Imagen -> Nombre
+                let correctIdx = 0;
+                let options = [];
+                let mainImg = '';
+                let mainText = '';
+                const rand = Math.random();
+                if (rand < 0.33) {
+                    questionKind = 'name';
+                    const validCards = allCards.filter(card =>
+                        card.cardId &&
+                        ![98, 99, 100, 110, 111, 112, 113, 114].includes(Number(card.cardId))
+                    );
+                    const pool = [
+                        ...allItems.map(item => ({ ...item, kind: 'item' })),
+                        ...allTrinkets.map(trinket => ({ ...trinket, kind: 'trinket' })),
+                        ...validCards.map(card => ({ ...card, kind: 'card' }))
+                    ];
+                    const correct = pool[Math.floor(Math.random() * pool.length)];
+                    let sameTypePool = pool.filter(o => o.kind === correct.kind && getName(o) !== getName(correct));
+                    options = [correct];
+                    while (options.length < 4) {
+                        let candidate = sameTypePool[Math.floor(Math.random() * sameTypePool.length)];
+                        if (!options.some(o => getName(o) === getName(candidate))) options.push(candidate);
+                    }
+                    options = options.sort(() => Math.random() - 0.5);
+                    correctIdx = options.findIndex(o => getName(o) === getName(correct));
+                    mainImg = `<img src="${getImg(correct)}" style="width:90px;height:90px;image-rendering:pixelated;object-fit:contain;display:block;margin:0 auto;">`;
+                    mainText = `¿Cómo se llama este ${correct.kind === 'item' ? 'objeto' : correct.kind === 'trinket' ? 'trinket' : 'consumible'}?`;
                     questionHtml = `
-            <h3 style="margin-top:0;">
-                ¿Cómo se llama este ${correct.kind === 'item' ? 'objeto' : correct.kind === 'trinket' ? 'trinket' : 'consumible'}?
-            </h3>
-            <img src="${getImg(correct)}" alt="Quiz ${correct.kind}" style="width:90px;height:90px;image-rendering:pixelated;object-fit:contain;display:block;margin:0 auto;">
+            <h3 style="margin-top:0;">${mainText}</h3>
+            ${mainImg}
             <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
-                ${options.map(o => `<button class="quiz-option" style="padding:8px 10px;font-size:1.1em;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';">${getName(o)}</button>`).join('')}
+                ${options.map((o, idx) => `
+                    <button class="quiz-option" style="padding:8px 10px;font-size:1.1em;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';" data-correct="${idx === correctIdx}">
+                        ${getName(o)}
+                    </button>
+                `).join('')}
+            </div>
+        `;
+                } else if (rand < 0.66) {
+                    questionKind = 'image';
+                    const validCards = allCards.filter(card =>
+                        card.cardId &&
+                        ![98, 99, 100, 110, 111, 112, 113, 114].includes(Number(card.cardId))
+                    );
+                    const pool = [
+                        ...allItems.map(item => ({ ...item, kind: 'item' })),
+                        ...allTrinkets.map(trinket => ({ ...trinket, kind: 'trinket' })),
+                        ...validCards.map(card => ({ ...card, kind: 'card' }))
+                    ];
+                    const correct = pool[Math.floor(Math.random() * pool.length)];
+                    let sameTypePool = pool.filter(o => o.kind === correct.kind && getImg(o) !== getImg(correct));
+                    options = [correct];
+                    while (options.length < 4) {
+                        let candidate = sameTypePool[Math.floor(Math.random() * sameTypePool.length)];
+                        if (!options.some(o => getImg(o) === getImg(candidate))) options.push(candidate);
+                    }
+                    options = options.sort(() => Math.random() - 0.5);
+                    correctIdx = options.findIndex(o => getImg(o) === getImg(correct));
+                    mainText = `¿Qué imagen corresponde a <b>${getName(correct)}</b>?`;
+                    questionHtml = `
+            <h3 style="margin-top:0;">${mainText}</h3>
+            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
+                ${options.map((o, idx) => `
+                    <button class="quiz-option" style="padding:8px 10px;font-size:1.1em;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';display:flex;flex-direction:column;align-items:center;" data-correct="${idx === correctIdx}">
+                        <img src="${getImg(o)}" style="width:60px;height:60px;object-fit:contain;image-rendering:pixelated;margin-bottom:4px;">
+                    </button>
+                `).join('')}
             </div>
         `;
                 } else {
-                    // Nombre -> Imagen
+                    questionKind = 'pool';
+                    let item;
+                    let tries = 0;
+                    do {
+                        item = allItems[Math.floor(Math.random() * allItems.length)];
+                        tries++;
+                        if (tries > 200) break;
+                    } while (!getItemPoolsList(item) || getItemPoolsList(item).length === 0);
+
+                    const itemPoolsForThisItem = getItemPoolsList(item);
+                    if (!itemPoolsForThisItem || itemPoolsForThisItem.length === 0) {
+                        // no pool detectada, regenerar
+                        showQuizQuestion();
+                        return;
+                    }
+
+                    // Si el item tiene varias pools, elegimos UNA sola como la respuesta correcta
+                    const correctPoolKey = pickRandom(itemPoolsForThisItem);
+                    // Buscar el objeto pool con ese key (itemPools usa keys en lowercase en la comparación)
+                    const correctPool = itemPools.find(p => p.key.toLowerCase() === correctPoolKey);
+                    if (!correctPool) {
+                        showQuizQuestion();
+                        return;
+                    }
+
+                    // Los distractores deben excluir cualquier pool que pertenezca al item
+                    const distractors = itemPools
+                        .filter(p => !itemPoolsForThisItem.includes(p.key.toLowerCase()) && p.key.toLowerCase() !== correctPoolKey);
+
+                    // tomar hasta 3 distractores aleatorios
+                    const shuffled = distractors.sort(() => 0.5 - Math.random()).slice(0, 3);
+                    options = [correctPool, ...shuffled].sort(() => 0.5 - Math.random());
+                    correctIdx = options.findIndex(p => p.key.toLowerCase() === correctPoolKey);
+
+                    mainImg = `<img src="${baseUrl}All_Items/item_${item.id}.png"  style="width:90px;height:90px;image-rendering:pixelated;object-fit:contain;display:block;margin:0 auto;">`;
+                    mainText = `¿De qué item pool viene este objeto?`;
                     questionHtml = `
-            <h3 style="margin-top:0;">
-                ¿Cuál es el ${correct.kind === 'item' ? 'objeto' : correct.kind === 'trinket' ? 'trinket' : 'consumible'} <span style="color:#614e3c;">"${getName(correct)}"</span>?
-            </h3>
+            <h3 style="margin-top:0;">${mainText}</h3>
+            ${mainImg}
             <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
-                ${options.map(o => `
-                    <button class="quiz-option" style="padding:8px;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;display:flex;justify-content:center;align-items:center;">
-                        <img src="${getImg(o)}" alt="${getName(o)}" style="width:70px;height:70px;image-rendering:pixelated;object-fit:contain;display:block;">
+                ${options.map((pool, idx) => `
+                    <button class="quiz-option" style="padding:8px 10px;font-size:1.1em;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';display:flex;flex-direction:column;align-items:center;" data-correct="${idx === correctIdx}">
+                        <img src="${pool.img}" style="width:90px;height:90px;object-fit:contain;image-rendering:pixelated;margin-bottom:4px;">
                     </button>
                 `).join('')}
             </div>
         `;
                 }
-
                 quizModalContent.innerHTML = `
         <span class="modal-close" id="quiz-modal-close">&times;</span>
         ${questionHtml}
-        <div id="quiz-feedback" style="font-size:1.2em;margin-top:10px;"></div>
-        <div id="quiz-timer-bar" style="height:8px;width:100%;background:#eee;border-radius:5px;overflow:hidden;margin-top:16px;display:none;">
-            <div id="quiz-timer-fill" style="height:100%;width:0%;background:#99866e;transition:width 1s linear;"></div>
+        <div id="quiz-timer-bar" style="height:8px;width:100%;background:#948066;border-radius:5px;overflow:hidden;margin-top:16px;display:none;">
+            <div id="quiz-timer-fill" style="height:100%;width:0%;background:#c49b64;transition:width ${NEXT_DELAY}ms linear;"></div>
         </div>
     `;
-
                 let answered = false;
                 let timer;
-                const NEXT_DELAY = 1200; // ms
-
-                function nextQuestion() {
-                    showQuizQuestion();
-                }
-
                 document.querySelectorAll('.quiz-option').forEach((btn, idx) => {
                     btn.onclick = function () {
                         if (answered) return;
                         answered = true;
-                        let isCorrect = false;
-                        if (questionType === 0) {
-                            isCorrect = btn.textContent === getName(correct);
-                        } else {
-                            const img = btn.querySelector('img');
-                            isCorrect = img && img.alt === getName(correct);
-                        }
-                        if (isCorrect) {
-                            btn.style.background = '#7be07b';
-                            btn.style.borderColor = '#3c8c3c';
-                        } else {
-                            btn.style.background = '#e07b7b';
-                            btn.style.borderColor = '#8c3c3c';
-                        }
-                        document.querySelectorAll('.quiz-option').forEach(b => b.disabled = true);
-
-                        // Barra de progreso para siguiente pregunta
-                        const timerBar = document.getElementById('quiz-timer-bar');
-                        const timerFill = document.getElementById('quiz-timer-fill');
-                        timerBar.style.display = '';
-                        timerFill.style.width = '0%';
-                        setTimeout(() => { timerFill.style.width = '100%'; }, 10);
-
-                        timer = setTimeout(nextQuestion, NEXT_DELAY);
+                        btn.style.background = btn.dataset.correct === "true" ? "#b6e6b0" : "#ffb0b0";
+                        document.getElementById('quiz-timer-bar').style.display = "block";
+                        // Animación visual de la barra de carga
+                        const fill = document.getElementById('quiz-timer-fill');
+                        fill.style.width = "0%";
+                        setTimeout(() => { fill.style.width = "100%"; }, 10);
+                        timer = setTimeout(() => showQuizQuestion(), NEXT_DELAY);
                     };
                 });
-
-                // Permitir pasar con Enter o Espacio tras responder
                 quizModalContent.onkeydown = function (e) {
                     if (!answered) return;
                     if (e.key === "Enter" || e.key === " ") {
                         clearTimeout(timer);
-                        nextQuestion();
+                        showQuizQuestion();
                     }
                 };
-                quizModalContent.tabIndex = 0; // Para que reciba eventos de teclado
+                quizModalContent.tabIndex = 0;
                 quizModalContent.focus();
-
                 document.getElementById('quiz-modal-close').onclick = () => {
                     quizModal.style.display = 'none';
                     clearTimeout(timer);
                 };
             }
+            // ...existing code...
 
         </script>
 
