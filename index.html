@@ -2128,7 +2128,7 @@
                     @keyframes milkDrop {
                         0% { 
                             transform: translateY(0) scaleY(1);
-                            opacity: 0.9;
+                            opacity: 1;
                         }
                         80% {
                             opacity: 0.9;
@@ -2231,8 +2231,13 @@
                     const style = document.createElement('style');
                     style.textContent = `
                     @keyframes float {
-                        0%, 100% { transform: translate(0, 0); }
-                        50% { transform: translate(${-20 + Math.random() * 40}px, ${-20 + Math.random() * 40}px); }
+                        0% { transform: translateY(0) scale(1);
+                            opacity: 1;
+                        }
+                        100% { 
+                            transform: translateY(-${Math.random() * 200 + 100}px) scale(0);
+                            opacity: 0;
+                        }
                     }
                     @keyframes explode {
                         0% { 
@@ -2775,7 +2780,7 @@
             const floatingQuizBtn = document.getElementById('floating-quiz-btn');
             floatingQuizBtn.onclick = function () {
                 startQuiz();
-            };
+            }
 
             quizModalClose.onclick = () => quizModal.style.display = 'none';
             quizModal.onclick = function (e) { if (e.target === quizModal) quizModal.style.display = 'none'; };
@@ -2787,8 +2792,12 @@
             }
 
             function showQuizQuestion() {
+                // Define los tipos de pregunta disponibles
+                const possibleQuestions = ['name', 'image', 'stat1', 'stat2', 'pool'];
+                // Elige uno al azar
+                const questionKind = possibleQuestions[Math.floor(Math.random() * possibleQuestions.length)];
+
                 const NEXT_DELAY = 1200;
-                // --- Configuración pools ---
                 const itemPools = [
                     { key: "shop", img: `${baseUrl}pools/shop_door.png`, name: "Shop" },
                     { key: "item room", img: `${baseUrl}pools/itemroom_door.png`, name: "Item Room" },
@@ -2800,6 +2809,33 @@
                     { key: "devil room", img: `${baseUrl}pools/devilroom_door.png`, name: "Devil Room" },
                     { key: "angel room", img: `${baseUrl}pools/angelroom_door.png`, name: "Angel Room" }
                 ];
+                const statTypes = [
+                    { key: 'hp', label: 'HP' },
+                    { key: 'dmg', label: 'Daño' },
+                    { key: 'cdn', label: 'Cadencia' },
+                    { key: 'shs', label: 'Velocidad de Bala' },
+                    { key: 'lck', label: 'Suerte' },
+                    { key: 'sp', label: 'Velocidad' },
+                    { key: 'rg', label: 'Rango' }
+                ];
+                const upDownTypes = [
+                    { key: 'up', label: 'Sube' },
+                    { key: 'down', label: 'Baja' }
+                ];
+
+                // Helpers
+                function pickRandom(arr) {
+                    return arr[Math.floor(Math.random() * arr.length)];
+                }
+                function getName(obj) {
+                    return obj.name;
+                }
+                function getImg(obj) {
+                    if (obj.kind === 'item') return `${baseUrl}All_Items/item_${obj.id}.png`;
+                    if (obj.kind === 'trinket') return `${baseUrl}All_Trinkets/trinket_${obj.trinketId}.png`;
+                    if (obj.kind === 'card') return `${baseUrl}All_Consumables/card_${obj.cardId}.png`;
+                    return '';
+                }
                 function getItemPoolsList(item) {
                     const poolsList = [];
                     if (item.pool) poolsList.push(String(item.pool).toLowerCase());
@@ -2814,42 +2850,26 @@
                             }
                         }
                     }
-                    // eliminar duplicados
                     return [...new Set(poolsList)];
                 }
 
-                // helper: elige un elemento aleatorio de un array
-                function pickRandom(arr) {
-                    return arr[Math.floor(Math.random() * arr.length)];
-                }
-                function getItemPool(item) {
-                    if (item.pool) return item.pool;
-                    if (item.pools && item.pools.length) return item.pools[0];
-                    if (item.tags) {
-                        for (const pool of itemPools) {
-                            if (item.tags.toLowerCase().includes(pool.key)) return pool.key;
-                        }
-                    }
-                    return null;
-                }
-                function getName(obj) {
-                    return obj.name;
-                }
-                function getImg(obj) {
-                    if (obj.kind === 'item') return `${baseUrl}All_Items/item_${obj.id}.png`;
-                    if (obj.kind === 'trinket') return `${baseUrl}All_Trinkets/trinket_${obj.trinketId}.png`;
-                    if (obj.kind === 'card') return `${baseUrl}All_Consumables/card_${obj.cardId}.png`;
-                    return '';
-                }
-                let questionKind;
+                // Determina qué tipos de pregunta tienen datos válidos
+                const validCards = allCards.filter(card =>
+                    card.cardId &&
+                    ![98, 99, 100, 110, 111, 112, 113, 114].includes(Number(card.cardId))
+                );
+                const itemsWithStatChange = allItems.filter(item =>
+                    Array.isArray(item.stat_change) && item.stat_change.length > 0
+                );
+                const validPoolItems = allItems.filter(item => getItemPoolsList(item).length > 0);
+
                 let questionHtml = '';
                 let correctIdx = 0;
                 let options = [];
                 let mainImg = '';
                 let mainText = '';
-                const rand = Math.random();
-                if (rand < 0.33) {
-                    questionKind = 'name';
+
+                if (questionKind === 'name') {
                     const validCards = allCards.filter(card =>
                         card.cardId &&
                         ![98, 99, 100, 110, 111, 112, 113, 114].includes(Number(card.cardId))
@@ -2881,8 +2901,7 @@
                 `).join('')}
             </div>
         `;
-                } else if (rand < 0.66) {
-                    questionKind = 'image';
+                } else if (questionKind === 'image') {
                     const validCards = allCards.filter(card =>
                         card.cardId &&
                         ![98, 99, 100, 110, 111, 112, 113, 114].includes(Number(card.cardId))
@@ -2906,14 +2925,133 @@
             <h3 style="margin-top:0;">${mainText}</h3>
             <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
                 ${options.map((o, idx) => `
-                    <button class="quiz-option" style="padding:8px 10px;font-size:1.1em;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';display:flex;flex-direction:column;align-items:center;" data-correct="${idx === correctIdx}">
+                    <button class="quiz-option" style="padding:8px 10px;font-size:1.1em;border-radius:8px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;display:flex;flex-direction:column;align-items:center;" data-correct="${idx === correctIdx}">
                         <img src="${getImg(o)}" style="width:60px;height:60px;object-fit:contain;image-rendering:pixelated;margin-bottom:4px;">
                     </button>
                 `).join('')}
             </div>
         `;
+                } else if (questionKind === 'stat1') {
+                    // ¿Qué stat modifica este objeto?
+                    const statTypes = [
+                        { key: "dmg", label: "Daño" },
+                        { key: "sp", label: "Velocidad" },
+                        { key: "lck", label: "Suerte" },
+                        { key: "rg", label: "Rango" },
+                        { key: "cdn", label: "Cadencia" },
+                        { key: "hp", label: "Vida" },
+                        { key: "shs", label: "Velocidad de Bala" }
+                    ];
+                    const upDownTypes = [
+                        { key: "up", label: "+" },
+                        { key: "down", label: "-" }
+                    ];
+                    let item, statOptions, correctStat, tries = 0;
+                    do {
+                        item = pickRandom(allItems);
+                        statOptions = item.stat_change
+                            ? item.stat_change.split(',').map(s => s.trim())
+                            : [];
+                        tries++;
+                    } while ((!statOptions.length) && tries < 100);
+                    if (!statOptions.length) {
+                        alert("No se encontró ningún stat para este objeto. Se salta la pregunta.");
+                        return showQuizQuestion();
+                    }
+                    correctStat = pickRandom(statOptions);
+
+                    // Genera 3 opciones incorrectas que no estén en statOptions
+                    let allPossibleStats = statTypes
+                        .map(st => upDownTypes.map(ud => `${st.key}_${ud.key}`))
+                        .flat();
+                    let incorrectStats = allPossibleStats.filter(s => !statOptions.includes(s));
+                    let optionsStats = [correctStat];
+                    // Asegura que sean realmente incorrectas
+                    while (optionsStats.length < 4 && incorrectStats.length > 0) {
+                        let candidate = pickRandom(incorrectStats);
+                        if (!optionsStats.includes(candidate)) {
+                            optionsStats.push(candidate);
+                            incorrectStats = incorrectStats.filter(s => s !== candidate);
+                        }
+                    }
+                    optionsStats = optionsStats.sort(() => Math.random() - 0.5);
+                    const correctIdx = optionsStats.findIndex(s => s === correctStat);
+
+                    function statLabel(s) {
+                        const st = statTypes.find(t => s.startsWith(t.key));
+                        const ud = upDownTypes.find(u => s.endsWith(u.key));
+                        return `${ud ? ud.label : ''} ${st ? st.label : s}`;
+                    }
+                    mainText = `¿Qué stat modifica este objeto?`;
+                    mainImg = `<img src="${baseUrl}All_Items/item_${item.id}.png" style="width:90px;height:90px;image-rendering:pixelated;object-fit:contain;display:block;margin:0 auto;">`;
+                    questionHtml = `
+        <h3 style="margin-top:0;">${mainText}</h3>
+        ${mainImg}
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
+            ${optionsStats.map((stat, idx) => `
+                <button class="quiz-option" data-idx="${idx}" data-correct="${idx === correctIdx}" style="font-size:1.2em;padding:12px 8px;border-radius:12px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';">
+                    ${statLabel(stat)}
+                </button>
+            `).join('')}
+        </div>
+    `;
+                } else if (questionKind === 'stat2') {
+                    // ¿Cuál de estos items modifica [stat] ([up/down])?
+                    const statTypes = [
+                        { key: "dmg", label: "Daño" },
+                        { key: "sp", label: "Velocidad" },
+                        { key: "lck", label: "Suerte" },
+                        { key: "rg", label: "Rango" },
+                        { key: "cdn", label: "Cadencia" },
+                        { key: "hp", label: "Vida" },
+                        { key: "shs", label: "Velocidad de Bala" }
+                    ];
+                    const upDownTypes = [
+                        { key: "up", label: "+" },
+                        { key: "down", label: "-" }
+                    ];
+                    let found = false, statType, upDownType, matchingItems, tries = 0;
+                    while (!found && tries < 100) {
+                        tries++;
+                        statType = pickRandom(statTypes);
+                        upDownType = pickRandom(upDownTypes);
+                        matchingItems = allItems.filter(item =>
+                            item.stat_change &&
+                            item.stat_change.split(',').map(s => s.trim()).includes(`${statType.key}_${upDownType.key}`)
+                        );
+                        found = matchingItems.length > 0;
+                    }
+                    if (!found) {
+                        alert("No se encontró ningún item con ese cambio de stat. Se salta la pregunta.");
+                        return showQuizQuestion();
+                    }
+                    const correctItem = pickRandom(matchingItems);
+
+                    // Opciones incorrectas: items que NO tengan ese stat y NO sean el correcto
+                    const incorrectItems = allItems
+                        .filter(item =>
+                            item.stat_change &&
+                            !item.stat_change.split(',').map(s => s.trim()).includes(`${statType.key}_${upDownType.key}`) &&
+                            item.id !== correctItem.id
+                        )
+                        .sort(() => Math.random() - 0.5)
+                        .slice(0, 3);
+
+                    const optionsItems = [correctItem, ...incorrectItems].sort(() => Math.random() - 0.5);
+                    const correctIdx = optionsItems.findIndex(item => item.id === correctItem.id);
+
+                    mainText = `¿Cuál de estos objetos otorga ${upDownType.label} ${statType.label}?`;
+                    questionHtml = `
+        <h3 style="margin-top:0;">${mainText}</h3>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
+            ${optionsItems.map((item, idx) => `
+                <button class="quiz-option" data-idx="${idx}" data-correct="${idx === correctIdx}" style="font-size:1.2em;padding:12px 8px;border-radius:12px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;">
+                    <img src="${baseUrl}All_Items/item_${item.id}.png" style="width:60px;height:60px;image-rendering:pixelated;object-fit:contain;display:block;margin:0 auto;">
+                </button>
+            `).join('')}
+        </div>
+    `;
                 } else {
-                    questionKind = 'pool';
                     let item;
                     let tries = 0;
                     do {
@@ -2998,7 +3136,6 @@
                 };
             }
             // ...existing code...
-
         </script>
 
 

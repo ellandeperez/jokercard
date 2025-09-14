@@ -3671,7 +3671,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "Tears + shot speed up"
+        "pickup": "Tears + shot speed up",
+        "stat_change": "cdn_up, shs_up"
     },
     {
         "id": "184",
@@ -3690,7 +3691,8 @@
         "item_pool": [
             "Angel Room"
         ],
-        "pickup": "Flight + HP up"
+        "pickup": "Flight + HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "185",
@@ -3793,7 +3795,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "All stats up"
+        "pickup": "All stats up",
+        "stat_change": "hp_up, dmg_up, cdn_up, rng_up, sp_up"
     },
     {
         "id": "190",
@@ -3868,7 +3871,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "DMG + HP up"
+        "pickup": "DMG + HP up",
+        "stat_change": "hp_up, dmg_up"
     },
     {
         "id": "194",
@@ -3888,7 +3892,8 @@
             "Boss Room",
             "Gold/Stone Chest"
         ],
-        "pickup": "Shot speed up"
+        "pickup": "Shot speed up",
+        "stat_change": "shs_up"
     },
     {
         "id": "195",
@@ -3928,7 +3933,8 @@
             "Boss Room",
             "Gold/Stone Chest"
         ],
-        "pickup": "Tears up"
+        "pickup": "Tears up",
+        "stat_change": "cdn_up"
     },
     {
         "id": "197",
@@ -3946,7 +3952,8 @@
             "Boss Room",
             "Angel Room"
         ],
-        "pickup": "Damage + range up"
+        "pickup": "Damage + range up",
+        "stat_change": "dmg_up, rg_up"
     },
     {
         "id": "198",
@@ -4023,7 +4030,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Concussive tears"
+        "pickup": "Concussive tears",
+        "stat_change": "dmg_up"
     },
     {
         "id": "202",
@@ -4118,7 +4126,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "An out-of-body experience"
+        "pickup": "An out-of-body experience",
+        "stat_change": "dmg_up"
     },
     {
         "id": "207",
@@ -4158,7 +4167,8 @@
         "item_pool": [
             "Shop"
         ],
-        "pickup": "DMG + Challenge up"
+        "pickup": "DMG + Challenge up",
+        "stat_change": "dmg_up"
     },
     {
         "id": "209",
@@ -4251,7 +4261,8 @@
             "Item Room",
             "Secret Room"
         ],
-        "pickup": "Shielded tears"
+        "pickup": "Shielded tears",
+        "stat_change": "shs_down"
     },
     {
         "id": "214",
@@ -4269,7 +4280,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Toxic blood"
+        "pickup": "Toxic blood",
+        "stat_change": "rg_up"
     },
     {
         "id": "215",
@@ -4308,7 +4320,8 @@
             "Curse Room",
             "Demon Beggar"
         ],
-        "pickup": "Sin up"
+        "pickup": "Sin up",
+        "stat_change": "dmg_up"
     },
     {
         "id": "217",
@@ -4351,7 +4364,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "HP up + regen"
+        "pickup": "HP up + regen",
+        "stat_change": "hp_up"
     },
     {
         "id": "219",
@@ -4370,7 +4384,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "220",
@@ -4430,7 +4445,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Antigravity tears + tears up"
+        "pickup": "Antigravity tears + tears up",
+        "stat_change": "cdn_up"
     },
     {
         "id": "223",
@@ -4468,7 +4484,8 @@
             "Item Room"
         ],
         "pickup": "Splash damage + tears up",
-        "cat": "up"
+        "cat": "up",
+        "stat_change": "cdn_up, rg_down"
     },
     {
         "id": "225",
@@ -4508,7 +4525,8 @@
         "item_pool": [
             "Secret Room"
         ],
-        "pickup": "HP up x3"
+        "pickup": "HP up x3",
+        "stat_change": "hp_up"
     },
     {
         "id": "227",
@@ -4549,7 +4567,8 @@
             "Challenge Room",
             "Mom's Chest"
         ],
-        "pickup": "Fear shot"
+        "pickup": "Fear shot",
+        "stat_change": "cdn_up"
     },
     {
         "id": "229",
@@ -4568,7 +4587,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Charged attack"
+        "pickup": "Charged attack",
+        "stat_change": "cdn_down"
     },
     {
         "id": "230",
@@ -4593,7 +4613,8 @@
             "Devil Room",
             "Demon Beggar"
         ],
-        "pickup": "Evil up + DMG up + fear shot"
+        "pickup": "Evil up + DMG up + fear shot",
+        "stat_change": "dmg_up, sp_up"
     },
     {
         "id": "231",
@@ -4630,7 +4651,8 @@
         "item_pool": [
             "Shop"
         ],
-        "pickup": "Let's slow this down a bit"
+        "pickup": "Let's slow this down a bit",
+        "stat_change": "sp_up"
     },
     {
         "id": "233",
@@ -4652,7 +4674,8 @@
             "Item Room"
         ],
         "pickup": "Orbiting tears + range up",
-        "cat": "down"
+        "cat": "down",
+        "stat_change": "rg_up"
     },
     {
         "id": "234",
@@ -4712,7 +4735,8 @@
             "Item Room",
             "Devil Room"
         ],
-        "pickup": "Penetrative shots + DMG up"
+        "pickup": "Penetrative shots + DMG up",
+        "stat_change": "dmg_up, cdn_down"
     },
     {
         "id": "238",
@@ -4773,7 +4797,8 @@
             "Boss Room",
             "Demon Beggar"
         ],
-        "pickup": "Some stats up, some stats down"
+        "pickup": "Some stats up, some stats down",
+        "stat_change": "random"
     },
     {
         "id": "241",
@@ -4866,7 +4891,8 @@
             "Item Room"
         ],
         "pickup": "Double shot",
-        "cat": "up"
+        "cat": "up",
+        "stat_change": "dmg_down"
     },
     {
         "id": "246",
@@ -5015,7 +5041,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "HP + luck up"
+        "pickup": "HP + luck up",
+        "stat_change": "hp_up, lck_up"
     },
     {
         "id": "254",
@@ -5033,7 +5060,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "DMG + range up"
+        "pickup": "DMG + range up",
+        "stat_change": "dmg_up, rg_up"
     },
     {
         "id": "255",
@@ -5051,7 +5079,8 @@
             "Boss Room",
             "Gold/Stone Chest"
         ],
-        "pickup": "Tears + shot speed up"
+        "pickup": "Tears + shot speed up",
+        "stat_change": "cdn_up, shs_up"
     },
     {
         "id": "256",
@@ -5128,7 +5157,8 @@
             "Devil Room",
             "Demon Beggar"
         ],
-        "pickup": "Fear shot"
+        "pickup": "Fear shot",
+        "stat_change": "dmg_up"
     },
     {
         "id": "260",
@@ -5169,7 +5199,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Short range mega tears"
+        "pickup": "Short range mega tears",
+        "stat_change": "dmg_up, dmg_down, rg_down"
     },
     {
         "id": "262",
@@ -5987,7 +6018,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Speed down + rage is building"
+        "pickup": "Speed down + rage is building",
+        "stat_change": "sp_down"
     },
     {
         "id": "300",
@@ -6006,7 +6038,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Ramming speed"
+        "pickup": "Ramming speed",
+        "stat_change": "sp_up"
     },
     {
         "id": "301",
@@ -6121,7 +6154,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Penetrative shot + speed up"
+        "pickup": "Penetrative shot + speed up",
+        "stat_change": "sp_up"
     },
     {
         "id": "307",
@@ -6144,7 +6178,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "All stats up"
+        "pickup": "All stats up",
+        "stat_change": "hp_up, sp_up, dmg_up, rg_up, cdn_up"
     },
     {
         "id": "308",
@@ -6181,7 +6216,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Tears up + knockback shot"
+        "pickup": "Tears up + knockback shot",
+        "stat_change": "cdn_up"
     },
     {
         "id": "310",
@@ -6201,7 +6237,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Shot speed down + DMG up"
+        "pickup": "Shot speed down + DMG up",
+        "stat_change": "dmg_up, cdn_down"
     },
     {
         "id": "311",
@@ -6240,7 +6277,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "HP up + you feel healthy"
+        "pickup": "HP up + you feel healthy",
+        "stat_change": "hp_up"
     },
     {
         "id": "313",
@@ -6283,7 +6321,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "HP + speed down + you feel strong"
+        "pickup": "HP + speed down + you feel strong",
+        "stat_change": "hp_up, sp_down"
     },
     {
         "id": "315",
@@ -6562,7 +6601,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "Fate chosen"
+        "pickup": "Fate chosen",
+        "stat_change": "dmg_up"
     },
     {
         "id": "329",
@@ -6603,7 +6643,8 @@
             "Item Room"
         ],
         "pickup": "DMG down + tears way up",
-        "cat": "down"
+        "cat": "down",
+        "stat_change": "dmg_down, cdn_up"
     },
     {
         "id": "331",
@@ -6627,7 +6668,8 @@
             "Angel Room"
         ],
         "pickup": "God tears",
-        "cat": "up2"
+        "cat": "up2",
+        "stat_change": "dmg_up, cdn_down, shs_down"
     },
     {
         "id": "332",
@@ -6685,7 +6727,8 @@
             "Item Room",
             "Angel Room"
         ],
-        "pickup": "I feel all"
+        "pickup": "I feel all",
+        "stat_change": "hp_up"
     },
     {
         "id": "335",
@@ -6724,7 +6767,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Toxic aura tears"
+        "pickup": "Toxic aura tears",
+        "stat_change": "rg_down, shs_down"
     },
     {
         "id": "337",
@@ -6782,7 +6826,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "Evil up + range + shot speed"
+        "pickup": "Evil up + range + shot speed",
+        "stat_change": "rg_up, shs_up"
     },
     {
         "id": "340",
@@ -6800,7 +6845,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "Speed up + size down"
+        "pickup": "Speed up + size down",
+        "stat_change": "sp_up"
     },
     {
         "id": "341",
@@ -6818,7 +6864,8 @@
             "Boss Room",
             "Gold/Stone Chest"
         ],
-        "pickup": "Tears + shot speed up"
+        "pickup": "Tears + shot speed up",
+        "stat_change": "cdn_up, shs_up"
     },
     {
         "id": "342",
@@ -6838,7 +6885,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "HP + tears + shot speed down"
+        "pickup": "HP + tears + shot speed down",
+        "stat_change": "hp_up, cdn_up, shs_down"
     },
     {
         "id": "343",
@@ -6858,7 +6906,8 @@
             "Gold/Stone Chest",
             "Key Beggar"
         ],
-        "pickup": "Luck up"
+        "pickup": "Luck up",
+        "stat_change": "lck_up"
     },
     {
         "id": "344",
@@ -6895,7 +6944,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "DMG up + range"
+        "pickup": "DMG up + range",
+        "stat_change": "dmg_up, rg_up"
     },
     {
         "id": "346",
@@ -6912,7 +6962,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "347",
@@ -7083,7 +7134,8 @@
             "Boss Room",
             "Gold/Stone Chest"
         ],
-        "pickup": "Don't swallow the prize!"
+        "pickup": "Don't swallow the prize!",
+        "stat_change": "hp_up"
     },
     {
         "id": "355",
@@ -7104,7 +7156,8 @@
             "Gold/Stone Chest",
             "Mom's Chest"
         ],
-        "pickup": "Range + luck up"
+        "pickup": "Range + luck up",
+        "stat_change": "rg_up, lck_up"
     },
     {
         "id": "356",
@@ -7186,7 +7239,8 @@
             "Item Room",
             "Greed Mode Item Room"
         ],
-        "pickup": "Stick it to 'em!"
+        "pickup": "Stick it to 'em!",
+        "stat_change": "dmg_up"
     },
     {
         "id": "360",
@@ -7400,7 +7454,8 @@
             "Item Room",
             "Greed Mode Item Room"
         ],
-        "pickup": "Transcendent tears"
+        "pickup": "Transcendent tears",
+        "stat_change": "rg_up"
     },
     {
         "id": "370",
@@ -7419,7 +7474,8 @@
             "Boss Room",
             "Gold/Stone Chest"
         ],
-        "pickup": "Range + tears up"
+        "pickup": "Range + tears up",
+        "stat_change": "rg_up, cdn_up"
     },
     {
         "id": "371",
@@ -7639,7 +7695,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Your future shines brighter"
+        "pickup": "Your future shines brighter",
+        "stat_change": "cdn_up"
     },
     {
         "id": "382",
@@ -7909,7 +7966,8 @@
             "Item Room",
             "Greed Mode Item Room"
         ],
-        "pickup": "Directed tears"
+        "pickup": "Directed tears",
+        "stat_change": "rg_up, cdn_up"
     },
     {
         "id": "395",
@@ -7976,7 +8034,8 @@
             "Item Room",
             "Greed Mode Item Room"
         ],
-        "pickup": "Controlled tears"
+        "pickup": "Controlled tears",
+        "stat_change": "rg_up, cdn_up, sp_up"
     },
     {
         "id": "398",
@@ -8186,7 +8245,8 @@
             "Greed Mode Item Room",
             "Greed Mode Angel Room"
         ],
-        "pickup": "Aura stat boost"
+        "pickup": "Aura stat boost",
+        "stat_change": "dmg_up, sp_up, rg_up, cdn_up"
     },
     {
         "id": "408",
@@ -8348,7 +8408,8 @@
             "Greed Mode Angel Room"
         ],
         "pickup": "The untainted gain power",
-        "cat": "up2"
+        "cat": "up2",
+        "stat_change": "dmg_up, shs_down"
     },
     {
         "id": "416",
@@ -8764,7 +8825,8 @@
             "Item Room",
             "Greed Mode Item Room"
         ],
-        "pickup": "Dont cry over it..."
+        "pickup": "Dont cry over it...",
+        "stat_change": "cdn_up"
     },
     {
         "id": "437",
@@ -8807,7 +8869,8 @@
             "Boss Room",
             "Gold/Stone Chest"
         ],
-        "pickup": "Memories..."
+        "pickup": "Memories...",
+        "stat_change": "cdn_up"
     },
     {
         "id": "439",
@@ -8892,7 +8955,8 @@
             "Devil Room",
             "Curse Room"
         ],
-        "pickup": "Loss is power"
+        "pickup": "Loss is power",
+        "stat_change": "rg_up, cdn_up, sps_up"
     },
     {
         "id": "443",
@@ -8911,7 +8975,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Trick or treat?"
+        "pickup": "Trick or treat?",
+        "stat_change": "cdn_up"
     },
     {
         "id": "444",
@@ -8948,7 +9013,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Bark at the moon!"
+        "pickup": "Bark at the moon!",
+        "stat_change": "dmg_up, sp_up"
     },
     {
         "id": "446",
@@ -9099,7 +9165,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Bone tears!"
+        "pickup": "Bone tears!",
+        "stat_change": "rg_up"
     },
     {
         "id": "454",
@@ -9136,7 +9203,8 @@
             "Beggar",
             "Gold/Stone Chest"
         ],
-        "pickup": "I remember this..."
+        "pickup": "I remember this...",
+        "stat_change": "rg_up"
     },
     {
         "id": "456",
@@ -9154,7 +9222,8 @@
             "Beggar",
             "Gold/Stone Chest"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "457",
@@ -9264,7 +9333,8 @@
         "item_pool": [
             "Devil Room"
         ],
-        "pickup": "Possessed tears!"
+        "pickup": "Possessed tears!",
+        "stat_change": "dmg_up, rg_up"
     },
     {
         "id": "463",
@@ -9282,7 +9352,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Acid tears!"
+        "pickup": "Acid tears!",
+        "stat_change": "dmg_up"
     },
     {
         "id": "464",
@@ -9329,7 +9400,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "360 tears!"
+        "pickup": "360 tears!",
+        "stat_change": "cdn_up"
     },
     {
         "id": "466",
@@ -10323,7 +10395,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Party time!"
+        "pickup": "Party time!",
+        "stat_change": "dmg_up"
     },
     {
         "id": "514",
@@ -10687,7 +10760,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "I'm seeing red..."
+        "pickup": "I'm seeing red...",
+        "stat_change": "cdn_up"
     },
     {
         "id": "532",
@@ -10728,7 +10802,8 @@
             "Angel Room"
         ],
         "pickup": "Smite thy enemy",
-        "cat": "up2"
+        "cat": "up2",
+        "stat_change": "dmg_down"
     },
     {
         "id": "534",
@@ -10883,7 +10958,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "HP up?"
+        "pickup": "HP up?",
+        "stat_change": "hp_up"
     },
     {
         "id": "542",
@@ -11004,7 +11080,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "Tears up + you feel empty"
+        "pickup": "Tears up + you feel empty",
+        "stat_change": "hp_up, cdn_up"
     },
     {
         "id": "548",
@@ -11256,7 +11333,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "No it doesn't..."
+        "pickup": "No it doesn't...",
+        "stat_change": "cdn_up"
     },
     {
         "id": "561",
@@ -11276,7 +11354,8 @@
             "Item Room"
         ],
         "pickup": "DMG down + tears up + you feel nutty",
-        "cat": "down"
+        "cat": "down",
+        "stat_change": "dmg_down, cdn_up"
     },
     {
         "id": "562",
@@ -11331,7 +11410,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "Tears + shot speed up"
+        "pickup": "Tears + shot speed up",
+        "stat_change": "cdn_up, shs_up"
     },
     {
         "id": "565",
@@ -11391,7 +11471,8 @@
         "item_pool": [
             "Angel Room"
         ],
-        "pickup": "Keep the flame burning"
+        "pickup": "Keep the flame burning",
+        "stat_change": "cdn_up"
     },
     {
         "id": "568",
@@ -11466,7 +11547,8 @@
         "item_pool": [
             "Secret Room"
         ],
-        "pickup": "Speed up + your feet feel stronger"
+        "pickup": "Speed up + your feet feel stronger",
+        "stat_change": "sp_up"
     },
     {
         "id": "572",
@@ -11506,7 +11588,8 @@
         "item_pool": [
             "Angel Room"
         ],
-        "pickup": "Halo of tears"
+        "pickup": "Halo of tears",
+        "stat_change": "hp_up, dmg_up"
     },
     {
         "id": "574",
@@ -11696,7 +11779,7 @@
             "Cada vez que usas Wavy Cap, obtienes +0,75 de cadencia y -0,03 de velocidad.",
             "Además, cuando se usa, este elemento distorsionará ligeramente la pantalla y el sonido, acumulándose cada vez que lo use.",
             "Todos estos efectos se acumulan en el resto del piso, lo que significa que si se usan demasiadas veces, la pantalla se distorsionará tanto que se volverá injugable.",
-            "Cada habitación que limpies eliminará el equivalente a un uso del efecto: reduce ligeramente la distorsión de la pantalla y otorga +0,06 de Speed y -0,3 de daño.",
+            "Cada habitación que limpies eliminará el equivalente a un uso del efecto: reduce ligeramente la distorsión de la pantalla y otorga +0,06 de Speed y -0,3 de cadencia.",
             "Cuenta como 1 de los 3 elementos de hongo necesarios para la transformación de Fun Guy."
         ],
         "quality": "1",
@@ -11710,7 +11793,8 @@
         "recharge_time": [
             "Starts at 1 second, increasing by every time you use it. After 10 uses it stops auto recharging."
         ],
-        "pickup": "Tears up. A mind changing experience!"
+        "pickup": "Tears up. A mind changing experience!",
+        "stat_change": "cdn_up, sp_down, dmg_down"
     },
     {
         "id": "583",
@@ -11836,7 +11920,8 @@
             "Planetarium"
         ],
         "pickup": "More secrets",
-        "cat": "up"
+        "cat": "up",
+        "stat_change": "cdn_up"
     },
     {
         "id": "590",
@@ -11854,7 +11939,8 @@
         "item_pool": [
             "Planetarium"
         ],
-        "pickup": "Speed up + you feel elusive"
+        "pickup": "Speed up + you feel elusive",
+        "stat_change": "sp_up"
     },
     {
         "id": "591",
@@ -11873,7 +11959,8 @@
         "item_pool": [
             "Planetarium"
         ],
-        "pickup": "HP up + you feel pretty"
+        "pickup": "HP up + you feel pretty",
+        "stat_change": "hp_up"
     },
     {
         "id": "592",
@@ -11891,7 +11978,8 @@
         "item_pool": [
             "Planetarium"
         ],
-        "pickup": "Born to rock"
+        "pickup": "Born to rock",
+        "stat_change": "dmg_up"
     },
     {
         "id": "593",
@@ -11934,7 +12022,8 @@
         "item_pool": [
             "Planetarium"
         ],
-        "pickup": "You're a gas giant!"
+        "pickup": "You're a gas giant!",
+        "stat_change": "hp_up, sp_down"
     },
     {
         "id": "595",
@@ -12006,7 +12095,8 @@
         "item_pool": [
             "Planetarium"
         ],
-        "pickup": "Size down"
+        "pickup": "Size down",
+        "stat_change": "cdn_up"
     },
     {
         "id": "599",
@@ -12042,7 +12132,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "Tears up"
+        "pickup": "Tears up",
+        "stat_change": "cdn_up"
     },
     {
         "id": "601",
@@ -12060,7 +12151,8 @@
         "item_pool": [
             "Angel Room"
         ],
-        "pickup": "Tears up, you feel forgiven"
+        "pickup": "Tears up, you feel forgiven",
+        "stat_change": "cdn_up"
     },
     {
         "id": "602",
@@ -12305,7 +12397,8 @@
         "item_pool": [
             "Item Room"
         ],
-        "pickup": "Bloody blast + HP up"
+        "pickup": "Bloody blast + HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "615",
@@ -12469,7 +12562,8 @@
             "Shop",
             "Ultra Secret Room"
         ],
-        "pickup": "Full HP + temporary DMG up"
+        "pickup": "Full HP + temporary DMG up",
+        "stat_change": "dmg_up"
     },
     {
         "id": "622",
@@ -12560,7 +12654,8 @@
             "12 Habitaciones"
         ],
         "pickup": "I'm a big boy now!",
-        "cat": "up"
+        "cat": "up",
+        "stat_change": "dmg_up, rg_up, cdn_down"
     },
     {
         "id": "626",
@@ -12707,7 +12802,8 @@
         "item_pool": [
             "None"
         ],
-        "pickup": "Ascended"
+        "pickup": "Ascended",
+        "stat_change": "spd_up, dmg_up"
     },
     {
         "id": "634",
@@ -12949,7 +13045,8 @@
             "Golden Chest",
             "Crane Game"
         ],
-        "pickup": "+1 to lowest stat"
+        "pickup": "+1 to lowest stat",
+        "stat_change": "ranom"
     },
     {
         "id": "645",
@@ -13222,7 +13319,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "Tear size + range up"
+        "pickup": "Tear size + range up",
+        "stat_change": "rg_up"
     },
     {
         "id": "660",
@@ -13388,7 +13486,8 @@
         "item_pool": [
             "Secret Room"
         ],
-        "pickup": "All stats up"
+        "pickup": "All stats up",
+        "stat_change": "hp_up, dmg_up, cdn_up, rg_up, sp_up, shs_up"
     },
     {
         "id": "670",
@@ -13894,7 +13993,8 @@
             "Devil Room",
             "Curse Room"
         ],
-        "pickup": "Eternal sorrow"
+        "pickup": "Eternal sorrow",
+        "stat_change": "dmg_up"
     },
     {
         "id": "695",
@@ -13915,7 +14015,8 @@
             "Item Room",
             "Devil Room"
         ],
-        "pickup": "May your rage bring haste"
+        "pickup": "May your rage bring haste",
+        "stat_change": "cdn_up, sp_up"
     },
     {
         "id": "696",
@@ -14163,7 +14264,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "708",
@@ -14180,7 +14282,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "DMG up"
+        "pickup": "DMG up",
+        "stat_change": "dmg_up"
     },
     {
         "id": "709",
@@ -14648,7 +14751,8 @@
             "Crane Game",
             "Golden Chest"
         ],
-        "pickup": "DMG + luck up"
+        "pickup": "DMG + luck up",
+        "stat_change": "dmg_up, lck_up"
     },
     {
         "id": "731",
@@ -14666,7 +14770,8 @@
         "item_pool": [
             "Boss Room"
         ],
-        "pickup": "DMG + range up"
+        "pickup": "DMG + range up",
+        "stat_change": "dmg_up, rg_up, cdn_down"
     },
     {
         "id": "732",
@@ -14687,6 +14792,7 @@
             "Mom's Chest",
             "Old Chest"
         ],
-        "pickup": "DMG up"
+        "pickup": "DMG up",
+        "stat_change": "dmg_up"
     }
 ]
