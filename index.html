@@ -2793,7 +2793,7 @@
 
             function showQuizQuestion() {
                 // Define los tipos de pregunta disponibles
-                const possibleQuestions = ['name', 'image', 'stat1', 'stat2', 'pool'];
+                const possibleQuestions = ['name', 'image', /*'stat1',*/ 'stat2', 'pool'];
                 // Elige uno al azar
                 const questionKind = possibleQuestions[Math.floor(Math.random() * possibleQuestions.length)];
 
@@ -2931,6 +2931,7 @@
                 `).join('')}
             </div>
         `;
+        /* stat1 desactivada por ahora
                 } else if (questionKind === 'stat1') {
                     // ¿Qué stat modifica este objeto?
                     const statTypes = [
@@ -2994,7 +2995,7 @@
                 </button>
             `).join('')}
         </div>
-    `;
+    `; */
                 } else if (questionKind === 'stat2') {
                     // ¿Cuál de estos items modifica [stat] ([up/down])?
                     const statTypes = [
