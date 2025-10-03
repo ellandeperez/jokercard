@@ -1787,28 +1787,76 @@
                 }
                 lastTapTime = now;
                 if (tapCount === 3) {
-                    const isUp2 = Math.random() < 0.01;
-                    const catSrc = isUp2
-                        ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up2.png'
-                        : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up.png';
-                    const cat = document.createElement('img');
-                    cat.src = catSrc;
-                    cat.className = 'blondigo-cat';
-                    cat.style.position = 'fixed';
-                    cat.style.left = '-120px';
-                    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-                    cat.style.top = Math.floor(Math.random() * (vh - 120)) + 'px';
-                    cat.style.width = '100px';
-                    cat.style.height = '100px';
-                    cat.style.zIndex = '9999';
-                    cat.style.pointerEvents = 'none';
-                    cat.style.opacity = '0';
-                    cat.style.transition = 'opacity 0.3s, left 3s linear';
-                    document.body.appendChild(cat);
-                    setTimeout(() => { cat.style.opacity = '1'; cat.style.left = '110vw'; }, 100);
-                    setTimeout(() => { cat.remove(); }, 3200);
-                    tapCount = 0;
-                }
+    const isUp2 = Math.random() < 0.01;
+    const catSrc = isUp2
+        ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up2.png'
+        : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up.png';
+    const catDownSrc = isUp2
+        ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_stunned2.png'
+        : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_stunned.png';
+    const cat = document.createElement('img');
+    cat.src = catSrc;
+    cat.className = 'blondigo-cat';
+    cat.style.position = 'fixed';
+    cat.style.left = '-120px';
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+    cat.style.top = Math.floor(Math.random() * (vh - 120)) + 'px';
+    cat.style.width = '100px';
+    cat.style.height = '100px';
+    cat.style.zIndex = '9999';
+    cat.style.pointerEvents = 'auto'; // Permitir clicks
+    cat.style.opacity = '0';
+    cat.style.transition = 'opacity 0.3s, left 3s linear';
+    document.body.appendChild(cat);
+
+    setTimeout(() => { cat.style.opacity = '1'; cat.style.left = '110vw'; }, 100);
+
+    // Derribar el gato al hacer click
+    cat.addEventListener('click', function (ev) {
+        ev.stopPropagation();
+
+        // Congelar posición actual del gato que está volando
+        const rect = cat.getBoundingClientRect();
+        cat.style.transition = 'none';
+        cat.style.left = rect.left + 'px';
+        cat.style.top = rect.top + 'px';
+        cat.style.opacity = '1';
+
+        // Crear un nuevo elemento para la versión "derribada" en la misma posición
+        const down = document.createElement('img');
+        down.src = catDownSrc;
+        down.className = 'blondigo-cat';
+        down.style.position = 'fixed';
+        down.style.left = rect.left + 'px';
+        down.style.top = rect.top + 'px';
+        down.style.width = cat.style.width || '100px';
+        down.style.height = cat.style.height || '100px';
+        down.style.zIndex = '9999';
+        down.style.pointerEvents = 'none'; // no recibir clicks
+        down.style.opacity = '1';
+        // Asegurar que esté encima
+        document.body.appendChild(down);
+
+        // Remover/ocultar el gato original inmediatamente para que no interfiera
+        cat.remove();
+
+        // Forzar reflow para que la transición funcione en el nuevo elemento
+        void down.offsetWidth;
+
+        // Animar caída del nuevo elemento
+        down.style.transition = 'top 1.2s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.5s';
+        down.style.top = '110vh';
+
+        // Desvanecer y eliminar después de caer
+        setTimeout(() => {
+            down.style.opacity = '0';
+            setTimeout(() => down.remove(), 600);
+        }, 1200);
+    });
+
+    setTimeout(() => { cat.remove(); }, 3200);
+    tapCount = 0;
+}
             });
             document.getElementById('search-bar').addEventListener('input', function (e) {
                 if (e.target.value.trim().toLowerCase() === 'chucurrucu') {
@@ -2931,71 +2979,71 @@
                 `).join('')}
             </div>
         `;
-        /* stat1 desactivada por ahora
-                } else if (questionKind === 'stat1') {
-                    // ¿Qué stat modifica este objeto?
-                    const statTypes = [
-                        { key: "dmg", label: "Daño" },
-                        { key: "sp", label: "Velocidad" },
-                        { key: "lck", label: "Suerte" },
-                        { key: "rg", label: "Rango" },
-                        { key: "cdn", label: "Cadencia" },
-                        { key: "hp", label: "Vida" },
-                        { key: "shs", label: "Velocidad de Bala" }
-                    ];
-                    const upDownTypes = [
-                        { key: "up", label: "+" },
-                        { key: "down", label: "-" }
-                    ];
-                    let item, statOptions, correctStat, tries = 0;
-                    do {
-                        item = pickRandom(allItems);
-                        statOptions = item.stat_change
-                            ? item.stat_change.split(',').map(s => s.trim())
-                            : [];
-                        tries++;
-                    } while ((!statOptions.length) && tries < 100);
-                    if (!statOptions.length) {
-                        alert("No se encontró ningún stat para este objeto. Se salta la pregunta.");
-                        return showQuizQuestion();
-                    }
-                    correctStat = pickRandom(statOptions);
-
-                    // Genera 3 opciones incorrectas que no estén en statOptions
-                    let allPossibleStats = statTypes
-                        .map(st => upDownTypes.map(ud => `${st.key}_${ud.key}`))
-                        .flat();
-                    let incorrectStats = allPossibleStats.filter(s => !statOptions.includes(s));
-                    let optionsStats = [correctStat];
-                    // Asegura que sean realmente incorrectas
-                    while (optionsStats.length < 4 && incorrectStats.length > 0) {
-                        let candidate = pickRandom(incorrectStats);
-                        if (!optionsStats.includes(candidate)) {
-                            optionsStats.push(candidate);
-                            incorrectStats = incorrectStats.filter(s => s !== candidate);
-                        }
-                    }
-                    optionsStats = optionsStats.sort(() => Math.random() - 0.5);
-                    const correctIdx = optionsStats.findIndex(s => s === correctStat);
-
-                    function statLabel(s) {
-                        const st = statTypes.find(t => s.startsWith(t.key));
-                        const ud = upDownTypes.find(u => s.endsWith(u.key));
-                        return `${ud ? ud.label : ''} ${st ? st.label : s}`;
-                    }
-                    mainText = `¿Qué stat modifica este objeto?`;
-                    mainImg = `<img src="${baseUrl}All_Items/item_${item.id}.png" style="width:90px;height:90px;image-rendering:pixelated;object-fit:contain;display:block;margin:0 auto;">`;
-                    questionHtml = `
-        <h3 style="margin-top:0;">${mainText}</h3>
-        ${mainImg}
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
-            ${optionsStats.map((stat, idx) => `
-                <button class="quiz-option" data-idx="${idx}" data-correct="${idx === correctIdx}" style="font-size:1.2em;padding:12px 8px;border-radius:12px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';">
-                    ${statLabel(stat)}
-                </button>
-            `).join('')}
-        </div>
-    `; */
+                    /* stat1 desactivada por ahora
+                            } else if (questionKind === 'stat1') {
+                                // ¿Qué stat modifica este objeto?
+                                const statTypes = [
+                                    { key: "dmg", label: "Daño" },
+                                    { key: "sp", label: "Velocidad" },
+                                    { key: "lck", label: "Suerte" },
+                                    { key: "rg", label: "Rango" },
+                                    { key: "cdn", label: "Cadencia" },
+                                    { key: "hp", label: "Vida" },
+                                    { key: "shs", label: "Velocidad de Bala" }
+                                ];
+                                const upDownTypes = [
+                                    { key: "up", label: "+" },
+                                    { key: "down", label: "-" }
+                                ];
+                                let item, statOptions, correctStat, tries = 0;
+                                do {
+                                    item = pickRandom(allItems);
+                                    statOptions = item.stat_change
+                                        ? item.stat_change.split(',').map(s => s.trim())
+                                        : [];
+                                    tries++;
+                                } while ((!statOptions.length) && tries < 100);
+                                if (!statOptions.length) {
+                                    alert("No se encontró ningún stat para este objeto. Se salta la pregunta.");
+                                    return showQuizQuestion();
+                                }
+                                correctStat = pickRandom(statOptions);
+            
+                                // Genera 3 opciones incorrectas que no estén en statOptions
+                                let allPossibleStats = statTypes
+                                    .map(st => upDownTypes.map(ud => `${st.key}_${ud.key}`))
+                                    .flat();
+                                let incorrectStats = allPossibleStats.filter(s => !statOptions.includes(s));
+                                let optionsStats = [correctStat];
+                                // Asegura que sean realmente incorrectas
+                                while (optionsStats.length < 4 && incorrectStats.length > 0) {
+                                    let candidate = pickRandom(incorrectStats);
+                                    if (!optionsStats.includes(candidate)) {
+                                        optionsStats.push(candidate);
+                                        incorrectStats = incorrectStats.filter(s => s !== candidate);
+                                    }
+                                }
+                                optionsStats = optionsStats.sort(() => Math.random() - 0.5);
+                                const correctIdx = optionsStats.findIndex(s => s === correctStat);
+            
+                                function statLabel(s) {
+                                    const st = statTypes.find(t => s.startsWith(t.key));
+                                    const ud = upDownTypes.find(u => s.endsWith(u.key));
+                                    return `${ud ? ud.label : ''} ${st ? st.label : s}`;
+                                }
+                                mainText = `¿Qué stat modifica este objeto?`;
+                                mainImg = `<img src="${baseUrl}All_Items/item_${item.id}.png" style="width:90px;height:90px;image-rendering:pixelated;object-fit:contain;display:block;margin:0 auto;">`;
+                                questionHtml = `
+                    <h3 style="margin-top:0;">${mainText}</h3>
+                    ${mainImg}
+                    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
+                        ${optionsStats.map((stat, idx) => `
+                            <button class="quiz-option" data-idx="${idx}" data-correct="${idx === correctIdx}" style="font-size:1.2em;padding:12px 8px;border-radius:12px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';">
+                                ${statLabel(stat)}
+                            </button>
+                        `).join('')}
+                    </div>
+                `; */
                 } else if (questionKind === 'stat2') {
                     // ¿Cuál de estos items modifica [stat] ([up/down])?
                     const statTypes = [
