@@ -14,7 +14,6 @@
     <link rel="icon" href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/icon.png"
         type="image/x-icon">
     <style>
-        
         /* Webkit (Chrome, Edge, Safari) */
         ::-webkit-scrollbar {
             width: 0;
@@ -3313,7 +3312,7 @@
                     if (tooltip.classList.contains('visible')) {
                         tooltip.classList.remove('visible');
                         // limpiar preventClickFor en breve para no bloquear taps normales posteriores
-                        setTimeout(() => { preventClickFor = null; }, 50);
+                        setTimeout(() => { preventClickFor = null; }, 10);
                     }
                     touchTarget = null;
                 });
@@ -3343,11 +3342,11 @@
                 window.addEventListener('scroll', () => tooltip.classList.remove('visible'), { passive: true });
                 window.addEventListener('resize', () => tooltip.classList.remove('visible'));
             })();
-            document.addEventListener('contextmenu', function(e) {
-  if (e.target.tagName === 'IMG') {
-    e.preventDefault();
-  }
-});
+            document.addEventListener('contextmenu', function (e) {
+                if (e.target.tagName === 'IMG') {
+                    e.preventDefault();
+                }
+            });
 
         </script>
 
