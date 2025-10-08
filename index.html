@@ -1847,7 +1847,7 @@
                         cat.style.transition = 'none';
                         cat.style.left = rect.left + 'px';
                         cat.style.top = rect.top + 'px';
-
+                       
                         cat.style.opacity = '1';
 
                         // Crear un nuevo elemento para la versión "derribada" en la misma posición
@@ -3245,12 +3245,7 @@
                     tooltip.style.top = top + 'px';
                 }
 
-                // Estado para touch-longpress
-                let touchTimer = null;
-                let touchTarget = null;
-                let preventClickFor = null;
-
-                // Delegación: escucha mouseover / mouseout en todo el documento (desktop)
+                // Delegación: escucha mouseover / mouseout en todo el documento
                 document.addEventListener('mouseover', (ev) => {
                     const img = ev.target.closest && ev.target.closest('.img-grid img');
                     if (!img) return;
@@ -3275,79 +3270,10 @@
                     tooltip.classList.remove('visible');
                 });
 
-                // --- Touch: pulsación larga para móvil ---
-                document.addEventListener('touchstart', (ev) => {
-                    const img = ev.target.closest && ev.target.closest('.img-grid img');
-                    if (!img) return;
-                    touchTarget = img;
-                    // comenzar temporizador de "long press"
-                    touchTimer = setTimeout(() => {
-                        const name = img.alt || img.getAttribute('alt') || '';
-                        const id = extractIdFromSrc(img.getAttribute('src') || img.src || '');
-                        tooltip.innerHTML = `${escapeHtml(name || '')}` + (id ? ` <span class="tooltip-id">#${escapeHtml(id)}</span>` : '');
-                        positionTooltipForImg(img);
-                        tooltip.classList.add('visible');
-                        // evitar que el siguiente click/tap abra el modal
-                        preventClickFor = img;
-                    }, 15); // duración del hold (ajusta si quieres más/menos)
-                }, { passive: true });
-
-                document.addEventListener('touchmove', (ev) => {
-                    // si el usuario mueve el dedo, cancelar el longpress
-                    if (touchTimer) {
-                        clearTimeout(touchTimer);
-                        touchTimer = null;
-                    }
-                    // si el tooltip está visible, reposicionar respecto al elemento actual
-                    const hovered = document.querySelector('.img-grid img:hover') || touchTarget;
-                    if (hovered && tooltip.classList.contains('visible')) positionTooltipForImg(hovered);
-                }, { passive: true });
-
-                document.addEventListener('touchend', (ev) => {
-                    if (touchTimer) {
-                        clearTimeout(touchTimer);
-                        touchTimer = null;
-                    }
-                    // si mostramos tooltip por longpress, ocultarlo y prevenir el click que venga a continuación
-                    if (tooltip.classList.contains('visible')) {
-                        tooltip.classList.remove('visible');
-                        // limpiar preventClickFor en breve para no bloquear taps normales posteriores
-                        setTimeout(() => { preventClickFor = null; }, 10);
-                    }
-                    touchTarget = null;
-                });
-
-                document.addEventListener('touchcancel', () => {
-                    if (touchTimer) {
-                        clearTimeout(touchTimer);
-                        touchTimer = null;
-                    }
-                    tooltip.classList.remove('visible');
-                    touchTarget = null;
-                    preventClickFor = null;
-                });
-
-                // Intercepta el click que sigue a un long-press para evitar abrir modal inmediatamente
-                document.addEventListener('click', (e) => {
-                    if (!preventClickFor) return;
-                    const clickedImg = e.target.closest && e.target.closest('.img-grid img');
-                    if (clickedImg === preventClickFor) {
-                        e.stopPropagation();
-                        e.preventDefault();
-                        preventClickFor = null;
-                    }
-                }, true);
-
                 // ocultar en scroll para evitar desalineaciones
                 window.addEventListener('scroll', () => tooltip.classList.remove('visible'), { passive: true });
                 window.addEventListener('resize', () => tooltip.classList.remove('visible'));
             })();
-            document.addEventListener('contextmenu', function (e) {
-                if (e.target.tagName === 'IMG') {
-                    e.preventDefault();
-                }
-            });
-
         </script>
 
 
