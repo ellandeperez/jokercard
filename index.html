@@ -693,6 +693,35 @@
             pointer-events: none;
         }
 
+        /* Mini-tooltip para hover en items/trinkets/cards */
+        .mini-tooltip {
+            position: fixed;
+            background: #262422;
+            color: #e4e0e0;
+            border: 4px inset #ebe5de;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-family: 'Jersey 15', Arial, sans-serif;
+            font-size: 1.2em;
+            pointer-events: none;
+            z-index: 100000;
+            transform-origin: center bottom;
+            transition: opacity 0.12s ease, transform 0.12s ease;
+            opacity: 0;
+            box-shadow: 0 6px 18px #0008;
+            white-space: nowrap;
+        }
+
+        .mini-tooltip.visible {
+            opacity: 1;
+            transform: translateY(-6px);
+        }
+
+        .mini-tooltip .tooltip-id {
+            margin-left: 8px;
+            color: #e4e0e0;
+        }
+
         @media (max-width: 700px) {
             html {
                 background-color: rgb(19, 12, 9);
@@ -1153,10 +1182,8 @@
                 function hideLoader() {
                     const loader = document.getElementById('loader-bg');
                     if (loader) {
-                        setTimeout(() => {
-                            loader.style.opacity = '0';
-                            setTimeout(() => loader.style.display = 'none', 600);
-                        }, 600);
+                        loader.style.opacity = '0';
+                        setTimeout(() => loader.style.display = 'none', 200);
                     }
                 }
                 const circle = document.getElementById('loader-circle');
@@ -1787,76 +1814,77 @@
                 }
                 lastTapTime = now;
                 if (tapCount === 3) {
-    const isUp2 = Math.random() < 0.01;
-    const catSrc = isUp2
-        ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up2.png'
-        : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up.png';
-    const catDownSrc = isUp2
-        ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_stunned2.png'
-        : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_stunned.png';
-    const cat = document.createElement('img');
-    cat.src = catSrc;
-    cat.className = 'blondigo-cat';
-    cat.style.position = 'fixed';
-    cat.style.left = '-120px';
-    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-    cat.style.top = Math.floor(Math.random() * (vh - 120)) + 'px';
-    cat.style.width = '100px';
-    cat.style.height = '100px';
-    cat.style.zIndex = '9999';
-    cat.style.pointerEvents = 'auto'; // Permitir clicks
-    cat.style.opacity = '0';
-    cat.style.transition = 'opacity 0.3s, left 3s linear';
-    document.body.appendChild(cat);
+                    const isUp2 = Math.random() < 0.01;
+                    const catSrc = isUp2
+                        ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up2.png'
+                        : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_up.png';
+                    const catDownSrc = isUp2
+                        ? 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_stunned2.png'
+                        : 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/cat_stunned.png';
+                    const cat = document.createElement('img');
+                    cat.src = catSrc;
+                    cat.className = 'blondigo-cat';
+                    cat.style.position = 'fixed';
+                    cat.style.left = '-120px';
+                    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+                    cat.style.top = Math.floor(Math.random() * (vh - 120)) + 'px';
+                    cat.style.width = '100px';
+                    cat.style.height = '100px';
+                    cat.style.zIndex = '9999';
+                    cat.style.pointerEvents = 'auto'; // Permitir clicks
+                    cat.style.opacity = '0';
+                    cat.style.transition = 'opacity 0.3s, left 3s linear';
+                    document.body.appendChild(cat);
 
-    setTimeout(() => { cat.style.opacity = '1'; cat.style.left = '110vw'; }, 100);
+                    setTimeout(() => { cat.style.opacity = '1'; cat.style.left = '110vw'; }, 100);
 
-    // Derribar el gato al hacer click
-    cat.addEventListener('click', function (ev) {
-        ev.stopPropagation();
+                    // Derribar el gato al hacer click
+                    cat.addEventListener('click', function (ev) {
+                        ev.stopPropagation();
 
-        // Congelar posición actual del gato que está volando
-        const rect = cat.getBoundingClientRect();
-        cat.style.transition = 'none';
-        cat.style.left = rect.left + 'px';
-        cat.style.top = rect.top + 'px';
-        cat.style.opacity = '1';
+                        // Congelar posición actual del gato que está volando
+                        const rect = cat.getBoundingClientRect();
+                        cat.style.transition = 'none';
+                        cat.style.left = rect.left + 'px';
+                        cat.style.top = rect.top + 'px';
 
-        // Crear un nuevo elemento para la versión "derribada" en la misma posición
-        const down = document.createElement('img');
-        down.src = catDownSrc;
-        down.className = 'blondigo-cat';
-        down.style.position = 'fixed';
-        down.style.left = rect.left + 'px';
-        down.style.top = rect.top + 'px';
-        down.style.width = cat.style.width || '100px';
-        down.style.height = cat.style.height || '100px';
-        down.style.zIndex = '9999';
-        down.style.pointerEvents = 'none'; // no recibir clicks
-        down.style.opacity = '1';
-        // Asegurar que esté encima
-        document.body.appendChild(down);
+                        cat.style.opacity = '1';
 
-        // Remover/ocultar el gato original inmediatamente para que no interfiera
-        cat.remove();
+                        // Crear un nuevo elemento para la versión "derribada" en la misma posición
+                        const down = document.createElement('img');
+                        down.src = catDownSrc;
+                        down.className = 'blondigo-cat';
+                        down.style.position = 'fixed';
+                        down.style.left = rect.left + 'px';
+                        down.style.top = rect.top + 'px';
+                        down.style.width = cat.style.width || '100px';
+                        down.style.height = cat.style.height || '100px';
+                        down.style.zIndex = '9999';
+                        down.style.pointerEvents = 'none'; // no recibir clicks
+                        down.style.opacity = '1';
+                        // Asegurar que esté encima
+                        document.body.appendChild(down);
 
-        // Forzar reflow para que la transición funcione en el nuevo elemento
-        void down.offsetWidth;
+                        // Remover/ocultar el gato original inmediatamente para que no interfiera
+                        cat.remove();
 
-        // Animar caída del nuevo elemento
-        down.style.transition = 'top 1.2s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.5s';
-        down.style.top = '110vh';
+                        // Forzar reflow para que la transición funcione en el nuevo elemento
+                        void down.offsetWidth;
 
-        // Desvanecer y eliminar después de caer
-        setTimeout(() => {
-            down.style.opacity = '0';
-            setTimeout(() => down.remove(), 600);
-        }, 1200);
-    });
+                        // Animar caída del nuevo elemento
+                        down.style.transition = 'top 1.2s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.5s';
+                        down.style.top = '110vh';
 
-    setTimeout(() => { cat.remove(); }, 3200);
-    tapCount = 0;
-}
+                        // Desvanecer y eliminar después de caer
+                        setTimeout(() => {
+                            down.style.opacity = '0';
+                            setTimeout(() => down.remove(), 600);
+                        }, 1200);
+                    });
+
+                    setTimeout(() => { cat.remove(); }, 3200);
+                    tapCount = 0;
+                }
             });
             document.getElementById('search-bar').addEventListener('input', function (e) {
                 if (e.target.value.trim().toLowerCase() === 'chucurrucu') {
@@ -2867,7 +2895,6 @@
                     { key: 'rg', label: 'Rango' }
                 ];
                 const upDownTypes = [
-                    { key: 'up', label: 'Sube' },
                     { key: 'down', label: 'Baja' }
                 ];
 
@@ -3184,7 +3211,137 @@
                     clearTimeout(timer);
                 };
             }
-            // ...existing code...
+            (function setupMiniTooltip() {
+                const tooltip = document.createElement('div');
+                tooltip.className = 'mini-tooltip';
+                document.body.appendChild(tooltip);
+
+                function escapeHtml(s) {
+                    return String(s).replace(/[&<>"']/g, function (m) {
+                        return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m];
+                    });
+                }
+
+                function extractIdFromSrc(src) {
+                    if (!src) return '';
+                    const mItem = src.match(/item_(\d+)\.png/i);
+                    if (mItem) return mItem[1];
+                    const mTr = src.match(/trinket_(\d+)\.png/i);
+                    if (mTr) return mTr[1];
+                    const mCard = src.match(/card_(\d+)\.png/i);
+                    if (mCard) return mCard[1];
+                    return '';
+                }
+
+                function positionTooltipForImg(img) {
+                    const rect = img.getBoundingClientRect();
+                    // force reflow to have tooltip size
+                    tooltip.style.left = '0px'; tooltip.style.top = '0px';
+                    const ttRect = tooltip.getBoundingClientRect();
+                    const top = Math.max(8, rect.top - ttRect.height - 8);
+                    let left = rect.left + (rect.width / 2) - (ttRect.width / 2);
+                    left = Math.min(window.innerWidth - ttRect.width - 8, Math.max(8, left));
+                    tooltip.style.left = left + 'px';
+                    tooltip.style.top = top + 'px';
+                }
+
+                // Estado para touch-longpress
+                let touchTimer = null;
+                let touchTarget = null;
+                let preventClickFor = null;
+
+                // Delegación: escucha mouseover / mouseout en todo el documento (desktop)
+                document.addEventListener('mouseover', (ev) => {
+                    const img = ev.target.closest && ev.target.closest('.img-grid img');
+                    if (!img) return;
+                    const name = img.alt || img.getAttribute('alt') || '';
+                    const id = extractIdFromSrc(img.getAttribute('src') || img.src || '');
+                    tooltip.innerHTML = `${escapeHtml(name || '')}` + (id ? ` <span class="tooltip-id">#${escapeHtml(id)}</span>` : '');
+                    positionTooltipForImg(img);
+                    requestAnimationFrame(() => tooltip.classList.add('visible'));
+                });
+
+                document.addEventListener('mousemove', (ev) => {
+                    // mantener tooltip posicionado sobre el elemento hovered si sigue el hover
+                    const hovered = document.querySelector('.img-grid img:hover');
+                    if (hovered && tooltip.classList.contains('visible')) {
+                        positionTooltipForImg(hovered);
+                    }
+                });
+
+                document.addEventListener('mouseout', (ev) => {
+                    const img = ev.target.closest && ev.target.closest('.img-grid img');
+                    if (!img) return;
+                    tooltip.classList.remove('visible');
+                });
+
+                // --- Touch: pulsación larga para móvil ---
+                document.addEventListener('touchstart', (ev) => {
+                    const img = ev.target.closest && ev.target.closest('.img-grid img');
+                    if (!img) return;
+                    touchTarget = img;
+                    // comenzar temporizador de "long press"
+                    touchTimer = setTimeout(() => {
+                        const name = img.alt || img.getAttribute('alt') || '';
+                        const id = extractIdFromSrc(img.getAttribute('src') || img.src || '');
+                        tooltip.innerHTML = `${escapeHtml(name || '')}` + (id ? ` <span class="tooltip-id">#${escapeHtml(id)}</span>` : '');
+                        positionTooltipForImg(img);
+                        tooltip.classList.add('visible');
+                        // evitar que el siguiente click/tap abra el modal
+                        preventClickFor = img;
+                    }, 450); // duración del hold (ajusta si quieres más/menos)
+                }, { passive: true });
+
+                document.addEventListener('touchmove', (ev) => {
+                    // si el usuario mueve el dedo, cancelar el longpress
+                    if (touchTimer) {
+                        clearTimeout(touchTimer);
+                        touchTimer = null;
+                    }
+                    // si el tooltip está visible, reposicionar respecto al elemento actual
+                    const hovered = document.querySelector('.img-grid img:hover') || touchTarget;
+                    if (hovered && tooltip.classList.contains('visible')) positionTooltipForImg(hovered);
+                }, { passive: true });
+
+                document.addEventListener('touchend', (ev) => {
+                    if (touchTimer) {
+                        clearTimeout(touchTimer);
+                        touchTimer = null;
+                    }
+                    // si mostramos tooltip por longpress, ocultarlo y prevenir el click que venga a continuación
+                    if (tooltip.classList.contains('visible')) {
+                        tooltip.classList.remove('visible');
+                        // limpiar preventClickFor en breve para no bloquear taps normales posteriores
+                        setTimeout(() => { preventClickFor = null; }, 50);
+                    }
+                    touchTarget = null;
+                });
+
+                document.addEventListener('touchcancel', () => {
+                    if (touchTimer) {
+                        clearTimeout(touchTimer);
+                        touchTimer = null;
+                    }
+                    tooltip.classList.remove('visible');
+                    touchTarget = null;
+                    preventClickFor = null;
+                });
+
+                // Intercepta el click que sigue a un long-press para evitar abrir modal inmediatamente
+                document.addEventListener('click', (e) => {
+                    if (!preventClickFor) return;
+                    const clickedImg = e.target.closest && e.target.closest('.img-grid img');
+                    if (clickedImg === preventClickFor) {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        preventClickFor = null;
+                    }
+                }, true);
+
+                // ocultar en scroll para evitar desalineaciones
+                window.addEventListener('scroll', () => tooltip.classList.remove('visible'), { passive: true });
+                window.addEventListener('resize', () => tooltip.classList.remove('visible'));
+            })();
         </script>
 
 
