@@ -696,9 +696,9 @@
         /* Mini-tooltip para hover en items/trinkets/cards */
         .mini-tooltip {
             position: fixed;
-            background: #262422;
-            color: #e4e0e0;
-            border: 4px inset #ebe5de;
+            background: #f6d6b0;
+            color: #000;
+            border: 4px inset #99866e;
             padding: 6px 10px;
             border-radius: 6px;
             font-family: 'Jersey 15', Arial, sans-serif;
@@ -719,7 +719,6 @@
 
         .mini-tooltip .tooltip-id {
             margin-left: 8px;
-            color: #e4e0e0;
         }
 
         @media (max-width: 700px) {
@@ -886,8 +885,10 @@
     <div class="content">
         <!-- Search bar -->
         <div class="search-bar-content">
-            <img id="info-btn" src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/info.png"
-                alt="Cambiar idioma" class="info-img">
+            <!-- Botón de ajustes (sustituye al de info) -->
+            <img id="settings-btn"
+                src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/settings.png"
+                alt="Ajustes" class="info-img" title="Ajustes">
             <div class="search-bar-container">
                 <input class="search-bar" id="search-bar" type="text" placeholder="Nombre, habitación, etc...">
                 <span class="clear-search" id="clear-search">&times;</span>
@@ -1041,6 +1042,35 @@
             <p>P.S. you'll find out what platinum god is</p>
         </div>
 
+    </div>
+
+    <div id="settings-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" id="modal-content-settings" style="text-align:center;">
+            <span class="modal-close" id="modal-close-settings">&times;</span>
+
+            <!-- Nombre del tema visible -->
+            <div id="theme-name" style="font-size: 2em;font-weight:700;margin-bottom:8px;">DEFAULT FLOOR</div>
+
+            <!-- Carousel: flechas + preview -->
+            <div id="theme-carousel" style="display:flex;align-items:center;gap:12px;justify-content:center;">
+                <button id="theme-prev" class="theme-nav" aria-label="Anterior"
+                    style="cursor:pointer;">‹</button>
+
+                <div id="theme-preview"
+                    style="width:350px;height:200px;border:8px outset var(--border-color,#99866e);background-size:cover;background-position:center;border-radius:8px;">
+                </div>
+
+                <button id="theme-next" class="theme-nav" aria-label="Siguiente"
+                    style="cursor:pointer;">›</button>
+            </div>
+
+            <!-- mantenemos el icono/info dentro por compatibilidad -->
+            <div style="margin-top:10px;">
+                <img id="info-btn"
+                    src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/info.png" alt="Info"
+                    class="info-img" style="width:36px;height:36px;cursor:pointer;">
+            </div>
+        </div>
     </div>
 
     <div id="quiz-modal" class="modal">
@@ -1535,24 +1565,198 @@
             };
 
             // Info modal
-            document.getElementById('info-btn').addEventListener('click', function () {
-                let infoModal;
-                if (language === 'es') {
-                    infoModal = document.getElementById('info-modal_es');
-                } else {
-                    infoModal = document.getElementById('info-modal_en');
+            const infoBtn = document.getElementById('info-btn');
+            if (infoBtn) {
+                infoBtn.addEventListener('click', function () {
+                    // If settings modal is open, close it first
+                    if (settingsModal && settingsModal.style.display === 'flex') settingsModal.style.display = 'none';
+
+                    const infoModal = (language === 'es') ? document.getElementById('info-modal_es') : document.getElementById('info-modal_en');
+                    if (!infoModal) return;
+                    infoModal.style.display = 'flex';
+
+                    const closeBtn = infoModal.querySelector('.modal-close');
+                    if (closeBtn) closeBtn.onclick = () => { infoModal.style.display = 'none'; };
+
+                    infoModal.onclick = function (e) {
+                        if (e.target === infoModal) infoModal.style.display = 'none';
+                    };
+                });
+            }
+
+            const settingsBtn = document.getElementById('settings-btn');
+            const settingsModal = document.getElementById('settings-modal');
+            const settingsClose = document.getElementById('modal-close-settings');
+
+            // Temas disponibles (fácil de extender)
+            const THEMES = {
+                base: {
+                    bg: window.innerWidth <= 700
+                        ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/background_mobile.png')"
+                        : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/background.png')",
+                    border: '#99866e',
+                    modalBg: '#f6d6b0',
+                    tooltipBg: '#f6d6b0',
+                    tooltipBorder: '#99866e',
+                    textColor: '#000'
+                },
+                angel: {
+                    bg: window.innerWidth <= 700
+                        ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/angel_background_mobile.png')"
+                        : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/angel_background.png')",
+                    border: '#a3c9c1',
+                    modalBg: '#e3f6f5',
+                    tooltipBg: '#e3f6f5',
+                    tooltipBorder: '#a3c9c1',
+                    textColor: '#000'
+                },
+                dark: {
+                    bg: window.innerWidth <= 700
+                        ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/dark_background_mobile.png')"
+                        : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/dark_background.png')",
+                    border: '#555555',
+                    modalBg: '#2b2b2b',
+                    tooltipBg: '#262422',
+                    tooltipBorder: '#ebe5de',
+                    textColor: '#e4e0e0'
                 }
-                infoModal.style.display = 'flex';
+            };
 
-                const closeBtn = infoModal.querySelector('.modal-close');
-                closeBtn.onclick = () => {
-                    infoModal.style.display = 'none';
-                };
+            const supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+            const DEVICE = supportsHover ? 'desktop' : 'mobile';
+            const THEME_KEY_DESKTOP = 'jc_theme_desktop';
+            const THEME_KEY_MOBILE = 'jc_theme_mobile';
 
-                infoModal.onclick = function (e) {
-                    if (e.target === infoModal) infoModal.style.display = 'none';
-                };
+            function applyTheme(key, saveForDevice) {
+                const t = THEMES[key] || THEMES.default;
+                document.documentElement.style.setProperty('--bg-image', t.bg);
+                document.documentElement.style.setProperty('--border-color', t.border);
+                document.documentElement.style.setProperty('--modal-bg', t.modalBg);
+                document.documentElement.style.setProperty('--tooltip-bg', t.tooltipBg);
+                document.documentElement.style.setProperty('--tooltip-border', t.tooltipBorder);
+                document.documentElement.style.backgroundImage = t.bg;
+                document.querySelectorAll('.modal-content').forEach(el => {
+                    el.style.background = t.modalBg;
+                    el.style.borderColor = t.border;
+                    el.style.color = t.textColor;
+                });
+                document.querySelectorAll('.mini-tooltip').forEach(el => {
+                    el.style.background = t.tooltipBg;
+                    el.style.borderColor = t.tooltipBorder;
+                    el.style.color = t.textColor;
+                });
+                // Guardado opcional por dispositivo
+                if (saveForDevice === 'desktop') localStorage.setItem(THEME_KEY_DESKTOP, key);
+                if (saveForDevice === 'mobile') localStorage.setItem(THEME_KEY_MOBILE, key);
+            }
+
+            // Inicializar tema guardado por tipo de dispositivo (si existe), si no, fallback default
+            (function initThemeByDevice() {
+                const savedDesktop = localStorage.getItem(THEME_KEY_DESKTOP);
+                const savedMobile = localStorage.getItem(THEME_KEY_MOBILE);
+                const initial = DEVICE === 'desktop' ? (savedDesktop || 'default') : (savedMobile || 'default');
+                applyTheme(initial, null); // aplicar sin sobrescribir el storage
+            })();
+
+            // Abrir settings
+            settingsBtn.addEventListener('click', () => {
+                settingsModal.style.display = 'flex';
             });
+            settingsClose.addEventListener('click', () => settingsModal.style.display = 'none');
+            settingsModal.addEventListener('click', (e) => { if (e.target === settingsModal) settingsModal.style.display = 'none'; });
+
+            const themePreview = document.getElementById('theme-preview');
+            const themeNameEl = document.getElementById('theme-name');
+            const prevBtn = document.getElementById('theme-prev');
+            const nextBtn = document.getElementById('theme-next');
+            const selectBtn = document.getElementById('theme-select');
+            const openInfoFromSettings = document.getElementById('open-info-from-settings');
+
+            // construir lista de keys a partir de THEMES (el objeto ya existe)
+            const THEME_KEYS = Object.keys(THEMES || {});
+
+            // índice del tema actualmente visible en el carousel
+            let currentThemeIndex = 0;
+
+            // actualiza preview+texto y aplica tema como "vista previa" (no guarda)
+            function updateCarousel(index) {
+                if (!THEME_KEYS.length) return;
+                currentThemeIndex = (index + THEME_KEYS.length) % THEME_KEYS.length;
+                const key = THEME_KEYS[currentThemeIndex];
+                const t = THEMES[key];
+                // nombre en mayúsculas o como quieras
+                themeNameEl.textContent = (key || '').replace(/_/g, ' ').toUpperCase();
+                // preview: usamos bg del tema para mostrar
+                // si t.bg es una url(...) o linear-gradient, lo aplicamos directamente
+                themePreview.style.backgroundImage = t.bg || '';
+                themePreview.style.borderColor = t.border || getComputedStyle(document.documentElement).getPropertyValue('--border-color') || '#99866e';
+                // aplicar como preview sin guardar (saveForDevice = null)
+                applyTheme(key, null);
+            }
+
+            // al abrir settings, inicializar index según tema guardado para el dispositivo actual
+            settingsBtn.addEventListener('click', () => {
+                // seleccionar tema guardado para DEVICE si existe
+                const savedKey = (DEVICE === 'desktop') ? localStorage.getItem(THEME_KEY_DESKTOP) : localStorage.getItem(THEME_KEY_MOBILE);
+                const startKey = savedKey || Object.keys(THEMES)[0] || 'default';
+                const startIdx = THEME_KEYS.indexOf(startKey);
+                currentThemeIndex = startIdx >= 0 ? startIdx : 0;
+                updateCarousel(currentThemeIndex);
+                settingsModal.style.display = 'flex';
+            });
+
+            settingsClose.addEventListener('click', () => settingsModal.style.display = 'none');
+            settingsModal.addEventListener('click', (e) => { if (e.target === settingsModal) settingsModal.style.display = 'none'; });
+
+            // navegación carousel
+            prevBtn.addEventListener('click', () => {
+                updateCarousel(currentThemeIndex - 1);
+            });
+            nextBtn.addEventListener('click', () => {
+                updateCarousel(currentThemeIndex + 1);
+            });
+
+            // seleccionar (guardar para el dispositivo actual)
+            selectBtn.addEventListener('click', () => {
+                const key = THEME_KEYS[currentThemeIndex];
+                applyTheme(key, DEVICE); // guarda según DEVICE
+                // feedback visual mínimo
+                selectBtn.textContent = 'Tema seleccionado';
+                setTimeout(() => selectBtn.textContent = 'Seleccionar tema', 900);
+            });
+
+            // abrir info desde settings (cierra settings)
+            openInfoFromSettings.addEventListener('click', () => {
+                settingsModal.style.display = 'none';
+                const infoModal = (language === 'es') ? document.getElementById('info-modal_es') : document.getElementById('info-modal_en');
+                if (!infoModal) return;
+                infoModal.style.display = 'flex';
+                const closeBtn = infoModal.querySelector('.modal-close');
+                if (closeBtn) closeBtn.onclick = () => { infoModal.style.display = 'none'; };
+                infoModal.onclick = function (e) { if (e.target === infoModal) infoModal.style.display = 'none'; };
+            });
+
+            // también vinculamos el icono info dentro del modal (si existe)
+            const infoBtnInside = document.querySelector('#settings-modal #info-btn');
+            if (infoBtnInside) {
+                infoBtnInside.addEventListener('click', () => {
+                    // cierra settings y abre info
+                    settingsModal.style.display = 'none';
+                    const infoModal = (language === 'es') ? document.getElementById('info-modal_es') : document.getElementById('info-modal_en');
+                    if (!infoModal) return;
+                    infoModal.style.display = 'flex';
+                });
+            }
+
+            // Inicializa carousel preview con el tema actual (no guarda)
+            (function initCarouselPreview() {
+                // determinar tema aplicado actualmente (buscamos en storage por DEVICE)
+                const savedKey = (DEVICE === 'desktop') ? localStorage.getItem(THEME_KEY_DESKTOP) : localStorage.getItem(THEME_KEY_MOBILE);
+                const startKey = savedKey || Object.keys(THEMES)[0] || 'default';
+                const startIdx = THEME_KEYS.indexOf(startKey);
+                currentThemeIndex = startIdx >= 0 ? startIdx : 0;
+                updateCarousel(currentThemeIndex);
+            })();
 
             // Lista de colores en orden cromático
             const colorOrder = [
@@ -1847,7 +2051,7 @@
                         cat.style.transition = 'none';
                         cat.style.left = rect.left + 'px';
                         cat.style.top = rect.top + 'px';
-                       
+
                         cat.style.opacity = '1';
 
                         // Crear un nuevo elemento para la versión "derribada" en la misma posición
@@ -3212,6 +3416,10 @@
                 };
             }
             (function setupMiniTooltip() {
+                // Detecta dispositivos táctiles (handhelds)
+                const isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+                if (isTouch) return; // No mostrar el tooltip de hover en móvil/tabletas
+
                 const tooltip = document.createElement('div');
                 tooltip.className = 'mini-tooltip';
                 document.body.appendChild(tooltip);
@@ -3223,19 +3431,48 @@
                 }
 
                 function extractIdFromSrc(src) {
-                    if (!src) return '';
+                    if (!src) return { kind: null, id: '' };
                     const mItem = src.match(/item_(\d+)\.png/i);
-                    if (mItem) return mItem[1];
+                    if (mItem) return { kind: 'item', id: mItem[1] };
                     const mTr = src.match(/trinket_(\d+)\.png/i);
-                    if (mTr) return mTr[1];
+                    if (mTr) return { kind: 'trinket', id: mTr[1] };
                     const mCard = src.match(/card_(\d+)\.png/i);
-                    if (mCard) return mCard[1];
-                    return '';
+                    if (mCard) return { kind: 'card', id: mCard[1] };
+                    return { kind: null, id: '' };
+                }
+
+                function findObjByImgSrc(src) {
+                    const info = extractIdFromSrc(src);
+                    if (!info.kind || !info.id) return null;
+                    if (info.kind === 'item') return allItems.find(i => String(i.id) === String(info.id)) || null;
+                    if (info.kind === 'trinket') return allTrinkets.find(t => String(t.trinketId) === String(info.id)) || null;
+                    if (info.kind === 'card') return allCards.find(c => String(c.cardId) === String(info.id)) || null;
+                    return null;
+                }
+
+                function buildStatIconsHtml(statChangeStr) {
+                    if (!statChangeStr) return '';
+                    const parts = statChangeStr.split(',').map(s => s.trim()).filter(Boolean);
+                    if (!parts.length) return '';
+                    const icons = parts.map(p => {
+                        // formatos: "dmg_up", "hp_down", "hp+1" (por si acaso)
+                        const m = p.match(/^([a-z]+)[_\s-]?([a-z0-9+\-]+)?/i);
+                        if (!m) return '';
+                        const key = m[1].toLowerCase();
+                        const dir = (m[2] || '').toLowerCase();
+                        // stat icon path en carpeta other/stats/ (usa baseUrl si existe)
+                        const statBase = (typeof baseUrl === 'string' && baseUrl) ? baseUrl.replace(/\/?$/, '/') : '';
+                        const statIcon = `${statBase}stats/${key}.png`;
+                        const dirIcon = (dir === 'up' || dir === '+') ? `${statBase}stats/statup.png` : ((dir === 'down' || dir === '-') ? `${statBase}stats/statdown.png` : '');
+                        // pequeño bloque (icon + dir marker)
+                        return `<span class="stat-icon" title="${escapeHtml(p)}"><img src="${statIcon}" alt="${key}" onerror="this.style.display='none'"><img src="${dirIcon}" alt="${dir}" class="dir" onerror="this.style.display='none'"></span>`;
+                    }).filter(Boolean);
+                    if (!icons.length) return '';
+                    return `<div class="stat-icons">${icons.join('')}</div>`;
                 }
 
                 function positionTooltipForImg(img) {
                     const rect = img.getBoundingClientRect();
-                    // force reflow to have tooltip size
                     tooltip.style.left = '0px'; tooltip.style.top = '0px';
                     const ttRect = tooltip.getBoundingClientRect();
                     const top = Math.max(8, rect.top - ttRect.height - 8);
@@ -3250,8 +3487,14 @@
                     const img = ev.target.closest && ev.target.closest('.img-grid img');
                     if (!img) return;
                     const name = img.alt || img.getAttribute('alt') || '';
-                    const id = extractIdFromSrc(img.getAttribute('src') || img.src || '');
-                    tooltip.innerHTML = `${escapeHtml(name || '')}` + (id ? ` <span class="tooltip-id">#${escapeHtml(id)}</span>` : '');
+                    const idInfo = extractIdFromSrc(img.getAttribute('src') || img.src || '');
+                    const obj = findObjByImgSrc(img.getAttribute('src') || img.src || '');
+                    let statsHtml = '';
+                    if (obj && obj.stat_change) {
+                        statsHtml = buildStatIconsHtml(obj.stat_change);
+                    }
+                    // stats encima del nombre/ID
+                    tooltip.innerHTML = `${statsHtml}<div class="tooltip-text"><strong>${escapeHtml(name || '')}</strong>` + (idInfo.id ? ` <span class="tooltip-id">#${escapeHtml(idInfo.id)}</span>` : '') + `</div>`;
                     positionTooltipForImg(img);
                     requestAnimationFrame(() => tooltip.classList.add('visible'));
                 });
@@ -3270,9 +3513,48 @@
                     tooltip.classList.remove('visible');
                 });
 
-                // ocultar en scroll para evitar desalineaciones
+                // ocultar en scroll/resize para evitar desalineaciones
                 window.addEventListener('scroll', () => tooltip.classList.remove('visible'), { passive: true });
                 window.addEventListener('resize', () => tooltip.classList.remove('visible'));
+
+                // estilos pequeños específicos para los iconos (wrap en máximo 2 por fila)
+                const statStyle = document.createElement('style');
+                statStyle.textContent = `
+        .mini-tooltip .stat-icons {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-items:center;
+            max-width:125px;
+        }
+        /* cada stat ocupa como mucho la mitad del ancho del contenedor, así salen 2 por fila */
+        .mini-tooltip .stat-icon {
+            flex: 0 0 48%;
+            max-width: 48%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .mini-tooltip .stat-icon img {
+            width:30px;
+            height:30px;
+            image-rendering:pixelated;
+            display:inline-block;
+        }
+        .mini-tooltip .stat-icon img.dir {
+            width:20px;
+            height:20px;
+            image-rendering:pixelated;
+            opacity:0.95;
+        }
+        .mini-tooltip .tooltip-text {
+            display:block;
+            text-align:center;
+        }
+    `;
+                document.head.appendChild(statStyle);
             })();
         </script>
 
