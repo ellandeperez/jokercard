@@ -1053,15 +1053,13 @@
 
             <!-- Carousel: flechas + preview -->
             <div id="theme-carousel" style="display:flex;align-items:center;gap:12px;justify-content:center;">
-                <button id="theme-prev" class="theme-nav" aria-label="Anterior"
-                    style="cursor:pointer;">‹</button>
+                <button id="theme-prev" class="theme-nav" aria-label="Anterior" style="cursor:pointer;">‹</button>
 
                 <div id="theme-preview"
                     style="width:350px;height:200px;border:8px outset var(--border-color,#99866e);background-size:cover;background-position:center;border-radius:8px;">
                 </div>
 
-                <button id="theme-next" class="theme-nav" aria-label="Siguiente"
-                    style="cursor:pointer;">›</button>
+                <button id="theme-next" class="theme-nav" aria-label="Siguiente" style="cursor:pointer;">›</button>
             </div>
 
             <!-- mantenemos el icono/info dentro por compatibilidad -->
@@ -1622,46 +1620,63 @@
                 }
             };
 
-            const supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-            const DEVICE = supportsHover ? 'desktop' : 'mobile';
-            const THEME_KEY_DESKTOP = 'jc_theme_desktop';
-            const THEME_KEY_MOBILE = 'jc_theme_mobile';
+const supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+const DEVICE = supportsHover ? 'desktop' : 'mobile';
+const THEME_KEY_DESKTOP = 'jc_theme_desktop';
+const THEME_KEY_MOBILE = 'jc_theme_mobile';
 
-            function applyTheme(key, saveForDevice) {
-                const t = THEMES[key] || THEMES.default;
-                document.documentElement.style.setProperty('--bg-image', t.bg);
-                document.documentElement.style.setProperty('--border-color', t.border);
-                document.documentElement.style.setProperty('--modal-bg', t.modalBg);
-                document.documentElement.style.setProperty('--tooltip-bg', t.tooltipBg);
-                document.documentElement.style.setProperty('--tooltip-border', t.tooltipBorder);
-                document.documentElement.style.backgroundImage = t.bg;
-                document.querySelectorAll('.modal-content').forEach(el => {
-                    el.style.background = t.modalBg;
-                    el.style.borderColor = t.border;
-                    el.style.color = t.textColor;
-                });
-                document.querySelectorAll('.mini-tooltip').forEach(el => {
-                    el.style.background = t.tooltipBg;
-                    el.style.borderColor = t.tooltipBorder;
-                    el.style.color = t.textColor;
-                });
-                // Guardado opcional por dispositivo
-                if (saveForDevice === 'desktop') localStorage.setItem(THEME_KEY_DESKTOP, key);
-                if (saveForDevice === 'mobile') localStorage.setItem(THEME_KEY_MOBILE, key);
-            }
+// Guarda la key del tema que está actualmente aplicada
+let CURRENT_THEME_KEY = null;
 
-            // Inicializar tema guardado por tipo de dispositivo (si existe), si no, fallback default
-            (function initThemeByDevice() {
-                const savedDesktop = localStorage.getItem(THEME_KEY_DESKTOP);
-                const savedMobile = localStorage.getItem(THEME_KEY_MOBILE);
-                const initial = DEVICE === 'desktop' ? (savedDesktop || 'default') : (savedMobile || 'default');
-                applyTheme(initial, null); // aplicar sin sobrescribir el storage
-            })();
+function applyTheme(key, saveForDevice) {
+    const t = THEMES[key] || THEMES.default || Object.values(THEMES)[0];
+    // actualiza CSS vars y background
+    document.documentElement.style.setProperty('--bg-image', t.bg || '');
+    document.documentElement.style.setProperty('--border-color', t.border || '');
+    document.documentElement.style.setProperty('--modal-bg', t.modalBg || '');
+    document.documentElement.style.setProperty('--tooltip-bg', t.tooltipBg || '');
+    document.documentElement.style.setProperty('--tooltip-border', t.tooltipBorder || '');
+    document.documentElement.style.backgroundImage = t.bg || '';
 
-            // Abrir settings
-            settingsBtn.addEventListener('click', () => {
-                settingsModal.style.display = 'flex';
-            });
+    // actualizar elementos
+    document.querySelectorAll('.modal-content').forEach(el => {
+        el.style.background = t.modalBg || '';
+        el.style.borderColor = t.border || '';
+        el.style.color = t.textColor || '';
+    });
+    document.querySelectorAll('.mini-tooltip').forEach(el => {
+        el.style.background = t.tooltipBg || '';
+        el.style.borderColor = t.tooltipBorder || '';
+        el.style.color = t.textColor || '';
+    });
+
+    // almacenar la key actual (siempre) para que preview y apertura de settings la lean
+    CURRENT_THEME_KEY = key;
+
+    // Guardado opcional por dispositivo
+    if (saveForDevice === 'desktop') localStorage.setItem(THEME_KEY_DESKTOP, key);
+    if (saveForDevice === 'mobile') localStorage.setItem(THEME_KEY_MOBILE, key);
+}
+
+// Inicializar tema guardado por tipo de dispositivo (si existe), si no, fallback default
+(function initThemeByDevice() {
+    const savedDesktop = localStorage.getItem(THEME_KEY_DESKTOP);
+    const savedMobile = localStorage.getItem(THEME_KEY_MOBILE);
+    const initial = DEVICE === 'desktop' ? (savedDesktop || Object.keys(THEMES)[0] || 'default') : (savedMobile || Object.keys(THEMES)[0] || 'default');
+    applyTheme(initial, null); // aplicar sin sobrescribir el storage
+    // asegurar CURRENT_THEME_KEY está definido
+    if (!CURRENT_THEME_KEY) CURRENT_THEME_KEY = initial;
+})();
+
+// Abrir settings: usa primero CURRENT_THEME_KEY (tema aplicado), luego storage, luego fallback
+settingsBtn.addEventListener('click', () => {
+    const savedKey = (DEVICE === 'desktop') ? localStorage.getItem(THEME_KEY_DESKTOP) : localStorage.getItem(THEME_KEY_MOBILE);
+    const startKey = CURRENT_THEME_KEY || savedKey || Object.keys(THEMES)[0] || 'default';
+    const startIdx = THEME_KEYS.indexOf(startKey);
+    currentThemeIndex = startIdx >= 0 ? startIdx : 0;
+    updateCarousel(currentThemeIndex);
+    settingsModal.style.display = 'flex';
+});
             settingsClose.addEventListener('click', () => settingsModal.style.display = 'none');
             settingsModal.addEventListener('click', (e) => { if (e.target === settingsModal) settingsModal.style.display = 'none'; });
 
@@ -1711,9 +1726,15 @@
             // navegación carousel
             prevBtn.addEventListener('click', () => {
                 updateCarousel(currentThemeIndex - 1);
+                // aplicar y guardar inmediatamente el tema visible
+                const key = THEME_KEYS[currentThemeIndex];
+                if (key) applyTheme(key, DEVICE);
             });
             nextBtn.addEventListener('click', () => {
                 updateCarousel(currentThemeIndex + 1);
+                // aplicar y guardar inmediatamente el tema visible
+                const key = THEME_KEYS[currentThemeIndex];
+                if (key) applyTheme(key, DEVICE);
             });
 
             // también vinculamos el icono info dentro del modal (si existe)
