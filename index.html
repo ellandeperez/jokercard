@@ -1716,26 +1716,6 @@
                 updateCarousel(currentThemeIndex + 1);
             });
 
-            // seleccionar (guardar para el dispositivo actual)
-            selectBtn.addEventListener('click', () => {
-                const key = THEME_KEYS[currentThemeIndex];
-                applyTheme(key, DEVICE); // guarda según DEVICE
-                // feedback visual mínimo
-                selectBtn.textContent = 'Tema seleccionado';
-                setTimeout(() => selectBtn.textContent = 'Seleccionar tema', 900);
-            });
-
-            // abrir info desde settings (cierra settings)
-            openInfoFromSettings.addEventListener('click', () => {
-                settingsModal.style.display = 'none';
-                const infoModal = (language === 'es') ? document.getElementById('info-modal_es') : document.getElementById('info-modal_en');
-                if (!infoModal) return;
-                infoModal.style.display = 'flex';
-                const closeBtn = infoModal.querySelector('.modal-close');
-                if (closeBtn) closeBtn.onclick = () => { infoModal.style.display = 'none'; };
-                infoModal.onclick = function (e) { if (e.target === infoModal) infoModal.style.display = 'none'; };
-            });
-
             // también vinculamos el icono info dentro del modal (si existe)
             const infoBtnInside = document.querySelector('#settings-modal #info-btn');
             if (infoBtnInside) {
