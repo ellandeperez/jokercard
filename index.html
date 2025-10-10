@@ -257,7 +257,7 @@
             padding-bottom: 4px;
             border-radius: 10px;
             border: outset 3px #99866e;
-            background: #99866e;
+            background: var(--filter-unselected-bg, #99866e);
             color: #222;
             cursor: pointer;
             transition: background 0.2s, color 0.2s;
@@ -282,7 +282,7 @@
         }
 
         .filter-btn.active {
-            background: #f6d6b0;
+            background: var(--filter-active-bg, #99866e);
             font-weight: bold;
             box-shadow: 0 0 8px #fff2;
         }
@@ -1596,6 +1596,7 @@
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/background.png')",
                     border: '#99866e',
                     modalBg: '#f6d6b0',
+                    unselectedBg: '#ad9e84',
                     tooltipBg: '#f6d6b0',
                     tooltipBorder: '#99866e',
                     textColor: '#000'
@@ -1606,6 +1607,7 @@
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/depths_background.png')",
                     border: '#232323',
                     modalBg: '#181818',
+                    unselectedBg: '#2e2d2d',
                     tooltipBg: '#222222',
                     tooltipBorder: '#333333',
                     textColor: '#cccccc'
@@ -1616,6 +1618,7 @@
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/womb_background.png')",
                     border: '#b56576',
                     modalBg: '#ffe0e9',
+                    unselectedBg: '#9e868d',
                     tooltipBg: '#ffe0e9',
                     tooltipBorder: '#b56576',
                     textColor: '#000'
@@ -1626,6 +1629,7 @@
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/angel_background.png')",
                     border: '#a3c9c1',
                     modalBg: '#e3f6f5',
+                    unselectedBg: '#7e9e9c',
                     tooltipBg: '#e3f6f5',
                     tooltipBorder: '#a3c9c1',
                     textColor: '#000'
@@ -1636,6 +1640,7 @@
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/chest_background.png')",
                     border: '#d4af37',
                     modalBg: '#fff8dc',
+                    unselectedBg: '#ad9e84',
                     tooltipBg: '#fff8dc',
                     tooltipBorder: '#d4af37',
                     textColor: '#000'
@@ -1646,6 +1651,7 @@
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/dark_background.png')",
                     border: '#7c4d9c',
                     modalBg: '#2d183a',
+                    unselectedBg: '#5e3a75',
                     tooltipBg: '#3a2352',
                     tooltipBorder: '#b48be3',
                     textColor: '#e0d6f7'
@@ -1669,8 +1675,10 @@
                 document.documentElement.style.setProperty('--tooltip-bg', t.tooltipBg || '');
                 document.documentElement.style.setProperty('--tooltip-border', t.tooltipBorder || '');
                 document.documentElement.style.backgroundImage = t.bg || '';
+                document.documentElement.style.setProperty('--filter-unselected-bg', t.unselectedBg ||  '#99866e');
+                document.documentElement.style.setProperty('--filter-active-bg', t.modalBg || '#f6d6b0');
 
-                // actualizar elementos
+                // actualizar solo los elementos que requieren inline forzoso (ej. search bar)
                 document.querySelectorAll('.search-bar').forEach(el => {
                     el.style.background = t.modalBg || '';
                     el.style.borderColor = t.border || '';
@@ -1678,7 +1686,6 @@
                 });
 
                 document.querySelectorAll('.filter-btn').forEach(el => {
-                    el.style.background = t.modalBg || '';
                     el.style.borderColor = t.border || '';
                     el.style.color = t.textColor || '';
                 });
