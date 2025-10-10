@@ -1675,7 +1675,7 @@
                 document.documentElement.style.setProperty('--tooltip-bg', t.tooltipBg || '');
                 document.documentElement.style.setProperty('--tooltip-border', t.tooltipBorder || '');
                 document.documentElement.style.backgroundImage = t.bg || '';
-                document.documentElement.style.setProperty('--filter-unselected-bg', t.unselectedBg ||  '#99866e');
+                document.documentElement.style.setProperty('--filter-unselected-bg', t.unselectedBg || '#99866e');
                 document.documentElement.style.setProperty('--filter-active-bg', t.modalBg || '#f6d6b0');
 
                 // actualizar solo los elementos que requieren inline forzoso (ej. search bar)
@@ -1700,6 +1700,11 @@
                     el.style.borderColor = t.border || '';
                     el.style.color = t.textColor || '';
                 });
+                document.querySelectorAll('#floating-quiz-btn').forEach(el => {
+                    el.style.background = t.modalBg || '';
+                    el.style.borderColor = t.border || '';
+                });
+
 
                 // almacenar la key actual (siempre) para que preview y apertura de settings la lean
                 CURRENT_THEME_KEY = key;
@@ -3523,6 +3528,14 @@
                     return `<div class="stat-icons">${icons.join('')}</div>`;
                 }
 
+                function buildQualityHtml(obj) {
+                    if (!obj) return '';
+                    const q = (typeof obj.quality !== 'undefined' && obj.quality !== null) ? Number(obj.quality) : NaN;
+                    if (!Number.isFinite(q) || q < 0 || q > 4) return '';
+                    const src = `https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/stats/${q}.png`;
+                    return `<img src="${src}" alt="quality-${q}" class="quality-img" style="vertical-align:middle;margin-right:6px;" onerror="this.style.display='none'">`;
+                }
+
                 function positionTooltipForImg(img) {
                     const rect = img.getBoundingClientRect();
                     tooltip.style.left = '0px'; tooltip.style.top = '0px';
@@ -3536,7 +3549,8 @@
 
                 // Delegación: escucha mouseover / mouseout en todo el documento
                 document.addEventListener('mouseover', (ev) => {
-                    const img = ev.target.closest && ev.target.closest('.img-grid img');
+                    const tgt = ev.target;
+                    const img = tgt && typeof tgt.closest === 'function' ? tgt.closest('.img-grid img') : null;
                     if (!img) return;
                     const name = img.alt || img.getAttribute('alt') || '';
                     const idInfo = extractIdFromSrc(img.getAttribute('src') || img.src || '');
@@ -3545,8 +3559,16 @@
                     if (obj && obj.stat_change) {
                         statsHtml = buildStatIconsHtml(obj.stat_change);
                     }
-                    // stats encima del nombre/ID
-                    tooltip.innerHTML = `${statsHtml}<div class="tooltip-text"><strong>${escapeHtml(name || '')}</strong>` + (idInfo.id ? ` <span class="tooltip-id">#${escapeHtml(idInfo.id)}</span>` : '') + `</div>`;
+                    const qualityHtml = buildQualityHtml(obj); // icono de quality a la izquierda del nombre
+                    // quality y nombre/ID en la misma fila
+                    tooltip.innerHTML = `
+                        ${statsHtml}
+                        <div class="tooltip-text" style="display:flex;align-items:center;justify-content:center;gap:6px;">
+                            ${qualityHtml}
+                            <strong>${escapeHtml(name || '')}</strong>
+                            ${idInfo.id ? `<span class="tooltip-id">#${escapeHtml(idInfo.id)}</span>` : ''}
+                        </div>
+                    `;
                     positionTooltipForImg(img);
                     requestAnimationFrame(() => tooltip.classList.add('visible'));
                 });
@@ -3572,38 +3594,57 @@
                 // estilos pequeños específicos para los iconos (wrap en máximo 2 por fila)
                 const statStyle = document.createElement('style');
                 statStyle.textContent = `
+        /* Tooltip más compacto */
+        .mini-tooltip {
+            font-size: 0.9rem;
+            white-space: normal;
+            max-width: 220px;
+        }
+
+        .mini-tooltip .quality-img {
+            width: 16px;
+            height: 16px;
+            image-rendering: pixelated;
+        }
+
+        /* Grid de stats: máximo 2 por fila, gaps pequeños */
         .mini-tooltip .stat-icons {
-            display:flex;
-            flex-wrap:wrap;
-            justify-content:center;
-            align-items:center;
-            max-width:125px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            justify-items: center;
+            align-items: center;
+            margin: 0 0 6px 0;
+            max-width: 140px;
         }
-        /* cada stat ocupa como mucho la mitad del ancho del contenedor, así salen 2 por fila */
+
         .mini-tooltip .stat-icon {
-            flex: 0 0 48%;
-            max-width: 48%;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:0;
-            box-sizing:border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0px;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
         }
+
+        /* iconos más pequeños */
         .mini-tooltip .stat-icon img {
-            width:30px;
-            height:30px;
-            image-rendering:pixelated;
-            display:inline-block;
+            width: 27px;
+            height: 27px;
+            image-rendering: pixelated;
+            display: inline-block;
         }
+
         .mini-tooltip .stat-icon img.dir {
-            width:20px;
-            height:20px;
-            image-rendering:pixelated;
-            opacity:0.95;
+            width: 20px;
+            height: 20px;
+            opacity: 0.95;
         }
+
         .mini-tooltip .tooltip-text {
-            display:block;
-            text-align:center;
+            font-size: 0.95rem;
+            text-align: center;
+            line-height: 1.1;
         }
     `;
                 document.head.appendChild(statStyle);
