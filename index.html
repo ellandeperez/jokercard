@@ -179,7 +179,7 @@
             display: flex;
             justify-content: center;
             margin-bottom: 10px;
-            gap: 10px;
+            gap: 0px;
         }
 
         .search-bar {
@@ -1674,6 +1674,7 @@
                 document.documentElement.style.setProperty('--modal-bg', t.modalBg || '');
                 document.documentElement.style.setProperty('--tooltip-bg', t.tooltipBg || '');
                 document.documentElement.style.setProperty('--tooltip-border', t.tooltipBorder || '');
+                document.documentElement.style.setProperty('--text-color', t.textColor || '');  
                 document.documentElement.style.backgroundImage = t.bg || '';
                 document.documentElement.style.setProperty('--filter-unselected-bg', t.unselectedBg || '#99866e');
                 document.documentElement.style.setProperty('--filter-active-bg', t.modalBg || '#f6d6b0');
@@ -3472,126 +3473,129 @@
                     clearTimeout(timer);
                 };
             }
-            (function setupMiniTooltip() {
-                // Detecta dispositivos táctiles (handhelds)
-                const isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
-                if (isTouch) return; // No mostrar el tooltip de hover en móvil/tabletas
+(function setupMiniTooltip() {
+    // Detecta dispositivos con hover (solo desktop)
+    const supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (!supportsHover) return;
 
-                const tooltip = document.createElement('div');
-                tooltip.className = 'mini-tooltip';
-                document.body.appendChild(tooltip);
+    const tooltip = document.createElement('div');
+    tooltip.className = 'mini-tooltip';
+    document.body.appendChild(tooltip);
 
-                function escapeHtml(s) {
-                    return String(s).replace(/[&<>"']/g, function (m) {
-                        return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m];
-                    });
-                }
+    // Aplicar tema ya cargado (si existe) al tooltip al crearlo,
+    // para evitar que se quede con el estilo por defecto.
+    const docStyle = getComputedStyle(document.documentElement);
+    const themeBg = (docStyle.getPropertyValue('--tooltip-bg') || '').trim();
+    const themeBorder = (docStyle.getPropertyValue('--tooltip-border') || '').trim();
+    const themeText = (docStyle.getPropertyValue('--text-color') || docStyle.getPropertyValue('--tooltip-text') || '').trim();
+    if (themeBg) tooltip.style.background = themeBg;
+    if (themeBorder) tooltip.style.borderColor = themeBorder;
+    if (themeText) tooltip.style.color = themeText;
 
-                function extractIdFromSrc(src) {
-                    if (!src) return { kind: null, id: '' };
-                    const mItem = src.match(/item_(\d+)\.png/i);
-                    if (mItem) return { kind: 'item', id: mItem[1] };
-                    const mTr = src.match(/trinket_(\d+)\.png/i);
-                    if (mTr) return { kind: 'trinket', id: mTr[1] };
-                    const mCard = src.match(/card_(\d+)\.png/i);
-                    if (mCard) return { kind: 'card', id: mCard[1] };
-                    return { kind: null, id: '' };
-                }
+    function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, function (m) {
+            return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m];
+        });
+    }
 
-                function findObjByImgSrc(src) {
-                    const info = extractIdFromSrc(src);
-                    if (!info.kind || !info.id) return null;
-                    if (info.kind === 'item') return allItems.find(i => String(i.id) === String(info.id)) || null;
-                    if (info.kind === 'trinket') return allTrinkets.find(t => String(t.trinketId) === String(info.id)) || null;
-                    if (info.kind === 'card') return allCards.find(c => String(c.cardId) === String(info.id)) || null;
-                    return null;
-                }
+    function extractIdFromSrc(src) {
+        if (!src) return { kind: null, id: '' };
+        const mItem = src.match(/item_(\d+)\.png/i);
+        if (mItem) return { kind: 'item', id: mItem[1] };
+        const mTr = src.match(/trinket_(\d+)\.png/i);
+        if (mTr) return { kind: 'trinket', id: mTr[1] };
+        const mCard = src.match(/card_(\d+)\.png/i);
+        if (mCard) return { kind: 'card', id: mCard[1] };
+        return { kind: null, id: '' };
+    }
 
-                function buildStatIconsHtml(statChangeStr) {
-                    if (!statChangeStr) return '';
-                    const parts = statChangeStr.split(',').map(s => s.trim()).filter(Boolean);
-                    if (!parts.length) return '';
-                    const icons = parts.map(p => {
-                        // formatos: "dmg_up", "hp_down", "hp+1" (por si acaso)
-                        const m = p.match(/^([a-z]+)[_\s-]?([a-z0-9+\-]+)?/i);
-                        if (!m) return '';
-                        const key = m[1].toLowerCase();
-                        const dir = (m[2] || '').toLowerCase();
-                        // stat icon path en carpeta other/stats/ (usa baseUrl si existe)
-                        const statBase = (typeof baseUrl === 'string' && baseUrl) ? baseUrl.replace(/\/?$/, '/') : '';
-                        const statIcon = `${statBase}stats/${key}.png`;
-                        const dirIcon = (dir === 'up' || dir === '+') ? `${statBase}stats/statup.png` : ((dir === 'down' || dir === '-') ? `${statBase}stats/statdown.png` : '');
-                        // pequeño bloque (icon + dir marker)
-                        return `<span class="stat-icon" title="${escapeHtml(p)}"><img src="${statIcon}" alt="${key}" onerror="this.style.display='none'"><img src="${dirIcon}" alt="${dir}" class="dir" onerror="this.style.display='none'"></span>`;
-                    }).filter(Boolean);
-                    if (!icons.length) return '';
-                    return `<div class="stat-icons">${icons.join('')}</div>`;
-                }
+    function findObjByImgSrc(src) {
+        const info = extractIdFromSrc(src);
+        if (!info.kind || !info.id) return null;
+        if (info.kind === 'item') return allItems.find(i => String(i.id) === String(info.id)) || null;
+        if (info.kind === 'trinket') return allTrinkets.find(t => String(t.trinketId) === String(info.id)) || null;
+        if (info.kind === 'card') return allCards.find(c => String(c.cardId) === String(info.id)) || null;
+        return null;
+    }
 
-                function buildQualityHtml(obj) {
-                    if (!obj) return '';
-                    const q = (typeof obj.quality !== 'undefined' && obj.quality !== null) ? Number(obj.quality) : NaN;
-                    if (!Number.isFinite(q) || q < 0 || q > 4) return '';
-                    const src = `https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/stats/${q}.png`;
-                    return `<img src="${src}" alt="quality-${q}" class="quality-img" style="vertical-align:middle;margin-right:6px;" onerror="this.style.display='none'">`;
-                }
+    function buildStatIconsHtml(statChangeStr) {
+        if (!statChangeStr) return '';
+        const parts = statChangeStr.split(',').map(s => s.trim()).filter(Boolean);
+        if (!parts.length) return '';
+        const icons = parts.map(p => {
+            const m = p.match(/^([a-z]+)[_\s-]?([a-z0-9+\-]+)?/i);
+            if (!m) return '';
+            const key = m[1].toLowerCase();
+            const dir = (m[2] || '').toLowerCase();
+            const statBase = (typeof baseUrl === 'string' && baseUrl) ? baseUrl.replace(/\/?$/, '/') : '';
+            const statIcon = `${statBase}stats/${key}.png`;
+            const dirIcon = (dir === 'up' || dir === '+') ? `${statBase}stats/statup.png` : ((dir === 'down' || dir === '-') ? `${statBase}stats/statdown.png` : '');
+            return `<span class="stat-icon" title="${escapeHtml(p)}"><img src="${statIcon}" alt="${key}" onerror="this.style.display='none'"><img src="${dirIcon}" alt="${dir}" class="dir" onerror="this.style.display='none'"></span>`;
+        }).filter(Boolean);
+        if (!icons.length) return '';
+        return `<div class="stat-icons">${icons.join('')}</div>`;
+    }
 
-                function positionTooltipForImg(img) {
-                    const rect = img.getBoundingClientRect();
-                    tooltip.style.left = '0px'; tooltip.style.top = '0px';
-                    const ttRect = tooltip.getBoundingClientRect();
-                    const top = Math.max(8, rect.top - ttRect.height - 8);
-                    let left = rect.left + (rect.width / 2) - (ttRect.width / 2);
-                    left = Math.min(window.innerWidth - ttRect.width - 8, Math.max(8, left));
-                    tooltip.style.left = left + 'px';
-                    tooltip.style.top = top + 'px';
-                }
+    function buildQualityHtml(obj) {
+        if (!obj) return '';
+        const q = (typeof obj.quality !== 'undefined' && obj.quality !== null) ? Number(obj.quality) : NaN;
+        if (!Number.isFinite(q) || q < 0 || q > 4) return '';
+        const src = `${baseUrl}stats/${q}.png`;
+        return `<img src="${src}" alt="quality-${q}" class="quality-img" style="vertical-align:middle;margin-right:6px;" onerror="this.style.display='none'">`;
+    }
 
-                // Delegación: escucha mouseover / mouseout en todo el documento
-                document.addEventListener('mouseover', (ev) => {
-                    const tgt = ev.target;
-                    const img = tgt && typeof tgt.closest === 'function' ? tgt.closest('.img-grid img') : null;
-                    if (!img) return;
-                    const name = img.alt || img.getAttribute('alt') || '';
-                    const idInfo = extractIdFromSrc(img.getAttribute('src') || img.src || '');
-                    const obj = findObjByImgSrc(img.getAttribute('src') || img.src || '');
-                    let statsHtml = '';
-                    if (obj && obj.stat_change) {
-                        statsHtml = buildStatIconsHtml(obj.stat_change);
-                    }
-                    const qualityHtml = buildQualityHtml(obj); // icono de quality a la izquierda del nombre
-                    // quality y nombre/ID en la misma fila
-                    tooltip.innerHTML = `
-                        ${statsHtml}
-                        <div class="tooltip-text" style="display:flex;align-items:center;justify-content:center;gap:6px;">
-                            ${qualityHtml}
-                            <strong>${escapeHtml(name || '')}</strong>
-                            ${idInfo.id ? `<span class="tooltip-id">#${escapeHtml(idInfo.id)}</span>` : ''}
-                        </div>
-                    `;
-                    positionTooltipForImg(img);
-                    requestAnimationFrame(() => tooltip.classList.add('visible'));
-                });
+    function positionTooltipForImg(img) {
+        const rect = img.getBoundingClientRect();
+        tooltip.style.left = '0px'; tooltip.style.top = '0px';
+        const ttRect = tooltip.getBoundingClientRect();
+        const top = Math.max(8, rect.top - ttRect.height - 8);
+        let left = rect.left + (rect.width / 2) - (ttRect.width / 2);
+        left = Math.min(window.innerWidth - ttRect.width - 8, Math.max(8, left));
+        tooltip.style.left = left + 'px';
+        tooltip.style.top = top + 'px';
+    }
 
-                document.addEventListener('mousemove', (ev) => {
-                    // mantener tooltip posicionado sobre el elemento hovered si sigue el hover
-                    const hovered = document.querySelector('.img-grid img:hover');
-                    if (hovered && tooltip.classList.contains('visible')) {
-                        positionTooltipForImg(hovered);
-                    }
-                });
+    document.addEventListener('mouseover', (ev) => {
+        const tgt = ev.target;
+        const img = tgt && typeof tgt.closest === 'function' ? tgt.closest('.img-grid img') : null;
+        if (!img) return;
+        const name = img.alt || img.getAttribute('alt') || '';
+        const idInfo = extractIdFromSrc(img.getAttribute('src') || img.src || '');
+        const obj = findObjByImgSrc(img.getAttribute('src') || img.src || '');
+        let statsHtml = '';
+        if (obj && obj.stat_change) {
+            statsHtml = buildStatIconsHtml(obj.stat_change);
+        }
+        const qualityHtml = buildQualityHtml(obj);
+        tooltip.innerHTML = `
+            ${statsHtml}
+            <div class="tooltip-text" style="display:flex;align-items:center;justify-content:center;gap:6px;">
+                ${qualityHtml}
+                <strong>${escapeHtml(name || '')}</strong>
+                ${idInfo.id ? `<span class="tooltip-id">#${escapeHtml(idInfo.id)}</span>` : ''}
+            </div>
+        `;
+        positionTooltipForImg(img);
+        requestAnimationFrame(() => tooltip.classList.add('visible'));
+    });
 
-                document.addEventListener('mouseout', (ev) => {
-                    const img = ev.target.closest && ev.target.closest('.img-grid img');
-                    if (!img) return;
-                    tooltip.classList.remove('visible');
-                });
+    document.addEventListener('mousemove', (ev) => {
+        const hovered = document.querySelector('.img-grid img:hover');
+        if (hovered && tooltip.classList.contains('visible')) {
+            positionTooltipForImg(hovered);
+        }
+    });
 
-                // ocultar en scroll/resize para evitar desalineaciones
-                window.addEventListener('scroll', () => tooltip.classList.remove('visible'), { passive: true });
-                window.addEventListener('resize', () => tooltip.classList.remove('visible'));
+    document.addEventListener('mouseout', (ev) => {
+        const tgt = ev.target;
+        const img = tgt && typeof tgt.closest === 'function' ? tgt.closest('.img-grid img') : null;
+        if (!img) return;
+        tooltip.classList.remove('visible');
+    });
 
-                // estilos pequeños específicos para los iconos (wrap en máximo 2 por fila)
+    window.addEventListener('scroll', () => tooltip.classList.remove('visible'), { passive: true });
+    window.addEventListener('resize', () => tooltip.classList.remove('visible'));
+
                 const statStyle = document.createElement('style');
                 statStyle.textContent = `
         /* Tooltip más compacto */
