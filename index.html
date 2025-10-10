@@ -1053,13 +1053,15 @@
 
             <!-- Carousel: flechas + preview -->
             <div id="theme-carousel" style="display:flex;align-items:center;gap:12px;justify-content:center;">
-                <button id="theme-prev" class="theme-nav" aria-label="Anterior" style="cursor:pointer;border-radius: 100%;font-weight: 700;">‹</button>
+                <button id="theme-prev" class="theme-nav" aria-label="Anterior"
+                    style="cursor:pointer;border-radius: 100%;font-weight: 700;">‹</button>
 
                 <div id="theme-preview"
                     style="width:350px;height:200px;border:8px outset var(--border-color,#99866e);background-size:cover;background-position:center;border-radius:8px;">
                 </div>
 
-                <button id="theme-next" class="theme-nav" aria-label="Siguiente" style="cursor:pointer;border-radius: 100%;font-weight: 700;">›</button>
+                <button id="theme-next" class="theme-nav" aria-label="Siguiente"
+                    style="cursor:pointer;border-radius: 100%;font-weight: 700;">›</button>
             </div>
 
             <!-- mantenemos el icono/info dentro por compatibilidad -->
@@ -1598,7 +1600,7 @@
                     tooltipBorder: '#99866e',
                     textColor: '#000'
                 },
-                angel: {
+                cathedral: {
                     bg: window.innerWidth <= 700
                         ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/angel_background_mobile.png')"
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/angel_background.png')",
@@ -1608,75 +1610,97 @@
                     tooltipBorder: '#a3c9c1',
                     textColor: '#000'
                 },
+                chest: {
+                    bg: window.innerWidth <= 700
+                        ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/chest_background_mobile.png')"
+                        : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/chest_background.png')",
+                    border: '#d4af37',
+                    modalBg: '#fff8dc',
+                    tooltipBg: '#fff8dc',
+                    tooltipBorder: '#d4af37',
+                    textColor: '#000'
+                },
                 dark: {
                     bg: window.innerWidth <= 700
                         ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/dark_background_mobile.png')"
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/dark_background.png')",
                     border: '#555555',
-                    modalBg: '#2b2b2b',
+                    modalBg: '#302a38',
                     tooltipBg: '#262422',
                     tooltipBorder: '#ebe5de',
                     textColor: '#e4e0e0'
                 }
             };
 
-const supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-const DEVICE = supportsHover ? 'desktop' : 'mobile';
-const THEME_KEY_DESKTOP = 'jc_theme_desktop';
-const THEME_KEY_MOBILE = 'jc_theme_mobile';
+            const supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+            const DEVICE = supportsHover ? 'desktop' : 'mobile';
+            const THEME_KEY_DESKTOP = 'jc_theme_desktop';
+            const THEME_KEY_MOBILE = 'jc_theme_mobile';
 
-// Guarda la key del tema que está actualmente aplicada
-let CURRENT_THEME_KEY = null;
+            // Guarda la key del tema que está actualmente aplicada
+            let CURRENT_THEME_KEY = null;
 
-function applyTheme(key, saveForDevice) {
-    const t = THEMES[key] || THEMES.default || Object.values(THEMES)[0];
-    // actualiza CSS vars y background
-    document.documentElement.style.setProperty('--bg-image', t.bg || '');
-    document.documentElement.style.setProperty('--border-color', t.border || '');
-    document.documentElement.style.setProperty('--modal-bg', t.modalBg || '');
-    document.documentElement.style.setProperty('--tooltip-bg', t.tooltipBg || '');
-    document.documentElement.style.setProperty('--tooltip-border', t.tooltipBorder || '');
-    document.documentElement.style.backgroundImage = t.bg || '';
+            function applyTheme(key, saveForDevice) {
+                const t = THEMES[key] || THEMES.default || Object.values(THEMES)[0];
+                // actualiza CSS vars y background
+                document.documentElement.style.setProperty('--bg-image', t.bg || '');
+                document.documentElement.style.setProperty('--border-color', t.border || '');
+                document.documentElement.style.setProperty('--modal-bg', t.modalBg || '');
+                document.documentElement.style.setProperty('--tooltip-bg', t.tooltipBg || '');
+                document.documentElement.style.setProperty('--tooltip-border', t.tooltipBorder || '');
+                document.documentElement.style.backgroundImage = t.bg || '';
 
-    // actualizar elementos
-    document.querySelectorAll('.modal-content').forEach(el => {
-        el.style.background = t.modalBg || '';
-        el.style.borderColor = t.border || '';
-        el.style.color = t.textColor || '';
-    });
-    document.querySelectorAll('.mini-tooltip').forEach(el => {
-        el.style.background = t.tooltipBg || '';
-        el.style.borderColor = t.tooltipBorder || '';
-        el.style.color = t.textColor || '';
-    });
+                // actualizar elementos
+                document.querySelectorAll('.search-bar').forEach(el => {
+                    el.style.background = t.modalBg || '';
+                    el.style.borderColor = t.border || '';
+                    el.style.color = t.textColor || '';
+                });
 
-    // almacenar la key actual (siempre) para que preview y apertura de settings la lean
-    CURRENT_THEME_KEY = key;
+                document.querySelectorAll('.filter-btn').forEach(el => {
+                    el.style.background = t.modalBg || '';
+                    el.style.borderColor = t.border || '';
+                    el.style.color = t.textColor || '';
+                });
 
-    // Guardado opcional por dispositivo
-    if (saveForDevice === 'desktop') localStorage.setItem(THEME_KEY_DESKTOP, key);
-    if (saveForDevice === 'mobile') localStorage.setItem(THEME_KEY_MOBILE, key);
-}
+                document.querySelectorAll('.modal-content').forEach(el => {
+                    el.style.background = t.modalBg || '';
+                    el.style.borderColor = t.border || '';
+                    el.style.color = t.textColor || '';
+                });
+                document.querySelectorAll('.mini-tooltip').forEach(el => {
+                    el.style.background = t.tooltipBg || '';
+                    el.style.borderColor = t.border || '';
+                    el.style.color = t.textColor || '';
+                });
 
-// Inicializar tema guardado por tipo de dispositivo (si existe), si no, fallback default
-(function initThemeByDevice() {
-    const savedDesktop = localStorage.getItem(THEME_KEY_DESKTOP);
-    const savedMobile = localStorage.getItem(THEME_KEY_MOBILE);
-    const initial = DEVICE === 'desktop' ? (savedDesktop || Object.keys(THEMES)[0] || 'default') : (savedMobile || Object.keys(THEMES)[0] || 'default');
-    applyTheme(initial, null); // aplicar sin sobrescribir el storage
-    // asegurar CURRENT_THEME_KEY está definido
-    if (!CURRENT_THEME_KEY) CURRENT_THEME_KEY = initial;
-})();
+                // almacenar la key actual (siempre) para que preview y apertura de settings la lean
+                CURRENT_THEME_KEY = key;
 
-// Abrir settings: usa primero CURRENT_THEME_KEY (tema aplicado), luego storage, luego fallback
-settingsBtn.addEventListener('click', () => {
-    const savedKey = (DEVICE === 'desktop') ? localStorage.getItem(THEME_KEY_DESKTOP) : localStorage.getItem(THEME_KEY_MOBILE);
-    const startKey = CURRENT_THEME_KEY || savedKey || Object.keys(THEMES)[0] || 'default';
-    const startIdx = THEME_KEYS.indexOf(startKey);
-    currentThemeIndex = startIdx >= 0 ? startIdx : 0;
-    updateCarousel(currentThemeIndex);
-    settingsModal.style.display = 'flex';
-});
+                // Guardado opcional por dispositivo
+                if (saveForDevice === 'desktop') localStorage.setItem(THEME_KEY_DESKTOP, key);
+                if (saveForDevice === 'mobile') localStorage.setItem(THEME_KEY_MOBILE, key);
+            }
+
+            // Inicializar tema guardado por tipo de dispositivo (si existe), si no, fallback default
+            (function initThemeByDevice() {
+                const savedDesktop = localStorage.getItem(THEME_KEY_DESKTOP);
+                const savedMobile = localStorage.getItem(THEME_KEY_MOBILE);
+                const initial = DEVICE === 'desktop' ? (savedDesktop || Object.keys(THEMES)[0] || 'default') : (savedMobile || Object.keys(THEMES)[0] || 'default');
+                applyTheme(initial, null); // aplicar sin sobrescribir el storage
+                // asegurar CURRENT_THEME_KEY está definido
+                if (!CURRENT_THEME_KEY) CURRENT_THEME_KEY = initial;
+            })();
+
+            // Abrir settings: usa primero CURRENT_THEME_KEY (tema aplicado), luego storage, luego fallback
+            settingsBtn.addEventListener('click', () => {
+                const savedKey = (DEVICE === 'desktop') ? localStorage.getItem(THEME_KEY_DESKTOP) : localStorage.getItem(THEME_KEY_MOBILE);
+                const startKey = CURRENT_THEME_KEY || savedKey || Object.keys(THEMES)[0] || 'default';
+                const startIdx = THEME_KEYS.indexOf(startKey);
+                currentThemeIndex = startIdx >= 0 ? startIdx : 0;
+                updateCarousel(currentThemeIndex);
+                settingsModal.style.display = 'flex';
+            });
             settingsClose.addEventListener('click', () => settingsModal.style.display = 'none');
             settingsModal.addEventListener('click', (e) => { if (e.target === settingsModal) settingsModal.style.display = 'none'; });
 
