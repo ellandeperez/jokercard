@@ -300,7 +300,8 @@
             "Item Room",
             "Gluttony Miniboss"
         ],
-        "pickup": "HP up"
+        "pickup": "HP up",
+        "stat_change": "hp_up"
     },
     {
         "id": "16",
