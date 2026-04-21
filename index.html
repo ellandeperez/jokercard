@@ -150,7 +150,7 @@
             align-items: center;
             flex-direction: column;
         }
-        
+
         .modal[style*="display: flex"] {
             display: flex !important;
         }
@@ -249,7 +249,7 @@
             cursor: pointer;
             image-rendering: pixelated;
         }
-        
+
         .char-img {
             padding: 5px;
             margin-top: 5px;
@@ -805,6 +805,12 @@
             justify-content: center;
         }
 
+        #characters-next,
+        #characters-prev {
+            z-index: 10;
+            color: black;
+        }
+
         @media (max-width: 700px) {
             html {
                 background-color: rgb(19, 12, 9);
@@ -880,6 +886,12 @@
                 width: 40px;
                 height: 40px;
                 margin-right: 10px;
+                padding: 2px;
+            }
+
+            .char-img {
+                height: 40px !important;
+                margin-left: 5px !important;
                 padding: 2px;
             }
 
@@ -970,7 +982,7 @@
                 height: 80px;
             }
 
-            .character-info{
+            .character-info {
                 margin-top: 60%;
             }
 
@@ -982,11 +994,12 @@
                 font-size: 1.2em;
             }
 
-            #character-portal-toggle{
+            #character-portal-toggle {
                 transform: translate(-100%, -60%) !important;
             }
 
-            #charactes-next, #characters-prev {
+            #characters-next,
+            #characters-prev {
                 font-size: 3em !important;
             }
         }
@@ -1178,7 +1191,7 @@
 
     <!-- Modal de Personajes -->
     <div id="characters-modal" class="modal" aria-hidden="true">
-        
+
         <div class="modal-content" id="modal-content-characters">
             <span class="modal-close" id="modal-close-characters">&times;</span>
             <!-- Navegación por botones: solo con estas flechas se cambiará de personaje -->
@@ -3894,8 +3907,8 @@
             // Datos de personajes (añade los que necesites)
             const CHARACTERS = [
                 { name: 'Isaac', img: 'isaac.png', unlock: '' },
-                { name: 'Jacob & Esaú', img: 'jacobandesau.png', unlock: 'Derrota a Madre' , secret: true },
-                { name: 'Bethany', img: 'bethany.png', unlock: 'Derrota el Corazón de mama como Lazaro sin morir en toda la partida' , secret: true },
+                { name: 'Jacob & Esaú', img: 'jacobandesau.png', unlock: 'Derrota a Madre', secret: true },
+                { name: 'Bethany', img: 'bethany.png', unlock: 'Derrota el Corazón de mama como Lazaro sin morir en toda la partida', secret: true },
                 { name: 'The Forgotten', img: 'theforgotten.png', unlock: 'Lleva la pala rota a la Boss Rush, completala y coge la segunda pieza de la pala, ve a la Dark Room y encuentra un monton de tierra', secret: true },
                 { name: 'Apollyon', img: 'apollyon.png', unlock: 'Derrota a Mega Satan' },
                 { name: 'Keeper', img: 'keeper.png', unlock: 'Dona 1000 monedas en el modo Greed', secret: true },
@@ -3994,7 +4007,7 @@
                 // Event listener para el toggle
                 portalToggle.addEventListener('click', (e) => {
                     e.stopPropagation();
-                    
+
                     // Crear efecto de distorsión al cambiar
                     createTaintedEffect();
                 });
@@ -4014,21 +4027,21 @@
                         opacity: 0;
                         transition: opacity 0.6s ease-in-out;
                     `;
-                    
+
                     document.body.appendChild(overlay);
-                    
+
                     // Fade in (opaco)
                     setTimeout(() => {
                         overlay.style.opacity = '1';
                     }, 10);
-                    
+
                     // Cambiar personajes MIENTRAS la pantalla está negra
                     setTimeout(() => {
                         isTainted = !isTainted;
                         currentCharacterIndex = 0;
                         initCharacterCarousel();
                     }, 450); // A mitad del fade in
-                    
+
                     // Fade out (transparente)
                     setTimeout(() => {
                         overlay.style.opacity = '0';
@@ -4148,7 +4161,7 @@
                     document.getElementById('characters-modal').style.display = 'none';
                 }
             });
-            
+
             // Navegación EXCLUSIVAMENTE por botones prev/next
             (function attachCharacterNavButtons() {
                 const prevBtn = document.getElementById('characters-prev');
