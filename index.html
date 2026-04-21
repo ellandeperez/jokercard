@@ -160,6 +160,7 @@
             max-height: 80vh;
             overflow-y: auto;
             position: relative;
+            box-shadow: inset 0px 130px 50px -20px rgb(0 0 0 / 47%);
         }
 
         .modal-content img {
@@ -721,6 +722,71 @@
             margin-left: 8px;
         }
 
+        .character-carousel-container {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1000px;
+            margin: 20px 0;
+        }
+
+        .character-carousel {
+            position: relative;
+        }
+
+        .character-item {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.6s ease;
+            opacity: 0.6;
+            transform: scale(0.7);
+        }
+
+        .character-item.center {
+            opacity: 1;
+            transform: scale(1) translateZ(0);
+            z-index: 100;
+        }
+
+        .character-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .character-info {
+            margin-top: 30px;
+            min-height: 100px;
+        }
+
+        .character-info h2 {
+            font-size: 2.5em;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        .character-unlock {
+            font-size: 1.1em;
+            color: #ccc;
+            max-width: 600px;
+            margin: 15px auto;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         @media (max-width: 700px) {
             html {
                 background-color: rgb(19, 12, 9);
@@ -859,6 +925,38 @@
                 width: 32px;
                 height: 32px;
             }
+
+            /* Grid de temas en móvil: 2 columnas */
+            #theme-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                max-width: 100% !important;
+            }
+
+            .theme-grid-btn {
+                aspect-ratio: 16 / 10 !important;
+            }
+
+            .theme-grid-btn img {
+                width: 50px !important;
+                height: 50px !important;
+            }
+
+            .character-carousel-container {
+                height: 250px;
+            }
+
+            .character-item {
+                width: 80px;
+                height: 80px;
+            }
+
+            .character-info h2 {
+                font-size: 1.8em;
+            }
+
+            .character-unlock {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -893,9 +991,10 @@
                 <input class="search-bar" id="search-bar" type="text" placeholder="Nombre, habitación, etc...">
                 <span class="clear-search" id="clear-search">&times;</span>
             </div>
-            <img id="lang-toggle"
-                src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/other/languages_es.png"
-                alt="Cambiar idioma" class="lang-img">
+            <!-- Botón de personajes -->
+            <img id="characters-btn"
+                src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/other/characters_icon.png"
+                alt="Personajes" class="info-img" title="Personajes" style="cursor: pointer;">
         </div>
         <!-- Filtro -->
         <div class="filter-bar" id="filter-bar">
@@ -1044,32 +1143,58 @@
 
     </div>
 
+
+    <!-- Modal de Personajes -->
+    <div id="characters-modal" class="modal" aria-hidden="true">
+        <div class="modal-content" id="modal-content-characters" style="text-align:center;">
+            <span class="modal-close" id="modal-close-characters">&times;</span>
+
+            <!-- Carousel de personajes -->
+            <div class="character-carousel-container">
+                <div class="character-carousel" id="character-carousel">
+                    <!-- Los personajes se generarán aquí -->
+                </div>
+            </div>
+
+            <!-- Información del personaje seleccionado -->
+            <div class="character-info" id="character-info">
+                <h2 id="character-name"></h2>
+                <div id="character-unlock" class="character-unlock"></div>
+                <button id="character-unlock-btn"
+                    style="margin-top: 15px; width:100%;padding: 10px 20px; font-size: 1.1em; border-radius: 8px; color:white; background: rgb(72, 72, 72); cursor: pointer; font-family: 'Jersey 15'; display: none;">
+                    DESBLOQUEAR
+                </button>
+            </div>
+        </div>
+    </div>
+
     <div id="settings-modal" class="modal" aria-hidden="true">
         <div class="modal-content" id="modal-content-settings" style="text-align:center;">
             <span class="modal-close" id="modal-close-settings">&times;</span>
 
             <!-- Nombre del tema visible -->
-            <div id="theme-name" style="font-size: 2em;font-weight:700;margin-bottom:8px;">DEFAULT FLOOR</div>
+            <div id="theme-name" style="font-size: 2em;font-weight:700;margin-bottom:8px;text-align:center;"></div>
 
-            <!-- Carousel: flechas + preview -->
-            <div id="theme-carousel" style="display:flex;align-items:center;gap:12px;justify-content:center;">
-                <button id="theme-prev" class="theme-nav" aria-label="Anterior"
-                    style="cursor:pointer;border-radius: 100%;font-weight: 700;">‹</button>
-
-                <div id="theme-preview"
-                    style="width:350px;height:200px;border:8px outset var(--border-color,#99866e);background-size:cover;background-position:center;border-radius:8px;">
-                </div>
-
-                <button id="theme-next" class="theme-nav" aria-label="Siguiente"
-                    style="cursor:pointer;border-radius: 100%;font-weight: 700;">›</button>
+            <!-- Grid de temas en lugar de Carousel -->
+            <div id="theme-grid"
+                style="display:grid;grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));gap:12px;margin:1em 0;max-width:500px;margin-left:auto;margin-right:auto;">
+                <!-- Los botones se generarán con JS -->
             </div>
 
-            <!-- mantenemos el icono/info dentro por compatibilidad -->
-            <div style="margin-top:10px;">
+
+            <!-- Botones de idioma e info juntos -->
+            <div
+                style="margin-top:10px;text-align:center;display:flex;align-items:center;justify-content:center;gap:8px;">
+                <img id="lang-toggle"
+                    src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/other/languages_es.png"
+                    alt="Cambiar idioma" class="lang-img"
+                    style="width:40px;height:40px;margin:0;padding:5px;cursor:pointer;">
+
                 <img id="info-btn"
-                    src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/other/info.png" alt="Info"
-                    class="info-img" style="width:36px;height:36px;cursor:pointer;">
+                    src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/other/info.png"
+                    alt="Info" class="info-img" style="width:40px;height:40px;margin:0;padding:5px;cursor:pointer;">
             </div>
+
         </div>
     </div>
 
@@ -1451,7 +1576,7 @@
             function showItemModal(item) {
                 let catImg = '';
                 if (item.cat === 'up' || item.cat === 'up2' || item.cat === 'down') {
-                    catImg = `<img src="${baseUrl}cat_${item.cat}.png" alt="cat_${item.cat}" class="cat-corner">`;
+                    catImg = `<img src="${baseUrl}/other/cat_${item.cat}.png" alt="cat_${item.cat}" class="cat-corner">`;
                 }
                 let rechargeImg = '';
                 if (item.recharge_time && Array.isArray(item.recharge_time)) {
@@ -1592,10 +1717,11 @@
 
             // Temas disponibles (fácil de extender)
             const THEMES = {
-                base: {
+                basement: {
                     bg: window.innerWidth <= 700
                         ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/background_mobile.png')"
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/background.png')",
+                    icon: "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/background_icon.png",
                     border: '#99866e',
                     modalBg: '#f6d6b0',
                     unselectedBg: '#ad9e84',
@@ -1607,6 +1733,7 @@
                     bg: window.innerWidth <= 700
                         ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/depths_background_mobile.png')"
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/depths_background.png')",
+                    icon: "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/depths_background_icon.png",
                     border: '#232323',
                     modalBg: '#181818',
                     unselectedBg: '#2e2d2d',
@@ -1618,6 +1745,7 @@
                     bg: window.innerWidth <= 700
                         ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/womb_background_mobile.png')"
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/womb_background.png')",
+                    icon: "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/womb_background_icon.png",
                     border: '#b56576',
                     modalBg: '#ffe0e9',
                     unselectedBg: '#9e868d',
@@ -1629,6 +1757,7 @@
                     bg: window.innerWidth <= 700
                         ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/angel_background_mobile.png')"
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/angel_background.png')",
+                    icon: "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/angel_background_icon.png",
                     border: '#a3c9c1',
                     modalBg: '#e3f6f5',
                     unselectedBg: '#7e9e9c',
@@ -1640,6 +1769,7 @@
                     bg: window.innerWidth <= 700
                         ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/chest_background_mobile.png')"
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/chest_background.png')",
+                    icon: "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/chest_background_icon.png",
                     border: '#d4af37',
                     modalBg: '#fff8dc',
                     unselectedBg: '#ad9e84',
@@ -1651,6 +1781,7 @@
                     bg: window.innerWidth <= 700
                         ? "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/dark_background_mobile.png')"
                         : "url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/dark_background.png')",
+                    icon: "https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/dark_background_icon.png",
                     border: '#7c4d9c',
                     modalBg: '#2d183a',
                     unselectedBg: '#5e3a75',
@@ -1676,7 +1807,7 @@
                 document.documentElement.style.setProperty('--modal-bg', t.modalBg || '');
                 document.documentElement.style.setProperty('--tooltip-bg', t.tooltipBg || '');
                 document.documentElement.style.setProperty('--tooltip-border', t.tooltipBorder || '');
-                document.documentElement.style.setProperty('--text-color', t.textColor || '');  
+                document.documentElement.style.setProperty('--text-color', t.textColor || '');
                 document.documentElement.style.backgroundImage = t.bg || '';
                 document.documentElement.style.setProperty('--filter-unselected-bg', t.unselectedBg || '#99866e');
                 document.documentElement.style.setProperty('--filter-active-bg', t.modalBg || '#f6d6b0');
@@ -1749,26 +1880,115 @@
             // construir lista de keys a partir de THEMES (el objeto ya existe)
             const THEME_KEYS = Object.keys(THEMES || {});
 
-            // índice del tema actualmente visible en el carousel
+            // índice del tema actualmente visible (para compatibilidad con updateCarousel)
             let currentThemeIndex = 0;
 
-            // actualiza preview+texto y aplica tema como "vista previa" (no guarda)
+            // Función para crear la cuadrícula de temas
+            function initThemeGrid() {
+                const grid = document.getElementById('theme-grid');
+                if (!grid) return;
+                grid.innerHTML = '';
+
+                THEME_KEYS.forEach((key, idx) => {
+                    const t = THEMES[key];
+                    const btn = document.createElement('button');
+                    btn.className = 'theme-grid-btn';
+                    btn.style.cssText = `
+                        border: 4px outset ${t.border || '#99866e'};
+                        background: ${t.bg ? 'linear-gradient(135deg, ' + t.border + ' 0%, ' + t.modalBg + ' 100%)' : t.modalBg || '#f6d6b0'};
+                        width: 100%;
+                        aspect-ratio: 16 / 10;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        transition: all 0.3s;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0;
+                        position: relative;
+                        overflow: hidden;
+                    `;
+
+                    // Imagen de fondo (como preview)
+                    const bgImg = document.createElement('div');
+                    bgImg.style.cssText = `
+                        position: absolute;
+                        top: 0; left: 0;
+                        width: 100%; height: 100%;
+                        ${t.bg ? `background-image: ${t.bg}; background-size: cover; background-position: center;` : `background: ${t.modalBg || '#f6d6b0'};`}
+                        opacity: 0.6;
+                        z-index: 1;
+                    `;
+                    btn.appendChild(bgImg);
+
+                    // Icono del tema en el centro
+                    const iconImg = document.createElement('img');
+                    iconImg.src = t.icon || '';
+                    iconImg.alt = key;
+                    iconImg.style.cssText = `
+                        position: relative;
+                        z-index: 2;
+                        width: 100px;
+                        height: 100px;
+                        object-fit: contain;
+                        image-rendering: pixelated;
+                        pointer-events: none;
+                        filter: drop-shadow(0 0 5px black);
+                    `;
+                    btn.appendChild(iconImg);
+
+                    btn.addEventListener('click', () => {
+                        currentThemeIndex = idx;
+                        updateCarousel(idx);
+                        // Aplicar y guardar inmediatamente
+                        applyTheme(key, DEVICE);
+                        updateThemeGridVisuals();
+                    });
+
+                    btn.addEventListener('mouseover', () => {
+                        btn.style.transform = 'scale(1.05)';
+                        btn.style.boxShadow = `0 0 12px ${t.border || '#99866e'}`;
+                    });
+
+                    btn.addEventListener('mouseout', () => {
+                        btn.style.transform = 'scale(1)';
+                        btn.style.boxShadow = 'none';
+                    });
+
+                    grid.appendChild(btn);
+                });
+            }
+
+            // Actualizar visualización de la cuadrícula (resaltar el activo)
+            function updateThemeGridVisuals() {
+                const btns = document.querySelectorAll('.theme-grid-btn');
+                btns.forEach((btn, idx) => {
+                    if (idx === currentThemeIndex) {
+                        btn.style.border = `4px solid ${THEMES[THEME_KEYS[idx]].border}`;
+                        btn.style.boxShadow = `0 0 16px ${THEMES[THEME_KEYS[idx]].border}`;
+                    } else {
+                        btn.style.border = `4px outset ${THEMES[THEME_KEYS[idx]].border}`;
+                        btn.style.boxShadow = 'none';
+                    }
+                });
+
+                // Actualizar nombre visible
+                const themeNameEl = document.getElementById('theme-name');
+                if (themeNameEl) {
+                    themeNameEl.textContent = (THEME_KEYS[currentThemeIndex] || '').replace(/_/g, ' ').toUpperCase();
+                }
+            }
+
+            // updateCarousel: compatible con el código existente (solo actualiza index)
             function updateCarousel(index) {
                 if (!THEME_KEYS.length) return;
                 currentThemeIndex = (index + THEME_KEYS.length) % THEME_KEYS.length;
                 const key = THEME_KEYS[currentThemeIndex];
-                const t = THEMES[key];
-                // nombre en mayúsculas o como quieras
-                themeNameEl.textContent = (key || '').replace(/_/g, ' ').toUpperCase();
-                // preview: usamos bg del tema para mostrar
-                // si t.bg es una url(...) o linear-gradient, lo aplicamos directamente
-                themePreview.style.backgroundImage = t.bg || '';
-                themePreview.style.borderColor = t.border || getComputedStyle(document.documentElement).getPropertyValue('--border-color') || '#99866e';
-                // aplicar como preview sin guardar (saveForDevice = null)
+                // Aplicar como preview sin guardar inicialmente
                 applyTheme(key, null);
+                updateThemeGridVisuals();
             }
 
-            // al abrir settings, inicializar index según tema guardado para el dispositivo actual
             settingsBtn.addEventListener('click', () => {
                 // seleccionar tema guardado para DEVICE si existe
                 const savedKey = (DEVICE === 'desktop') ? localStorage.getItem(THEME_KEY_DESKTOP) : localStorage.getItem(THEME_KEY_MOBILE);
@@ -1776,53 +1996,33 @@
                 const startIdx = THEME_KEYS.indexOf(startKey);
                 currentThemeIndex = startIdx >= 0 ? startIdx : 0;
                 updateCarousel(currentThemeIndex);
+                initThemeGrid(); // Generar/actualizar la cuadrícula
                 settingsModal.style.display = 'flex';
             });
 
             settingsClose.addEventListener('click', () => settingsModal.style.display = 'none');
             settingsModal.addEventListener('click', (e) => { if (e.target === settingsModal) settingsModal.style.display = 'none'; });
 
-            // navegación carousel
-            prevBtn.addEventListener('click', () => {
-                updateCarousel(currentThemeIndex - 1);
-                // aplicar y guardar inmediatamente el tema visible
-                const key = THEME_KEYS[currentThemeIndex];
-                if (key) applyTheme(key, DEVICE);
-            });
-            nextBtn.addEventListener('click', () => {
-                updateCarousel(currentThemeIndex + 1);
-                // aplicar y guardar inmediatamente el tema visible
-                const key = THEME_KEYS[currentThemeIndex];
-                if (key) applyTheme(key, DEVICE);
-            });
+            // Inicializar cuadrícula al cargar la página
+            (function initThemeGridOnLoad() {
+                const savedKey = (DEVICE === 'desktop') ? localStorage.getItem(THEME_KEY_DESKTOP) : localStorage.getItem(THEME_KEY_MOBILE);
+                const startKey = savedKey || Object.keys(THEMES)[0] || 'default';
+                const startIdx = THEME_KEYS.indexOf(startKey);
+                currentThemeIndex = startIdx >= 0 ? startIdx : 0;
+                updateCarousel(currentThemeIndex);
+                initThemeGrid();
+            })();
 
-            // también vinculamos el icono info dentro del modal (si existe)
+            // botón info dentro del modal (si existe)
             const infoBtnInside = document.querySelector('#settings-modal #info-btn');
             if (infoBtnInside) {
                 infoBtnInside.addEventListener('click', () => {
-                    // cierra settings y abre info
                     settingsModal.style.display = 'none';
                     const infoModal = (language === 'es') ? document.getElementById('info-modal_es') : document.getElementById('info-modal_en');
                     if (!infoModal) return;
                     infoModal.style.display = 'flex';
                 });
             }
-
-            // Inicializa carousel preview con el tema actual (no guarda)
-            (function initCarouselPreview() {
-                // determinar tema aplicado actualmente (buscamos en storage por DEVICE)
-                const savedKey = (DEVICE === 'desktop') ? localStorage.getItem(THEME_KEY_DESKTOP) : localStorage.getItem(THEME_KEY_MOBILE);
-                const startKey = savedKey || Object.keys(THEMES)[0] || 'default';
-                const startIdx = THEME_KEYS.indexOf(startKey);
-                currentThemeIndex = startIdx >= 0 ? startIdx : 0;
-                updateCarousel(currentThemeIndex);
-            })();
-
-            // Lista de colores en orden cromático
-            const colorOrder = [
-                "white", "silver", "grey", "gray", "black", "brown", "red", "orange", "gold",
-                "yellow", "green", "cyan", "blue", "purple", "pink"
-            ];
 
             // Función para extraer colores de tags
             function getItemColors(item) {
@@ -2011,7 +2211,7 @@
             // Toggle de idioma
             document.getElementById('lang-toggle').addEventListener('click', function () {
                 language = (language === 'es') ? 'en' : 'es';
-                this.src = `https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/languages_${language}.png`;
+                this.src = `https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/other/languages_${language}.png`;
                 document.getElementById('search-bar').placeholder =
                     (language === 'es') ? 'Nombre, habitación, etc...' : 'Name, room, etc...';
                 loadAllData();
@@ -2455,7 +2655,7 @@
                         background: rgba(255, 205, 205, 0.8);
                         border-radius: 40% 40% 50% 50%;
                         filter: blur(1px);
-                        animation: milkDrop ${1 + Math.random()}s linear infinite;
+                        animation: milkDrop ${1 + Math.random() * 4}s linear infinite;
                     `;
                         drop.style.left = Math.random() * 100 + 'vw';
                         drop.style.top = -20 + 'px';
@@ -2718,33 +2918,20 @@
             document.getElementById('search-bar').addEventListener('input', function (e) {
                 const val = e.target.value.trim().toLowerCase();
 
-                // Limpiar efectos previos y restaurar estados
-                const cleanup = () => {
-                    document.querySelectorAll('.wavy-effect').forEach(el => el.remove());
-                    document.body.style.filter = '';
-                    document.body.style.transform = '';
-                    document.querySelectorAll('*').forEach(el => {
-                        el.style.transform = '';
-                        el.style.filter = '';
-                        el.style.transition = '';
-                    });
-                };
+                // Limpiar efectos previos
+                document.querySelectorAll('.wavy-effect').forEach(el => el.remove());
 
-                if (val !== 'wavy cap') {
-                    cleanup();
-                    return;
-                }
+                if (val === 'wavy cap') {
+                    const wavyImg = document.querySelector(`img[src$="item_582.png"]`);
+                    if (!wavyImg) return;
 
-                const wavyImg = document.querySelector(`img[src$="item_582.png"]`);
-                if (!wavyImg) return;
+                    // Efecto más intenso en el item
+                    wavyImg.style.filter = 'brightness(3) saturate(200%) drop-shadow(0 0 25px #9370DB) drop-shadow(0 0 50px #8A2BE2)';
+                    wavyImg.style.animation = 'pulse 0.5s infinite alternate';
 
-                // Efecto más intenso en el item
-                wavyImg.style.filter = 'brightness(3) saturate(200%) drop-shadow(0 0 25px #9370DB) drop-shadow(0 0 50px #8A2BE2)';
-                wavyImg.style.animation = 'pulse 0.5s infinite alternate';
-
-                const wavy = document.createElement('div');
-                wavy.className = 'wavy-effect';
-                wavy.style.cssText = `
+                    const wavy = document.createElement('div');
+                    wavy.className = 'wavy-effect';
+                    wavy.style.cssText = `
                     position: fixed;
                     top: 0;
                     left: 0;
@@ -2757,11 +2944,11 @@
                     animation: wavyBackground 4s infinite linear;
                 `;
 
-                // Más esporas y más variadas
-                for (let i = 0; i < 50; i++) {
-                    const spore = document.createElement('div');
-                    const size = 4 + Math.random() * 12;
-                    spore.style.cssText = `
+                    // Más esporas y más variadas
+                    for (let i = 0; i < 50; i++) {
+                        const spore = document.createElement('div');
+                        const size = 4 + Math.random() * 12;
+                        spore.style.cssText = `
                         position: absolute;
                         width: ${size}px;
                         height: ${size}px;
@@ -2772,13 +2959,13 @@
                         animation: float ${3 + Math.random() * 7}s infinite ease-in-out;
                         box-shadow: 0 0 ${10 + Math.random() * 20}px ${Math.random() > 0.5 ? '#9370DB' : '#8A2BE2'};
                     `;
-                    spore.style.left = Math.random() * 100 + 'vw';
-                    spore.style.top = Math.random() * 100 + 'vh';
-                    wavy.appendChild(spore);
-                }
+                        spore.style.left = Math.random() * 100 + 'vw';
+                        spore.style.top = Math.random() * 100 + 'vh';
+                        wavy.appendChild(spore);
+                    }
 
-                const style = document.createElement('style');
-                style.textContent = `
+                    const style = document.createElement('style');
+                    style.textContent = `
                     @keyframes pulse {
                         0% { transform: scale(1); }
                         100% { transform: scale(1.2); }
@@ -2795,23 +2982,23 @@
                         }
                     }
                 `;
-                document.head.appendChild(style);
-                document.body.appendChild(wavy);
+                    document.head.appendChild(style);
+                    document.body.appendChild(wavy);
 
-                let time = 0;
-                const animate = () => {
-                    time += 0.02;
+                    let time = 0;
+                    const animate = () => {
+                        time += 0.02;
 
-                    // Distorsión extrema de la página
-                    document.body.style.filter = `
+                        // Distorsión extrema de la página
+                        document.body.style.filter = `
                         saturate(${100 + Math.sin(time) * 50}%)
                     `;
-                    document.documentElement.style.filter = `
+                        document.documentElement.style.filter = `
                         blur(${Math.abs(Math.sin(time * 0.5))}px)
                     hue-rotate(${Math.sin(time * 0.7) * 360}deg)
                     `;
 
-                    document.body.style.transform = `
+                        document.body.style.transform = `
                         perspective(${800 + Math.sin(time) * 200}px)
                         rotate3d(
                             ${Math.sin(time * 0.5) * 0.3},
@@ -2822,9 +3009,9 @@
                         scale(${1 + Math.sin(time * 0.8) * 0.1})
                     `;
 
-                    // Distorsión psicodélica de imágenes
-                    document.querySelectorAll('.img-grid img').forEach((img, index) => {
-                        img.style.transform = `
+                        // Distorsión psicodélica de imágenes
+                        document.querySelectorAll('.img-grid img').forEach((img, index) => {
+                            img.style.transform = `
                             translate(
                                 ${Math.sin(time * 2 + index) * 15}px,
                                 ${Math.cos(time * 1.5 + index) * 15}px
@@ -2833,15 +3020,15 @@
                             scale(${1 + Math.sin(time * 3 + index * 0.1) * 0.2})
                             skew(${Math.sin(time * 2) * 10}deg)
                         `;
-                        img.style.filter = `
+                            img.style.filter = `
                             brightness(${1 + Math.sin(time * 2) * 0.3})
                             hue-rotate(${Math.sin(time * 0.7 + index) * 180}deg)
                         `;
-                    });
+                        });
 
-                    // Efecto en textos
-                    document.querySelectorAll('h2, h3, p').forEach((text, index) => {
-                        text.style.transform = `
+                        // Efecto en textos
+                        document.querySelectorAll('h2, h3, p').forEach((text, index) => {
+                            text.style.transform = `
                             translate(
                                 ${Math.sin(time * 2 + index) * 10}px,
                                 ${Math.cos(time * 1.5 + index) * 8}px
@@ -2849,15 +3036,29 @@
                             rotate(${Math.sin(time + index) * 3}deg)
                             scale(${1 + Math.sin(time * 2) * 0.1})
                         `;
-                        text.style.filter = `blur(${Math.abs(Math.sin(time * 0.5))}px)`;
-                    });
+                            text.style.filter = `blur(${Math.abs(Math.sin(time * 0.5))}px)`;
+                        });
 
-                    if (wavy.isConnected && document.getElementById('search-bar').value.trim().toLowerCase() === 'wavy cap') {
-                        requestAnimationFrame(animate);
-                    } else {
-                        cleanup();
-                        style.remove();
-                    }
+                        if (wavy.isConnected && document.getElementById('search-bar').value.trim().toLowerCase() === 'wavy cap') {
+                            requestAnimationFrame(animate);
+                        } else {
+                            cleanup();
+                            style.remove();
+                        }
+                    };
+
+                    requestAnimationFrame(animate);
+                };
+
+                const cleanup = () => {
+                    document.querySelectorAll('.wavy-effect').forEach(el => el.remove());
+                    document.body.style.filter = '';
+                    document.body.style.transform = '';
+                    document.querySelectorAll('*').forEach(el => {
+                        el.style.transform = '';
+                        el.style.filter = '';
+                        el.style.transition = '';
+                    });
                 };
 
                 requestAnimationFrame(animate);
@@ -2916,7 +3117,6 @@
             position: fixed;
             top: 0; left: 0;
             width: 100vw; height: 100vh;
-            background: radial-gradient(circle at center, rgba(0,0,0,0.97) 0%, rgba(0,0,0,1) 100%);
             z-index: 99999;
             display: flex;
             align-items: center;
@@ -2952,8 +3152,7 @@
             left: 50%; top: 50%;
             width: 320px; height: 320px;
             transform: translate(-50%, -50%);
-            border-radius: 50%;
-            background: radial-gradient(circle at center, rgba(255,0,255,0.25) 0%, rgba(255,255,255,0.12) 60%, transparent 100%);
+            border-radius: 50%;transparent 100%);
             filter: blur(18px);
             opacity: 0;
             z-index: 1;
@@ -2970,7 +3169,7 @@
             width: 220px;
             height: 220px;
             object-fit: contain;
-            filter: drop-shadow(0 0 60px #fff) drop-shadow(0 0 40px #ff00ff) brightness(2) saturate(1.5);
+            filter: drop-shadow(0 0 60px #fff) drop-shadow(0 0 40px #000000) brightness(2) saturate(1.5);
             position: absolute;
             left: 50%; top: 50%;
             opacity: 0;
@@ -3062,7 +3261,7 @@
                             ghost.style.transform = 'translate(-50%, -50%) scale(1) translateY(-120px)';
                         }, 700);
 
-                        // Desaparece todo después de que el fantasma sube
+                        // Desaparece todo después de que el fantasma suba
                         setTimeout(() => {
                             ghost.style.opacity = '0';
                             effect.style.opacity = '0';
@@ -3329,7 +3528,7 @@
                     ${mainImg}
                     <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
                         ${optionsStats.map((stat, idx) => `
-                            <button class="quiz-option" data-idx="${idx}" data-correct="${idx === correctIdx}" style="font-size:1.2em;padding:12px 8px;border-radius:12px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;font-family: 'Jersey 15';">
+                            <button class="quiz-option" data-idx="${idx}" data-correct="${idx === correctIdx}" style="font-size:1.2em;padding:12px 8px;border-radius:12px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;">
                                 ${statLabel(stat)}
                             </button>
                         `).join('')}
@@ -3386,7 +3585,7 @@
         <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:1em 0;">
             ${optionsItems.map((item, idx) => `
                 <button class="quiz-option" data-idx="${idx}" data-correct="${idx === correctIdx}" style="font-size:1.2em;padding:12px 8px;border-radius:12px;border:2px solid #99866e;background:#f6d6b0;cursor:pointer;">
-                    <img src="${baseUrl}All_Items/item_${item.id}.png" style="width:60px;height:60px;image-rendering:pixelated;object-fit:contain;display:block;margin:0 auto;">
+                    <img src="${baseUrl}All_Items/item_${item.id}.png" style="width:60px;height:60px;object-fit:contain;image-rendering:pixelated;margin-bottom:4px;">
                 </button>
             `).join('')}
         </div>
@@ -3475,101 +3674,101 @@
                     clearTimeout(timer);
                 };
             }
-(function setupMiniTooltip() {
-    // Detecta dispositivos con hover (solo desktop)
-    const supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-    if (!supportsHover) return;
+            (function setupMiniTooltip() {
+                // Detecta dispositivos con hover (solo desktop)
+                const supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+                if (!supportsHover) return;
 
-    const tooltip = document.createElement('div');
-    tooltip.className = 'mini-tooltip';
-    document.body.appendChild(tooltip);
+                const tooltip = document.createElement('div');
+                tooltip.className = 'mini-tooltip';
+                document.body.appendChild(tooltip);
 
-    // Aplicar tema ya cargado (si existe) al tooltip al crearlo,
-    // para evitar que se quede con el estilo por defecto.
-    const docStyle = getComputedStyle(document.documentElement);
-    const themeBg = (docStyle.getPropertyValue('--tooltip-bg') || '').trim();
-    const themeBorder = (docStyle.getPropertyValue('--tooltip-border') || '').trim();
-    const themeText = (docStyle.getPropertyValue('--text-color') || docStyle.getPropertyValue('--tooltip-text') || '').trim();
-    if (themeBg) tooltip.style.background = themeBg;
-    if (themeBorder) tooltip.style.borderColor = themeBorder;
-    if (themeText) tooltip.style.color = themeText;
+                // Aplicar tema ya cargado (si existe) al tooltip al crearlo,
+                // para evitar que se quede con el estilo por defecto.
+                const docStyle = getComputedStyle(document.documentElement);
+                const themeBg = (docStyle.getPropertyValue('--tooltip-bg') || '').trim();
+                const themeBorder = (docStyle.getPropertyValue('--tooltip-border') || '').trim();
+                const themeText = (docStyle.getPropertyValue('--text-color') || docStyle.getPropertyValue('--tooltip-text') || '').trim();
+                if (themeBg) tooltip.style.background = themeBg;
+                if (themeBorder) tooltip.style.borderColor = themeBorder;
+                if (themeText) tooltip.style.color = themeText;
 
-    function escapeHtml(s) {
-        return String(s).replace(/[&<>"']/g, function (m) {
-            return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m];
-        });
-    }
+                function escapeHtml(s) {
+                    return String(s).replace(/[&<>"']/g, function (m) {
+                        return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m];
+                    });
+                }
 
-    function extractIdFromSrc(src) {
-        if (!src) return { kind: null, id: '' };
-        const mItem = src.match(/item_(\d+)\.png/i);
-        if (mItem) return { kind: 'item', id: mItem[1] };
-        const mTr = src.match(/trinket_(\d+)\.png/i);
-        if (mTr) return { kind: 'trinket', id: mTr[1] };
-        const mCard = src.match(/card_(\d+)\.png/i);
-        if (mCard) return { kind: 'card', id: mCard[1] };
-        return { kind: null, id: '' };
-    }
+                function extractIdFromSrc(src) {
+                    if (!src) return { kind: null, id: '' };
+                    const mItem = src.match(/item_(\d+)\.png/i);
+                    if (mItem) return { kind: 'item', id: mItem[1] };
+                    const mTr = src.match(/trinket_(\d+)\.png/i);
+                    if (mTr) return { kind: 'trinket', id: mTr[1] };
+                    const mCard = src.match(/card_(\d+)\.png/i);
+                    if (mCard) return { kind: 'card', id: mCard[1] };
+                    return { kind: null, id: '' };
+                }
 
-    function findObjByImgSrc(src) {
-        const info = extractIdFromSrc(src);
-        if (!info.kind || !info.id) return null;
-        if (info.kind === 'item') return allItems.find(i => String(i.id) === String(info.id)) || null;
-        if (info.kind === 'trinket') return allTrinkets.find(t => String(t.trinketId) === String(info.id)) || null;
-        if (info.kind === 'card') return allCards.find(c => String(c.cardId) === String(info.id)) || null;
-        return null;
-    }
+                function findObjByImgSrc(src) {
+                    const info = extractIdFromSrc(src);
+                    if (!info.kind || !info.id) return null;
+                    if (info.kind === 'item') return allItems.find(i => String(i.id) === String(info.id)) || null;
+                    if (info.kind === 'trinket') return allTrinkets.find(t => String(t.trinketId) === String(info.id)) || null;
+                    if (info.kind === 'card') return allCards.find(c => String(c.cardId) === String(info.id)) || null;
+                    return null;
+                }
 
-    function buildStatIconsHtml(statChangeStr) {
-        if (!statChangeStr) return '';
-        const parts = statChangeStr.split(',').map(s => s.trim()).filter(Boolean);
-        if (!parts.length) return '';
-        const icons = parts.map(p => {
-            const m = p.match(/^([a-z]+)[_\s-]?([a-z0-9+\-]+)?/i);
-            if (!m) return '';
-            const key = m[1].toLowerCase();
-            const dir = (m[2] || '').toLowerCase();
-            const statBase = (typeof baseUrl === 'string' && baseUrl) ? baseUrl.replace(/\/?$/, '/') : '';
-            const statIcon = `${statBase}stats/${key}.png`;
-            const dirIcon = (dir === 'up' || dir === '+') ? `${statBase}stats/statup.png` : ((dir === 'down' || dir === '-') ? `${statBase}stats/statdown.png` : '');
-            return `<span class="stat-icon" title="${escapeHtml(p)}"><img src="${statIcon}" alt="${key}" onerror="this.style.display='none'"><img src="${dirIcon}" alt="${dir}" class="dir" onerror="this.style.display='none'"></span>`;
-        }).filter(Boolean);
-        if (!icons.length) return '';
-        return `<div class="stat-icons">${icons.join('')}</div>`;
-    }
+                function buildStatIconsHtml(statChangeStr) {
+                    if (!statChangeStr) return '';
+                    const parts = statChangeStr.split(',').map(s => s.trim()).filter(Boolean);
+                    if (!parts.length) return '';
+                    const icons = parts.map(p => {
+                        const m = p.match(/^([a-z]+)[_\s-]?([a-z0-9+\-]+)?/i);
+                        if (!m) return '';
+                        const key = m[1].toLowerCase();
+                        const dir = (m[2] || '').toLowerCase();
+                        const statBase = (typeof baseUrl === 'string' && baseUrl) ? baseUrl.replace(/\/?$/, '/') : '';
+                        const statIcon = `${statBase}stats/${key}.png`;
+                        const dirIcon = (dir === 'up' || dir === '+') ? `${statBase}stats/statup.png` : ((dir === 'down' || dir === '-') ? `${statBase}stats/statdown.png` : '');
+                        return `<span class="stat-icon" title="${escapeHtml(p)}"><img src="${statIcon}" alt="${key}" onerror="this.style.display='none'"><img src="${dirIcon}" alt="${dir}" class="dir" onerror="this.style.display='none'"></span>`;
+                    }).filter(Boolean);
+                    if (!icons.length) return '';
+                    return `<div class="stat-icons">${icons.join('')}</div>`;
+                }
 
-    function buildQualityHtml(obj) {
-        if (!obj) return '';
-        const q = (typeof obj.quality !== 'undefined' && obj.quality !== null) ? Number(obj.quality) : NaN;
-        if (!Number.isFinite(q) || q < 0 || q > 4) return '';
-        const src = `${baseUrl}stats/${q}.png`;
-        return `<img src="${src}" alt="quality-${q}" class="quality-img" style="vertical-align:middle;margin-right:6px;" onerror="this.style.display='none'">`;
-    }
+                function buildQualityHtml(obj) {
+                    if (!obj) return '';
+                    const q = (typeof obj.quality !== 'undefined' && obj.quality !== null) ? Number(obj.quality) : NaN;
+                    if (!Number.isFinite(q) || q < 0 || q > 4) return '';
+                    const src = `${baseUrl}stats/${q}.png`;
+                    return `<img src="${src}" alt="quality-${q}" class="quality-img" style="vertical-align:middle;margin-right:6px;" onerror="this.style.display='none'">`;
+                }
 
-    function positionTooltipForImg(img) {
-        const rect = img.getBoundingClientRect();
-        tooltip.style.left = '0px'; tooltip.style.top = '0px';
-        const ttRect = tooltip.getBoundingClientRect();
-        const top = Math.max(8, rect.top - ttRect.height - 8);
-        let left = rect.left + (rect.width / 2) - (ttRect.width / 2);
-        left = Math.min(window.innerWidth - ttRect.width - 8, Math.max(8, left));
-        tooltip.style.left = left + 'px';
-        tooltip.style.top = top + 'px';
-    }
+                function positionTooltipForImg(img) {
+                    const rect = img.getBoundingClientRect();
+                    tooltip.style.left = '0px'; tooltip.style.top = '0px';
+                    const ttRect = tooltip.getBoundingClientRect();
+                    const top = Math.max(8, rect.top - ttRect.height - 8);
+                    let left = rect.left + (rect.width / 2) - (ttRect.width / 2);
+                    left = Math.min(window.innerWidth - ttRect.width - 8, Math.max(8, left));
+                    tooltip.style.left = left + 'px';
+                    tooltip.style.top = top + 'px';
+                }
 
-    document.addEventListener('mouseover', (ev) => {
-        const tgt = ev.target;
-        const img = tgt && typeof tgt.closest === 'function' ? tgt.closest('.img-grid img') : null;
-        if (!img) return;
-        const name = img.alt || img.getAttribute('alt') || '';
-        const idInfo = extractIdFromSrc(img.getAttribute('src') || img.src || '');
-        const obj = findObjByImgSrc(img.getAttribute('src') || img.src || '');
-        let statsHtml = '';
-        if (obj && obj.stat_change) {
-            statsHtml = buildStatIconsHtml(obj.stat_change);
-        }
-        const qualityHtml = buildQualityHtml(obj);
-        tooltip.innerHTML = `
+                document.addEventListener('mouseover', (ev) => {
+                    const tgt = ev.target;
+                    const img = tgt && typeof tgt.closest === 'function' ? tgt.closest('.img-grid img') : null;
+                    if (!img) return;
+                    const name = img.alt || img.getAttribute('alt') || '';
+                    const idInfo = extractIdFromSrc(img.getAttribute('src') || img.src || '');
+                    const obj = findObjByImgSrc(img.getAttribute('src') || img.src || '');
+                    let statsHtml = '';
+                    if (obj && obj.stat_change) {
+                        statsHtml = buildStatIconsHtml(obj.stat_change);
+                    }
+                    const qualityHtml = buildQualityHtml(obj);
+                    tooltip.innerHTML = `
             ${statsHtml}
             <div class="tooltip-text" style="display:flex;align-items:center;justify-content:center;gap:6px;">
                 ${qualityHtml}
@@ -3577,26 +3776,26 @@
                 ${idInfo.id ? `<span class="tooltip-id">#${escapeHtml(idInfo.id)}</span>` : ''}
             </div>
         `;
-        positionTooltipForImg(img);
-        requestAnimationFrame(() => tooltip.classList.add('visible'));
-    });
+                    positionTooltipForImg(img);
+                    requestAnimationFrame(() => tooltip.classList.add('visible'));
+                });
 
-    document.addEventListener('mousemove', (ev) => {
-        const hovered = document.querySelector('.img-grid img:hover');
-        if (hovered && tooltip.classList.contains('visible')) {
-            positionTooltipForImg(hovered);
-        }
-    });
+                document.addEventListener('mousemove', (ev) => {
+                    const hovered = document.querySelector('.img-grid img:hover');
+                    if (hovered && tooltip.classList.contains('visible')) {
+                        positionTooltipForImg(hovered);
+                    }
+                });
 
-    document.addEventListener('mouseout', (ev) => {
-        const tgt = ev.target;
-        const img = tgt && typeof tgt.closest === 'function' ? tgt.closest('.img-grid img') : null;
-        if (!img) return;
-        tooltip.classList.remove('visible');
-    });
+                document.addEventListener('mouseout', (ev) => {
+                    const tgt = ev.target;
+                    const img = tgt && typeof tgt.closest === 'function' ? tgt.closest('.img-grid img') : null;
+                    if (!img) return;
+                    tooltip.classList.remove('visible');
+                });
 
-    window.addEventListener('scroll', () => tooltip.classList.remove('visible'), { passive: true });
-    window.addEventListener('resize', () => tooltip.classList.remove('visible'));
+                window.addEventListener('scroll', () => tooltip.classList.remove('visible'), { passive: true });
+                window.addEventListener('resize', () => tooltip.classList.remove('visible'));
 
                 const statStyle = document.createElement('style');
                 statStyle.textContent = `
@@ -3655,6 +3854,293 @@
     `;
                 document.head.appendChild(statStyle);
             })();
+
+            // Datos de personajes (añade los que necesites)
+            const CHARACTERS = [
+                { name: 'Isaac', img: 'isaac.png', unlock: '' },
+                { name: 'Jacob & Esaú', img: 'jacobandesau.png', unlock: '' },
+                { name: 'Bethany', img: 'bethany.png', unlock: '' },
+                { name: 'The Forgotten', img: 'theforgotten.png', unlock: 'Lleva la pala rota a la Dark Room y encuentra un monton de tierra', secret: true },
+                { name: 'Apollyon', img: 'apollyon.png', unlock: '' },
+                { name: 'Keeper', img: 'keeper.png', unlock: 'Dona 1000 monedas en el modo Greed', secret: true },
+                { name: 'Lilith', img: 'lilith.png', unlock: '' },
+                { name: 'The Lost', img: 'thelost.png', unlock: 'Muere con el trinket Missing Page', secret: true },
+                { name: 'Edén', img: 'eden.png', unlock: '' },
+                { name: 'Lazarus', img: 'lazarus.png', unlock: '' },
+                { name: 'Azazel', img: 'azazel.png', unlock: '' },
+                { name: 'Samson', img: 'samson.png', unlock: '' },
+                { name: 'Eve', img: 'eve.png', unlock: '' },
+                { name: 'Blue Baby', img: 'bluebaby.png', unlock: 'Derrota a Isaac', secret: true },
+                { name: 'Judas', img: 'judas.png', unlock: '' },
+                { name: 'Cain', img: 'cain.png', unlock: '' },
+                { name: 'Magdalene', img: 'magdalene.png', unlock: '' }
+            ];
+
+            const TAINTEDCHARACTERS = [
+                { name: 'Tainted Isaac', img: 'isaac_t.png', unlock: 'Descubre la sala secreta en casa con Isaac', secret: true },
+                { name: 'Tainted Jacob', img: 'jacobandesau_t.png', unlock: 'Descubre la sala secreta en casa con Jacob & Esau', secret: true },
+                { name: 'Tainted Bethany', img: 'bethany_t.png', unlock: 'Descubre la sala secreta en casa con Bethany', secret: true },
+                { name: 'Tainted The Forgotten', img: 'theforgotten_t.png', unlock: 'Descubre la sala secreta en casa con The Forgotten', secret: true },
+                { name: 'Tainted Apollyon', img: 'apollyon_t.png', unlock: 'Descubre la sala secreta en casa con Apollyon', secret: true },
+                { name: 'Tainted Keeper', img: 'keeper_t.png', unlock: 'Descubre la sala secreta en casa con Keeper', secret: true },
+                { name: 'Tainted Lilith', img: 'lilith_t.png', unlock: 'Descubre la sala secreta en casa con Lilith', secret: true },
+                { name: 'Tainted The Lost', img: 'thelost_t.png', unlock: 'Descubre la sala secreta en casa con The Lost', secret: true },
+                { name: 'Tainted Edén', img: 'eden_t.png', unlock: 'Descubre la sala secreta en casa con Edén', secret: true },
+                { name: 'Tainted Lazarus', img: 'lazarus_t.png', unlock: 'Descubre la sala secreta en casa con Lazarus', secret: true },
+                { name: 'Tainted Azazel', img: 'azazel_t.png', unlock: 'Descubre la sala secreta en casa con Azazel', secret: true },
+                { name: 'Tainted Samson', img: 'samson_t.png', unlock: 'Descubre la sala secreta en casa con Samson', secret: true },
+                { name: 'Tainted Eve', img: 'eve_t.png', unlock: 'Descubre la sala secreta en casa con Eve', secret: true },
+                { name: 'Tainted Blue Baby', img: 'bluebaby_t.png', unlock: 'Descubre la sala secreta en casa con Blue Baby', secret: true },
+                { name: 'Tainted Judas', img: 'judas_t.png', unlock: 'Descubre la sala secreta en casa con Judas', secret: true },
+                { name: 'Tainted Cain', img: 'cain_t.png', unlock: 'Descubre la sala secreta en casa con Cain', secret: true },
+                { name: 'Tainted Magdalene', img: 'magdalene_t.png', unlock: 'Descubre la sala secreta en casa con Magdalene', secret: true }
+            ];
+
+            let currentCharacterIndex = 0;
+            let isTainted = false; // Toggle para saber si estamos en tainted o no
+
+            function initCharacterCarousel() {
+                const carousel = document.getElementById('character-carousel');
+                carousel.innerHTML = '';
+
+                const CURRENT_CHARACTERS = isTainted ? TAINTEDCHARACTERS : CHARACTERS;
+
+                CURRENT_CHARACTERS.forEach((char, idx) => {
+                    const div = document.createElement('div');
+                    div.className = 'character-item';
+                    if (idx === currentCharacterIndex) div.classList.add('center');
+
+                    const img = document.createElement('img');
+
+                    // Si tiene secret, mostrar el portal de entrada, si no, mostrar el personaje
+                    if (char.secret) {
+                        img.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/main/characters/portal.png';
+                    } else {
+                        img.src = `https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/characters/${char.img}`;
+                    }
+
+                    img.alt = char.name;
+
+                    div.appendChild(img);
+                    div.addEventListener('click', () => selectCharacter(idx));
+
+                    carousel.appendChild(div);
+                });
+
+                // Crear portal en el centro (toggle)
+                const portalToggle = document.createElement('div');
+                portalToggle.id = 'character-portal-toggle';
+                portalToggle.style.cssText = `
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100px;
+                    height: 100px;
+                    cursor: pointer;
+                    z-index: 101;
+                    transition: all 0.3s;
+                `;
+
+                const portalImg = document.createElement('img');
+                portalImg.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/main/characters/portal.png';
+                portalImg.alt = 'Toggle Tainted';
+                portalImg.style.cssText = `
+                    top: -120px;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    object-fit: contain;
+                    image-rendering: pixelated;
+                    filter: drop-shadow(0 0 20px #000000) brightness(1.2);
+                    animation: portal-spin-toggle 3s linear infinite;
+                `;
+
+                portalToggle.appendChild(portalImg);
+
+                // Event listener para el toggle
+                portalToggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    
+                    // Crear efecto de distorsión al cambiar
+                    createTaintedEffect();
+                });
+
+                // Función para crear efecto de cambio a tainted
+                function createTaintedEffect() {
+                    const overlay = document.createElement('div');
+                    overlay.style.cssText = `
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100vw;
+                        height: 100vh;
+                        background: black;
+                        pointer-events: none;
+                        z-index: 10000;
+                        opacity: 0;
+                        transition: opacity 0.6s ease-in-out;
+                    `;
+                    
+                    document.body.appendChild(overlay);
+                    
+                    // Fade in (opaco)
+                    setTimeout(() => {
+                        overlay.style.opacity = '1';
+                    }, 10);
+                    
+                    // Cambiar personajes MIENTRAS la pantalla está negra
+                    setTimeout(() => {
+                        isTainted = !isTainted;
+                        currentCharacterIndex = 0;
+                        initCharacterCarousel();
+                    }, 450); // A mitad del fade in
+                    
+                    // Fade out (transparente)
+                    setTimeout(() => {
+                        overlay.style.opacity = '0';
+                        setTimeout(() => overlay.remove(), 600);
+                    }, 900);
+                }
+
+                // Hover effect
+                portalToggle.addEventListener('mouseover', () => {
+                    // Verifica que el evento sea directamente en el portal, no en sus hijos
+                    if (e.target === portalImg || e.target === portalToggle) {
+                        portalImg.style.filter = 'drop-shadow(0 0 30px #000000) brightness(1.5) saturate(1.5)';
+                        portalImg.style.transform = 'scale(1.1)';
+                    }
+                });
+
+                portalToggle.addEventListener('mouseout', (e) => {
+                    // Solo quitar el efecto si salimos completamente del portal
+                    if (!portalToggle.contains(e.relatedTarget)) {
+                        portalImg.style.filter = 'drop-shadow(0 0 20px #000000) brightness(1.2)';
+                        portalImg.style.transform = 'scale(1)';
+                    }
+                });
+
+                carousel.appendChild(portalToggle);
+
+                updateCharacterPosition();
+                updateCharacterInfo();
+            }
+
+            function selectCharacter(idx) {
+                currentCharacterIndex = idx;
+                updateCharacterPosition();
+                updateCharacterInfo();
+            }
+
+            function updateCharacterPosition() {
+                const items = document.querySelectorAll('.character-item:not(#character-portal-toggle)');
+                const totalItems = items.length;
+                const centerIdx = currentCharacterIndex;
+
+                items.forEach((item, idx) => {
+                    item.classList.remove('center');
+
+                    let distance = (idx - centerIdx + totalItems) % totalItems;
+                    if (distance > totalItems / 2) {
+                        distance -= totalItems;
+                    }
+
+                    const angle = (distance * 360) / totalItems + 90;
+                    const radius = 150;
+
+                    const x = Math.cos((angle * Math.PI) / 180) * radius;
+                    const y = Math.sin((angle * Math.PI) / 180) * radius - radius;
+
+                    const scale = distance === 0 ? 1 : 0.7;
+                    const opacity = distance === 0 ? 1 : 0.6;
+                    const zIndex = distance === 0 ? 100 : 50 - Math.abs(distance);
+
+                    item.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(${scale})`;
+                    item.style.opacity = opacity;
+                    item.style.zIndex = zIndex;
+
+                    if (distance === 0) {
+                        item.classList.add('center');
+                    }
+                });
+            }
+
+            function updateCharacterInfo() {
+                const CURRENT_CHARACTERS = isTainted ? TAINTEDCHARACTERS : CHARACTERS;
+                const char = CURRENT_CHARACTERS[currentCharacterIndex];
+                const charNameEl = document.getElementById('character-name');
+                const charUnlockEl = document.getElementById('character-unlock');
+                const unlockBtn = document.getElementById('character-unlock-btn');
+
+                charUnlockEl.textContent = char.unlock || 'Disponible desde el inicio';
+
+                // Si tiene secret (está bloqueado), mostrar nombre con ?
+                if (char.secret) {
+                    charNameEl.textContent = char.name.split('').map(() => '?').join('');
+                    charNameEl.style.color = '#999';
+                    charNameEl.style.textShadow = '0 0 10px rgba(255,0,255,0.5)';
+                    unlockBtn.style.display = 'block';
+
+                    // Evento del botón desbloquear
+                    unlockBtn.onclick = () => {
+                        // Cambiar secret a false
+                        char.secret = false;
+                        // Reinicializar el carousel para refrescar visualmente
+                        initCharacterCarousel();
+                        updateCharacterInfo();
+                    };
+                } else {
+                    charNameEl.textContent = char.name;
+                    charNameEl.style.color = '';
+                    charNameEl.style.textShadow = '';
+                    unlockBtn.style.display = 'none';
+                }
+            }
+
+            // Event listeners
+            document.getElementById('characters-btn').addEventListener('click', () => {
+                document.getElementById('characters-modal').style.display = 'flex';
+                if (document.querySelectorAll('.character-item').length === 0) {
+                    initCharacterCarousel();
+                }
+            });
+
+            document.getElementById('modal-close-characters').addEventListener('click', () => {
+                document.getElementById('characters-modal').style.display = 'none';
+            });
+
+            // Cerrar modal al hacer click fuera
+            document.getElementById('characters-modal').addEventListener('click', (e) => {
+                if (e.target.id === 'characters-modal') {
+                    document.getElementById('characters-modal').style.display = 'none';
+                }
+            });
+
+            // Navegación con teclado
+            document.addEventListener('keydown', (e) => {
+                if (document.getElementById('characters-modal').style.display === 'flex') {
+                    const CURRENT_CHARACTERS = isTainted ? TAINTEDCHARACTERS : CHARACTERS;
+                    if (e.key === 'ArrowLeft') {
+                        currentCharacterIndex = (currentCharacterIndex + 1) % CURRENT_CHARACTERS.length;
+                        updateCharacterPosition();
+                        updateCharacterInfo();
+                    } else if (e.key === 'ArrowRight') {
+                        currentCharacterIndex = (currentCharacterIndex - 1 + CURRENT_CHARACTERS.length) % CURRENT_CHARACTERS.length;
+                        updateCharacterPosition();
+                        updateCharacterInfo();
+                    }
+                }
+            });
+
+            // Agregar keyframe para la animación del portal toggle
+            const portalStyle = document.createElement('style');
+            portalStyle.textContent = `
+                @keyframes portal-spin-toggle {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
+            `;
+            document.head.appendChild(portalStyle);
         </script>
 
 
