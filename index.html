@@ -143,11 +143,16 @@
             z-index: 1000;
             left: 0;
             top: 0;
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             background: rgba(0, 0, 0, 0.6);
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+        }
+        
+        .modal[style*="display: flex"] {
+            display: flex !important;
         }
 
         .modal-content {
@@ -160,11 +165,18 @@
             max-height: 80vh;
             overflow-y: auto;
             position: relative;
-            box-shadow: inset 0px 130px 50px -20px rgb(0 0 0 / 47%);
+            scrollbar-gutter: stable;
         }
 
         .modal-content img {
             image-rendering: pixelated;
+        }
+
+        #modal-content-characters {
+            text-align: center;
+            width: 500px;
+            height: 650px;
+            box-shadow: inset 0px 200px 100px -20px rgb(0 0 0 / 47%);
         }
 
         .modal-close {
@@ -233,6 +245,15 @@
             margin-top: 5px;
             margin-right: -5px;
             width: 50px;
+            height: 50px;
+            cursor: pointer;
+            image-rendering: pixelated;
+        }
+        
+        .char-img {
+            padding: 5px;
+            margin-top: 5px;
+            margin-left: 10px;
             height: 50px;
             cursor: pointer;
             image-rendering: pixelated;
@@ -756,10 +777,8 @@
         }
 
         .character-item img {
-            width: 100%;
-            height: 100%;
             object-fit: contain;
-            border-radius: 50%;
+            width: 300px;
         }
 
         .character-info {
@@ -774,11 +793,10 @@
         }
 
         .character-unlock {
-            font-size: 1.1em;
+            font-size: 1.5em;
             color: #ccc;
             max-width: 600px;
-            margin: 15px auto;
-            padding: 15px;
+            padding: 10px 5px 10px 5px;
             background: rgba(0, 0, 0, 0.3);
             border-radius: 8px;
             min-height: 60px;
@@ -934,15 +952,17 @@
 
             .theme-grid-btn {
                 aspect-ratio: 16 / 10 !important;
+                width: 140px !important;
             }
 
             .theme-grid-btn img {
-                width: 50px !important;
                 height: 50px !important;
             }
 
             .character-carousel-container {
                 height: 250px;
+                position: relative;
+                top: 10%;
             }
 
             .character-item {
@@ -950,12 +970,24 @@
                 height: 80px;
             }
 
+            .character-info{
+                margin-top: 60%;
+            }
+
             .character-info h2 {
-                font-size: 1.8em;
+                font-size: 2em !important;
             }
 
             .character-unlock {
-                font-size: 0.9em;
+                font-size: 1.2em;
+            }
+
+            #character-portal-toggle{
+                transform: translate(-100%, -60%) !important;
+            }
+
+            #charactes-next, #characters-prev {
+                font-size: 3em !important;
             }
         }
     </style>
@@ -993,8 +1025,8 @@
             </div>
             <!-- Botón de personajes -->
             <img id="characters-btn"
-                src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/other/characters_icon.png"
-                alt="Personajes" class="info-img" title="Personajes" style="cursor: pointer;">
+                src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/transformations/stompy.png"
+                alt="Personajes" class="char-img" title="Personajes" style="cursor: pointer;">
         </div>
         <!-- Filtro -->
         <div class="filter-bar" id="filter-bar">
@@ -1146,8 +1178,12 @@
 
     <!-- Modal de Personajes -->
     <div id="characters-modal" class="modal" aria-hidden="true">
-        <div class="modal-content" id="modal-content-characters" style="text-align:center;">
+        
+        <div class="modal-content" id="modal-content-characters">
             <span class="modal-close" id="modal-close-characters">&times;</span>
+            <!-- Navegación por botones: solo con estas flechas se cambiará de personaje -->
+            <div class="modal-nav modal-prev" id="characters-prev" title="Anterior">&lt;</div>
+            <div class="modal-nav modal-next" id="characters-next" title="Siguiente">&gt;</div>
 
             <!-- Carousel de personajes -->
             <div class="character-carousel-container">
@@ -1177,7 +1213,7 @@
 
             <!-- Grid de temas en lugar de Carousel -->
             <div id="theme-grid"
-                style="display:grid;grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));gap:12px;margin:1em 0;max-width:500px;margin-left:auto;margin-right:auto;">
+                style="display:grid;grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));gap:12px;margin:1em 0;max-width:600px;margin-left:auto;margin-right:auto;">
                 <!-- Los botones se generarán con JS -->
             </div>
 
@@ -1896,7 +1932,7 @@
                     btn.style.cssText = `
                         border: 4px outset ${t.border || '#99866e'};
                         background: ${t.bg ? 'linear-gradient(135deg, ' + t.border + ' 0%, ' + t.modalBg + ' 100%)' : t.modalBg || '#f6d6b0'};
-                        width: 100%;
+                        width: 175px;
                         aspect-ratio: 16 / 10;
                         border-radius: 8px;
                         cursor: pointer;
@@ -3858,22 +3894,22 @@
             // Datos de personajes (añade los que necesites)
             const CHARACTERS = [
                 { name: 'Isaac', img: 'isaac.png', unlock: '' },
-                { name: 'Jacob & Esaú', img: 'jacobandesau.png', unlock: '' },
-                { name: 'Bethany', img: 'bethany.png', unlock: '' },
-                { name: 'The Forgotten', img: 'theforgotten.png', unlock: 'Lleva la pala rota a la Dark Room y encuentra un monton de tierra', secret: true },
-                { name: 'Apollyon', img: 'apollyon.png', unlock: '' },
+                { name: 'Jacob & Esaú', img: 'jacobandesau.png', unlock: 'Derrota a Madre' , secret: true },
+                { name: 'Bethany', img: 'bethany.png', unlock: 'Derrota el Corazón de mama como Lazaro sin morir en toda la partida' , secret: true },
+                { name: 'The Forgotten', img: 'theforgotten.png', unlock: 'Lleva la pala rota a la Boss Rush, completala y coge la segunda pieza de la pala, ve a la Dark Room y encuentra un monton de tierra', secret: true },
+                { name: 'Apollyon', img: 'apollyon.png', unlock: 'Derrota a Mega Satan' },
                 { name: 'Keeper', img: 'keeper.png', unlock: 'Dona 1000 monedas en el modo Greed', secret: true },
-                { name: 'Lilith', img: 'lilith.png', unlock: '' },
-                { name: 'The Lost', img: 'thelost.png', unlock: 'Muere con el trinket Missing Page', secret: true },
-                { name: 'Edén', img: 'eden.png', unlock: '' },
-                { name: 'Lazarus', img: 'lazarus.png', unlock: '' },
-                { name: 'Azazel', img: 'azazel.png', unlock: '' },
-                { name: 'Samson', img: 'samson.png', unlock: '' },
-                { name: 'Eve', img: 'eve.png', unlock: '' },
-                { name: 'Blue Baby', img: 'bluebaby.png', unlock: 'Derrota a Isaac', secret: true },
-                { name: 'Judas', img: 'judas.png', unlock: '' },
-                { name: 'Cain', img: 'cain.png', unlock: '' },
-                { name: 'Magdalene', img: 'magdalene.png', unlock: '' }
+                { name: 'Lilith', img: 'lilith.png', unlock: 'Derrota a Ultra Greed como Azazel' },
+                { name: 'The Lost', img: 'thelost.png', unlock: 'Muere en una habitacion de sacrificio con el trinket Missing Page', secret: true },
+                { name: 'Edén', img: 'eden.png', unlock: 'Completa el corazón de mamá 1 vez' },
+                { name: 'Lazarus', img: 'lazarus.png', unlock: 'Ten 4 corazones azules a la vez' },
+                { name: 'Azazel', img: 'azazel.png', unlock: 'Haz 3 pactos con el diablo en una partida' },
+                { name: 'Samson', img: 'samson.png', unlock: 'Completa 2 pisos sin recibir daño' },
+                { name: 'Eve', img: 'eve.png', unlock: 'No cojas ningún corazón en 2 pisos seguidos' },
+                { name: 'Blue Baby', img: 'bluebaby.png', unlock: 'Derrota el corazón de mama 10 veces', secret: true },
+                { name: 'Judas', img: 'judas.png', unlock: 'Derrota a Satan' },
+                { name: 'Cain', img: 'cain.png', unlock: 'Ten 55 monedas o más en una partida a la vez' },
+                { name: 'Magdalene', img: 'magdalene.png', unlock: 'Consigue 7 contenedores de corazón o más en una partida a la vez' }
             ];
 
             const TAINTEDCHARACTERS = [
@@ -3922,7 +3958,6 @@
                     img.alt = char.name;
 
                     div.appendChild(img);
-                    div.addEventListener('click', () => selectCharacter(idx));
 
                     carousel.appendChild(div);
                 });
@@ -3932,11 +3967,11 @@
                 portalToggle.id = 'character-portal-toggle';
                 portalToggle.style.cssText = `
                     position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 100px;
-                    height: 100px;
+                    left: 0;
+                    top: -200px;
+                    transform: translate(-100%, -70%);
+                    width: 150px;
+                    height: 150px;
                     cursor: pointer;
                     z-index: 101;
                     transition: all 0.3s;
@@ -3946,14 +3981,12 @@
                 portalImg.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/main/characters/portal.png';
                 portalImg.alt = 'Toggle Tainted';
                 portalImg.style.cssText = `
-                    top: -120px;
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
+                    width: 200%;
+                    height: 150%;
                     object-fit: contain;
                     image-rendering: pixelated;
                     filter: drop-shadow(0 0 20px #000000) brightness(1.2);
-                    animation: portal-spin-toggle 3s linear infinite;
+                    animation: portal-spin-toggle 10s linear infinite;
                 `;
 
                 portalToggle.appendChild(portalImg);
@@ -4046,10 +4079,10 @@
                     }
 
                     const angle = (distance * 360) / totalItems + 90;
-                    const radius = 150;
+                    const radius = 500;
 
                     const x = Math.cos((angle * Math.PI) / 180) * radius;
-                    const y = Math.sin((angle * Math.PI) / 180) * radius - radius;
+                    const y = Math.sin((angle * Math.PI) / 180) * radius - radius / 1.2;
 
                     const scale = distance === 0 ? 1 : 0.7;
                     const opacity = distance === 0 ? 1 : 0.6;
@@ -4115,29 +4148,28 @@
                     document.getElementById('characters-modal').style.display = 'none';
                 }
             });
-
-            // Navegación con teclado
-            document.addEventListener('keydown', (e) => {
-                if (document.getElementById('characters-modal').style.display === 'flex') {
-                    const CURRENT_CHARACTERS = isTainted ? TAINTEDCHARACTERS : CHARACTERS;
-                    if (e.key === 'ArrowLeft') {
-                        currentCharacterIndex = (currentCharacterIndex + 1) % CURRENT_CHARACTERS.length;
-                        updateCharacterPosition();
-                        updateCharacterInfo();
-                    } else if (e.key === 'ArrowRight') {
-                        currentCharacterIndex = (currentCharacterIndex - 1 + CURRENT_CHARACTERS.length) % CURRENT_CHARACTERS.length;
-                        updateCharacterPosition();
-                        updateCharacterInfo();
-                    }
+            
+            // Navegación EXCLUSIVAMENTE por botones prev/next
+            (function attachCharacterNavButtons() {
+                const prevBtn = document.getElementById('characters-prev');
+                const nextBtn = document.getElementById('characters-next');
+                function step(delta) {
+                    const list = isTainted ? TAINTEDCHARACTERS : CHARACTERS;
+                    if (!list.length) return;
+                    currentCharacterIndex = (currentCharacterIndex + delta + list.length) % list.length;
+                    updateCharacterPosition();
+                    updateCharacterInfo();
                 }
-            });
+                if (prevBtn) prevBtn.addEventListener('click', (ev) => { ev.stopPropagation(); step(+1); });
+                if (nextBtn) nextBtn.addEventListener('click', (ev) => { ev.stopPropagation(); step(-1); });
+            })();
 
             // Agregar keyframe para la animación del portal toggle
             const portalStyle = document.createElement('style');
             portalStyle.textContent = `
                 @keyframes portal-spin-toggle {
                     0% { transform: rotate(0deg); }
-                    100% { transform: rotate(360deg); }
+                    100% { transform: rotate(-360deg); }
                 }
             `;
             document.head.appendChild(portalStyle);
