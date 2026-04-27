@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Mapas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1a1a2e;
+            color: white;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        #map {
+            display: grid;
+            grid-template-columns: repeat(13, 40px);
+            grid-template-rows: repeat(13, 40px);
+            gap: 2px;
+            background-color: #0f0f1a;
+            padding: 10px;
+            border: 2px solid #4a4a6a;
+        }
+        .cell {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            background-color: #2a2a4a;
+            border: 1px solid #3a3a5a;
+        }
+        .cell.normal {
+            background-color: #4a6a4a;
+            color: #90ff90;
+        }
+        .cell.start {
+            background-color: #2d5a2d;
+            color: #70df70;
+        }
+        .cell.grande {
+            background-color: #6a4a6a;
+            color: #df90df;
+        }
+        .cell.larga {
+            background-color: #4a5a6a;
+            color: #90cfdf;
+        }
+        .cell.enL {
+            background-color: #6a5a4a;
+            color: #dfcf90;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generador de Mapas</h1>
+    <div id="map"></div>
+
+    <script>
+        const GRID_SIZE = 13;
+        const map = [];
+        
+        // Tipos de habitaciones y sus tamaños (width x height)
+        const ROOM_TYPES = {
+            'N': { name: 'Normal', width: 1, height: 1, color: 'normal' },
+            'G': { name: 'Grande', width: 2, height: 2, color: 'grande' },
+            'L': { name: 'Larga', width: 2, height: 1, color: 'larga' },
+            'V': { name: 'Larga Vertical', width: 1, height: 2, color: 'larga' },
+            'C': { name: 'En L', width: 2, height: 2, color: 'enL', isCorner: true }
+        };
+        
+        // Variantes de forma L: el número indica dónde está el hueco (1=esquina superior izq, 2=esquina superior dch, 3=esquina inferior izq, 4=esquina inferior dch)
+        const CORNER_VARIANTS = {
+            'C1': { emptyX: 1, emptyY: 0 },  // Hueco arriba derecha
+            'C2': { emptyX: 0, emptyY: 0 },  // Hueco arriba izquierda
+            'C3': { emptyX: 1, emptyY: 1 },  // Hueco abajo derecha
+            'C4': { emptyX: 0, emptyY: 1 }   // Hueco abajo izquierda
+        };
+        
+        // Direcciones ortogonales (sin diagonales)
+        const DIRECTIONS = [
+            { dx: 0, dy: -1 },  // arriba
+            { dx: 0, dy: 1 },   // abajo
+            { dx: -1, dy: 0 },  // izquierda
+            { dx: 1, dy: 0 }    // derecha
+        ];
+
+        // Inicializar el mapa vacío
+        for (let y = 0; y < GRID_SIZE; y++) {
+            map[y] = [];
+            for (let x = 0; x < GRID_SIZE; x++) {
+                map[y][x] = null;
+            }
+        }
+
+        // Calcular número de habitaciones: mínimo 10, máximo 12
+        function calculateRoomCount() {
+            const add = Math.random() < 0.5 ? 5 : 6;
+            return 3 * 1 + add;
+        }
+
+        // Verificar si una posición está libre para una habitación
+        function isPositionFree(x, y, width, height, cornerType = null, cornerVariant = null) {
+            for (let dy = 0; dy < height; dy++) {
+                for (let dx = 0; dx < width; dx++) {
+                    const checkX = x + dx;
+                    const checkY = y + dy;
+                    // Si es una habitación en L, el hueco no cuenta como ocupado
+                    if (cornerType && cornerVariant) {
+                        const variant = CORNER_VARIANTS[cornerVariant];
+                        if (dx === variant.emptyX && dy === variant.emptyY) {
+                            // Verificar que las celdas adyacentes al hueco también estén libres
+                            for (const dir of DIRECTIONS) {
+                                const adjX = checkX + dir.dx;
+                                const adjY = checkY + dir.dy;
+                                if (
+                                    adjX >= 0 && adjX < GRID_SIZE &&
+                                    adjY >= 0 && adjY < GRID_SIZE &&
+                                    map[adjY][adjX] !== null
+                                ) {
+                                    return false; // Hay una habitación adyacente al hueco
+                                }
+                            }
+                            continue; // Hueco de la L, no verificar
+                        }
+                    }
+                    if (checkX >= GRID_SIZE || checkY >= GRID_SIZE || map[checkY][checkX] !== null) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        // Verificar si un tipo puede colocarse en una posición (no puede haber mismo tipo adyacente, excepto Normal)
+        // Las habitaciones largas (L y V) y en L (C1-C4) se consideran del mismo tipo para la restricción
+        function canPlaceType(x, y, width, height, type, cornerVariant = null) {
+            if (type === 'N') return true; // Normal siempre puede colocarse
+            
+            // Las largas horizontales y verticales no pueden estar adyacentes entre sí
+            const largeTypes = ['L', 'V'];
+            if (largeTypes.includes(type)) {
+                // Verificar si hay otra habitación larga adyacente
+                for (const dir of DIRECTIONS) {
+                    for (let dy = 0; dy < height; dy++) {
+                        for (let dx = 0; dx < width; dx++) {
+                            const ax = x + dx + dir.dx;
+                            const ay = y + dy + dir.dy;
+                            if (ax >= 0 && ax < GRID_SIZE && ay >= 0 && ay < GRID_SIZE) {
+                                const neighbor = map[ay][ax];
+                                if (neighbor && largeTypes.includes(neighbor.type)) {
+                                    return false; // Hay una habitación larga adyacente
+                                }
+                            }
+                        }
+                    }
+                }
+                return true;
+            }
+            
+            // Las habitaciones en L no pueden estar adyacentes a otras en L ni a las celdas vacías de otras habitaciones en L
+            if (type.startsWith('C')) {
+                const cornerTypes = ['C1', 'C2', 'C3', 'C4'];
+                for (const dir of DIRECTIONS) {
+                    for (let dy = 0; dy < height; dy++) {
+                        for (let dx = 0; dx < width; dx++) {
+                            const ax = x + dx + dir.dx;
+                            const ay = y + dy + dir.dy;
+                            if (ax >= 0 && ax < GRID_SIZE && ay >= 0 && ay < GRID_SIZE) {
+                                const neighbor = map[ay][ax];
+                                if (neighbor && cornerTypes.includes(neighbor.type)) {
+                                    return false; // Hay una habitación en L adyacente
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Verificar que las celdas adyacentes al hueco de la L estén libres
+                if (cornerVariant) {
+                    const variant = CORNER_VARIANTS[cornerVariant];
+                    const emptyX = x + variant.emptyX;
+                    const emptyY = y + variant.emptyY;
+                    for (const dir of DIRECTIONS) {
+                        const adjX = emptyX + dir.dx;
+                        const adjY = emptyY + dir.dy;
+                        if (
+                            adjX >= 0 && adjX < GRID_SIZE &&
+                            adjY >= 0 && adjY < GRID_SIZE &&
+                            map[adjY][adjX] !== null
+                        ) {
+                            return false; // Hay una habitación adyacente al hueco de la L
+                        }
+                    }
+                }
+                return true;
+            }
+            
+            // Verificar las 4 direcciones adyacentes para Grande
+            for (const dir of DIRECTIONS) {
+                for (let dy = 0; dy < height; dy++) {
+                    for (let dx = 0; dx < width; dx++) {
+                        const ax = x + dx + dir.dx;
+                        const ay = y + dy + dir.dy;
+                        if (ax >= 0 && ax < GRID_SIZE && ay >= 0 && ay < GRID_SIZE) {
+                            const neighbor = map[ay][ax];
+                            if (neighbor && neighbor.type === type) {
+                                return false; // Hay un tipo igual adyacente
+                            }
+                        }
+                    }
+                }
+            }
+            return true;
+        }
+
+        // Marcar celdas como ocupadas por una habitación
+        function occupyCells(x, y, width, height, roomData, cornerVariant = null) {
+            for (let dy = 0; dy < height; dy++) {
+                for (let dx = 0; dx < width; dx++) {
+                    // Si es una habitación en L, el hueco no se marca como ocupado
+                    if (cornerVariant) {
+                        const variant = CORNER_VARIANTS[cornerVariant];
+                        if (dx === variant.emptyX && dy === variant.emptyY) {
+                            map[y + dy][x + dx] = { type: 'empty', isHole: true }; // Hueco vacío
+                            continue;
+                        }
+                    }
+                    map[y + dy][x + dx] = roomData;
+                }
+            }
+        }
+
+        // Expandir la frontera buscando posiciones adicionales
+        function expandFrontier() {
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    if (map[y][x] === null) {
+                        // Verificar si es adyacente a una habitación existente
+                        for (const dir of DIRECTIONS) {
+                            const ax = x + dir.dx;
+                            const ay = y + dir.dy;
+                            if (ax >= 0 && ax < GRID_SIZE && ay >= 0 && ay < GRID_SIZE && map[ay][ax] !== null) {
+                                if (!frontier.some(f => f.x === x && f.y === y)) {
+                                    frontier.push({ x: x, y: y });
+                                }
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Generar el mapa con todas las habitaciones conectadas
+        function generateMap() {
+            const centerX = Math.floor(GRID_SIZE / 2);
+            const centerY = Math.floor(GRID_SIZE / 2);
+            const roomCount = calculateRoomCount();
+            const rooms = [];
+            // Lista de posiciones frontera (adyacentes a habitaciones ya colocadas)
+            let frontier = [];
+            // Primera habitación en el centro (Normal, start)
+            const startRoom = { x: centerX, y: centerY, type: 'N', isStart: true, width: 1, height: 1 };
+            rooms.push(startRoom);
+            occupyCells(centerX, centerY, 1, 1, startRoom);
+            // Añadir las posiciones adyacentes a la frontera (solo ortogonales)
+            for (const dir of DIRECTIONS) {
+                const nx = centerX + dir.dx;
+                const ny = centerY + dir.dy;
+                if (nx >= 0 && nx < GRID_SIZE && ny >= 0 && ny < GRID_SIZE && map[ny][nx] === null) {
+                    frontier.push({ x: nx, y: ny });
+                }
+            }
+            for (let i = 1; i < roomCount; i++) {
+                // Elegir tipo de habitación aleatorio
+                const rand = Math.random();
+                let type;
+                let cornerVariant = null;
+                if (rand < 0.9) {
+                    type = 'N'; // 85% Normal
+                } else if (rand < 0.93) {
+                    type = 'G'; // 5% Grande
+                } else if (rand < 0.96) {
+                    // 5% Larga (50% horizontal, 50% vertical)
+                    type = Math.random() < 0.5 ? 'L' : 'V';
+                } else {
+                    // 5% En L (elegir variante aleatoria)
+                    const variants = ['C1', 'C2', 'C3', 'C4'];
+                    cornerVariant = variants[Math.floor(Math.random() * variants.length)];
+                    type = 'C';
+                }
+                const roomInfo = ROOM_TYPES[type];
+                const width = roomInfo.width;
+                const height = roomInfo.height;
+                // Buscar todas las posiciones válidas en la frontera (solo ortogonales)
+                let candidates = [];
+                let attempts = 0;
+                const maxAttempts = 20;
+                
+                while (candidates.length === 0 && attempts < maxAttempts) {
+                    attempts++;
+                    // Intentar primero con el tipo elegido, si falla probar otros tipos
+                    let tryType;
+                    let tryCorner = null;
+                    if (attempts <= 3) {
+                        tryType = type;
+                        tryCorner = cornerVariant;
+                    } else if (attempts <= 6) {
+                        tryType = 'N';
+                    } else if (attempts <= 9) {
+                        tryType = 'G';
+                    } else if (attempts <= 13) {
+                        tryType = 'L';
+                    } else if (attempts <= 17) {
+                        tryType = 'V';
+                    } else {
+                        // Intentar variantes de L
+                        const variants = ['C1', 'C2', 'C3', 'C4'];
+                        tryCorner = variants[Math.floor(Math.random() * variants.length)];
+                        tryType = 'C';
+                    }
+                    const tryRoom = ROOM_TYPES[tryType];
+                    const tryWidth = tryRoom.width;
+                    const tryHeight = tryRoom.height;
+                    
+                    for (const pos of frontier) {
+                            if (isPositionFree(pos.x, pos.y, tryWidth, tryHeight, tryType, tryCorner) && canPlaceType(pos.x, pos.y, tryWidth, tryHeight, tryType, tryCorner)) {
+                                // Debe estar adyacente ortogonalmente a una habitación ya colocada (no hueco de L)
+                                let adjacent = false;
+                                for (const dir of DIRECTIONS) {
+                                    for (let dy = 0; dy < tryHeight; dy++) {
+                                        for (let dx = 0; dx < tryWidth; dx++) {
+                                            const ax = pos.x + dx + dir.dx;
+                                            const ay = pos.y + dy + dir.dy;
+                                            if (
+                                                ax >= 0 && ax < GRID_SIZE &&
+                                                ay >= 0 && ay < GRID_SIZE &&
+                                                map[ay][ax] !== null &&
+                                                !map[ay][ax].isHole && // No adyacente solo a hueco de L
+                                                (ax < pos.x || ax > pos.x + tryWidth - 1 || ay < pos.y || ay > pos.y + tryHeight - 1)
+                                            ) {
+                                                adjacent = true;
+                                            }
+                                        }
+                                    }
+                                }
+                                if (adjacent) {
+                                    candidates.push({ x: pos.x, y: pos.y, type: tryType, width: tryWidth, height: tryHeight, cornerVariant: tryCorner });
+                                }
+                            }
+                    }
+                }
+                
+                if (candidates.length === 0) {
+                    // Si no hay candidatos, intentar expandir la frontera buscando más posiciones
+                    expandFrontier();
+                    // Reconstruir candidatos
+                    for (const pos of frontier) {
+                        if (isPositionFree(pos.x, pos.y, 1, 1)) {
+                            let adjacent = false;
+                            for (const dir of DIRECTIONS) {
+                                const ax = pos.x + dir.dx;
+                                const ay = pos.y + dir.dy;
+                                if (
+                                    ax >= 0 && ax < GRID_SIZE &&
+                                    ay >= 0 && ay < GRID_SIZE &&
+                                    map[ay][ax] !== null &&
+                                    !map[ay][ax].isHole // No adyacente solo a hueco de L
+                                ) {
+                                    adjacent = true;
+                                    break;
+                                }
+                            }
+                            if (adjacent) {
+                                candidates.push({ x: pos.x, y: pos.y, type: 'N', width: 1, height: 1 });
+                            }
+                        }
+                    }
+                }
+                
+                if (candidates.length === 0) break; // No hay sitio
+                // Elegir una posición aleatoria válida
+                const idx = Math.floor(Math.random() * candidates.length);
+                const { x: newX, y: newY, type: selectedType, width: selectedWidth, height: selectedHeight, cornerVariant: selectedCorner } = candidates[idx];
+                const newRoom = { x: newX, y: newY, type: selectedType, isStart: false, width: selectedWidth, height: selectedHeight, cornerVariant: selectedCorner };
+                rooms.push(newRoom);
+                occupyCells(newX, newY, selectedWidth, selectedHeight, newRoom, selectedCorner);
+                // Actualizar la frontera: añadir nuevas posiciones adyacentes (solo ortogonales)
+                for (const dir of DIRECTIONS) {
+                    for (let dy = 0; dy < selectedHeight; dy++) {
+                        for (let dx = 0; dx < selectedWidth; dx++) {
+                            const fx = newX + dx + dir.dx;
+                            const fy = newY + dy + dir.dy;
+                            // No añadir posiciones que sean el hueco de una habitación en L
+                            let isHole = false;
+                            for (const room of rooms) {
+                                if (room.cornerVariant) {
+                                    const variant = CORNER_VARIANTS[room.cornerVariant];
+                                    if (room.x + variant.emptyX === fx && room.y + variant.emptyY === fy) {
+                                        isHole = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (
+                                fx >= 0 && fx < GRID_SIZE &&
+                                fy >= 0 && fy < GRID_SIZE &&
+                                map[fy][fx] === null &&
+                                !isHole &&
+                                !frontier.some(f => f.x === fx && f.y === fy)
+                            ) {
+                                frontier.push({ x: fx, y: fy });
+                            }
+                        }
+                    }
+                }
+                // Eliminar de la frontera las posiciones ocupadas o que sean huecos
+                frontier = frontier.filter(pos => {
+                    const cell = map[pos.y][pos.x];
+                    return cell === null || cell.isHole === true;
+                });
+            }
+        }
+
+        // Renderizar el mapa
+        function renderMap() {
+            const mapContainer = document.getElementById('map');
+            mapContainer.innerHTML = '';
+
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'cell';
+                    
+                    const value = map[y][x];
+                    if (value) {
+                        // Mostrar huecos vacíos de forma diferente
+                        if (value.isHole) {
+                            cell.style.backgroundColor = '#1a1a1a';
+                            cell.textContent = '';
+                        } else {
+                            cell.classList.add(ROOM_TYPES[value.type].color);
+                            if (value.isStart) {
+                                cell.classList.add('start');
+                            }
+                            cell.textContent = value.type;
+                        }
+                    }
+                    
+                    mapContainer.appendChild(cell);
+                }
+            }
+        }
+
+        generateMap();
+        renderMap();
+    </script>
+</body>
+</html>
