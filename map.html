@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +17,21 @@
             margin: 0;
             padding: 20px;
         }
+
         h1 {
             margin-bottom: 20px;
         }
+
         #map {
             display: grid;
             grid-template-columns: repeat(13, 40px);
             grid-template-rows: repeat(13, 40px);
             gap: 2px;
-            background-color: #0f0f1a;
+            background-color: #2a2a4a;
             padding: 10px;
             border: 2px solid #4a4a6a;
         }
+
         .cell {
             width: 40px;
             height: 40px;
@@ -39,45 +43,98 @@
             background-color: #2a2a4a;
             border: 1px solid #3a3a5a;
         }
+
         .cell.normal {
             background-color: #4a6a4a;
             color: #90ff90;
         }
+
         .cell.start {
             background-color: #2d5a2d;
             color: #70df70;
         }
+
+        .cell.boss {
+            background-color: #6a2a2a;
+            color: #ff7070;
+        }
+
+        .cell.superSecret {
+            background-color: #886a06;
+            color: #e6f7fa;
+        }
+
+        .cell.secret {
+            background-color: #068872;
+            color: #e6f7fa;
+        }
+
         .cell.grande {
             background-color: #6a4a6a;
             color: #df90df;
         }
+
         .cell.larga {
             background-color: #4a5a6a;
             color: #90cfdf;
         }
+
         .cell.enL {
             background-color: #6a5a4a;
             color: #dfcf90;
         }
+
+        .cell.pasilloH {
+            background-color: #5a4a3a;
+            color: #cfaf8f;
+            height: 25px;
+            margin-top: 7.5px;
+        }
+
+        .cell.pasilloV {
+            background-color: #3a4a5a;
+            color: #8fafcf;
+            width: 25px;
+            margin-left: 7.5px;
+        }
     </style>
 </head>
+
 <body>
-    <h1>Generador de Mapas</h1>
+    <div id="controls" style="margin-bottom: 20px; display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+        <label>
+            Piso:
+            <input type="number" id="floorNumber" value="1" min="1" max="10" style="width: 50px; padding: 5px;">
+        </label>
+        <label>
+            <input type="checkbox" id="hardMode"> Hard Mode (+2/3 hab.)
+        </label>
+        <label>
+            <input type="checkbox" id="curseOfTheLost"> Curse of the Lost (+4 hab.)
+        </label>
+        <label>
+            <input type="checkbox" id="xlMode"> XL (+1 dead end, +1.8x hab., máx 45)
+        </label>
+        <button onclick="generateValidMap()" style="padding: 8px 16px; cursor: pointer;">Generar Mapa</button>
+    </div>
+    <!-- <h1>Generador de Mapas</h1> -->
     <div id="map"></div>
 
     <script>
         const GRID_SIZE = 13;
         const map = [];
-        
+
         // Tipos de habitaciones y sus tamaños (width x height)
         const ROOM_TYPES = {
             'N': { name: 'Normal', width: 1, height: 1, color: 'normal' },
             'G': { name: 'Grande', width: 2, height: 2, color: 'grande' },
             'L': { name: 'Larga', width: 2, height: 1, color: 'larga' },
             'V': { name: 'Larga Vertical', width: 1, height: 2, color: 'larga' },
-            'C': { name: 'En L', width: 2, height: 2, color: 'enL', isCorner: true }
+            'C': { name: 'En L', width: 2, height: 2, color: 'enL', isCorner: true },
+            'PH': { name: 'Pasillo Horizontal', width: 1, height: 1, color: 'pasilloH', isCorridor: true, corridorDir: 'H' },
+            'PV': { name: 'Pasillo Vertical', width: 1, height: 1, color: 'pasilloV', isCorridor: true, corridorDir: 'V' }
         };
-        
+
         // Variantes de forma L: el número indica dónde está el hueco (1=esquina superior izq, 2=esquina superior dch, 3=esquina inferior izq, 4=esquina inferior dch)
         const CORNER_VARIANTS = {
             'C1': { emptyX: 1, emptyY: 0 },  // Hueco arriba derecha
@@ -85,7 +142,7 @@
             'C3': { emptyX: 1, emptyY: 1 },  // Hueco abajo derecha
             'C4': { emptyX: 0, emptyY: 1 }   // Hueco abajo izquierda
         };
-        
+
         // Direcciones ortogonales (sin diagonales)
         const DIRECTIONS = [
             { dx: 0, dy: -1 },  // arriba
@@ -102,10 +159,36 @@
             }
         }
 
-        // Calcular número de habitaciones: mínimo 10, máximo 12
+        // Calcular número de habitaciones según el piso y modificadores
         function calculateRoomCount() {
+            const floorNum = parseInt(document.getElementById('floorNumber').value) || 1;
+            const hardMode = document.getElementById('hardMode').checked;
+            const curseOfTheLost = document.getElementById('curseOfTheLost').checked;
+            const xlMode = document.getElementById('xlMode').checked;
+
+            // Base: 3.33 * piso + 5 o 6
+            let base = Math.round(3.33 * floorNum);
             const add = Math.random() < 0.5 ? 5 : 6;
-            return 3 * 1 + add;
+            let total = base + add;
+
+            // XL Mode: multiplicador 1.8
+            if (xlMode) {
+                total = Math.round(total * 1.8);
+            }
+
+            // Hard Mode: +2/3 habitaciones (redondeado)
+            if (hardMode) {
+                total += Math.round(Math.random() * 2 + 1); // 1 a 3
+            }
+
+            // Curse of the Lost: +4 habitaciones
+            if (curseOfTheLost) {
+                total += 4;
+            }
+
+            // Máximo: 20 normal, 45 en XL
+            const maxRooms = xlMode ? 45 : 20;
+            return Math.min(total, maxRooms);
         }
 
         // Verificar si una posición está libre para una habitación
@@ -145,8 +228,49 @@
         // Las habitaciones largas (L y V) y en L (C1-C4) se consideran del mismo tipo para la restricción
         function canPlaceType(x, y, width, height, type, cornerVariant = null) {
             if (type === 'N') return true; // Normal siempre puede colocarse
-            
-            // Las largas horizontales y verticales no pueden estar adyacentes entre sí
+
+            // Los pasillos (PH y PV) tienen restricciones especiales:
+            // 1. No puede haber nada en los laterales (toda la fila/columna adyacente)
+            // 2. No puede haber otro pasillo (PH o PV) adyacente en ninguna dirección
+            if (type === 'PH' || type === 'PV') {
+                const isHorizontal = (type === 'PH');
+                if (isHorizontal) {
+                    // Revisar toda la fila arriba y abajo
+                    if (y > 0 && map[y - 1][x] !== null) return false;
+                    if (y < GRID_SIZE - 1 && map[y + 1][x] !== null) return false;
+                    // Revisar si hay habitaciones grandes, largas o en L que ocupen arriba o abajo
+                    for (let dx = -1; dx <= 1; dx++) {
+                        if (x + dx >= 0 && x + dx < GRID_SIZE) {
+                            if (y > 0 && map[y - 1][x + dx] !== null) return false;
+                            if (y < GRID_SIZE - 1 && map[y + 1][x + dx] !== null) return false;
+                        }
+                    }
+                } else {
+                    // Revisar toda la columna izquierda y derecha
+                    if (x > 0 && map[y][x - 1] !== null) return false;
+                    if (x < GRID_SIZE - 1 && map[y][x + 1] !== null) return false;
+                    // Revisar si hay habitaciones grandes, largas o en L que ocupen izquierda o derecha
+                    for (let dy = -1; dy <= 1; dy++) {
+                        if (y + dy >= 0 && y + dy < GRID_SIZE) {
+                            if (x > 0 && map[y + dy][x - 1] !== null) return false;
+                            if (x < GRID_SIZE - 1 && map[y + dy][x + 1] !== null) return false;
+                        }
+                    }
+                }
+                // 2. No puede haber otro pasillo adyacente (en ninguna dirección)
+                const corridorTypes = ['PH', 'PV'];
+                for (const dir of DIRECTIONS) {
+                    const nx = x + dir.dx;
+                    const ny = y + dir.dy;
+                    if (nx >= 0 && nx < GRID_SIZE && ny >= 0 && ny < GRID_SIZE) {
+                        const neighbor = map[ny][nx];
+                        if (neighbor && corridorTypes.includes(neighbor.type)) {
+                            return false;
+                        }
+                    }
+                }
+                return true;
+            }
             const largeTypes = ['L', 'V'];
             if (largeTypes.includes(type)) {
                 // Verificar si hay otra habitación larga adyacente
@@ -166,7 +290,7 @@
                 }
                 return true;
             }
-            
+
             // Las habitaciones en L no pueden estar adyacentes a otras en L ni a las celdas vacías de otras habitaciones en L
             if (type.startsWith('C')) {
                 const cornerTypes = ['C1', 'C2', 'C3', 'C4'];
@@ -204,7 +328,7 @@
                 }
                 return true;
             }
-            
+
             // Verificar las 4 direcciones adyacentes para Grande
             for (const dir of DIRECTIONS) {
                 for (let dy = 0; dy < height; dy++) {
@@ -286,18 +410,21 @@
                 const rand = Math.random();
                 let type;
                 let cornerVariant = null;
-                if (rand < 0.9) {
+                if (rand < 0.60) {
                     type = 'N'; // 85% Normal
-                } else if (rand < 0.93) {
+                } else if (rand < 0.70) {
                     type = 'G'; // 5% Grande
-                } else if (rand < 0.96) {
+                } else if (rand < 0.80) {
                     // 5% Larga (50% horizontal, 50% vertical)
                     type = Math.random() < 0.5 ? 'L' : 'V';
-                } else {
+                } else if (rand < 0.90) {
                     // 5% En L (elegir variante aleatoria)
                     const variants = ['C1', 'C2', 'C3', 'C4'];
                     cornerVariant = variants[Math.floor(Math.random() * variants.length)];
                     type = 'C';
+                } else {
+                    // 3% Pasillo (50% horizontal, 50% vertical)
+                    type = Math.random() < 0.5 ? 'PH' : 'PV';
                 }
                 const roomInfo = ROOM_TYPES[type];
                 const width = roomInfo.width;
@@ -306,7 +433,7 @@
                 let candidates = [];
                 let attempts = 0;
                 const maxAttempts = 20;
-                
+
                 while (candidates.length === 0 && attempts < maxAttempts) {
                     attempts++;
                     // Intentar primero con el tipo elegido, si falla probar otros tipos
@@ -323,6 +450,9 @@
                         tryType = 'L';
                     } else if (attempts <= 17) {
                         tryType = 'V';
+                    } else if (attempts <= 20) {
+                        // Intentar pasillo
+                        tryType = Math.random() < 0.5 ? 'PH' : 'PV';
                     } else {
                         // Intentar variantes de L
                         const variants = ['C1', 'C2', 'C3', 'C4'];
@@ -332,35 +462,35 @@
                     const tryRoom = ROOM_TYPES[tryType];
                     const tryWidth = tryRoom.width;
                     const tryHeight = tryRoom.height;
-                    
+
                     for (const pos of frontier) {
-                            if (isPositionFree(pos.x, pos.y, tryWidth, tryHeight, tryType, tryCorner) && canPlaceType(pos.x, pos.y, tryWidth, tryHeight, tryType, tryCorner)) {
-                                // Debe estar adyacente ortogonalmente a una habitación ya colocada (no hueco de L)
-                                let adjacent = false;
-                                for (const dir of DIRECTIONS) {
-                                    for (let dy = 0; dy < tryHeight; dy++) {
-                                        for (let dx = 0; dx < tryWidth; dx++) {
-                                            const ax = pos.x + dx + dir.dx;
-                                            const ay = pos.y + dy + dir.dy;
-                                            if (
-                                                ax >= 0 && ax < GRID_SIZE &&
-                                                ay >= 0 && ay < GRID_SIZE &&
-                                                map[ay][ax] !== null &&
-                                                !map[ay][ax].isHole && // No adyacente solo a hueco de L
-                                                (ax < pos.x || ax > pos.x + tryWidth - 1 || ay < pos.y || ay > pos.y + tryHeight - 1)
-                                            ) {
-                                                adjacent = true;
-                                            }
+                        if (isPositionFree(pos.x, pos.y, tryWidth, tryHeight, tryType, tryCorner) && canPlaceType(pos.x, pos.y, tryWidth, tryHeight, tryType, tryCorner)) {
+                            // Debe estar adyacente ortogonalmente a una habitación ya colocada (no hueco de L)
+                            let adjacent = false;
+                            for (const dir of DIRECTIONS) {
+                                for (let dy = 0; dy < tryHeight; dy++) {
+                                    for (let dx = 0; dx < tryWidth; dx++) {
+                                        const ax = pos.x + dx + dir.dx;
+                                        const ay = pos.y + dy + dir.dy;
+                                        if (
+                                            ax >= 0 && ax < GRID_SIZE &&
+                                            ay >= 0 && ay < GRID_SIZE &&
+                                            map[ay][ax] !== null &&
+                                            !map[ay][ax].isHole && // No adyacente solo a hueco de L
+                                            (ax < pos.x || ax > pos.x + tryWidth - 1 || ay < pos.y || ay > pos.y + tryHeight - 1)
+                                        ) {
+                                            adjacent = true;
                                         }
                                     }
                                 }
-                                if (adjacent) {
-                                    candidates.push({ x: pos.x, y: pos.y, type: tryType, width: tryWidth, height: tryHeight, cornerVariant: tryCorner });
-                                }
                             }
+                            if (adjacent) {
+                                candidates.push({ x: pos.x, y: pos.y, type: tryType, width: tryWidth, height: tryHeight, cornerVariant: tryCorner });
+                            }
+                        }
                     }
                 }
-                
+
                 if (candidates.length === 0) {
                     // Si no hay candidatos, intentar expandir la frontera buscando más posiciones
                     expandFrontier();
@@ -387,7 +517,7 @@
                         }
                     }
                 }
-                
+
                 if (candidates.length === 0) break; // No hay sitio
                 // Elegir una posición aleatoria válida
                 const idx = Math.floor(Math.random() * candidates.length);
@@ -437,33 +567,408 @@
             const mapContainer = document.getElementById('map');
             mapContainer.innerHTML = '';
 
+            // Encontrar la sala de inicio para calcular distancias
+            const startRoom = findStartRoom();
+            const startX = startRoom ? startRoom.x : -1;
+            const startY = startRoom ? startRoom.y : -1;
+
+            // Crear un mapa de referencia de sala a distancia
+            const roomDistanceMap = new Map();
+            if (startX >= 0 && startY >= 0) {
+                // Recorrer todas las celdas y calcular distancia solo para la referencia de objeto de sala
+                for (let y = 0; y < GRID_SIZE; y++) {
+                    for (let x = 0; x < GRID_SIZE; x++) {
+                        const value = map[y][x];
+                        if (value && !value.isHole && !roomDistanceMap.has(value)) {
+                            const dist = calculateDistance(startX, startY, x, y);
+                            if (dist >= 0) {
+                                roomDistanceMap.set(value, dist);
+                            }
+                        }
+                    }
+                }
+            }
+
             for (let y = 0; y < GRID_SIZE; y++) {
                 for (let x = 0; x < GRID_SIZE; x++) {
                     const cell = document.createElement('div');
                     cell.className = 'cell';
-                    
                     const value = map[y][x];
                     if (value) {
+                        // Usar la distancia de la referencia de sala
+                        let distText = '';
+                        if (!value.isHole && roomDistanceMap.has(value)) {
+                            distText = roomDistanceMap.get(value).toString();
+                        }
                         // Mostrar huecos vacíos de forma diferente
                         if (value.isHole) {
-                            cell.style.backgroundColor = '#1a1a1a';
                             cell.textContent = '';
+                        } else if (value.isSecret) {
+                            cell.classList.add('secret');
+                            cell.textContent = 'S' + distText;
+                            cell.title = 'Sala secreta (distancia: ' + distText + ')';
+                        } else if (value.isSuperSecret) {
+                            cell.classList.add('superSecret');
+                            cell.textContent = 'SS' + distText;
+                            cell.title = 'Sala super secreta (distancia: ' + distText + ')';
+                        } else if (value.isCorridor) {
+                            // Los pasillos muestran su dirección
+                            cell.classList.add(ROOM_TYPES[value.type].color);
+                            cell.textContent = value.type + distText;
                         } else {
                             cell.classList.add(ROOM_TYPES[value.type].color);
                             if (value.isStart) {
                                 cell.classList.add('start');
                             }
-                            cell.textContent = value.type;
+                            if (value.isBoss) {
+                                cell.classList.add('boss');
+                            }
+                            cell.textContent = value.type + distText;
                         }
                     }
-                    
                     mapContainer.appendChild(cell);
                 }
             }
         }
 
-        generateMap();
-        renderMap();
+        // Valida que los pasillos cumplen las reglas
+        function validateCorridors() {
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    const cell = map[y][x];
+                    if (cell && (cell.type === 'PH' || cell.type === 'PV')) {
+                        // Reutiliza la lógica de canPlaceType para validar
+                        if (!canPlaceType(x, y, 1, 1, cell.type)) {
+                            return false;
+                        }
+                    }
+                }
+            }
+            return true;
+        }
+
+        // Cuenta las habitaciones adyacentes a una posición
+        function countAdjacentRooms(x, y) {
+            let count = 0;
+            for (const dir of DIRECTIONS) {
+                const ax = x + dir.dx;
+                const ay = y + dir.dy;
+                if (ax >= 0 && ax < GRID_SIZE && ay >= 0 && ay < GRID_SIZE && map[ay][ax] !== null && !map[ay][ax].isHole) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+// Valida que hay dead ends según el piso (5 para piso 1, hasta 6 máximo, +1 en XL)
+        function validateDeadEnds() {
+            const floorNum = parseInt(document.getElementById('floorNumber').value) || 1;
+            const xlMode = document.getElementById('xlMode').checked;
+            
+            // Dead ends: 5 para piso 1, incrementa en 1 por cada piso adicional, máximo 6
+            // XL añade +1 dead end
+            let requiredDeadEnds = Math.min(5 + (floorNum - 1), 6);
+            if (xlMode) {
+                requiredDeadEnds += 1;
+            }
+
+            const deadEnds = [];
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    const cell = map[y][x];
+                    // Solo Normal o Pasillo pueden ser dead ends (no start, no grandes, no L, no larga)
+                    if (cell && !cell.isStart && (cell.type === 'N' || cell.type === 'PH' || cell.type === 'PV')) {
+                        const adjCount = countAdjacentRooms(x, y);
+                        if (adjCount === 1) {
+                            deadEnds.push({ x, y, type: cell.type });
+                        }
+                    }
+                }
+            }
+            return deadEnds.length === requiredDeadEnds ? deadEnds : null;
+        }
+
+        // Encuentra la posición de la sala de inicio
+        function findStartRoom() {
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    const cell = map[y][x];
+                    if (cell && cell.isStart) {
+                        return { x, y };
+                    }
+                }
+            }
+            return null;
+        }
+
+        // Calcula la distancia desde la sala de inicio a una posición usando BFS
+        // Cuenta salas (no celdas) - las salas especiales ocupan más de una celda pero cuentan como 1
+        function calculateDistance(startX, startY, targetX, targetY) {
+            const queue = [{ x: startX, y: startY, dist: 0 }];
+            const visitedRooms = new Set(); // Set de referencias de salas visitadas
+            const visitedCells = new Set(); // Set de celdas visitadas para evitar ciclos
+            visitedCells.add(`${startX},${startY}`);
+
+            // Registrar la sala inicial
+            if (map[startY][startX]) {
+                visitedRooms.add(map[startY][startX]);
+            }
+
+            while (queue.length > 0) {
+                const current = queue.shift();
+
+                if (current.x === targetX && current.y === targetY) {
+                    return current.dist;
+                }
+
+                // Explorar las 4 direcciones
+                for (const dir of DIRECTIONS) {
+                    const nx = current.x + dir.dx;
+                    const ny = current.y + dir.dy;
+                    const key = `${nx},${ny}`;
+
+                    if (nx >= 0 && nx < GRID_SIZE && ny >= 0 && ny < GRID_SIZE &&
+                        map[ny][nx] !== null && !map[ny][nx].isHole &&
+                        !visitedCells.has(key)) {
+
+                        visitedCells.add(key);
+
+                        const currentRoom = map[ny][nx];
+                        let newDist = current.dist;
+
+                        // Si es una sala nueva (nueva referencia), aumentar distancia
+                        if (!visitedRooms.has(currentRoom)) {
+                            visitedRooms.add(currentRoom);
+                            newDist = current.dist + 1;
+                        }
+
+                        queue.push({ x: nx, y: ny, dist: newDist });
+                    }
+                }
+            }
+
+            return -1; // No se pudo llegar
+        }
+
+        // Marca la sala de boss (la dead end más lejana del inicio)
+        function markBossRoom() {
+            const deadEnds = validateDeadEnds();
+            if (!deadEnds || deadEnds.length === 0) return;
+
+            const startRoom = findStartRoom();
+            if (!startRoom) return;
+
+            // Calcular distancia a cada dead end
+            const distances = deadEnds.map(de => {
+                return {
+                    ...de,
+                    distance: calculateDistance(startRoom.x, startRoom.y, de.x, de.y)
+                };
+            });
+
+            // Encontrar la distancia máxima
+            const maxDist = Math.max(...distances.map(d => d.distance));
+
+            // Filtrar solo las dead ends con la distancia máxima
+            const farthestDeadEnds = distances.filter(d => d.distance === maxDist);
+
+            // Elegir una al azar si hay varias a la misma distancia
+            const bossRoom = farthestDeadEnds[Math.floor(Math.random() * farthestDeadEnds.length)];
+
+            // Marcar la sala de boss
+            map[bossRoom.y][bossRoom.x].isBoss = true;
+            console.log(`boss: ${bossRoom.x + 1}X ${bossRoom.y + 1}Y D${bossRoom.distance}`);
+        }
+
+        // Coloca la sala secreta según las reglas
+        function placeSecretRoom() {
+            let bestPositions = [];
+            let maxAdj = 0;
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    // Solo en celdas vacías o huecos de L
+                    if (map[y][x] !== null && !(map[y][x].isHole)) continue;
+                    let adjRooms = 0;
+                    let adjBoss = false;
+                    for (const dir of DIRECTIONS) {
+                        const ax = x + dir.dx;
+                        const ay = y + dir.dy;
+                        if (ax >= 0 && ax < GRID_SIZE && ay >= 0 && ay < GRID_SIZE) {
+                            const cell = map[ay][ax];
+                            if (cell && !cell.isHole) {
+                                if (cell.isBoss) adjBoss = true;
+                                else adjRooms++;
+                            }
+                        }
+                    }
+                    if (!adjBoss && adjRooms > 0) {
+                        if (adjRooms > maxAdj) {
+                            maxAdj = adjRooms;
+                            bestPositions = [{ x, y }];
+                        } else if (adjRooms === maxAdj) {
+                            bestPositions.push({ x, y });
+                        }
+                    }
+                }
+            }
+            if (bestPositions.length > 0) {
+                const chosen = bestPositions[Math.floor(Math.random() * bestPositions.length)];
+                map[chosen.y][chosen.x] = { type: 'S', isSecret: true };
+                console.log(`secreta: ${chosen.x + 1}X ${chosen.y + 1}Y ADJ/${maxAdj}`);
+
+            } else {
+                console.warn('No se pudo colocar sala secreta.');
+            }
+        }
+
+        // Encuentra la posición de la sala de boss
+        function findBossRoom() {
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    const cell = map[y][x];
+                    if (cell && cell.isBoss) {
+                        return { x, y };
+                    }
+                }
+            }
+            return null;
+        }
+
+        // Encuentra la posición de la sala secreta
+        function findSecretRoom() {
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    const cell = map[y][x];
+                    if (cell && cell.isSecret) {
+                        return { x, y };
+                    }
+                }
+            }
+            return null;
+        }
+
+        // Coloca la sala super secreta según las reglas:
+        // - Se genera como un dead end (una sola habitación adyacente)
+        // - Se genera lo más lejos posible de la sala de inicio
+        // - No puede generarse al lado de la sala de boss
+        // - Debe ser de cualquier otro tipo de habitación (no puede ser la sala secreta)
+        // - Si hay varias posibles, que se genere la más cercana a la sala del boss
+        function placeSuperSecretRoom() {
+            const startRoom = findStartRoom();
+            const bossRoom = findBossRoom();
+            const secretRoom = findSecretRoom();
+            if (!startRoom || !bossRoom) return;
+
+            // Encontrar todas las posiciones válidas para sala super secreta
+            // Debe ser: celda vacía, exactamente 1 habitación adyacente (dead end), no adyacente a boss
+            let validPositions = [];
+            for (let y = 0; y < GRID_SIZE; y++) {
+                for (let x = 0; x < GRID_SIZE; x++) {
+                    // Solo en celdas vacías o huecos de L
+                    if (map[y][x] !== null && !(map[y][x].isHole)) continue;
+
+                    let adjRooms = 0;
+                    let adjBoss = false;
+                    let adjSecret = false;
+                    let adjacentRoom = null;
+
+                    for (const dir of DIRECTIONS) {
+                        const ax = x + dir.dx;
+                        const ay = y + dir.dy;
+                        if (ax >= 0 && ax < GRID_SIZE && ay >= 0 && ay < GRID_SIZE) {
+                            const cell = map[ay][ax];
+                            if (cell && !cell.isHole) {
+                                if (cell.isBoss) adjBoss = true;
+                                else if (cell.isSecret) adjSecret = true;
+                                else {
+                                    adjRooms++;
+                                    adjacentRoom = { x: ax, y: ay };
+                                }
+                            }
+                        }
+                    }
+
+                    // Debe ser dead end (1 habitación adyacente), no adyacente a boss ni a sala secreta
+                    if (adjRooms === 1 && !adjBoss && !adjSecret) {
+                        validPositions.push({ x, y, adjacentRoom });
+                    }
+                }
+            }
+
+            if (validPositions.length === 0) {
+                console.warn('No se pudo colocar sala super secreta.');
+                return;
+            }
+
+            // Calcular distancia desde el inicio a cada posición válida
+            // Para celdas vacías, la distancia es la distancia a la sala adyacente + 1
+            const positionsWithDistance = validPositions.map(pos => {
+                // Usar la sala adyacente para calcular la distancia
+                const distFromStart = calculateDistance(startRoom.x, startRoom.y, pos.adjacentRoom.x, pos.adjacentRoom.y);
+                return { ...pos, distFromStart: distFromStart >= 0 ? distFromStart + 1 : -1 };
+            });
+
+            // Encontrar la distancia máxima
+            const maxDist = Math.max(...positionsWithDistance.map(p => p.distFromStart));
+
+            // Filtrar solo las posiciones con la distancia máxima
+            const farthestPositions = positionsWithDistance.filter(p => p.distFromStart === maxDist);
+
+            // Si hay varias a la misma distancia máxima, elegir la más cercana a la sala de boss
+            let chosenPos;
+            if (farthestPositions.length === 1) {
+                chosenPos = farthestPositions[0];
+            } else {
+                // Calcular distancia a la sala de boss y elegir la más cercana
+                let minDistToBoss = Infinity;
+                let closestToBoss = null;
+                for (const pos of farthestPositions) {
+                    const distToBoss = Math.abs(pos.x - bossRoom.x) + Math.abs(pos.y - bossRoom.y);
+                    if (distToBoss < minDistToBoss) {
+                        minDistToBoss = distToBoss;
+                        closestToBoss = pos;
+                    }
+                }
+                chosenPos = closestToBoss;
+            }
+
+            map[chosenPos.y][chosenPos.x] = { type: 'SS', isSuperSecret: true };
+            console.log(`super secreta: ${chosenPos.x + 1}X ${chosenPos.y + 1}Y D${chosenPos.distFromStart}`);
+        }
+
+        // Genera y valida el mapa hasta que sea correcto (sin límite de intentos)
+        function generateValidMap() {
+            console.clear();
+            let attempts = 0;
+            while (true) {
+                // Limpia el mapa
+                for (let y = 0; y < GRID_SIZE; y++) {
+                    for (let x = 0; x < GRID_SIZE; x++) {
+                        map[y][x] = null;
+                    }
+                }
+                generateMap();
+                attempts++;
+                if (validateCorridors() && validateDeadEnds()) {
+                    break;
+                }
+            }
+            console.log(`generaciones ${attempts}`);
+            const deadEnds = validateDeadEnds();
+            console.log(`dead ends: ${deadEnds ? deadEnds.length : 0}`);
+
+            // Marcar la sala de boss
+            markBossRoom();
+            // Colocar la sala secreta
+            placeSecretRoom();
+            // Colocar la sala super secreta
+            placeSuperSecretRoom();
+
+            renderMap();
+        }
+
+        generateValidMap();
     </script>
 </body>
+
 </html>
