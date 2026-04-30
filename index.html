@@ -708,12 +708,43 @@
             transition: box-shadow 0.2s, transform 0.2s;
         }
 
+        #floating-link-btn {
+            position: fixed;
+            bottom: 28px;
+            left: 28px;
+            z-index: 2001;
+            background: #f6d6b0;
+            border: 4px outset #99866e;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            box-shadow: 0 4px 16px #0008;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
         #floating-quiz-btn:hover {
             box-shadow: 0 8px 24px #000a;
             transform: scale(1.08);
         }
 
+        #floating-link-btn:hover {
+            box-shadow: 0 8px 24px #000a;
+            transform: scale(1.08);
+        }
+
         #floating-quiz-btn img {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+            image-rendering: pixelated;
+            pointer-events: none;
+        }
+
+        #floating-link-btn img {
             width: 44px;
             height: 44px;
             object-fit: contain;
@@ -962,6 +993,18 @@
                 height: 32px;
             }
 
+            #floating-link-btn {
+                width: 48px;
+                height: 48px;
+                left: 12px;
+                bottom: 12px;
+            }
+
+            #floating-link-btn img {
+                width: 32px;
+                height: 32px;
+            }
+
             /* Grid de temas en móvil: 2 columnas */
             #theme-grid {
                 grid-template-columns: repeat(2, 1fr) !important;
@@ -1036,6 +1079,9 @@
 
     <div id="floating-quiz-btn" title="Quiz Isaac">
         <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/other/quiz.png" alt="Quiz">
+    </div>
+    <div id="floating-link-btn" title="Enlace">
+        <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/All_Items/item_54.png" alt="Enlace">
     </div>
     <div class="content">
         <!-- Search bar -->
@@ -1896,6 +1942,10 @@
                     el.style.color = t.textColor || '';
                 });
                 document.querySelectorAll('#floating-quiz-btn').forEach(el => {
+                    el.style.background = t.modalBg || '';
+                    el.style.borderColor = t.border || '';
+                });
+                document.querySelectorAll('#floating-link-btn').forEach(el => {
                     el.style.background = t.modalBg || '';
                     el.style.borderColor = t.border || '';
                 });
@@ -3380,6 +3430,13 @@
             const floatingQuizBtn = document.getElementById('floating-quiz-btn');
             floatingQuizBtn.onclick = function () {
                 startQuiz();
+            }
+
+            // Botón flotante de enlace (izquierda)
+            const floatingLinkBtn = document.getElementById('floating-link-btn');
+            floatingLinkBtn.onclick = function () {
+                // Cambia esta URL por la que quieras usar
+                window.open('https://ellandeperez.github.io/jokercard/map.html', '_blank');
             }
 
             quizModalClose.onclick = () => quizModal.style.display = 'none';
