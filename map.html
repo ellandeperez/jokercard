@@ -38,6 +38,7 @@
         }
 
         #map {
+            position: relative;
             display: grid;
             grid-template-columns: repeat(13, var(--cell-size));
             grid-template-rows: repeat(13, var(--cell-size));
@@ -82,6 +83,22 @@
             font-size: 1.5em;
             border: 6px outset #00000012;
             box-sizing: border-box;
+        }
+
+        .floating-score {
+            position: absolute;
+            pointer-events: none;
+            font-size: 1rem;
+            color: #f8e71c;
+            font-weight: bold;
+            text-shadow: 0 0 6px rgba(0,0,0,0.8);
+            animation: floatScore 1s ease-out forwards;
+            z-index: 10;
+        }
+
+        @keyframes floatScore {
+            0% { opacity: 1; transform: translate(-50%, -50%) translateY(0); }
+            100% { opacity: 0; transform: translate(-50%, -50%) translateY(-30px); }
         }
 
         #controls {
@@ -387,8 +404,30 @@
             animation: revealAnim 0.3s ease-out;
         }
 
+        .cell.secret-found {
+            animation: secretFoundAnim 0.45s ease-out;
+            box-shadow: 0 0 12px 4px rgba(250, 235, 96, 0.85);
+        }
+
+        #livesDisplay.life-lost {
+            animation: lifeLostAnim 0.4s ease-out;
+        }
+
         @keyframes revealAnim {
             0% { transform: scale(1.2); filter: brightness(2); }
+            100% { transform: scale(1); filter: brightness(1); }
+        }
+
+        @keyframes secretFoundAnim {
+            0% { transform: scale(1.1); filter: brightness(1.5); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); filter: brightness(1); }
+        }
+
+        @keyframes lifeLostAnim {
+            0% { transform: scale(1); filter: brightness(1); }
+            40% { transform: scale(1.05); filter: brightness(1.3); }
+            70% { transform: scale(0.98); }
             100% { transform: scale(1); filter: brightness(1); }
         }
     </style>
@@ -417,7 +456,8 @@
         <div id="scoreDisplay">$: <span id="currentScore">0</span></div>
         <button onclick="showHelp()" style="width: 30px; height: 30px; border-radius: 50%; background: #5f5f5f; color: white; border: none; cursor: pointer;border: 1px solid black; font-size: 1em" title="Cómo jugar">?</button>
     </div>
-    <div id="messageArea" style="margin-top: 10px; margin-bottom: 10px;"></div>
+    <div id="upgradeInfo" style="margin-top: 10px; color: #f3f4f6; font-size: 0.95em;"></div>
+    <div id="messageArea" style="margin-top: 10px; margin-bottom: 10px;min-height: 40px;"></div>
     <!-- <h1>Generador de Mapas</h1> -->
     <div id="map"></div>
     <div id="curseIcons" aria-label="Maldiciones activas"></div>
@@ -427,7 +467,7 @@
         const map = [];
 
         // Game state
-        let lives = 6;
+        let lives = 2;
         let score = 0;
         let currentFloor = 1;
         let completedMaps = 0;
@@ -451,6 +491,172 @@
             9: 'dark_background',
             10: 'chest_background'
         };
+
+        const STORAGE_KEY = 'jokercardPermanentUpgrades';
+        const MAX_EXTRA_LIFE_PURCHASES = 8;
+        const EXTRA_LIFE_COST_BASE = 10;
+
+        const shopItems = {
+            extraLife: {
+                name: 'Vida extra',
+                description: 'Aumenta tu salud máxima en 1 vida (medio corazón) hasta 10 vidas totales.',
+                cost: null
+            },
+            shield: {
+                name: 'Escudo de un solo uso',
+                description: 'Protege una pérdida de vida. Se puede comprar de nuevo tras usarse.',
+                cost: 20
+            },
+            bonusScore: {
+                name: 'Bono de puntos',
+                description: 'Cada sala secreta otorga +1 punto extra.',
+                cost: 100
+            }
+        };
+
+        let upgrades = loadPurchasedUpgrades();
+        let shieldActive = false;
+
+        function loadPurchasedUpgrades() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY);
+                if (raw) {
+                    const parsed = JSON.parse(raw);
+                    return {
+                        extraLife: 0,
+                        bonusScore: false,
+                        ...parsed
+                    };
+                }
+            } catch (e) {
+                console.warn('No se pudieron cargar las mejoras permanentes.', e);
+            }
+            return {
+                extraLife: 0,
+                bonusScore: false
+            };
+        }
+
+        function getExtraLifeCost() {
+            return (EXTRA_LIFE_COST_BASE * (upgrades.extraLife + 1));
+        }
+
+        function savePurchasedUpgrades() {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(upgrades));
+        }
+
+        function getInitialLives() {
+            return 2 + upgrades.extraLife;
+        }
+
+        function getMaxLives() {
+            return 2 + upgrades.extraLife;
+        }
+
+        function renderUpgradeStatus() {
+            const container = document.getElementById('upgradeInfo');
+            if (!container) return;
+            const owned = [];
+            if (upgrades.extraLife) owned.push(`+${upgrades.extraLife} vida${upgrades.extraLife === 1 ? '' : 's'}`);
+            if (upgrades.bonusScore) owned.push('Bono de puntos');
+            if (shieldActive) owned.push('Escudo activo');
+        }
+
+        function attemptPurchase(itemId) {
+            const item = shopItems[itemId];
+            if (!item) return;
+
+            if (itemId === 'shield') {
+                if (shieldActive) return;
+                if (score < item.cost) {
+                    alert(`No tienes suficientes puntos para comprar "${item.name}".`);
+                    return;
+                }
+                score -= item.cost;
+                shieldActive = true;
+                updateScoreDisplay();
+                renderUpgradeStatus();
+                showShopInterface();
+                return;
+            }
+
+            if (itemId === 'extraLife') {
+                if (upgrades.extraLife >= MAX_EXTRA_LIFE_PURCHASES) return;
+                const cost = getExtraLifeCost();
+                if (score < cost) {
+                    alert(`No tienes suficientes puntos para comprar "${item.name}".`);
+                    return;
+                }
+                score -= cost;
+                upgrades.extraLife += 1;
+                savePurchasedUpgrades();
+                updateScoreDisplay();
+                renderUpgradeStatus();
+                showShopInterface();
+                return;
+            }
+
+            if (upgrades[itemId]) return;
+            if (score < item.cost) {
+                alert(`No tienes suficientes puntos para comprar "${item.name}".`);
+                return;
+            }
+            score -= item.cost;
+            upgrades[itemId] = true;
+            savePurchasedUpgrades();
+            updateScoreDisplay();
+            renderUpgradeStatus();
+            showShopInterface();
+        }
+
+        function showShopInterface() {
+            const messageArea = document.getElementById('messageArea');
+            const itemsHtml = Object.entries(shopItems).map(([itemId, item]) => {
+                const owned = itemId === 'shield' ? shieldActive : itemId === 'extraLife' ? upgrades.extraLife >= MAX_EXTRA_LIFE_PURCHASES : upgrades[itemId];
+                const cost = itemId === 'extraLife' ? getExtraLifeCost() : item.cost;
+                const canAfford = score >= cost;
+                const buttonText = itemId === 'extraLife'
+                    ? owned
+                        ? 'Máximo alcanzado'
+                        : canAfford
+                            ? `Comprar +1 vida - ${cost} puntos`
+                            : `Necesitas ${cost} puntos`
+                    : itemId === 'shield'
+                        ? owned
+                            ? 'Escudo listo'
+                            : canAfford
+                                ? `Comprar - ${cost} puntos`
+                                : `Necesitas ${cost} puntos`
+                        : owned
+                            ? 'Comprado'
+                            : canAfford
+                                ? `Comprar - ${cost} puntos`
+                                : `Necesitas ${cost} puntos`;
+
+                return `
+                    <div style="background: rgba(255,255,255,0.08); padding: 16px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); display: flex; flex-direction: column; gap: 8px;">
+                        <div style="font-weight: bold; font-size: 1.05em;">${item.name}</div>
+                        <div style="font-size: 0.95em; color: #d1d5db;">${item.description}</div>
+                        <button onclick="attemptPurchase('${itemId}')" style="padding: 10px 16px; font-size: 0.95em; border: none; border-radius: 8px; cursor: pointer; background: ${owned || !canAfford ? '#6b7280' : '#f59e0b'}; color: white;" ${owned || !canAfford ? 'disabled' : ''}>
+                            ${buttonText}
+                        </button>
+                    </div>
+                `;
+            }).join('');
+
+            messageArea.innerHTML = `
+                <div style="background: rgba(30, 30, 60, 0.95); padding: 20px; border-radius: 12px; border: 2px solid #fbbf24; max-width: 600px; margin: auto;">
+                    <h2 style="margin: 0 0 12px 0; color: #fbbf24;">Tienda permanente</h2>
+                    <p style="margin: 0 0 8px 0; color: #e5e7eb;">Puntos disponibles: <strong style="color: #fbbf24;">${score}</strong></p>
+                    <div style="display: grid; gap: 12px;">
+                        ${itemsHtml}
+                    </div>
+                    <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 18px;">
+                        <button onclick="restartGame()" style="padding: 12px 20px; background: linear-gradient(135deg, #10b981, #059669); color: white; border: none; border-radius: 8px; cursor: pointer;">Volver a intentar</button>
+                    </div>
+                </div>
+            `;
+        }
 
         // Function to update background based on current floor
         function updateBackground() {
@@ -1124,6 +1330,33 @@
             };
         }
 
+        function animateSecretFound(x, y, pointsText) {
+            const mapContainer = document.getElementById('map');
+            if (!mapContainer) return;
+            const cells = Array.from(mapContainer.children);
+            const index = y * GRID_SIZE + x;
+            const cell = cells[index];
+            if (!cell) return;
+            cell.classList.add('secret-found');
+            cell.addEventListener('animationend', () => {
+                cell.classList.remove('secret-found');
+            }, { once: true });
+
+            if (pointsText) {
+                const rect = cell.getBoundingClientRect();
+                const containerRect = mapContainer.getBoundingClientRect();
+                const floating = document.createElement('div');
+                floating.className = 'floating-score';
+                floating.textContent = pointsText;
+                floating.style.left = `${rect.left - containerRect.left + rect.width / 2}px`;
+                floating.style.top = `${rect.top - containerRect.top + rect.height / 2}px`;
+                mapContainer.appendChild(floating);
+                floating.addEventListener('animationend', () => {
+                    floating.remove();
+                }, { once: true });
+            }
+        }
+
         // Muestra la distancia de una celda al inicio
         function showDistance(x, y, value) {
             const startRoom = findStartRoom();
@@ -1148,9 +1381,23 @@
             if (gameOver) return;
             
             const value = map[y][x];
+
+            if (shieldActive) {
+                shieldActive = false;
+                renderUpgradeStatus();
+                const messageArea = document.getElementById('messageArea');
+                messageArea.innerHTML = `<div style="color: #fbbf24; font-size: 16px; padding: 10px; background: rgba(251, 191, 36, 0.15); border-radius: 12px;">🛡️ Tu escudo absorbió el daño y se ha destruido.</div>`;
+                setTimeout(() => {
+                    if (messageArea.innerHTML.includes('Tu escudo absorbió el daño')) {
+                        messageArea.innerHTML = '';
+                    }
+                }, 2500);
+                return;
+            }
             
             lives--;
             updateLivesDisplay();
+            animateLifeLost();
             console.log(`%c💔 Vida perdida en ${x + 1}X ${y + 1}Y | Vidas restantes: ${lives}`, 'color: #ef4444;');
 
             if (lives <= 0) {
@@ -1158,27 +1405,33 @@
             }
         }
 
-        // Actualiza el display de vidas (3 corazones, cada uno vale 2 vidas)
+        function animateLifeLost() {
+            const container = document.getElementById('livesDisplay');
+            if (!container) return;
+            container.classList.add('life-lost');
+            container.addEventListener('animationend', () => {
+                container.classList.remove('life-lost');
+            }, { once: true });
+        }
+
+        // Actualiza el display de vidas (cada corazón vale 2 vidas)
         function updateLivesDisplay() {
             const container = document.getElementById('livesDisplay');
             container.innerHTML = '';
             
-            // 3 corazones, cada uno con 2 vidas
-            for (let i = 0; i < 3; i++) {
+            const heartCount = Math.ceil(getMaxLives() / 2);
+            for (let i = 0; i < heartCount; i++) {
                 const heartImg = document.createElement('img');
                 heartImg.classList.add('heart');
                 
-                const heartStart = (i + 1) * 2; // 2, 4, 6
-                const heartEnd = i * 2; // 0, 2, 4
+                const heartStart = (i + 1) * 2;
+                const heartEnd = i * 2;
                 
                 if (lives >= heartStart) {
-                    // Corazón lleno
                     heartImg.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/rooms/heart.png';
                 } else if (lives > heartEnd) {
-                    // Corazón a medio
                     heartImg.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/rooms/half_heart.png';
                 } else {
-                    // Corazón vacío
                     heartImg.src = 'https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/rooms/empty_heart.png';
                 }
                 
@@ -1205,12 +1458,15 @@
                     <ul style="margin: 0; padding-left: 5px; line-height: 1.2;">
                         <li>🎯 Encuentra las 2 salas secretas</li>
                         <li>❌ Pierdes vida al hacer click en celdas vacías</li>
-                        <li>❤️ Tienes 3 corazones al inicio y recuperas medio por cada sala secreta encontrada</li>
+                        <li>❤️ Empiezas con 1 corazón (2 vidas) y recuperas 1 vida por cada sala secreta encontrada.</li>
                         <li>💡 La sala secreta suele estar rodeada de la mayor cantidad de habitaciones.</li>
                         <li>💡 La super secreta está aislada, lo mas lejos posible de la sala de inicio y lo mas cerca posible de la de el boss</li>
                         <li>💡 Haz click en habitaciones para saber su distancia de la sala de inicio</li>
                     </ul>
-                    <button onclick="document.getElementById('messageArea').innerHTML = ''" style="margin-top: 15px; padding: 8px 20px; background: #60a5fa; color: white; border: none; border-radius: 5px; cursor: pointer;font-size: 1em;">Cerrar</button>
+                    <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 15px;">
+                        <button onclick="resetSavedProgress()" style="padding: 8px 20px; background: #f97316; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1em;">BORRAR PARTIDA</button>
+                        <button onclick="document.getElementById('messageArea').innerHTML = ''" style="padding: 8px 20px; background: #60a5fa; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1em;">Cerrar</button>
+                    </div>
                 </div>
             `;
         }
@@ -1222,17 +1478,17 @@
                 value.revealed = true;
                 secretsFound++;
                 
-                if(value.isSuperSecret){
-                    score += 50; // Más puntos por la super secreta
-                }
-                // Añadir puntos
-                score += 100;
+                const basePoints = value.isSuperSecret ? 2 : 1;
+                const bonusPoints = upgrades.bonusScore ? 1 : 0;
+                score += basePoints + bonusPoints;
                 // Curar al encontrar una sala secreta
-                lives = Math.min(lives + 1, 6);
+                lives = Math.min(lives + 1, getMaxLives());
                 updateLivesDisplay();
                 updateScoreDisplay();
                 
                 renderMap();
+                const pointsText = `$${basePoints}`;
+                animateSecretFound(x, y, pointsText);
                 const roomType = value.isSuperSecret ? 'Super secreta' : 'Secreta';
                 console.log(`%c${roomType} revelada en posición: ${x + 1}X ${y + 1}Y`, 'color: #4ade80; font-weight: bold;');
                 
@@ -1296,17 +1552,30 @@
                     <h2 style="color: #ef4444; margin: 0 0 10px 0;">HAS MUERTO</h2>
                     <p style="margin: 0 0 15px 0;">Piso alcanzado: ${currentFloor}</p>
                     <p style="font-size: 18px; margin: 0 0 15px 0;">Puntuación final: <strong style="color: #fbbf24; font-size: 24px;">${score}</strong></p>
-                    <button onclick="restartGame()" style="
-                        padding: 12px 24px;
-                        font-size: 16px;
-                        background: linear-gradient(135deg, #ef4444, #dc2626);
-                        color: white;
-                        border: none;
-                        border-radius: 8px;
-                        cursor: pointer;
-                        font-weight: bold;
-                        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-                    ">Volver a intentar</button>
+                    <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 10px;">
+                        <button onclick="restartGame()" style="
+                            padding: 12px 24px;
+                            font-size: 16px;
+                            background: linear-gradient(135deg, #ef4444, #dc2626);
+                            color: white;
+                            border: none;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            font-weight: bold;
+                            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+                        ">Volver a intentar</button>
+                        <button onclick="showShopInterface()" style="
+                            padding: 12px 24px;
+                            font-size: 16px;
+                            background: linear-gradient(135deg, #f59e0b, #d97706);
+                            color: white;
+                            border: none;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            font-weight: bold;
+                            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+                        ">Tienda</button>
+                    </div>
                 </div>
             `;
             console.log(`%c💀 GAME OVER | Puntuación: ${score} | Piso: ${currentFloor}`, 'color: #ef4444; font-weight: bold; font-size: 18px;');
@@ -1314,8 +1583,7 @@
 
         // Reinicia el juego
         function restartGame() {
-            lives = 6;
-            score = 0;
+            lives = getInitialLives();
             currentFloor = 1;
             completedMaps = 0;
             secretsFound = 0;
@@ -1323,12 +1591,37 @@
             
             updateLivesDisplay();
             updateScoreDisplay();
+            renderUpgradeStatus();
             updateFloorDisplay();
             
             // Ocultar mensaje
             document.getElementById('messageArea').innerHTML = '';
             
             // Generar nuevo mapa
+            generateValidMap();
+        }
+
+        function resetSavedProgress() {
+            localStorage.removeItem(STORAGE_KEY);
+            upgrades = {
+                extraLife: false,
+                bonusScore: false
+            };
+            shieldActive = false;
+            
+            score = 0;
+            currentFloor = 1;
+            completedMaps = 0;
+            secretsFound = 0;
+            gameOver = false;
+            lives = getInitialLives();
+            
+            updateLivesDisplay();
+            updateScoreDisplay();
+            renderUpgradeStatus();
+            updateFloorDisplay();
+            updateBackground();
+            document.getElementById('messageArea').innerHTML = '';
             generateValidMap();
         }
 
@@ -1940,7 +2233,9 @@
         }
 
         // Inicializar el display de vidas al cargar
+        lives = getInitialLives();
         updateLivesDisplay();
+        renderUpgradeStatus();
         generateValidMap();
         updateBackground();
     </script>
