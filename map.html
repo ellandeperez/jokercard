@@ -110,6 +110,11 @@
             flex-shrink: 0;
         }
 
+        .heart {
+            width: 30px;
+            height: 30px;
+        }
+
         @media (max-width: 700px) {
             body {
                 padding: 12px;
@@ -127,8 +132,8 @@
             }
 
             #gameInfo {
-                gap: 8px;
-                font-size: 1em;
+                gap: 8px !important;
+                font-size: 1em !important;
             }
 
             #gameInfo button {
@@ -136,6 +141,10 @@
                 height: 28px;
                 font-size: 0.95em;
             }
+                .heart {
+                    width: 24px;
+                    height: 24px;
+                }
         }
 
         .cell.room-bordered {
@@ -405,7 +414,7 @@
         <button onclick="location.href='https://ellandeperez.github.io/jokercard/'" style="width: 30px; height: 30px; border-radius: 50%; background: #5f5f5f; color: white; border: 1px solid black; cursor: pointer; font-weight: bold; font-size: 16px;" title="Volver"><</button>
         <div id="livesDisplay"></div>
         <div id="floorDisplay">Piso: <span id="currentFloor">1</span></div>
-        <div id="scoreDisplay">Puntos: <span id="currentScore">0</span></div>
+        <div id="scoreDisplay">$: <span id="currentScore">0</span></div>
         <button onclick="showHelp()" style="width: 30px; height: 30px; border-radius: 50%; background: #5f5f5f; color: white; border: none; cursor: pointer;border: 1px solid black; font-size: 1em" title="Cómo jugar">?</button>
     </div>
     <div id="messageArea" style="margin-top: 10px; margin-bottom: 10px;"></div>
@@ -1120,7 +1129,7 @@
             
             // Mostrar en la UI
             const messageArea = document.getElementById('messageArea');
-            messageArea.innerHTML = `<div style="color: #60a5fa; font-size: 16px; padding: 8px; background: rgba(96, 165, 250, 0.1); border-radius: 5px;">📍 Distancia desde inicio: ${dist}</div>`;
+            messageArea.innerHTML = `<div style="color: lightgray; font-size: 16px; padding: 8px; background: #222222; border-radius: 20px;">📍 Distancia desde inicio: ${dist}</div>`;
                         
             // Quitar el mensaje después de 3 segundos
             setTimeout(() => {
@@ -1153,8 +1162,7 @@
             // 3 corazones, cada uno con 2 vidas
             for (let i = 0; i < 3; i++) {
                 const heartImg = document.createElement('img');
-                heartImg.style.width = '30px';
-                heartImg.style.height = '30px';
+                heartImg.classList.add('heart');
                 
                 const heartStart = (i + 1) * 2; // 2, 4, 6
                 const heartEnd = i * 2; // 0, 2, 4
@@ -1276,9 +1284,10 @@
             const messageArea = document.getElementById('messageArea');
             messageArea.innerHTML = `
                 <div style="text-align: center; padding: 20px; background: rgba(239, 68, 68, 0.2); border-radius: 10px; border: 2px solid #ef4444;">
-                    <h2 style="color: #ef4444; margin: 0 0 10px 0;">💀 GAME OVER</h2>
+                    <img src="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/characters/isaac.png" alt="Game Over" style="width: 80px; margin-bottom: 15px;">
+                    <h2 style="color: #ef4444; margin: 0 0 10px 0;">HAS MUERTO</h2>
+                    <p style="margin: 0 0 15px 0;">Piso alcanzado: ${currentFloor}</p>
                     <p style="font-size: 18px; margin: 0 0 15px 0;">Puntuación final: <strong style="color: #fbbf24; font-size: 24px;">${score}</strong></p>
-                    <p style="margin: 0 0 15px 0;">Alcanzaste el piso: ${currentFloor}</p>
                     <button onclick="restartGame()" style="
                         padding: 12px 24px;
                         font-size: 16px;
@@ -1289,7 +1298,7 @@
                         cursor: pointer;
                         font-weight: bold;
                         box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-                    ">🔄 Reiniciar Juego</button>
+                    ">Volver a intentar</button>
                 </div>
             `;
             console.log(`%c💀 GAME OVER | Puntuación: ${score} | Piso: ${currentFloor}`, 'color: #ef4444; font-weight: bold; font-size: 18px;');
