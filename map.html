@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&display=swap" rel="stylesheet">
-    <title>Generador de Mapas</title>
+    <link rel="apple-touch-icon"
+        href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/other/icon.png">
+    <link rel="icon" href="https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/other/icon.png"
+        type="image/x-icon">
+    <title>Secret Room</title>
     <style>
         * {
             font-family: 'Jersey 15', Arial, sans-serif;
@@ -13,14 +17,20 @@
             image-rendering: pixelated;
         }
         body {
+            box-shadow: inset 0 0 100px #000;
+            --cell-size: min(40px, calc((100vw - 50px) / 13));
             display: flex;
             flex-direction: column;
             align-items: center;
             background-color: #2b2b2b;
+            background-image: url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/background_mobile.png');
+            background-size: cover;
+            background-position: center;
             color: white;
             min-height: 100vh;
             margin: 0;
             font-size: 1.5em;
+            padding: 20px;
         }
 
         h1 {
@@ -29,21 +39,103 @@
 
         #map {
             display: grid;
-            grid-template-columns: repeat(13, 40px);
-            grid-template-rows: repeat(13, 40px);
+            grid-template-columns: repeat(13, var(--cell-size));
+            grid-template-rows: repeat(13, var(--cell-size));
             padding: 10px;
             border: 10px double #5c5c5c;
-            background-color: #3d3d3d;
+            background-color: #3d3d3dde;
             border-radius: 10px;
+            max-width: calc(var(--cell-size) * 13 + 20px);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #curseIcons {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            max-width: calc(var(--cell-size) * 13 + 20px);
+            margin-top: 10px;
+            padding-left: 5px;
+            box-sizing: border-box;
+        }
+
+        .curse-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .curse-icon-label {
+            font-size: 0.9em;
+            color: #d5d5d5;
         }
 
         .cell {
             display: flex;
             align-items: center;
             justify-content: center;
+            width: var(--cell-size);
+            height: var(--cell-size);
             font-size: 1.5em;
-            border: 5px outset #00000012;
+            border: 6px outset #00000012;
             box-sizing: border-box;
+        }
+
+        #controls {
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #controls label,
+        #controls button {
+            font-size: 1rem;
+        }
+
+        #gameInfo {
+            margin-top: 20px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+        }
+
+        #gameInfo > * {
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 12px;
+                font-size: 1.1em;
+            }
+
+            #map {
+                padding: 8px;
+                border-width: 8px;
+            }
+
+            .cell {
+                border-width: 3px;
+                font-size: 1.1em;
+            }
+
+            #gameInfo {
+                gap: 8px;
+                font-size: 1em;
+            }
+
+            #gameInfo button {
+                width: 28px;
+                height: 28px;
+                font-size: 0.95em;
+            }
         }
 
         .cell.room-bordered {
@@ -69,6 +161,12 @@
             background-image: url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/rooms/Type_boss.png');
             background-size: cover;
             background-position: center;
+        }
+
+        .hidden {
+            background-color: transparent !important;
+            background-image: none !important;
+            color: transparent !important;
         }
 
         body.debug .cell.boss {
@@ -228,13 +326,13 @@
         .cell.pasilloH {
             background-color: #5c5c5c;
             height: 25px;
-            margin-top: 7.5px;
+            margin-top: 2.5px;
         }
 
         .cell.pasilloV {
             background-color: #5c5c5c;
             width: 25px;
-            margin-left: 7.5px;
+            margin-left: 2.5px;
         }
 
         body.debug .cell.pasilloH {
@@ -304,15 +402,16 @@
         <button onclick="generateValidMap()" style="padding: 5px 10px; cursor: pointer;">generate</button>
     </div>
     <div id="gameInfo" style="margin-top: 20px; display: flex; gap: 20px; font-size: 1.2em;">
-        <button onclick="location.href='https://ellandeperez.github.io/jokercard/'" style="width: 30px; height: 30px; border-radius: 50%; background: #4a4a6a; color: white; border: none; cursor: pointer; font-weight: bold; font-size: 16px;" title="Volver"><</button>
+        <button onclick="location.href='https://ellandeperez.github.io/jokercard/'" style="width: 30px; height: 30px; border-radius: 50%; background: #5f5f5f; color: white; border: 1px solid black; cursor: pointer; font-weight: bold; font-size: 16px;" title="Volver"><</button>
         <div id="livesDisplay"></div>
         <div id="floorDisplay">Piso: <span id="currentFloor">1</span></div>
         <div id="scoreDisplay">Puntos: <span id="currentScore">0</span></div>
-        <button onclick="showHelp()" style="width: 30px; height: 30px; border-radius: 50%; background: #4a4a6a; color: white; border: none; cursor: pointer; font-size: 1em" title="Cómo jugar">?</button>
+        <button onclick="showHelp()" style="width: 30px; height: 30px; border-radius: 50%; background: #5f5f5f; color: white; border: none; cursor: pointer;border: 1px solid black; font-size: 1em" title="Cómo jugar">?</button>
     </div>
-    <div id="messageArea" style="margin-top: 20px; margin-bottom: 20px; min-height: 40px;"></div>
+    <div id="messageArea" style="margin-top: 10px; margin-bottom: 10px;"></div>
     <!-- <h1>Generador de Mapas</h1> -->
     <div id="map"></div>
+    <div id="curseIcons" aria-label="Maldiciones activas"></div>
 
     <script>
         const GRID_SIZE = 13;
@@ -329,6 +428,68 @@
 
         let todaslashabitaciones = 0;
         let habitacionesmaximas = 0;
+
+        // Background images mapping
+        const backgrounds = {
+            1: 'background',
+            2: 'background',
+            3: 'depths_background',
+            4: 'depths_background',
+            5: 'womb_background',
+            6: 'womb_background',
+            7: 'angel_background',
+            8: 'angel_background',
+            9: 'dark_background',
+            10: 'chest_background'
+        };
+
+        // Function to update background based on current floor
+        function updateBackground() {
+            const isMobile = window.innerWidth <= 700;
+            let image = backgrounds[currentFloor] || 'chest_background';
+            if (isMobile) image += '_mobile';
+            document.body.style.backgroundImage = `url('https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/bckground/${image}.png')`;
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
+            document.body.style.backgroundRepeat = 'no-repeat';
+            updateCurseIcons();
+        }
+
+        const curseIconsConfig = {
+            hardMode: 'curse_hard',
+            curseOfTheLost: 'curse_lost',
+            xlMode: 'curse_xl'
+        };
+
+        function updateCurseIcons() {
+            const container = document.getElementById('curseIcons');
+            if (!container) return;
+            container.innerHTML = '';
+
+            const curses = [
+                { id: 'hardMode', label: 'Hard', icon: curseIconsConfig.hardMode },
+                { id: 'curseOfTheLost', label: 'Lost', icon: curseIconsConfig.curseOfTheLost },
+                { id: 'xlMode', label: 'XL', icon: curseIconsConfig.xlMode }
+            ];
+
+            curses.forEach(curse => {
+                const checkbox = document.getElementById(curse.id);
+                if (checkbox && checkbox.checked) {
+                    const wrapper = document.createElement('div');
+                    wrapper.style.display = 'flex';
+                    wrapper.style.alignItems = 'center';
+                    wrapper.style.gap = '4px';
+
+                    const img = document.createElement('img');
+                    img.src = `https://raw.githubusercontent.com/ellandeperez/jokercard/refs/heads/main/rooms/${curse.icon}.png`;
+                    img.alt = `${curse.label} active`;
+                    img.className = 'curse-icon';
+                    wrapper.appendChild(img);
+
+                    container.appendChild(wrapper);
+                }
+            });
+        }
 
         // Toggle controls visibility withº key
         document.addEventListener('keydown', function(e) {
@@ -348,6 +509,12 @@
                 renderMap(); // Volver a renderizar para actualizar los textos
             }
         });
+
+        // Update background when floor number changes
+        document.getElementById('floorNumber').addEventListener('input', updateBackground);
+        document.getElementById('hardMode').addEventListener('change', updateCurseIcons);
+        document.getElementById('curseOfTheLost').addEventListener('change', updateCurseIcons);
+        document.getElementById('xlMode').addEventListener('change', updateCurseIcons);
 
         // Tipos de habitaciones y sus tamaños (width x height)
         const ROOM_TYPES = {
@@ -829,7 +996,7 @@
                         }
                         
                         // Dibujar bordes compartidos para celdas de la misma habitación
-                        if (!value.isHole && !(value.isSecret && !value.revealed) && !(value.isSuperSecret && !value.revealed)) {
+                        if (!value.isHole && !(value.isSecret && !value.revealed && !debugMode) && !(value.isSuperSecret && !value.revealed && !debugMode)) {
                             cell.classList.add('room-bordered');
                             addSharedBorderClasses(cell, x, y, value);
                         }
@@ -838,7 +1005,7 @@
                         if (value.isHole) {
                             cell.textContent = '';
                         } else if (value.isSecret) {
-                            if (value.revealed) {
+                            if (value.revealed || debugMode) {
                                 cell.classList.add('secret');
                                 cell.textContent = debugMode ? 'S' + distText : '';
                             } else {
@@ -846,7 +1013,7 @@
                                 cell.textContent = '';
                             }
                         } else if (value.isSuperSecret) {
-                            if (value.revealed) {
+                            if (value.revealed || debugMode) {
                                 cell.classList.add('superSecret');
                                 cell.textContent = debugMode ? 'U' + distText : '';
                             } else {
@@ -1026,7 +1193,7 @@
                     <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
                         <li>🎯 <strong>Objetivo:</strong> Encontrar las 2 salas secretas (ocultas) en el mapa</li>
                         <li>❌ Pierdes vida al hacer click en celdas vacías (sin habitación)</li>
-                        <li>❤️ Tienes 6 vidas al inicio y recuperas una por cada nivel completado</li>
+                        <li>❤️ Tienes 3 corazones al inicio y recuperas medio por cada sala secreta encontrada</li>
                         <li>💡 La sala secreta suele estar rodeada de la mayor cantidad de habitaciones, mientras que la super secreta está aislada, lo mas lejos posible de la sala de inicio y lo mas cerca posible de la de el boss</li>
                     </ul>
                     <button onclick="document.getElementById('messageArea').innerHTML = ''" style="margin-top: 15px; padding: 8px 20px; background: #60a5fa; color: white; border: none; border-radius: 5px; cursor: pointer;font-size: 1em;">Cerrar</button>
@@ -1043,6 +1210,9 @@
                 
                 // Añadir puntos
                 score += 100;
+                // Curar al encontrar una sala secreta
+                lives = Math.min(lives + 1, 6);
+                updateLivesDisplay();
                 updateScoreDisplay();
                 
                 renderMap();
@@ -1082,6 +1252,7 @@
             // Cada 2 mapas completados, subir piso
             if (completedMaps >= 2) {
                 currentFloor++;
+                updateBackground();
                 completedMaps = 0;
                 console.log(`%c⬆️ Subiendo al piso ${currentFloor}!`, 'color: #fbbf24; font-weight: bold;');
             }
@@ -1091,9 +1262,6 @@
             
             // Resetear estado del juego
             secretsFound = 0;
-            // Curar solo 1 corazón (hasta máximo 6)
-            lives = Math.min(lives + 1, 6);
-            updateLivesDisplay();
             
             // Ocultar mensaje
             document.getElementById('messageArea').innerHTML = '';
@@ -1664,6 +1832,14 @@
                 if (Math.random() < 0.25) {
                     curseCheckbox.checked = true;
                 }
+            } else {
+                // Pisos 1-2: posibilidad de Hard Mode (10%) y Curse of the Lost (10%)
+                if (Math.random() < 0.10) {
+                    hardModeCheckbox.checked = true;
+                }
+                if (Math.random() < 0.10) {
+                    curseCheckbox.checked = true;
+                }
             }
             
             // Log de los modificadores activos
@@ -1685,6 +1861,10 @@
             
             // Aplicar modificadores automáticos según el piso
             applyAutoModifiers();
+            
+            let floorNum = parseInt(document.getElementById('floorNumber').value) || 1;
+            currentFloor = floorNum;
+            updateBackground();
             
             let attempts = 0;
             while (true) {
@@ -1745,6 +1925,7 @@
         // Inicializar el display de vidas al cargar
         updateLivesDisplay();
         generateValidMap();
+        updateBackground();
     </script>
 </body>
 
