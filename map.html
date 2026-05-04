@@ -1198,11 +1198,13 @@
             const messageArea = document.getElementById('messageArea');
             messageArea.innerHTML = `
                 <div style="background: rgba(30, 30, 60, 0.95); padding: 20px; border-radius: 10px; border: 2px solid #60a5fa; max-width: 500px;">
-                    <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-                        <li>🎯 <strong>Objetivo:</strong> Encontrar las 2 salas secretas (ocultas) en el mapa</li>
-                        <li>❌ Pierdes vida al hacer click en celdas vacías (sin habitación)</li>
+                    <ul style="margin: 0; padding-left: 5px; line-height: 1.2;">
+                        <li>🎯 Encuentra las 2 salas secretas</li>
+                        <li>❌ Pierdes vida al hacer click en celdas vacías</li>
                         <li>❤️ Tienes 3 corazones al inicio y recuperas medio por cada sala secreta encontrada</li>
-                        <li>💡 La sala secreta suele estar rodeada de la mayor cantidad de habitaciones, mientras que la super secreta está aislada, lo mas lejos posible de la sala de inicio y lo mas cerca posible de la de el boss</li>
+                        <li>💡 La sala secreta suele estar rodeada de la mayor cantidad de habitaciones.</li>
+                        <li>💡 La super secreta está aislada, lo mas lejos posible de la sala de inicio y lo mas cerca posible de la de el boss</li>
+                        <li>💡 Haz click en habitaciones para saber su distancia de la sala de inicio</li>
                     </ul>
                     <button onclick="document.getElementById('messageArea').innerHTML = ''" style="margin-top: 15px; padding: 8px 20px; background: #60a5fa; color: white; border: none; border-radius: 5px; cursor: pointer;font-size: 1em;">Cerrar</button>
                 </div>
